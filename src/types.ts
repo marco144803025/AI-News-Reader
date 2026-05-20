@@ -6,6 +6,7 @@ export type Article = {
   snippet: string;
   category: string;
   summary: string;
+  important?: boolean;
 };
 
 export type NewsData = {

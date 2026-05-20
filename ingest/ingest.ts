@@ -9,8 +9,10 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
 
 const MODEL = "claude-haiku-4-5-20251001";
-const DAYS_BACK = 7;
+const DAYS_BACK = 1;
+const RETENTION_DAYS = 7;
 const BATCH_SIZE = 25;
+const ARXIV_CAP = 15;
 
 const SEED_CATEGORIES = [
   "MCP",
@@ -19,6 +21,26 @@ const SEED_CATEGORIES = [
   "Research",
   "Industry / Business",
   "Other",
+];
+
+const ARXIV_KEYWORDS = [
+  "llm",
+  "agent",
+  "reasoning",
+  "multimodal",
+  "benchmark",
+  "fine-tun",
+  "mcp",
+  "alignment",
+  "rlhf",
+  "transformer",
+  "language model",
+  "diffusion",
+  "foundation model",
+  "instruction",
+  "prompt",
+  "rag",
+  "retrieval",
 ];
 
 type Feed = { name: string; url: string };
@@ -31,13 +53,38 @@ type RawArticle = {
   snippet: string;
 };
 
-type Article = RawArticle & { category: string; summary: string };
+type Article = RawArticle & {
+  category: string;
+  summary: string;
+  important?: boolean;
+};
+
+type NewsData = {
+  generatedAt: string;
+  daysBack: number;
+  categories: string[];
+  articles: Article[];
+};
 
 function stripHtml(s: string): string {
   return s
     .replace(/<[^>]*>/g, " ")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+function isArxivRelevant(title: string, snippet: string): boolean {
+  const text = (title + " " + snippet).toLowerCase();
+  return ARXIV_KEYWORDS.some((k) => text.includes(k));
+}
+
+async function loadExisting(path: string): Promise<NewsData | null> {
+  try {
+    const raw = await readFile(path, "utf-8");
+    return JSON.parse(raw) as NewsData;
+  } catch {
+    return null;
+  }
 }
 
 async function fetchFeeds(feeds: Feed[]): Promise<RawArticle[]> {
@@ -48,6 +95,9 @@ async function fetchFeeds(feeds: Feed[]): Promise<RawArticle[]> {
   for (const feed of feeds) {
     try {
       const parsed = await parser.parseURL(feed.url);
+      const isArxiv = feed.name.toLowerCase().includes("arxiv");
+      const feedArticles: RawArticle[] = [];
+
       for (const item of parsed.items) {
         const url = item.link;
         const title = item.title?.trim();
@@ -55,19 +105,26 @@ async function fetchFeeds(feeds: Feed[]): Promise<RawArticle[]> {
         const dateStr = item.isoDate ?? item.pubDate;
         const ts = dateStr ? Date.parse(dateStr) : NaN;
         if (Number.isFinite(ts) && ts < cutoff) continue;
-        articles.push({
+        const snippet = stripHtml(
+          item.contentSnippet ?? item.content ?? item.summary ?? ""
+        ).slice(0, 600);
+
+        if (isArxiv && !isArxivRelevant(title, snippet)) continue;
+
+        feedArticles.push({
           title,
           url,
           source: feed.name,
           publishedAt: Number.isFinite(ts)
             ? new Date(ts).toISOString()
             : new Date().toISOString(),
-          snippet: stripHtml(
-            item.contentSnippet ?? item.content ?? item.summary ?? ""
-          ).slice(0, 600),
+          snippet,
         });
       }
-      console.log(`  ok   ${feed.name}`);
+
+      const capped = isArxiv ? feedArticles.slice(0, ARXIV_CAP) : feedArticles;
+      articles.push(...capped);
+      console.log(`  ok   ${feed.name} (${capped.length} articles)`);
     } catch (err) {
       console.warn(`  skip ${feed.name}: ${(err as Error).message}`);
     }
@@ -75,15 +132,16 @@ async function fetchFeeds(feeds: Feed[]): Promise<RawArticle[]> {
   return articles;
 }
 
-function dedupe(articles: RawArticle[]): RawArticle[] {
-  const seen = new Set<string>();
+function dedupeIncoming(
+  incoming: RawArticle[],
+  existingUrls: Set<string>
+): RawArticle[] {
+  const seenThisRun = new Set<string>();
   const out: RawArticle[] = [];
-  for (const a of articles) {
+  for (const a of incoming) {
     const key = a.url.split("?")[0].toLowerCase();
-    const titleKey = a.title.toLowerCase();
-    if (seen.has(key) || seen.has(titleKey)) continue;
-    seen.add(key);
-    seen.add(titleKey);
+    if (existingUrls.has(key) || seenThisRun.has(key)) continue;
+    seenThisRun.add(key);
     out.push(a);
   }
   return out;
@@ -91,8 +149,9 @@ function dedupe(articles: RawArticle[]): RawArticle[] {
 
 async function classifyBatch(
   client: Anthropic,
-  batch: RawArticle[]
-): Promise<{ category: string; summary: string }[]> {
+  batch: RawArticle[],
+  existingCategories: string[]
+): Promise<{ category: string; summary: string; important: boolean }[]> {
   const list = batch
     .map(
       (a, i) =>
@@ -108,11 +167,12 @@ async function classifyBatch(
         type: "text",
         text:
           "You categorize and summarize AI-related news articles. " +
-          "For each article assign exactly one category. Prefer these categories: " +
-          SEED_CATEGORIES.join(", ") +
-          ". You may introduce a new short category only if none fit well. " +
+          "Categories already in use: " +
+          existingCategories.join(", ") +
+          ". Prefer these. Only introduce a new short category if none fit well. " +
           "Write a concise 1-2 sentence summary for each article. " +
-          'Respond ONLY with a JSON array of objects {"index": number, "category": string, "summary": string}, no other text.',
+          "Set important: true only for articles with a significant finding, new model/capability release, or major industry development. Default to false. " +
+          'Respond ONLY with a JSON array of objects {"index": number, "category": string, "summary": string, "important": boolean}, no other text.',
         cache_control: { type: "ephemeral" },
       },
     ],
@@ -135,17 +195,17 @@ async function classifyBatch(
     index: number;
     category: string;
     summary: string;
+    important: boolean;
   }[];
 
-  const result: { category: string; summary: string }[] = batch.map(() => ({
-    category: "Other",
-    summary: "",
-  }));
+  const result: { category: string; summary: string; important: boolean }[] =
+    batch.map(() => ({ category: "Other", summary: "", important: false }));
   for (const r of parsed) {
     if (r.index >= 0 && r.index < batch.length) {
       result[r.index] = {
         category: r.category?.trim() || "Other",
         summary: r.summary?.trim() || "",
+        important: r.important === true,
       };
     }
   }
@@ -159,47 +219,80 @@ async function main() {
     process.exit(1);
   }
 
-  console.log("Fetching feeds...");
+  const outputPath = join(ROOT, "public", "news.json");
+
+  console.log("Loading existing data...");
+  const existing = await loadExisting(outputPath);
+  const existingArticles: Article[] = existing?.articles ?? [];
+  const existingUrls = new Set(
+    existingArticles.map((a) => a.url.split("?")[0].toLowerCase())
+  );
+  const existingCategories =
+    existing?.categories?.length ? existing.categories : SEED_CATEGORIES;
+
+  console.log(
+    `Existing: ${existingArticles.length} articles, categories: ${existingCategories.join(", ")}`
+  );
+
+  console.log("Fetching feeds (last 24h)...");
   const feeds: Feed[] = JSON.parse(
     await readFile(join(ROOT, "feeds.json"), "utf-8")
   );
-  const raw = dedupe(await fetchFeeds(feeds));
-  console.log(`Collected ${raw.length} unique articles from the last ${DAYS_BACK} days.`);
+  const raw = dedupeIncoming(await fetchFeeds(feeds), existingUrls);
+  console.log(`${raw.length} new articles after dedup.`);
+
+  const retentionCutoff = Date.now() - RETENTION_DAYS * 24 * 60 * 60 * 1000;
 
   if (raw.length === 0) {
-    console.warn("No articles found — nothing to write.");
+    console.log("No new articles — pruning and updating timestamp.");
+    const pruned = existingArticles.filter(
+      (a) => Date.parse(a.publishedAt) > retentionCutoff
+    );
+    const categories = [...new Set(pruned.map((a) => a.category))];
+    await mkdir(join(ROOT, "public"), { recursive: true });
+    await writeFile(
+      outputPath,
+      JSON.stringify(
+        { generatedAt: new Date().toISOString(), daysBack: DAYS_BACK, categories, articles: pruned },
+        null,
+        2
+      ),
+      "utf-8"
+    );
+    console.log(`Done. ${pruned.length} articles retained.`);
     return;
   }
 
   const client = new Anthropic({ apiKey });
-  const articles: Article[] = [];
+  const classified: Article[] = [];
   for (let i = 0; i < raw.length; i += BATCH_SIZE) {
     const batch = raw.slice(i, i + BATCH_SIZE);
     console.log(
-      `Classifying batch ${i / BATCH_SIZE + 1} (${batch.length} articles)...`
+      `Classifying batch ${Math.floor(i / BATCH_SIZE) + 1} (${batch.length} articles)...`
     );
-    const meta = await classifyBatch(client, batch);
-    batch.forEach((a, j) => articles.push({ ...a, ...meta[j] }));
+    const meta = await classifyBatch(client, batch, existingCategories);
+    batch.forEach((a, j) => classified.push({ ...a, ...meta[j] }));
   }
 
-  articles.sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
-  const categories = [...new Set(articles.map((a) => a.category))];
-
-  const output = {
-    generatedAt: new Date().toISOString(),
-    daysBack: DAYS_BACK,
-    categories,
-    articles,
-  };
+  const merged = [...classified, ...existingArticles];
+  const pruned = merged.filter(
+    (a) => Date.parse(a.publishedAt) > retentionCutoff
+  );
+  pruned.sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
+  const categories = [...new Set(pruned.map((a) => a.category))];
 
   await mkdir(join(ROOT, "public"), { recursive: true });
   await writeFile(
-    join(ROOT, "public", "news.json"),
-    JSON.stringify(output, null, 2),
+    outputPath,
+    JSON.stringify(
+      { generatedAt: new Date().toISOString(), daysBack: DAYS_BACK, categories, articles: pruned },
+      null,
+      2
+    ),
     "utf-8"
   );
   console.log(
-    `Wrote public/news.json — ${articles.length} articles, ${categories.length} categories.`
+    `Wrote public/news.json — ${pruned.length} articles total (${classified.length} new), ${categories.length} categories.`
   );
 }
 

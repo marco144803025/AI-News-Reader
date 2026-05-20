@@ -11,9 +11,10 @@ export default function App() {
   const [error, setError] = useState<string | null>(null);
   const [query, setQuery] = useState("");
   const [activeCategory, setActiveCategory] = useState<string>("All");
+  const [showNotableOnly, setShowNotableOnly] = useState(false);
 
   useEffect(() => {
-    fetch("/news.json")
+    fetch(import.meta.env.BASE_URL + "news.json")
       .then((r) => {
         if (!r.ok) throw new Error("news.json not found — run `npm run ingest` first.");
         return r.json();
@@ -27,6 +28,7 @@ export default function App() {
     const q = query.trim().toLowerCase();
     return data.articles.filter((a) => {
       if (activeCategory !== "All" && a.category !== activeCategory) return false;
+      if (showNotableOnly && activeCategory === "Research" && !a.important) return false;
       if (!q) return true;
       return (
         a.title.toLowerCase().includes(q) ||
@@ -34,7 +36,7 @@ export default function App() {
         a.source.toLowerCase().includes(q)
       );
     });
-  }, [data, query, activeCategory]);
+  }, [data, query, activeCategory, showNotableOnly]);
 
   const grouped = useMemo(() => {
     const map = new Map<string, typeof filtered>();
@@ -85,7 +87,10 @@ export default function App() {
           />
           <select
             value={activeCategory}
-            onChange={(e) => setActiveCategory(e.target.value)}
+            onChange={(e) => {
+              setActiveCategory(e.target.value);
+              setShowNotableOnly(false);
+            }}
             className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm focus:border-indigo-400 focus:outline-none"
           >
             <option value="All">All categories</option>
@@ -95,6 +100,18 @@ export default function App() {
               </option>
             ))}
           </select>
+          {activeCategory === "Research" && (
+            <button
+              onClick={() => setShowNotableOnly((v) => !v)}
+              className={`rounded-lg border px-3 py-1.5 text-sm transition ${
+                showNotableOnly
+                  ? "border-amber-400 bg-amber-100 text-amber-800"
+                  : "border-slate-300 bg-white text-slate-600 hover:border-slate-400"
+              }`}
+            >
+              {showNotableOnly ? "Notable only" : "Show all"}
+            </button>
+          )}
         </div>
 
         {grouped.length === 0 ? (
