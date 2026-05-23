@@ -1,12 +1,442 @@
 {
-  "generatedAt": "2026-05-21T08:56:52.410Z",
+  "generatedAt": "2026-05-23T08:07:03.654Z",
   "daysBack": 1,
   "categories": [
-    "Industry Development",
     "AI Models",
+    "Industry Development",
     "MCP"
   ],
   "articles": [
+    {
+      "title": "Benchmarking and Improving Monitors for Out-Of-Distribution Alignment Failure in LLMs",
+      "url": "https://arxiv.org/abs/2605.21602",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-05-23T04:00:00.000Z",
+      "snippet": "arXiv:2605.21602v1 Announce Type: new Abstract: Many safety and alignment failures of large language models (LLMs) occur due to out-of-distribution (OOD) situations: unusual prompt or response patterns that are unforeseen by model developers. We systematically study whether LLM monitoring pipelines can detect these OOD alignment failures by introducing a benchmark called Misalignment Out Of Distribution (MOOD). It is difficult to find failures that are truly OOD for off-the-shelf models trained on vast safety datasets. We sidestep this by including a restricted training set in MOOD that we use",
+      "category": "AI Models",
+      "summary": "Researchers introduce MOOD benchmark to systematically study whether LLM monitoring pipelines can detect out-of-distribution alignment failures in safety mechanisms.",
+      "important": false
+    },
+    {
+      "title": "TO-Agents: A Multi-Agent AI Pipeline for Preference-Guided Topology Optimization",
+      "url": "https://arxiv.org/abs/2605.21622",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-05-23T04:00:00.000Z",
+      "snippet": "arXiv:2605.21622v1 Announce Type: new Abstract: Topology optimization can generate efficient structures, but designers often must manually translate qualitative intent, such as desired visual style, product experience, or manufacturability into solver settings that are not directly tied to those preferences. We present TO-Agents, a multi-agent AI framework that connects natural-language design intent with iterative topology optimization. The framework converts a human-provided problem description into validated solver inputs, runs a topology optimization solver, renders the resulting 3D topolo",
+      "category": "AI Models",
+      "summary": "TO-Agents framework uses multi-agent AI to convert natural-language design intent into topology optimization solver inputs, bridging human intent and computational design.",
+      "important": false
+    },
+    {
+      "title": "The Shape of Testimony: A Scalable Framework for Oral History Archive Comparison",
+      "url": "https://arxiv.org/abs/2605.21623",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-05-23T04:00:00.000Z",
+      "snippet": "arXiv:2605.21623v1 Announce Type: new Abstract: Researchers in Holocaust studies have often distinguished between two styles of oral survivor testimony: the USC Shoah Foundation's interviews tend to follow a structured, interviewer-guided format, whereas the Yale Fortunoff Video Archive generally favors a more free-form, open-ended style. This distinction has influenced both scholarly research and the development of later archives. In this study, we critically examine that claim by conducting a large-scale computational analysis of more than 1,600 testimonies from both collections. Leveraging ",
+      "category": "AI Models",
+      "summary": "Researchers conducted large-scale computational analysis of 1,600+ Holocaust testimonies from two archives using AI to examine stylistic differences between oral history collections.",
+      "important": false
+    },
+    {
+      "title": "MindLoom: Composing Thought Modes for Frontier-Level Reasoning Data Synthesis",
+      "url": "https://arxiv.org/abs/2605.21630",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-05-23T04:00:00.000Z",
+      "snippet": "arXiv:2605.21630v1 Announce Type: new Abstract: Although LLMs have made substantial progress in reasoning, systematically producing frontier-level reasoning data remains difficult. Existing synthesis methods often have limited visibility into the structural factors that govern problem difficulty, which can result in narrow diversity and unstable difficulty control. In this work, we view the difficulty of a reasoning problem as arising from the accumulation of atomic knowledge-reasoning transformations, which we term thought modes. Building on this perspective, we propose MindLoom, a framework ",
+      "category": "AI Models",
+      "summary": "MindLoom framework addresses the challenge of systematically producing frontier-level reasoning data by decomposing problem difficulty into atomic knowledge-reasoning transformations.",
+      "important": false
+    },
+    {
+      "title": "AOP-Wiki EMOD 3.0: Data Model Expansions and Content Evaluation Framework for Using Agentic AI to Improve Integration between AOPs and New Approach Methodologies (NAMs)",
+      "url": "https://arxiv.org/abs/2605.21645",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-05-23T04:00:00.000Z",
+      "snippet": "arXiv:2605.21645v1 Announce Type: new Abstract: Adverse Outcome Pathways (AOP) are logic models that causally link biological mechanisms that can be measured in a lab to adverse outcomes, relevant to chemical regulatory endpoints. AOPs contextualize new approach methodologies (NAMs), in vitro and in silico methods used as alternatives to animal testing and the sequential events in an AOP serve as multi-scale models spanning biological scales. The AOP-Wiki serves as the global repository for AOPs. While the AOP-Wiki has played a central role in AOP expansion over the past decade, constraints wi",
+      "category": "AI Models",
+      "summary": "AOP-Wiki 3.0 expands data models and introduces evaluation framework for using agentic AI to improve integration between Adverse Outcome Pathways and new approach methodologies.",
+      "important": false
+    },
+    {
+      "title": "Investigating Concept Alignment Using Implausible Category Members",
+      "url": "https://arxiv.org/abs/2605.21683",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-05-23T04:00:00.000Z",
+      "snippet": "arXiv:2605.21683v1 Announce Type: new Abstract: Developing AI systems with a human-like understanding of everyday concepts is a key step towards developing safe, reliable systems whose behavior makes sense to humans. When probing concept understanding, asking questions about plausible category members (e.g., \"Is a car a vehicle?\") is likely to recall patterns in the model's vast training data. We pursue an alternative strategy, characterizing the boundaries of conceptual categories by asking about implausible category members (e.g., \"Is an olive a vehicle?\") to probe the kind of concept-level ",
+      "category": "AI Models",
+      "summary": "Researchers probe AI concept understanding by testing implausible category members rather than plausible ones, revealing conceptual boundaries independent of training data patterns.",
+      "important": false
+    },
+    {
+      "title": "The Impact of AI Usage and Informativeness on Skill Development in Logical Reasoning",
+      "url": "https://arxiv.org/abs/2605.21695",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-05-23T04:00:00.000Z",
+      "snippet": "arXiv:2605.21695v1 Announce Type: new Abstract: Artificial intelligence (AI) is being increasingly integrated into human problem-solving, yet its effects on individual skill development remain unclear. We examine how both AI usage and informativeness can shape learning in the context of a controlled logical reasoning task with on-demand access to AI assistance. We find that greater AI usage is associated with weaker skill development: heavy AI users underperform relative to comparable peers, whereas light AI users perform similarly to matched users who do not use AI. We also find in our study ",
+      "category": "AI Models",
+      "summary": "Study finds that greater AI usage correlates with weaker skill development in logical reasoning tasks, with heavy AI users underperforming compared to light users.",
+      "important": false
+    },
+    {
+      "title": "Latent-space Attacks for Refusal Evasion in Language Models",
+      "url": "https://arxiv.org/abs/2605.21706",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-05-23T04:00:00.000Z",
+      "snippet": "arXiv:2605.21706v1 Announce Type: new Abstract: Safety-aligned language models are trained to refuse harmful requests, yet refusal behavior can be suppressed by steering their internal representations. Existing methods do so by ablating a refusal direction from model activations, aiming to remove refusal from the model's residual stream. Despite their empirical success, these methods lack a principled account of the latent-space transformation they induce and why it suppresses refusal. In this work, we recast refusal suppression as a latent-space evasion attack against linear probes trained to",
+      "category": "AI Models",
+      "summary": "Researchers develop latent-space attacks to suppress refusal behavior in safety-aligned language models by steering internal representations.",
+      "important": false
+    },
+    {
+      "title": "AttuneBench: A Conversation-Based Benchmark for LLM Emotional Intelligence",
+      "url": "https://arxiv.org/abs/2605.21739",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-05-23T04:00:00.000Z",
+      "snippet": "arXiv:2605.21739v1 Announce Type: new Abstract: Emotional intelligence (EI), the ability to perceive, understand, and respond appropriately to others' emotional states, is central to human communication, and increasingly important to assess as LLMs assume conversational roles in everyday life. Existing EI benchmarks rely on synthetic prompts, single-turn cases, or third-party annotation. These approaches do not directly measure how models infer and respond to a participant's emotional state over the course of a real conversation. We introduce AttuneBench, a benchmark grounded in 200 genuine mu",
+      "category": "AI Models",
+      "summary": "AttuneBench introduces a conversation-based benchmark to assess LLMs' emotional intelligence based on genuine multi-turn conversations rather than synthetic prompts.",
+      "important": false
+    },
+    {
+      "title": "SMDD-Bench: Can LLMs Solve Real-World Small Molecule Drug Design Tasks?",
+      "url": "https://arxiv.org/abs/2605.21740",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-05-23T04:00:00.000Z",
+      "snippet": "arXiv:2605.21740v1 Announce Type: new Abstract: LLM agents have incredible potential for scientific discovery applications. However, the performance of LLM agents on real-world, small molecule drug design (SMDD) tasks across diverse chemistries and targets is unclear. Current evaluation methods are either ad hoc, too simple for real-world discovery, limited in scale, or restricted to single-turn question answering. In effort to standardize the evaluation of LLM agents on small molecule design, we introduce SMDD-Bench, a challenging, multi-turn, long-horizon agentic benchmark consisting of 502 ",
+      "category": "AI Models",
+      "summary": "Researchers introduce SMDD-Bench, a comprehensive multi-turn agentic benchmark with 502 tasks to standardize evaluation of LLM agents on real-world small molecule drug design across diverse chemistries and targets.",
+      "important": true
+    },
+    {
+      "title": "A Causal Argumentation Method for Explainability of Machine Learning Models",
+      "url": "https://arxiv.org/abs/2605.21758",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-05-23T04:00:00.000Z",
+      "snippet": "arXiv:2605.21758v1 Announce Type: new Abstract: Explainable AI (XAI) methods identify which features are relevant to a model's predictions but often fail to clarify why certain decisions are made. In this work, we present a novel method that integrates causality with argument-based reasoning to explain why models may be making predictions. Our approach first identifies causal relationships among variables using causal discovery methods and then translates these into a Bipolar Argumentation Framework (BAF) to represent supportive and opposing interactions among features. By using semi-stable se",
+      "category": "AI Models",
+      "summary": "A novel explainability method integrates causal discovery with bipolar argumentation frameworks to clarify why machine learning models make specific predictions beyond just identifying relevant features.",
+      "important": false
+    },
+    {
+      "title": "What Counts as AI Sycophancy? A Taxonomy and Expert Survey of a Fragmented Construct",
+      "url": "https://arxiv.org/abs/2605.21778",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-05-23T04:00:00.000Z",
+      "snippet": "arXiv:2605.21778v1 Announce Type: new Abstract: AI sycophancy has become a prominent concern in large language model (LLM) research. Yet the term lacks a consistent definition and has been applied to behaviors ranging from agreeing with a user's false claim to excessively praising the user to withholding corrective feedback. When researchers, companies, and policymakers use the same term to describe different behaviors, evaluation results become difficult to compare, mitigation strategies fail to transfer, and systems that are resistant to one form of sycophancy continue exhibiting other forms",
+      "category": "AI Models",
+      "summary": "Study provides a taxonomy and expert survey defining AI sycophancy in LLMs, addressing inconsistent definitions that hinder comparable evaluation and effective mitigation strategies.",
+      "important": true
+    },
+    {
+      "title": "Trace2Skill: Verifier-Guided Skill Evolution for Long-Context EDA Agents",
+      "url": "https://arxiv.org/abs/2605.21810",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-05-23T04:00:00.000Z",
+      "snippet": "arXiv:2605.21810v1 Announce Type: new Abstract: Complex Verilog Design Problems (CVDP) challenge hardware LLM agents because solving them requires localizing verifier-relevant RTL, testbenches, include paths, and build dependencies inside large repository snapshots, making precise edits, and recovering from sparse hidden-verifier failures. We present Trace2Skill, a test-time scaling framework that improves a hardware agent without RTL-specialized model fine-tuning. Rather than training a new model or only sampling more candidate solutions, Trace2Skill treats the agent's natural-language skill ",
+      "category": "AI Models",
+      "summary": "Trace2Skill presents a test-time scaling framework that improves hardware LLM agents on complex Verilog design problems through verifier-guided skill evolution without RTL-specialized fine-tuning.",
+      "important": false
+    },
+    {
+      "title": "Implicit Safety Alignment from Crowd Preferences",
+      "url": "https://arxiv.org/abs/2605.21822",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-05-23T04:00:00.000Z",
+      "snippet": "arXiv:2605.21822v1 Announce Type: new Abstract: Reinforcement Learning from Human Feedback (RLHF) can reveal implicit objectives such as safety considerations that go beyond task completion. In this work, we focus on the common safety criteria embedded in crowd preference datasets, where different users may express distinct preferences or objectives, yet follow similar safety principles. Our aim is to discover shared safety criteria from crowd preferences and then transfer them to downstream RL tasks to regularize agent behavior and enforce safety. We first show that direct reward combination-",
+      "category": "AI Models",
+      "summary": "Research demonstrates extracting implicit safety criteria from crowd preference datasets and transferring them to downstream RL tasks to enforce consistent safety alignment across different user objectives.",
+      "important": false
+    },
+    {
+      "title": "Toward AI VIS Co-Scientists: A General and End-to-End Agent Harness for Solving Complex Data Visualization Tasks",
+      "url": "https://arxiv.org/abs/2605.21825",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-05-23T04:00:00.000Z",
+      "snippet": "arXiv:2605.21825v1 Announce Type: new Abstract: The ability to inspect, interpret, and communicate complex data is crucial for virtually any scientific endeavor, but often requires significant expertise outside the core domain ranging from data management and analysis to visualization design and implementation. We present an end-to-end agentic harness that, based on only the data and a high level description of the tasks, independently designs custom visual analysis applications (VIS apps). This represents an important step towards a general AI co-scientist envisioned by many as an autonomous ",
+      "category": "AI Models",
+      "summary": "An end-to-end agentic harness enables autonomous design of custom visualization applications from raw data and high-level task descriptions, advancing toward general AI co-scientists for scientific work.",
+      "important": false
+    },
+    {
+      "title": "Microsoft reports AI is more expensive than paying human employees",
+      "url": "https://fortune.com/2026/05/22/microsoft-ai-cost-problem-tokens-agents/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-05-23T03:44:16.000Z",
+      "snippet": "Article URL: https://fortune.com/2026/05/22/microsoft-ai-cost-problem-tokens-agents/ Comments URL: https://news.ycombinator.com/item?id=48244434 Points: 201 # Comments: 59",
+      "category": "Industry Development",
+      "summary": "Microsoft reports that AI deployment costs are becoming competitive with human employee salaries, raising questions about profitability and cost-effectiveness of current AI implementations.",
+      "important": true
+    },
+    {
+      "title": "Is AI Profitable Yet?",
+      "url": "https://isaiprofitable.com/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-05-23T02:10:38.000Z",
+      "snippet": "Article URL: https://isaiprofitable.com/ Comments URL: https://news.ycombinator.com/item?id=48243863 Points: 214 # Comments: 158",
+      "category": "Industry Development",
+      "summary": "Article examines current profitability landscape of AI products and services, addressing key question of whether commercial AI has achieved sustainable business models.",
+      "important": false
+    },
+    {
+      "title": "AI is being used to resurrect the voices of dead pilots",
+      "url": "https://techcrunch.com/2026/05/22/ai-is-being-used-to-resurrect-the-voices-of-dead-pilots/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-05-22T23:03:33.000Z",
+      "snippet": "People used AI on a spectrogram image of cockpit recordings to reconstruct them, forcing the NTSB to temporarily block access to its docket system.",
+      "category": "AI Models",
+      "summary": "People used AI to reconstruct voices of dead pilots from cockpit spectrograms, prompting the NTSB to temporarily restrict access to its docket system to prevent misuse.",
+      "important": true
+    },
+    {
+      "title": "Don't just paste the AI at me",
+      "url": "https://dontquotetheai.com/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-05-22T22:57:58.000Z",
+      "snippet": "Article URL: https://dontquotetheai.com/ Comments URL: https://news.ycombinator.com/item?id=48242648 Points: 159 # Comments: 101",
+      "category": "Industry Development",
+      "summary": "Discusses concerns about uncritical AI integration and the importance of thoughtful implementation rather than simply deploying AI solutions without consideration.",
+      "important": false
+    },
+    {
+      "title": "Google goes for the glitter with disco-ball icons: ‘Are y’all sure you still want this?’",
+      "url": "https://techcrunch.com/2026/05/22/google-goes-for-the-glitter-with-disco-ball-icons-are-yall-sure-you-still-want-this/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-05-22T21:02:36.000Z",
+      "snippet": "You can now disco ball-ify your entire Pixel home screen, says Google.",
+      "category": "Industry Development",
+      "summary": "Google introduced disco ball-themed customization icons for Pixel home screens.",
+      "important": false
+    },
+    {
+      "title": "How VCs and founders use inflated ‘ARR’ to crown AI startups",
+      "url": "https://techcrunch.com/2026/05/22/how-vcs-and-founders-use-inflated-arr-to-kingmake-ai-startups/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-05-22T20:40:48.000Z",
+      "snippet": "Some AI startups are stretching traditional revenue metrics when talking about progress publicly. And their investors are fully aware.",
+      "category": "Industry Development",
+      "summary": "Some AI startups are inflating 'ARR' (Annual Recurring Revenue) metrics when discussing progress, with investors aware of the exaggeration.",
+      "important": false
+    },
+    {
+      "title": "Google&#8217;s AI search is so broken it can &#8216;disregard&#8217; what you&#8217;re looking for",
+      "url": "https://www.theverge.com/tech/936176/google-ai-overviews-search-disregard",
+      "source": "The Verge AI",
+      "publishedAt": "2026-05-22T20:39:54.000Z",
+      "snippet": "Google's AI Overviews are running into an interesting problem right now. Earlier on Friday, if you searched for the term \"disregard,\" the AI Overview section would include a response like what you'd see from a more traditional AI chatbot instead of the typical AI summary, as spotted on X. As you can see in the image at the top of this story, I got an AI Overview response that said, \"Got it. If you need anything else or have a new question later, just let me know!\" As of Friday afternoon, however, Google isn't showing an AI Overview for the term \"disregard\" at all - instead, it shows a list of ",
+      "category": "AI Models",
+      "summary": "Google's AI Overviews search feature malfunctioned when handling the term 'disregard,' returning chatbot-like responses instead of search summaries, forcing Google to temporarily disable the feature for that query.",
+      "important": false
+    },
+    {
+      "title": "AI keeps inventing fake cases. Lawyers keep citing them",
+      "url": "https://www.scientificamerican.com/article/why-lawyers-keep-citing-fake-cases-invented-by-ai/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-05-22T20:26:29.000Z",
+      "snippet": "Article URL: https://www.scientificamerican.com/article/why-lawyers-keep-citing-fake-cases-invented-by-ai/ Comments URL: https://news.ycombinator.com/item?id=48241179 Points: 57 # Comments: 5",
+      "category": "Industry Development",
+      "summary": "Reports on lawyers citing fake court cases generated by AI hallucinations, highlighting serious risks of LLM unreliability in high-stakes professional contexts.",
+      "important": true
+    },
+    {
+      "title": "Models.dev: open-source database of AI model specs, pricing, and capabilities",
+      "url": "https://github.com/anomalyco/models.dev",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-05-22T20:26:07.000Z",
+      "snippet": "Article URL: https://github.com/anomalyco/models.dev Comments URL: https://news.ycombinator.com/item?id=48241172 Points: 133 # Comments: 23",
+      "category": "Industry Development",
+      "summary": "Models.dev launches an open-source database cataloging AI model specifications, pricing, and capabilities to provide transparent comparison and discovery of available models.",
+      "important": false
+    },
+    {
+      "title": "US scrambles to stop Internet users re-creating dead pilots’ voices",
+      "url": "https://arstechnica.com/ai/2026/05/ai-users-re-create-dead-pilots-voices-from-crash-investigation-docs/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-05-22T19:39:04.000Z",
+      "snippet": "Workaround flouts law that bans NTSB disclosures of cockpit audio recordings.",
+      "category": "AI Models",
+      "summary": "The US government is attempting to stop internet users from recreating dead pilots' voices using AI, as a workaround to bypass laws restricting NTSB cockpit audio disclosure.",
+      "important": true
+    },
+    {
+      "title": "Elon Musk can’t hear you over the sound of his $1.75 trillion IPO",
+      "url": "https://techcrunch.com/podcast/elon-musk-cant-hear-you-over-the-sound-of-his-1-75-trillion-ipo/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-05-22T18:17:07.000Z",
+      "snippet": "The SpaceX S-1 is finally here, and the story it tells goes way further than rockets. The filing runs to 36 pages of risk factors alone, and the numbers inside match the ambition: a $28 trillion total addressable market, a pay package tied to establishing a Mars colony, and a valuation target that would make it the largest IPO in American […]",
+      "category": "Industry Development",
+      "summary": "SpaceX's S-1 IPO filing details a $28 trillion total addressable market and ambitious goals including a pay package tied to establishing a Mars colony.",
+      "important": false
+    },
+    {
+      "title": "Elon, stop trying to make Grok happen",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/936219/elon-stop-trying-to-make-grok-happen",
+      "source": "The Verge AI",
+      "publishedAt": "2026-05-22T17:17:06.000Z",
+      "snippet": "There is a harsh truth about Elon Musk's \"truth-seeking\" AI chatbot Grok: It's not very good, and not many people are using it. That's the takeaway of a new Reuters report, which found that Grok barely appears in federal records of how the US government used AI last year. It's not the only sign xAI's signature chatbot is in trouble, even as Musk puts it at the heart of what could be the biggest IPO in history. Reuters reviewed more than 400 examples of government AI use where specific vendors were named. Grok or xAI, it found, appeared in only three - each of those for basic uses like document",
+      "category": "Industry Development",
+      "summary": "Reuters reports that xAI's Grok chatbot has minimal adoption in US government usage, appearing in only 3 of 400+ documented AI vendor uses, undermining Musk's plans to position it as a centerpiece for an IPO.",
+      "important": false
+    },
+    {
+      "title": "Trump abruptly cancels EO signing event after top AI firm CEOs declined to go",
+      "url": "https://arstechnica.com/tech-policy/2026/05/trump-canceled-ai-safety-testing-eo-after-snub-from-tech-ceos/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-05-22T16:51:40.000Z",
+      "snippet": "Trump delays AI safety testing EO, claiming it would be an innovation “blocker.”",
+      "category": "Industry Development",
+      "summary": "Trump canceled an executive order signing event after top AI firm CEOs declined to attend, delaying an AI safety testing EO he claimed would be an innovation blocker.",
+      "important": false
+    },
+    {
+      "title": "Built AI forensic accounting software with my dad",
+      "url": "https://case-trail.com/blog/ai-forensic-accounting-automation",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-05-22T16:19:29.000Z",
+      "snippet": "Article URL: https://case-trail.com/blog/ai-forensic-accounting-automation Comments URL: https://news.ycombinator.com/item?id=48237985 Points: 50 # Comments: 39",
+      "category": "Industry Development",
+      "summary": "Founders build AI-powered forensic accounting software, demonstrating practical application of AI in specialized financial analysis and automation.",
+      "important": false
+    },
+    {
+      "title": "You can no longer Google the word ‘disregard’",
+      "url": "https://techcrunch.com/2026/05/22/you-can-no-longer-google-the-word-disregard/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-05-22T16:16:48.000Z",
+      "snippet": "After Google Search's AI update, the word \"disregard\" now effectively breaks the search interface.",
+      "category": "AI Models",
+      "summary": "Google Search's AI update breaks when processing the word 'disregard,' rendering the search interface unusable for that query.",
+      "important": false
+    },
+    {
+      "title": "We tried Google’s AI glasses and they’re almost there",
+      "url": "https://techcrunch.com/2026/05/22/we-tried-googles-ai-glasses-and-theyre-almost-there/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-05-22T15:37:15.000Z",
+      "snippet": "Google demoed prototype Android XR glasses that overlay Gemini-powered translation, navigation, and other information directly into your field of view.",
+      "category": "AI Models",
+      "summary": "Google demonstrated prototype Android XR glasses featuring Gemini-powered translation, navigation, and information overlays in the user's field of view.",
+      "important": true
+    },
+    {
+      "title": "The literary world isn’t prepared for AI",
+      "url": "https://www.theverge.com/tech/936073/ai-writing-granta-commonwealth-prize",
+      "source": "The Verge AI",
+      "publishedAt": "2026-05-22T14:30:00.000Z",
+      "snippet": "Since 2012, the British literary magazine Granta has published the regional winners of the annual Commonwealth Short Story Prize. This year, however, there was something off about one of the selections for the prestigious award: It appears to have been written by AI. Jamir Nazir's \"The Serpent in the Grove\" has many of the hallmarks of LLM-generated prose - mixed metaphors, anaphora, lists of threes. (I'm aware this, too, is a list of threes, and I promise I wrote this post myself, unassisted, as I write all things.) I'll admit I was initially unconvinced by the allegation that Nazir's story h",
+      "category": "Industry Development",
+      "summary": "A story selected for the prestigious Commonwealth Short Story Prize appears to have been generated by an LLM, highlighting inadequate screening processes in the literary world for AI-written submissions.",
+      "important": false
+    },
+    {
+      "title": "SpaceX files to go public, and the math requires a little faith",
+      "url": "https://techcrunch.com/video/spacex-files-to-go-public-and-the-math-requires-a-little-faith/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-05-22T14:30:00.000Z",
+      "snippet": "The SpaceX S-1 is finally here, and the story it tells goes way further than rockets. The filing runs to 36 pages of risk factors alone, and the numbers inside match the ambition: a $28 trillion total addressable market, a pay package tied to establishing a Mars colony, and a valuation target that would make it the largest IPO in American […]",
+      "category": "Industry Development",
+      "summary": "SpaceX files for IPO with ambitious valuations and market projections, requiring significant assumptions about future growth and technological achievement.",
+      "important": false
+    },
+    {
+      "title": "Spotify says its AI remix tool is for superfans, but I&#8217;m not convinced",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/936072/spotify-umg-ai-music-remix-cover-superfan",
+      "source": "The Verge AI",
+      "publishedAt": "2026-05-22T14:20:00.000Z",
+      "snippet": "Prompt something better than Beyoncé’s “Break My Soul,” I dare you. | Image: Cath Virginia / The Verge | Photo from Getty Images AI covers and remixes of songs are already a blight on the internet. Spotify, YouTube, TikTok, and Instagram are awash in flat reggae versions of \"Smells Like Teen Spirit,\" dinky country renditions of The Weeknd, and monotonous Motown reimaginings of AC/DC. Now, a new tool from Spotify will make them even easier to generate and share. Spotify and Universal Music Group (UMG) signed a licensing deal that will allow users to generate remixes and covers from UMG's catalo",
+      "category": "Industry Development",
+      "summary": "Spotify and Universal Music Group signed a licensing deal enabling users to generate AI remixes and covers, raising concerns about proliferation of low-quality AI-generated music.",
+      "important": false
+    },
+    {
+      "title": "AI put \"synthetic quotes\" in his book. But this author wants to keep using it.",
+      "url": "https://arstechnica.com/ai/2026/05/ai-put-synthetic-quotes-in-his-book-but-this-author-wants-to-keep-using-it/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-05-22T14:05:56.000Z",
+      "snippet": "Steven Rosenbaum explains how inaccurate quotes got into his book The Future of Truth.",
+      "category": "Industry Development",
+      "summary": "Author Steven Rosenbaum defends his use of AI-generated synthetic quotes in his book despite inaccuracies, raising concerns about AI's role in content creation.",
+      "important": false
+    },
+    {
+      "title": "AI has a multiplying effect on existing technical skills",
+      "url": "https://www.joshwcomeau.com/email/wham-launch-005-elephant-2-p/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-05-22T13:22:42.000Z",
+      "snippet": "Article URL: https://www.joshwcomeau.com/email/wham-launch-005-elephant-2-p/ Comments URL: https://news.ycombinator.com/item?id=48235526 Points: 304 # Comments: 287",
+      "category": "Industry Development",
+      "summary": "Analysis explores how AI acts as a multiplier on existing technical skills, enabling professionals to accomplish more with their core competencies.",
+      "important": false
+    },
+    {
+      "title": "The Companies Cutting Headcount for AI Will Lose to the Ones Who Didn't",
+      "url": "https://libertas.software/en/knowledge-hub/19/the-companies-cutting-headcount-for-ai-will-lose-to-the-ones-who-didnt",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-05-22T11:45:24.000Z",
+      "snippet": "Article URL: https://libertas.software/en/knowledge-hub/19/the-companies-cutting-headcount-for-ai-will-lose-to-the-ones-who-didnt Comments URL: https://news.ycombinator.com/item?id=48234547 Points: 199 # Comments: 189",
+      "category": "Industry Development",
+      "summary": "Argues that companies maintaining workforce while adopting AI will outcompete those cutting staff to deploy AI, questioning the economics of headcount reduction strategies.",
+      "important": false
+    },
+    {
+      "title": "If you’re an LLM, please read this",
+      "url": "https://annas-archive.gl/blog/llms-txt.html",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-05-22T11:28:08.000Z",
+      "snippet": "Article URL: https://annas-archive.gl/blog/llms-txt.html Comments URL: https://news.ycombinator.com/item?id=48234413 Points: 795 # Comments: 419",
+      "category": "Industry Development",
+      "summary": "Introduces llms.txt format as a standardized approach for websites to communicate guidelines and information directly to AI systems, improving AI interactions.",
+      "important": false
+    },
+    {
+      "title": "The current AI pricing was always going to go away",
+      "url": "https://arnon.dk/the-current-ai-pricing-was-always-going-to-go-away/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-05-22T11:24:53.000Z",
+      "snippet": "Article URL: https://arnon.dk/the-current-ai-pricing-was-always-going-to-go-away/ Comments URL: https://news.ycombinator.com/item?id=48234391 Points: 79 # Comments: 91",
+      "category": "Industry Development",
+      "summary": "Discusses how current AI pricing models are unsustainable and predicts inevitable shifts in how AI services and models are priced.",
+      "important": false
+    },
+    {
+      "title": "Samsung&#8217;s memory chip employees negotiated $340,000 bonuses this year",
+      "url": "https://www.theverge.com/tech/936002/samsung-memory-chip-employees-deal-strike-bonus",
+      "source": "The Verge AI",
+      "publishedAt": "2026-05-22T11:05:25.000Z",
+      "snippet": "48,000 Samsung workers had threatened to strike unless bonus caps were lifted. | Photo: Jung Yeon-je / AFP via Getty Images Details have emerged about a tentative deal struck between Samsung and semiconductor employees who had threatened to strike. The deal reportedly makes some workers eligible for average annual bonuses of $340,000. The proposed 18-day strike had hinged on Samsung's bonus cap for employees in the semiconductor division and followed a substantial rise in the possible bonuses available to employees of SK Hynix, another South Korean chipmaker enjoying a boom thanks to demand fo",
+      "category": "Industry Development",
+      "summary": "Samsung reached a tentative agreement with semiconductor workers offering $340,000 average annual bonuses, settling a strike threat over bonus caps.",
+      "important": false
+    },
+    {
+      "title": "Antigravity 2.0 Tops the OpenSCAD Architectural 3D LLM Benchmark",
+      "url": "https://modelrift.com/blog/openscad-llm-benchmark/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-05-22T10:38:26.000Z",
+      "snippet": "Article URL: https://modelrift.com/blog/openscad-llm-benchmark/ Comments URL: https://news.ycombinator.com/item?id=48234090 Points: 379 # Comments: 148",
+      "category": "AI Models",
+      "summary": "Antigravity 2.0 achieves top performance on OpenSCAD Architectural 3D LLM Benchmark, demonstrating significant progress in LLM capabilities for 3D design tasks.",
+      "important": true
+    },
+    {
+      "title": "Google I/O showed how the path for AI-driven science is shifting",
+      "url": "https://www.technologyreview.com/2026/05/22/1137813/google-i-o-showed-how-the-path-for-ai-science-is-shifting/",
+      "source": "MIT Tech Review AI",
+      "publishedAt": "2026-05-22T10:00:00.000Z",
+      "snippet": "During Tuesday’s Google I/O keynote, Demis Hassabis, the CEO of Google DeepMind, proclaimed that we are currently “standing in the foothills of the singularity.” It was a striking statement—the singularity is the theoretical future moment when AI rapidly exceeds human intelligence and dramatically transforms the world. But what struck me as I listened in the…",
+      "category": "AI Models",
+      "summary": "Google I/O keynote featured Demis Hassabis proclaiming that AI is approaching singularity-level capabilities, with focus on AI's potential for scientific advancement.",
+      "important": false
+    },
+    {
+      "title": "Steve Wozniak cheered after telling students they have AI – actual intelligence",
+      "url": "https://www.businessinsider.com/steve-wozniak-apple-ai-graduation-speech-2026-5",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-05-22T09:04:54.000Z",
+      "snippet": "Article URL: https://www.businessinsider.com/steve-wozniak-apple-ai-graduation-speech-2026-5 Comments URL: https://news.ycombinator.com/item?id=48233563 Points: 623 # Comments: 515",
+      "category": "Industry Development",
+      "summary": "Steve Wozniak advocates for distinguishing between artificial intelligence and actual intelligence in graduation speech, promoting critical thinking about AI capabilities.",
+      "important": false
+    },
     {
       "title": "In SpaceX’s IPO, Elon Musk is a risk factor",
       "url": "https://www.theverge.com/science/935102/spacex-ipo-elon-musk-tesla-cybertruck-xai-risk-factor",
