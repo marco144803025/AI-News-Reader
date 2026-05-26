@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-24T08:16:53.437Z",
+  "generatedAt": "2026-05-26T09:36:07.255Z",
   "daysBack": 1,
   "categories": [
     "Industry Development",
@@ -7,6 +7,276 @@
     "MCP"
   ],
   "articles": [
+    {
+      "title": "A reality check on the AI jobs hysteria",
+      "url": "https://www.technologyreview.com/2026/05/26/1137855/a-reality-check-on-the-ai-jobs-hysteria/",
+      "source": "MIT Tech Review AI",
+      "publishedAt": "2026-05-26T09:00:00.000Z",
+      "snippet": "Haven’t you heard? White-collar jobs are going away, decimated by AI. Waves of layoffs in the tech sector (most recently at Coinbase and Meta and Cisco) are said to presage what will soon come for all of us knowledge workers. But before you quit your job as a software developer or financial analyst—or tech journalist—and…",
+      "category": "Industry Development",
+      "summary": "Despite recent tech sector layoffs, aggregate employment in developed countries remains stable with limited evidence that AI has significantly impacted headline unemployment numbers.",
+      "important": false
+    },
+    {
+      "title": "It’s time to address the looming crisis in entry-level work.",
+      "url": "https://www.technologyreview.com/2026/05/26/1137865/its-time-to-address-the-looming-crisis-in-entry-level-work/",
+      "source": "MIT Tech Review AI",
+      "publishedAt": "2026-05-26T09:00:00.000Z",
+      "snippet": "Artificial intelligence has not so far produced a clean story of mass unemployment. Aggregate employment in developed countries remains broadly stable, and recent assessments have found limited evidence that AI has shifted the headline numbers. But a troubling change may be hiding beneath the surface: the quiet weakening of the first rung of the career…",
+      "category": "Industry Development",
+      "summary": "While overall employment remains stable, AI may be quietly weakening entry-level career opportunities and the first rung of career advancement.",
+      "important": true
+    },
+    {
+      "title": "Notes on Pope Leo XIV's Encyclical on AI",
+      "url": "https://simonwillison.net/2026/May/25/encyclical-on-ai/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-05-26T04:45:29.000Z",
+      "snippet": "Article URL: https://simonwillison.net/2026/May/25/encyclical-on-ai/ Comments URL: https://news.ycombinator.com/item?id=48275098 Points: 52 # Comments: 7",
+      "category": "Industry Development",
+      "summary": "Discussion and commentary on Pope Leo XIV's encyclical regarding AI and its societal implications.",
+      "important": false
+    },
+    {
+      "title": "In Search of the Ingredients of Open-Endedness: Replicating Picbreeder with Large Vision-Language Models",
+      "url": "https://arxiv.org/abs/2605.23908",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-05-26T04:00:00.000Z",
+      "snippet": "arXiv:2605.23908v1 Announce Type: new Abstract: We are in the midst of large-scale industrial and academic efforts to automate the processes of scientific, technological and creative production through AI-driven assistants. Historically, a fundamental property of these processes in their human form has been their open-endedness: their capacity for generating a seemingly endless supply of novel and meaningful new forms. Do artificial agents have any capacity for such fruitful unguided discovery? To answer this question, we turn to Picbreeder, the canonical exemplar of human-driven open-ended se",
+      "category": "AI Models",
+      "summary": "Researchers investigate whether large vision-language models can replicate Picbreeder's open-ended creative process, enabling autonomous discovery of novel and meaningful forms.",
+      "important": false
+    },
+    {
+      "title": "Confidence Calibration in Large Language Models",
+      "url": "https://arxiv.org/abs/2605.23909",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-05-26T04:00:00.000Z",
+      "snippet": "arXiv:2605.23909v1 Announce Type: new Abstract: We investigate the calibration of large language models' (LLMs') confidence across diverse tasks. The results of our preregistered study show that the current crop of LLMs are, like people, too sure they are right: confidence exceeds accuracy, on average. Importantly, however, this tendency is moderated by a powerful hard-easy effect, wherein overconfidence is greatest on difficult tests; by contrast, easy tests actually show substantial underconfidence. We develop LifeEval, a test for evaluating model calibration across levels of difficulty.",
+      "category": "AI Models",
+      "summary": "Study reveals that LLMs exhibit overconfidence similar to humans, with greatest overconfidence on difficult tasks and underconfidence on easy ones, introducing LifeEval for calibration testing.",
+      "important": true
+    },
+    {
+      "title": "How Much Thinking is Enough? Quantifying and Understanding Redundancy in LLM Reasoning",
+      "url": "https://arxiv.org/abs/2605.23926",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-05-26T04:00:00.000Z",
+      "snippet": "arXiv:2605.23926v1 Announce Type: new Abstract: Reasoning-capable large language models solve hard problems by emitting long chains of thought, paying heavily in latency, GPU time, and energy. Casual inspection of their traces reveals extensive reformulation, verification, and circular self-reflection, yet how much of this deliberation is actually necessary has never been measured at scale or explained from first principles. This paper closes both gaps. We formalise reasoning redundancy directly in terms of the reasoning model itself: the redundancy of a correct trace is the largest fraction o",
+      "category": "AI Models",
+      "summary": "Research quantifies redundancy in LLM reasoning chains, showing extensive reformulation and self-reflection that may be unnecessary and wasteful in terms of latency and compute.",
+      "important": false
+    },
+    {
+      "title": "Context: Proactive Goal-Directed Intelligence via Composable Sandboxed Programs, Declarative Wiring, and Structured Interaction",
+      "url": "https://arxiv.org/abs/2605.23928",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-05-26T04:00:00.000Z",
+      "snippet": "arXiv:2605.23928v1 Announce Type: new Abstract: We present Context, the intelligence layer of the Magarshak Architecture, which replaces reactive query-response chatbots with proactive goal-directed agents that advance shared tasks without waiting for user prompts. The architecture rests on three mutually reinforcing mechanisms. Write-time context assembly precomputes enriched typed attributes via Groker agents, assembling interaction context as a deterministic pure function of graph state; context blocks are byte-identical across turns between semantic changes, enabling near-100% KV-cache reu",
+      "category": "AI Models",
+      "summary": "Context introduces a proactive goal-directed intelligence layer that replaces reactive chatbots with agents capable of advancing shared tasks using composable sandboxed programs.",
+      "important": false
+    },
+    {
+      "title": "Toward Reliable Design of LLM-Enabled Agentic Workflows: Optimizing Latency-Reliability-Cost Tradeoffs",
+      "url": "https://arxiv.org/abs/2605.23929",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-05-26T04:00:00.000Z",
+      "snippet": "arXiv:2605.23929v1 Announce Type: new Abstract: Modern AI systems increasingly rely on workflows composed of multiple interacting agents, some powered by large language models (LLMs) and others by conventional computational modules. This paper analyzes the fundamental tradeoffs between latency, reliability, and cost in LLM-enabled agentic workflows. We introduce performance models for both LLM and non-LLM agents that capture the relationship between computational effort and output quality, incorporating the impact of reasoning and output tokens for LLM agents using a parametric exponential rel",
+      "category": "AI Models",
+      "summary": "Research analyzes fundamental tradeoffs between latency, reliability, and cost in workflows composed of multiple interacting LLM and non-LLM agents.",
+      "important": false
+    },
+    {
+      "title": "Quantum Frog: Emergent Cooperation and Difficulty Scaling in a Quantized-Time Cooperative Game",
+      "url": "https://arxiv.org/abs/2605.23930",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-05-26T04:00:00.000Z",
+      "snippet": "arXiv:2605.23930v1 Announce Type: new Abstract: We introduce \\emph{Quantum Frog}, a two-player cooperative game built on a novel \\emph{quantized-time} mechanic in which the environment advances only when a player acts. Inspired by the classic arcade game Frogger, Quantum Frog requires two frogs to cross an 8$\\times$8 grid of traffic and reach the far side together. We use reinforcement learning (RL) as an analytical lens to answer four design questions: (1) how does game difficulty scale with traffic density, (2) what is the optimal single-agent policy and why, (3) how large is the cooperation",
+      "category": "AI Models",
+      "summary": "Quantum Frog introduces a cooperative game with quantized-time mechanics to study how game difficulty, optimal policies, and cooperation scale in multi-agent reinforcement learning.",
+      "important": false
+    },
+    {
+      "title": "BODHI: Precise OS Kernel Specification Inference",
+      "url": "https://arxiv.org/abs/2605.23931",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-05-26T04:00:00.000Z",
+      "snippet": "arXiv:2605.23931v1 Announce Type: new Abstract: The formal verification of operating system kernels requires precise specifications that capture the intended behavior of system calls. Writing these specifications manually demands deep domain expertise, motivating the use of large language models (LLMs) to automate the process. However, in OSV-Bench, a benchmark of 245 specification generation tasks derived from the Hyperkernel OS kernel, the best reported Pass@1 is 55.10%. We propose a domain knowledge prompting method (BODHI), which augments the standard few-shot prompt with a structured C-to",
+      "category": "AI Models",
+      "summary": "BODHI proposes domain knowledge prompting methods to improve LLM performance on OS kernel specification inference, addressing a 55.10% Pass@1 benchmark ceiling.",
+      "important": false
+    },
+    {
+      "title": "When Correct Beliefs Collapse: Epistemic Resilience of LLMs under Clinical Pressure",
+      "url": "https://arxiv.org/abs/2605.23932",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-05-26T04:00:00.000Z",
+      "snippet": "arXiv:2605.23932v1 Announce Type: new Abstract: Despite strong medical benchmark accuracy, LLMs can exhibit severe multi-turn sycophancy in clinical dialogue, abandoning initial correct diagnosis under escalating pressure. We propose \\textbf{\\textsc{Med-Stress}}, a targeted stress test framework that evaluates belief stability under escalating pressure. Across nine frontier large language models (LLMs), we find a clear dissociation between medical knowledge and robustness: high initial diagnostic capability does not imply high belief stability, yielding large knowledge-robustness gaps for seve",
+      "category": "AI Models",
+      "summary": "Med-Stress framework reveals that LLMs exhibit severe multi-turn sycophancy in clinical dialogue, abandoning correct diagnoses under escalating pressure despite strong medical benchmark accuracy.",
+      "important": true
+    },
+    {
+      "title": "Practical Quantum CIM Empowerment via All-Domestic-Core Agentic Large Model",
+      "url": "https://arxiv.org/abs/2605.23934",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-05-26T04:00:00.000Z",
+      "snippet": "arXiv:2605.23934v1 Announce Type: new Abstract: Quantum computing devices are recognized as powerful tools for solving NP-complete problems. However, the intricacy of their modeling presents notable barriers for non-specialists, while the tedious iteration of constraint weights and modeling methodologies also consumes substantial effort on the part of experts. To address these challenges, this study integrates a femtosecond laser-pumped Coherent Ising Machine (CIM) with an LLM-driven agentic system by leveraging the LangGraph and LangChain frameworks. Comprehensive investigations demonstrate t",
+      "category": "AI Models",
+      "summary": "Researchers integrate a quantum Coherent Ising Machine with LLM-driven agentic systems using LangGraph and LangChain to address modeling barriers for non-specialists.",
+      "important": false
+    },
+    {
+      "title": "Operationalizing Reconstructive Authority: Runtime Construction, Dependency Resolution, and Execution Gating in Autonomous Agent Systems",
+      "url": "https://arxiv.org/abs/2605.23935",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-05-26T04:00:00.000Z",
+      "snippet": "arXiv:2605.23935v1 Announce Type: new Abstract: Autonomous agent systems fail not only due to incorrect decisions, but due to executing decisions whose authority no longer holds at runtime. Prior work defined Reconstructive Authority (RAM) as a condition for valid execution: actions are permitted only if authority can be constructed from current state. This paper addresses enforcement at runtime: how to enforce this condition in a running system. We introduce a runtime execution model in which authority is evaluated at action time and execution is conditioned on its constructibility. This exte",
+      "category": "AI Models",
+      "summary": "Research addresses runtime enforcement of Reconstructive Authority in autonomous agent systems, ensuring actions are executed only when authority can be constructed from current state.",
+      "important": false
+    },
+    {
+      "title": "Authority Inversion in LLM-Mediated Ubiquitous Systems: When Models Trust Users Over Sensors",
+      "url": "https://arxiv.org/abs/2605.23938",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-05-26T04:00:00.000Z",
+      "snippet": "arXiv:2605.23938v1 Announce Type: new Abstract: Large language models (LLMs) increasingly fuse heterogeneous inputs in ubiquitous systems. Yet, how LLMs implicitly allocate authority when sensor measurements and user claims conflict remains unexamined, raising critical reliability concerns for deployments where physical sensing must retain priority. Unlike explicit traditional fusion, LLMs bury authority allocation within learned representations. We discover this allocation is severely format-dependent: numerical sensor data fails to integrate into answer-relevant model directions, allowing na",
+      "category": "AI Models",
+      "summary": "Study reveals that LLMs exhibit authority inversion in ubiquitous systems, prioritizing user claims over sensor measurements in a format-dependent manner, raising reliability concerns.",
+      "important": true
+    },
+    {
+      "title": "DRIVE: Modeling Skills at the Reasoning and Interaction Levels for Web Agents under Continual Learning",
+      "url": "https://arxiv.org/abs/2605.23939",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-05-26T04:00:00.000Z",
+      "snippet": "arXiv:2605.23939v1 Announce Type: new Abstract: Web agents require both high-level reasoning (for task decomposition) and low-level interactions (for page elements manipulation) to conduct different tasks. However, these knowledge types differ fundamentally: reasoning knowledge (e.g., booking a flight requires first searching for routes) is abstract and transferable across websites, while interaction knowledge (e.g., clicking the Search button at a specific coordinate on Site A) depends heavily on page-specific contexts. Existing methods store experiences uniformly. This creates a dilemma: abs",
+      "category": "AI Models",
+      "summary": "DRIVE models skills at reasoning and interaction levels for web agents, addressing the fundamental difference between transferable reasoning knowledge and page-specific interaction knowledge.",
+      "important": false
+    },
+    {
+      "title": "Residual Drift Dominates Contradiction in Multi-Turn Constraint Reasoning",
+      "url": "https://arxiv.org/abs/2605.23940",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-05-26T04:00:00.000Z",
+      "snippet": "arXiv:2605.23940v1 Announce Type: new Abstract: How do multi-turn reasoning systems fail? The expected answer is logical contradiction, in which the system's maintained state becomes unsatisfiable. We show that the dominant mode is instead satisfiable drift, where the internal state stays consistent while the returned answer silently violates prior commitments. We build DRIFT-Bench (Decomposing Reasoning Into Failure Types), a solver-instrumented benchmark of 816 test problems across three constraint domains, and evaluate four methods on it across four open-weight models (8B-120B parameters). ",
+      "category": "AI Models",
+      "summary": "DRIFT-Bench benchmark shows that multi-turn reasoning systems fail primarily through satisfiable drift rather than logical contradiction, with internal state remaining consistent while answers violate commitments.",
+      "important": true
+    },
+    {
+      "title": "MEMOR-E: In-Context and Fine-Tuned LLM Personalization for Alzheimer's Assistive Robotics",
+      "url": "https://arxiv.org/abs/2605.23941",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-05-26T04:00:00.000Z",
+      "snippet": "arXiv:2605.23941v1 Announce Type: new Abstract: Alzheimer's disease is a neurodegenerative disorder marked by progressive declines in memory and language that reduce independence in daily life, motivating socially assistive robotic support. This paper presents MEMOR-E, a mobile quadruped robot with an interactive tablet interface that assists patients and caregivers through medication reminders, routine guidance, memory oriented interactions, and companionship. We evaluated the feasibility of fine tuning large language models (LLMs) to emulate stage consistent cognitive behavior and interpret ",
+      "category": "AI Models",
+      "summary": "MEMOR-E is a mobile robot with LLM-powered personalization for Alzheimer's assistive care, demonstrating feasibility of fine-tuning models to emulate stage-consistent cognitive behavior.",
+      "important": false
+    },
+    {
+      "title": "Right-Sizing Communication and Recommendation Set Size in AI-Assisted Search",
+      "url": "https://arxiv.org/abs/2605.23944",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-05-26T04:00:00.000Z",
+      "snippet": "arXiv:2605.23944v1 Announce Type: new Abstract: We model the interaction between a user and an AI driven recommendation system. The user initiates the process by conveying preference information through a costly and noisy message. The AI assistant, acting as a Bayesian agent, interprets the user's message to form a posterior belief about their true preferences and make product recommendations. In particular, it determines how many recommendations to present so as to maximize the user's expected utility from their final choice, while accounting for the search cost induced by the size of the rec",
+      "category": "AI Models",
+      "summary": "Research models interaction between users and AI recommendation systems, determining optimal recommendation set sizes to maximize user utility while accounting for search costs.",
+      "important": false
+    },
+    {
+      "title": "Using AI to write better code more slowly",
+      "url": "https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-05-25T23:16:59.000Z",
+      "snippet": "Article URL: https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/ Comments URL: https://news.ycombinator.com/item?id=48272984 Points: 629 # Comments: 242",
+      "category": "Industry Development",
+      "summary": "Article explores how AI tools can help developers write better quality code despite potentially slowing down development speed.",
+      "important": false
+    },
+    {
+      "title": "Norway's 2 petabytes of Huawei flash storage and LLM training",
+      "url": "https://www.blocksandfiles.com/flash/2026/05/22/norways-2-petabytes-of-huawei-flash-storage-and-llm-training/5244910",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-05-25T19:37:57.000Z",
+      "snippet": "Article URL: https://www.blocksandfiles.com/flash/2026/05/22/norways-2-petabytes-of-huawei-flash-storage-and-llm-training/5244910 Comments URL: https://news.ycombinator.com/item?id=48270770 Points: 266 # Comments: 173",
+      "category": "Industry Development",
+      "summary": "Norway is deploying 2 petabytes of Huawei flash storage infrastructure for LLM training operations.",
+      "important": false
+    },
+    {
+      "title": "What ClickUp’s mass layoff tells us about the future of work",
+      "url": "https://techcrunch.com/2026/05/25/what-clickups-mass-layoff-tells-us-about-the-future-of-work/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-05-25T16:00:00.000Z",
+      "snippet": "The nine-year-old startup is replacing hundreds of employees with thousands of AI agents.",
+      "category": "Industry Development",
+      "summary": "ClickUp is replacing hundreds of employees with thousands of AI agents as part of a mass layoff, signaling a significant shift in workforce automation strategies.",
+      "important": true
+    },
+    {
+      "title": "The pope’s AI encyclical isn’t really about AI",
+      "url": "https://techcrunch.com/2026/05/25/the-popes-ai-encyclical-isnt-really-about-ai/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-05-25T15:09:41.000Z",
+      "snippet": "Pope Leo XIV's first encyclical uses AI as a lens to diagnose older problems: concentrated power, eroding democracy, and a tech elite that shapes the world to its own advantage.",
+      "category": "Industry Development",
+      "summary": "Pope Leo XIV's AI encyclical addresses broader systemic issues of concentrated power, eroding democracy, and tech elite influence rather than focusing solely on AI technology itself.",
+      "important": false
+    },
+    {
+      "title": "Pope Leo calls for being ‘profoundly human’ in the age of AI",
+      "url": "https://www.theverge.com/news/936945/pope-leo-letter-encyclical-ai-anthropic-labor-warfare",
+      "source": "The Verge AI",
+      "publishedAt": "2026-05-25T15:05:07.000Z",
+      "snippet": "Pope Leo XIV attends the presentation of his first Encyclical Letter \"Magnifica humanitas\" on May 25, 2026 in Vatican City, Vatican. | Getty Images Pope Leo XIV warned of the risks of AI and unconstrained technological power in his first major papal document released on Monday. Magnifica Humanitas is the pope's manifesto on \"safeguarding the human person in the time of artificial intelligence,\" in which he discusses the dangers of AI-powered warfare, the effects of AI on labor, and the need for new legal and ethical frameworks to govern technology. In his papal encyclical - a kind of open lett",
+      "category": "Industry Development",
+      "summary": "Pope Leo XIV released his first encyclical 'Magnifica Humanitas' warning of AI risks including AI-powered warfare, labor displacement, and calling for new legal and ethical frameworks to govern technology.",
+      "important": true
+    },
+    {
+      "title": "Startup Battlefield 200 applications close in days: Apply before May 27",
+      "url": "https://techcrunch.com/2026/05/25/startup-battlefield-200-applications-close-in-days-apply-before-may-27/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-05-25T14:30:00.000Z",
+      "snippet": "The deadline to apply or nominate for Startup Battlefield 200 is May 27. This is your shot at VC access, global visibility, TechCrunch coverage, and $100,000. Apply now.",
+      "category": "Industry Development",
+      "summary": "TechCrunch Startup Battlefield 200 applications close May 27, offering startups VC access, coverage, and $100,000 in funding.",
+      "important": false
+    },
+    {
+      "title": "5 days left: Save up to $410 on TechCrunch Disrupt 2026 passes before prices increase",
+      "url": "https://techcrunch.com/2026/05/25/5-days-left-save-up-to-410-on-techcrunch-disrupt-2026-passes-before-prices-increase/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-05-25T14:00:00.000Z",
+      "snippet": "Early Bird savings for TechCrunch Disrupt 2026 in San Francisco end May 29 at 11:59 p.m. PT. Register now to save up to $410 before prices increase.",
+      "category": "Industry Development",
+      "summary": "TechCrunch Disrupt 2026 early-bird registration discounts end May 29, with savings up to $410 available.",
+      "important": false
+    },
+    {
+      "title": "Pope Leo XIV says AI must serve humanity, not the powerful few",
+      "url": "https://religionnews.com/2026/05/25/in-his-first-encyclical-pope-leo-xiv-says-ai-must-serve-humanity-not-the-powerful-few/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-05-25T13:17:58.000Z",
+      "snippet": "Article URL: https://religionnews.com/2026/05/25/in-his-first-encyclical-pope-leo-xiv-says-ai-must-serve-humanity-not-the-powerful-few/ Comments URL: https://news.ycombinator.com/item?id=48266485 Points: 338 # Comments: 67",
+      "category": "Industry Development",
+      "summary": "Pope Leo XIV's first encyclical addresses AI ethics, emphasizing that AI must serve all of humanity rather than concentrate power among a select few.",
+      "important": false
+    },
+    {
+      "title": "Pope Leo: opaque AI run by few firms risks \"New Forms of Dehumanization\"",
+      "url": "https://variety.com/2026/biz/global/pope-leo-ai-encyclical-algorithms-threaten-dehumanisation-1236758186/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-05-25T13:12:40.000Z",
+      "snippet": "Article URL: https://variety.com/2026/biz/global/pope-leo-ai-encyclical-algorithms-threaten-dehumanisation-1236758186/ Comments URL: https://news.ycombinator.com/item?id=48266435 Points: 164 # Comments: 2",
+      "category": "Industry Development",
+      "summary": "Pope Leo XIV warns that opaque AI systems controlled by a small number of firms pose risks of creating new forms of dehumanization.",
+      "important": false
+    },
     {
       "title": "Ferrari is using IBM’s AI to create F1 superfans",
       "url": "https://techcrunch.com/2026/05/23/ferrari-is-using-ai-to-create-f1-superfans/",
@@ -1286,15 +1556,6 @@
       "category": "AI Models",
       "summary": "Graduates at college commencements booed optimistic AI-focused speeches, reflecting widespread anxiety about AI's societal implications among recent graduates.",
       "important": false
-    },
-    {
-      "title": "Sample article — run `npm run ingest` to load real news",
-      "url": "https://example.com",
-      "source": "Placeholder",
-      "publishedAt": "2026-05-18T08:00:00.000Z",
-      "snippet": "This is placeholder data.",
-      "category": "MCP",
-      "summary": "Placeholder entry. Add your ANTHROPIC_API_KEY to .env and run `npm run ingest` to replace this with real categorized AI news."
     }
   ]
 }
