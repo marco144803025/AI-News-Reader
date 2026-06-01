@@ -23,20 +23,35 @@ export default function App() {
       .catch((e: Error) => setError(e.message));
   }, []);
 
-  const filtered = useMemo(() => {
+  // Search-filtered articles (no category filter) — used for tab counts
+  const searchFiltered = useMemo(() => {
     if (!data) return [];
     const q = query.trim().toLowerCase();
-    return data.articles.filter((a) => {
-      if (activeCategory !== "All" && a.category !== activeCategory) return false;
-      if (showNotableOnly && activeCategory === "Research" && !a.important) return false;
-      if (!q) return true;
-      return (
+    if (!q) return data.articles;
+    return data.articles.filter(
+      (a) =>
         a.title.toLowerCase().includes(q) ||
         a.summary.toLowerCase().includes(q) ||
         a.source.toLowerCase().includes(q)
-      );
+    );
+  }, [data, query]);
+
+  const categoryCounts = useMemo(() => {
+    const map = new Map<string, number>();
+    map.set("All", searchFiltered.length);
+    for (const a of searchFiltered) {
+      map.set(a.category, (map.get(a.category) ?? 0) + 1);
+    }
+    return map;
+  }, [searchFiltered]);
+
+  const filtered = useMemo(() => {
+    return searchFiltered.filter((a) => {
+      if (activeCategory !== "All" && a.category !== activeCategory) return false;
+      if (showNotableOnly && activeCategory === "Research" && !a.important) return false;
+      return true;
     });
-  }, [data, query, activeCategory, showNotableOnly]);
+  }, [searchFiltered, activeCategory, showNotableOnly]);
 
   const grouped = useMemo(() => {
     const map = new Map<string, typeof filtered>();
@@ -50,9 +65,9 @@ export default function App() {
 
   if (error) {
     return (
-      <div className="mx-auto max-w-2xl p-8">
-        <h1 className="text-xl font-bold text-slate-800">AI News Reader</h1>
-        <p className="mt-4 rounded-lg bg-amber-50 p-4 text-sm text-amber-800">
+      <div className="min-h-screen bg-canvas p-8">
+        <span className="font-mono text-sm font-bold tracking-widest text-ink">AI BRIEFING</span>
+        <p className="mt-6 rounded border border-[rgba(227,179,65,0.25)] bg-[rgba(227,179,65,0.07)] p-4 font-mono text-xs text-ember">
           {error}
         </p>
       </div>
@@ -60,68 +75,108 @@ export default function App() {
   }
 
   if (!data) {
-    return <div className="p-8 text-slate-500">Loading…</div>;
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-canvas">
+        <span className="font-mono text-xs text-ink-muted">loading briefing...</span>
+      </div>
+    );
   }
 
   const staleness = daysAgo(data.generatedAt);
+  const tabs = ["All", ...data.categories];
 
   return (
-    <div className="min-h-screen bg-slate-50">
-      <div className="mx-auto max-w-5xl px-4 py-8">
-        <header className="mb-6">
-          <h1 className="text-2xl font-bold text-slate-900">AI News Reader</h1>
-          <p className="mt-1 text-sm text-slate-500">
-            Last refreshed {new Date(data.generatedAt).toLocaleString()} (
-            {staleness === 0 ? "today" : `${staleness} day${staleness === 1 ? "" : "s"} ago`}
-            ) · {data.articles.length} articles
-          </p>
-        </header>
+    <div className="flex h-screen flex-col overflow-hidden bg-canvas text-ink">
+      {/* Top Bar */}
+      <header className="flex shrink-0 items-center gap-4 border-b border-[rgba(240,246,252,0.08)] bg-surface-1 px-5 py-3">
+        <div className="flex flex-1 items-baseline gap-2.5">
+          <span className="font-mono text-sm font-bold tracking-widest text-ink">
+            AI BRIEFING
+          </span>
+          <span className="hidden font-mono text-xs text-ink-muted sm:inline">
+            // daily digest
+          </span>
+        </div>
 
-        <div className="mb-6 flex flex-wrap items-center gap-2">
-          <input
-            type="search"
-            placeholder="Search articles…"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            className="w-full max-w-xs rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm focus:border-indigo-400 focus:outline-none"
-          />
-          <select
-            value={activeCategory}
-            onChange={(e) => {
-              setActiveCategory(e.target.value);
-              setShowNotableOnly(false);
-            }}
-            className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm focus:border-indigo-400 focus:outline-none"
-          >
-            <option value="All">All categories</option>
-            {data.categories.map((c) => (
-              <option key={c} value={c}>
-                {c}
-              </option>
-            ))}
-          </select>
+        <input
+          type="search"
+          placeholder="search articles..."
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          className="w-full max-w-[200px] rounded border border-[rgba(240,246,252,0.1)] bg-surface-2 px-3 py-1.5 font-mono text-xs text-ink placeholder:text-ink-muted focus:border-accent focus:outline-none"
+        />
+
+        <div className="hidden font-mono text-xs text-ink-muted sm:flex sm:items-center sm:gap-1.5">
+          <span>{staleness === 0 ? "today" : `${staleness}d ago`}</span>
+          <span className="opacity-30">·</span>
+          <span>{data.articles.length} articles</span>
+        </div>
+      </header>
+
+      {/* Tab Rail */}
+      <div className="shrink-0 border-b border-[rgba(240,246,252,0.08)] bg-canvas">
+        <div className="mx-auto flex max-w-5xl items-stretch overflow-x-auto px-5">
+          {tabs.map((cat) => {
+            const count = categoryCounts.get(cat) ?? 0;
+            const isActive = activeCategory === cat;
+            return (
+              <button
+                key={cat}
+                onClick={() => {
+                  setActiveCategory(cat);
+                  setShowNotableOnly(false);
+                }}
+                className={`relative flex shrink-0 items-center gap-1.5 px-3 py-3 font-mono text-xs font-medium transition-colors ${
+                  isActive
+                    ? "text-ink after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-accent after:content-['']"
+                    : "text-ink-secondary hover:text-ink"
+                }`}
+              >
+                {cat.toUpperCase()}
+                <span
+                  className={`rounded px-1.5 py-0.5 text-[10px] tabular-nums ${
+                    isActive
+                      ? "bg-[rgba(88,166,255,0.12)] text-accent"
+                      : "bg-surface-2 text-ink-muted"
+                  }`}
+                >
+                  {count}
+                </span>
+              </button>
+            );
+          })}
+
           {activeCategory === "Research" && (
             <button
               onClick={() => setShowNotableOnly((v) => !v)}
-              className={`rounded-lg border px-3 py-1.5 text-sm transition ${
-                showNotableOnly
-                  ? "border-amber-400 bg-amber-100 text-amber-800"
-                  : "border-slate-300 bg-white text-slate-600 hover:border-slate-400"
+              className={`ml-auto flex shrink-0 items-center gap-1.5 px-3 py-3 font-mono text-xs transition-colors ${
+                showNotableOnly ? "text-ember" : "text-ink-secondary hover:text-ink"
               }`}
             >
-              {showNotableOnly ? "Notable only" : "Show all"}
+              <span>{showNotableOnly ? "★" : "☆"}</span>
+              <span>{showNotableOnly ? "notable only" : "show all"}</span>
             </button>
           )}
         </div>
-
-        {grouped.length === 0 ? (
-          <p className="text-sm text-slate-500">No articles match your filters.</p>
-        ) : (
-          grouped.map(([category, articles]) => (
-            <CategorySection key={category} category={category} articles={articles} />
-          ))
-        )}
       </div>
+
+      {/* Scrollable Content */}
+      <main className="flex-1 overflow-y-auto">
+        <div className="mx-auto max-w-5xl px-5 py-6">
+          {grouped.length === 0 ? (
+            <p className="font-mono text-xs text-ink-muted">// no articles match</p>
+          ) : (
+            grouped.map(([category, articles]) => (
+              <CategorySection
+                key={category}
+                category={category}
+                articles={articles}
+                showHeader={activeCategory === "All"}
+              />
+            ))
+          )}
+        </div>
+      </main>
     </div>
   );
 }
