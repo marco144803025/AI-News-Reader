@@ -16,10 +16,16 @@ const ARXIV_CAP = 15;
 
 const SEED_CATEGORIES = [
   "MCP",
-  "AI Models",
-  "Agent Harness / Features",
+  "Model Releases",
   "Research",
-  "Industry / Business",
+  "AI Safety & Alignment",
+  "Developer Tools",
+  "Agent Frameworks",
+  "Business & Funding",
+  "Applications",
+  "Regulation & Policy",
+  "Open Source",
+  "Hardware & Compute",
   "Other",
 ];
 
@@ -149,8 +155,7 @@ function dedupeIncoming(
 
 async function classifyBatch(
   client: Anthropic,
-  batch: RawArticle[],
-  existingCategories: string[]
+  batch: RawArticle[]
 ): Promise<{ category: string; summary: string; important: boolean }[]> {
   const list = batch
     .map(
@@ -166,13 +171,23 @@ async function classifyBatch(
       {
         type: "text",
         text:
-          "You categorize and summarize AI-related news articles. " +
-          "Categories already in use: " +
-          existingCategories.join(", ") +
-          ". Prefer these. Only introduce a new short category if none fit well. " +
+          "You categorize and summarize AI-related news articles.\n\n" +
+          "Use exactly these categories — do not invent new ones:\n" +
+          "- MCP: Model Context Protocol specs, integrations, server/client implementations\n" +
+          "- Model Releases: New model launches, capability announcements, model comparisons and benchmarks (GPT, Claude, Gemini, Llama, Mistral, etc.)\n" +
+          "- Research: arXiv papers, academic studies, technical findings not tied to a specific product launch\n" +
+          "- AI Safety & Alignment: Safety research, RLHF, red-teaming, alignment techniques, interpretability\n" +
+          "- Developer Tools: APIs, SDKs, IDE plugins, coding assistants, developer infrastructure\n" +
+          "- Agent Frameworks: Agent orchestration, multi-agent systems, planning, autonomous agents (LangChain, AutoGPT, CrewAI, etc.)\n" +
+          "- Business & Funding: Investment rounds, acquisitions, valuations, company launches, partnerships\n" +
+          "- Applications: Consumer or enterprise products built on AI, real-world deployments, use cases\n" +
+          "- Regulation & Policy: Government AI policy, legislation, EU AI Act, compliance, ethics boards\n" +
+          "- Open Source: Open-weight model releases, community projects, open-source tooling\n" +
+          "- Hardware & Compute: AI chips, GPUs, data centers, inference infrastructure, energy\n" +
+          "- Other: Only if nothing above fits\n\n" +
           "Write a concise 1-2 sentence summary for each article. " +
-          "Set important: true only for articles with a significant finding, new model/capability release, or major industry development. Default to false. " +
-          'Respond ONLY with a JSON array of objects {"index": number, "category": string, "summary": string, "important": boolean}, no other text.',
+          "Set important: true only for a significant research finding, major new model/capability, funding round $100M+, or landmark policy decision. Default to false.\n" +
+          'Respond ONLY with a JSON array: [{"index": number, "category": string, "summary": string, "important": boolean}]',
         cache_control: { type: "ephemeral" },
       },
     ],
@@ -270,7 +285,7 @@ async function main() {
     console.log(
       `Classifying batch ${Math.floor(i / BATCH_SIZE) + 1} (${batch.length} articles)...`
     );
-    const meta = await classifyBatch(client, batch, existingCategories);
+    const meta = await classifyBatch(client, batch);
     batch.forEach((a, j) => classified.push({ ...a, ...meta[j] }));
   }
 

@@ -2,6 +2,9 @@ import { useEffect, useMemo, useState } from "react";
 import type { NewsData } from "./types";
 import CategorySection from "./components/CategorySection";
 
+const PAGE_SIZE = 8;
+const PREVIEW_SIZE = 4;
+
 function daysAgo(iso: string): number {
   return Math.floor((Date.now() - new Date(iso).getTime()) / 86_400_000);
 }
@@ -12,6 +15,7 @@ export default function App() {
   const [query, setQuery] = useState("");
   const [activeCategory, setActiveCategory] = useState<string>("All");
   const [showNotableOnly, setShowNotableOnly] = useState(false);
+  const [page, setPage] = useState(0);
 
   useEffect(() => {
     fetch(import.meta.env.BASE_URL + "news.json")
@@ -23,7 +27,10 @@ export default function App() {
       .catch((e: Error) => setError(e.message));
   }, []);
 
-  // Search-filtered articles (no category filter) — used for tab counts
+  useEffect(() => {
+    setPage(0);
+  }, [activeCategory, query, showNotableOnly]);
+
   const searchFiltered = useMemo(() => {
     if (!data) return [];
     const q = query.trim().toLowerCase();
@@ -53,15 +60,23 @@ export default function App() {
     });
   }, [searchFiltered, activeCategory, showNotableOnly]);
 
+  const inSingleView = activeCategory !== "All";
+  const totalPages = inSingleView ? Math.ceil(filtered.length / PAGE_SIZE) : 0;
+
+  const visibleFiltered = useMemo(() => {
+    if (!inSingleView) return filtered;
+    return filtered.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE);
+  }, [filtered, inSingleView, page]);
+
   const grouped = useMemo(() => {
-    const map = new Map<string, typeof filtered>();
-    for (const a of filtered) {
+    const map = new Map<string, typeof visibleFiltered>();
+    for (const a of visibleFiltered) {
       const arr = map.get(a.category) ?? [];
       arr.push(a);
       map.set(a.category, arr);
     }
     return [...map.entries()];
-  }, [filtered]);
+  }, [visibleFiltered]);
 
   if (error) {
     return (
@@ -90,14 +105,9 @@ export default function App() {
       {/* Top Bar */}
       <header className="flex shrink-0 items-center gap-4 border-b border-[rgba(240,246,252,0.08)] bg-surface-1 px-5 py-3">
         <div className="flex flex-1 items-baseline gap-2.5">
-          <span className="font-mono text-sm font-bold tracking-widest text-ink">
-            AI BRIEFING
-          </span>
-          <span className="hidden font-mono text-xs text-ink-muted sm:inline">
-            // daily digest
-          </span>
+          <span className="font-mono text-sm font-bold tracking-widest text-ink">AI BRIEFING</span>
+          <span className="hidden font-mono text-xs text-ink-muted sm:inline">// daily digest</span>
         </div>
-
         <input
           type="search"
           placeholder="search articles..."
@@ -105,7 +115,6 @@ export default function App() {
           onChange={(e) => setQuery(e.target.value)}
           className="w-full max-w-[200px] rounded border border-[rgba(240,246,252,0.1)] bg-surface-2 px-3 py-1.5 font-mono text-xs text-ink placeholder:text-ink-muted focus:border-accent focus:outline-none"
         />
-
         <div className="hidden font-mono text-xs text-ink-muted sm:flex sm:items-center sm:gap-1.5">
           <span>{staleness === 0 ? "today" : `${staleness}d ago`}</span>
           <span className="opacity-30">·</span>
@@ -145,7 +154,6 @@ export default function App() {
               </button>
             );
           })}
-
           {activeCategory === "Research" && (
             <button
               onClick={() => setShowNotableOnly((v) => !v)}
@@ -166,14 +174,41 @@ export default function App() {
           {grouped.length === 0 ? (
             <p className="font-mono text-xs text-ink-muted">// no articles match</p>
           ) : (
-            grouped.map(([category, articles]) => (
-              <CategorySection
-                key={category}
-                category={category}
-                articles={articles}
-                showHeader={activeCategory === "All"}
-              />
-            ))
+            <>
+              {grouped.map(([category, articles]) => (
+                <CategorySection
+                  key={category}
+                  category={category}
+                  articles={articles}
+                  showHeader={!inSingleView}
+                  featuredFirst={inSingleView}
+                  limit={!inSingleView ? PREVIEW_SIZE : undefined}
+                  onSeeAll={!inSingleView ? () => setActiveCategory(category) : undefined}
+                />
+              ))}
+
+              {inSingleView && totalPages > 1 && (
+                <div className="mt-10 flex items-center justify-center gap-8 border-t border-[rgba(240,246,252,0.06)] pt-8">
+                  <button
+                    onClick={() => setPage((p) => Math.max(0, p - 1))}
+                    disabled={page === 0}
+                    className="font-mono text-xs text-ink-secondary transition-colors hover:text-ink disabled:cursor-not-allowed disabled:opacity-25"
+                  >
+                    ← prev
+                  </button>
+                  <span className="font-mono text-xs tabular-nums text-ink-muted">
+                    {String(page + 1).padStart(2, "0")} / {String(totalPages).padStart(2, "0")}
+                  </span>
+                  <button
+                    onClick={() => setPage((p) => Math.min(totalPages - 1, p + 1))}
+                    disabled={page >= totalPages - 1}
+                    className="font-mono text-xs text-ink-secondary transition-colors hover:text-ink disabled:cursor-not-allowed disabled:opacity-25"
+                  >
+                    next →
+                  </button>
+                </div>
+              )}
+            </>
           )}
         </div>
       </main>

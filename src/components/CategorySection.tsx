@@ -5,11 +5,20 @@ export default function CategorySection({
   category,
   articles,
   showHeader,
+  featuredFirst = false,
+  limit,
+  onSeeAll,
 }: {
   category: string;
   articles: Article[];
   showHeader: boolean;
+  featuredFirst?: boolean;
+  limit?: number;
+  onSeeAll?: () => void;
 }) {
+  const displayed = limit ? articles.slice(0, limit) : articles;
+  const hiddenCount = limit ? Math.max(0, articles.length - limit) : 0;
+
   return (
     <section className="mb-8">
       {showHeader && (
@@ -23,11 +32,26 @@ export default function CategorySection({
           <div className="h-px flex-1 bg-[rgba(240,246,252,0.06)]" />
         </div>
       )}
+
       <div className="grid gap-3 sm:grid-cols-2">
-        {articles.map((a) => (
-          <ArticleCard key={a.url} article={a} />
-        ))}
+        {displayed.map((a, i) => {
+          const featured = featuredFirst && i === 0;
+          return (
+            <div key={a.url} className={featured ? "sm:col-span-2" : ""}>
+              <ArticleCard article={a} featured={featured} />
+            </div>
+          );
+        })}
       </div>
+
+      {onSeeAll && hiddenCount > 0 && (
+        <button
+          onClick={onSeeAll}
+          className="mt-3 font-mono text-xs text-ink-secondary transition-colors hover:text-accent"
+        >
+          +{hiddenCount} more →
+        </button>
+      )}
     </section>
   );
 }
