@@ -1,11 +1,241 @@
 {
-  "generatedAt": "2026-05-31T08:34:25.544Z",
+  "generatedAt": "2026-06-01T11:09:09.264Z",
   "daysBack": 1,
   "categories": [
-    "Industry Development",
-    "AI Models"
+    "AI Models",
+    "Industry Development"
   ],
   "articles": [
+    {
+      "title": "OpenAI’s math breakthrough played to AI’s strengths",
+      "url": "https://arstechnica.com/ai/2026/06/openais-math-breakthrough-played-to-ais-strengths/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-06-01T11:00:00.000Z",
+      "snippet": "I tried to explain OpenAI’s solution more clearly than OpenAI did.",
+      "category": "AI Models",
+      "summary": "Analysis of OpenAI's mathematical breakthrough solution that leverages AI's core strengths in problem-solving.",
+      "important": true
+    },
+    {
+      "title": "PhyDrawGen: Physically Grounded Diagram Generation from Natural Language",
+      "url": "https://arxiv.org/abs/2605.30512",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-01T04:00:00.000Z",
+      "snippet": "arXiv:2605.30512v1 Announce Type: new Abstract: Generating physics diagrams from text requires strict adherence to physical laws. While current generative models produce visually plausible outputs, they systematically hallucinate force vectors, ignore conservation laws, and violate geometric constraints. We present PhyDrawGen, a neuro-symbolic pipeline that decouples semantic scene understanding from physical constraint satisfaction. First, a large language model extracts a typed scene graph from the problem text. A deterministic solver then converts this graph into a Planar Straight-Line Grap",
+      "category": "AI Models",
+      "summary": "PhyDrawGen introduces a neuro-symbolic pipeline that generates physics diagrams from text while enforcing physical laws and geometric constraints.",
+      "important": true
+    },
+    {
+      "title": "Physically Viable World Models: A Case for Query-Conditioned Embodied AI",
+      "url": "https://arxiv.org/abs/2605.30542",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-01T04:00:00.000Z",
+      "snippet": "arXiv:2605.30542v1 Announce Type: new Abstract: World models for embodied AI must be physically viable: constructed to answer intervention queries by representing the physical structure governing action outcomes, rather than merely predicting future observations. Existing observation-predictive world models can produce visually plausible but physically wrong rollouts. This failure is structural; distinct physical systems can look identical yet diverge under intervention. We expose this problem with controlled benchmarks that fix the visible scene while varying latent physics. We show that such",
+      "category": "AI Models",
+      "summary": "Research demonstrates that world models for embodied AI must represent physical structure rather than just predict observations to handle intervention queries correctly.",
+      "important": true
+    },
+    {
+      "title": "Uncertainty-Aware and Temporally Regulated Expert Advice in Reinforcement Learning for Autonomous Driving",
+      "url": "https://arxiv.org/abs/2605.30576",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-01T04:00:00.000Z",
+      "snippet": "arXiv:2605.30576v1 Announce Type: new Abstract: Exploration in reinforcement learning for autonomous driving is inherently unsafe: agents must experience novel behaviors to learn, yet exploration can lead to collisions or off-road driving. We propose an uncertainty-aware framework that leverages expert advice to guide exploration while avoiding long-term dependence. Advice is triggered when epistemic or aleatoric uncertainty exceeds adaptive thresholds derived from rolling buffers, ensuring advice evolves with the agent's confidence. A commitment-cooldown strategy with a stochastic early-stop ",
+      "category": "AI Models",
+      "summary": "A framework for safe autonomous driving reinforcement learning uses uncertainty-aware triggers to guide agent exploration with expert advice.",
+      "important": false
+    },
+    {
+      "title": "Harness Updating Is Not Harness Benefit: Disentangling Evolution Capabilities in Self-Evolving LLM Agents",
+      "url": "https://arxiv.org/abs/2605.30621",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-01T04:00:00.000Z",
+      "snippet": "arXiv:2605.30621v1 Announce Type: new Abstract: LLM agents are increasingly deployed as systems built around editable external harnesses, including prompts, skills, memories and tools, that shape task execution without changing model parameters. Harness self-evolution adapts such agents by updating these harnesses from execution evidence. Yet it remains unclear whether a model's base capability in task-solving predicts its capabilities in harness self-evolution: which models produce useful harness updates, and which actually benefit from them? We analyze two harness self-evolution capabilities",
+      "category": "AI Models",
+      "summary": "Study analyzes whether LLM base capabilities predict their ability to self-evolve through harness updates like prompts and tools.",
+      "important": false
+    },
+    {
+      "title": "EHRBench: An Automated and Reliable EHR-based Benchmark for Clinical Decision Making with LLMs",
+      "url": "https://arxiv.org/abs/2605.30637",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-01T04:00:00.000Z",
+      "snippet": "arXiv:2605.30637v1 Announce Type: new Abstract: Clinical decision-making (CDM) is central to real-world clinical workflows, where clinicians infer diagnoses, select treatments, or anticipate future health outcomes under incomplete evidence. LLMs are increasingly used to support these decisions due to strong language capabilities, broad biomedical knowledge, and efficiency, yet the reliability of LLMs on real-world clinical decision tasks remains insufficiently understood. To evaluate CDM models, especially LLM-based models, an ideal and practical medical decision benchmark should be constructe",
+      "category": "AI Models",
+      "summary": "EHRBench provides an automated benchmark for evaluating LLMs on real-world clinical decision-making tasks with electronic health records.",
+      "important": true
+    },
+    {
+      "title": "Structure-Induced Information for Rerooting Levin Tree Search",
+      "url": "https://arxiv.org/abs/2605.30664",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-01T04:00:00.000Z",
+      "snippet": "arXiv:2605.30664v1 Announce Type: new Abstract: Subgoal-based policy tree search, which uses a policy to guide search, is effective for complex single-agent deterministic problems but often relies on explicit subgoal generation that can incur substantial overhead and hinders scalability. In this paper, we overcome these limitations by using a learned ``rerooter'' through the recently-introduced $\\sqrt{\\text{LTS}}$ algorithm. A rerooter implicitly decomposes the problem into soft subtasks. While previous work focused on the formal guarantees for given or handcrafted rerooters, in this work we p",
+      "category": "AI Models",
+      "summary": "Research improves subgoal-based policy tree search by using learned 'rerooters' to implicitly decompose complex problems into soft subtasks.",
+      "important": false
+    },
+    {
+      "title": "Healthcare Mechanisms from Policy-as-Code Search under Strategic Provider Response",
+      "url": "https://arxiv.org/abs/2605.30680",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-01T04:00:00.000Z",
+      "snippet": "arXiv:2605.30680v1 Announce Type: new Abstract: Healthcare mechanisms are inseparable from the strategic provider response they induce: existing healthcare AI benchmarks hold this response fixed and so cannot evaluate mechanisms by the equilibrium they produce. We recast hospital mechanism design as program synthesis for language models: typed, inspectable rule programs are executed and scored by Medi-Sim, a multi-agent simulator with five strategic provider channels (coding, selection, delay, effort, triage). An incentive sweep recovers classical health-economics findings as adjacent regimes ",
+      "category": "AI Models",
+      "summary": "Healthcare mechanism design is reframed as LLM program synthesis with Medi-Sim, a multi-agent simulator that models strategic provider responses.",
+      "important": false
+    },
+    {
+      "title": "MAVEN: Improving Generalization in Agentic Tool Calling",
+      "url": "https://arxiv.org/abs/2605.30738",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-01T04:00:00.000Z",
+      "snippet": "arXiv:2605.30738v1 Announce Type: new Abstract: Generalization across agentic tool-calling environments remains a central challenge for reliable agentic reasoning systems. Although large language models achieve strong results on individual benchmarks, their ability to compose reasoning strategies, preserve intermediate states, and coordinate tools across domains remains underexplored. We present MAVEN (Modular Agentic Verification and Execution Network), a lightweight symbolic reasoning scaffold for structured decomposition, adaptive tool orchestration, and intermediate verification. We evalua",
+      "category": "AI Models",
+      "summary": "MAVEN framework improves generalization in agentic tool-calling systems through structured decomposition and adaptive tool orchestration.",
+      "important": true
+    },
+    {
+      "title": "Generating Graph-like Rules for Knowledge Graph Reasoning via Diffusion Models",
+      "url": "https://arxiv.org/abs/2605.30747",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-01T04:00:00.000Z",
+      "snippet": "arXiv:2605.30747v1 Announce Type: new Abstract: Logical rules constitute a cornerstone of knowledge graph (KG) reasoning, valued for their interpretability and ability to model relational patterns. However, existing rule mining methods predominantly focus on simple chain-like rules and therefore neglect the richer relational information encoded in graph-like structures, such as cycles and branches. This limitation is further exacerbated by computational bottlenecks caused by the combinatorial explosion of the search space, which is especially challenging for graph-like rules. Meanwhile, genera",
+      "category": "AI Models",
+      "summary": "Novel approach uses diffusion models to generate graph-like logical rules for knowledge graph reasoning beyond simple chain-like patterns.",
+      "important": false
+    },
+    {
+      "title": "Learning Agent-Compatible Context Management for Long-Horizon Tasks",
+      "url": "https://arxiv.org/abs/2605.30785",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-01T04:00:00.000Z",
+      "snippet": "arXiv:2605.30785v1 Announce Type: new Abstract: LLM agents increasingly face long-horizon tasks such as web search and deep research in real-world applications, where accumulated context can cause long-context degradation and reasoning failures. Prior work mitigates this through context management with agent-side context control or fixed strategies such as summarization, which require training the agent itself for adaptation - making it impractical for closed-source agents and ignoring that different agents may require different strategies. We introduce Adaptive Context Management (AdaCoM), wh",
+      "category": "AI Models",
+      "summary": "AdaCoM framework adapts context management strategies for LLM agents on long-horizon tasks without requiring agent retraining.",
+      "important": false
+    },
+    {
+      "title": "PReMISE: Policy Rubrics as Measurement Specifications for LLM Judges",
+      "url": "https://arxiv.org/abs/2605.30803",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-01T04:00:00.000Z",
+      "snippet": "arXiv:2605.30803v1 Announce Type: new Abstract: LLM judges are increasingly used to evaluate open-ended responses, but their scores depend strongly on the rubrics that condition them. A vague rubric asking for a response to be ``helpful and factual'' can reward polished answers that invent facts or violate user intent. We treat reusable rubrics as measurement specifications: changing the rubric changes the response quality measurement induced by a fixed judge. We introduce PReMISE, a framework that, given pairwise human-preference data, (i) discovers a policy-level rubric set, and (ii) audits ",
+      "category": "AI Models",
+      "summary": "PReMISE framework discovers policy-level rubrics and audits LLM judges to improve evaluation consistency and prevent factual hallucination.",
+      "important": false
+    },
+    {
+      "title": "Planner-Centric Reinforcement Learning for Deep Research with Structure-Aware Reward",
+      "url": "https://arxiv.org/abs/2605.30824",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-01T04:00:00.000Z",
+      "snippet": "arXiv:2605.30824v1 Announce Type: new Abstract: Deep research tasks require LLMs to plan what to investigate, retrieve evidence, and synthesize long-form answers across multiple branches of inquiry. Existing training paradigms either rely on short-form verifiable QA as a proxy or optimize monolithic long trajectories, which makes planning and execution difficult to disentangle and yields weak credit assignment for the planning process. We propose DecomposeR, a planner-centric deep research framework that represents research plans as typed directed acyclic graphs (DAGs), allowing planning to be",
+      "category": "AI Models",
+      "summary": "DecomposeR framework improves deep research tasks by representing plans as directed acyclic graphs with structure-aware reinforcement learning rewards.",
+      "important": false
+    },
+    {
+      "title": "SLAT: Segment-Level Adaptive Trimming for Efficient CoT Reasoning",
+      "url": "https://arxiv.org/abs/2605.30832",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-01T04:00:00.000Z",
+      "snippet": "arXiv:2605.30832v1 Announce Type: new Abstract: Recent advances in Large Reasoning Models have significantly improved chain-of-thought (CoT) capabilities via reinforcement learning (RL). However, generated reasoning chains frequently suffer from structural redundancy (i.e., \\emph{overthinking}), incurring high computational overhead without improving answer correctness. Existing mitigation strategies typically rely on token-uniform length penalties, which provide coarse, segment-agnostic pressure toward shorter outputs and can inadvertently suppress useful reasoning alongside redundancy. To ad",
+      "category": "AI Models",
+      "summary": "SLAT reduces computational overhead in chain-of-thought reasoning by identifying and trimming structural redundancy at the segment level.",
+      "important": false
+    },
+    {
+      "title": "COMPASS: Cognitive MCTS-Guided Process Alignment for Safe Search Agents",
+      "url": "https://arxiv.org/abs/2605.30838",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-01T04:00:00.000Z",
+      "snippet": "arXiv:2605.30838v1 Announce Type: new Abstract: LLM-powered search agents enable multi-step reasoning and tool use. However, these capabilities introduce retrieval-induced safety degradation, as harmful intents may decompose into seemingly innocuous sub-queries that lead to unsafe outcomes. Existing alignment methods struggle to capture sparse safety signals and fail to supervise diverse violations across multi-step interactions. We propose COMPASS, a Cognitive MCTS-Guided Process Alignment framework designed to achieve robust safety alignment throughout the agent workflow while preserving gen",
+      "category": "AI Models",
+      "summary": "COMPASS framework applies cognitive MCTS-guided alignment to prevent safety degradation in multi-step LLM agent workflows.",
+      "important": false
+    },
+    {
+      "title": "Distilling LLM Feedback for Lean Theorem Proving",
+      "url": "https://arxiv.org/abs/2605.30861",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-01T04:00:00.000Z",
+      "snippet": "arXiv:2605.30861v1 Announce Type: new Abstract: Post-training for reasoning models typically combines supervised fine-tuning with reinforcement learning from verifiable rewards, most commonly with GRPO. However, this algorithm suffers from sparse rewards, limited exploration, and mode collapse. Building upon recent works on self-distillation, we propose Feedback Distillation, a training method where the model is trained to match, at the token level, its own distribution conditioned on privileged feedback produced by a language model. Feedback Distillation offers token-level supervision and can",
+      "category": "AI Models",
+      "summary": "Feedback Distillation trains reasoning models using privileged LLM feedback at token level to improve Lean theorem proving performance.",
+      "important": false
+    },
+    {
+      "title": "Erin Brockovich takes aim at data center secrecy",
+      "url": "https://techcrunch.com/2026/05/31/erin-brockovich-takes-aim-at-data-center-secrecy/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-05-31T21:05:14.000Z",
+      "snippet": "Environmental activist Erin Brockovich has a new mission.",
+      "category": "Industry Development",
+      "summary": "Environmental activist Erin Brockovich launches campaign to address data center secrecy concerns.",
+      "important": false
+    },
+    {
+      "title": "The Speed of Prototyping in the Age of AI",
+      "url": "https://darylcecile.net/notes/speed-of-prototyping-age-of-ai",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-05-31T16:37:34.000Z",
+      "snippet": "Article URL: https://darylcecile.net/notes/speed-of-prototyping-age-of-ai Comments URL: https://news.ycombinator.com/item?id=48347153 Points: 170 # Comments: 86",
+      "category": "Industry Development",
+      "summary": "Discussion on how AI tools are accelerating software prototyping speed and changing development workflows.",
+      "important": false
+    },
+    {
+      "title": "Odysseus – self-hosted AI workspace",
+      "url": "https://github.com/pewdiepie-archdaemon/odysseus",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-05-31T15:50:34.000Z",
+      "snippet": "Article URL: https://github.com/pewdiepie-archdaemon/odysseus Comments URL: https://news.ycombinator.com/item?id=48346693 Points: 177 # Comments: 83",
+      "category": "Industry Development",
+      "summary": "Odysseus is released as a self-hosted AI workspace tool providing local AI capabilities.",
+      "important": false
+    },
+    {
+      "title": "Making sense of the debate over AI psychosis",
+      "url": "https://techcrunch.com/2026/05/31/making-sense-of-the-debate-over-ai-psychosis/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-05-31T15:30:00.000Z",
+      "snippet": "On the latest episode of Equity, we debate whether tech CEOs are \"uniquely prone to AI psychosis.\"",
+      "category": "Industry Development",
+      "summary": "Discussion examining whether tech CEOs are disproportionately prone to 'AI psychosis' and unrealistic AI predictions.",
+      "important": false
+    },
+    {
+      "title": "The solution might be cancelling my AI subscription",
+      "url": "https://thoughts.hmmz.org/2026-05-31.html",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-05-31T14:23:30.000Z",
+      "snippet": "Article URL: https://thoughts.hmmz.org/2026-05-31.html Comments URL: https://news.ycombinator.com/item?id=48345896 Points: 362 # Comments: 229",
+      "category": "Industry Development",
+      "summary": "Analysis of the decision to cancel AI subscription services and reconsider their practical value.",
+      "important": false
+    },
+    {
+      "title": "The people who actually want AI to replace humanity",
+      "url": "https://www.vox.com/future-perfect/489976/ai-successionism-transhumanism-posthumanism",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-05-31T14:20:12.000Z",
+      "snippet": "Article URL: https://www.vox.com/future-perfect/489976/ai-successionism-transhumanism-posthumanism Comments URL: https://news.ycombinator.com/item?id=48345881 Points: 75 # Comments: 85",
+      "category": "Industry Development",
+      "summary": "Examination of individuals who advocate for AI replacing humanity as part of transhumanist and AI successionist movements.",
+      "important": false
+    },
+    {
+      "title": "I went looking for the AI weed vape that gives you Bitcoin for smoking",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/933916/ai-powered-crypto-cannabis-vape",
+      "source": "The Verge AI",
+      "publishedAt": "2026-05-31T13:00:00.000Z",
+      "snippet": "The crypto weed vape found me on 4/20, the high holiday of cannabis enthusiasts everywhere. It arrived over Slack with the thumbnail of a man exhaling a plume of vapor, the words \"every hit delivers Bitcoin\" emblazoned across it. It claimed to be advertising a device called Gudtrip, and I thought everything about it sounded fake. So I went looking for it. What I eventually found, after weeks of searching, dozens of emails, and a reporting effort that spanned continents, was somehow even dumber than I'd imagined. My first port of call was Gudtrip's website, which only made the vape seem more li",
+      "category": "Industry Development",
+      "summary": "A journalist investigates a viral AI-cryptocurrency vape product claiming to deliver Bitcoin rewards, discovering an elaborate scam spanning multiple continents.",
+      "important": false
+    },
     {
       "title": "SoftBank says it will invest up to €75 billion to build French data centers",
       "url": "https://techcrunch.com/2026/05/30/softbank-says-it-will-invest-up-to-e75-billion-to-build-french-data-centers/",
