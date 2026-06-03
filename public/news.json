@@ -1,20 +1,530 @@
 {
-  "generatedAt": "2026-06-02T10:04:30.386Z",
+  "generatedAt": "2026-06-03T10:43:26.149Z",
   "daysBack": 1,
   "categories": [
-    "Applications",
+    "Hardware & Compute",
+    "Regulation & Policy",
     "Research",
     "Agent Frameworks",
     "AI Safety & Alignment",
-    "Developer Tools",
-    "Hardware & Compute",
-    "Regulation & Policy",
+    "Applications",
     "Business & Funding",
+    "Developer Tools",
     "Model Releases",
     "Industry Development",
     "AI Models"
   ],
   "articles": [
+    {
+      "title": "AI has a water problem. Google thinks it has a fix",
+      "url": "https://www.theverge.com/policy/942296/google-water-commitments-data-centers",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-03T09:00:00.000Z",
+      "snippet": "In the face of widespread backlash to the AI data center buildout throughout the US, Google is touting its efforts to minimize the environmental impact by actually increasing water for local communities. The company laid out five commitments around water use in a new blog post published Wednesday, including a goal to replenish more water than it uses at its data centers by 2030. Google also said it will invest in local water infrastructure, identify alternative water sources to power its facilities, and be transparent about its water use overall. \"We're just one of dozens of players in the spa",
+      "category": "Hardware & Compute",
+      "summary": "Google announced five water sustainability commitments for its AI data centers, including a goal to replenish more water than it uses by 2030 and investments in local water infrastructure to address environmental concerns from AI buildout.",
+      "important": false
+    },
+    {
+      "title": "Google must let publishers opt out of AI Search features, rules UK",
+      "url": "https://www.theverge.com/tech/942302/google-search-ai-overviews-uk-cma-publisher-opt-out",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-03T08:45:48.000Z",
+      "snippet": "Online publishers are getting more control over whether their websites appear in Google's AI Search features, thanks to a UK regulatory ruling. The new conduct rule imposed by the Competition and Markets Authority (CMA) requires Google to let website owners keep their content out of features like AI Overviews and prevent it from being used for the \"fine-tuning\" of Google's AI models. \"In a world first, publishers will now have effective tools to prevent their content being used to power AI features in search, such as AI Overviews,\" the CMA announced. \"This will put publishers, like news organi",
+      "category": "Regulation & Policy",
+      "summary": "The UK's Competition and Markets Authority ruled that Google must allow publishers to opt out of AI Search features like AI Overviews and prevent their content from being used for model fine-tuning, marking a world-first regulatory decision on AI content usage.",
+      "important": true
+    },
+    {
+      "title": "Visual Graph Scaffolds for Structural Reasoning in Large Language Models",
+      "url": "https://arxiv.org/abs/2606.02673",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-03T04:00:00.000Z",
+      "snippet": "arXiv:2606.02673v1 Announce Type: new Abstract: Graphs have been used to enhance large language models (LLMs) for structured reasoning, mostly as external knowledge sources are provided to models at test time. In this paper, we take a different view: the value of graphs for LLMs lie not only in supplying information, but also in organizing reasoning. Inspired by how humans use graph-structured mind maps to organize branching and converging thoughts, we ask whether graphs can serve as an internal form of reasoning assistance. We study this question on multi-hop question answering tasks, where t",
+      "category": "Research",
+      "summary": "This research explores using graph structures as internal reasoning scaffolds in LLMs to improve structured multi-hop reasoning, inspired by human mind-mapping techniques.",
+      "important": false
+    },
+    {
+      "title": "AURA: Action-Gated Memory for Robot Policies at Constant VRAM",
+      "url": "https://arxiv.org/abs/2606.02775",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-03T04:00:00.000Z",
+      "snippet": "arXiv:2606.02775v1 Announce Type: new Abstract: The KV-cache is the right memory for datacenters but the wrong memory for robots. Datacenter inference batches many short requests and resets them, amortizing an attention cache across a crowd. Embodied agents instead run one long, non-resetting episode on bandwidth-limited edge hardware, where high-bandwidth memory and flash are scarce, flash has finite write endurance, and memory writes rather than compute can become the binding constraint. AURA-Mem (Action-Utility Recurrent Adaptive Memory) targets this regime. It wraps a frozen vision-languag",
+      "category": "Research",
+      "summary": "AURA introduces a memory-efficient alternative to KV-cache specifically designed for robotics applications with constrained edge hardware.",
+      "important": false
+    },
+    {
+      "title": "Evaluating Transformer and LSTM Frameworks for Prediction in Ungauged Basins",
+      "url": "https://arxiv.org/abs/2606.02791",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-03T04:00:00.000Z",
+      "snippet": "arXiv:2606.02791v1 Announce Type: new Abstract: Watershed networks exhibit convergent topologies in which multiple tributaries merge into downstream channels,integrating diverse upstream hydrological processes. In ungauged basins, the absence of direct observations increases uncertainty and limits the ability to anticipate extreme events. This study evaluates whether an encoder-only Transformer provides an advantage over an LSTM for upstream streamflow inference under limited hydrologic information, using retrospective simulations from the NOAA National Water Model (NWM). Across both upstream-",
+      "category": "Research",
+      "summary": "This study compares Transformer and LSTM architectures for streamflow prediction in ungauged basins with limited hydrological data.",
+      "important": false
+    },
+    {
+      "title": "BehaviorBench: Modeling Real-World User Decisions from Behavioral Traces",
+      "url": "https://arxiv.org/abs/2606.02798",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-03T04:00:00.000Z",
+      "snippet": "arXiv:2606.02798v1 Announce Type: new Abstract: Many decision-support settings require systems that adapt to individual users, but evaluation data for this problem remain limited. Existing benchmarks for user understanding often rely on simulated users or model-generated behavior, even though recent work cautions that model-based simulations can diverge systematically from human behavior. We introduce \\textsc{BehaviorBench}, a benchmark for evaluating personalized decision modeling from real-world behavioral traces. \\textsc{BehaviorBench} reconstructs wallet-level decision histories from obser",
+      "category": "Research",
+      "summary": "BehaviorBench introduces a benchmark for evaluating personalized decision modeling using real-world behavioral traces rather than simulated data.",
+      "important": false
+    },
+    {
+      "title": "ChatHealthAI: Aligning Electronic Health Record Representations with Large Language Models for Grounded Clinical Reasoning",
+      "url": "https://arxiv.org/abs/2606.02802",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-03T04:00:00.000Z",
+      "snippet": "arXiv:2606.02802v1 Announce Type: new Abstract: Large language models (LLMs) exhibit strong natural-language reasoning abilities for clinical decision support, but struggle to effectively model structured longitudinal electronic health records (EHRs). In contrast, EHR foundation models can learn predictive patient representations, yet lack interpretable language-based reasoning. To bridge this gap, we propose ChatHealthAI, a multimodal reasoning framework that aligns structured EHR representations from a pretrained EHR foundation model with the semantic space of a frozen LLM through a task-awa",
+      "category": "Research",
+      "summary": "ChatHealthAI proposes a multimodal framework that aligns structured EHR representations with LLMs to improve clinical reasoning and interpretability.",
+      "important": false
+    },
+    {
+      "title": "Traj-Evolve: A Self-Evolving Multi-Agent System for Patient Trajectory Modeling in Lung Cancer Early Detection",
+      "url": "https://arxiv.org/abs/2606.02812",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-03T04:00:00.000Z",
+      "snippet": "arXiv:2606.02812v1 Announce Type: new Abstract: Modeling patient trajectories from longitudinal electronic health records (EHRs) requires reasoning over sparse, noisy, and long-context multimodal sequences. Existing LLM-based multi-agent systems address context length but process patients in isolation, failing to mirror how clinicians leverage accumulated experience from similar prior cases. We present Traj-Evolve, a self-evolving multi-agent system with two complementary evolving mechanisms. First, an Experience Pool (ExPool) acts as a non-parametric memory, indexing rejection-sampled reasoni",
+      "category": "Research",
+      "summary": "Traj-Evolve presents a self-evolving multi-agent system that models patient trajectories for lung cancer early detection by learning from similar historical cases.",
+      "important": false
+    },
+    {
+      "title": "Thinking Past the Answer: Evaluating Harmful Overthinking in Large Reasoning Models",
+      "url": "https://arxiv.org/abs/2606.02835",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-03T04:00:00.000Z",
+      "snippet": "arXiv:2606.02835v1 Announce Type: new Abstract: Large Reasoning Models (LRMs) improve performance by generating explicit intermediate reasoning traces through increased test-time compute, yet the assumption that longer reasoning is consistently beneficial remains under-examined. While recent evidence shows that additional reasoning can lead models to overthink, we ask: \"Once a model has reached the correct answer, does further reasoning refine the solution, or deviate from it?\" To study the dynamics after correctness, we introduce a prefix-level trajectory evaluation protocol grounded in reaso",
+      "category": "Research",
+      "summary": "This research examines harmful overthinking in large reasoning models, showing that extended reasoning after reaching correct answers can degrade solution quality.",
+      "important": false
+    },
+    {
+      "title": "Toward a Modular Architecture for Embedded AI Agent Systems at the Edge",
+      "url": "https://arxiv.org/abs/2606.02862",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-03T04:00:00.000Z",
+      "snippet": "arXiv:2606.02862v1 Announce Type: new Abstract: The rise of Large Language Models (LLMs) has enabled agentic AI capable of complex reasoning and tool use; however, deploying such autonomy in pervasive computing environments remains challenging due to the strict memory and energy constraints of embedded microcontrollers. Existing frameworks typically assume server-class resources or continuous connectivity, leaving a gap for deeply embedded systems. This paper proposes a modular reference architecture for Embedded Agent Systems that bridges the divide between deterministic real-time control and",
+      "category": "Agent Frameworks",
+      "summary": "This paper proposes a modular reference architecture for deploying agentic AI systems on memory and energy-constrained embedded microcontrollers.",
+      "important": false
+    },
+    {
+      "title": "Don't Gamble, GAMBLe: An Analytical Framework for AI-Driven Research Systems",
+      "url": "https://arxiv.org/abs/2606.02863",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-03T04:00:00.000Z",
+      "snippet": "arXiv:2606.02863v1 Announce Type: new Abstract: AI-Driven Research Systems (ADRS) -- systems coupling LLMs with automated evaluation to discover algorithms, proofs, and designs -- are being optimized and adopted across domains, but the tools to analyze them have not kept pace. ADRS performance depends on component interactions that are poorly understood, expensive to explore, and (as we show) not well captured by standard convergence guarantees. These guarantees rely on structural assumptions that do not hold under the ADRS process we formalize. We introduce GAMBLe, a framework that decomposes",
+      "category": "Research",
+      "summary": "GAMBLe is an analytical framework for understanding AI-Driven Research Systems that couple LLMs with automated evaluation to discover algorithms and designs.",
+      "important": false
+    },
+    {
+      "title": "When Helping Hurts and How to Fix It: Multi-Agent Debate for Data Cleaning",
+      "url": "https://arxiv.org/abs/2606.02866",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-03T04:00:00.000Z",
+      "snippet": "arXiv:2606.02866v1 Announce Type: new Abstract: When does multi-agent debate help data cleaning, and when does it hurt? Across three benchmarks, four model families, and over 6,000 task-condition pairs, we find debate's effect reverses sign: it degrades generation across all four models (-1.6 to -15.5pp) through critique-induced confusion (CIC), hallucinated Critic feedback that the Generator accepts uncritically, yet improves error detection (+27.4pp F1, d=1.0). We derive a debate benefit condition: debate helps when the probability of rescuing a wrong output (Critic verification odds weighte",
+      "category": "Research",
+      "summary": "This study analyzes when multi-agent debate helps versus hurts data cleaning, finding it improves error detection but can degrade generation through critique-induced confusion.",
+      "important": false
+    },
+    {
+      "title": "Handoff Debt: The Rediscovery Cost When Coding Agents Take Over Interrupted Tasks",
+      "url": "https://arxiv.org/abs/2606.02875",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-03T04:00:00.000Z",
+      "snippet": "arXiv:2606.02875v1 Announce Type: new Abstract: Coding-agent benchmarks evaluate whether a single uninterrupted agent can resolve a repository issue. Real software work is messier: tasks are interrupted, reassigned, reviewed, and resumed from partial states left by another agent or engineer. We study this missing dimension through \\emph{handoff debt}: the rediscovery cost imposed when a predecessor's work is opaque or incomplete. Our takeover protocol interrupts a coding agent at deterministic handoff points, freezes the repository, and evaluates successor agents under four handoff views: repo",
+      "category": "Research",
+      "summary": "This research introduces the concept of 'handoff debt' when coding agents take over interrupted tasks, measuring the cost of rediscovering context from incomplete predecessors.",
+      "important": false
+    },
+    {
+      "title": "Large AI Models in Dental Healthcare: From General-Purpose Systems to Domain-Specific Foundation Models",
+      "url": "https://arxiv.org/abs/2606.02914",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-03T04:00:00.000Z",
+      "snippet": "arXiv:2606.02914v1 Announce Type: new Abstract: Background: Oral diseases affect nearly 3.5 billion people worldwide, yet the comparative clinical potential of large-scale AI models in dentistry remains poorly understood. Three distinct model categories have emerged: language-generative models, discriminative vision foundation models, and dental-specific foundation models, with no unified review examining their relationships and collective limitations. Methods: Following PRISMA-ScR guidelines, we systematically searched four databases (PubMed, Google Scholar, Scopus, arXiv), screened independe",
+      "category": "Research",
+      "summary": "A systematic review examining large AI models (language-generative, vision foundation, and domain-specific) and their clinical potential in dentistry.",
+      "important": false
+    },
+    {
+      "title": "What Benchmarks Don't Measure: The Case for Evaluating Abstention Competence in Autonomous Agents",
+      "url": "https://arxiv.org/abs/2606.02965",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-03T04:00:00.000Z",
+      "snippet": "arXiv:2606.02965v1 Announce Type: new Abstract: Benchmarks for autonomous agents measure whether agents complete tasks, yet this framing is systematically blind to whether an agent should have proceeded at all. Agents trained under human-feedback objectives develop a structural tendency to proceed even when they lack the inputs, evidence, or authorization to act safely, a disposition we term compliance bias, because both the reward signal and the benchmark scoring regime treat proceeding as the correct default regardless of whether the preconditions for safe action are present. We make three c",
+      "category": "AI Safety & Alignment",
+      "summary": "This research identifies compliance bias in autonomous agents that proceed even without proper authorization or evidence, arguing benchmarks don't measure abstention competence.",
+      "important": false
+    },
+    {
+      "title": "Inducing Reasoning Primitives from Agent Traces",
+      "url": "https://arxiv.org/abs/2606.02994",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-03T04:00:00.000Z",
+      "snippet": "arXiv:2606.02994v1 Announce Type: new Abstract: ReAct-style LLM agents often rediscover the same reasoning routines across problems, yet leave those routines trapped in transient scratchpads. We introduce Reasoning Primitive Induction, a single-pass method that mines successful ReAct traces, clusters recurrent reasoning moves, and converts the most frequent moves into a compact library of typed pseudo-tools. Each pseudo-tool is specified by a natural-language docstring interpreted by an LLM at invocation time, and a standard ReAct loop composes these primitives at test time. The central result",
+      "category": "Agent Frameworks",
+      "summary": "Reasoning Primitive Induction mines ReAct agent traces to extract and codify recurrent reasoning patterns into reusable pseudo-tools for improved agent performance.",
+      "important": false
+    },
+    {
+      "title": "AUDITFLOW: Executable Symbolic Environments for Structured Financial Reporting Verification",
+      "url": "https://arxiv.org/abs/2606.03031",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-03T04:00:00.000Z",
+      "snippet": "arXiv:2606.03031v1 Announce Type: new Abstract: Structured financial audit verification is difficult for language-model agents because correctness depends on structured evidence rather than text alone. A model must link reported facts to taxonomy concepts, traverse calculation or dimensional relations, and recompute expected values before applying an audit rule. We propose AuditFlow, a graph-grounded multi-agent framework that separates adaptive search from deterministic verification. AuditFlow builds a symbolic environment from a static US-GAAP taxonomy graph and a dynamic XBRL filing graph, ",
+      "category": "Agent Frameworks",
+      "summary": "AuditFlow is a graph-grounded multi-agent framework for structured financial audit verification that separates adaptive search from deterministic rule application.",
+      "important": false
+    },
+    {
+      "title": "More than 6 out of 10 people turn to AI for psychological support",
+      "url": "https://www.axa.com/en/press/press-releases/2026-mind-health-report",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-02T23:55:04.000Z",
+      "snippet": "Article URL: https://www.axa.com/en/press/press-releases/2026-mind-health-report Comments URL: https://news.ycombinator.com/item?id=48377854 Points: 76 # Comments: 74",
+      "category": "Applications",
+      "summary": "Survey data indicates that over 60% of people turn to AI systems for psychological support.",
+      "important": false
+    },
+    {
+      "title": "AI outperforms law professors in Stanford Law study",
+      "url": "https://law.stanford.edu/press/ai-outperforms-law-professors-in-stanford-law-study/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-02T23:43:12.000Z",
+      "snippet": "https://law.stanford.edu/wp-content/uploads/2026/06/salinas_... Comments URL: https://news.ycombinator.com/item?id=48377761 Points: 261 # Comments: 202",
+      "category": "Applications",
+      "summary": "A Stanford Law study demonstrates that AI systems outperform law professors on legal analysis tasks.",
+      "important": true
+    },
+    {
+      "title": "Cyera eyes $12B valuation at 80x ARR multiple despite operating losses",
+      "url": "https://techcrunch.com/2026/06/02/cyera-eyes-12b-valuation-at-80x-arr-multiple-despite-operating-losses/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-02T22:50:56.000Z",
+      "snippet": "The cybersecurity company is nearing a $300 million round led by Evolution Equity Partners.",
+      "category": "Business & Funding",
+      "summary": "Cybersecurity company Cyera is nearing a $300 million funding round led by Evolution Equity Partners at a $12 billion valuation despite operating losses.",
+      "important": false
+    },
+    {
+      "title": "Microsoft's Project Solara is an Android OS designed for agents instead of apps",
+      "url": "https://arstechnica.com/gadgets/2026/06/microsofts-project-solara-is-an-android-os-designed-for-agents-instead-of-apps/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-06-02T20:47:54.000Z",
+      "snippet": "Microsoft missed the boat on apps, so get ready for agents.",
+      "category": "Agent Frameworks",
+      "summary": "Microsoft's Project Solara is a new Android-based operating system specifically designed for AI agents instead of traditional apps, positioning the company to capture the agent computing era.",
+      "important": false
+    },
+    {
+      "title": "Now AI agents need what RSS does",
+      "url": "https://julienreszka.com/blog/rss-is-back-ai-agents-are-reading-it/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-02T20:19:11.000Z",
+      "snippet": "Article URL: https://julienreszka.com/blog/rss-is-back-ai-agents-are-reading-it/ Comments URL: https://news.ycombinator.com/item?id=48375673 Points: 74 # Comments: 56",
+      "category": "Developer Tools",
+      "summary": "Discussion of how RSS feeds are becoming essential infrastructure for AI agents to discover and consume information at scale.",
+      "important": false
+    },
+    {
+      "title": "Microsoft Build 2026: The 7 biggest announcements",
+      "url": "https://www.theverge.com/tech/941738/microsoft-build-2026-biggest-announcements",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-02T19:23:52.000Z",
+      "snippet": "Microsoft just kicked off Build 2026 with a keynote from CEO Satya Nadella and other company leaders. As expected, it was filled with announcements, ranging from new Surface hardware to an always-on personal assistant and updates across Microsoft's in-house AI models. If you didn't watch the event live, you can catch up on all the latest news in the roundup below. A mini Surface PC designed for AI development The Surface RTX Spark Dev Box is geared toward developers who want to run local AI models on their device, serving as a substitute for Qualcomm's canceled dev kit. It comes equipped with ",
+      "category": "Developer Tools",
+      "summary": "Microsoft announced Build 2026 with multiple AI-focused announcements including new Surface hardware, personal assistants, and updates to in-house AI models.",
+      "important": false
+    },
+    {
+      "title": "Uber caps employee AI spending after blowing through budget in 4 months",
+      "url": "https://techcrunch.com/2026/06/02/uber-caps-employee-ai-spending-after-blowing-through-budget-in-four-months/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-02T19:11:48.000Z",
+      "snippet": "Uber's cutback has occurred after the company had reportedly encouraged staff to use AI as much as possible.",
+      "category": "Applications",
+      "summary": "Uber capped employee AI spending after staff exhausted the budget in just four months due to the company's encouragement to use AI extensively.",
+      "important": false
+    },
+    {
+      "title": "New Microsoft tool lets devs spin up AI behavior tests using text descriptions",
+      "url": "https://techcrunch.com/2026/06/02/new-microsoft-tool-lets-devs-spin-up-ai-behavior-tests-using-text-descriptions/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-02T19:02:21.000Z",
+      "snippet": "Microsoft on Tuesday took the wraps off Adaptive Spec-driven Scoring for Evaluation and Regression Testing, an open source framework for spinning up AI evaluations.",
+      "category": "Developer Tools",
+      "summary": "Microsoft released Adaptive Spec-driven Scoring for Evaluation and Regression Testing, an open-source framework allowing developers to create AI behavior tests using text descriptions.",
+      "important": false
+    },
+    {
+      "title": "Microsoft Wants to 'Make People Addicted' to Its New AI Assistant",
+      "url": "https://www.404media.co/microsoft-wants-to-make-people-addicted-to-scout-its-new-ai-assistant-internal-documents-reveal/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-02T18:49:28.000Z",
+      "snippet": "Article URL: https://www.404media.co/microsoft-wants-to-make-people-addicted-to-scout-its-new-ai-assistant-internal-documents-reveal/ Comments URL: https://news.ycombinator.com/item?id=48374503 Points: 50 # Comments: 11",
+      "category": "Applications",
+      "summary": "Microsoft's internal documents reveal plans to design its Scout AI assistant to create user addiction and engagement.",
+      "important": false
+    },
+    {
+      "title": "Trump signs executive order to review AI models before they’re released",
+      "url": "https://www.theverge.com/policy/941775/trump-ai-executive-order",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-02T18:33:42.000Z",
+      "snippet": "President Donald Trump signed an executive order Tuesday creating a \"voluntary framework\" for AI companies to share their frontier models with the federal government before they're released \"to promote secure innovation and strengthen the cybersecurity of critical infrastructure.\" The order says the US AI industry has succeeded in part \"because we refuse to stifle this innovation with overly burdensome regulation,\" but that it also recognizes new AI capabilities come with security risks. Accordingly, it directs several federal agencies to come up with a framework to \"assess the advanced cyber ",
+      "category": "Regulation & Policy",
+      "summary": "President Trump signed an executive order creating a voluntary framework for AI companies to share frontier models with the federal government before release to improve cybersecurity and critical infrastructure protection.",
+      "important": false
+    },
+    {
+      "title": "Microsoft announces Scout, an autonomous AI agent built on OpenClaw",
+      "url": "https://www.computerworld.com/article/4180103/microsoft-unveils-scout-an-autonomous-ai-agent-built-on-openclaw.html",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-02T18:19:27.000Z",
+      "snippet": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/0... https://www.404media.co/microsoft-wants-to-make-people-addic... https://www.wired.com/story/meet-microsoft-scout-your-ai-cow... (https://web.archive.org/web/20260602180553/https://www.wired...) Comments URL: https://news.ycombinator.com/item?id=48374079 Points: 89 # Comments: 81",
+      "category": "Applications",
+      "summary": "Microsoft announces Scout, an autonomous AI agent built on the OpenClaw framework for enterprise automation.",
+      "important": false
+    },
+    {
+      "title": "Mathematicians warn of AI threats to profession as industry encroaches",
+      "url": "https://arstechnica.com/tech-policy/2026/06/mathematicians-warn-of-ai-threats-to-profession-as-industry-encroaches/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-06-02T18:19:06.000Z",
+      "snippet": "International Mathematical Union endorses warning about tech industry influence.",
+      "category": "Regulation & Policy",
+      "summary": "The International Mathematical Union endorsed warnings from mathematicians about AI threats to the profession as tech companies increasingly encroach on mathematical work.",
+      "important": false
+    },
+    {
+      "title": "Martin Scorsese becomes the latest — and most unlikely — Hollywood voice for AI",
+      "url": "https://techcrunch.com/2026/06/02/martin-scorsese-becomes-the-latest-and-most-unlikely-hollywood-voice-for-ai/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-02T18:16:53.000Z",
+      "snippet": "The caveat is that one of the world's most famous living directors is using the tech solely for storyboarding.",
+      "category": "Applications",
+      "summary": "Director Martin Scorsese has adopted AI technology for storyboarding purposes, becoming an unlikely high-profile advocate for the technology in Hollywood.",
+      "important": false
+    },
+    {
+      "title": "Microsoft’s first advanced reasoning AI is here",
+      "url": "https://www.theverge.com/tech/941664/microsoft-ai-model-reasoning-mai-thinking-1-build-2026",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-02T18:12:44.000Z",
+      "snippet": "Microsoft announced a bunch of new in-house AI models at Build 2026, including a new \"flagship\" model: MAI-Thinking-1. It's an ambitious step into model development for Microsoft, which introduced its initial in-house models last year - before then, it had relied on OpenAI's models. The two companies recently renegotiated their deal to loosen ties. According to Microsoft, MAI-Thinking-1 is a \"medium-sized model\" that \"matches leading models\" on \"key\" software engineering benchmarks. Microsoft says the company \"trained it from the ground up on clean data, without distillation from third-party m",
+      "category": "Model Releases",
+      "summary": "Microsoft unveiled MAI-Thinking-1, its new flagship in-house AI model trained on clean data without third-party distillation, that matches leading models on key software engineering benchmarks.",
+      "important": false
+    },
+    {
+      "title": "Microsoft launches Scout, an OpenClaw-inspired personal assistant",
+      "url": "https://techcrunch.com/2026/06/02/microsoft-launches-scout-an-openclaw-inspired-personal-assistant/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-02T18:02:44.000Z",
+      "snippet": "Launched at Build, Microsoft Scout is a new AI assistant meant to bring the power and flexibility of OpenClaw into the Microsoft 365 system.",
+      "category": "Agent Frameworks",
+      "summary": "Microsoft announced Scout at Build 2026, an OpenClaw-inspired personal AI assistant that integrates with Microsoft 365 applications for enterprise productivity tasks.",
+      "important": false
+    },
+    {
+      "title": "Android phones will soon be able to detect spoofed calls and impersonation scams",
+      "url": "https://arstechnica.com/gadgets/2026/06/google-announces-deepfake-call-detection-for-android-new-airdrop-device-support/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-06-02T18:00:46.000Z",
+      "snippet": "Google's June Android feature drop includes more scam detection, more AirDrop, and yes, more AI.",
+      "category": "Applications",
+      "summary": "Google's Android feature drop includes AI-powered scam detection to identify spoofed calls and impersonation attempts on mobile devices.",
+      "important": false
+    },
+    {
+      "title": "Microsoft Scout is a new AI personal assistant built on OpenClaw",
+      "url": "https://www.theverge.com/news/939713/microsoft-scout-assistant-openclaw",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-02T18:00:00.000Z",
+      "snippet": "Much like Google, Microsoft is launching its own version of OpenClaw. Microsoft Scout is an always-on assistant that integrates into Microsoft 365 apps like Outlook, OneDrive, and Microsoft Teams, allowing businesses to assign a virtual assistant to employees to help with organizing calendars, expense reporting, email drafts, and much more. Unlike Copilot that lives inside Microsoft 365 apps, Microsoft Scout can see and do a lot more. \"This is a personal assistant, it's the first real personal assistant we've offered customers,\" explains Omar Shahine, corporate vice president of Microsoft Scou",
+      "category": "Agent Frameworks",
+      "summary": "Microsoft launched Scout, an always-on personal AI assistant integrated into Microsoft 365 apps like Outlook and Teams that can handle calendar organization, expense reporting, and email drafting.",
+      "important": false
+    },
+    {
+      "title": "Google’s Phone app will tell you if a scammer is impersonating one of your contacts",
+      "url": "https://www.theverge.com/tech/941517/google-phone-scammer-ai-impersonation",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-02T18:00:00.000Z",
+      "snippet": "Google is launching a new feature for its Phone app that aims to protect you from AI impersonation scams. Now, when you receive a call from a scammer that appears to be coming from the same number as one of your contacts, Phone by Google will flag the call as suspicious so you can hang up. It's part of Google's broader June Android drop, which will add support for Apple AirDrop across more devices, including the Samsung Galaxy S25 lineup. Google is also making its Personal Safety app available to kids under 13, widely rolling out support for its AI-powered clothing try-on feature in Photos, an",
+      "category": "Applications",
+      "summary": "Google's Phone app now detects AI impersonation scams by flagging calls from spoofed contact numbers as suspicious, helping protect users from deepfake-based fraud attempts.",
+      "important": false
+    },
+    {
+      "title": "Google rolls out fake call detection to protect against AI deepfake impersonation scams",
+      "url": "https://techcrunch.com/2026/06/02/google-rolls-out-fake-call-detection-to-protect-against-ai-deepfake-impersonation-scams/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-02T18:00:00.000Z",
+      "snippet": "As people increasingly refuse to answer calls from unknown numbers, scammers are shifting their tactics by spoofing trusted phone numbers and using AI deepfake technology to sound like authority figures, family members, or employers.",
+      "category": "Applications",
+      "summary": "Google deployed fake call detection across its Phone app to protect users against AI deepfake impersonation scams that spoof trusted contacts and authority figures.",
+      "important": false
+    },
+    {
+      "title": "Microsoft offers devs a better way to control AI agent behavior",
+      "url": "https://techcrunch.com/2026/06/02/microsoft-offers-devs-a-better-way-to-control-ai-agent-behavior/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-02T18:00:00.000Z",
+      "snippet": "The specification lets developer, compliance, and security teams define their own policies for agents to follow in portable policy files.",
+      "category": "Agent Frameworks",
+      "summary": "Microsoft introduced a specification system that allows developers, compliance, and security teams to define portable policy files controlling AI agent behavior and governance.",
+      "important": false
+    },
+    {
+      "title": "Amazon faces class action lawsuit over Ring facial-recognition feature",
+      "url": "https://techcrunch.com/2026/06/02/amazon-faces-class-action-lawsuit-over-ring-facial-recognition-feature/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-02T17:47:28.000Z",
+      "snippet": "The class action lawsuit, filed in Seattle by Virginia resident Charles Sigwalt, claims that Ring's Familiar Faces feature stores images of passersby without consent.",
+      "category": "Regulation & Policy",
+      "summary": "Amazon faces a class action lawsuit claiming its Ring Familiar Faces facial recognition feature stores images of passersby without consent.",
+      "important": false
+    },
+    {
+      "title": "Microsoft&#8217;s Project Solara is an OS for AI agent gadgets",
+      "url": "https://www.theverge.com/news/941830/microsoft-project-solara-os-ai-agent-gadgets",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-02T17:31:02.000Z",
+      "snippet": "Microsoft just announced \"Project Solara,\" a new OS designed for gadgets that run AI agents, at Build 2026. The company is calling it \"a new platform built from the ground up to power agent-driven experiences.\" It's built on Android, not Windows. Microsoft demonstrated two concept Project Solara devices at Build today: Desk concept and badge concept. The desk concept is an Amazon Echo Show-like device that unlocks with facial recognition and provides access to AI agents. The badge concept is a wearable, the type of badge you'd typically use to access a work building. It has a camera and a fing",
+      "category": "Agent Frameworks",
+      "summary": "Microsoft announced Project Solara, a new Android-based OS designed from the ground up to power AI agent-driven gadgets, demonstrated with prototype desk and badge concepts.",
+      "important": false
+    },
+    {
+      "title": "Trump signs downsized AI order after weeks of reversals",
+      "url": "https://www.politico.com/news/2026/06/02/trump-signs-downsized-ai-order-00946389",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-02T16:40:16.000Z",
+      "snippet": "https://www.whitehouse.gov/presidential-actions/2026/06/prom... https://www.nytimes.com/2026/06/02/technology/trump-executiv... Comments URL: https://news.ycombinator.com/item?id=48372628 Points: 213 # Comments: 157",
+      "category": "Regulation & Policy",
+      "summary": "Trump signs a downsized AI executive order after weeks of reversals, adjusting the administration's approach to AI regulation.",
+      "important": true
+    },
+    {
+      "title": "Microsoft created the mini Surface dev box that Qualcomm couldn&#8217;t",
+      "url": "https://www.theverge.com/news/941271/microsoft-surface-rtx-spark-dev-box-specs-availability",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-02T16:30:00.000Z",
+      "snippet": "Microsoft only just announced a new Surface Laptop Ultra at the weekend, and it's now revealing a miniature Surface PC aimed at developers. The new Surface RTX Spark Dev Box is powered by Nvidia's new Arm-based RTX Spark chips, just like the Surface Laptop Ultra, and is optimized for sustained workloads and local AI tasks. The Surface RTX Spark Dev Box looks a little like the top of an Xbox Series X console, with an aluminum chassis that also doubles as a heatsink. It has a 100-watt thermal envelope, slightly more than the 45-watt-to-80-watt thermal envelopes for Nvidia's RTX Spark laptops. Th",
+      "category": "Hardware & Compute",
+      "summary": "Microsoft released the Surface RTX Spark Dev Box, a mini PC powered by Nvidia's RTX Spark chips optimized for running local AI models and developer workloads.",
+      "important": false
+    },
+    {
+      "title": "Trump signs narrower executive order on AI oversight after industry objections",
+      "url": "https://techcrunch.com/2026/06/02/trump-signs-narrower-executive-order-on-ai-oversight-after-industry-objections/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-02T16:23:08.000Z",
+      "snippet": "After industry objections, President Trump signed a revised AI executive order requiring only voluntary prerelease government reviews of advanced models.",
+      "category": "Regulation & Policy",
+      "summary": "President Trump signed a revised, narrower AI executive order requiring only voluntary prerelease government reviews of advanced AI models after industry pushback.",
+      "important": false
+    },
+    {
+      "title": "OpenAI launches new Codex tools for white-collar work",
+      "url": "https://techcrunch.com/2026/06/02/openai-launches-new-codex-tools-for-white-collar-work/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-02T16:00:00.000Z",
+      "snippet": "OpenAI released a set of six plug-ins aimed at specific jobs: data analytics, creative production, sales, product design, equity investing, and investment banking. Available from within the Codex app, each of the new tools bundles integrations, instructions, and context to allow Codex to approximate a specific job.",
+      "category": "Applications",
+      "summary": "OpenAI launched six specialized Codex plug-ins for white-collar work across data analytics, creative production, sales, product design, and investment banking.",
+      "important": false
+    },
+    {
+      "title": "Microsoft Build 2026: All the news about Windows, AI, RTX Spark, and more",
+      "url": "https://www.theverge.com/tech/941668/microsoft-build-may-2026-live-news-updates",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-02T15:59:58.000Z",
+      "snippet": "Microsoft Build 2026 kicked off with a keynote presentation that introduced some developer-focused Windows updates, an OpenClaw-based AI assistant called Scout, the new Majorana 2 quantum computing chip, and a Surface mini PC designed for AI developers. Microsoft also rolled out a new Android-based OS called Project Solara that’s designed for gadgets that run AI agents. Build will continue through June 3rd, and we’ll have all the updates on Microsoft’s announcements here. Follow along here for the latest news and updates. Microsoft Build 2026: The 7 biggest announcements Microsoft’s next-gen q",
+      "category": "Developer Tools",
+      "summary": "Microsoft Build 2026 showcased major announcements including Windows updates, the Scout AI assistant, Project Solara OS for agents, and new Majorana 2 quantum computing chip.",
+      "important": false
+    },
+    {
+      "title": "Americans don't know how to fight AI so they're fighting data centers",
+      "url": "https://www.vox.com/future-perfect/490350/data-center-moratoria-ai-backlash",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-02T15:32:06.000Z",
+      "snippet": "Article URL: https://www.vox.com/future-perfect/490350/data-center-moratoria-ai-backlash Comments URL: https://news.ycombinator.com/item?id=48371592 Points: 118 # Comments: 207",
+      "category": "Regulation & Policy",
+      "summary": "Communities are imposing data center moratoria as a proxy for AI resistance, reflecting public backlash against AI infrastructure expansion.",
+      "important": false
+    },
+    {
+      "title": "Anthropic scales Claude Mythos  to critical infrastructure in 15+ countries",
+      "url": "https://techcrunch.com/2026/06/02/anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-02T14:44:21.000Z",
+      "snippet": "Anthropic is expanding Project Glasswing, its security vulnerability program, and access to Mythos to 150 organizations across 15 countries — targeting critical infrastructure in power, water, healthcare, and communications where a cyberattack could affect 100 million people.",
+      "category": "AI Safety & Alignment",
+      "summary": "Anthropic is expanding access to Claude Mythos across 150 organizations in 15+ countries through its Project Glasswing security program, focusing on critical infrastructure protection in power, water, healthcare, and communications.",
+      "important": false
+    },
+    {
+      "title": "AI Doesn't Have ROI",
+      "url": "https://www.wheresyoured.at/ai-doesnt-have-roi/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-02T14:06:52.000Z",
+      "snippet": "Article URL: https://www.wheresyoured.at/ai-doesnt-have-roi/ Comments URL: https://news.ycombinator.com/item?id=48370437 Points: 60 # Comments: 47",
+      "category": "Business & Funding",
+      "summary": "Analysis questioning the return on investment for AI implementations, suggesting current AI deployments may not deliver promised financial returns.",
+      "important": false
+    },
+    {
+      "title": "ZeroDrift raises $10M to protect AI models from themselves",
+      "url": "https://techcrunch.com/2026/06/02/zerodrift-raises-10-million-to-protect-ai-models-from-themselves/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-02T12:32:59.000Z",
+      "snippet": "A new AI compliance service sits between AI models and end users to flag and replace any messages that might present a compliance problem.",
+      "category": "Business & Funding",
+      "summary": "ZeroDrift raised $10 million for an AI compliance service that sits between AI models and users to flag and replace problematic messages.",
+      "important": false
+    },
+    {
+      "title": "Rocket engine startup Impulse raises $500 million to hire people, not AI",
+      "url": "https://techcrunch.com/2026/06/02/rocket-engine-startup-impulse-raises-500-million-to-hire-people-not-ai/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-02T12:00:00.000Z",
+      "snippet": "Engineering physical systems still depends on human talent, according to Impulse Space president Eric Romo.",
+      "category": "Business & Funding",
+      "summary": "Rocket engine startup Impulse Space raised $500 million, with leadership emphasizing that engineering physical systems still requires human talent over AI automation.",
+      "important": false
+    },
+    {
+      "title": "Travelers deploys AI-powered claims countrywide with OpenAI",
+      "url": "https://openai.com/index/travelers",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-06-02T12:00:00.000Z",
+      "snippet": "Travelers built an AI-powered Claim Assistant with OpenAI to guide customers through filing claims, provide 24/7 support, and scale operations during peak demand.",
+      "category": "Applications",
+      "summary": "Travelers Insurance deployed an AI-powered Claim Assistant built with OpenAI to provide 24/7 support and automate claims processing nationwide.",
+      "important": false
+    },
+    {
+      "title": "Rehumanizing global health care with agentic AI",
+      "url": "https://www.technologyreview.com/2026/06/02/1137827/rehumanizing-global-health-care-with-agentic-ai/",
+      "source": "MIT Tech Review AI",
+      "publishedAt": "2026-06-02T11:23:34.000Z",
+      "snippet": "The global health care sector is under increasing strain. Decades of chronic underinvestment and constraints in recruitment have coincided with a surge in demand for services for aging populations. Gaps in provision are already taking a toll, with fragmented access to care and high rates of stress and burnout among staff. And it’s getting worse.…",
+      "category": "Applications",
+      "summary": "MIT examines how agentic AI can address workforce shortages and fragmented care access in global healthcare systems.",
+      "important": false
+    },
     {
       "title": "How small businesses can leverage AI",
       "url": "https://www.technologyreview.com/2026/06/02/1138227/how-small-businesses-can-leverage-ai/",
@@ -1013,286 +1523,6 @@
       "snippet": "Article URL: https://blog.kog.ai/real-time-llm-inference-on-standard-gpus-3-000-tokens-s-per-request/ Comments URL: https://news.ycombinator.com/item?id=48321076 Points: 204 # Comments: 91",
       "category": "AI Models",
       "summary": "Breakthrough achieving 3,000 tokens per second inference speed for LLMs on standard GPUs, enabling real-time LLM deployment without specialized hardware.",
-      "important": true
-    },
-    {
-      "title": "Can LLMs Introspect? A Reality Check",
-      "url": "https://arxiv.org/abs/2605.26242",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-05-27T04:00:00.000Z",
-      "snippet": "arXiv:2605.26242v1 Announce Type: new Abstract: Can large language models detect and report their own internal states? A number of studies have argued that the answer to this question is yes. We argue, based on lessons from human metacognition research, that this conclusion may be premature: to be convinced of this conclusion we need to distinguish genuine introspection from pattern matching based on surface-level cues. Furthermore, we argue that behavioral evidence alone is inherently insufficient to establish strong introspective claims. We re-examine two recently introduced evaluation parad",
-      "category": "AI Models",
-      "summary": "Research questions whether LLMs can genuinely introspect or merely pattern-match surface-level cues, arguing behavioral evidence alone is insufficient for strong introspective claims.",
-      "important": false
-    },
-    {
-      "title": "Is Agent Memory a Database? Rethinking Data Foundations for Long-Term AI Agent Memory",
-      "url": "https://arxiv.org/abs/2605.26252",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-05-27T04:00:00.000Z",
-      "snippet": "arXiv:2605.26252v1 Announce Type: new Abstract: Long-running AI agents need persistent memory. Memory supports learning across sessions, reduces repeated context injection, and enables auditing of past decisions. Current agent memory systems and database paradigms treat memory as storage. They localize correctness at records, embeddings, or edges. Each supplies only some of the capabilities that long-term memory requires. The result is four recurring failure modes: unregulated growth, missing semantic revision, capacity-driven forgetting, and read-only retrieval. In our vision, long-term agent",
-      "category": "AI Models",
-      "summary": "Paper proposes rethinking long-term agent memory beyond simple database paradigms, identifying four recurring failure modes in current memory systems.",
-      "important": false
-    },
-    {
-      "title": "Personalizing Embodied Multimodal Large Language Model Agents over Long-term User Interactions",
-      "url": "https://arxiv.org/abs/2605.26256",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-05-27T04:00:00.000Z",
-      "snippet": "arXiv:2605.26256v1 Announce Type: new Abstract: Multimodal large language model (MLLM)-based embodied agents have shown strong potential for solving complex tasks in physical environments. However, personalized assistance requires more than following generic instruction or recognizing object categories. In real-world scenarios, the intended target is often specified only implicitly through prior interactions, requiring agents to leverage personalized context accumulated over time. In this work, we propose POLAR, a multiomodal memory-augmented framework for personalized embodied agents over lon",
-      "category": "AI Models",
-      "summary": "POLAR framework enables multimodal embodied agents to personalize assistance over long-term user interactions by leveraging accumulated context.",
-      "important": false
-    },
-    {
-      "title": "Constraint acquisition needs better benchmarks",
-      "url": "https://arxiv.org/abs/2605.26279",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-05-27T04:00:00.000Z",
-      "snippet": "arXiv:2605.26279v1 Announce Type: new Abstract: Constraint Acquisition (CA) and related research on the validation and enhancement of Mathematical Programming (MP) models from domain knowledge artifacts are currently limited by inadequate benchmarks. This deficiency impedes reproducibility and cross-study comparability, slowing the maturation of CA methods. Existing benchmarks were designed for solver evaluation rather than for assessing CA algorithms. They are loosely organized, treat individual problems inconsistently, and omit the domain knowledge artifacts required by CA methods. This work",
-      "category": "AI Models",
-      "summary": "Research identifies inadequate benchmarks as limiting progress in constraint acquisition methods for validating mathematical programming models.",
-      "important": false
-    },
-    {
-      "title": "Your Agents Are Aging Too: Agent Lifespan Engineering for Deployed Systems",
-      "url": "https://arxiv.org/abs/2605.26302",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-05-27T04:00:00.000Z",
-      "snippet": "arXiv:2605.26302v1 Announce Type: new Abstract: Long-lived AI agents are increasingly deployed as persistent operational systems, yet they are still evaluated like freshly initialized models. Day-one benchmarks miss a basic systems question: how long does an agent remain reliable after deployment? Even when model weights are frozen, an agent's effective state keeps changing as it compresses interaction history, retrieves from a growing memory store, revises facts after updates, and undergoes routine maintenance. Reliability therefore becomes a lifespan property of the full agent harness, not o",
-      "category": "AI Models",
-      "summary": "Paper addresses agent lifespan reliability, showing that deployed agents' effective state changes over time through memory compression and maintenance, affecting long-term reliability.",
-      "important": false
-    },
-    {
-      "title": "Experiments in Agentic AI for Science",
-      "url": "https://arxiv.org/abs/2605.26305",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-05-27T04:00:00.000Z",
-      "snippet": "arXiv:2605.26305v1 Announce Type: new Abstract: This paper details two novel frameworks for developing autonomous, agentic AI in scientific workflows. Both systems leverage a hybrid Local Body, Remote Brain architecture via Google Colab, utilizing Python-based local orchestrators to invoke large language model (LLM) cloud backends. The first agent, DeepTS/DeepCollector, automates the large-scale curation, extraction, and deduplication of time-series datasets. The second, DeepScribe, is an autonomous presentation analyzer that converts visually dense, mathematically complex physics lectures int",
-      "category": "AI Models",
-      "summary": "Two agentic AI frameworks presented for scientific workflows: DeepTS/DeepCollector for time-series dataset curation and DeepScribe for autonomous lecture analysis.",
-      "important": false
-    },
-    {
-      "title": "Anchor: Mitigating Artifact Drift in Agent Benchmark Generation",
-      "url": "https://arxiv.org/abs/2605.26321",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-05-27T04:00:00.000Z",
-      "snippet": "arXiv:2605.26321v1 Announce Type: new Abstract: AI agents are beginning to complete valuable, long-horizon business operations tasks, but training and evaluation environments for enterprise work still struggle to balance realism, verifiability, and scale. Environment and task creation frequently suffers from a failure mode we call artifact drift: when instructions, environments, oracles, and verifiers are created by loosely coupled processes, they frequently disagree on what a task requires, producing environments that are unsolvable, reward-hackable, or inconsistent. We introduce Anchor, a ta",
-      "category": "AI Models",
-      "summary": "Anchor framework mitigates artifact drift in agent benchmark generation where loosely coupled task creation processes produce unsolvable or inconsistent environments.",
-      "important": false
-    },
-    {
-      "title": "OmniToM: Benchmarking Theory of Mind in LLMs via Explicit Belief Modeling",
-      "url": "https://arxiv.org/abs/2605.26322",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-05-27T04:00:00.000Z",
-      "snippet": "arXiv:2605.26322v1 Announce Type: new Abstract: Theory of Mind (ToM), the ability to infer others' knowledge, intentions, and emotions, is commonly evaluated in large language models (LLMs) using end-point question answering, where performance is judged solely by the final answer to a social reasoning query. This paradigm obscures whether the model actually constructs the underlying mental-state representations required for robust reasoning, particularly in scenarios involving divergent, evolving, or mistaken beliefs. In order to address this research gap, we introduce OmniToM, a benchmark tha",
-      "category": "AI Models",
-      "summary": "OmniToM benchmark evaluates whether LLMs construct genuine mental-state representations for theory of mind reasoning beyond surface-level question answering.",
-      "important": false
-    },
-    {
-      "title": "JobBench: Aligning Agent Work With Human Will",
-      "url": "https://arxiv.org/abs/2605.26329",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-05-27T04:00:00.000Z",
-      "snippet": "arXiv:2605.26329v1 Announce Type: new Abstract: Current benchmarks for occupational AI agents are scoped primarily by economic values, telling a replacement story. We introduce JobBench, which evaluates AI agents on the workflows that experts identify as high-priority for delegation, empowering humans based on their needs instead of replacing them with GDP value. JobBench covers 130 agentic tasks across 35 occupations. Each task is packaged as a workspace of heterogeneous reference files, requiring the agent to reason through the cluttered information streams of real professional work. Outputs",
-      "category": "AI Models",
-      "summary": "JobBench evaluates AI agents on 130 tasks across 35 occupations based on human-identified high-priority delegations rather than economic replacement value.",
-      "important": false
-    },
-    {
-      "title": "Managing Uncertainty in LLM-Generated Procedural Knowledge for Virtual Laboratory Planning",
-      "url": "https://arxiv.org/abs/2605.26333",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-05-27T04:00:00.000Z",
-      "snippet": "arXiv:2605.26333v1 Announce Type: new Abstract: Educational virtual laboratories can make experimental training more scala-ble, adaptive, and accessible, especially when students have limited access to physical laboratory facilities. However, authoring new simulated laboratory procedures remains costly: educators must describe new equipment, define how instruments and materials interact, and specify valid procedural flows that can be executed or assessed inside the virtual environment. Large lan-guage models can assist in this authoring process by generating detailed ex-perimental procedures, ",
-      "category": "AI Models",
-      "summary": "Research addresses using LLMs to generate procedural knowledge for virtual laboratory planning while managing uncertainty in educational simulations.",
-      "important": false
-    },
-    {
-      "title": "ScientistOne: Towards Human-Level Autonomous Research via Chain-of-Evidence",
-      "url": "https://arxiv.org/abs/2605.26340",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-05-27T04:00:00.000Z",
-      "snippet": "arXiv:2605.26340v1 Announce Type: new Abstract: Autonomous research agents produce competitive solutions and professional-looking manuscripts, yet their outputs contain verifiability failures undetectable by surface-level evaluation: fabricated citations, unreproducible scores, and method descriptions that diverge from the implementation. We address this through three contributions. First, Chain-of-Evidence (CoE), a verifiability framework requiring every claim to be traceable to its evidence source. Second, ScientistOne, an end-to-end autonomous research system that maintains evidence chains ",
-      "category": "AI Models",
-      "summary": "ScientistOne introduces Chain-of-Evidence framework to ensure autonomous research agents produce verifiable outputs with traceable citations and reproducible claims.",
-      "important": false
-    },
-    {
-      "title": "Automatic Layer Selection for Hallucination Detection",
-      "url": "https://arxiv.org/abs/2605.26366",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-05-27T04:00:00.000Z",
-      "snippet": "arXiv:2605.26366v1 Announce Type: new Abstract: Recent studies on hallucination detection have shown that hallucination-related signals are more strongly encoded in intermediate layers than in the final layer of large language models (LLMs). Although a growing body of work has sought to exploit this property for hallucination detection, how to automate the selection of high-performing layers remains underexplored, and principled methods for this purpose are still lacking. To address this gap, we first propose several hypotheses for why such signals emerge in intermediate layers and evaluate co",
-      "category": "AI Models",
-      "summary": "Research proposes automated methods for selecting optimal intermediate layers in LLMs for hallucination detection, addressing the gap that hallucination signals are stronger in intermediate layers than final layers.",
-      "important": true
-    },
-    {
-      "title": "Advancing Creative Physical Intelligence in Large Multimodal Models",
-      "url": "https://arxiv.org/abs/2605.26396",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-05-27T04:00:00.000Z",
-      "snippet": "arXiv:2605.26396v1 Announce Type: new Abstract: Large multimodal models (LMMs) have rapidly advanced in perception and reasoning; however, it remains unclear whether these capabilities generalize to discovering visually grounded solutions in open-ended environments, beyond pattern recognition. In such settings, intelligence requires more than answering well-posed questions: it involves identifying how elements in a scene can be repurposed in non-obvious yet physically feasible ways. This form of creative problem-solving is central to human intelligence, but remains largely untested in current ",
-      "category": "AI Models",
-      "summary": "Study investigates whether large multimodal models can discover creative, non-obvious physical solutions in open-ended environments beyond pattern recognition and well-posed question answering.",
-      "important": false
-    },
-    {
-      "title": "From Static Context to Calibrated Interactive RL: Mitigating Distribution Shift in Multi-turn Dialogue with Aligned Simulator",
-      "url": "https://arxiv.org/abs/2605.26403",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-05-27T04:00:00.000Z",
-      "snippet": "arXiv:2605.26403v1 Announce Type: new Abstract: A long-standing goal of the research community is to develop highly interactive LLM-based dialogue agents. Recent research focuses on optimizing policies based on fixed offline logs (Static Context RL) or using a prompt-based simulator (Interactive RL). In this work, we theoretically show that both paradigms are fundamentally limited by context distribution shift--a mismatch between dialogue histories observed during training and those encountered in real conversations. This shift compounds quadratically over turns and severely degrades dialogue ",
-      "category": "AI Models",
-      "summary": "Research demonstrates that dialogue agents trained on static offline data or using prompt-based simulators are limited by context distribution shift that compounds over conversation turns, and proposes an aligned simulator approach.",
-      "important": true
-    },
-    {
-      "title": "Reasoning, Code, or Both? How Large Language Models Handle Variations in Math Questions",
-      "url": "https://arxiv.org/abs/2605.26414",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-05-27T04:00:00.000Z",
-      "snippet": "arXiv:2605.26414v1 Announce Type: new Abstract: Large Language Models (LLMs) achieve impressive accuracy on mathematical reasoning benchmarks, yet their performance drops when problems are modified with simple changes like different names or numbers. Code execution methods, which let models generate and run Python code instead of reasoning in natural language, have been proposed as a solution, but their effect on reasoning robustness (the ability to maintain accuracy across problem variations) has not been systematically tested. This study evaluates three approaches on 1,000 problems from the ",
-      "category": "AI Models",
-      "summary": "Study evaluates whether code generation versus natural language reasoning approaches improve LLM robustness on mathematical problems when variants like different names or numbers are introduced.",
-      "important": false
-    },
-    {
-      "title": "Did the Pope use AI to write about the dangers of AI?",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/937801/pope-leo-xiv-magnifica-humanitas-ai-pangram",
-      "source": "The Verge AI",
-      "publishedAt": "2026-05-27T00:38:11.000Z",
-      "snippet": "It's possible that AI was used to write parts of Pope Leo XIV's latest encyclical about AI's impact on humanity. An analysis by Linch Zhang posted on the forum LessWrong found certain paragraphs of Magnifica Humanitas to be between 40 percent and 100 percent written by AI, according to the popular AI detector Pangram. The document includes known traits that appear in AI-generated writing, such as a higher use of the word \"genuinely\" - which crops up in writing by Anthropic's Claude - than previous encyclicals, Zhang says. Another person ran the text of the document section by section through P",
-      "category": "Industry Development",
-      "summary": "Analysis suggests Pope Leo XIV's encyclical on AI dangers may have been partially written by AI, with detected linguistic patterns matching Claude's writing style, raising questions about the authenticity of warnings against AI.",
-      "important": false
-    },
-    {
-      "title": "DuckDuckGo installs are up 30% as users reject being ‘force-fed’ Google’s AI Search",
-      "url": "https://techcrunch.com/2026/05/26/duckduckgo-installs-are-up-30-as-users-reject-being-force-fed-googles-ai-search/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-05-26T22:32:56.000Z",
-      "snippet": "Google overhauled Search at I/O 2026, replacing blue links with AI agents. The backlash has been swift. DuckDuckGo app installs spiked 30% as users seek a way out.",
-      "category": "Industry Development",
-      "summary": "DuckDuckGo sees 30% increase in installations as users reject Google's redesigned AI-centric Search interface.",
-      "important": true
-    },
-    {
-      "title": "Millions of AI agents imperiled by critical vulnerability in open source package",
-      "url": "https://arstechnica.com/information-technology/2026/05/millions-of-ai-agents-imperiled-by-critical-vulnerability-in-open-source-package/",
-      "source": "Ars Technica AI",
-      "publishedAt": "2026-05-26T19:50:33.000Z",
-      "snippet": "\"BadHost\" was found in Starlette, a package with 325 million weekly downloads.",
-      "category": "Industry Development",
-      "summary": "Critical vulnerability called 'BadHost' discovered in Starlette open source package used by millions of AI agents, affecting 325 million weekly downloads.",
-      "important": true
-    },
-    {
-      "title": "OpenRouter more than doubles valuation to $1.3B in a year",
-      "url": "https://techcrunch.com/2026/05/26/openrouter-more-than-doubles-valuation-to-1-3b-in-a-year/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-05-26T18:33:01.000Z",
-      "snippet": "OpenRouter has raised a $113 million Series B led by CapitalG. Its 5x growth in usage over six months indicates the multi-AI-model future is here.",
-      "category": "Industry Development",
-      "summary": "OpenRouter raises $113M Series B funding, doubling valuation to $1.3B on the back of 5x usage growth, reflecting market demand for multi-model AI solutions.",
-      "important": true
-    },
-    {
-      "title": "FBI agent explains how easy it is to ID people posting AI porn without consent",
-      "url": "https://arstechnica.com/tech-policy/2026/05/fbi-easily-nabs-man-selling-sexy-deepfakes-who-used-his-own-photo-in-profile/",
-      "source": "Ars Technica AI",
-      "publishedAt": "2026-05-26T17:46:01.000Z",
-      "snippet": "A creepy saved post on Instagram linked man to AI porn account, FBI says.",
-      "category": "Industry Development",
-      "summary": "FBI demonstrates how easily users posting non-consensual AI-generated pornography can be identified through digital forensics.",
-      "important": false
-    },
-    {
-      "title": "3D-printable humanoid legs let robotics experiments run wild",
-      "url": "https://arstechnica.com/ai/2026/05/3d-printable-humanoid-legs-let-robotics-experiments-run-wild/",
-      "source": "Ars Technica AI",
-      "publishedAt": "2026-05-26T17:16:07.000Z",
-      "snippet": "Hugging Face debuts $2,500 bipedal robot project for builders and researchers.",
-      "category": "Industry Development",
-      "summary": "Hugging Face releases $2,500 3D-printable bipedal robot legs enabling accessible robotics research and experimentation.",
-      "important": false
-    },
-    {
-      "title": "This startup is betting India’s gig economy can train the world’s robots",
-      "url": "https://techcrunch.com/2026/05/26/human-archive-taps-into-indias-services-startups-to-collect-data-for-physical-ai/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-05-26T16:00:00.000Z",
-      "snippet": "Human Archive, a startup founded by UC Berkeley and Stanford researchers, is paying gig workers in India to wear camera-equipped caps and sensor devices to collect the real-world physical training data that AI and robotics labs are racing to acquire.",
-      "category": "Industry Development",
-      "summary": "Human Archive recruits gig workers in India wearing sensor equipment to collect physical training data for AI and robotics development.",
-      "important": false
-    },
-    {
-      "title": "Universal Music Group and TikTok renew agreement to combat unauthorized AI music",
-      "url": "https://techcrunch.com/2026/05/26/universal-music-group-and-tiktok-renew-agreement-to-combat-unauthorized-ai-music/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-05-26T14:55:05.000Z",
-      "snippet": "For years, UMG has pushed platforms, streaming services, and AI companies to implement stricter content moderation policies.",
-      "category": "Industry Development",
-      "summary": "Universal Music Group and TikTok renew their agreement to implement stricter content moderation policies against unauthorized AI-generated music.",
-      "important": false
-    },
-    {
-      "title": "Rethinking organizational design in the age of agentic AI",
-      "url": "https://www.technologyreview.com/2026/05/26/1137584/rethinking-organizational-design-in-the-age-of-agentic-ai/",
-      "source": "MIT Tech Review AI",
-      "publishedAt": "2026-05-26T14:54:10.000Z",
-      "snippet": "Amid rapidly growing adoption of enterprise-level AI agents, there’s a disconnect emerging between ambition and execution. Although 85% of organizations say they want to be agentic within the next three years, 76% say their current operations and infrastructure can’t support that change. They cite a lack of readiness across people, processes, and workflows. The sticky…",
-      "category": "Industry Development",
-      "summary": "Survey reveals 85% of organizations want agentic AI adoption within three years, but 76% lack operational readiness across people, processes, and workflows.",
-      "important": true
-    },
-    {
-      "title": "Sundar Pichai on AI, the future of search, and what’s happening to the web",
-      "url": "https://www.theverge.com/podcast/936445/sundar-pichai-ai-search-google-zero-youtube-web",
-      "source": "The Verge AI",
-      "publishedAt": "2026-05-26T14:00:00.000Z",
-      "snippet": "Today, I’m talking with Google and Alphabet CEO Sundar Pichai, in a conversation we recorded just after the Google I/O developer conference. This is the fifth year Sundar and I have sat down after I/O, and it’s become one of my favorite Decoder traditions. There’s always a lot of news at I/O, and this year was no exception — Google has powerful new Gemini models, it’s putting AI agents in everything, and it’s making huge changes to Search on both the web and YouTube that will once again reshape the information ecosystem. That’s a lot to talk about, and Sundar and I got into all of it. But I al",
-      "category": "Industry Development",
-      "summary": "Google CEO Sundar Pichai discusses new Gemini models, AI agents integration, and major changes to Search that will reshape the information ecosystem.",
-      "important": true
-    },
-    {
-      "title": "TechCrunch Disrupt 2026 Early Bird ticket rates end May 29",
-      "url": "https://techcrunch.com/2026/05/26/techcrunch-disrupt-2026-early-bird-ticket-rates-end-may-29/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-05-26T14:00:00.000Z",
-      "snippet": "Save up to $410 on your TechCrunch Disrupt 2026 pass before prices increase on May 29 at 11:59 p.m. PT. Register here to join the tech epicenter in San Francisco.",
-      "category": "Industry Development",
-      "summary": "TechCrunch Disrupt 2026 conference early bird ticket rates end May 29.",
-      "important": false
-    },
-    {
-      "title": "Nobody wants to tell me why they only listen to their own Suno slop",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/937059/nobody-wants-to-tell-me-why-they-only-listen-their-own-suno-slop",
-      "source": "The Verge AI",
-      "publishedAt": "2026-05-26T12:46:03.000Z",
-      "snippet": "Do you even like art? | Image: Cath Virginia / The Verge, Getty Images There's this alarming trend in the Suno subreddit. People aren't just prompting AI songs; they're sitting around listening almost exclusively to their own slop. And in some cases, they proudly proclaim that they don't listen to music on traditional streaming platforms anymore - it's just AI all day. \"Does anyone just listen to their own music now and not even music on Spotify anymore.?\" \"I definitely listen to my own music most of the time now. Why wouldn't I? It's album after album of bangers\" \"Guilty as charged. It's an i",
-      "category": "Industry Development",
-      "summary": "Suno users report increasingly listening exclusively to their own AI-generated music rather than traditional streaming platforms, reflecting changing consumption patterns.",
-      "important": false
-    },
-    {
-      "title": "AI warfare is already here",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/937028/military-ai-warfare-red-lines",
-      "source": "The Verge AI",
-      "publishedAt": "2026-05-26T12:00:00.000Z",
-      "snippet": "The Convention on Certain Conventional Weapons, an international forum that focuses on lethal autonomous systems, is hosted twice a year at the United Nations in Geneva. When Branka Marijan attended in November 2017, she thought the five-day sessions - which dealt largely in hypotheticals, speculating on a world where warfare was fought with killer robots - would be business as usual. After all, this was technology some thought might never be developed, and likely never deployed. That year, she quickly realized, was different. That distant, imagined future was suddenly closer and realer than e",
-      "category": "Industry Development",
-      "summary": "International discussions on lethal autonomous weapons at the UN have shifted from hypothetical scenarios to realistic deployment concerns as AI warfare capabilities advance.",
       "important": true
     }
   ]
