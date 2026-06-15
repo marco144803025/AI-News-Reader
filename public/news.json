@@ -1,20 +1,250 @@
 {
-  "generatedAt": "2026-06-14T09:19:01.186Z",
+  "generatedAt": "2026-06-15T11:45:47.686Z",
   "daysBack": 1,
   "categories": [
-    "Regulation & Policy",
     "Business & Funding",
-    "Other",
-    "Applications",
-    "Developer Tools",
-    "Open Source",
-    "Agent Frameworks",
-    "Hardware & Compute",
     "Research",
+    "Agent Frameworks",
     "AI Safety & Alignment",
+    "Applications",
+    "Other",
+    "Regulation & Policy",
+    "Open Source",
+    "Developer Tools",
+    "Hardware & Compute",
     "Model Releases"
   ],
   "articles": [
+    {
+      "title": "The AI layoff wave is becoming a powder keg",
+      "url": "https://techcrunch.com/2026/06/15/the-ai-layoff-wave-is-becoming-a-powder-keg/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-15T07:25:41.000Z",
+      "snippet": "What makes this combustible: at the very moment that tens of thousands of workers are being shown the door, a small cohort of AI insiders is becoming wealthy on a scale that's hard to comprehend.",
+      "category": "Business & Funding",
+      "summary": "Mass AI layoffs are occurring simultaneously with dramatic wealth concentration among AI insiders, creating social and economic tensions in the sector.",
+      "important": false
+    },
+    {
+      "title": "A Deep Reinforcement Learning (DRL)-Based Transformer Method for Solving the Open Shop Scheduling Problem",
+      "url": "https://arxiv.org/abs/2606.13682",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-15T04:00:00.000Z",
+      "snippet": "arXiv:2606.13682v1 Announce Type: new Abstract: The open shop scheduling problem (OSSP) arises in many industrial and service settings but remains computationally challenging as the number of jobs and machines increases. While exact methods quickly become intractable, classical dispatching rules and metaheuristics may require substantial tuning to maintain solution quality at large scales. This study develops a Transformer-based scheduling policy for OSSP using an encoder-decoder architecture with multi-head attention. The model is trained on Taillard benchmark instances (4x4, 5x5, 7x7, and 10",
+      "category": "Research",
+      "summary": "Researchers develop a Transformer-based scheduling policy using deep reinforcement learning to solve the computationally challenging open shop scheduling problem.",
+      "important": false
+    },
+    {
+      "title": "UP-NRPA: User Portrait based Nested Rollout Policy Adaptation for Planning with Large Language Models in Goal-oriented Dialogue Systems",
+      "url": "https://arxiv.org/abs/2606.13683",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-15T04:00:00.000Z",
+      "snippet": "arXiv:2606.13683v1 Announce Type: new Abstract: To address the challenge that current dialogue policy planning methods struggle to dynamically adapt to diverse user characteristics, this paper proposes a User Portrait based Nested Rollout Policy Adaptation (UP-NRPA) online framework with Large Language Models. In contrast to conventional approaches dependent on model training and require offline reinforcement learning policy models for user groups, UP-NRPA enables dynamic customization of dialogue strategies through an adaptive mechanism. This is achieved by leveraging real-time user feedback ",
+      "category": "Agent Frameworks",
+      "summary": "A new framework called UP-NRPA enables dynamic customization of dialogue strategies in goal-oriented systems by leveraging LLMs to adapt to diverse user characteristics in real-time.",
+      "important": false
+    },
+    {
+      "title": "Orchestra-o1: Omnimodal Agent Orchestration",
+      "url": "https://arxiv.org/abs/2606.13707",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-15T04:00:00.000Z",
+      "snippet": "arXiv:2606.13707v1 Announce Type: new Abstract: The recent success of agent swarms has shifted the paradigm of large language model (LLM)-based agents from single-agent workflows to multi-agent systems, highlighting the importance of agent orchestration for task decomposition and collaboration. However, existing orchestration frameworks are limited to a narrow set of modalities and struggle to generalize to more complex settings where heterogeneous modalities coexist and interact. This limitation becomes particularly pronounced in omnimodal scenarios, where tasks require the unified understand",
+      "category": "Agent Frameworks",
+      "summary": "Orchestra-o1 presents an omnimodal agent orchestration framework that addresses limitations in current multi-agent systems by enabling heterogeneous modalities to coexist and interact.",
+      "important": false
+    },
+    {
+      "title": "Hybrid Open-Ended Tri-Evolution Makes Better Deep Researcher",
+      "url": "https://arxiv.org/abs/2606.13710",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-15T04:00:00.000Z",
+      "snippet": "arXiv:2606.13710v1 Announce Type: new Abstract: Deep research and agent evolution serve as de-facto tasks for AI agents in real-world applications toward artificial general intelligence. The former enables autonomous retrieval and integration of information in open-ended environments to tackle open-ended research tasks, yet it is constrained by the static parametric deep research capabilities of agent systems. The latter allows agents to autonomously interact with the environment to gain experiences that evolve model capabilities. However, its effectiveness has been widely validated only on ve",
+      "category": "Agent Frameworks",
+      "summary": "Researchers propose a hybrid approach combining open-ended evolution with deep research capabilities to improve AI agent performance toward AGI applications.",
+      "important": false
+    },
+    {
+      "title": "WorkBench Revisited: Workplace Agents Two Years On",
+      "url": "https://arxiv.org/abs/2606.13715",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-15T04:00:00.000Z",
+      "snippet": "arXiv:2606.13715v1 Announce Type: new Abstract: The best agent on WorkBench in March 2024, GPT-4, completed 43% of tasks and took an unintended harmful action, such as emailing the wrong person, on 26% of them. We re-visit the benchmark in June 2026 and find that the best agent to date, Claude Opus 4.8, completes 89% and takes an unintended harmful action on 2.5%. Aside from this considerable progress in frontier agent performance, three things stand out. First, capability and safety go together on WorkBench rather than trade off, so the models that finish the most tasks also do the least unin",
+      "category": "Research",
+      "summary": "A revisit of the WorkBench benchmark shows dramatic improvements in agent performance and safety over two years, with Claude Opus 4.8 completing 89% of workplace tasks versus GPT-4's 43%, while unintended harmful actions dropped from 26% to 2.5%.",
+      "important": true
+    },
+    {
+      "title": "Refusal Beyond a Single Direction: A Preliminary Comparison of Diff-in-Means and INLP",
+      "url": "https://arxiv.org/abs/2606.13720",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-15T04:00:00.000Z",
+      "snippet": "arXiv:2606.13720v1 Announce Type: new Abstract: Arditi et al. (2024) has shown that refusal in safety fine-tuned chat models is mediated by a single linear direction in the residual stream, recoverable by a difference-in-means (DiM) of harmful and harmless activations. We compare DiM-based interventions (activation addition and directional ablation) with two interventions derived from Iterative Nullspace Projection (INLP) -- nullspace projection and counterfactual flipping -- on five open-weight chat models, asking whether INLP can match DiM at steering refusal and whether its richer parameter",
+      "category": "AI Safety & Alignment",
+      "summary": "Researchers compare two intervention methods (DiM and INLP) for steering model refusal behavior, examining whether safety mechanisms in LLMs operate along single or multiple directions.",
+      "important": false
+    },
+    {
+      "title": "YeasierAgent: Agentic Social Sandbox as a Canvas for Intent-Driven Creation of Platform-Agnostic Symbiotic Agent-Native Applications",
+      "url": "https://arxiv.org/abs/2606.13722",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-15T04:00:00.000Z",
+      "snippet": "arXiv:2606.13722v1 Announce Type: new Abstract: This paper introduces YeasierAgent, an application-building paradigm based on symbiotic agents, narrative worlds, and scene-aware interaction. It challenges the conventional device-coupled model of software by redefining applications as collaborative spaces among users, agents, and worlds. We present a system architecture that achieves two primary contributions: (1) enabling the rapid, cross-platform construction of agent-native applications by utilizing platform-agnostic interactive units (agents, scenes, dialogue) rather than fixed graphical la",
+      "category": "Agent Frameworks",
+      "summary": "YeasierAgent introduces a new application-building paradigm for creating platform-agnostic agent-native applications using symbiotic agents and narrative worlds.",
+      "important": false
+    },
+    {
+      "title": "TwinBI: An Agentic Digital Twin for Efficient Augmented Interactions with Business Intelligence Dashboards",
+      "url": "https://arxiv.org/abs/2606.13731",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-15T04:00:00.000Z",
+      "snippet": "arXiv:2606.13731v1 Announce Type: new Abstract: Business intelligence (BI) increasingly combines dashboard interaction with LLM-based assistance, but these two modes often fall out of sync during multi-step analysis. As users switch between direct dashboard manipulation and natural-language queries, it becomes difficult to preserve a consistent analytical state across filters, hierarchies, metrics, and chart context. We present TwinBI, an agentic digital-twin framework that couples an LLM-based agent system with an executable BI dashboard state. TwinBI unifies conversational interaction, dashb",
+      "category": "Applications",
+      "summary": "TwinBI presents an agentic digital-twin framework that synchronizes LLM-based assistance with business intelligence dashboard interactions to maintain consistent analytical state.",
+      "important": false
+    },
+    {
+      "title": "When Sample Selection Bias Precipitates Model Collapse",
+      "url": "https://arxiv.org/abs/2606.13732",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-15T04:00:00.000Z",
+      "snippet": "arXiv:2606.13732v1 Announce Type: new Abstract: The proliferation of recursive training on synthetic data can alleviate data scarcity but risks model collapse, where repeated training erodes distributional tails and homogenizes outputs. Data selection is widely viewed as a remedy, yet its reliability depends critically on the reference distribution used by the verifier. We show that in low-resource verification regimes, where each verifier observes only a small, fragmented, and biased slice of the target manifold, selection itself becomes biased. This situation naturally arises in low-resource",
+      "category": "Research",
+      "summary": "Study reveals that data selection bias in low-resource verification environments can precipitate model collapse when training recursively on synthetic data.",
+      "important": false
+    },
+    {
+      "title": "AI Receptivity or AI Adoption Breadth? A Tool-Specific Reanalysis of the Lower-Literacy/Higher-Usage Link",
+      "url": "https://arxiv.org/abs/2606.13734",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-15T04:00:00.000Z",
+      "snippet": "arXiv:2606.13734v1 Announce Type: new Abstract: Recent evidence reported by Tully, Longoni, and Appel (2025) suggests that lower artificial intelligence (AI) literacy predicts greater receptivity toward AI. We revisit this claim using the public data from Study 3 of that article, which measures past usage of five AI tool categories on a five-point frequency scale. We first reproduce the negative association between AI literacy and aggregate AI usage using OLS on participant-level averages, binary logit, ordered logit, and multinomial logit specifications. We then show that the aggregate relati",
+      "category": "Research",
+      "summary": "Reanalysis of AI literacy data challenges claims about the relationship between lower AI literacy and greater AI adoption by examining tool-specific usage patterns.",
+      "important": false
+    },
+    {
+      "title": "MA-ProofBench: A Two-Tiered Evaluation of LLMs for Theorem Proving in Mathematical Analysis",
+      "url": "https://arxiv.org/abs/2606.13782",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-15T04:00:00.000Z",
+      "snippet": "arXiv:2606.13782v1 Announce Type: new Abstract: Large Language Models (LLMs) have made notable progress in automated theorem proving, yet existing formal benchmarks remain limited in both mathematical coverage and difficulty. Most are concentrated in areas that are easier to formalize, such as algebra and elementary number theory, and provide limited coverage of subfields that require deeper reasoning, including mathematical analysis. To address this gap, we introduce MA-ProofBench, to the best of our knowledge, the first formal theorem-proving benchmark dedicated to Mathematical Analysis. The",
+      "category": "Research",
+      "summary": "MA-ProofBench introduces the first formal theorem-proving benchmark dedicated to mathematical analysis, filling a gap in existing benchmarks that focus on more easily formalized domains.",
+      "important": false
+    },
+    {
+      "title": "Poker Arena: Multi-Axis Profiling of Strategic Reasoning and Memory in LLMs",
+      "url": "https://arxiv.org/abs/2606.13815",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-15T04:00:00.000Z",
+      "snippet": "arXiv:2606.13815v1 Announce Type: new Abstract: Strategic reasoning under uncertainty underpins consequential decisions in negotiation, finance, and policy, but prevailing game-play benchmarks collapse heterogeneous reasoning dimensions into a single scalar, leaving the capability structure of frontier LLMs unexamined. We introduce Poker Arena, a no-limit Texas Hold'em tournament platform that couples a three-layer memory architecture (within-hand, session, and cross-session) with a nine-axis cognitive profile decomposing strategic reasoning into interpretable dimensions such as bet-sizing cal",
+      "category": "Research",
+      "summary": "Poker Arena evaluates strategic reasoning and memory in LLMs through a poker tournament platform with multi-axis cognitive profiling across heterogeneous reasoning dimensions.",
+      "important": false
+    },
+    {
+      "title": "Capability Minimization as a Safety Primitive: Risk-Aware Causal Gating for Least-Privilege LLM Agents",
+      "url": "https://arxiv.org/abs/2606.13884",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-15T04:00:00.000Z",
+      "snippet": "arXiv:2606.13884v1 Announce Type: new Abstract: Modern decision systems increasingly rely on learned components whose outputs may be confident yet wrong, exposing downstream actions to costly errors. We introduce Risk-Aware Causal Gating (RACG), a framework that decides whether to act on, defer, or abstain from a model's prediction by combining causal effect estimation with calibrated risk control. RACG models the causal pathway from candidate actions to outcomes and gates each decision according to an estimated counterfactual risk rather than raw predictive confidence. To make gating reliable",
+      "category": "AI Safety & Alignment",
+      "summary": "Risk-Aware Causal Gating (RACG) framework enables safer LLM agent decision-making by gating actions based on counterfactual risk estimation rather than raw predictive confidence.",
+      "important": false
+    },
+    {
+      "title": "A Multi-Agent AI System for Automated High School Transcript Processing: Collaborative Document Analysis at Scale",
+      "url": "https://arxiv.org/abs/2606.13916",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-15T04:00:00.000Z",
+      "snippet": "arXiv:2606.13916v1 Announce Type: new Abstract: Each year, college admissions offices face an overwhelming challenge: processing millions of high school transcripts, each with unique formats, grading systems, and layouts. This manual process creates operational bottlenecks that delay admissions decisions and consume valuable resources. We present a transformative solution through a multi-agent AI system where specialized agents collaborate to automatically process diverse transcript formats through intelligent coordination and communication. Our multi-agent architecture consists of three speci",
+      "category": "Applications",
+      "summary": "A multi-agent AI system automates high school transcript processing for college admissions by using specialized agents that collaborate to handle diverse formats and grading systems.",
+      "important": false
+    },
+    {
+      "title": "Sorries Are Not the Hard Part: An Expert-Review Case Study of a Semi-Autonomous Formalization",
+      "url": "https://arxiv.org/abs/2606.13925",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-15T04:00:00.000Z",
+      "snippet": "arXiv:2606.13925v1 Announce Type: new Abstract: Large language models can often close proof gaps in interactive theorem provers, but a verified theorem is not the same thing as a reusable library contribution. We study this distinction through a detailed case study: a semi-autonomous formalization of Grothendieck's vanishing theorem. The initial version compiles with no sorries, but an expert review found serious problems in definitions, theorem generality, file organization, and the API. We then ran a review-driven refactor and compression process and obtained a second expert review. The befo",
+      "category": "Research",
+      "summary": "Case study of semi-autonomous theorem formalization reveals that while LLMs can close proof gaps, creating reusable library contributions requires significant expert review and refactoring.",
+      "important": false
+    },
+    {
+      "title": "AI is code – and can't be prompted into being smarter",
+      "url": "https://www.theregister.com/ai-and-ml/2026/06/14/ai-is-code-and-cant-be-prompted-into-being-smarter/5254141",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-14T20:17:54.000Z",
+      "snippet": "Article URL: https://www.theregister.com/ai-and-ml/2026/06/14/ai-is-code-and-cant-be-prompted-into-being-smarter/5254141 Comments URL: https://news.ycombinator.com/item?id=48532178 Points: 140 # Comments: 125",
+      "category": "Other",
+      "summary": "Commentary discusses fundamental limitations of prompting approaches to improve AI capabilities, arguing that capability improvements require changes to the underlying code/models.",
+      "important": false
+    },
+    {
+      "title": "China may have accessed Mythos",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/949644/china-white-house-anthropic-mythos",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-14T18:27:55.000Z",
+      "snippet": "According to a new report from Semafor, the White House's decision to impose export restrictions on Anthropic's Mythos was driven in part by fears that it had been accessed by a group linked to China. If the Chinese government actually had access to Mythos 5 or Fable 5, it would present a serious national security risk. The government could also attempt to reverse engineer the model through distillation, a method in which a \"student\" AI is trained on a more advanced model to replicate its behavior. The White House has not confirmed this report, and a post on X by Trump adviser David Sacks did ",
+      "category": "Regulation & Policy",
+      "summary": "The White House imposed export restrictions on Anthropic's Mythos model reportedly due to concerns that a China-linked group accessed it, presenting potential national security risks and opportunities for reverse engineering through distillation.",
+      "important": true
+    },
+    {
+      "title": "Introducing the OpenAI Partner Network",
+      "url": "https://openai.com/index/introducing-openai-partner-network",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-06-14T17:00:00.000Z",
+      "snippet": "OpenAI launches the Partner Network, investing $150M to help global partners accelerate enterprise AI adoption, deployment, and transformation.",
+      "category": "Business & Funding",
+      "summary": "OpenAI launched a Partner Network with $150M investment to help global partners accelerate enterprise AI adoption and deployment.",
+      "important": true
+    },
+    {
+      "title": "As AI companies race to go public, who else is along for the ride?",
+      "url": "https://techcrunch.com/2026/06/14/as-ai-companies-race-to-go-public-who-else-is-along-for-the-ride/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-14T16:38:09.000Z",
+      "snippet": "Startups are trying to \"ride that SpaceX IPO wave.\"",
+      "category": "Business & Funding",
+      "summary": "AI startups are attempting to capitalize on the momentum of recent major IPOs like SpaceX to accelerate their own public market debuts.",
+      "important": false
+    },
+    {
+      "title": "Rio de Janeiro's \"homegrown\" LLM appears to be a merge of an existing model",
+      "url": "https://github.com/nex-agi/Nex-N2/issues/4",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-14T15:37:31.000Z",
+      "snippet": "Article URL: https://github.com/nex-agi/Nex-N2/issues/4 Comments URL: https://news.ycombinator.com/item?id=48528371 Points: 360 # Comments: 193",
+      "category": "Open Source",
+      "summary": "Investigation reveals that Rio de Janeiro's locally-developed LLM appears to be a merge of existing models rather than a genuinely new homegrown implementation.",
+      "important": false
+    },
+    {
+      "title": "Ponytail – make your AI agent think like the laziest senior dev in the room",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-14T15:08:17.000Z",
+      "snippet": "Article URL: https://github.com/DietrichGebert/ponytail Comments URL: https://news.ycombinator.com/item?id=48527946 Points: 66 # Comments: 8",
+      "category": "Developer Tools",
+      "summary": "Ponytail is a developer tool designed to make AI agents behave like lazy senior developers, optimizing for efficient problem-solving approaches.",
+      "important": false
+    },
+    {
+      "title": "Not everyone is using AI for everything",
+      "url": "https://gabrielweinberg.com/p/people-are-consuming-ai-like-they",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-14T14:44:29.000Z",
+      "snippet": "Article URL: https://gabrielweinberg.com/p/people-are-consuming-ai-like-they Comments URL: https://news.ycombinator.com/item?id=48527700 Points: 469 # Comments: 504",
+      "category": "Other",
+      "summary": "Analysis examines consumption patterns and varying levels of AI adoption across different user groups and use cases.",
+      "important": false
+    },
     {
       "title": "As Anthropic suspends access to new models, India debates its AI future",
       "url": "https://techcrunch.com/2026/06/13/as-anthropic-suspends-access-to-new-models-india-debates-its-ai-future/",
@@ -1634,236 +1864,6 @@
       "category": "Business & Funding",
       "summary": "OpenAI is planning a major overhaul of ChatGPT to reposition it as a gateway to higher-margin products ahead of a potential IPO.",
       "important": true
-    },
-    {
-      "title": "The weather and climate science AI revolution isn’t revolutionary",
-      "url": "https://arstechnica.com/science/2026/06/the-weather-and-climate-science-ai-revolution-isnt-revolutionary/",
-      "source": "Ars Technica AI",
-      "publishedAt": "2026-06-08T11:00:58.000Z",
-      "snippet": "Machine learning has its limits—how is it being used?",
-      "category": "Research",
-      "summary": "An examination of how machine learning is being applied to weather and climate science, noting both its promise and limitations in this domain.",
-      "important": false
-    },
-    {
-      "title": "WWDC 2026: How to watch and what to expect",
-      "url": "https://www.theverge.com/tech/944099/wwdc-2026-how-to-watch",
-      "source": "The Verge AI",
-      "publishedAt": "2026-06-08T11:00:00.000Z",
-      "snippet": "Apple's biggest event of the year is nearly here. The company's Worldwide Developers Conference will spotlight updates to iOS, macOS, and all of Apple's other operating systems, and this year's event could also include a major overhaul for Siri. Here's how you can watch along live. When WWDC will happen and where you can watch it WWDC lasts a few days, but Apple's biggest announcements will be in the keynote presentation on June 8th at 1PM ET / 10AM PT. The full presentation usually lasts a couple of hours. You can watch it live on YouTube or from Apple's website, but the best way is, as alway",
-      "category": "Other",
-      "summary": "Apple's WWDC 2026 keynote will air on June 8th and is expected to feature major Siri updates and Apple Intelligence enhancements across iOS and macOS.",
-      "important": false
-    },
-    {
-      "title": "DiBS: Diffusion-Informed Branch Selection",
-      "url": "https://arxiv.org/abs/2606.06518",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-08T04:00:00.000Z",
-      "snippet": "arXiv:2606.06518v1 Announce Type: new Abstract: Sudoku is a representative constraint satisfaction problem that requires global structural reasoning under strict discrete constraints. The existing works of solving Sudoku mainly focus on two dominant approaches, i.e., traditional heuristic and deep learning solver. However, they suffer from two complementary limitations: learning-based solvers lack hard correctness guarantees, while complete symbolic solvers are still prone to long-tail search. To address these shortcomings, we propose a novel diffusion model-guided approach, termed as DiBS, fo",
-      "category": "Research",
-      "summary": "DiBS proposes a novel diffusion model-guided approach to solve Sudoku problems by combining learning-based and symbolic solving methods to overcome limitations in constraint satisfaction.",
-      "important": false
-    },
-    {
-      "title": "SafeGene: Reusable Adapters for Transferable Safety Alignment",
-      "url": "https://arxiv.org/abs/2606.06519",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-08T04:00:00.000Z",
-      "snippet": "arXiv:2606.06519v1 Announce Type: new Abstract: Open-weight LLMs are increasingly fine-tuned into customized assistants, but downstream fine-tuning can weaken safety alignment and make models more vulnerable to malicious prompts, even when the training data is not intentionally harmful. This creates a recurring safety recovery problem as target models are repeatedly updated with new task data or user interactions. We propose SafeGene, a reusable safety-adapter module designed for cross-task reuse within each architecture-compatible model family. Rather than treating safety recovery as a model-",
-      "category": "AI Safety & Alignment",
-      "summary": "SafeGene introduces reusable safety adapters for open-weight LLMs to recover safety alignment when models are fine-tuned on new tasks, addressing the recurring safety degradation problem.",
-      "important": false
-    },
-    {
-      "title": "Lean4Agent: Formal Modeling and Verification for Agent Workflow and Trajectory",
-      "url": "https://arxiv.org/abs/2606.06523",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-08T04:00:00.000Z",
-      "snippet": "arXiv:2606.06523v1 Announce Type: new Abstract: Equipping Large Language Models (LLMs) to execute reliable multi-step workflows has become a central challenge in artificial intelligence. Despite recent advances in LLMs' agentic capabilities, most agent systems still lack formal methods for specifying, verifying, and debugging their workflow and execution trajectories. This challenge mirrors a long-standing problem in mathematics, where the ambiguity of natural languages (NLs) motivates the development of formal languages (FLs). Inspired by this paradigm, we propose **Lean4Agent**, to the best ",
-      "category": "Agent Frameworks",
-      "summary": "Lean4Agent proposes formal verification methods for LLM agent workflows using formal languages, enabling specification, verification, and debugging of multi-step agent execution.",
-      "important": false
-    },
-    {
-      "title": "CrowdMath: A Dataset of Crowdsourced Mathematical Research Discussions",
-      "url": "https://arxiv.org/abs/2606.06526",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-08T04:00:00.000Z",
-      "snippet": "arXiv:2606.06526v1 Announce Type: new Abstract: Large language models have made substantial progress on mathematical reasoning, but existing benchmarks typically evaluate well-specified problems with final answers, step-by-step solutions, or complete proofs. They do not capture collaborative open-problem solving: a setting in which participants propose partial arguments, identify gaps or errors in prior steps, repair flawed reasoning, and gradually synthesize incremental contributions into a proof. We introduce CrowdMath, a dataset of 164 expert-annotated progress chains from the MIT PRIMES--A",
-      "category": "Research",
-      "summary": "CrowdMath dataset captures collaborative open-problem solving in mathematics with 164 expert-annotated chains, going beyond standard benchmarks to evaluate how models handle partial arguments and incremental synthesis.",
-      "important": false
-    },
-    {
-      "title": "Attack Selection in Agentic AI Control Evaluations Meaningfully Decreases Safety",
-      "url": "https://arxiv.org/abs/2606.06529",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-08T04:00:00.000Z",
-      "snippet": "arXiv:2606.06529v1 Announce Type: new Abstract: An attacker that strategically chooses when to attack is much harder to catch than one that attacks indiscriminately. AI control is a safety framework for deploying capable but untrusted AI agents under the oversight of a weaker, trusted monitor and a limited human audit budget. Control evaluations stress-test these protocols by pitting a red-team attack policy against the blue-team monitor, but current evaluations typically assume attackers that do not strategically select when to attack. We study this capability, attack selection, in agentic se",
-      "category": "AI Safety & Alignment",
-      "summary": "Research shows that strategic attack selection in AI control evaluations significantly decreases safety compared to indiscriminate attacks, revealing a critical vulnerability in current safety frameworks.",
-      "important": true
-    },
-    {
-      "title": "Accelerated Fourier SAT (AFSAT): Fully Realising a GPU-based Symmetric Pseudo-Boolean SAT Solver",
-      "url": "https://arxiv.org/abs/2606.06641",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-08T04:00:00.000Z",
-      "snippet": "arXiv:2606.06641v1 Announce Type: new Abstract: We present Accelerated Fourier SAT (AFSAT), a GPU-accelerated solver for pseudo-Boolean satisfiability based on continuous local search (CLS). AFSAT realises the proof-of-concept approach, FastFourierSAT, into a fully-engineered solver supporting any heterogeneous mixture of symmetric constraint types and lengths within a single problem instance. Using the JAX compiler, AFSAT leverages pure function composition, automatic vectorisation, automatic differentiation, and just-in-time (JIT) compilation to perform massively parallel CLS across batches ",
-      "category": "Hardware & Compute",
-      "summary": "AFSAT presents a GPU-accelerated pseudo-Boolean SAT solver using JAX that achieves massively parallel continuous local search across batches of problems.",
-      "important": false
-    },
-    {
-      "title": "A Geometric Account of Activation Steering through Angle-Norm Decomposition",
-      "url": "https://arxiv.org/abs/2606.06735",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-08T04:00:00.000Z",
-      "snippet": "arXiv:2606.06735v1 Announce Type: new Abstract: Linear activation steering has gained popularity as a simple and empirically effective way to control language model behavior. More recently, spherical steering paradigms have been proposed to address limitations of additive interventions, often motivated by the assumption that hidden-state norm does not carry concept-relevant information. In this work, we revisit this assumption through a controlled empirical study designed to disentangle the roles of angular and radial components. We show that steering methods differ mainly in how they couple t",
-      "category": "Research",
-      "summary": "A geometric analysis of activation steering reveals that hidden-state norm carries concept-relevant information, challenging assumptions underlying spherical steering paradigms in language models.",
-      "important": false
-    },
-    {
-      "title": "OpenSkill: Open-World Self-Evolution for LLM Agents",
-      "url": "https://arxiv.org/abs/2606.06741",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-08T04:00:00.000Z",
-      "snippet": "arXiv:2606.06741v1 Announce Type: new Abstract: Self-evolving agents requires adaptation after deployment, but existing approaches assume a usable learning loop, such as curated skills, successful trajectories, or verifier signals. Real open-world deployments may provide none of these, offering only a task prompt. In this work, we study open-world self-evolution, where an agent must build both its skills and its own verification signals from scratch, using open-world resources but no target-task supervision. We propose OpenSkill, a framework that bootstraps this loop: it acquires grounded know",
-      "category": "Agent Frameworks",
-      "summary": "OpenSkill proposes a framework for LLM agents to build skills and verification signals from scratch in open-world deployments without target-task supervision.",
-      "important": false
-    },
-    {
-      "title": "AdMem: Advanced Memory for Task-solving Agents",
-      "url": "https://arxiv.org/abs/2606.06787",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-08T04:00:00.000Z",
-      "snippet": "arXiv:2606.06787v1 Announce Type: new Abstract: Large Language Models (LLMs) show promise as tool-using agents but remain limited in long-horizon tasks that require remembering, organizing, and reusing knowledge. Prior memory approaches aim to resolve the situation, but mainly focus on storing factual information. Recent work on procedural memory improves task reuse, yet often reduces to replaying past successes without addressing failure cases or online scalability. We introduce a unified and automatic memory framework that integrates semantic, episodic, and procedural memory in a bi-level de",
-      "category": "Agent Frameworks",
-      "summary": "AdMem integrates semantic, episodic, and procedural memory in a unified framework to improve LLM agents' long-horizon task performance and failure handling.",
-      "important": false
-    },
-    {
-      "title": "Evidence-Based Intelligent Diagnostic and Therapeutic Visualization System with Large Language Models: Multi-Turn Interaction and Multimodal Treatment Plan Generation",
-      "url": "https://arxiv.org/abs/2606.06869",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-08T04:00:00.000Z",
-      "snippet": "arXiv:2606.06869v1 Announce Type: new Abstract: Aim: Existing AI-assisted traditional Chinese medicine diagnostic tools suffer from opaque reasoning processes, passive interaction, and limited treatment plan presentation. This study proposes a knowledge-enhanced visual diagnostic system to improve the transparency and interpretability of syndrome differentiation and treatment. Methods: The system is built upon a Neo4j knowledge graph comprising 241 syndromes, 1,263 symptoms, and 2,485 relations. It incorporates a four-stage symptom matching pipeline (exact, semantic, fuzzy, and large language ",
-      "category": "Applications",
-      "summary": "A knowledge-enhanced visual diagnostic system for traditional Chinese medicine uses LLMs and Neo4j knowledge graphs to improve transparency and interpretability of syndrome differentiation.",
-      "important": false
-    },
-    {
-      "title": "Workflow-to-Skill: Skill Creation via Routing-Workflow-Semantics-Attachments Decomposition",
-      "url": "https://arxiv.org/abs/2606.06893",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-08T04:00:00.000Z",
-      "snippet": "arXiv:2606.06893v1 Announce Type: new Abstract: Large language model agents increasingly rely on Skills to encode procedural knowledge, yet high-quality Skills remain costly to hand-write. This paper studies automatic Skill construction from heterogeneous interaction evidence, including demonstrations, agent trajectories, tool traces, and execution logs. We argue that trace-to-skill construction is not simple summarization tasks, because traces are fragmented, redundant, and may miss rare but safety-critical behaviors. To address this, we introduce RWSA, a workflow-oriented intermediate repres",
-      "category": "Agent Frameworks",
-      "summary": "Workflow-to-Skill introduces RWSA decomposition to automatically construct high-quality skills for LLM agents from heterogeneous interaction evidence including demonstrations and execution logs.",
-      "important": false
-    },
-    {
-      "title": "Declarative Skills for AI Agents in Knowledge-Grounded Tool-Use Workflows",
-      "url": "https://arxiv.org/abs/2606.06923",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-08T04:00:00.000Z",
-      "snippet": "arXiv:2606.06923v1 Announce Type: new Abstract: We study orchestration mechanisms for tool-using AI agents in realistic customer-service workflows over an unstructured knowledge base. We argue that declarative agents -- AI agents equipped with natural-language skill files appended to the system prompt -- are an effective orchestration paradigm. Concretely, we compare (i) a DeclarativeAgent that reads three domain-specific skill files at inference time and decides its own control flow, (ii) an ImperativeAgent based on a programmatic state machine with explicit phases, and (iii) an unscaffolded ",
-      "category": "Agent Frameworks",
-      "summary": "Declarative agents with natural-language skill files outperform imperative state-machine agents for orchestrating tool-use in customer-service workflows.",
-      "important": false
-    },
-    {
-      "title": "Quantum-Inspired Trace-Augmented Evidence Selection for Reasoning over Structured Hypothesis Spaces",
-      "url": "https://arxiv.org/abs/2606.06941",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-08T04:00:00.000Z",
-      "snippet": "arXiv:2606.06941v1 Announce Type: new Abstract: Large language models (LLMs) now solve a wide range of expert-level exams at or above human level, yet remain brittle on specialised, evidence-intensive domains such as law. On these tasks, errors arise not only from gaps in world knowledge but also from subtle distinctions between pieces of evidence and inconsistent use of supporting evidence. The most common aggregator over sampled chain-of-thought (CoT) traces, majority vote, returns the most popular answer regardless of whether its evidence is actually strongest. We propose to treat the selec",
-      "category": "Research",
-      "summary": "A quantum-inspired approach improves evidence selection for LLM reasoning over structured hypothesis spaces, addressing brittleness on evidence-intensive domains like law.",
-      "important": false
-    },
-    {
-      "title": "Accounting for Context: Shaping Moral Credences for Value Alignment",
-      "url": "https://arxiv.org/abs/2606.06972",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-08T04:00:00.000Z",
-      "snippet": "arXiv:2606.06972v1 Announce Type: new Abstract: Ensuring that agent behaviours are aligned with human moral values inevitably raises the problem of how to account for the plurality of moral perspectives that societies -- and even individuals -- typically adopt. Work on moral uncertainty proposes mechanisms to fairly and democratically aggregate evaluations of actions across different moral theories. However, this paper argues that one needs to account for contextual factors when aggregating moral evaluations. For example, consequentialist perspectives assume an ability to accurately determine ",
-      "category": "AI Safety & Alignment",
-      "summary": "Research proposes accounting for contextual factors when aggregating moral evaluations across different moral theories to ensure value alignment with diverse human perspectives.",
-      "important": false
-    },
-    {
-      "title": "Exploring Agentic Tool-Calling Decisions via Uncertainty-Aligned Reinforcement Learning",
-      "url": "https://arxiv.org/abs/2606.06976",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-08T04:00:00.000Z",
-      "snippet": "arXiv:2606.06976v1 Announce Type: new Abstract: Large language model (LLM)-based agents often make suboptimal tool-use decisions, including unsupported tool invocation and hallucinated direct responses, which may accumulate errors throughout multi-step interactions. Existing approaches mainly improve these behaviors through inference-time correction or coarse-grained reward signals based on decision outcomes and structured checklists, leaving the uncertainty characteristics of agent decisions underexplored. We observe that decision-oriented reinforcement learning tends to weaken the uncertaint",
-      "category": "Agent Frameworks",
-      "summary": "Uncertainty-aligned reinforcement learning improves LLM agent tool-calling decisions by better accounting for decision uncertainty rather than just outcome feedback.",
-      "important": false
-    },
-    {
-      "title": "Is this the dawn of the Tokenpocalypse?",
-      "url": "https://techcrunch.com/2026/06/07/is-this-the-dawn-of-the-tokenpocalypse/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-07T20:26:13.000Z",
-      "snippet": "We're likely to see more price increases as the big AI companies plan to go public.",
-      "category": "Business & Funding",
-      "summary": "Major AI companies planning to go public may lead to increased pricing for AI services, potentially triggering a significant market shift.",
-      "important": false
-    },
-    {
-      "title": "Notion restores access to Anthropic after service disruption",
-      "url": "https://techcrunch.com/2026/06/07/notion-restores-access-to-anthropic-after-service-disruption/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-07T17:56:22.000Z",
-      "snippet": "Notion's head of product said he was \"astonished\" at “the amount of people RT-ing this.\"",
-      "category": "Applications",
-      "summary": "Notion restored access to its services after a disruption involving Anthropic's API, with the incident receiving significant social media attention.",
-      "important": false
-    },
-    {
-      "title": "OpenAI is still working on that ‘super app’",
-      "url": "https://techcrunch.com/2026/06/07/openai-is-still-working-on-that-super-app/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-07T16:23:22.000Z",
-      "snippet": "\"Chat is dead\" — at least, according to a senior OpenAI employee.",
-      "category": "Applications",
-      "summary": "OpenAI is developing a 'super app' to move beyond chat-based interactions, signaling a strategic shift in the company's product direction.",
-      "important": false
-    },
-    {
-      "title": "The OnlyFans Economy of American AI",
-      "url": "https://leoveanu.com/2026-06-06-qwen3.7max/",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-06-07T14:47:17.000Z",
-      "snippet": "Article URL: https://leoveanu.com/2026-06-06-qwen3.7max/ Comments URL: https://news.ycombinator.com/item?id=48435371 Points: 142 # Comments: 198",
-      "category": "Other",
-      "summary": "Article discussing the American AI economy landscape, generating significant discussion in the tech community.",
-      "important": false
-    },
-    {
-      "title": "AI ‘content creators’ are getting harder to spot",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/943187/ai-content-creators",
-      "source": "The Verge AI",
-      "publishedAt": "2026-06-07T12:00:00.000Z",
-      "snippet": "Aitana Lopez, AI avatar by creative agency The Clueless. | Image: The Clueless This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on AI confusion, follow Robert Hart. The Stepback arrives in our subscribers' inboxes at 8AM ET. Opt in for The Stepback here. How it started At first, AI influencers were relatively easy to identify - and to ignore. Aside from the occasional bursts of hype, they didn't seem to change much about the way social media worked. The earliest virtual influencers - Lil Miquela with her blunt fringe and freckles, Imma w",
-      "category": "Applications",
-      "summary": "AI-generated content creators and virtual influencers are becoming increasingly difficult to distinguish from human creators, raising concerns about transparency and authenticity on social media platforms.",
-      "important": false
-    },
-    {
-      "title": "School shooting survivor sues AI gun detection firm after system failed to spot weapon",
-      "url": "https://arstechnica.com/tech-policy/2026/06/school-shooting-survivor-sues-ai-gun-detection-firm-after-system-failed-to-spot-weapon/",
-      "source": "Ars Technica AI",
-      "publishedAt": "2026-06-07T11:08:30.000Z",
-      "snippet": "How accurate does an AI system need to be?",
-      "category": "Applications",
-      "summary": "A school shooting survivor sued an AI gun detection firm after the system failed to detect a weapon, raising questions about the required accuracy standards for safety-critical AI systems.",
-      "important": false
     }
   ]
 }
