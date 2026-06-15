@@ -6,12 +6,15 @@ feature must reach **Done** before the next starts, unless explicitly paralleliz
 | #   | Feature                                                          | Status      | Phase      |
 | --- | ---------------------------------------------------------------- | ----------- | ---------- |
 | F0  | [Repository setup & CI](./F0-repo-and-ci/)                       | Done        | Foundation |
-| F1  | [Smarter ingestion](./F1-smarter-ingestion/)                     | Not started | Backend    |
+| F1  | [Smarter ingestion](./F1-smarter-ingestion/)                     | Build       | Backend    |
 | F2a | [Trending topics](./F2a-trending-topics/)                        | Not started | UX         |
 | F2b | [Desktop notifications](./F2b-desktop-notifications/)            | Not started | UX         |
 | F2c | [Dark mode / Reader UI redesign](./F2c-dark-mode/)               | Done        | UX         |
 | F2d | [Category taxonomy expansion](./F2d-category-taxonomy/)          | Done        | UX         |
 | F3  | [Richer content](./F3-richer-content/)                           | Not started | Content    |
+| F4  | [Search & tag filtering](./F4-search-and-tags/)                  | Not started | UX         |
+| F6  | [UI modernization (A/B flag)](./F6-ui-modernization/)            | Not started | UX         |
+| F5  | [Email subscriptions per tag](./F5-email-subscriptions/)         | Not started | UX         |
 
 ## Phase 0 — Foundation
 
@@ -62,6 +65,25 @@ descriptions. 7-day transition window for existing articles.
 - Cluster duplicate stories across outlets (embedding similarity, threshold-based).
 - Entity extraction in the same Claude call as categorization: pull model names
   (`GPT-5`, `Claude 4.7`...), companies, products. Surface as filterable chips.
+
+**F4: Search & tag filtering.** Client-side keyword search over titles and
+summaries; tag/keyword chips as multi-select filters; URL-shareable filter state
+(`?q=…&tags=…`). Initially uses existing categories and naive keyword tokens;
+upgrades automatically once F3 entity extraction lands.
+
+**F6: UI modernization (A/B feature flag).** Build a second "modern/fancy"
+design lineage alongside the current dark-academic theme. Specifically targets
+the horizontal category scroll (replace with something more modern), card
+motion/hover, and typographic accents. Toggle via URL param or localStorage so
+both designs can be compared side-by-side before committing. Explicitly revisits
+F2c's "no toggle" stance for this experiment.
+
+**F5: Email subscriptions per tag.** Users subscribe to one or more tags and
+receive a digest when matching articles are ingested. ⚠️ Conflicts with
+Constitution rule #1 (no server runtime / no database). Spec must resolve one
+of: third-party form provider (Buttondown / Mailchimp / Resend + tiny
+serverless function), GitHub Actions cron digest with externalized storage, or
+a constitutional amendment. Path to be chosen during Gate 1.
 
 ## Cross-cutting (planned later)
 
