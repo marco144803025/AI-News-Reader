@@ -4,15 +4,29 @@ import { dirname, join } from "node:path";
 import Parser from "rss-parser";
 import Anthropic from "@anthropic-ai/sdk";
 import "dotenv/config";
+import type { NewsData, FeedHealth } from "../src/types.ts";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
 
 const MODEL = "claude-haiku-4-5-20251001";
 const DAYS_BACK = 1;
-const RETENTION_DAYS = 7;
 const BATCH_SIZE = 25;
 const ARXIV_CAP = 15;
+
+function parseRetentionDays(): number {
+  const raw = process.env.RETENTION_DAYS;
+  if (raw === undefined || raw === "") return 30;
+  const n = Number(raw);
+  if (!Number.isFinite(n) || n < 1) {
+    console.error(
+      `ERROR: RETENTION_DAYS must be a finite number >= 1, got: ${JSON.stringify(raw)}`
+    );
+    process.exit(1);
+  }
+  return n;
+}
+const RETENTION_DAYS = parseRetentionDays();
 
 const SEED_CATEGORIES = [
   "MCP",
@@ -65,13 +79,6 @@ type Article = RawArticle & {
   important?: boolean;
 };
 
-type NewsData = {
-  generatedAt: string;
-  daysBack: number;
-  categories: string[];
-  articles: Article[];
-};
-
 function stripHtml(s: string): string {
   return s
     .replace(/<[^>]*>/g, " ")
@@ -84,6 +91,33 @@ function isArxivRelevant(title: string, snippet: string): boolean {
   return ARXIV_KEYWORDS.some((k) => text.includes(k));
 }
 
+async function withRetry<T>(
+  fn: () => Promise<T>,
+  maxRetries = 3
+): Promise<T> {
+  const delays = [1000, 2000, 4000];
+  let attempt = 0;
+  while (true) {
+    try {
+      return await fn();
+    } catch (err) {
+      const isTransient =
+        err instanceof Anthropic.RateLimitError ||
+        err instanceof Anthropic.InternalServerError ||
+        err instanceof Anthropic.APIConnectionError;
+      if (!isTransient || attempt >= maxRetries) throw err;
+      const baseDelay = delays[Math.min(attempt, delays.length - 1)];
+      let delay = baseDelay;
+      if (err instanceof Anthropic.RateLimitError) {
+        const retryAfter = err.headers?.get?.("retry-after");
+        delay = Math.max(baseDelay, parseFloat(retryAfter ?? "0") * 1000);
+      }
+      await new Promise((r) => setTimeout(r, delay));
+      attempt++;
+    }
+  }
+}
+
 async function loadExisting(path: string): Promise<NewsData | null> {
   try {
     const raw = await readFile(path, "utf-8");
@@ -93,14 +127,23 @@ async function loadExisting(path: string): Promise<NewsData | null> {
   }
 }
 
-async function fetchFeeds(feeds: Feed[]): Promise<RawArticle[]> {
+async function fetchFeeds(
+  feeds: Feed[],
+  daysBack: number,
+  prevHealth: Record<string, FeedHealth> | undefined
+): Promise<{ articles: RawArticle[]; health: Record<string, FeedHealth> }> {
   const parser = new Parser({ timeout: 20000 });
-  const cutoff = Date.now() - DAYS_BACK * 24 * 60 * 60 * 1000;
+  const cutoff = Date.now() - daysBack * 24 * 60 * 60 * 1000;
   const articles: RawArticle[] = [];
+  const successAt: Record<string, string> = {};
+  const errors: Record<string, string> = {};
+  const attempted = new Set<string>();
 
   for (const feed of feeds) {
+    attempted.add(feed.name);
     try {
       const parsed = await parser.parseURL(feed.url);
+      const fetchedAt = new Date().toISOString();
       const isArxiv = feed.name.toLowerCase().includes("arxiv");
       const feedArticles: RawArticle[] = [];
 
@@ -130,12 +173,43 @@ async function fetchFeeds(feeds: Feed[]): Promise<RawArticle[]> {
 
       const capped = isArxiv ? feedArticles.slice(0, ARXIV_CAP) : feedArticles;
       articles.push(...capped);
+      successAt[feed.name] = fetchedAt;
       console.log(`  ok   ${feed.name} (${capped.length} articles)`);
     } catch (err) {
+      errors[feed.name] = (err as Error).message;
       console.warn(`  skip ${feed.name}: ${(err as Error).message}`);
     }
   }
-  return articles;
+
+  // Three-way branch: succeeded / failed / not-attempted (currently dead branch
+  // since every feeds.json entry is iterated above — kept explicit so future
+  // partial-fetch paths can land without missing a case).
+  const health: Record<string, FeedHealth> = {};
+  for (const feed of feeds) {
+    if (successAt[feed.name]) {
+      health[feed.name] = {
+        lastSuccess: successAt[feed.name],
+        lastError: null,
+        consecutiveFailures: 0,
+      };
+    } else if (errors[feed.name]) {
+      const prev = prevHealth?.[feed.name];
+      health[feed.name] = {
+        lastSuccess: prev?.lastSuccess ?? null,
+        lastError: errors[feed.name],
+        consecutiveFailures: (prev?.consecutiveFailures ?? 0) + 1,
+      };
+    } else {
+      const prev = prevHealth?.[feed.name];
+      health[feed.name] = prev ?? {
+        lastSuccess: null,
+        lastError: null,
+        consecutiveFailures: 0,
+      };
+    }
+  }
+
+  return { articles, health };
 }
 
 function dedupeIncoming(
@@ -249,31 +323,51 @@ async function main() {
     `Existing: ${existingArticles.length} articles, categories: ${existingCategories.join(", ")}`
   );
 
-  console.log("Fetching feeds (last 24h)...");
+  // Catch-up window: widen if generatedAt is older than DAYS_BACK, capped at 7.
+  let effectiveDaysBack = DAYS_BACK;
+  if (existing !== null) {
+    const parsedAt = Date.parse(existing.generatedAt);
+    if (Number.isFinite(parsedAt)) {
+      const gapDays = Math.ceil((Date.now() - parsedAt) / 86400000);
+      effectiveDaysBack = Math.min(7, Math.max(DAYS_BACK, gapDays + 1));
+    }
+  }
+  console.log(`Fetching feeds (last ${effectiveDaysBack}d)...`);
+
   const feeds: Feed[] = JSON.parse(
     await readFile(join(ROOT, "feeds.json"), "utf-8")
   );
-  const raw = dedupeIncoming(await fetchFeeds(feeds), existingUrls);
-  console.log(`${raw.length} new articles after dedup.`);
+  const { articles: fetched, health: feedHealth } = await fetchFeeds(
+    feeds,
+    effectiveDaysBack,
+    existing?.feedHealth
+  );
+  const raw = dedupeIncoming(fetched, existingUrls);
+  const newCount = raw.length;
+  console.log(`${newCount} new articles after dedup.`);
 
   const retentionCutoff = Date.now() - RETENTION_DAYS * 24 * 60 * 60 * 1000;
+  // AC9: generatedAt advances iff at least one new article was fetched.
+  const generatedAt =
+    newCount > 0
+      ? new Date().toISOString()
+      : existing?.generatedAt ?? new Date().toISOString();
 
-  if (raw.length === 0) {
-    console.log("No new articles — pruning and updating timestamp.");
+  if (newCount === 0) {
+    console.log("No new articles — pruning and writing.");
     const pruned = existingArticles.filter(
       (a) => Date.parse(a.publishedAt) > retentionCutoff
     );
     const categories = [...new Set(pruned.map((a) => a.category))];
     await mkdir(join(ROOT, "public"), { recursive: true });
-    await writeFile(
-      outputPath,
-      JSON.stringify(
-        { generatedAt: new Date().toISOString(), daysBack: DAYS_BACK, categories, articles: pruned },
-        null,
-        2
-      ),
-      "utf-8"
-    );
+    const output: NewsData = {
+      generatedAt,
+      daysBack: effectiveDaysBack,
+      categories,
+      articles: pruned,
+      feedHealth,
+    };
+    await writeFile(outputPath, JSON.stringify(output, null, 2), "utf-8");
     console.log(`Done. ${pruned.length} articles retained.`);
     return;
   }
@@ -282,11 +376,24 @@ async function main() {
   const classified: Article[] = [];
   for (let i = 0; i < raw.length; i += BATCH_SIZE) {
     const batch = raw.slice(i, i + BATCH_SIZE);
-    console.log(
-      `Classifying batch ${Math.floor(i / BATCH_SIZE) + 1} (${batch.length} articles)...`
-    );
-    const meta = await classifyBatch(client, batch);
-    batch.forEach((a, j) => classified.push({ ...a, ...meta[j] }));
+    const batchNum = Math.floor(i / BATCH_SIZE) + 1;
+    console.log(`Classifying batch ${batchNum} (${batch.length} articles)...`);
+    try {
+      const meta = await withRetry(() => classifyBatch(client, batch));
+      batch.forEach((a, j) => classified.push({ ...a, ...meta[j] }));
+    } catch (err) {
+      const transient =
+        err instanceof Anthropic.RateLimitError ||
+        err instanceof Anthropic.InternalServerError ||
+        err instanceof Anthropic.APIConnectionError;
+      if (transient) {
+        console.error(
+          `  skip batch ${batchNum}: retries exhausted — ${(err as Error).message}`
+        );
+      } else {
+        throw err;
+      }
+    }
   }
 
   const merged = [...classified, ...existingArticles];
@@ -297,15 +404,14 @@ async function main() {
   const categories = [...new Set(pruned.map((a) => a.category))];
 
   await mkdir(join(ROOT, "public"), { recursive: true });
-  await writeFile(
-    outputPath,
-    JSON.stringify(
-      { generatedAt: new Date().toISOString(), daysBack: DAYS_BACK, categories, articles: pruned },
-      null,
-      2
-    ),
-    "utf-8"
-  );
+  const output: NewsData = {
+    generatedAt,
+    daysBack: effectiveDaysBack,
+    categories,
+    articles: pruned,
+    feedHealth,
+  };
+  await writeFile(outputPath, JSON.stringify(output, null, 2), "utf-8");
   console.log(
     `Wrote public/news.json — ${pruned.length} articles total (${classified.length} new), ${categories.length} categories.`
   );

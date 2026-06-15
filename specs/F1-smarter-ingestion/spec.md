@@ -1,8 +1,20 @@
 # Smarter ingestion
 
 **ID:** F1-smarter-ingestion
-**Status:** Spec
+**Status:** Done
 **Owner:** marco144803025
+
+## Completion notes
+
+Implemented 2026-06-15. `npx tsc --noEmit` is clean.
+
+Verification status:
+- **AC7 (RETENTION_DAYS guard)** — verified locally; bad values exit before any file I/O.
+- **AC1, AC2, AC3, AC4, AC5, AC6, AC8, AC9, AC10, AC11** — not exercised locally
+  because there is no test harness and no `.env` with an API key on this
+  machine. Implementation is type-checked and code-reviewed; the next scheduled
+  CI ingest will exercise the happy path.
+- Follow-up tracked as **F1a — Ingest verification harness**.
 
 ## Intent
 

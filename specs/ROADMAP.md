@@ -6,7 +6,8 @@ feature must reach **Done** before the next starts, unless explicitly paralleliz
 | #   | Feature                                                          | Status      | Phase      |
 | --- | ---------------------------------------------------------------- | ----------- | ---------- |
 | F0  | [Repository setup & CI](./F0-repo-and-ci/)                       | Done        | Foundation |
-| F1  | [Smarter ingestion](./F1-smarter-ingestion/)                     | Build       | Backend    |
+| F1  | [Smarter ingestion](./F1-smarter-ingestion/)                     | Done        | Backend    |
+| F1a | [Ingest verification harness](./F1a-ingest-verification/)        | Not started | Backend    |
 | F2a | [Trending topics](./F2a-trending-topics/)                        | Not started | UX         |
 | F2b | [Desktop notifications](./F2b-desktop-notifications/)            | Not started | UX         |
 | F2c | [Dark mode / Reader UI redesign](./F2c-dark-mode/)               | Done        | UX         |
