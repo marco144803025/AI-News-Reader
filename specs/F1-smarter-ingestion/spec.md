@@ -51,6 +51,11 @@ other error classes — including `AuthenticationError` — are **permanent**.
 7. WHEN ingest completes THEN articles SHALL be retained for 30 days by default.
 8. WHEN the `RETENTION_DAYS` environment variable is set THEN it SHALL override the
    default retention period.
+9. WHEN an ingest run finishes THEN `generatedAt` SHALL advance to the run's
+   completion time IF AND ONLY IF at least one new article (an article not already
+   present in the existing archive) was fetched during the run; otherwise
+   `generatedAt` SHALL remain unchanged so the next run's catch-up window covers
+   the same gap.
 
 ## Non-goals
 
