@@ -1,20 +1,670 @@
 {
-  "generatedAt": "2026-06-15T11:45:47.686Z",
-  "daysBack": 1,
+  "generatedAt": "2026-06-17T10:25:24.322Z",
+  "daysBack": 3,
   "categories": [
-    "Business & Funding",
-    "Research",
-    "Agent Frameworks",
-    "AI Safety & Alignment",
     "Applications",
-    "Other",
+    "Business & Funding",
+    "Agent Frameworks",
+    "Research",
     "Regulation & Policy",
-    "Open Source",
     "Developer Tools",
+    "Other",
     "Hardware & Compute",
+    "AI Safety & Alignment",
+    "Open Source",
     "Model Releases"
   ],
   "articles": [
+    {
+      "title": "The next humanoid robot might not look human at all",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/951283/genesis-ai-humanoid-robot-eno",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-17T09:46:56.000Z",
+      "snippet": "The next humanoid robot might not have a head. It might not have legs. It might even sit on a wheeled base and fold down like a deck chair. But, as Genesis AI puts it, \"humanoid robots don't need to look human.\" That explains the look of Eno, the new robot from the French startup backed by former Google CEO Eric Schmidt. Genesis says Eno is designed \"around human capability\" rather than human appearance and is intended as a fully \"general-purpose\" robot rather than a machine built around a single task, like folding laundry. One part is still very human though: its hands, which the company says",
+      "category": "Applications",
+      "summary": "Genesis AI unveiled Eno, a general-purpose humanoid robot backed by former Google CEO Eric Schmidt that prioritizes human capability over human appearance, featuring dexterous hands but potentially wheelbase mobility and non-traditional morphology.",
+      "important": false
+    },
+    {
+      "title": "The founder's playbook: Building an AI-native startup",
+      "url": "https://claude.com/blog/the-founders-playbook",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-17T07:04:42.000Z",
+      "snippet": "Article URL: https://claude.com/blog/the-founders-playbook Comments URL: https://news.ycombinator.com/item?id=48566832 Points: 88 # Comments: 86",
+      "category": "Business & Funding",
+      "summary": "Hacker News discussion of Anthropic's playbook for building AI-native startups, sharing lessons on product strategy and organization design.",
+      "important": false
+    },
+    {
+      "title": "Beyond Parallel Sampling: Diverse Query Initialization for Agentic Search",
+      "url": "https://arxiv.org/abs/2606.17209",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-17T04:00:00.000Z",
+      "snippet": "arXiv:2606.17209v1 Announce Type: new Abstract: Test-time scaling for agentic search typically increases depth (i.e., more turns and tokens per trajectory) or breadth (i.e., more parallel rollouts). Here we focus on breadth scaling, showing that standard parallel sampling yields diminishing returns, tracing this to query redundancy at the first turn. When models issue similar first queries across rollouts, the threads retrieve overlapping evidence, and subsequent turns are conditioned on this shared retrieval. We address this limitation with DivInit, a training-free intervention at the first t",
+      "category": "Agent Frameworks",
+      "summary": "Research paper introduces DivInit, a training-free method to improve agentic search by diversifying initial queries to reduce retrieval redundancy.",
+      "important": false
+    },
+    {
+      "title": "When Rules Learn: A Self-Evolving Agent for Legal Case Retrieval",
+      "url": "https://arxiv.org/abs/2606.17220",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-17T04:00:00.000Z",
+      "snippet": "arXiv:2606.17220v1 Announce Type: new Abstract: Legal case retrieval remains challenging due to the complexity of legal language and the need for precise lexical alignment between queries and relevant cases. Although dense retrieval models have achieved notable progress, empirical studies show that BM25 continues to serve as a strong baseline in this domain. It motivates us to propose a self-evolving framework for rule-driven query rewriting that enhances BM25 without any parameter training. The framework equips an LLM-based agent with an automatic evaluation environment, enabling it to iterat",
+      "category": "Agent Frameworks",
+      "summary": "Research proposes a self-evolving LLM-based agent framework for legal case retrieval that improves upon BM25 through automatic query rewriting without parameter training.",
+      "important": false
+    },
+    {
+      "title": "SkillChain-Gym: A Benchmark for Reskilling-Aware Production-Inventory Control under Disruptions",
+      "url": "https://arxiv.org/abs/2606.17266",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-17T04:00:00.000Z",
+      "snippet": "arXiv:2606.17266v1 Announce Type: new Abstract: Production planning increasingly has to treat workforce capability as a decision variable: certifications lapse when skills are not maintained, new products require skills the current workforce does not hold, and reskilling competes for the same worker hours needed for production. Existing operations benchmarks usually treat labor as exogenous, while workforce-planning models with skills and learning are rarely released as reusable testbeds. We introduce SkillChain-Gym, a benchmark specification for reskilling-aware production-inventory control: ",
+      "category": "Research",
+      "summary": "Paper introduces SkillChain-Gym, a benchmark for studying workforce reskilling and skill management as decision variables in production-inventory planning under disruptions.",
+      "important": false
+    },
+    {
+      "title": "Nothing from Something: Can a Language Model Discover 0?",
+      "url": "https://arxiv.org/abs/2606.17289",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-17T04:00:00.000Z",
+      "snippet": "arXiv:2606.17289v1 Announce Type: new Abstract: AI systems based on artificial neural networks are being developed with aspirations of pushing the boundary of human mathematical knowledge. A key question for these systems is how much they can reach beyond their training data. Mathematical discovery requires a strong form of out of distribution generalization; the ability to hypothesize genuinely new - and potentially logically more powerful - mathematical structures. It has been hypothesized that language abilities support such generalizations in human cognition. In this work, we use simple ar",
+      "category": "Research",
+      "summary": "Research investigates whether language models can discover novel mathematical concepts like zero, probing their ability for out-of-distribution mathematical generalization.",
+      "important": false
+    },
+    {
+      "title": "Quantifying Consistency in LLM Logical Reasoning via Structural Uncertainty",
+      "url": "https://arxiv.org/abs/2606.17312",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-17T04:00:00.000Z",
+      "snippet": "arXiv:2606.17312v1 Announce Type: new Abstract: Large language models can arrive at the same answer through reasoning paths that are unstable, contradictory, or difficult to rank consistently -- a failure mode especially prevalent in multi-step deductive reasoning. Existing methods assess reliability primarily through output dispersion -- measuring how much sampled answers differ -- but this discards a complementary signal: whether the model can consistently rank competing reasoning candidates. We propose structural uncertainty, a consistency-aware framework derived from the stability of self-",
+      "category": "Research",
+      "summary": "Paper proposes structural uncertainty framework to assess consistency in LLM logical reasoning by measuring stability of reasoning paths beyond output variance.",
+      "important": false
+    },
+    {
+      "title": "MemTrace: Probing What Final Accuracy Misses in Long-Term Memory",
+      "url": "https://arxiv.org/abs/2606.17328",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-17T04:00:00.000Z",
+      "snippet": "arXiv:2606.17328v1 Announce Type: new Abstract: LLM agents increasingly maintain long-term memory of user facts across sessions. Yet such memory is usually evaluated by aggregating accuracy over question rows or episodes. Because this approach scores question rows independently, even when several questions probe the same fact, it cannot show how that fact behaves as conditions change. We introduce MemTrace, a benchmark whose unit of measurement is the knowledge point: a single typed fact about the user, rather than an individual question. MemTrace probes each fact along three controlled dimens",
+      "category": "Research",
+      "summary": "Introduces MemTrace, a benchmark for evaluating long-term memory in LLM agents by measuring knowledge persistence across changing conditions.",
+      "important": false
+    },
+    {
+      "title": "SpeechDx: A Multi-Task Benchmark for Clinical Speech AI",
+      "url": "https://arxiv.org/abs/2606.17339",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-17T04:00:00.000Z",
+      "snippet": "arXiv:2606.17339v1 Announce Type: new Abstract: Speech offers a uniquely informative window into health by simultaneously engaging neurological, motor, respiratory, and vocal systems. Current clinical speech AI methods have largely progressed through isolated condition-specific studies, making results difficult to compare and generalization difficult to assess. We introduce SpeechDx, a large-scale benchmark for clinical speech AI spanning 12 datasets and 27 tasks across diverse health conditions. To enable evaluation across shared clinical mechanisms, SpeechDx structures tasks by the stage of ",
+      "category": "Research",
+      "summary": "Presents SpeechDx, a large-scale multi-task benchmark spanning 12 datasets and 27 health-related tasks for evaluating clinical speech AI systems.",
+      "important": false
+    },
+    {
+      "title": "Distributed General-Purpose Agent Networks: Architecture, Key Mechanisms, and Prototypes",
+      "url": "https://arxiv.org/abs/2606.17368",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-17T04:00:00.000Z",
+      "snippet": "arXiv:2606.17368v1 Announce Type: new Abstract: Large language models have accelerated the transition from passive conversational assistants to autonomous agents that can understand goals, plan actions, invoke tools, and execute multi-step tasks. Yet the capability of a single agent remains constrained by its local data, tool permissions, runtime environment, and governance boundary. This paper studies distributed general-purpose agent networks: open peer-to-peer networks in which heterogeneous agents deployed on personal devices, edge nodes, or autonomous computing environments can discover o",
+      "category": "Agent Frameworks",
+      "summary": "Research explores distributed peer-to-peer networks of heterogeneous agents on personal devices and edge nodes with shared discovery and coordination mechanisms.",
+      "important": false
+    },
+    {
+      "title": "Incumbent Advantage: Brand Bias and Cognitive Manipulation Dynamics in LLM Recommendation Systems",
+      "url": "https://arxiv.org/abs/2606.17443",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-17T04:00:00.000Z",
+      "snippet": "arXiv:2606.17443v1 Announce Type: new Abstract: Large language models (LLMs) are becoming a major way for consumers to find products, but we do not yet understand how brands compete in this new channel. We study brand dynamics in LLM recommendations using skincare products -- a category where consumers cannot easily judge quality before buying and must rely on brand reputation -- across three commercial LLMs (GPT-4o-mini, Claude Sonnet, Gemini 3 Flash), with a robustness check on search goods. In three experiments, we find: (1) a Conditional Monopoly where well-known brands get recommended 100",
+      "category": "Research",
+      "summary": "Study examines brand bias and recommendation dynamics in LLM-based product recommendation systems, finding well-known brands achieve disproportionate advantage.",
+      "important": false
+    },
+    {
+      "title": "MapSatisfyBench: Benchmarking Satisfaction-Aware Map Agents through Behavior-Grounded Implicit Decision Factors",
+      "url": "https://arxiv.org/abs/2606.17453",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-17T04:00:00.000Z",
+      "snippet": "arXiv:2606.17453v1 Announce Type: new Abstract: Large language model agents are increasingly integrated into map services. Since map services are embedded in everyday-life scenarios rather than professional task settings, users often express their needs informally, resulting in underspecified queries with many unspoken needs, namely, implicit decision factors that are critical for user satisfaction. Although clarification is an effective way to mitigate this issue, it increases user burden in daily interaction, and a capable agent should first proactively recover such factors from available in",
+      "category": "Research",
+      "summary": "Introduces MapSatisfyBench, a benchmark for evaluating LLM-based map agents on their ability to infer and satisfy implicit user needs beyond explicit queries in map services.",
+      "important": false
+    },
+    {
+      "title": "Dissecting model behavior through agent trajectories",
+      "url": "https://arxiv.org/abs/2606.17454",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-17T04:00:00.000Z",
+      "snippet": "arXiv:2606.17454v1 Announce Type: new Abstract: AI agent performance is not just a modeling problem, it is fundamentally a systems problem. The advanced capabilities of models are realized through agent harnesses. Therefore, a gap between model assumptions and harness behavior can easily prevent the model's full capabilities from translating into agent performance. We formalize this as the `intent-execution' gap: the mismatch between what the model intends and what the harness executes, and vice versa. We argue that minimizing this intent-execution gap is as important as other aspects of harne",
+      "category": "Research",
+      "summary": "Formalizes the 'intent-execution gap' in AI agents—the mismatch between model intentions and harness behavior—as a critical systems problem distinct from model capability limitations.",
+      "important": false
+    },
+    {
+      "title": "Can LLMs Be CEOs? Benchmarking Strategic Resource Reallocation with Multi-Role Agent Simulation",
+      "url": "https://arxiv.org/abs/2606.17459",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-17T04:00:00.000Z",
+      "snippet": "arXiv:2606.17459v1 Announce Type: new Abstract: Evaluating the decision-making capabilities of large language models (LLMs) is a growing research priority, yet existing benchmarks focus on isolated cognitive tasks such as reasoning, knowledge retrieval, and economic rationality in stylized settings. These evaluations overlook the defining challenge of real executive decision-making: integrating conflicting recommendations from specialized stakeholders under information asymmetry, organizational constraints, and temporal dependencies. We introduce \\textsc{CEO-Bench}, a multi-agent benchmark tha",
+      "category": "Research",
+      "summary": "Presents CEO-Bench, a multi-agent simulation benchmark that evaluates LLM decision-making under real executive conditions including conflicting stakeholder input, information asymmetry, and organizational constraints.",
+      "important": false
+    },
+    {
+      "title": "LLM-as-Judge in Education: A Curriculum-Grounded Marking Pipeline",
+      "url": "https://arxiv.org/abs/2606.17507",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-17T04:00:00.000Z",
+      "snippet": "arXiv:2606.17507v1 Announce Type: new Abstract: Generative AI and large language models (LLMs) are increasingly applied to question generation and automated assessment. However, deploying LLMs in preparation for high-stakes exams requires more than prompt engineering; it demands software pipelines that systematically ground model outputs in authorised curriculum artefacts and marking guidelines issued by education authorities. This paper presents a curriculum-grounded, configurable LLM-as-Judge pipeline for question-level marking, co-developed with an industrial partner, to support exam prepar",
+      "category": "Applications",
+      "summary": "Describes a curriculum-grounded LLM-as-Judge pipeline for automated exam assessment that grounds model outputs in official curriculum and marking guidelines for high-stakes educational testing.",
+      "important": false
+    },
+    {
+      "title": "SEAGym: An Evaluation Environment for Self-Evolving LLM Agents",
+      "url": "https://arxiv.org/abs/2606.17546",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-17T04:00:00.000Z",
+      "snippet": "arXiv:2606.17546v1 Announce Type: new Abstract: Self-evolving LLM-based agents improve mainly by changing their agent harness: the structured execution layer around a base model, including prompts, memory, tools, middleware, runtime state, and the model-tool interaction loop. Existing evaluations often reduce this process to isolated task scores or a single sequential curve, obscuring whether an update produces reusable improvement, overfits recent tasks, increases cost, or harms older behavior. We introduce SEAGym, an evaluation environment for measuring agent harness updates across training,",
+      "category": "Research",
+      "summary": "Introduces SEAGym, an evaluation environment for measuring how updates to LLM agent harnesses (prompts, tools, memory) impact performance across training, validation, and older tasks holistically.",
+      "important": false
+    },
+    {
+      "title": "Surrogate Assisted Pedestrian Protection Design via a Foundation Model Orchestrated Workflow",
+      "url": "https://arxiv.org/abs/2606.17577",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-17T04:00:00.000Z",
+      "snippet": "arXiv:2606.17577v1 Announce Type: new Abstract: AI-driven engineering workflows face particular challenges in crash safety design: unlike aerodynamics, crash events involve highly nonlinear contact dynamics, material nonlinearity, and discrete state transitions that are difficult to capture with data-driven surrogate models. To the best of our knowledge, we present the first foundation model--orchestrated workflow for crash safety design that enables surrogate-assisted exploration for pedestrian protection, reducing evaluation time from hours per CAE simulation to seconds. The workflow integra",
+      "category": "Applications",
+      "summary": "Presents a foundation model-orchestrated workflow for crash safety design that accelerates pedestrian protection exploration from hours to seconds by combining surrogate models with FM reasoning.",
+      "important": false
+    },
+    {
+      "title": "Anthropic’s latest feud with the Trump admin may actually help it, sales data suggests",
+      "url": "https://techcrunch.com/2026/06/16/anthropics-latest-feud-with-the-trump-admin-may-actually-help-it-sales-data-suggests/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-16T22:34:17.000Z",
+      "snippet": "Anthropic's popularity with business users is growing so well that the latest beef with the government might actually boost it, data from Ramp suggests.",
+      "category": "Business & Funding",
+      "summary": "Data suggests Anthropic's popularity with business users is growing despite its recent conflict with the Trump administration, potentially boosting its competitive position.",
+      "important": false
+    },
+    {
+      "title": "Trump admin tries to block Clean Air Act lawsuit over xAI's gas turbines",
+      "url": "https://arstechnica.com/tech-policy/2026/06/trump-admin-helps-xai-fight-pollution-lawsuit-says-military-needs-grok-for-war/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-06-16T22:22:44.000Z",
+      "snippet": "NAACP lawsuit says xAI uses gas turbines without permits for Grok data center.",
+      "category": "Regulation & Policy",
+      "summary": "The Trump administration is attempting to block an NAACP lawsuit alleging xAI operates gas turbines without permits at its Grok data center.",
+      "important": false
+    },
+    {
+      "title": "Unlocking UK house-building with AI-accelerated planning",
+      "url": "https://deepmind.google/blog/unlocking-uk-house-building-with-ai-accelerated-planning/",
+      "source": "Google DeepMind",
+      "publishedAt": "2026-06-16T21:29:50.000Z",
+      "snippet": "UK government partners with Google DeepMind to build a new AI-powered prototype aimed at faster housing decisions.",
+      "category": "Applications",
+      "summary": "Google DeepMind partners with the UK government to develop an AI-powered prototype aimed at accelerating housing planning decisions.",
+      "important": false
+    },
+    {
+      "title": "Anthropic \"pauses\" token-based billing for its Claude Agent SDK",
+      "url": "https://arstechnica.com/ai/2026/06/anthropic-pauses-token-based-billing-for-its-claude-agent-sdk/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-06-16T21:00:35.000Z",
+      "snippet": "Move originally planned for Monday would have heavily increased power users' costs.",
+      "category": "Developer Tools",
+      "summary": "Anthropic pauses its planned token-based billing model for Claude Agent SDK that would have significantly increased costs for power users.",
+      "important": false
+    },
+    {
+      "title": "SpaceX valuation balloons to $2.6T, briefly passes Amazon",
+      "url": "https://techcrunch.com/2026/06/16/spacex-valuation-balloons-to-2-6t-briefly-passes-amazon/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-16T20:11:00.000Z",
+      "snippet": "SpaceX's valuation has increased by $1 trillion since its shares started trading on Friday.",
+      "category": "Business & Funding",
+      "summary": "SpaceX's valuation surged by $1 trillion to $2.6 trillion following its IPO launch, briefly exceeding Amazon's market capitalization.",
+      "important": true
+    },
+    {
+      "title": "AI is potentially a Dunning-Kruger effect amplifier",
+      "url": "https://twitter.com/i/status/2066825204207091926",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-16T19:47:13.000Z",
+      "snippet": "Article URL: https://twitter.com/i/status/2066825204207091926 Comments URL: https://news.ycombinator.com/item?id=48560913 Points: 60 # Comments: 27",
+      "category": "Other",
+      "summary": "Hacker News discussion on whether AI amplifies the Dunning-Kruger effect by enabling confident but potentially incorrect outputs.",
+      "important": false
+    },
+    {
+      "title": "Pentagon boasts of using AI to write reports mandated by Congress",
+      "url": "https://arstechnica.com/ai/2026/06/pentagon-boasts-of-using-ai-to-write-reports-mandated-by-congress/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-06-16T18:11:05.000Z",
+      "snippet": "Pentagon also claims 1.5 million personnel are using generative AI tools.",
+      "category": "Applications",
+      "summary": "The Pentagon reports using AI to generate congressionally-mandated reports and claims 1.5M personnel are leveraging generative AI tools.",
+      "important": false
+    },
+    {
+      "title": "Android 17 launches with new multitasking tools as Google expands Gemini features",
+      "url": "https://techcrunch.com/2026/06/16/android-17-launches-with-new-multitasking-tools-as-google-expands-gemini-features/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-16T18:00:00.000Z",
+      "snippet": "Google has released Android 17 and Wear OS 7, introducing new multitasking features, parental controls, security tools, and smartwatch upgrades. The launch is also accompanied by a Pixel Drop that brings Google’s latest AI models to its devices.",
+      "category": "Applications",
+      "summary": "Google released Android 17 and Wear OS 7 with new multitasking, parental controls, and security features, accompanied by a Pixel Drop bringing latest AI models to devices.",
+      "important": false
+    },
+    {
+      "title": "Has AI already killed self-help nonfiction books?",
+      "url": "https://tim.blog/2026/06/12/has-ai-already-killed-nonfiction/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-16T17:11:05.000Z",
+      "snippet": "Article URL: https://tim.blog/2026/06/12/has-ai-already-killed-nonfiction/ Comments URL: https://news.ycombinator.com/item?id=48558489 Points: 308 # Comments: 341",
+      "category": "Applications",
+      "summary": "Discussion on whether AI-generated content is replacing traditional self-help nonfiction books as a publishing category.",
+      "important": false
+    },
+    {
+      "title": "Apple 2027 rumors: AirPods with cameras for AI and the second folding iPhone",
+      "url": "https://www.theverge.com/tech/950826/apple-airpod-camera-ai-foldable-iphone-rumor",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-16T17:04:05.000Z",
+      "snippet": "AirPods Pro 3 shown with an iPhone and live translation features. | Photo by Amelia Holowaty Krales / The Verge Now that we're clear of WWDC and all of the new AI-powered features coming to Apple's platforms, Bloomberg reporter Mark Gurman has more details about rumored new hardware, like the camera-equipped AirPods he'd previously written about. He says they are currently on schedule for a late 2027 launch, and that while we're checking out beta releases for this fall's iOS 27 update, the new earbuds are internally being tested with next year's update, iOS 28. With cameras mounted in their st",
+      "category": "Applications",
+      "summary": "Apple is developing camera-equipped AirPods Pro 3 scheduled for late 2027 launch with AI-powered live translation features, currently undergoing testing with iOS 28.",
+      "important": false
+    },
+    {
+      "title": "Qualcomm’s latest chip hints that more powerful smart glasses could be on the way",
+      "url": "https://www.theverge.com/gadgets/950229/qualcomm-snapdragon-reality-elite-xr-smart-glasses-wearables",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-16T17:00:00.000Z",
+      "snippet": "Smart glasses are still a nascent category, but chipmaker Qualcomm is hard at work upgrading the silicon to power the next wave of XR devices: the Snapdragon Reality Elite. Although Qualcomm is announcing the chip today at Augmented World Expo, we've technically already gotten a hands-on with a device powered by the new chip at last month's Google I/O: the forthcoming Aura glasses for Android XR. At the time, Xreal and Google were coy about the processor upgrades to the long-awaited spectacles. Turns out, it was the Reality Elite. Spec-wise, the new chip focuses on across-the-board performance",
+      "category": "Hardware & Compute",
+      "summary": "Qualcomm announced the Snapdragon Reality Elite chip designed to power next-generation XR devices, including Google's forthcoming Aura glasses for Android XR.",
+      "important": false
+    },
+    {
+      "title": "Sixty percent of US consumers say ‘AI’ in brand messaging is a turnoff, survey finds",
+      "url": "https://techcrunch.com/2026/06/16/sixty-percent-of-u-s-consumers-say-ai-in-brand-messaging-is-a-turnoff-survey-finds/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-16T16:49:44.000Z",
+      "snippet": "WordPress VIP’s latest survey suggests consumers are wary of AI-generated answers even as companies increasingly view AI search as an important referral channel.",
+      "category": "Business & Funding",
+      "summary": "A WordPress VIP survey found that 60% of U.S. consumers view 'AI' branding negatively, indicating consumer skepticism despite companies' increased investment in AI search features.",
+      "important": false
+    },
+    {
+      "title": "SpaceX to acquire AI coding platform Cursor for $60 billion",
+      "url": "https://arstechnica.com/ai/2026/06/spacex-will-acquire-coding-tool-cursor-to-compete-with-anthropic-openai/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-06-16T16:37:45.000Z",
+      "snippet": "Separately, neither could compete. Now they hope they can.",
+      "category": "Business & Funding",
+      "summary": "SpaceX acquires AI coding platform Cursor for $60B in a strategic combination aiming to create synergies between the two companies.",
+      "important": true
+    },
+    {
+      "title": "Leaked financial docs show OpenAI is losing billions of dollars a year",
+      "url": "https://arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-06-16T16:18:07.000Z",
+      "snippet": "Audited accounting shows growing revenues being dwarfed by R&D, other expenses.",
+      "category": "Business & Funding",
+      "summary": "Leaked financial documents reveal OpenAI is losing billions annually as R&D and operational expenses far exceed growing revenues.",
+      "important": true
+    },
+    {
+      "title": "SpaceX is public: Everything you need to know post-IPO",
+      "url": "https://techcrunch.com/2026/06/16/spacex-is-public-everything-you-need-to-know-post-ipo/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-16T15:53:12.000Z",
+      "snippet": "TechCrunch has followed SpaceX's start, struggles, and successes from the early days. And we're here for what happens next too. This package of SpaceX IPO coverage includes who stands to win (and maybe some who won't), pre-IPO deals, and what's tucked inside its S-1 registration document.",
+      "category": "Business & Funding",
+      "summary": "SpaceX completed its blockbuster IPO with coverage of winners, pre-IPO deals, and details from its S-1 registration document.",
+      "important": false
+    },
+    {
+      "title": "After AI takes everything",
+      "url": "https://ursb.me/en/posts/after-ai-takes-everything/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-16T15:20:05.000Z",
+      "snippet": "Article URL: https://ursb.me/en/posts/after-ai-takes-everything/ Comments URL: https://news.ycombinator.com/item?id=48556644 Points: 98 # Comments: 108",
+      "category": "Other",
+      "summary": "Hacker News discussion on societal implications and scenarios following widespread AI automation.",
+      "important": false
+    },
+    {
+      "title": "DOJ claims xAI’s unpermitted gas turbines are a matter of ‘national, economic, and energy security’",
+      "url": "https://techcrunch.com/2026/06/16/doj-claims-xais-unpermitted-gas-turbines-are-a-matter-of-national-economic-and-energy-security/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-16T15:05:03.000Z",
+      "snippet": "The Justice department says the Pentagon needs xAI to keep using its unpermitted gas turbines.",
+      "category": "Regulation & Policy",
+      "summary": "The Department of Justice claims that xAI's unpermitted gas turbines are critical to national, economic, and energy security, defending the Pentagon's continued use despite permitting violations.",
+      "important": false
+    },
+    {
+      "title": "Plaud says its software business topped $100M in ARR after shipping over 2M AI notetakers",
+      "url": "https://techcrunch.com/2026/06/16/plaud-says-its-software-business-topped-100m-in-arr-after-shipping-over-2m-ai-notetakers/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-16T15:00:00.000Z",
+      "snippet": "Plaud is trying to make a mark in a crowded market full of AI-powered meeting notetakers.",
+      "category": "Applications",
+      "summary": "Plaud announced its AI notetaker software business exceeded $100M in annual recurring revenue after shipping over 2 million units in a crowded meeting transcription market.",
+      "important": false
+    },
+    {
+      "title": "Robinhood’s note on 10% layoffs shows blaming AI isn’t cutting it",
+      "url": "https://techcrunch.com/2026/06/16/robinhoods-note-on-10-layoffs-shows-blaming-ai-isnt-cutting-it/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-16T14:50:09.000Z",
+      "snippet": "Unlike many of his tech industry peers who have cut thousands of jobs citing the need to restructure to make the most of AI, Robinhood's CEO Vlad Tenev conspicuously made no mention of AI in his note about layoffs.",
+      "category": "Business & Funding",
+      "summary": "Robinhood CEO Vlad Tenev notably avoided citing AI as justification for the company's 10% layoffs, contrasting with peers who frequently blame restructuring for AI adoption.",
+      "important": false
+    },
+    {
+      "title": "Probably raises $9M to build a more reliable kind of AI",
+      "url": "https://techcrunch.com/2026/06/16/probably-raises-9m-to-build-a-more-reliable-kind-of-ai/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-16T13:15:09.000Z",
+      "snippet": "Probably wants to prevent hallucinations and factual errors from reaching users, and achieve accuracy on par with deterministic systems.",
+      "category": "Research",
+      "summary": "Probably raised $9M to develop AI systems that prevent hallucinations and factual errors, aiming to achieve accuracy comparable to deterministic systems.",
+      "important": false
+    },
+    {
+      "title": "SpaceX is officially buying Cursor for $60 billion",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/950571/spacex-is-officially-buying-cursor-for-60-billion",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-16T11:41:31.000Z",
+      "snippet": "Days after its massive IPO, SpaceX says it is spending $60 billion to buy Cursor - a bet designed to help Elon Musk's sprawling rocket / AI / social media behemoth win over lucrative enterprise customers and close the gap with AI rivals like Anthropic and OpenAI. The takeover was not entirely unexpected: SpaceX announced a peculiar arrangement in April in which it agreed to either acquire the programming platform for $60 billion or pay a $10 billion breakup fee. The company had been holding off completing the deal while going public. In an SEC filing, SpaceX said it expects the deal to close d",
+      "category": "Business & Funding",
+      "summary": "SpaceX announced it is acquiring Cursor, a programming platform, for $60 billion in stock to strengthen its AI division and compete with rivals like Anthropic and OpenAI.",
+      "important": true
+    },
+    {
+      "title": "SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO",
+      "url": "https://techcrunch.com/2026/06/16/spacex-to-acquire-cursor-for-60b-in-stock-days-after-blockbuster-ipo/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-16T11:21:41.000Z",
+      "snippet": "The deal is supposed to help SpaceX's struggling AI division. The company told IPO investors it sees a $26 trillion addressable market in AI.",
+      "category": "Business & Funding",
+      "summary": "SpaceX announced its $60B acquisition of Cursor in stock days after its IPO, positioning the deal to strengthen its AI division and address a claimed $26 trillion addressable market.",
+      "important": true
+    },
+    {
+      "title": "Critical Copilot vulnerability allowed hackers to steal 2FA code from users",
+      "url": "https://arstechnica.com/security/2026/06/critical-copilot-vulnerability-allowed-hackers-to-seal-2fa-code-from-users/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-06-16T11:15:46.000Z",
+      "snippet": "SearchLeak exploit shows why the industry's approach to LLM security fails over and over.",
+      "category": "AI Safety & Alignment",
+      "summary": "A critical vulnerability in Copilot allowed attackers to steal two-factor authentication codes, highlighting systemic LLM security weaknesses.",
+      "important": false
+    },
+    {
+      "title": "ChatGPT’s market share slips below 50% for first time",
+      "url": "https://techcrunch.com/2026/06/16/chatgpts-market-share-slips-below-50-for-first-time/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-16T10:30:00.000Z",
+      "snippet": "The chatbot still remains the most popular AI assistant worldwide with over 1.1 billion monthly users, followed by Gemini with 662 million and Claude with 245 million.",
+      "category": "Business & Funding",
+      "summary": "ChatGPT's market share fell below 50% for the first time while maintaining 1.1 billion monthly users, with Gemini at 662 million and Claude at 245 million users.",
+      "important": false
+    },
+    {
+      "title": "Want to get a data center online quickly? Give it some flex.",
+      "url": "https://www.technologyreview.com/2026/06/16/1138591/data-center-online-quickly-electric-grid-flex/",
+      "source": "MIT Tech Review AI",
+      "publishedAt": "2026-06-16T09:00:00.000Z",
+      "snippet": "At the end of a tense and scoreless first half of a soccer match between the English men’s team and rival Germany, millions of Brits let out a collective sigh and did what they so often do in moments of stress: They made tea. That wave of electric kettles clicking on, however, caused a different…",
+      "category": "Hardware & Compute",
+      "summary": "Article discusses flexible data center deployment strategies for rapid online availability in response to dynamic energy demand patterns.",
+      "important": false
+    },
+    {
+      "title": "Malaysia’s AI agent-powered messaging app Respond.io raises $62.5M, eyes acquisitions",
+      "url": "https://techcrunch.com/2026/06/15/malaysias-respond-io-raises-62-5m-eyes-acquisitions-in-north-america-and-europe/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-16T06:59:00.000Z",
+      "snippet": "Respond.io, one of Malaysia's startups to watch, uses AI agents to handle high volumes of customer inquiries and charges per convo, not per seat.",
+      "category": "Business & Funding",
+      "summary": "Malaysia-based Respond.io, which uses AI agents for customer service, raised $62.5M and plans acquisitions while charging per conversation rather than per seat.",
+      "important": false
+    },
+    {
+      "title": "Inside the fight over Claude Mythos 5",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/950412/anthropic-trump-adminstration-claude-mythos-fable-5-export-controls",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-16T03:00:00.000Z",
+      "snippet": "As the rest of the country celebrated the USA's first World Cup win and the New York Knicks championship, Anthropic spent its weekend fighting the Trump administration over its latest model release. At 5:21 PM on Friday, the company received a US export control directive to suspend access to its Mythos 5 and Fable 5 AI models by \"any foreign national\" inside or outside the US, \"including foreign national Anthropic employees.\" The only way that was possible, Anthropic determined, was to completely disable products it spent the past week hyping - and travel to Washington, DC in hopes of changing",
+      "category": "Regulation & Policy",
+      "summary": "The Trump administration issued an export control directive forcing Anthropic to disable its Mythos 5 and Fable 5 AI models to block foreign national access, sparking a weekend confrontation between the company and the White House.",
+      "important": true
+    },
+    {
+      "title": "Microsoft turns to AWS as GitHub faces AI capacity crunch",
+      "url": "https://runtimewire.com/article/microsoft-github-aws-ai-capacity-crunch",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-16T02:47:57.000Z",
+      "snippet": "Article URL: https://runtimewire.com/article/microsoft-github-aws-ai-capacity-crunch Comments URL: https://news.ycombinator.com/item?id=48549918 Points: 154 # Comments: 73",
+      "category": "Hardware & Compute",
+      "summary": "Reports that Microsoft's GitHub is experiencing AI capacity constraints and turning to AWS infrastructure to handle demand from GitHub Copilot.",
+      "important": false
+    },
+    {
+      "title": "Predicting model behavior before release by simulating deployment",
+      "url": "https://openai.com/index/deployment-simulation",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-06-16T00:00:00.000Z",
+      "snippet": "OpenAI introduces Deployment Simulation, a method to predict AI model behavior before deployment using real conversation data to improve safety and evaluation accuracy.",
+      "category": "AI Safety & Alignment",
+      "summary": "OpenAI introduces Deployment Simulation, a technique using real conversation data to predict model behavior before release and improve safety evaluation.",
+      "important": false
+    },
+    {
+      "title": "Sundar Pichai faces boos, walkout at Stanford graduation ceremony over Google’s Israel, ICE ties",
+      "url": "https://techcrunch.com/2026/06/15/sundar-pichai-faces-boos-walkout-at-stanford-graduation-ceremony-over-googles-israel-ice-ties/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-15T23:51:44.000Z",
+      "snippet": "AI is once again at the heart of a college graduation protest — this time for the technology's use in Google's defense contracts.",
+      "category": "Regulation & Policy",
+      "summary": "Sundar Pichai faced protests and a walkout at Stanford graduation over Google's use of AI in defense contracts and relationships with Israel and ICE.",
+      "important": false
+    },
+    {
+      "title": "The US government’s Anthropic models ban was never about an AI jailbreak",
+      "url": "https://techcrunch.com/2026/06/15/the-us-governments-anthropic-models-ban-was-never-about-an-ai-jailbreak/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-15T21:50:21.000Z",
+      "snippet": "The Trump administration's decision that forced Anthropic to pull its latest cybersecurity models could be reactionary, retaliatory, or both, but the message is clear: The AI industry isn't immune from U.S. government interference.",
+      "category": "Regulation & Policy",
+      "summary": "Analysis suggests the Trump administration's ban on Anthropic's cybersecurity models was reactionary or retaliatory rather than based on disclosed security concerns, signaling government willingness to interfere in the AI industry.",
+      "important": true
+    },
+    {
+      "title": "Facebook’s new AI Mode search gets its info from public posts",
+      "url": "https://www.theverge.com/tech/950264/meta-ai-mode-search-facebook",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-15T21:15:08.000Z",
+      "snippet": "Your public Facebook posts could help inform AI-generated results in Meta's new AI Mode. When you search on Facebook, the \"AI Mode\" option will appear alongside the usual search modes like \"People\" and \"Marketplace.\" It's one of several new AI features Meta is rolling out starting today, including photo presets that swap sports jerseys onto fans and suggestions for collage templates. Instead of \"just links,\" it gives users AI-generated results that pull from publicly-posted content across Meta's platforms, like the AI search feature in its new Reddit-like Forum app. Users can also ask Meta's A",
+      "category": "Applications",
+      "summary": "Meta launched AI Mode on Facebook, which generates AI-powered search results using publicly-posted content across Meta's platforms, alongside new features like AI-powered photo presets and collage suggestions.",
+      "important": false
+    },
+    {
+      "title": "Chipmaker Nvidia seeks to raise over $25B in first bond deal since 2021",
+      "url": "https://arstechnica.com/ai/2026/06/chipmaker-nvidia-seeks-to-raise-over-25b-in-first-bond-deal-since-2021/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-06-15T19:07:02.000Z",
+      "snippet": "Debt sale set to test investor appetite for further exposure to AI sector amid a deluge of borrowing.",
+      "category": "Hardware & Compute",
+      "summary": "Nvidia is seeking over $25B in its first bond issuance since 2021, testing investor appetite for AI sector exposure amid broader debt activity.",
+      "important": false
+    },
+    {
+      "title": "All the news about Anthropic&#8217;s new AI fight with the White House",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/950026/anthropic-fable-mythos-ban-ai-shutdown",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-15T19:04:53.000Z",
+      "snippet": "Anthropic was already navigating one dispute with the government in its standoff with the Pentagon, and then came an order on June 12th to block off foreign access to its most recently released AI models, Fable 5 and Mythos 5. When they launched on June 9th, Anthropic said “Fable 5’s capabilities exceed those of any model we’ve ever made generally available,” and that Claude Mythos 5 had the same underlying model, “but with the safeguards lifted in some areas.” According to reports, the order came after conversations between Amazon and the White House about researchers saying they found ways t",
+      "category": "Regulation & Policy",
+      "summary": "Anthropic faced a White House export control order on June 12th blocking foreign access to its Fable 5 and Mythos 5 models, reportedly triggered by conversations about security researchers discovering jailbreak methods.",
+      "important": true
+    },
+    {
+      "title": "Why do South Koreans love AI so much?",
+      "url": "https://www.technologyreview.com/2026/06/15/1138983/why-do-south-koreans-love-ai-so-much/",
+      "source": "MIT Tech Review AI",
+      "publishedAt": "2026-06-15T18:46:08.000Z",
+      "snippet": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. When I landed in Seoul after a grueling 12-hour flight from San Francisco, I walked through an unmanned immigration checkpoint, where a machine scanned my face and passport. On the subway home,…",
+      "category": "Other",
+      "summary": "Cultural analysis exploring South Korea's high adoption and enthusiasm for AI technologies compared to other nations.",
+      "important": false
+    },
+    {
+      "title": "Meta’s new ‘AI Mode’ on Facebook pulls from public info across its platforms",
+      "url": "https://techcrunch.com/2026/06/15/metas-new-ai-mode-on-facebook-pulls-from-public-info-across-its-platforms/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-15T18:30:58.000Z",
+      "snippet": "Meta announced Monday that it's rolling out a wave of new AI features on Facebook, the latest sign of the company's effort to catch up in the AI race and keep users more engaged on the platform.",
+      "category": "Applications",
+      "summary": "Meta rolled out AI Mode on Facebook, drawing from public information across its platforms to generate AI-powered search results and engagement features.",
+      "important": false
+    },
+    {
+      "title": "Trump’s Anthropic shutdown just made the case for non-American AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/949986/anthropic-fable-mythos-shutdown-sovereign-ai",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-15T18:10:27.000Z",
+      "snippet": "At Washington's request, Anthropic suddenly took its newest and most powerful AI models offline over the weekend. The American company said it had little choice after the White House demanded it block access for all foreign nationals, including its own employees. Abroad, the incident offered a sobering reminder that the US not only dominates frontier AI - its government also wields power over who gets to use it. The Trump administration's action was swift, sweeping, and imposed with little warning or explanation. The unprecedented shutdown of the Fable 5 and Mythos 5 models - which were alread",
+      "category": "Regulation & Policy",
+      "summary": "The Trump administration's sudden shutdown of Anthropic's latest AI models highlighted U.S. government power over frontier AI access and prompted international concerns about American AI dominance and control.",
+      "important": true
+    },
+    {
+      "title": "Show HN: Veterinarian turned founder, AI lawn diagnosis",
+      "url": "https://grassdx.com/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-15T17:56:00.000Z",
+      "snippet": "I know, it's kind of weird. What is a veterinarian doing creating an analysis tool for lawn problems? Frankly, the idea was born of my own lawn care struggles. Endless lawn care company fees without any actual improvement. Googling problems and finding generic solutions without regional considerations. One time I overseeded my grass not realizing I had to actually put soil down too. One day, I decided to run lawn pictures through AI and found some pretty helpful information. So I decided with my clinical background (the idea of treating the cause, not just the symptoms), as well as tech savvy,",
+      "category": "Applications",
+      "summary": "Hacker News post about a veterinarian-founded AI tool for lawn diagnosis that applies clinical diagnostic principles to lawn care problem analysis.",
+      "important": false
+    },
+    {
+      "title": "Big Tech’s desperate last push at AI regulation",
+      "url": "https://www.theverge.com/policy/949970/ai-regulation-child-safety-kosa-congress",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-15T17:44:10.000Z",
+      "snippet": "U.S. Sen. Marsha Blackburn (R-TN) and Majority Leader Chuck Schumer (D-NY) arrive for a news conference with bipartisan senators on passage of the Online Privacy Protection Act at the Capitol on July 30, 2024 in Washington, DC. | Kent Nishimura/Getty Images. For months, Big Tech's Washington lobbyists have chased after the holy grail of pro-AI legislation: preemption. This would be a comprehensive federal law, passed in Congress and signed by the president, applying one set of AI rules across the entire country and overriding the legally messy state-by-state approach to regulation. For months,",
+      "category": "Regulation & Policy",
+      "summary": "Big Tech lobbyists are pushing for comprehensive federal AI legislation with preemption to create uniform national rules and override state-by-state regulatory approaches.",
+      "important": false
+    },
+    {
+      "title": "Cybersecurity vets protest ‘dangerous’ US government ban on Anthropic’s most powerful models",
+      "url": "https://techcrunch.com/2026/06/15/cybersecurity-vets-protest-dangerous-us-government-ban-on-anthropics-most-powerful-models/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-15T15:29:51.000Z",
+      "snippet": "A group made up of dozens of cybersecurity experts urged the White House to remove export-control restrictions on Anthropic’s Fable and Mythos models, arguing that the order is going to limit the ability of cybersecurity defenders to secure their software and products.",
+      "category": "Regulation & Policy",
+      "summary": "Cybersecurity experts are urging the White House to lift export-control restrictions on Anthropic's Fable and Mythos models, arguing the ban hampers defensive security capabilities.",
+      "important": false
+    },
+    {
+      "title": "My Homelab AI Dev Platform",
+      "url": "https://rsgm.dev/post/ai-dev-platform/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-15T15:09:40.000Z",
+      "snippet": "Article URL: https://rsgm.dev/post/ai-dev-platform/ Comments URL: https://news.ycombinator.com/item?id=48542433 Points: 360 # Comments: 57",
+      "category": "Developer Tools",
+      "summary": "Hacker News discussion of a personal homelab AI development platform setup for experimentation.",
+      "important": false
+    },
+    {
+      "title": "Salesforce acquires AI customer service platform Fin for $3.6B",
+      "url": "https://techcrunch.com/2026/06/15/salesforce-acquires-ai-customer-service-platform-fin-for-3-6b/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-15T14:34:45.000Z",
+      "snippet": "Salesforce says it wants to use Fin's team and technology to improve Agentforce, its existing enterprise platform that businesses can use to build custom AI agents that automate tasks.",
+      "category": "Business & Funding",
+      "summary": "Salesforce acquires AI customer service platform Fin for $3.6B to enhance its Agentforce enterprise agent-building platform.",
+      "important": false
+    },
+    {
+      "title": "Skydio CEO Adam Bry on why Silicon Valley shouldn’t draw red lines for drone use",
+      "url": "https://www.theverge.com/podcast/949195/skydio-ceo-adam-bry-autonmous-drones-china-red-lines-military",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-15T14:00:00.000Z",
+      "snippet": "Today, I’m talking with Adam Bry, who is CEO of Skydio, the leading US maker of autonomous drones. Before we recorded this episode, I actually got to remotely operate one of Skydio’s drones in the Bay Area from Adam’s laptop in our podcast studio in New York and fly an indoor drone around our office. You can check out the full video of that on our YouTube channel. Beyond flying drones around the country, Adam and I talked about why Skydio is so focused on the enterprise market — I asked him a lot about working with police and military, but you’ll hear him say a lot of Skydio’s customers are ut",
+      "category": "Applications",
+      "summary": "Skydio CEO Adam Bry discusses the company's focus on enterprise autonomous drone markets and argues against Silicon Valley imposing restrictions on drone use applications.",
+      "important": false
+    },
+    {
+      "title": "Sarvam becomes India’s newest AI unicorn with $234 million funding round led by HCLTech",
+      "url": "https://techcrunch.com/2026/06/15/sarvam-becomes-indias-newest-ai-unicorn-with-234-million-funding-round-led-by-hcltech/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-15T13:46:08.000Z",
+      "snippet": "Indian IT services company HCLTech is investing $150 million in the Bengaluru startup.",
+      "category": "Business & Funding",
+      "summary": "Indian AI startup Sarvam reaches unicorn status with a $234M funding round led by HCLTech investing $150M.",
+      "important": true
+    },
+    {
+      "title": "Can Europe train a frontier AI model on the compute it owns?",
+      "url": "https://github.com/sammysltd/euromesh",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-15T13:31:09.000Z",
+      "snippet": "Article URL: https://github.com/sammysltd/euromesh Comments URL: https://news.ycombinator.com/item?id=48541014 Points: 140 # Comments: 290",
+      "category": "Hardware & Compute",
+      "summary": "Discusses whether Europe has sufficient owned compute infrastructure to train a frontier-grade AI model without external dependencies.",
+      "important": false
+    },
+    {
+      "title": "As AI agents become employees, NewCore emerges with $66M to give them identities",
+      "url": "https://techcrunch.com/2026/06/15/ai-agents-are-becoming-employees-newcore-emerges-with-66m-to-give-them-identities/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-15T13:00:00.000Z",
+      "snippet": "NewCore argues the next challenge in enterprise security will be managing AI agents, not people.",
+      "category": "Business & Funding",
+      "summary": "NewCore raises $66M to develop identity and security management solutions for AI agents as they become enterprise employees.",
+      "important": false
+    },
+    {
+      "title": "A satellite just learned to find things on its own — here’s what that means",
+      "url": "https://techcrunch.com/2026/06/15/a-satellite-just-learned-to-find-things-on-its-own-heres-what-that-means/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-15T12:00:00.000Z",
+      "snippet": "In April, for the first time ever, an Earth observation satellite found what it was looking for, all on its own.",
+      "category": "Applications",
+      "summary": "An Earth observation satellite successfully located a target autonomously for the first time in April, demonstrating AI's capability for independent object discovery.",
+      "important": false
+    },
+    {
+      "title": "Show HN: I wrote a C++ ray tracer from scratch without AI",
+      "url": "https://github.com/themartiano/luz",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-15T09:34:10.000Z",
+      "snippet": "Article URL: https://github.com/themartiano/luz Comments URL: https://news.ycombinator.com/item?id=48538833 Points: 153 # Comments: 64",
+      "category": "Other",
+      "summary": "Hacker News post showcasing a C++ ray tracer implementation created without AI assistance.",
+      "important": false
+    },
     {
       "title": "The AI layoff wave is becoming a powder keg",
       "url": "https://techcrunch.com/2026/06/15/the-ai-layoff-wave-is-becoming-a-powder-keg/",
@@ -173,6 +823,16 @@
       "snippet": "arXiv:2606.13925v1 Announce Type: new Abstract: Large language models can often close proof gaps in interactive theorem provers, but a verified theorem is not the same thing as a reusable library contribution. We study this distinction through a detailed case study: a semi-autonomous formalization of Grothendieck's vanishing theorem. The initial version compiles with no sorries, but an expert review found serious problems in definitions, theorem generality, file organization, and the API. We then ran a review-driven refactor and compression process and obtained a second expert review. The befo",
       "category": "Research",
       "summary": "Case study of semi-autonomous theorem formalization reveals that while LLMs can close proof gaps, creating reusable library contributions requires significant expert review and refactoring.",
+      "important": false
+    },
+    {
+      "title": "The Jqwik Anti-AI Affair",
+      "url": "https://blog.johanneslink.net/2026/06/09/the-jqwik-anti-ai-affair/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-14T22:43:49.000Z",
+      "snippet": "Article URL: https://blog.johanneslink.net/2026/06/09/the-jqwik-anti-ai-affair/ Comments URL: https://news.ycombinator.com/item?id=48533736 Points: 53 # Comments: 83",
+      "category": "Other",
+      "summary": "Hacker News discussion of a controversy involving the Jqwik open-source project and AI-related community tensions.",
       "important": false
     },
     {
@@ -1865,5 +2525,57 @@
       "summary": "OpenAI is planning a major overhaul of ChatGPT to reposition it as a gateway to higher-margin products ahead of a potential IPO.",
       "important": true
     }
-  ]
+  ],
+  "feedHealth": {
+    "The Verge AI": {
+      "lastSuccess": "2026-06-17T10:25:21.241Z",
+      "lastError": null,
+      "consecutiveFailures": 0
+    },
+    "TechCrunch AI": {
+      "lastSuccess": "2026-06-17T10:25:21.275Z",
+      "lastError": null,
+      "consecutiveFailures": 0
+    },
+    "Ars Technica AI": {
+      "lastSuccess": "2026-06-17T10:25:21.432Z",
+      "lastError": null,
+      "consecutiveFailures": 0
+    },
+    "VentureBeat AI": {
+      "lastSuccess": "2026-06-17T10:25:21.534Z",
+      "lastError": null,
+      "consecutiveFailures": 0
+    },
+    "Anthropic News": {
+      "lastSuccess": null,
+      "lastError": "Status code 404",
+      "consecutiveFailures": 1
+    },
+    "OpenAI Blog": {
+      "lastSuccess": "2026-06-17T10:25:23.297Z",
+      "lastError": null,
+      "consecutiveFailures": 0
+    },
+    "Google DeepMind": {
+      "lastSuccess": "2026-06-17T10:25:23.547Z",
+      "lastError": null,
+      "consecutiveFailures": 0
+    },
+    "MIT Tech Review AI": {
+      "lastSuccess": "2026-06-17T10:25:23.630Z",
+      "lastError": null,
+      "consecutiveFailures": 0
+    },
+    "arXiv cs.AI": {
+      "lastSuccess": "2026-06-17T10:25:23.856Z",
+      "lastError": null,
+      "consecutiveFailures": 0
+    },
+    "Hacker News (AI)": {
+      "lastSuccess": "2026-06-17T10:25:24.322Z",
+      "lastError": null,
+      "consecutiveFailures": 0
+    }
+  }
 }
