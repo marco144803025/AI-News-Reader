@@ -1,20 +1,480 @@
 {
-  "generatedAt": "2026-06-18T10:04:47.673Z",
-  "daysBack": 2,
+  "generatedAt": "2026-06-20T08:40:25.767Z",
+  "daysBack": 3,
   "categories": [
+    "Agent Frameworks",
+    "Research",
     "Applications",
-    "Developer Tools",
-    "Business & Funding",
     "AI Safety & Alignment",
     "Regulation & Policy",
     "Other",
-    "Agent Frameworks",
+    "Business & Funding",
     "Hardware & Compute",
-    "Research",
-    "Open Source",
-    "Model Releases"
+    "Developer Tools",
+    "Model Releases",
+    "Open Source"
   ],
   "articles": [
+    {
+      "title": "Deontic Policies for Runtime Governance of Agentic AI Systems",
+      "url": "https://arxiv.org/abs/2606.19464",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-20T04:00:00.000Z",
+      "snippet": "arXiv:2606.19464v1 Announce Type: new Abstract: Autonomous agentic AI systems driven by Large Language Models (LLMs) introduce a new class of security, privacy, and compliance challenges: an agent that can invoke tools, manipulate data, install software, and coordinate with peer agents across organizational boundaries must be constrained not just by authentication and access control, but by the full structure of enterprise governance. This includes specifying what agents are permitted and prohibited from doing, what they areobliged to do after certain actions (e.g., notify the CISO), under wha",
+      "category": "Agent Frameworks",
+      "summary": "Research proposes deontic policies for runtime governance of agentic AI systems to enforce enterprise-level security, privacy, and compliance constraints.",
+      "important": false
+    },
+    {
+      "title": "Measuring Curriculum Alignment across Topical Coverage, Competency, and Cognitive Depth: A Longitudinal Framework Applied to CS2013 and CS2023",
+      "url": "https://arxiv.org/abs/2606.19469",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-20T04:00:00.000Z",
+      "snippet": "arXiv:2606.19469v1 Announce Type: new Abstract: Undergraduate computer science is governed by international curricular guidelines revised about once a decade, yet programs lack a reliable, reproducible way to measure how completely they cover the current guidelines and how that coverage shifts when the guidelines are restructured. We address this with a human-in-the-loop pipeline that measures a program's coverage of an external body of knowledge, applied longitudinally to one accredited BSc in Computer Science against Computer Science Curricula 2013 (CS2013) and 2023 (CS2023). The pipeline re",
+      "category": "Research",
+      "summary": "Study develops a framework to measure how computer science programs align with international curriculum guidelines CS2013 and CS2023.",
+      "important": false
+    },
+    {
+      "title": "Diffusion Language Models: An Experimental Analysis",
+      "url": "https://arxiv.org/abs/2606.19475",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-20T04:00:00.000Z",
+      "snippet": "arXiv:2606.19475v1 Announce Type: new Abstract: Large Language Models (LLMs) have revolutionized language modeling through autoregressive generation, enabling strong performance across a wide range of tasks. Recently, Diffusion Language Models (DLMs) have emerged as an alternative paradigm that generates text through iterative denoising rather than next-token prediction, allowing parallel refinement of entire sequences. While numerous diffusion-based architectures have been proposed, differences in evaluation protocols, datasets, inference budgets, and generation hyperparameters make it diffic",
+      "category": "Research",
+      "summary": "Experimental analysis compares Diffusion Language Models as an alternative to autoregressive generation for parallel text refinement.",
+      "important": false
+    },
+    {
+      "title": "Hidden Anchors in Multi-Agent LLM Deliberation",
+      "url": "https://arxiv.org/abs/2606.19494",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-20T04:00:00.000Z",
+      "snippet": "arXiv:2606.19494v1 Announce Type: new Abstract: Multi-agent LLM deliberation, where agents exchange and revise answers over several rounds, is increasingly used to improve reasoning and accuracy, yet how and why it works is rarely modelled. Such deliberation mirrors how humans reach decisions. As social animals we are pulled both by the group, the herd effect that classical opinion-dynamics models such as DeGroot and Friedkin--Johnsen capture, and by our own internal belief, which they do not. We model multi-agent deliberation as a closed-loop dynamical system in which each agent carries a hid",
+      "category": "Agent Frameworks",
+      "summary": "Research models multi-agent LLM deliberation as a closed-loop dynamical system where agents balance group influence with internal beliefs.",
+      "important": false
+    },
+    {
+      "title": "DeXposure-Claw: An Agentic System for DeFi Risk Supervision",
+      "url": "https://arxiv.org/abs/2606.19501",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-20T04:00:00.000Z",
+      "snippet": "arXiv:2606.19501v1 Announce Type: new Abstract: Decentralized finance exposes supervisors to fast-moving, networked credit risks. General-purpose LLM agents fit this setting poorly: they over-read weak evidence and recommend high-stakes interventions, while existing evaluations offer no regulator-aligned way to measure the resulting false alarms. We introduce DeXposure-Claw, a forecast-grounded agentic supervision system that routes LLM decisions through structured evidence: (1) DeXposure-FM, a graph time-series foundation model, forecasts future exposure networks; (2) deterministic monitors a",
+      "category": "Applications",
+      "summary": "DeXposure-Claw is an agentic system combining foundation models and deterministic monitors to supervise DeFi credit risks for regulators.",
+      "important": false
+    },
+    {
+      "title": "LLM Doesn't Know What It Doesn't Know: Detecting Epistemic Blind Spots via Cross-Model Attribution Divergence on Clinical Tabular Data",
+      "url": "https://arxiv.org/abs/2606.19509",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-20T04:00:00.000Z",
+      "snippet": "arXiv:2606.19509v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly applied to structured clinical data, yet whether they can recognize the limits of their own knowledge on such tasks remains unexplored. We study this question through the lens of cross-model attribution divergence with the goal of reducing epistemic uncertainty for structured tasks, comparing Qwen 2.5 7B and XGBoost on a prediction task via attribution divergence analysis. We report four findings. First, LLM verbalized confidence is epistemically vacuous, it outputs a near-constant (0.856-0.937) regar",
+      "category": "AI Safety & Alignment",
+      "summary": "Study shows LLMs struggle to recognize knowledge limits on clinical structured data, with verbalized confidence being epistemically unreliable.",
+      "important": false
+    },
+    {
+      "title": "REVEAL++: Differentiable Phenotypic Grouping for Vision-Language Retinal Modeling of Alzheimer's Disease Risk",
+      "url": "https://arxiv.org/abs/2606.19522",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-20T04:00:00.000Z",
+      "snippet": "arXiv:2606.19522v1 Announce Type: new Abstract: The retina offers a noninvasive window into neurodegenerative disease, capturing subtle structural patterns associated with a risk of future cognitive decline. Vision-language alignment frameworks such as REVEAL have shown that pairing retinal fundus images with structured clinical risk narratives improves early prediction of Alzheimer's disease (AD). A key design choice in these approaches is the use of phenotypic grouping, where individuals with similar risk profiles are treated as multi-positive pairs during contrastive learning. However, exis",
+      "category": "Research",
+      "summary": "REVEAL++ improves vision-language alignment for predicting Alzheimer's disease risk from retinal images using phenotypic grouping.",
+      "important": false
+    },
+    {
+      "title": "Emergent Alignment",
+      "url": "https://arxiv.org/abs/2606.19527",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-20T04:00:00.000Z",
+      "snippet": "arXiv:2606.19527v1 Announce Type: new Abstract: Can Large Language Models (LLMs) discern when their own outputs are misaligned with human ethics? And can they self-correct? We endow an LLM with a conscience step that reviews its own reasoning and outputs, and we extend the training loss with an alignment component using Direct Preference Optimization (DPO) to steer the model away from non-ethical outputs. The result is an online technique to align models in a wide range of applications: training, fine-tuning, adversarial prompting, and zero-shot learning. It does not require a weaker or strong",
+      "category": "AI Safety & Alignment",
+      "summary": "Research demonstrates LLMs can self-correct misaligned outputs using a conscience step and Direct Preference Optimization without external supervisors.",
+      "important": false
+    },
+    {
+      "title": "ITNet: A Learnable Integral Transform That Subsumes Convolution, Attention, and Recurrence",
+      "url": "https://arxiv.org/abs/2606.19538",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-20T04:00:00.000Z",
+      "snippet": "arXiv:2606.19538v1 Announce Type: new Abstract: Convolutional networks, recurrent networks, and transformers each encode different inductive biases -- locality, sequential memory, and content-dependent pairwise interaction -- and have remained mathematically distinct since their inception. We show that this fragmentation reflects not a fundamental diversity in how signals should be processed, but rather incomplete views of a single underlying mathematical object: a learnable integral transform. We introduce the Integral Transform Network (ITNet), a unified architecture built around a learnable",
+      "category": "Research",
+      "summary": "ITNet unifies convolutions, attention, and recurrence as special cases of a learnable integral transform, proposing a unified neural architecture.",
+      "important": true
+    },
+    {
+      "title": "Uncertainty Decomposition for Clarification Seeking in LLM Agents",
+      "url": "https://arxiv.org/abs/2606.19559",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-20T04:00:00.000Z",
+      "snippet": "arXiv:2606.19559v1 Announce Type: new Abstract: Recent position papers argue that the classical aleatoric/epistemic uncertainty framework is insufficient for interactive large language model (LLM) agents and call for underspecification-aware, decomposed, and communicable uncertainty representations that can unlock new agent capabilities such as proactive clarification seeking and shared mental-model building. Practical deployment constraints -- black-box APIs, interactive latency budgets, and the absence of labeled trajectories -- rule out logprob-based, multi-sampling, and training-based meth",
+      "category": "Agent Frameworks",
+      "summary": "Research proposes decomposed uncertainty representations for LLM agents to enable proactive clarification-seeking without multi-sampling or training.",
+      "important": false
+    },
+    {
+      "title": "Analyzing the Narration Gap in LLM-Solver Loops",
+      "url": "https://arxiv.org/abs/2606.19588",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-20T04:00:00.000Z",
+      "snippet": "arXiv:2606.19588v1 Announce Type: new Abstract: Formal tools such as SAT and SMT solvers are increasingly embedded in language model reasoning pipelines when a safety or security critical question can be formulated in logic. Unlike chain of thought whose steps are sampled from the model distribution without formal guarantee, a solver produces a sound and independently verifiable answer. However, the soundness guarantee can be lost in the interaction between the solver and the model. The hybrid pipeline has three components: formalizing the question, deciding it, and narrating the result. Prior",
+      "category": "Research",
+      "summary": "Study analyzes how soundness guarantees from formal solvers can be lost in language model reasoning pipelines due to narration gaps.",
+      "important": false
+    },
+    {
+      "title": "Configurable Clinical Information Extraction with Agentic RAG: What Works, What Breaks, and Why",
+      "url": "https://arxiv.org/abs/2606.19602",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-20T04:00:00.000Z",
+      "snippet": "arXiv:2606.19602v1 Announce Type: new Abstract: Patient contexts span hundreds of heterogeneous documents and thousands of structured data points, yet the document-level metadata that AI systems need for retrieval and triage is absent or incomplete. Standard retrieval-augmented generation fails on this data, mishandling temporal reasoning, cross-document dependencies, and missing metadata. We deploy ACIE (Agentic Clinical Information Extraction) at University Medicine Essen: an on-premise agentic RAG pipeline that reasons over complete patient contexts and grounds every answer in source passag",
+      "category": "Applications",
+      "summary": "ACIE is an agentic RAG system deployed at a German hospital for clinical information extraction that handles temporal reasoning and missing metadata.",
+      "important": false
+    },
+    {
+      "title": "Which Pairs to Compare for LLM Post-Training?",
+      "url": "https://arxiv.org/abs/2606.19607",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-20T04:00:00.000Z",
+      "snippet": "arXiv:2606.19607v1 Announce Type: new Abstract: Preference-based post-training has become a central paradigm for aligning language models. A common data-collection strategy is to generate a small set of completions for each prompt and label the resulting comparison pairs. However, human preference labels are often much more expensive than generating additional completions, suggesting a different use of the same labeling budget: generate a larger pool of completions, but label only the most informative comparison pairs. This paper studies which pairs should be compared in preference-based post-",
+      "category": "Research",
+      "summary": "Study investigates optimal pair selection strategies for preference-based LLM post-training to maximize labeling efficiency.",
+      "important": false
+    },
+    {
+      "title": "Toten: Knowledge-Based Ontological Tokenization Of Physical Quantities And Technical Notation In Brazilian Portuguese",
+      "url": "https://arxiv.org/abs/2606.19626",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-20T04:00:00.000Z",
+      "snippet": "arXiv:2606.19626v1 Announce Type: new Abstract: Byte-Pair Encoding tokenization is statistically efficient for vocabulary compression, but semantically blind to structured technical entities, fragmenting physical quantities, numbers, units, and symbolic expressions into lexically arbitrary subwords. We present TOTEN, a knowledge-based ontological tokenization framework that replaces statistical derivation with declarative classification grounded in a formal ontology of engineering entities (OEE). We formalize TOTEN as the triple : the ontology gathers types, structural principles, composition ",
+      "category": "Research",
+      "summary": "TOTEN proposes knowledge-based ontological tokenization to semantically preserve physical quantities and technical notation in Brazilian Portuguese.",
+      "important": false
+    },
+    {
+      "title": "AI4SE and SE4AI Exploration: A Decade Looking Back and Forward",
+      "url": "https://arxiv.org/abs/2606.19630",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-20T04:00:00.000Z",
+      "snippet": "arXiv:2606.19630v1 Announce Type: new Abstract: The March 2020 INCOSE INSIGHT special issue on AI and Systems Engineering (SE) became the most downloaded issue in the publication's history and launched a research community that now draws over 250 registrants to its annual workshop. In this article, we trace the progress in AI and SE across three phases (labeled here foundational, applied, and LLM inflection) based on the authors' reading of the field's core papers, and describe our opinions of where the community has converged and where critical gaps remain. Separately, a human-AI agreement li",
+      "category": "Research",
+      "summary": "Survey traces AI for Software Engineering progress across foundational, applied, and LLM-inflection phases, identifying research gaps and convergences.",
+      "important": false
+    },
+    {
+      "title": "From PGP to Mythos: a brief history of export controls that didn’t stop anyone",
+      "url": "https://techcrunch.com/2026/06/19/encryption-spyware-and-now-mythos-history-shows-why-cyber-export-control-doesnt-work/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-19T22:40:14.000Z",
+      "snippet": "For the last 30 years, stopping the flow of cybersecurity-related software has proven to be ineffective. It's unclear why it would work now with Anthropic’s cybersecurity model Mythos.",
+      "category": "Regulation & Policy",
+      "summary": "A historical analysis argues that 30 years of export controls on cybersecurity software have proven ineffective, questioning the efficacy of restricting Anthropic's Mythos model.",
+      "important": false
+    },
+    {
+      "title": "Is the US government’s Anthropic ban accidentally helping the brand?",
+      "url": "https://techcrunch.com/video/is-the-us-governments-anthropic-ban-accidentally-helping-the-brand/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-19T16:08:17.000Z",
+      "snippet": "Just as last week was ending, the US government forced Anthropic to pull its two newest models, Fable 5 and Mythos 5, citing national security concerns after Amazon researchers allegedly found a way to bypass Fable 5’s guardrails. Cybersecurity researchers have since signed an open letter calling the move dangerous, and Anthropic itself noted the same jailbreaks exist in other models. So is […]",
+      "category": "Regulation & Policy",
+      "summary": "The US government's ban on Anthropic's Fable 5 and Mythos models may inadvertently boost Anthropic's brand as cybersecurity researchers criticize the move.",
+      "important": false
+    },
+    {
+      "title": "The US banned Anthropic’s Fable 5 release, but the numbers don’t seem to care",
+      "url": "https://techcrunch.com/podcast/the-us-banned-anthropics-fable-5-release-but-the-numbers-dont-seem-to-care/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-19T16:01:03.000Z",
+      "snippet": "Just as last week was ending, the US government forced Anthropic to pull its two newest models, Fable 5 and Mythos 5, citing national security concerns after Amazon researchers allegedly found a way to bypass Fable 5’s guardrails. Cybersecurity researchers have since signed an open letter calling the move dangerous, and Anthropic itself noted the same jailbreaks exist in other models. So is […]",
+      "category": "Regulation & Policy",
+      "summary": "Following the US government's ban on Anthropic's Fable 5 and Mythos models over security concerns, market metrics show little visible impact on Anthropic's performance.",
+      "important": false
+    },
+    {
+      "title": "Billionaire Ambani wants AI in every call, app, and home",
+      "url": "https://techcrunch.com/2026/06/19/billionaire-ambani-wants-ai-in-every-call-app-and-home/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-19T15:23:28.000Z",
+      "snippet": "Reliance is weaving AI into telecom services used by more than 500 million people.",
+      "category": "Applications",
+      "summary": "Billionaire Ambani's Reliance is integrating AI into telecom services used by over 500 million people across calls, apps, and home services.",
+      "important": false
+    },
+    {
+      "title": "The film about Sam Altman has been dropped by Amazon MGM",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/952906/sam-altman-film-artificial-openai-amazon-mgm-dropped",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-19T14:15:29.000Z",
+      "snippet": "Luca Guadagnino's film about OpenAI CEO Sam Altman, Artificial, has reportedly been dropped by Amazon MGM. The film, which stars Andrew Garfield and covers the rollercoaster five days in 2023 spanning Altman's termination and reinstatement as CEO, had been in the works for about a year. The cast also includes A Complete Unknown actress Monica Barbaro as OpenAI CTO Mira Murati, Ike Barinholtz as Elon Musk, and Anora's Yura Borisov as OpenAI chief scientist Ilya Sutskever. In a statement to Deadline, the studio said it believes the movie \"will be better served if it were released by a different ",
+      "category": "Other",
+      "summary": "Amazon MGM has dropped Luca Guadagnino's film about OpenAI CEO Sam Altman starring Andrew Garfield, which covered Altman's 2023 termination and reinstatement.",
+      "important": false
+    },
+    {
+      "title": "The CEO of Allbirds’ new AI biz has a plan, but no team",
+      "url": "https://techcrunch.com/2026/06/19/the-ceo-of-allbirds-new-ai-biz-has-a-plan-but-no-employees/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-19T13:00:00.000Z",
+      "snippet": "Call it a startup with a sole founder and a very large seed round, but what's next is less clear.",
+      "category": "Business & Funding",
+      "summary": "Allbirds CEO's new AI business has received a large seed round but currently operates with no team beyond the founder.",
+      "important": false
+    },
+    {
+      "title": "A startup claims it broke through a bottleneck that’s holding back LLMs",
+      "url": "https://www.technologyreview.com/2026/06/19/1139313/a-startup-claims-it-broke-through-a-bottleneck-thats-holding-back-llms/",
+      "source": "MIT Tech Review AI",
+      "publishedAt": "2026-06-19T10:40:24.000Z",
+      "snippet": "Miami-based AI startup Subquadratic came out of stealth mode last month with a huge claim. It announced that it had solved a mathematical bottleneck that had been holding back large language models for almost a decade. The details were thin, and many people were unconvinced. But Subquadratic has started to bring the receipts, sharing the…",
+      "category": "Research",
+      "summary": "Miami-based startup Subquadratic claims to have solved a decade-old mathematical bottleneck limiting LLM performance and is releasing empirical results.",
+      "important": true
+    },
+    {
+      "title": "The US says ASML’s top chip tool may be in China, but how?",
+      "url": "https://techcrunch.com/2026/06/19/the-us-says-asmls-top-chip-tool-may-be-in-china-asml-says-it-isnt/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-19T07:59:12.000Z",
+      "snippet": "There's a commercial logic that cuts against the idea that ASML would risk its export license to arm a Chinese customer.",
+      "category": "Hardware & Compute",
+      "summary": "The US claims ASML's advanced chip manufacturing tool may have been exported to China, raising questions about export control enforcement.",
+      "important": false
+    },
+    {
+      "title": "Barret Zoph is out at OpenAI again after just five months",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/952837/barret-zoph-openai-thinking-machines-lab",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-19T04:49:33.000Z",
+      "snippet": "Five months after returning to OpenAI, Barret Zoph - the company's head of enterprise AI sales - has departed, The Verge has learned. Zoph returned to OpenAI in mid-January after a stint as co-founder and CTO of Thinking Machines Lab, the competing AI company founded by former OpenAI CTO Mira Murati. Shortly after Zoph returned to OpenAI, the company said he would lead its push into enterprise - a significant role at OpenAI, since in recent months it had vowed to stop chasing so-called \"side quests\" and focus on key revenue drivers like enterprise and coding ahead of its planned IPO. OpenAI co",
+      "category": "Business & Funding",
+      "summary": "Barret Zoph has departed OpenAI after only five months as head of enterprise AI sales, a key role in OpenAI's pre-IPO revenue focus.",
+      "important": false
+    },
+    {
+      "title": "Source: Elastic agrees to buy CRV-backed Deductive AI for up to $85M",
+      "url": "https://techcrunch.com/2026/06/18/source-elastic-agrees-to-buy-crv-backed-deductiveai-for-up-to-85m/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-19T00:51:11.000Z",
+      "snippet": "Deductive AI, a startup that uses AI to catch and resolve bugs in software, was founded just three years ago.",
+      "category": "Business & Funding",
+      "summary": "Elastic has agreed to acquire Deductive AI, an AI-powered bug detection startup, for up to $85 million.",
+      "important": false
+    },
+    {
+      "title": "As China looms, Taiwan makes more drones for defense and the US military",
+      "url": "https://arstechnica.com/ai/2026/06/as-china-looms-taiwan-makes-more-drones-for-defense-and-the-us-military/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-06-18T21:21:26.000Z",
+      "snippet": "Taiwan's drone spending plans for defense could also boost business overseas.",
+      "category": "Applications",
+      "summary": "Taiwan is increasing drone spending for defense against China while positioning itself to boost overseas drone business.",
+      "important": false
+    },
+    {
+      "title": "AI inference startup Baseten reportedly raising $1.5B months after its last mega-round",
+      "url": "https://techcrunch.com/2026/06/18/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-18T21:20:13.000Z",
+      "snippet": "Startup Baseten is reportedly close to finalizing a $1.5 billion round at a $13 billion as the “inference gold rush\" marches on.",
+      "category": "Business & Funding",
+      "summary": "AI inference startup Baseten is reportedly raising $1.5 billion at a $13 billion valuation, part of the ongoing inference infrastructure boom.",
+      "important": false
+    },
+    {
+      "title": "Snap spins off AI video team into new company, Dotmo, due to costs",
+      "url": "https://techcrunch.com/2026/06/18/snap-spins-off-ai-video-team-into-new-company-dotmo-due-to-costs/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-18T20:30:00.000Z",
+      "snippet": "The Snapchat maker is spinning off yet another internal unit. Dotmo will be composed of current Snap staff who are leaving the social media company to focus on AI video development.",
+      "category": "Business & Funding",
+      "summary": "Snap is spinning off its AI video team into a new independent company called Dotmo to reduce costs and focus on AI video development.",
+      "important": false
+    },
+    {
+      "title": "OpenAI is bringing on some big guns in the lead-up to its IPO",
+      "url": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-18T19:59:22.000Z",
+      "snippet": "OpenAI is bulking up before its IPO, landing Transformer co-inventor Noam Shazeer from Google DeepMind and former Trump AI policy official Dean Ball in the same week.",
+      "category": "Business & Funding",
+      "summary": "OpenAI is hiring Transformer co-inventor Noam Shazeer from Google DeepMind and former Trump AI policy official Dean Ball ahead of its planned IPO.",
+      "important": false
+    },
+    {
+      "title": "Almost half of US singles feel negatively about AI in dating, Match says",
+      "url": "https://techcrunch.com/2026/06/18/almost-half-of-u-s-singles-feel-negatively-about-ai-in-dating-match-says/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-18T18:51:46.000Z",
+      "snippet": "About 47% of singles look negatively at the use of AI in dating -- but many dating app users are open to AI helping with profile punch-ups and conversation starters.",
+      "category": "Applications",
+      "summary": "A Match survey reveals that 47% of US singles view AI negatively in dating, though many are open to AI assistance with profile optimization and conversation starters.",
+      "important": false
+    },
+    {
+      "title": "Amazon hopes to challenge Nvidia more directly by selling its AI chips",
+      "url": "https://techcrunch.com/2026/06/18/amazon-hopes-to-challenge-nvidia-more-directly-by-selling-its-ai-chips/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-18T18:22:13.000Z",
+      "snippet": "AWS is in talks to sell its chips to other data centers. CEO Andy Jassy has said this represents a $50 billion opportunity for the company.",
+      "category": "Hardware & Compute",
+      "summary": "Amazon is negotiating to sell its AI chips to other data centers, representing a potential $50 billion opportunity as it challenges Nvidia's dominance.",
+      "important": false
+    },
+    {
+      "title": "AI data centers just got a government-mandated fast lane to the grid",
+      "url": "https://techcrunch.com/2026/06/18/ai-data-centers-just-got-a-government-mandated-fast-lane-to-the-grid/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-18T17:49:23.000Z",
+      "snippet": "FERC told grid operators to give data centers a fast lane for interconnections, but it failed to address electricity supply shortages.",
+      "category": "Hardware & Compute",
+      "summary": "FERC has mandated that grid operators provide AI data centers with expedited interconnection pathways, though it has not addressed underlying electricity supply shortages.",
+      "important": false
+    },
+    {
+      "title": "The smartphone era created an attention crisis — slow tech is fixing it",
+      "url": "https://techcrunch.com/2026/06/18/the-smartphone-era-created-an-attention-crisis-slowtech-is-fixing-it/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-18T17:16:30.000Z",
+      "snippet": "“People just really want to take back control of their time, their lives, their attention... They’re down for whatever helps them do that.”",
+      "category": "Applications",
+      "summary": "The slow tech movement is gaining traction as people seek to reclaim control of their time and attention from the attention-maximizing smartphone era.",
+      "important": false
+    },
+    {
+      "title": "Bernie Sanders unveils $7 trillion plan to give Americans control of AI industry",
+      "url": "https://arstechnica.com/tech-policy/2026/06/bernie-sanders-unveils-7-trillion-plan-to-give-americans-control-of-ai-industry/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-06-18T17:02:49.000Z",
+      "snippet": "Biggest AI firms will likely recoil at Bernie Sanders' AI wealth fund.",
+      "category": "Regulation & Policy",
+      "summary": "Senator Bernie Sanders proposes a $7 trillion AI wealth fund plan to give Americans control of the AI industry, likely facing resistance from major AI firms.",
+      "important": false
+    },
+    {
+      "title": "How to turn off AI in your Google Docs",
+      "url": "https://techcrunch.com/2026/06/18/how-to-turn-off-ai-in-your-google-docs/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-18T17:00:00.000Z",
+      "snippet": "Here's what you need to do to get those pesky \"write with Gemini\" pop-ups to go away.",
+      "category": "Developer Tools",
+      "summary": "A guide explaining how to disable AI features like 'write with Gemini' pop-ups in Google Docs.",
+      "important": false
+    },
+    {
+      "title": "New usage analytics and updated spend controls for enterprises",
+      "url": "https://openai.com/index/chatgpt-enterprise-spend-controls",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-06-18T17:00:00.000Z",
+      "snippet": "OpenAI introduces new spend controls and usage analytics for ChatGPT Enterprise, helping organizations manage costs and scale AI with confidence.",
+      "category": "Developer Tools",
+      "summary": "OpenAI introduces new spend controls and usage analytics for ChatGPT Enterprise to help organizations manage AI costs and scaling.",
+      "important": false
+    },
+    {
+      "title": "‘Queer Eye’ life coach Karamo Brown launches Kē, a wellness app featuring his AI digital clone",
+      "url": "https://techcrunch.com/2026/06/18/queer-eyes-life-coach-karamo-brown-launches-ke-a-wellness-app-featuring-his-ai-digital-clone/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-18T16:55:04.000Z",
+      "snippet": "After spending a year and a half focusing on his own journey — from fitness and nutrition to meditation, sobriety, relationships, and personal growth — Brown wants to help others do the same.",
+      "category": "Applications",
+      "summary": "'Queer Eye' coach Karamo Brown has launched Kē, a wellness app featuring an AI digital clone of himself to provide personalized guidance on fitness, meditation, and personal growth.",
+      "important": false
+    },
+    {
+      "title": "Amazon employees say they’re facing termination for backing data center limits",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/952180/amazon-seattle-data-center-moratorium-aecj-disciplinary-action",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-18T16:00:00.000Z",
+      "snippet": "When three Amazon software engineers testified earlier this month at Seattle City Council hearings about data centers, they started their testimony by citing a city law barring employment discrimination over political speech. Now, they're accusing their employer of breaking that law by retaliating against them. On June 10th - one week after the hearing, and one day after the City Council passed a milestone moratorium on data centers - Patrick Schloesser, Darius Irani, and Liesl Wigand were each called into an impromptu meeting with Amazon's \"Employee Relations.\" HR representatives told the emp",
+      "category": "Regulation & Policy",
+      "summary": "Three Amazon engineers claim the company is retaliating against them for testifying about data center limits at Seattle City Council hearings, violating local anti-discrimination laws.",
+      "important": false
+    },
+    {
+      "title": "General Intuition in talks to raise $300M at around $2B valuation",
+      "url": "https://techcrunch.com/2026/06/18/general-intuition-in-talks-to-raise-300m-at-around-2b-valuation/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-18T15:20:37.000Z",
+      "snippet": "The startup trains embodied AI and world models using Medal’s dataset of 2 billion videos per year from 10 million monthly active users.",
+      "category": "Business & Funding",
+      "summary": "General Intuition is in talks to raise $300 million at a $2 billion valuation to train embodied AI and world models using Medal's dataset of 2 billion annual videos.",
+      "important": false
+    },
+    {
+      "title": "A tech worker-backed PAC is bringing a $5M knife to Big Tech’s $100M gunfight",
+      "url": "https://techcrunch.com/2026/06/18/a-tech-worker-backed-pac-is-bringing-a-5m-knife-to-big-techs-100m-gunfight/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-18T15:13:21.000Z",
+      "snippet": "Guardrails positions itself as a populist political movement that runs on small donations from people in the trenches of the AI boom.",
+      "category": "Regulation & Policy",
+      "summary": "A tech worker-backed PAC called Guardrails is launching a populist political movement with $5 million in small donations to counter Big Tech's influence in AI policy.",
+      "important": false
+    },
+    {
+      "title": "Who decides when AI is too dangerous?",
+      "url": "https://www.theverge.com/podcast/951542/anthropic-claude-fable-5-mythos-ban-pentagon-ai-regulation-trump",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-18T14:00:00.000Z",
+      "snippet": "On today’s episode of Decoder, my guest is Hayden Field, senior AI reporter for The Verge. Often when Hayden comes on the show, it’s because something has gone wrong in the world of AI. Last weekend, that something was a pretty intense mix of Anthropic, the Trump administration, and Anthropic’s new AI model, Fable 5. On Friday, not even a week since Anthropic released Fable to the public, the US government said it was imposing export controls on the new model, as well as the underlying Mythos model that Fable is based on. Those controls restricted foreign nationals, even those working for Anth",
+      "category": "Regulation & Policy",
+      "summary": "The US government imposed export controls on Anthropic's Fable 5 and Mythos models, citing national security concerns following reported guardrail bypasses by Amazon researchers.",
+      "important": true
+    },
+    {
+      "title": "Photoshop and Premiere now have AI assistants",
+      "url": "https://www.theverge.com/tech/952099/adobe-ai-assistants-photoshop-premiere-illustrator-beta-launch",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-18T13:00:00.000Z",
+      "snippet": "Photoshop is one of several Adobe Creative Cloud apps to receive new conversational editing capabilities. | Image: Adobe Adobe's plan to stick AI assistants into all of its Creative Cloud suite is now fully underway, with new chatbots now rolling out to its biggest editing and design apps. As part of a public beta launching today, Photoshop, Premiere, Illustrator, InDesign, and Frame.io now each have a bespoke AI Assistant that can be used to organize your work and automate app-specific tasks. While the AI assistants are all powered by Adobe's \"conversational creative agent,\" they work indepen",
+      "category": "Applications",
+      "summary": "Adobe is rolling out new conversational AI assistants to Photoshop, Premiere, Illustrator, InDesign, and Frame.io to automate editing and design tasks.",
+      "important": false
+    },
+    {
+      "title": "Adobe’s redesigned AI studio remembers what your creations look like",
+      "url": "https://www.theverge.com/tech/952104/adobe-firefly-ai-agent-elements-projects-update",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-18T13:00:00.000Z",
+      "snippet": "Give your characters, objects, and backgrounds a name to easily replicate them without changing the design. | Image: Adobe Adobe is introducing some new capabilities for its Firefly AI assistant, alongside a \"reimagined\" AI studio that lets you edit and generate new designs from a single interface. The new Firefly experience launching today in private beta is designed to give you \"persistent context, reusable assets, and organized workflows\" across your projects, according to Adobe, making it easier to go from ideation to production-ready designs without switching between apps. This is the lat",
+      "category": "Applications",
+      "summary": "Adobe's redesigned Firefly AI studio now provides persistent context and reusable assets across projects, launching in private beta with improved character and object replication.",
+      "important": false
+    },
+    {
+      "title": "Pixi’s new iOS app turns text messages into interactive AR experiences",
+      "url": "https://techcrunch.com/2026/06/18/pixis-new-ios-app-turns-text-messages-into-interactive-ar-experiences/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-18T12:00:00.000Z",
+      "snippet": "Forget stickers, GIFs, and emoji reactions. Pixi is betting that the next evolution of messaging is interactive augmented reality (AR).",
+      "category": "Applications",
+      "summary": "Pixi's new iOS app transforms text messages into interactive AR experiences, positioning itself as the next evolution of mobile messaging beyond traditional reactions.",
+      "important": false
+    },
+    {
+      "title": "Improving health intelligence in ChatGPT",
+      "url": "https://openai.com/index/improving-health-intelligence-in-chatgpt",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-06-18T11:00:00.000Z",
+      "snippet": "Learn how GPT-5.5 Instant improves ChatGPT’s health and wellness responses with stronger reasoning, better context, clearer communication, and physician-informed evaluations.",
+      "category": "Model Releases",
+      "summary": "OpenAI improves ChatGPT's health and wellness responses through GPT-5.5 Instant with stronger reasoning and physician-informed evaluations.",
+      "important": false
+    },
+    {
+      "title": "Using AI to help physicians diagnose rare genetic diseases affecting children",
+      "url": "https://openai.com/index/diagnose-rare-childhood-diseases",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-06-18T08:00:00.000Z",
+      "snippet": "Researchers used an OpenAI reasoning model to help diagnose rare diseases, identifying 18 new diagnoses in previously unsolved cases.",
+      "category": "Applications",
+      "summary": "Researchers used an OpenAI reasoning model to diagnose rare genetic diseases in children, identifying 18 new diagnoses in previously unsolved cases.",
+      "important": true
+    },
     {
       "title": "Midjourney goes from generating cat images to full-body ultrasound scans",
       "url": "https://www.theverge.com/ai-artificial-intelligence/952011/midjourney-medical-ai-ultrasound-scan",
@@ -2898,54 +3358,54 @@
   ],
   "feedHealth": {
     "The Verge AI": {
-      "lastSuccess": "2026-06-18T10:04:45.197Z",
+      "lastSuccess": "2026-06-20T08:40:02.736Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "TechCrunch AI": {
-      "lastSuccess": "2026-06-18T10:04:45.223Z",
+      "lastSuccess": "2026-06-20T08:40:02.847Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Ars Technica AI": {
-      "lastSuccess": "2026-06-18T10:04:45.429Z",
+      "lastSuccess": "2026-06-20T08:40:03.096Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "VentureBeat AI": {
-      "lastSuccess": "2026-06-18T10:04:45.671Z",
+      "lastSuccess": "2026-06-20T08:40:03.239Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Anthropic News": {
       "lastSuccess": null,
       "lastError": "Status code 404",
-      "consecutiveFailures": 2
+      "consecutiveFailures": 3
     },
     "OpenAI Blog": {
-      "lastSuccess": "2026-06-18T10:04:46.617Z",
+      "lastSuccess": "2026-06-20T08:40:05.355Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Google DeepMind": {
-      "lastSuccess": "2026-06-18T10:04:46.987Z",
+      "lastSuccess": "2026-06-20T08:40:05.542Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "MIT Tech Review AI": {
-      "lastSuccess": "2026-06-18T10:04:47.032Z",
+      "lastSuccess": "2026-06-20T08:40:05.643Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "arXiv cs.AI": {
-      "lastSuccess": "2026-06-18T10:04:47.145Z",
+      "lastSuccess": "2026-06-20T08:40:05.742Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Hacker News (AI)": {
       "lastSuccess": "2026-06-18T10:04:47.672Z",
-      "lastError": null,
-      "consecutiveFailures": 0
+      "lastError": "Request timed out after 20000ms",
+      "consecutiveFailures": 1
     }
   }
 }
