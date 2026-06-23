@@ -1,21 +1,371 @@
 {
-  "generatedAt": "2026-06-22T11:34:32.894Z",
-  "daysBack": 3,
+  "generatedAt": "2026-06-23T08:57:57.565Z",
+  "daysBack": 2,
   "categories": [
-    "Applications",
-    "Developer Tools",
-    "Open Source",
-    "Regulation & Policy",
     "Research",
-    "Other",
     "Agent Frameworks",
     "AI Safety & Alignment",
+    "Applications",
     "Business & Funding",
+    "Open Source",
     "Hardware & Compute",
+    "Regulation & Policy",
+    "Other",
+    "Developer Tools",
     "MCP",
     "Model Releases"
   ],
   "articles": [
+    {
+      "title": "Beyond Fixed Budgets: Characterizing the Inelasticity and Limitations of Tree-of-Thought Reasoning Strategies",
+      "url": "https://arxiv.org/abs/2606.20599",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-23T04:00:00.000Z",
+      "snippet": "arXiv:2606.20599v1 Announce Type: new Abstract: Tree of Thought (ToT) search has become a promising direction for improving the reasoning capabilities of large language models, but deploying these methods in practice raises a question that has received little systematic attention: how do different search strategies behave under varying compute budgets, model sizes, and problem difficulties? In this work, we evaluate two representative ToT methods; DPTS, a Monte Carlo tree search based approach, and SSDP, a semantic deduplication based approach, across two mathematical reasoning benchmarks (Mat",
+      "category": "Research",
+      "summary": "Study examines how different Tree-of-Thought reasoning strategies perform under varying compute budgets and problem difficulties, revealing inelasticity limitations.",
+      "important": false
+    },
+    {
+      "title": "The New Associationism: Lessons from Deep Learning",
+      "url": "https://arxiv.org/abs/2606.20600",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-23T04:00:00.000Z",
+      "snippet": "arXiv:2606.20600v1 Announce Type: new Abstract: What can the success of modern AI tell us about how humans learn? This paper argues that taking AI seriously as a model of human learning supports a modest but genuine associationism. The central finding is that supervised learning -- learning driven by evaluative feedback -- underlies a surprisingly wide range of contemporary AI systems, from large language models to game-playing agents, differing primarily in how much work is required to generate the relevant feedback signal. This vindicates associationist ideals of a uniform, gradual, error-dr",
+      "category": "Research",
+      "summary": "Paper argues that supervised learning with evaluative feedback is the common mechanism underlying modern AI systems from LLMs to game-playing agents, supporting associationist learning theory.",
+      "important": false
+    },
+    {
+      "title": "Specifying AI-SDLC Processes: A Protocol Language for Human-Agent Boundaries",
+      "url": "https://arxiv.org/abs/2606.20615",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-23T04:00:00.000Z",
+      "snippet": "arXiv:2606.20615v1 Announce Type: new Abstract: AI agents now participate as first-class team members across the software development lifecycle, yet no specification language exists for expressing the human-agent responsibility boundaries, approval gates, and governance constraints this collaboration requires. Existing approaches encode process in agent prompts (subject to drift), target adjacent domains (workflow management, business processes), or address only fragments (access control, approval gates). We propose a domain-specific language for specifying AI-SDLC processes as protocols, with",
+      "category": "Agent Frameworks",
+      "summary": "Researchers propose a domain-specific language for specifying AI-SDLC processes to define human-agent responsibility boundaries and governance constraints in software development.",
+      "important": false
+    },
+    {
+      "title": "PEAR: Permutation-Equivariant Adaptive Routing Multi-Agent Debate",
+      "url": "https://arxiv.org/abs/2606.20621",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-23T04:00:00.000Z",
+      "snippet": "arXiv:2606.20621v1 Announce Type: new Abstract: Multi-agent debate improves the reliability of large language models (LLMs) through iterative peer critiques. However, fixed topologies often introduce persistent positional biases, amplify unreliable agents, and cause high sensitivity to role assignments. We introduce \\textit{Permutation-Equivariant Adaptive Routing Multi-Agent Debate (PEAR)}, an inference-time protocol that dynamically reconfigures communication roles and sparse topologies across consecutive debate rounds. By strategically switching agent-to-role assignments based on evolving a",
+      "category": "Agent Frameworks",
+      "summary": "PEAR introduces a permutation-equivariant protocol for multi-agent debate that dynamically reconfigures communication roles to reduce positional biases and improve LLM reliability.",
+      "important": false
+    },
+    {
+      "title": "Darwin Mobile Agent: A Roadmap for Self-Evolution",
+      "url": "https://arxiv.org/abs/2606.20622",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-23T04:00:00.000Z",
+      "snippet": "arXiv:2606.20622v1 Announce Type: new Abstract: The goal of artificial intelligence is to create agents capable of general, adaptive behaviour in open-ended environments. Guided by the \"Bitter Lesson\", we argue that the most effective path toward this goal is to systematically remove human priors and allow intelligence to naturally emerge through interaction with a \"Big World\" that is orders of magnitude more complex than the agent itself. We propose the mobile Graphical User Interface (GUI) as a practical proxy for such a world and introduce Darwin Mobile Agent, an open-source infrastructure ",
+      "category": "Agent Frameworks",
+      "summary": "Darwin Mobile Agent proposes an open-source infrastructure for developing self-evolving mobile agents by removing human priors and allowing intelligence to emerge through GUI interaction.",
+      "important": false
+    },
+    {
+      "title": "In LLM Reasoning, there is Irrationality on top of Value Misalignment",
+      "url": "https://arxiv.org/abs/2606.20624",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-23T04:00:00.000Z",
+      "snippet": "arXiv:2606.20624v1 Announce Type: new Abstract: Significant progress has been made in aligning LLMs with target value functions. We argue that, even when an LLM has been well aligned in (post-)training, it may still fail to maximise the aligned value in reasoning. We mathematically formalise this gap as rational value risk: the utility discrepancy between a model's deployed reasoning strategy and its rational counterpart, which is defined to be the responses that maximise expected utility in the steepest direction. The estimation error of rational value risk is further decomposed into three co",
+      "category": "AI Safety & Alignment",
+      "summary": "Research formalizes 'rational value risk' showing that even well-aligned LLMs may fail to maximize aligned values during reasoning due to irrational decision-making.",
+      "important": false
+    },
+    {
+      "title": "AlphaMemo: Structured Search-Process Memory for Self-Evolving Alpha Mining Agents",
+      "url": "https://arxiv.org/abs/2606.20625",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-23T04:00:00.000Z",
+      "snippet": "arXiv:2606.20625v1 Announce Type: new Abstract: LLM agents are promising for alpha mining via combining financial priors, symbolic reasoning, executable factor generation, and feedback-driven refinement. Yet, they face a combinatorial search space, noisy non-stationary feedback, redundant discoveries, and overfitting risks from naively reusing past successes. To address these challenges, we propose AlphaMemo, a self-evolving alpha mining agent with Structured Search-Process Memory. Rather than memorizing only final factors or full trajectories, AlphaMemo records reusable evidence about which e",
+      "category": "Agent Frameworks",
+      "summary": "AlphaMemo introduces a self-evolving agent system for financial alpha mining that uses structured search-process memory to avoid redundant discoveries and overfitting by recording reusable evidence about factor generation rather than just final outcomes.",
+      "important": false
+    },
+    {
+      "title": "Latent Goal Prediction from Language for Model-Based Planning",
+      "url": "https://arxiv.org/abs/2606.20627",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-23T04:00:00.000Z",
+      "snippet": "arXiv:2606.20627v1 Announce Type: new Abstract: Planning with world models is bottlenecked by compounding prediction errors and the difficulty of defining optimizable goals. Visual targets provide precise local gradients but poor distant guidance, while language is flexible yet limited by noisy cross-modal alignment or dependence on large generative models unsuited for the high-sampling nature of model-based planning. To address these challenges, we introduce Latent Goal Prediction from Language (LAGO), a framework that predicts both sequences of intermediate goal states from language instruct",
+      "category": "Agent Frameworks",
+      "summary": "LAGO is a framework that enables model-based planning by predicting intermediate goal states from language instructions, addressing the challenge of compounding errors and noisy cross-modal alignment in planning with world models.",
+      "important": false
+    },
+    {
+      "title": "Harnessing Agent Skills: Architectural Patterns and a Reference Architecture for Skill-Mediated LLM Agents",
+      "url": "https://arxiv.org/abs/2606.20631",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-23T04:00:00.000Z",
+      "snippet": "arXiv:2606.20631v1 Announce Type: new Abstract: Agent skills externalise reusable agent-facing behavioural knowledge and guidance as persistent artefacts that can be discovered, activated, and interpreted by LLM agents. Although a skill artefact is static at rest, its architectural responsibilities arise in use, when the artefact is selected for a run, bound to context and authority constraints, interpreted by a stochastic agent, and recorded as run evidence. We call this run-specific relation skill-in-use. This paper studies agent skill harnessing: the architectural responsibilities that gove",
+      "category": "Agent Frameworks",
+      "summary": "This paper proposes architectural patterns and a reference architecture for managing reusable agent skills in LLM agents, defining how skills are discovered, activated, and interpreted at runtime.",
+      "important": false
+    },
+    {
+      "title": "DEMM-Bench: A Cross-Regime Benchmark for Agent-Runtime Governance-Evidence Sufficiency",
+      "url": "https://arxiv.org/abs/2606.20634",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-23T04:00:00.000Z",
+      "snippet": "arXiv:2606.20634v1 Announce Type: new Abstract: Agent-runtime systems emit traces, ledgers, provenance graphs, policy logs, delegation tokens, cache events, and tool-firewall records, but those containers do not necessarily answer governance questions about a specific decision. DEMM-Bench is a cross-regime benchmark for agent-runtime governance-evidence sufficiency, grounded in the Decision Evidence Maturity Model (DEMM): it measures whether records across eight evidence regimes are sufficient to reconstruct decision-level properties rather than merely present. The benchmark normalizes the reg",
+      "category": "Agent Frameworks",
+      "summary": "DEMM-Bench introduces a benchmark for evaluating whether agent-runtime system traces and records across eight evidence regimes are sufficient to reconstruct decision-level properties for governance purposes.",
+      "important": false
+    },
+    {
+      "title": "SkillHarness: Harnessing Safe Skills for Computer-Use Agents",
+      "url": "https://arxiv.org/abs/2606.20636",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-23T04:00:00.000Z",
+      "snippet": "arXiv:2606.20636v1 Announce Type: new Abstract: Computer-Use Agents (CUAs) are increasingly deployed in dynamic interactive environments, creating a growing need for continual skill learning during interaction. Recent approaches address this challenge by learning reusable skills from successful trajectories. However, these skill learning methods largely assume static and safe environments, overlooking risks from adversarial interactions (e.g., prompt injections) and environmental dynamics (e.g., pop-ups). In dynamic settings, such assumptions can lead to risky skill learning and brittle execut",
+      "category": "AI Safety & Alignment",
+      "summary": "SkillHarness addresses safety risks in continual skill learning for computer-use agents by mitigating adversarial interactions like prompt injections and environmental dynamics in dynamic interactive settings.",
+      "important": false
+    },
+    {
+      "title": "RIZZ: Routing Interactions to Near Zero-Interference Zones for Continual Adaptation of Black-Box Agents",
+      "url": "https://arxiv.org/abs/2606.20638",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-23T04:00:00.000Z",
+      "snippet": "arXiv:2606.20638v1 Announce Type: new Abstract: Large language models are increasingly deployed as long-lived agents that must adapt across users, tasks, domains, modalities, and feedback regimes without access to model weights. Existing black-box adaptation methods typically optimize a single prompt, maintain an undifferentiated memory, or rely on repeated rollout-heavy search. However, these designs struggle when streams of input are nonstationary, feedback is sparse, and failures from one task family can contaminate behavior on another. We introduce RIZZ (Routing Interactions to Near Zero-i",
+      "category": "Agent Frameworks",
+      "summary": "RIZZ introduces a routing mechanism for continual adaptation of black-box LLM agents across nonstationary streams, enabling task-specific learning without contaminating behavior across different task families.",
+      "important": false
+    },
+    {
+      "title": "An LLM-Explainable DRL Framework for Passenger-Directed Autonomous Driving",
+      "url": "https://arxiv.org/abs/2606.20640",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-23T04:00:00.000Z",
+      "snippet": "arXiv:2606.20640v1 Announce Type: new Abstract: Autonomous vehicles offer the potential for safer and more efficient mobility, yet public trust remains limited due to the lack of transparency in their decision-making. This work addresses this issue by combining deep reinforcement learning (DRL) for adaptive driving control with large language model (LLM)-based explainability modules designed to communicate agent behavior to passengers. DRL agents were trained in simulation using a Dueling Double Deep Q-Network to follow distinct driving requests: \\textit{fast}, \\textit{comfort}, and \\textit{st",
+      "category": "Applications",
+      "summary": "This work combines deep reinforcement learning with LLM-based explainability modules to create autonomous vehicles that can adapt to different driving preferences while communicating their decision-making to passengers.",
+      "important": false
+    },
+    {
+      "title": "Hypothesis-Disciplined Multi-Agent Automated Formalization of Asymptotic Statistical Theory",
+      "url": "https://arxiv.org/abs/2606.20642",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-23T04:00:00.000Z",
+      "snippet": "arXiv:2606.20642v1 Announce Type: new Abstract: Asymptotic statistical theory is a challenging domain for AI-assisted formalization: its central results mix convergence statements, asymptotic expansions, functional analysis, and regularity conditions that have a large gap from existing infrastructure in Lean 4 formalization. To address these challenges, we propose a hypothesis-disciplined Lean 4 formalization pipeline built from multiple agents: a manager that coordinates seven specialist roles for proof planning, skeleton scaffolding, Mathlib reconnaissance, proof construction, integration, i",
+      "category": "Agent Frameworks",
+      "summary": "A hypothesis-disciplined multi-agent pipeline is proposed for formalizing asymptotic statistical theory in Lean 4, using multiple specialist agents coordinated by a manager to bridge the gap between mathematical theory and formal infrastructure.",
+      "important": false
+    },
+    {
+      "title": "SPARC: A Multi-Agent System for Electrical Circuit Question Answering",
+      "url": "https://arxiv.org/abs/2606.20643",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-23T04:00:00.000Z",
+      "snippet": "arXiv:2606.20643v1 Announce Type: new Abstract: Electrical circuit diagram QA tasks require complex mathematical reasoning, which remains challenging for multimodal LLMs. We present SPARC, a multi-agent system that answers questions over circuit diagrams by grounding reasoning in executable physics-based simulations. SPARC uses LLM agents to synthesize, execute, and analyze simulation programs, improving accuracy and reliability by design. It achieves 83% accuracy, with up to a 58% absolute improvement over baselines, while enabling systematic error diagnosis.",
+      "category": "Agent Frameworks",
+      "summary": "SPARC is a multi-agent system that answers electrical circuit diagram questions by grounding reasoning in executable physics-based simulations, achieving 83% accuracy with significant improvements over baseline LLMs.",
+      "important": false
+    },
+    {
+      "title": "The running list: major tech layoffs in 2026 where employers cited AI",
+      "url": "https://techcrunch.com/2026/06/22/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-23T01:27:55.000Z",
+      "snippet": "A running look — in reverse chronological order — at the bigger tech companies that have announced significant layoffs this year with AI as a stated factor.",
+      "category": "Business & Funding",
+      "summary": "Tech companies continue announcing significant layoffs in 2026 with AI cited as a primary factor in workforce reductions.",
+      "important": false
+    },
+    {
+      "title": "OpenAI launches new initiative to help find and patch open source bugs",
+      "url": "https://techcrunch.com/2026/06/22/openai-launches-new-initiative-to-help-find-and-patch-open-source-bugs/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-23T00:11:31.000Z",
+      "snippet": "OpenAI is using AI to help the open source community better protect itself.",
+      "category": "Open Source",
+      "summary": "OpenAI launches an initiative to use AI for identifying and patching vulnerabilities in open source software.",
+      "important": false
+    },
+    {
+      "title": "How Omio is building the future of conversational travel",
+      "url": "https://openai.com/index/omio",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-06-23T00:00:00.000Z",
+      "snippet": "Discover how Omio uses OpenAI to power conversational travel experiences, accelerate product development, and transform into an AI-native company.",
+      "category": "Applications",
+      "summary": "Travel platform Omio leverages OpenAI to build conversational travel experiences and transform into an AI-native company.",
+      "important": false
+    },
+    {
+      "title": "Nvidia says its AI data center design runs hotter to use a lot less water",
+      "url": "https://www.theverge.com/tech/954139/nvidia-data-centers-rubin-liquid-cooling",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-22T23:24:32.000Z",
+      "snippet": "Public pushback against data centers has emphasized their water and energy consumption, and now Nvidia is highlighting its claim that the Rubin generation reference design for a fully liquid-cooled data center has \"eliminated massive amounts of power usage and pretty much all water usage.\" Still, it doesn't address all of the concerns around AI data centers, including during their construction, and for the power generation requirements of the massive facilities. Also, as Gizmodo points out, Nvidia's blog post doesn't mention the cost of building this style of data center vs. one using less eff",
+      "category": "Hardware & Compute",
+      "summary": "Nvidia claims its Rubin generation liquid-cooled data center design significantly reduces power and water usage, though critics note it doesn't address broader environmental concerns during construction and power generation.",
+      "important": false
+    },
+    {
+      "title": "GM installs robots at flagship EV factory after laying off 1,300 workers",
+      "url": "https://arstechnica.com/ai/2026/06/gm-installs-robots-at-flagship-ev-factory-after-laying-off-1300-workers/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-06-22T21:52:39.000Z",
+      "snippet": "US autoworkers union warns of robot automation as dark factory future looms.",
+      "category": "Applications",
+      "summary": "GM installs robots at its flagship EV factory after laying off 1,300 workers, prompting union warnings about increased industrial automation.",
+      "important": false
+    },
+    {
+      "title": "Meta pauses AI training program tracking employee keystrokes after internal leak",
+      "url": "https://www.businessinsider.com/meta-ai-training-data-leak-exposed-employee-activity-across-company-2026-6",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-22T21:43:22.000Z",
+      "snippet": "Article URL: https://www.businessinsider.com/meta-ai-training-data-leak-exposed-employee-activity-across-company-2026-6 Comments URL: https://news.ycombinator.com/item?id=48636632 Points: 85 # Comments: 21",
+      "category": "Regulation & Policy",
+      "summary": "Meta suspended an AI training program after discovering it was tracking employee keystrokes without proper disclosure, raising privacy and data governance concerns.",
+      "important": false
+    },
+    {
+      "title": "The AI world is getting ‘loopy’",
+      "url": "https://techcrunch.com/2026/06/22/the-ai-world-is-getting-loopy/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-22T20:53:11.000Z",
+      "snippet": "The loop takes agentic AI a step further by authorizing a swarm of agents to work continuously in the background, endlessly.",
+      "category": "Agent Frameworks",
+      "summary": "A new 'loopy' approach extends agentic AI by allowing autonomous agent swarms to operate continuously in the background without human intervention.",
+      "important": false
+    },
+    {
+      "title": "AI chipmaker Groq confirms $650M raise, re-staffs after Nvidia’s $20B not-acqui-hire deal",
+      "url": "https://techcrunch.com/2026/06/22/ai-chipmaker-groq-confirms-650m-raise-re-staffs-after-nvidias-20b-not-acqui-hire-deal/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-22T20:13:58.000Z",
+      "snippet": "What does an AI company do after one of those not-acqui-hire deals? Groq raised money, is leaning into its neocloud business, and is hiring new execs.",
+      "category": "Business & Funding",
+      "summary": "AI chipmaker Groq confirms a $650M funding round and leadership restructuring following Nvidia's talent acquisition deal, focusing on expanding its neocloud business.",
+      "important": false
+    },
+    {
+      "title": "Nvidia wants to cut data center water use, but that’s not the same as fixing AI’s water problem",
+      "url": "https://techcrunch.com/2026/06/22/nvidia-wants-to-cut-data-center-water-use-but-thats-not-the-same-as-fixing-ais-water-problem/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-22T20:08:15.000Z",
+      "snippet": "Nvidia announced a new cooling system that cuts water use inside the data center. But it does nothing to address AI's biggest water use — fossil fuel power plants.",
+      "category": "Hardware & Compute",
+      "summary": "While Nvidia's new cooling system reduces data center water consumption, it fails to address AI's largest water usage in fossil fuel power plant cooling systems.",
+      "important": false
+    },
+    {
+      "title": "AI is cursing renters with the promise of impossible homes",
+      "url": "https://www.theverge.com/report/953888/ai-virtual-staging-real-estate-apartment-listings",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-22T20:00:00.000Z",
+      "snippet": "Joyce, a native New Yorker, didn't think finding her first solo apartment in the city would be easy. But she also didn't think it'd be \"hell.\" After looking at a lot of tiny, overpriced places she described as \"shitholes,\" Joyce found her dream apartment: a reasonably priced studio in Manhattan. \"It was big and airy, and there was a fireplace,\" she said. The kitchen was small but well equipped and looked like it had been recently renovated. She dropped everything to see the apartment, and when she got there, she learned that five other women, all around her age, had viewings scheduled after he",
+      "category": "Applications",
+      "summary": "AI-generated fake apartment listings are deceiving renters in New York, with scammers using AI to create realistic but non-existent properties to defraud prospective tenants.",
+      "important": false
+    },
+    {
+      "title": "Google DeepMind bets $75M on AI’s future in Hollywood with A24 deal",
+      "url": "https://techcrunch.com/2026/06/22/google-deepmind-bets-75m-on-ais-future-in-hollywood-with-a24-deal/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-22T18:49:44.000Z",
+      "snippet": "Google DeepMind and A24 are teaming up to build AI filmmaking tools.",
+      "category": "Business & Funding",
+      "summary": "Google DeepMind and A24 announce a $75M partnership to develop AI tools for filmmaking and content creation.",
+      "important": false
+    },
+    {
+      "title": "Three things to watch amid Anthropic’s latest feud with the government",
+      "url": "https://www.technologyreview.com/2026/06/22/1139424/three-things-to-watch-amid-anthropics-latest-feud-with-the-government/",
+      "source": "MIT Tech Review AI",
+      "publishedAt": "2026-06-22T18:00:00.000Z",
+      "snippet": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. For those of you enjoying your summer unaware of Anthropic’s latest feud with the US government, here’s a recap: In April the company said it had built an AI model called Mythos…",
+      "category": "Regulation & Policy",
+      "summary": "Anthropic faces escalating tensions with the U.S. government over its Mythos AI model and related policy concerns, with key implications for AI governance.",
+      "important": false
+    },
+    {
+      "title": "Amazon is testing Alexa+ in India with Hindi support",
+      "url": "https://techcrunch.com/2026/06/22/amazon-is-testing-alexa-in-india-with-hindi-support/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-22T17:31:29.000Z",
+      "snippet": "Amazon is planning to increase the footprint of its new conversational AI assistant Alexa+ to India and is inviting users in the country to test out a Hindi-language version.",
+      "category": "Applications",
+      "summary": "Amazon begins testing Alexa+, its new conversational AI assistant, in India with Hindi language support to expand its market reach.",
+      "important": false
+    },
+    {
+      "title": "SpaceX inks compute deal with Reflection AI, an open source AI lab",
+      "url": "https://techcrunch.com/2026/06/22/spacex-inks-compute-deal-with-reflection-ai-an-open-source-ai-lab/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-22T16:51:29.000Z",
+      "snippet": "Reflection AI will pay $150 million a month beginning July 1, 2026 through 2029 for immediate access to Nvidia's latest GB300 AI chips and supporting hardware across SpaceX's Colossus 2 data center near Memphis, Tennessee.",
+      "category": "Hardware & Compute",
+      "summary": "Reflection AI commits to a $150M monthly compute deal with SpaceX for access to Nvidia's GB300 AI chips through 2029, providing massive GPU infrastructure for AI research.",
+      "important": false
+    },
+    {
+      "title": "The founder conference built for growth: TechCrunch Founder Summit pass rates increase June 26",
+      "url": "https://techcrunch.com/2026/06/22/the-founder-conference-built-for-growth-techcrunch-founder-summit-pass-rates-increase-june-26/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-22T14:00:00.000Z",
+      "snippet": "Save up to $190 on your pass to TechCrunch Founder Summit 2026 by June 26, 11:59 p.m. PT. Designed for founders first on November 4 in Boston. Register today.",
+      "category": "Other",
+      "summary": "TechCrunch announces early registration discount for its Founder Summit 2026 conference scheduled for November in Boston.",
+      "important": false
+    },
+    {
+      "title": "How Anthropic may have talked itself into an AI export ban",
+      "url": "https://arstechnica.com/ai/2026/06/how-anthropic-may-have-talked-itself-into-an-ai-export-ban/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-06-22T13:45:24.000Z",
+      "snippet": "The company warned about dangers of advanced AI far more than rival OpenAI.",
+      "category": "Regulation & Policy",
+      "summary": "Anthropic's public warnings about advanced AI dangers may have inadvertently influenced U.S. government export restrictions on AI technology.",
+      "important": false
+    },
+    {
+      "title": "Read this before you vibe-code another app",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/950844/vibe-coding-security-risks-apps",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-22T11:00:00.000Z",
+      "snippet": "Bob Starr was delighted with his vibe-coded website. \"Boomberg\" showed how much US tax money is going to tech companies, and Starr launched it online immediately after making it. It wasn't until months after the site went live that he realized there was a problem: a hidden SQL injection risk. It could've left the site open for an attacker to read or alter data they shouldn't have access to. \"It was just a glaring oversight on my part. It was a complete blindspot in my state of learning this new technology and understanding it, and I'm sure there are others making the same mistake,\" said Starr,",
+      "category": "Developer Tools",
+      "summary": "Developers using AI to rapidly build applications (vibe-coding) risk introducing serious security vulnerabilities like SQL injection, as demonstrated by a website builder who only discovered flaws months after launch.",
+      "important": false
+    },
+    {
+      "title": "Daybreak: Tools for securing every organization in the world",
+      "url": "https://openai.com/index/daybreak-securing-the-world",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-06-22T10:00:00.000Z",
+      "snippet": "OpenAI introduces new Daybreak tools, including Codex Security and GPT-5.5-Cyber, to help organizations find, validate, and patch vulnerabilities at scale.",
+      "category": "Developer Tools",
+      "summary": "OpenAI introduces Daybreak security tools including Codex Security and GPT-5.5-Cyber to help organizations identify and patch vulnerabilities at scale.",
+      "important": false
+    },
+    {
+      "title": "Patch the Planet: a Daybreak initiative to support open source maintainers",
+      "url": "https://openai.com/index/patch-the-planet",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-06-22T10:00:00.000Z",
+      "snippet": "OpenAI introduces Patch the Planet, a Daybreak initiative helping open-source maintainers find, validate, and fix vulnerabilities with AI and expert review.",
+      "category": "Open Source",
+      "summary": "OpenAI's Patch the Planet initiative helps open-source maintainers discover, validate, and fix security vulnerabilities using AI and expert review.",
+      "important": false
+    },
+    {
+      "title": "Codex-maxxing for long-running work",
+      "url": "https://openai.com/index/codex-maxxing-long-running-work",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-06-22T00:00:00.000Z",
+      "snippet": "Learn how Jason Liu uses Codex to preserve context, manage complex projects, and help work continue beyond a single prompt.",
+      "category": "Developer Tools",
+      "summary": "Developer Jason Liu demonstrates how to use Codex for preserving context across multiple sessions and managing long-running, complex projects.",
+      "important": false
+    },
     {
       "title": "Samsung Electronics brings ChatGPT and Codex to employees",
       "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
@@ -34,6 +384,16 @@
       "snippet": "Article URL: https://www.teachmecoolstuff.com/viewarticle/fine-tuning-a-local-llm-to-categorize-questions Comments URL: https://news.ycombinator.com/item?id=48623434 Points: 152 # Comments: 30",
       "category": "Developer Tools",
       "summary": "Community article demonstrating successful fine-tuning of the Qwen 3:0.6B local LLM for question categorization tasks.",
+      "important": false
+    },
+    {
+      "title": "I Canceled My French Tutor and Built an LLM Tool That Does It Better",
+      "url": "https://alshe.substack.com/p/i-canceled-my-french-tutor-and-built",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-21T22:46:43.000Z",
+      "snippet": "Article URL: https://alshe.substack.com/p/i-canceled-my-french-tutor-and-built Comments URL: https://news.ycombinator.com/item?id=48623371 Points: 57 # Comments: 25",
+      "category": "Applications",
+      "summary": "A developer built an LLM-based tool for French language tutoring that replaces traditional tutoring with AI-powered personalized instruction.",
       "important": false
     },
     {
@@ -3589,52 +3949,52 @@
   ],
   "feedHealth": {
     "The Verge AI": {
-      "lastSuccess": "2026-06-22T11:34:27.123Z",
+      "lastSuccess": "2026-06-23T08:57:52.180Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "TechCrunch AI": {
-      "lastSuccess": "2026-06-22T11:34:27.229Z",
+      "lastSuccess": "2026-06-23T08:57:52.205Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Ars Technica AI": {
-      "lastSuccess": "2026-06-22T11:34:27.451Z",
+      "lastSuccess": "2026-06-23T08:57:52.439Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "VentureBeat AI": {
-      "lastSuccess": "2026-06-22T11:34:27.725Z",
+      "lastSuccess": "2026-06-23T08:57:52.713Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Anthropic News": {
       "lastSuccess": null,
       "lastError": "Status code 404",
-      "consecutiveFailures": 5
+      "consecutiveFailures": 6
     },
     "OpenAI Blog": {
-      "lastSuccess": "2026-06-22T11:34:28.723Z",
+      "lastSuccess": "2026-06-23T08:57:55.344Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Google DeepMind": {
-      "lastSuccess": "2026-06-22T11:34:29.090Z",
+      "lastSuccess": "2026-06-23T08:57:55.690Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "MIT Tech Review AI": {
-      "lastSuccess": "2026-06-22T11:34:29.195Z",
+      "lastSuccess": "2026-06-23T08:57:55.793Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "arXiv cs.AI": {
-      "lastSuccess": "2026-06-22T11:34:29.331Z",
+      "lastSuccess": "2026-06-23T08:57:56.052Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Hacker News (AI)": {
-      "lastSuccess": "2026-06-22T11:34:32.894Z",
+      "lastSuccess": "2026-06-23T08:57:57.565Z",
       "lastError": null,
       "consecutiveFailures": 0
     }
