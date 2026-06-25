@@ -1,21 +1,521 @@
 {
-  "generatedAt": "2026-06-23T08:57:57.565Z",
-  "daysBack": 2,
+  "generatedAt": "2026-06-25T08:46:29.460Z",
+  "daysBack": 3,
   "categories": [
     "Research",
-    "Agent Frameworks",
-    "AI Safety & Alignment",
-    "Applications",
-    "Business & Funding",
-    "Open Source",
-    "Hardware & Compute",
     "Regulation & Policy",
-    "Other",
+    "Agent Frameworks",
+    "Applications",
+    "AI Safety & Alignment",
+    "Business & Funding",
+    "Hardware & Compute",
+    "Model Releases",
     "Developer Tools",
-    "MCP",
-    "Model Releases"
+    "Other",
+    "Open Source",
+    "MCP"
   ],
   "articles": [
+    {
+      "title": "The Hitchhiker's Guide to Agentic AI: From Foundations to Systems",
+      "url": "https://arxiv.org/abs/2606.24937",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-25T04:00:00.000Z",
+      "snippet": "arXiv:2606.24937v1 Announce Type: new Abstract: The Hitchhiker's Guide to Agentic AI is a comprehensive practitioner's reference for building autonomous AI systems. The book covers the full stack from first principles to production deployment, organized around a central thesis: building great agentic systems requires understanding every layer of the pipeline, not just one. The book opens with the LLM substrate -- transformer architecture, GPU systems, training and fine-tuning (SFT,LoRA, MoE), model compression, and inference optimization -- treated as essential foundations rather than the prim",
+      "category": "Research",
+      "summary": "A comprehensive arXiv reference guide covers building autonomous AI systems across the full stack from transformer architecture to production deployment.",
+      "important": false
+    },
+    {
+      "title": "Project Auto-World: Towards Automated Benchmarking of Neural Relational Reasoners",
+      "url": "https://arxiv.org/abs/2606.24965",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-25T04:00:00.000Z",
+      "snippet": "arXiv:2606.24965v1 Announce Type: new Abstract: Reasoning about relational structures remains a significant challenge for neural models, particularly when they must systematically apply learned knowledge to problem instances that are harder than those seen in training. Progress is hampered by the difficulty of evaluating such generalization, since a priori, it is rarely clear what makes an instance hard. We study how this issue can be addressed by using large language models (LLMs) to automate benchmark generation, learning to produce increasingly challenging instances in an end-to-end manner.",
+      "category": "Research",
+      "summary": "Project Auto-World uses LLMs to automate benchmark generation for evaluating neural model reasoning and generalization beyond training data.",
+      "important": false
+    },
+    {
+      "title": "Diagnosing and Mitigating Compounding Failures in Agentic Persuasion via Taxonomic Strategy Retrieval",
+      "url": "https://arxiv.org/abs/2606.24976",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-25T04:00:00.000Z",
+      "snippet": "arXiv:2606.24976v1 Announce Type: new Abstract: Foundation-model agents in multi-step, open-ended environments frequently suffer from compounding errors, where early mistakes contaminate long-horizon trajectories. While Multi-Agent Debate (MAD) succeeds in deterministic domains, agents in subjective tasks like persuasion experience severe problem drift and sycophantic conformity. We identify semantic leakage in standard Retrieval-Augmented Generation (RAG) as a reproducible trigger for these failures, as standard RAG prioritizes vocabulary overlap over logical necessity. To eliminate this leak",
+      "category": "Research",
+      "summary": "Research identifies semantic leakage in RAG systems as a trigger for agent compounding failures and proposes taxonomic strategy retrieval solutions.",
+      "important": false
+    },
+    {
+      "title": "Do vision-language models search like humans? Reasoning tokens as a reaction-time analog in classic visual-search paradigms",
+      "url": "https://arxiv.org/abs/2606.25066",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-25T04:00:00.000Z",
+      "snippet": "arXiv:2606.25066v1 Announce Type: new Abstract: Visual search has been one of the most productive paradigms in the study of visual attention: the way reaction time scales with the number of items distinguishes parallel, \"pop-out\" search from serial, attention-demanding search. I ask whether vision-language models (VLMs) exhibit the same behavioral signatures. I adapt four classic paradigms: feature versus conjunction search, spatial-configuration (T-vs-L) search, enumeration, and the tilted/vertical search asymmetry; and present them to current frontier and mid-tier models. Because a single mo",
+      "category": "Research",
+      "summary": "Study examines whether vision-language models exhibit human-like visual search behavior using reasoning tokens as reaction-time analogs.",
+      "important": false
+    },
+    {
+      "title": "The Clinician's Veto: Navigating Trust, Liability, and Uncertainty in Autonomous AI Prescribing",
+      "url": "https://arxiv.org/abs/2606.25108",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-25T04:00:00.000Z",
+      "snippet": "arXiv:2606.25108v1 Announce Type: new Abstract: Autonomous AI systems are transitioning from advisory to autonomous roles for medication prescriptions. Recent United States bill H.R. 238 and Utah's prescription-renewal pilot both authorize AI to prescribe medications in an agentic capacity. While some regulatory guidelines suggest aggregate model performance metrics for clearance, they do not require i) calibrated per-prediction confidence for action-gated thresholds, ii) differentiated communication of uncertainty arising from model ignorance (epistemic) versus genuine clinical ambiguity (ale",
+      "category": "Regulation & Policy",
+      "summary": "Research addresses trust, liability, and uncertainty in autonomous AI prescribing systems following recent U.S. legislation authorizing AI medication prescription.",
+      "important": false
+    },
+    {
+      "title": "TRUSTMEM: Learning Trustworthy Memory Consolidation for LLM Agents with Long-Term Memory",
+      "url": "https://arxiv.org/abs/2606.25161",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-25T04:00:00.000Z",
+      "snippet": "arXiv:2606.25161v1 Announce Type: new Abstract: Large language model (LLM) agents rely on long-term memory to support extended interactions and personalized assistance beyond finite context windows. Existing memory agents actively update external memory through generated write, revise, and delete operations, but these updates may omit important information, corrupt existing memory, or introduce unsupported hallucinated content. Once stored, such errors become persistent system-state failures that can affect future reasoning and generation. In this paper, we propose TrustMem, a framework design",
+      "category": "Research",
+      "summary": "TrustMem framework improves LLM agent long-term memory by learning to prevent information omission, corruption, and hallucinated content in memory updates.",
+      "important": false
+    },
+    {
+      "title": "Transferability for General Reasoning: An Automated Curriculum for Multi-Domain RLVR",
+      "url": "https://arxiv.org/abs/2606.25178",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-25T04:00:00.000Z",
+      "snippet": "arXiv:2606.25178v1 Announce Type: new Abstract: Reinforcement learning with verifiable rewards (RLVR) has been extended from single-domain training to multi-domain reasoning suites spanning mathematics, programming, and science. However, the training curriculum (how often each domain is sampled) is typically fixed or hand-tuned, even though reasoning skills transfer unevenly across domains. Existing learnability-based curricula adapt to where the policy is currently improving, but are blind to whether a gradient step on the selected domain benefits the remaining domains. In this paper, we prop",
+      "category": "Research",
+      "summary": "Research proposes automated curriculum learning for multi-domain reasoning that adapts training based on how skills transfer across domains.",
+      "important": false
+    },
+    {
+      "title": "To Isolate or to Score? Model-Adaptive Assessment for Cost-Efficient Multi-Agent RAG",
+      "url": "https://arxiv.org/abs/2606.25191",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-25T04:00:00.000Z",
+      "snippet": "arXiv:2606.25191v1 Announce Type: new Abstract: Multi-agent document assessment for retrieval-augmented generation is computationally expensive, driving practitioners toward smaller, deployable models whose assessment mechanisms remain poorly understood. We conduct a controlled study of training-free interventions on 7B-9B instruction-tuned models across diverse QA benchmarks, revealing a sharp dichotomy in how models benefit from assessment. For weaker baselines, the dominant mechanism is per-document isolation. Astoundingly, assessment-free isolation matches full multi-agent assessment, demo",
+      "category": "Research",
+      "summary": "Study reveals that smaller instruction-tuned models benefit from per-document isolation in multi-agent RAG without needing full assessment mechanisms.",
+      "important": false
+    },
+    {
+      "title": "Heuresis: Search Strategies for Autonomous AI Research Agents Across Quality, Diversity and Novelty",
+      "url": "https://arxiv.org/abs/2606.25198",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-25T04:00:00.000Z",
+      "snippet": "arXiv:2606.25198v1 Announce Type: new Abstract: Autonomous AI Research promises to accelerate the scientific progress of machine learning. To realise this goal, current Large Language Model (LLM)-based agents need to go beyond just writing code, to mastering the exploration of simultaneously performant, diverse and novel ideas. To this end, we introduce Heuresis, a framework that abstracts the research pipeline into a set of general and composable primitives, enabling open-ended scientific exploration in machine learning research. We implement six search strategies: a greedy baseline, two arch",
+      "category": "Agent Frameworks",
+      "summary": "Heuresis framework enables autonomous AI research agents to explore performant, diverse, and novel ML ideas through composable search strategies.",
+      "important": false
+    },
+    {
+      "title": "Omni-Perception Policy Optimization for Multimodal Emotion Reasoning",
+      "url": "https://arxiv.org/abs/2606.25325",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-25T04:00:00.000Z",
+      "snippet": "arXiv:2606.25325v1 Announce Type: new Abstract: We find that current emotion-oriented Omni-MLLMs still lack reliable omni-modal perception: they (i) underutilize multimodal cues in their reasoning trajectories and (ii) exhibit unfaithful behavior, often hallucinating modality-specific statements from other modalities. Building on these insights, we propose OPPO (Omni-Perception Policy Optimization), a reinforcement learning framework that explicitly optimizes multimodal perception. First, an Omni-Perception Reward decomposes ground-truth reasoning into fine-grained visual, acoustic, and emotio",
+      "category": "Research",
+      "summary": "OPPO framework uses reinforcement learning to optimize multimodal perception in emotion reasoning systems, reducing hallucination across modalities.",
+      "important": false
+    },
+    {
+      "title": "Agentic Knowledge Tracing: A Multi-Agent LLM Architecture for Stealth Assessment of Financial Literacy in Serious Games",
+      "url": "https://arxiv.org/abs/2606.25358",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-25T04:00:00.000Z",
+      "snippet": "arXiv:2606.25358v1 Announce Type: new Abstract: Assessing financial literacy during gameplay without disrupting the learning experience remains a key challenge in serious games for education. We present the Agentic BKT pipeline, a multi-agent large language model architecture for stealth assessment of financial competencies from open-ended gameplay events. The pipeline processes events from a 2D platformer serious game aligned with the OECD/INFE financial literacy framework through four phases: (1) the game captures every player decision as a structured event log; (2) an LLM event classifier l",
+      "category": "Applications",
+      "summary": "A multi-agent LLM architecture performs stealth assessment of financial literacy in serious games without disrupting gameplay.",
+      "important": false
+    },
+    {
+      "title": "What Actually Works for Spacecraft Fault-Tolerant Control: An Honest Settled-Gate Benchmark of Learned and Classical Methods",
+      "url": "https://arxiv.org/abs/2606.25374",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-25T04:00:00.000Z",
+      "snippet": "arXiv:2606.25374v1 Announce Type: new Abstract: Recent learned fault-tolerant-control (FTC) work reports high success on spacecraft actuator faults, but often in simulation, on narrow fault sets, and with transient metrics that a trajectory need only touch once. We ask what recovers spacecraft pointing when success means holding it on faults never seen in training. We answer with a benchmark built around a settled gate, pointing held within 0.2 deg over a dwell window and scored on the true state, train/test splits disjoint in inertia, gain, sign pattern, and bias, Wilson intervals over n=500 ",
+      "category": "Research",
+      "summary": "Benchmark study compares learned and classical fault-tolerant control methods for spacecraft, emphasizing testing on novel unseen faults.",
+      "important": false
+    },
+    {
+      "title": "Offline Multi-agent Continual Cooperation via Skill Partition and Reuse",
+      "url": "https://arxiv.org/abs/2606.25389",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-25T04:00:00.000Z",
+      "snippet": "arXiv:2606.25389v1 Announce Type: new Abstract: Extracting skills from multi-agent offline dataset improves learning efficiency via sharing task-invariant coordination skills among tasks. In settings where tasks occur sequentially and the space of skills grows exponentially, existing approaches that rely on heuristically designed and fixed-sized skill libraries struggle to resolve the problem of distributional shift and interference, facing catastrophic forgetting and plasticity loss. To address this problem and endow agents with the ability to continually discover and reuse coordination skill",
+      "category": "Research",
+      "summary": "Research addresses catastrophic forgetting in multi-agent learning by proposing skill partition and reuse for continual cooperation from offline data.",
+      "important": false
+    },
+    {
+      "title": "Long-Term Simulation Exposes Cognitive-Developmental Risks in AI Companions",
+      "url": "https://arxiv.org/abs/2606.25396",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-25T04:00:00.000Z",
+      "snippet": "arXiv:2606.25396v1 Announce Type: new Abstract: AI companions powered by large language models increasingly interact with cognition-developing users, including children and adolescents, creating risks that may accumulate over time. Existing safety evaluations largely rely on single-turn or short-session tests, which cannot capture risks that emerge only through prolonged interaction. To address this gap, we propose TSJ (Theater-Stage-Judge), a longitudinal framework combining persona-driven user simulation, dynamic psychological-state updating and retrospective evaluation. We evaluate six main",
+      "category": "AI Safety & Alignment",
+      "summary": "TSJ framework exposes cognitive-developmental risks from prolonged AI companion interaction with children and adolescents through longitudinal simulation.",
+      "important": false
+    },
+    {
+      "title": "BrainAgent: A Large Language Model-Driven Multi-Agent Framework for Autonomous Brain Signal Understanding",
+      "url": "https://arxiv.org/abs/2606.25400",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-25T04:00:00.000Z",
+      "snippet": "arXiv:2606.25400v1 Announce Type: new Abstract: Brain-Computer Interfaces (BCIs) and brain signal understanding are pivotal for clinical health and next-generation interactions. Despite this significance, its widespread adoption in real-world scenarios remains restricted, primarily because current analytical paradigms lack sufficient agentic intelligence. First, existing methodologies impose prohibitive technical barriers, requiring extensive specialized expertise. Second, they remain inherently static and task-specific, failing to execute the complex, long-horizon workflows essential for real",
+      "category": "Agent Frameworks",
+      "summary": "BrainAgent is a multi-agent LLM framework that automates brain signal analysis and interpretation for BCIs and clinical applications.",
+      "important": false
+    },
+    {
+      "title": "Europe is pushing back on Washington’s chip war",
+      "url": "https://techcrunch.com/2026/06/24/europe-is-pushing-back-on-washingtons-chip-war/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-25T00:08:36.000Z",
+      "snippet": "As ASML CEO Christophe Fouquet told TechCrunch in May, what China can currently buy are older-generation deep ultraviolet tools — gear first shipped about a decade ago — the same machines the MATCH Act would now put off-limits.",
+      "category": "Regulation & Policy",
+      "summary": "Europe is pushing back against Washington's chip war strategy, with concerns about restrictions on semiconductor technology exports.",
+      "important": false
+    },
+    {
+      "title": "Former Infosys chief has a new startup that wants to challenge the IT services world",
+      "url": "https://techcrunch.com/2026/06/24/former-infosys-chief-has-a-new-startup-that-wants-to-challenge-the-it-services-world/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-24T23:26:52.000Z",
+      "snippet": "Backed by Mayfield and Aramco Ventures, Vishal Sikka’s new venture brings together veterans from SAP, Infosys, and VianAI.",
+      "category": "Business & Funding",
+      "summary": "Former Infosys chief Vishal Sikka launched a new startup backed by Mayfield and Aramco Ventures, bringing together veterans from SAP, Infosys, and VianAI to challenge the IT services industry.",
+      "important": false
+    },
+    {
+      "title": "Cerebras stock plunges after earnings as CEO says margin outlook was misunderstood",
+      "url": "https://techcrunch.com/2026/06/24/cerebras-stock-plunges-after-earnings-as-ceo-says-margin-outlook-was-misunderstood/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-24T22:41:41.000Z",
+      "snippet": "In its first earnings report since going public, the AI chipmaker forecast a narrower gross margin in its core business, scaring investors.",
+      "category": "Hardware & Compute",
+      "summary": "AI chipmaker Cerebras' stock plunged after its first earnings report as CEO since going public, with a narrower gross margin forecast in core business disappointing investors.",
+      "important": false
+    },
+    {
+      "title": "OpenAI and Broadcom announce chip designed for LLM inference at scale",
+      "url": "https://arstechnica.com/gadgets/2026/06/openai-and-broadcom-announce-chip-designed-for-llm-inference-at-scale/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-06-24T22:28:18.000Z",
+      "snippet": "The silicon race is heating up amid the struggle to keep up with demand.",
+      "category": "Hardware & Compute",
+      "summary": "OpenAI and Broadcom announced a custom chip designed for LLM inference at scale to meet growing demand.",
+      "important": true
+    },
+    {
+      "title": "AI was supposed to kill engineering jobs, but new data suggests they’re the most resilient",
+      "url": "https://techcrunch.com/2026/06/24/ai-was-supposed-to-kill-engineering-jobs-but-new-data-suggests-theyre-the-most-resilient/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-24T21:56:41.000Z",
+      "snippet": "While AI dominates the layoff narrative, engineers are actually making up a larger share of new hires, according to SignalFire data.",
+      "category": "Business & Funding",
+      "summary": "New data from SignalFire shows that despite AI layoff narratives, engineers are actually making up a larger share of new hires, suggesting job resilience in the sector.",
+      "important": false
+    },
+    {
+      "title": "AI researchers continue to leave Google for its rivals",
+      "url": "https://techcrunch.com/2026/06/24/ai-researchers-continue-to-leave-google-for-its-rivals/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-24T21:42:07.000Z",
+      "snippet": "Top AI researchers Jonas Adler and Alexander Pritzel are leaving Google for Anthropic, following departures from top scientists Noam Shazeer and John Jumper.",
+      "category": "Business & Funding",
+      "summary": "Top AI researchers Jonas Adler and Alexander Pritzel are leaving Google for Anthropic, continuing a trend of departures from Google to rival AI companies.",
+      "important": false
+    },
+    {
+      "title": "The memory chip crunch is paying off for this US company",
+      "url": "https://techcrunch.com/2026/06/24/the-memory-chip-crunch-is-paying-off-for-this-u-s-company/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-24T21:30:55.000Z",
+      "snippet": "Revenue quadrupled to $41.45 billion compared with the same period a year ago. The company's profit, meanwhile, rose from $1.88 billion to an incredible $28.2 billion year-over-year.",
+      "category": "Hardware & Compute",
+      "summary": "A major US memory chip company is profiting from the global chip crunch, with revenue quadrupling to $41.45 billion and profit jumping to $28.2 billion year-over-year.",
+      "important": false
+    },
+    {
+      "title": "Companies are scrambling to stop employees from maxing out AI budgets with small tasks",
+      "url": "https://techcrunch.com/2026/06/24/companies-are-scrambling-to-stop-employees-from-maxing-out-ai-budgets-with-small-tasks/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-24T20:09:45.000Z",
+      "snippet": "The tokenmaxxing era was brief. We now appear to be entering the era of token rationing.",
+      "category": "Applications",
+      "summary": "Companies are implementing token rationing strategies to prevent employees from exhausting AI budgets on small tasks, ending the brief era of unrestricted AI spending.",
+      "important": false
+    },
+    {
+      "title": "Congresswoman denies staff used AI to write defense funding amendment",
+      "url": "https://www.theverge.com/policy/956394/florida-anna-paulina-luna-anthropic-claude",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-24T19:36:46.000Z",
+      "snippet": "Rep. Anna Paulina Luna (R-FL) says her staff used AI for \"spellcheck\" in an amendment summary for a major defense bill, but denies it was used for the bill text itself and says \"NO Legislation is ever drafted with AI.\" Luna issued the response after accounts on X began sharing screenshots of an amendment summary for the 2027 National Defense Authorization Act. It reads: \"Identical to H.R. 100 (118th Congress).11:25 AM????Claude responded: Requires the Secretary of Defense to designate Department of Defense activities, support, and operations at the southwest land border as a named operation wi",
+      "category": "Regulation & Policy",
+      "summary": "Rep. Anna Paulina Luna denies her staff used AI to draft legislation, claiming it was only used for spellcheck on an amendment summary for the 2024 National Defense Authorization Act, addressing concerns raised on social media.",
+      "important": false
+    },
+    {
+      "title": "The $27 million Al proxy war over Alex Bores ends in a draw",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/956263/alex-bores-new-york-12th-district-congressional-primary-results",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-24T17:25:00.000Z",
+      "snippet": "Alex Bores (D-NY) enters his watch party at The Freehand Hotel after conceding the congressional race to Micah Lasher who will replace Rep Jerry Nadler (D-NY) in NY's 12th Congressional District on June 23, 2026 in New York City. | Photo by Laura Brett/Getty Images. The expensive, $27 million political proxy war between Anthropic and OpenAI came to a draw last night when Alex Bores, a New York state Assemblyman whose popularity surged after being targeted by a pro-AI super PAC, narrowly lost the Democratic primary to represent New York's 12th Congressional district. Prior to the race, Bores, a",
+      "category": "Business & Funding",
+      "summary": "A $27 million proxy war between Anthropic and OpenAI-backed super PACs over a New York congressional race ended in a draw when Democratic primary candidate Alex Bores narrowly lost despite surging popularity from the political spending.",
+      "important": false
+    },
+    {
+      "title": "Facebook rolls out an AI companion app for creators",
+      "url": "https://techcrunch.com/2026/06/24/facebook-rolls-out-an-ai-companion-app-for-creators/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-24T17:16:24.000Z",
+      "snippet": "The new app, which is currently being tested with select creators, will have Facebook's recently launched AI creator assistant built into it.",
+      "category": "Applications",
+      "summary": "Facebook is rolling out an AI companion app for creators that integrates its recently launched AI creator assistant for select testing.",
+      "important": false
+    },
+    {
+      "title": "Agility Robotics plans to go public via SPAC in a $2.5B deal",
+      "url": "https://techcrunch.com/2026/06/24/agility-robotics-plans-to-go-public-via-spac-in-a-2-5b-deal/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-24T16:48:43.000Z",
+      "snippet": "Agility Robotics, the humanoid robotics startup that spun out of Oregon State University in 2015, expects to generate $620 million in proceeds.",
+      "category": "Business & Funding",
+      "summary": "Agility Robotics, a humanoid robotics startup from Oregon State University, plans to go public via SPAC in a $2.5 billion deal with $620 million in expected proceeds.",
+      "important": false
+    },
+    {
+      "title": "Introducing computer use in Gemini 3.5 Flash",
+      "url": "https://deepmind.google/blog/introducing-computer-use-in-gemini-3-5-flash/",
+      "source": "Google DeepMind",
+      "publishedAt": "2026-06-24T16:30:01.000Z",
+      "snippet": "",
+      "category": "Model Releases",
+      "summary": "Google introduced computer use capabilities in Gemini 3.5 Flash, enabling the model to interact with digital interfaces.",
+      "important": false
+    },
+    {
+      "title": "Figma now has AI motion graphics and shader tools",
+      "url": "https://www.theverge.com/tech/955831/figma-code-design-tools-config-2026-announcements",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-24T16:15:00.000Z",
+      "snippet": "Figma has revealed some new design and coding product updates at its annual Config conference that aim to help creatives \"push their ideas further\" and automate tedious tasks with AI. Part of this is a reimagined canvas that's now optimized for full-stack development, according to Figma, bringing teams, AI agents, tools, and materials \"together in one place.\" Notable callouts include coding layers that let you tweak the code of your projects without leaving the Figma Design canvas, and AI-generated motion graphics effects, which allow you to make animations and transition effects by simply des",
+      "category": "Developer Tools",
+      "summary": "Figma unveiled new AI-powered features including motion graphics effects, shader tools, and coding layers that enable designers to create animations and modify code directly within the design canvas.",
+      "important": false
+    },
+    {
+      "title": "Figma adds code layers, support for animations, more AI features in new update",
+      "url": "https://techcrunch.com/2026/06/24/figma-adds-code-layers-support-for-animations-more-ai-features-in-new-update/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-24T16:15:00.000Z",
+      "snippet": "Figma's update adds a new code layer, support for motion and shaders, and the ability to create custom plug-ins for various tasks using AI.",
+      "category": "Developer Tools",
+      "summary": "Figma added code layers for direct code editing, motion and shader support for animations, and AI-powered custom plugins for various design tasks.",
+      "important": false
+    },
+    {
+      "title": "OpenAI unveils its first custom chip, built by Broadcom",
+      "url": "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-24T14:54:46.000Z",
+      "snippet": "Named Jalapeño, the new processor was designed specifically for the unique needs of OpenAI's inference systems.",
+      "category": "Hardware & Compute",
+      "summary": "OpenAI unveiled Jalapeño, its first custom inference processor chip built by Broadcom, specifically designed for OpenAI's inference system needs.",
+      "important": true
+    },
+    {
+      "title": "OpenAI reveals its first AI processor: Jalapeño",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/955939/openai-reveals-its-first-ai-processor-jalapeno",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-24T14:36:47.000Z",
+      "snippet": "OpenAI has just revealed a new \"intelligence processor\" chip for AI servers made in partnership with Broadcom. The chip, called Jalapeño, is designed to power current and future large language models, according to an announcement on Wednesday. Jalapeño is an ASIC (Application-Specific Integrated Circuit), meaning it's designed for a specific purpose: AI inference. With AI inference, models process a user's request to run an agent like Codex or offer a response from ChatGPT, while AI training involves a model consuming vast amounts of data to inform its responses. It comes just nine months afte",
+      "category": "Hardware & Compute",
+      "summary": "OpenAI announced Jalapeño, its first custom AI inference processor chip developed in partnership with Broadcom, designed to power current and future large language models.",
+      "important": true
+    },
+    {
+      "title": "3 days left to save up to $190 on your TechCrunch Founder Summit 2026 pass",
+      "url": "https://techcrunch.com/2026/06/24/3-days-left-to-save-up-to-190-on-techcrunch-founder-summit-2026/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-24T14:00:00.000Z",
+      "snippet": "You have just 3 days left to save up to $190 on your pass to TechCrunch Founder Summit 2026 before Early Bird rates end on June 26 at 11:59 p.m. PT. Register today.",
+      "category": "Other",
+      "summary": "Promotional announcement for TechCrunch Founder Summit 2026 with Early Bird pricing ending June 26.",
+      "important": false
+    },
+    {
+      "title": "The Google Home Speaker sounds good and looks great — but it’s finicky",
+      "url": "https://www.theverge.com/gadgets/955537/google-home-smart-speaker-hands-on",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-24T13:00:00.000Z",
+      "snippet": "The Speaker comes in four colors… but red is the way. | Photo: David Pierce / The Verge Right out of the box, the new Google Home Speaker passed a couple of important tests. Even with the volume at 100 percent and music blaring out of the speaker, it quickly ducked the audio and listened every time I said \"Hey, Google.\" In fact, in two days of testing, the speaker's three microphones haven't missed a single wake word - except for the time I stage-whispered to it from the other room while trying to avoid waking up the baby, but I'm not sure that's a fair test. I set up the speaker in the bathro",
+      "category": "Applications",
+      "summary": "The new Google Home Speaker offers strong audio quality and reliable wake-word detection but exhibits some usability inconsistencies in initial testing.",
+      "important": false
+    },
+    {
+      "title": "The emergence of the web data infrastructure layer for AI",
+      "url": "https://www.technologyreview.com/2026/06/24/1139202/the-emergence-of-the-web-data-infrastructure-layer-for-ai/",
+      "source": "MIT Tech Review AI",
+      "publishedAt": "2026-06-24T11:59:54.000Z",
+      "snippet": "AI is booming. New use cases are emerging each day. To capitalize on the technology’s potential, enterprises require data at scale. In many cases, though, the relevant information is blocked or unstructured, which limits its use by AI models. To understand this challenge, consider the foundation of the web itself. The web was not designed…",
+      "category": "Applications",
+      "summary": "A new data infrastructure layer is emerging to help enterprises access structured web data at scale for AI model training and applications.",
+      "important": false
+    },
+    {
+      "title": "OpenAI and Broadcom unveil LLM-optimized inference chip",
+      "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-06-24T06:00:00.000Z",
+      "snippet": "OpenAI and Broadcom introduce Jalapeño, a custom AI chip built for LLM inference to improve performance, efficiency, and scale across AI systems.",
+      "category": "Hardware & Compute",
+      "summary": "OpenAI and Broadcom introduced Jalapeño, a custom LLM inference chip optimized for performance, efficiency, and scalability.",
+      "important": true
+    },
+    {
+      "title": "India’s MoEngage bets that the future of marketing is millions of AI agents",
+      "url": "https://techcrunch.com/2026/06/23/indias-moengage-bets-marketings-future-on-millions-of-ai-agents/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-23T23:30:00.000Z",
+      "snippet": "The all-cash deal gives MoEngage access to technology that assigns AI agents to individual customers.",
+      "category": "Business & Funding",
+      "summary": "India-based MoEngage secured an all-cash acquisition deal giving it access to technology that assigns AI agents to individual customers for marketing.",
+      "important": false
+    },
+    {
+      "title": "Google Home will soon get better at recognizing you",
+      "url": "https://www.theverge.com/tech/955385/google-home-familiar-faces-clothing",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-23T22:28:19.000Z",
+      "snippet": "A new update for Google Home could make it less likely your smart home cameras mistake you for someone else, just because you're facing away from the camera. Starting June 23rd, Google's expanding its facial recognition feature so that people you've tagged in your Familiar Faces library can continue to be identified when their faces aren't clearly visible, using \"additional non-biometric signals (body size, clothing color, etc.).\" The Familiar Faces library will also begin automatically updating with the most recent images of everyone in your house, so you should get fewer inaccurate notificat",
+      "category": "Applications",
+      "summary": "Google Home is expanding its facial recognition capabilities to identify people in Familiar Faces library using non-biometric signals like body size and clothing when faces aren't clearly visible.",
+      "important": false
+    },
+    {
+      "title": "Hollywood is bending the knee to OpenAI",
+      "url": "https://www.theverge.com/entertainment/954899/luca-guadagnino-artificial-sam-altman-amazon-a24-neon-mubi-chatgpt",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-23T22:03:18.000Z",
+      "snippet": "Netflix, A24, Focus Features, and Warner Bros.' Clockwork have all reportedly decided to pass on picking up Artificial - director Luca Guadagnino's new biographical drama about OpenAI cofounder / CEO Sam Altman - for distribution deals. And while Neon and Mubi are still said to be interested in the film, this situation makes it seem like Hollywood no longer has the courage to tell critical stories about Big Tech. Postproduction on Artificial was nearly finished when Amazon MGM unexpectedly announced last week that it no longer plans to distribute the film. The news came as a surprise given how",
+      "category": "Business & Funding",
+      "summary": "Multiple major studios including Netflix, A24, and Warner Bros. declined to distribute Luca Guadagnino's biographical drama about OpenAI CEO Sam Altman, raising concerns about Hollywood's willingness to tell critical stories about Big Tech.",
+      "important": false
+    },
+    {
+      "title": "Oracle’s 21,000 layoffs help drive its debt-fueled AI investments",
+      "url": "https://arstechnica.com/ai/2026/06/oracles-21000-layoffs-help-drive-its-debt-fueled-ai-investments/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-06-23T20:17:38.000Z",
+      "snippet": "Oracle is spending billions on data center infrastructure to support AI.",
+      "category": "Business & Funding",
+      "summary": "Oracle is using proceeds from 21,000 layoffs to fund multi-billion dollar data center investments for AI infrastructure.",
+      "important": false
+    },
+    {
+      "title": "Why corporate AI super PACs spent $27 million on a local election",
+      "url": "https://www.theverge.com/policy/954970/ai-super-pacs-alex-bores-new-york-12th-district",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-23T17:00:00.000Z",
+      "snippet": "Hello and welcome to Regulator, the newsletter for Verge subscribers chronicling the misadventures of their favorite tech overlords and Washington swamp creatures. (\"Favorite\" is, of course, subjective.) Not a subscriber yet? Sign up here, especially if you want the hot scoop on quality Amazon Prime Day deals recommended by the wonderful humans of The Verge's newsroom, and not by a slop algorithm. Some news: The Verge now has a special subscription price of $10 / year for students with a valid email address! It gets you everything that a regular subscription gets: ad-free podcasts, subscriber ",
+      "category": "Regulation & Policy",
+      "summary": "An analysis explores why corporate AI super PACs invested $27 million in a New York congressional race, illustrating the intersection of AI industry interests and political influence.",
+      "important": false
+    },
+    {
+      "title": "Anthropic’s Claude Tag is learning your company, one Slack message at a time",
+      "url": "https://techcrunch.com/2026/06/23/anthropics-claude-tag-is-learning-your-company-one-slack-message-at-a-time/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-23T17:00:00.000Z",
+      "snippet": "Anthropic’s new Claude Tag brings an always-on AI teammate to Slack. But beyond productivity, the feature is a strategic play to capture organizational context, institutional knowledge, and enterprise workflows.",
+      "category": "Developer Tools",
+      "summary": "Anthropic's Claude Tag brings an always-on AI teammate to Slack that learns company context through messages, representing a strategic move to capture organizational knowledge and enterprise workflows.",
+      "important": false
+    },
+    {
+      "title": "How GPT-5 helped immunologist Derya Unutmaz solve a 3-year-old mystery",
+      "url": "https://openai.com/index/gpt-5-immunology-mystery",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-06-23T17:00:00.000Z",
+      "snippet": "GPT-5 Pro helped solve a 3-year-old immunology mystery, offering insights into T cell behavior. The breakthrough could support cancer and autoimmune research.",
+      "category": "Applications",
+      "summary": "GPT-5 Pro assisted immunologist Derya Unutmaz in solving a 3-year immunology mystery regarding T cell behavior, potentially advancing cancer and autoimmune research.",
+      "important": false
+    },
+    {
+      "title": "Something&#8217;s off with Midjourney’s pivot to body scanners",
+      "url": "https://www.theverge.com/report/954826/midjourney-medical-ai-ultrasound-body-scanner-lacks-evidence",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-23T15:56:35.000Z",
+      "snippet": "A scan of an imaging phantom, segmented to validate how cleanly structures separate under controlled conditions. | Image: Midjourney Medical Last week, Midjourney, an AI startup best known for its image generator, made an unusual pivot: medical imaging. The company announced a futuristic ultrasound scanner that would dunk users into a vat of water and, hopefully, produce \"something as powerful as MRI\" yet \"as casual as a trip to the spa.\" Midjourney says the goal is to help people live longer, better, and healthier lives. CEO David Holz has suggested the system could one day be better than MRI",
+      "category": "Applications",
+      "summary": "Midjourney made an unusual pivot into medical imaging with a futuristic ultrasound scanner concept that would immerse users in water, aiming to deliver MRI-quality imaging in a spa-like experience.",
+      "important": false
+    },
+    {
+      "title": "The Fitbit Air takes a smarter approach to the AI health dumpster fire",
+      "url": "https://www.theverge.com/tech/954768/google-fitbit-air-review-fitness-tracker-wearable-ai-health-coach",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-23T15:00:00.000Z",
+      "snippet": "The Google Fitbit Air is one of the better attempts at an AI-compatible health tracker. Google Health Coach seems to think I'm on the verge of physical collapse. My sleep is not where it needs to be, hence my unimpressive readiness score. My heart rate variability, a measure of how recovered I am, is below baseline. I'm spending too much time in a hot, humid environment, it says, reminding me temperatures are creeping above 90 degrees Fahrenheit. According to Google's AI coach, I should skip my planned strength workouts. My number one job is to hydrate, stay out of the heat, and try to squeeze",
+      "category": "Applications",
+      "summary": "Google's Fitbit Air represents a more thoughtful approach to AI-powered health tracking compared to other flawed AI health products, with Google Health Coach providing personalized guidance.",
+      "important": false
+    },
+    {
+      "title": "4 days left to save up to $190 on TechCrunch Founder Summit 2026",
+      "url": "https://techcrunch.com/2026/06/23/4-days-left-to-save-up-to-190-on-techcrunch-founder-summit-2026/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-23T14:00:00.000Z",
+      "snippet": "Four days left to save up to $190 on your pass to TechCrunch Founder Summit 2026 — the ultimate founder bootcamp — before Early Bird rates end on June 26 at 11:59 p.m. PT. Register today.",
+      "category": "Other",
+      "summary": "Promotional announcement for TechCrunch Founder Summit 2026 with Early Bird pricing ending June 26.",
+      "important": false
+    },
+    {
+      "title": "Fika Jobs raises $4M to build a video-first hiring platform where AI agents interview candidates",
+      "url": "https://techcrunch.com/2026/06/23/fika-jobs-raises-4m-to-build-a-video-first-hiring-platform-where-ai-agents-interview-candidates/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-23T13:00:00.000Z",
+      "snippet": "Stockholm-based startup Fika Jobs is building a video-first hiring platform that combines AI interview agents with short-form video profiles, creating something that feels like a cross between LinkedIn and TikTok.",
+      "category": "Applications",
+      "summary": "Fika Jobs, a Stockholm-based startup, raised $4M to develop a video-first hiring platform combining AI interview agents with short-form video profiles.",
+      "important": false
+    },
+    {
+      "title": "Helping build shared standards for advanced AI",
+      "url": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-06-23T13:00:00.000Z",
+      "snippet": "OpenAI helps build shared standards for advanced AI, supporting evaluation frameworks, safety practices, and global cooperation through the Appia Foundation.",
+      "category": "Regulation & Policy",
+      "summary": "OpenAI supports development of shared evaluation frameworks and safety practices for advanced AI through the Appia Foundation.",
+      "important": false
+    },
+    {
+      "title": "How to burst the AI bubble: Strike at its roots",
+      "url": "https://arstechnica.com/gadgets/2026/06/how-to-burst-the-ai-bubble-strike-at-its-roots/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-06-23T12:00:34.000Z",
+      "snippet": "Sci-fi author/tech journalist Cory Doctorow on his new book, The Reverse Centaur's Guide to Life After AI.",
+      "category": "Other",
+      "summary": "Tech journalist Cory Doctorow discusses his new book on critiques of AI industry hype and sustainability.",
+      "important": false
+    },
+    {
+      "title": "The $400 million machine powering the future of chipmaking",
+      "url": "https://www.technologyreview.com/2026/06/23/1138837/asml-400-million-dollar-machine-powering-future-of-chipmaking/",
+      "source": "MIT Tech Review AI",
+      "publishedAt": "2026-06-23T09:00:00.000Z",
+      "snippet": "Jos Benschop is climbing a ladder to get to the top of his newest machine. It’s a bit of a schlep. The contraption is the size of a double-decker bus—more than 150 tons of gleaming precision-milled aluminum covered in thousands of snaking tubes, colored cables, and pressurized tanks. From the ground, it looks like a…",
+      "category": "Hardware & Compute",
+      "summary": "A $400M precision semiconductor manufacturing machine is advancing chipmaking capabilities for future AI hardware production.",
+      "important": false
+    },
     {
       "title": "Beyond Fixed Budgets: Characterizing the Inelasticity and Limitations of Tree-of-Thought Reasoning Strategies",
       "url": "https://arxiv.org/abs/2606.20599",
@@ -3949,54 +4449,54 @@
   ],
   "feedHealth": {
     "The Verge AI": {
-      "lastSuccess": "2026-06-23T08:57:52.180Z",
+      "lastSuccess": "2026-06-25T08:46:26.679Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "TechCrunch AI": {
-      "lastSuccess": "2026-06-23T08:57:52.205Z",
+      "lastSuccess": "2026-06-25T08:46:26.710Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Ars Technica AI": {
-      "lastSuccess": "2026-06-23T08:57:52.439Z",
+      "lastSuccess": "2026-06-25T08:46:26.998Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "VentureBeat AI": {
-      "lastSuccess": "2026-06-23T08:57:52.713Z",
+      "lastSuccess": "2026-06-25T08:46:27.246Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Anthropic News": {
       "lastSuccess": null,
       "lastError": "Status code 404",
-      "consecutiveFailures": 6
+      "consecutiveFailures": 7
     },
     "OpenAI Blog": {
-      "lastSuccess": "2026-06-23T08:57:55.344Z",
+      "lastSuccess": "2026-06-25T08:46:28.737Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Google DeepMind": {
-      "lastSuccess": "2026-06-23T08:57:55.690Z",
+      "lastSuccess": "2026-06-25T08:46:29.055Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "MIT Tech Review AI": {
-      "lastSuccess": "2026-06-23T08:57:55.793Z",
+      "lastSuccess": "2026-06-25T08:46:29.163Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "arXiv cs.AI": {
-      "lastSuccess": "2026-06-23T08:57:56.052Z",
+      "lastSuccess": "2026-06-25T08:46:29.234Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Hacker News (AI)": {
       "lastSuccess": "2026-06-23T08:57:57.565Z",
-      "lastError": null,
-      "consecutiveFailures": 0
+      "lastError": "Status code 502",
+      "consecutiveFailures": 1
     }
   }
 }
