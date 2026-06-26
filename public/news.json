@@ -1,21 +1,411 @@
 {
-  "generatedAt": "2026-06-25T08:46:29.460Z",
+  "generatedAt": "2026-06-26T08:49:43.634Z",
   "daysBack": 3,
   "categories": [
     "Research",
-    "Regulation & Policy",
-    "Agent Frameworks",
-    "Applications",
     "AI Safety & Alignment",
+    "Applications",
+    "Regulation & Policy",
+    "Other",
     "Business & Funding",
     "Hardware & Compute",
-    "Model Releases",
     "Developer Tools",
-    "Other",
+    "Agent Frameworks",
+    "Model Releases",
     "Open Source",
     "MCP"
   ],
   "articles": [
+    {
+      "title": "Life After Benchmark Saturation: A Case Study of CORE-Bench",
+      "url": "https://arxiv.org/abs/2606.26158",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-26T04:00:00.000Z",
+      "snippet": "arXiv:2606.26158v1 Announce Type: new Abstract: When a benchmark's accuracy saturates, it is often retired and replaced with a more challenging version. We show that this approach privileges accuracy and misses the opportunity to study six other key dimensions of agent performance: construct validity issues such as shortcuts, out-of-distribution generalizability, efficiency, reliability, the relative importance of the model versus the scaffold, and uplift from human-agent collaboration. We use CORE-Bench Hard, a benchmark for computational reproducibility of scientific code, as a case study to",
+      "category": "Research",
+      "summary": "arXiv paper examines CORE-Bench Hard for computational reproducibility, showing that benchmark saturation analysis reveals important dimensions beyond accuracy including generalizability, efficiency, and reliability.",
+      "important": false
+    },
+    {
+      "title": "Refusal Lives Downstream of Persona in Chat Models",
+      "url": "https://arxiv.org/abs/2606.26161",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-26T04:00:00.000Z",
+      "snippet": "arXiv:2606.26161v1 Announce Type: new Abstract: Linear directions in activation space have been identified for both refusal and persona traits in instruction-tuned chat models, but the two have been studied as separate mechanisms. We show they interact: a compliant persona gates refusal. In Qwen2.5-7B-Instruct and Llama-3.1-8B-Instruct, we extract a compliant model-persona direction and a refusal direction and intervene on both. Compliant persona steering suppresses refusal -- in Llama, the refusal rate falls from 97% to 2%. Reintroducing the refusal direction partially restores refusal at lat",
+      "category": "AI Safety & Alignment",
+      "summary": "Research reveals that refusal mechanisms in chat models are gated by persona traits, with compliant persona steering suppressing safety refusals in instruction-tuned models like Llama and Qwen.",
+      "important": true
+    },
+    {
+      "title": "AlgoEvolve: LLM-driven Meta-evolution of Algorithmic Trading Programs",
+      "url": "https://arxiv.org/abs/2606.26173",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-26T04:00:00.000Z",
+      "snippet": "arXiv:2606.26173v1 Announce Type: new Abstract: Recent work shows that Large Language Models (LLMs) can act as semantic mutation operators for the evolutionary discovery of programs and proofs. Most current applications focus on static coding benchmarks. We extend this paradigm to algorithmic trading. This domain is uniquely challenging because it is noisy, non-stationary, and highly discontinuous. We present AlgoEvolve, an LLM-driven evolutionary framework that generates, evaluates, and iteratively improves executable trading strategies. These strategies are expressed as Python code and evalu",
+      "category": "Research",
+      "summary": "AlgoEvolve presents an LLM-driven evolutionary framework for algorithmic trading that generates and iteratively improves executable trading strategies through semantic mutation operators.",
+      "important": false
+    },
+    {
+      "title": "Agentic Analysis for Agentic Infrastructure: An LLM-Powered Pipeline for Comparative Governance of DAO and Corporate AI Protocols",
+      "url": "https://arxiv.org/abs/2606.26203",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-26T04:00:00.000Z",
+      "snippet": "arXiv:2606.26203v1 Announce Type: new Abstract: As AI agent protocols proliferate, the governance structures shaping their interoperability standards remain empirically underexamined. We introduce an LLM-powered comparative pipeline for large-scale governance discourse analysis, integrating automated annotation, neural topic modeling, and multi-layer network analysis to study socio-technical power structures at scale. We validate it on two contrasting standards for agent interoperability: ERC-8004 (permissionless, on-chain) and Google A2A (corporate-led). Analyzing 4,323 governance participati",
+      "category": "Research",
+      "summary": "Study introduces an LLM-powered pipeline for analyzing governance structures of AI agent protocol standards, comparing permissionless on-chain (ERC-8004) versus corporate-led (Google A2A) approaches.",
+      "important": false
+    },
+    {
+      "title": "Knowledge-augmented Agentic AI for Mental Health Medication Information Seeking",
+      "url": "https://arxiv.org/abs/2606.26205",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-26T04:00:00.000Z",
+      "snippet": "arXiv:2606.26205v1 Announce Type: new Abstract: Patients increasingly seek medication information online, yet safety knowledge for psychiatric drugs is split between regulatory adverse-event records, which are authoritative but abstract, and patient narratives, which are experience-near but unvalidated. Integrating them without conflating evidence and anecdote is especially consequential in psychiatry, where poorly contextualised information can amplify fear, nocebo responses, and non-adherence. Here we develop a provenance-aware, knowledge-graph-based multi-agent framework unifying 466,525 Re",
+      "category": "Applications",
+      "summary": "Researchers developed a knowledge-graph-based multi-agent framework integrating regulatory adverse-event data with patient narratives to improve psychiatric medication information seeking and safety.",
+      "important": false
+    },
+    {
+      "title": "Accelerating Skill Assessment in Chess: A Drift-Diffusion-Enhanced Elo Rating System",
+      "url": "https://arxiv.org/abs/2606.26267",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-26T04:00:00.000Z",
+      "snippet": "arXiv:2606.26267v1 Announce Type: new Abstract: Rating systems such as Elo serve as the gold standard for matchmaking in competitive chess. However, they inherently suffer from response lag due to their exclusive reliance on match outcomes, neglecting the granular quality of gameplay. Nevertheless, incorporating move-by-move information into rating adjustments presents a significant challenge given the substantial noise and the vastness of the game-state space. To address this, we propose the Drift-Diffusion-Enhanced Elo Rating System (DD-Elo), a novel skill assessment framework inspired by th",
+      "category": "Research",
+      "summary": "DD-Elo proposes a drift-diffusion-enhanced rating system for chess skill assessment that incorporates move-by-move quality information rather than relying solely on match outcomes.",
+      "important": false
+    },
+    {
+      "title": "Governing Actions, Not Agents: Institutional Attestation as a Governance Model for Autonomous AI Systems",
+      "url": "https://arxiv.org/abs/2606.26298",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-26T04:00:00.000Z",
+      "snippet": "arXiv:2606.26298v1 Announce Type: new Abstract: Autonomous AI agents may begin to perform consequential, irreversible actions such as clinical prescribing and production software deployment. This paper observes that human institutions have governed powerful autonomous actors not by monitoring their reasoning but by requiring independently attested evidence at the point of consequential action. We formalise this institutional pattern as a computational governance model for AI agent systems. Under the proposed model, an agent retains full autonomy over planning and reasoning but holds no executi",
+      "category": "Regulation & Policy",
+      "summary": "Paper proposes an institutional attestation governance model for autonomous AI agents that requires independently verified evidence at points of consequential action rather than monitoring reasoning.",
+      "important": false
+    },
+    {
+      "title": "The Verification Horizon: No Silver Bullet for Coding Agent Rewards",
+      "url": "https://arxiv.org/abs/2606.26300",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-26T04:00:00.000Z",
+      "snippet": "arXiv:2606.26300v1 Announce Type: new Abstract: A classical intuition holds that verifying a solution is easier than producing one. For today's coding agents, this intuition is being inverted: as foundation models develop stronger reasoning capabilities and engineering harnesses grow more sophisticated, generating complex candidate solutions is no longer difficult -- reliably verifying them has become the harder problem. Every verifier we can build is only a proxy for human intent, never the intent itself. This makes verification subject to a twofold difficulty: first, intent is underspecified",
+      "category": "Research",
+      "summary": "A study examining the paradox that verifying solutions for coding agents has become harder than generating them as foundation models improve, showing that every verifier is only a proxy for human intent and cannot fully capture it.",
+      "important": true
+    },
+    {
+      "title": "How Do Tool-Augmented LLM Agents Perform on Real-World Energy Analytics Tasks?",
+      "url": "https://arxiv.org/abs/2606.26346",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-26T04:00:00.000Z",
+      "snippet": "arXiv:2606.26346v1 Announce Type: new Abstract: Agentic benchmarks have emerged across general-purpose and domain-specific settings, including finance, coding, law, and drug discovery, yet energy-domain evaluations remain largely limited to static knowledge recall. This is a critical gap for a sector that requires live data retrieval, specialized regulatory and market knowledge, and multi-step quantitative reasoning under real-world constraints. We present an empirical study of tool-augmented LLM agents on real-world energy market analytics tasks. Our evaluation environment includes 243 expert",
+      "category": "Research",
+      "summary": "An empirical evaluation of tool-augmented LLM agents on real-world energy market analytics tasks, addressing a gap in agentic benchmarks by focusing on live data retrieval and domain-specific reasoning.",
+      "important": false
+    },
+    {
+      "title": "What We are Missing in Multimodal LLM Evaluation?",
+      "url": "https://arxiv.org/abs/2606.26348",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-26T04:00:00.000Z",
+      "snippet": "arXiv:2606.26348v1 Announce Type: new Abstract: Multimodal large language models (MLLMs) can process diverse inputs, e.g., text, images, audio, and video, and generate textual responses. While their capabilities have advanced rapidly, evaluation of such models has not kept pace. Most existing evaluation benchmarks are limited to isolated tasks and reveal little about whether a model integrates information across modalities. We examine current means for evaluating MLLMs and review the existing benchmark taxonomy to identify gaps, including temporal-spatial coherence, physical world understandin",
+      "category": "Research",
+      "summary": "A critical analysis of multimodal LLM evaluation methodologies identifying gaps in current benchmarks, particularly regarding cross-modal integration and temporal-spatial coherence assessment.",
+      "important": false
+    },
+    {
+      "title": "OpenFinGym: A Verifiable Multi-Task Gym Environment for Evaluating Quant Agents",
+      "url": "https://arxiv.org/abs/2606.26350",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-26T04:00:00.000Z",
+      "snippet": "arXiv:2606.26350v1 Announce Type: new Abstract: Although large language model agents are increasingly applied to quantitative-finance workflows, their evaluation remains fragmented across isolated tasks, while the financial relevance of benchmark tasks is often overlooked. Yet financial workflows are inherently multi-stage, spanning interdependent tasks such as forecasting, strategy construction, risk management, and trading. Existing platforms typically focus on a single task, and can therefore overstate agent competence and fail to reveal weaknesses in generalization, real-market interaction",
+      "category": "Research",
+      "summary": "OpenFinGym presents a multi-task evaluation environment for quantitative finance agents addressing fragmented benchmarking by focusing on interdependent financial workflows.",
+      "important": false
+    },
+    {
+      "title": "Instruction Bleed: Cross-Module Interference in Prompt-Composed Agentic Systems",
+      "url": "https://arxiv.org/abs/2606.26356",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-26T04:00:00.000Z",
+      "snippet": "arXiv:2606.26356v1 Announce Type: new Abstract: Practitioners of prompt-composed agentic systems report a recurring failure mode: editing one prompt module silently shifts the behavior of others despite no shared variable or executable dependency. We formalize this as compositional behavioral leakage (CBL): interference between modules sharing a context window. CBL is enabled by architectural non-isolation: transformer self-attention provides no formal boundary between concatenated modules. We probe CBL on a deployed job-evaluation agent (Claude Sonnet 4.6, 144 trials) through a reusable three",
+      "category": "Research",
+      "summary": "Formalizes 'compositional behavioral leakage' (CBL) as a failure mode in prompt-composed agentic systems where editing one prompt silently affects others due to transformer self-attention non-isolation.",
+      "important": false
+    },
+    {
+      "title": "Narration-of-Thought: Inference-Time Scaffolding for Defeasible Ethical Reasoning in Large Language Models",
+      "url": "https://arxiv.org/abs/2606.26366",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-26T04:00:00.000Z",
+      "snippet": "arXiv:2606.26366v1 Announce Type: new Abstract: Standard chain-of-thought on moral dilemmas exhibits two failure modes: stakeholder collapse (the trace names at most one party with a stake in the outcome) and uncertainty suppression (no explicit unknowns or hedges before committing to an action). We introduce narration-of-thought (NoT), a system prompt that structures chain-of-thought into five sections: protagonist, stakeholders, two-step consequences, uncertainty, then commitment. NoT adds no training, parameters, or fine-tuning. On 100 DailyDilemmas scenarios across four generators from thr",
+      "category": "AI Safety & Alignment",
+      "summary": "Introduces narration-of-thought (NoT), a prompt engineering technique that structures ethical reasoning to address stakeholder collapse and uncertainty suppression in LLM moral dilemma responses.",
+      "important": false
+    },
+    {
+      "title": "Geometry-Aware MCTS for Extremal Problems in Combinatorial Geometry",
+      "url": "https://arxiv.org/abs/2606.26399",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-26T04:00:00.000Z",
+      "snippet": "arXiv:2606.26399v1 Announce Type: new Abstract: We study certain extremal problems in combinatorial geometry that ask about configurations of points in an $n \\times n$ grid that satisfy strict, global geometric constraints. Classical exact solvers suffer from combinatorial explosion for these types of problems, and standard reinforcement learning and transformer-based models struggle with the sparse reward \"validity cliff\" and quadratic token-consumption limits. To overcome these bottlenecks, we propose a Geometry-Aware Monte Carlo Tree Search (MCTS) framework. Our approach strictly enforces g",
+      "category": "Research",
+      "summary": "Proposes a Geometry-Aware MCTS framework to solve extremal combinatorial geometry problems, overcoming sparse reward and token-consumption limitations of standard RL and transformer approaches.",
+      "important": false
+    },
+    {
+      "title": "When Agents Meet Electric Bus Fleet Operations: Pricing Behavior, Trade-offs, and Policy Implications in an Aggregator Framework",
+      "url": "https://arxiv.org/abs/2606.26400",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-26T04:00:00.000Z",
+      "snippet": "arXiv:2606.26400v1 Announce Type: new Abstract: Agentic systems are changing how complex operational tasks are coordinated, introducing a new paradigm for connecting heterogeneous data sources and automating processes. Electric bus fleets provide a relevant test case. Their operation requires continuous coordination between service reliability, battery state-of-charge, charger availability, electricity prices, route-energy uncertainty, and vehicle-to-grid (V2G) opportunities. This paper proposes an agentic aggregator framework that streamlines this decision environment by coupling an optimizat",
+      "category": "Applications",
+      "summary": "Demonstrates an agentic aggregator framework for coordinating electric bus fleet operations by coupling optimization with real-time decision-making across battery, charger, and electricity market data.",
+      "important": false
+    },
+    {
+      "title": "What happened after 2k people tried to hack my AI assistant",
+      "url": "https://www.fernandoi.cl/posts/hackmyclaw/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-26T02:29:23.000Z",
+      "snippet": "Article URL: https://www.fernandoi.cl/posts/hackmyclaw/ Comments URL: https://news.ycombinator.com/item?id=48681687 Points: 130 # Comments: 50",
+      "category": "Other",
+      "summary": "A personal account of security testing an AI assistant with thousands of attack attempts, documenting vulnerabilities and hardening approaches.",
+      "important": false
+    },
+    {
+      "title": "AI children's books, body horror edition",
+      "url": "https://lcamtuf.substack.com/p/ai-childrens-books-body-horror-edition",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-26T01:15:14.000Z",
+      "snippet": "Article URL: https://lcamtuf.substack.com/p/ai-childrens-books-body-horror-edition Comments URL: https://news.ycombinator.com/item?id=48681250 Points: 180 # Comments: 58",
+      "category": "Other",
+      "summary": "A critical commentary on AI-generated children's books highlighting quality and ethical concerns in AI-generated creative content.",
+      "important": false
+    },
+    {
+      "title": "The White House is asking OpenAI to slow roll the release of its new model over safety concerns",
+      "url": "https://techcrunch.com/2026/06/25/the-white-house-is-asking-openai-to-slow-roll-the-release-of-its-new-model-over-safety-concerns/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-25T23:34:39.000Z",
+      "snippet": "OpenAI reportedly plans to share its newest model, GPT 5.6, with a select group of partners instead of with the broader public. The reason: the Trump administration told it to.",
+      "category": "Regulation & Policy",
+      "summary": "The Trump administration asked OpenAI to slow-roll GPT-5.6 release to select partners due to safety concerns rather than public launch.",
+      "important": true
+    },
+    {
+      "title": "OpenAI will delay GPT-5.6 after Trump administration request",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/957372/openai-will-delay-gpt-5-6-after-trump-administration-request",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-25T21:57:06.000Z",
+      "snippet": "The Trump administration, apprehensive of potential security issues, has reportedly asked OpenAI to stagger the release of its next big-ticket model, GPT-5.6. The Information reported that OpenAI CEO Sam Altman told employees Wednesday in a company Q&A that it would release GPT-5.6 in limited preview form - granting access only to a small group of enterprise customers - in compliance with a request from the federal government. During that preview period, the Trump administration itself would reportedly approve access for customers on a case-by-case basis. It's a more favorable deal than the Tr",
+      "category": "Regulation & Policy",
+      "summary": "The Trump administration requested OpenAI delay GPT-5.6 release, with the company planning a limited preview for select enterprise customers requiring government case-by-case approval due to security concerns.",
+      "important": true
+    },
+    {
+      "title": "Patronus AI lands $50M to build ‘digital worlds’ that stress-test AI agents",
+      "url": "https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-25T20:19:25.000Z",
+      "snippet": "Agent-testing startup Patronus AI, founded by former Meta AI researchers, is experiencing nearly insatiable demand, its investor says.",
+      "category": "Business & Funding",
+      "summary": "Patronus AI, an agent-testing startup founded by former Meta researchers, raised $50M to build simulated environments for stress-testing AI agents in response to high market demand.",
+      "important": false
+    },
+    {
+      "title": "Notion killing Skiff-influenced email app since most users use AI agents instead",
+      "url": "https://arstechnica.com/gadgets/2026/06/notion-killing-skiff-influenced-email-app-since-most-users-use-ai-agents-instead/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-06-25T19:04:57.000Z",
+      "snippet": "Notion is \"going all in on using agents to run your inbox.\"",
+      "category": "Applications",
+      "summary": "Notion is discontinuing its Skiff-influenced email app and shifting focus to AI agents for inbox management, indicating changing user preferences toward agentic AI solutions.",
+      "important": false
+    },
+    {
+      "title": "Google finally releases a Finance Android app, promises iOS version later in 2026",
+      "url": "https://arstechnica.com/google/2026/06/google-finance-finally-gets-a-mobile-app-as-ai-powered-overhaul-leaves-beta/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-06-25T18:38:51.000Z",
+      "snippet": "It took 20 years, but the Finance app arrives just in time to be packed full of AI.",
+      "category": "Applications",
+      "summary": "Google released a Finance Android app after 20 years, featuring AI capabilities with an iOS version promised for later in 2026.",
+      "important": false
+    },
+    {
+      "title": "Anthropic says Alibaba must be punished for largest Claude cloning attack",
+      "url": "https://arstechnica.com/tech-policy/2026/06/anthropic-claims-alibaba-defied-trump-to-attack-claude-and-steal-capabilities/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-06-25T18:01:48.000Z",
+      "snippet": "Alibaba allegedly used 25,000 accounts to mine Claude over 28.8 million exchanges.",
+      "category": "AI Safety & Alignment",
+      "summary": "Anthropic claims Alibaba conducted the largest Claude model cloning attack using 25,000 accounts across 28.8 million exchanges, raising concerns about model security and unauthorized access.",
+      "important": true
+    },
+    {
+      "title": "Apple to skip high-end M6 Mac chips in favor of AI-focused M7 line",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-25/apple-to-skip-high-end-m6-mac-chips-to-launch-m7-pro-m7-max-m7-ultra-instead?embedded-checkout=true",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-25T17:38:44.000Z",
+      "snippet": "Giftlink: https://www.bloomberg.com/news/articles/2026-06-25/apple-to-... also https://www.msn.com/en-ca/lifestyle/shopping/apple-to-skip-h... Comments URL: https://news.ycombinator.com/item?id=48676795 Points: 247 # Comments: 228",
+      "category": "Hardware & Compute",
+      "summary": "Apple is discontinuing high-end M6 chip development in favor of AI-optimized M7 processors, reflecting market shift toward AI acceleration capabilities.",
+      "important": false
+    },
+    {
+      "title": "Anthropic’s Claude is winning over paid consumers, a market owned by ChatGPT",
+      "url": "https://techcrunch.com/2026/06/25/anthropics-claude-is-winning-over-paid-consumers-a-market-owned-by-chatgpt/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-25T17:38:27.000Z",
+      "snippet": "Despite ChatGPT's commanding market lead, consumers who pay for AI have been increasingly choosing Anthropic's Claude, data shows.",
+      "category": "Business & Funding",
+      "summary": "Anthropic's Claude is gaining market share among paid AI consumers, challenging ChatGPT's dominance in the subscription segment.",
+      "important": false
+    },
+    {
+      "title": "General Intuition’s $2.3B bet that video games can train AI agents for the real world",
+      "url": "https://techcrunch.com/2026/06/25/general-intuitions-2-3b-bet-that-video-games-can-train-ai-agents-for-the-real-world/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-25T16:55:00.000Z",
+      "snippet": "General Intuition has raised $320 million to scale AI trained on millions of hours of gameplay, betting action data can help AI develop something closer to human intuition.",
+      "category": "Business & Funding",
+      "summary": "General Intuition raised $320 million to train AI agents using video game gameplay data, betting that action-derived data can help develop more human-like AI intuition.",
+      "important": false
+    },
+    {
+      "title": "Databricks’ former AI chief thinks he can cut AI’s power bill by 1,000x",
+      "url": "https://techcrunch.com/2026/06/25/databricks-former-ai-chief-thinks-he-can-cut-ais-power-bill-by-1000x/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-25T16:48:11.000Z",
+      "snippet": "Un-0 is an image-generation system tool that shows for the first time how the company's technology can replicate conventional AI systems.",
+      "category": "Hardware & Compute",
+      "summary": "Databricks' former AI chief founded Un-0, an image-generation system claiming to achieve 1,000x reduction in AI power consumption through novel optimization techniques.",
+      "important": false
+    },
+    {
+      "title": "Show HN: OpenKnowledge – open source AI-first alternative to Obsidian/Notion",
+      "url": "https://github.com/inkeep/open-knowledge",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-25T16:04:46.000Z",
+      "snippet": "Hi HN, Nick here. We’re launching OpenKnowledge (https://openknowledge.ai/), a “what you see is what you get” markdown editor that has direct integrations with Claude, Codex, and other agents. Available as MacOS app or Web UI+CLI. Fully free/local and OSS. We built this because we wanted a Notion-like experience for writing and sharing markdown files across our team. Obsidian is the best alternative we tried, but found it doesn’t have a true WYSWIG UI and it didn’t integrate well with Claude/Codex outside of community plugins. So we built OpenKnowledge. It takes shape as: 1. A MacOS app with a",
+      "category": "Developer Tools",
+      "summary": "OpenKnowledge launches an open-source, AI-first markdown editor alternative to Obsidian/Notion with direct integrations for Claude and other agents.",
+      "important": false
+    },
+    {
+      "title": "Ford AI hiccups push carmaker to rehire ‘gray beard’ inspectors",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-25/ford-has-been-rehiring-quality-inspectors-after-ai-fell-short",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-25T14:58:50.000Z",
+      "snippet": "https://archive.ph/DI4Cq Comments URL: https://news.ycombinator.com/item?id=48674446 Points: 587 # Comments: 312",
+      "category": "Applications",
+      "summary": "Ford reverts to hiring experienced human inspectors after AI quality control systems produced inadequate results in manufacturing inspections.",
+      "important": false
+    },
+    {
+      "title": "Netris raises $15M Series A from a16z to help AI neoclouds go live faster",
+      "url": "https://techcrunch.com/2026/06/25/netris-raises-15m-series-a-from-a16z-to-help-ai-neoclouds-go-live-faster/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-25T14:55:38.000Z",
+      "snippet": "Netris provides software that runs on network switches, and offers a platform that helps neocloud operators reduce the time it takes to go live.",
+      "category": "Business & Funding",
+      "summary": "Netris raised $15M Series A from a16z to provide network software that helps neocloud operators accelerate deployment timelines.",
+      "important": false
+    },
+    {
+      "title": "Repositioning retail for the AI era",
+      "url": "https://www.technologyreview.com/2026/06/25/1137848/repositioning-retail-for-the-ai-era/",
+      "source": "MIT Tech Review AI",
+      "publishedAt": "2026-06-25T14:22:59.000Z",
+      "snippet": "Artificial intelligence is rapidly reshaping retail, but not in the ways consumers might immediately notice. The biggest transformation may not be flashy virtual try-ons or chatbot shopping assistants, but in how decisions are made behind the scenes: how products surface in search results, how inventory moves through supply chains, how engineers ship code faster, and…",
+      "category": "Applications",
+      "summary": "Retailers are leveraging AI to transform backend operations including search ranking, supply chain optimization, and software deployment rather than just consumer-facing features.",
+      "important": false
+    },
+    {
+      "title": "2 days left to save up to $190: Join 1,000+ founders and investors at TechCrunch Founder Summit",
+      "url": "https://techcrunch.com/2026/06/25/2-days-left-to-save-up-to-190-join-1000-founders-and-investors-at-techcrunch-founder-summit/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-25T14:00:00.000Z",
+      "snippet": "Two days left to lock in your spot at TechCrunch Founder Summit 2026 and save up to $190 before Early Bird rates expire on June 26 at 11:59 p.m. PT. Register today.",
+      "category": "Other",
+      "summary": "TechCrunch Founder Summit 2026 early bird registration deadline approaching with discounts up to $190.",
+      "important": false
+    },
+    {
+      "title": "Adobe acquires image and video enhancement tool maker Topaz Labs",
+      "url": "https://techcrunch.com/2026/06/25/adobe-acquires-image-and-video-enhancement-tool-maker-topaz-labs/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-25T13:30:00.000Z",
+      "snippet": "Adobe said that it will integrate Topaz Labs' tools across its apps.",
+      "category": "Business & Funding",
+      "summary": "Adobe acquired Topaz Labs, a maker of AI-powered image and video enhancement tools, to integrate capabilities across Adobe's application suite.",
+      "important": false
+    },
+    {
+      "title": "Political bias in AI: Where the AI models stand",
+      "url": "https://trakkr.ai/bias",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-25T13:08:31.000Z",
+      "snippet": "Article URL: https://trakkr.ai/bias Comments URL: https://news.ycombinator.com/item?id=48672779 Points: 145 # Comments: 255",
+      "category": "Research",
+      "summary": "An analysis examining political bias across major AI models, providing comparative assessment of model alignment and potential skewing toward particular viewpoints.",
+      "important": false
+    },
+    {
+      "title": "Why Does Everyone Hate AI?",
+      "url": "https://paulkrugman.substack.com/p/why-does-everyone-hate-ai",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-25T12:59:10.000Z",
+      "snippet": "Article URL: https://paulkrugman.substack.com/p/why-does-everyone-hate-ai Comments URL: https://news.ycombinator.com/item?id=48672694 Points: 85 # Comments: 143",
+      "category": "Other",
+      "summary": "Paul Krugman discusses public skepticism and resistance toward AI adoption despite economic potential.",
+      "important": false
+    },
+    {
+      "title": "Amazon ups India bet with fresh $13B AI infrastructure investment",
+      "url": "https://techcrunch.com/2026/06/25/amazon-ups-india-bet-with-fresh-13b-ai-infrastructure-investment/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-25T12:00:38.000Z",
+      "snippet": "Amazon’s latest India investment comes as global tech companies race to expand AI infrastructure in the country.",
+      "category": "Business & Funding",
+      "summary": "Amazon announced a fresh $13 billion AI infrastructure investment in India as global tech companies compete to expand data center capacity in the region.",
+      "important": false
+    },
+    {
+      "title": "Ford had to hire back former engineers to fix mistakes made by its automated systems",
+      "url": "https://www.theverge.com/transportation/956316/ford-quality-jd-power-ranking-ai-automated-mistakes",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-25T12:00:00.000Z",
+      "snippet": "To celebrate its new status as No. 1 in JD Power's initial quality ranking among mainstream automakers, Ford is opening up about the challenges it has faced in recent years, especially around its reliance on automated systems in production and design. It turns out that those automated systems were not as robust as previously assumed, requiring Ford to hire experienced technicians - sometimes bringing back former employees - to correct errors made by the company's robots. In Ford's view, AI is both powerful and prone to pitfalls. Its effectiveness depends entirely on the quality of the data use",
+      "category": "Applications",
+      "summary": "Ford hired back former engineers to fix errors made by its automated systems and AI-powered production tools, highlighting the challenges of over-reliance on automated systems without proper data quality control.",
+      "important": false
+    },
+    {
+      "title": "IBM claims world’s first sub-1 nanometer chip technology",
+      "url": "https://arstechnica.com/gadgets/2026/06/ibm-claims-worlds-first-sub-1-nanometer-chip-technology/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-06-25T10:00:55.000Z",
+      "snippet": "IBM’s nanostack transistors could boost chip performance or energy efficiency.",
+      "category": "Hardware & Compute",
+      "summary": "IBM announced development of the world's first sub-1 nanometer chip technology with nanostack transistors that could significantly improve performance or energy efficiency.",
+      "important": true
+    },
+    {
+      "title": "Facebook’s Creator Studio has been revived as an AI companion app",
+      "url": "https://www.theverge.com/tech/956668/meta-facebook-creator-studio-ai-app-relaunch",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-25T09:06:19.000Z",
+      "snippet": "This is what the new Creator Studio app looks like, after the original service was shuttered in 2023. | Image: Meta Meta is bringing back the Facebook Creator Studio page manager, now \"reimagined\" as a standalone AI companion app. The new app aims to make it easier for creators to connect with their audiences and show them \"exactly how to grow on Facebook,\" according to Meta's announcement. Meta's AI Creator Assistant is a central focus of the newly reimagined app - users can ask the chatbot to provide performance tracking insights and tailored recommendations for improving engagement. It can ",
+      "category": "Applications",
+      "summary": "Meta relaunched Facebook Creator Studio as an AI-powered companion app featuring an AI Assistant that provides performance tracking and engagement recommendations to content creators.",
+      "important": false
+    },
     {
       "title": "The Hitchhiker's Guide to Agentic AI: From Foundations to Systems",
       "url": "https://arxiv.org/abs/2606.24937",
@@ -167,6 +557,16 @@
       "important": false
     },
     {
+      "title": "How agents are transforming work",
+      "url": "https://openai.com/index/how-agents-are-transforming-work",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-06-25T02:00:00.000Z",
+      "snippet": "A new OpenAI research paper shows how AI agents are transforming work, enabling longer, more complex tasks and expanding productivity across roles.",
+      "category": "Agent Frameworks",
+      "summary": "OpenAI published research showing how AI agents are transforming work by enabling longer, more complex tasks and expanding productivity across diverse roles.",
+      "important": true
+    },
+    {
       "title": "Europe is pushing back on Washington’s chip war",
       "url": "https://techcrunch.com/2026/06/24/europe-is-pushing-back-on-washingtons-chip-war/",
       "source": "TechCrunch AI",
@@ -247,6 +647,16 @@
       "important": false
     },
     {
+      "title": "Anthropic says Alibaba illicitly extracted Claude AI model capabilities",
+      "url": "https://www.reuters.com/world/china/anthropic-says-alibaba-illicitly-extracted-claude-ai-model-capabilities-2026-06-24/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-24T19:48:01.000Z",
+      "snippet": "Article URL: https://www.reuters.com/world/china/anthropic-says-alibaba-illicitly-extracted-claude-ai-model-capabilities-2026-06-24/ Comments URL: https://news.ycombinator.com/item?id=48664814 Points: 761 # Comments: 1236",
+      "category": "Business & Funding",
+      "summary": "Anthropic accuses Alibaba of illicitly extracting Claude AI model capabilities, raising intellectual property and model security concerns.",
+      "important": true
+    },
+    {
       "title": "Congresswoman denies staff used AI to write defense funding amendment",
       "url": "https://www.theverge.com/policy/956394/florida-anna-paulina-luna-anthropic-claude",
       "source": "The Verge AI",
@@ -284,6 +694,16 @@
       "snippet": "Agility Robotics, the humanoid robotics startup that spun out of Oregon State University in 2015, expects to generate $620 million in proceeds.",
       "category": "Business & Funding",
       "summary": "Agility Robotics, a humanoid robotics startup from Oregon State University, plans to go public via SPAC in a $2.5 billion deal with $620 million in expected proceeds.",
+      "important": false
+    },
+    {
+      "title": "Big AI labs are hiring philosophers",
+      "url": "https://www.economist.com/science-and-technology/2026/06/24/why-big-ai-labs-are-hiring-so-many-philosophers",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-24T16:40:13.000Z",
+      "snippet": "https://archive.is/T1FJG Comments URL: https://news.ycombinator.com/item?id=48662452 Points: 149 # Comments: 133",
+      "category": "AI Safety & Alignment",
+      "summary": "Major AI labs are recruiting philosophers to address alignment, ethics, and safety considerations in AI development.",
       "important": false
     },
     {
@@ -327,6 +747,26 @@
       "important": true
     },
     {
+      "title": "For most of the world, open-source AI is the only way forward",
+      "url": "https://techstrong.ai/articles/for-most-of-the-world-open-source-ai-is-the-only-way-forward/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-24T14:50:22.000Z",
+      "snippet": "Article URL: https://techstrong.ai/articles/for-most-of-the-world-open-source-ai-is-the-only-way-forward/ Comments URL: https://news.ycombinator.com/item?id=48660839 Points: 232 # Comments: 144",
+      "category": "Open Source",
+      "summary": "A discussion on why open-source AI is essential for developing countries and regions without access to proprietary model infrastructure.",
+      "important": false
+    },
+    {
+      "title": "RubyLLM: A Ruby framework for all major AI providers",
+      "url": "https://rubyllm.com/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-24T14:41:41.000Z",
+      "snippet": "Article URL: https://rubyllm.com/ Comments URL: https://news.ycombinator.com/item?id=48660711 Points: 442 # Comments: 80",
+      "category": "Developer Tools",
+      "summary": "RubyLLM is a Ruby framework providing unified integration with major AI providers and APIs.",
+      "important": false
+    },
+    {
       "title": "OpenAI reveals its first AI processor: Jalapeño",
       "url": "https://www.theverge.com/ai-artificial-intelligence/955939/openai-reveals-its-first-ai-processor-jalapeno",
       "source": "The Verge AI",
@@ -347,6 +787,16 @@
       "important": false
     },
     {
+      "title": "OpenAI and Broadcom unveil LLM-optimized inference chip",
+      "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-24T13:14:39.000Z",
+      "snippet": "Article URL: https://openai.com/index/openai-broadcom-jalapeno-inference-chip/ Comments URL: https://news.ycombinator.com/item?id=48659257 Points: 142 # Comments: 1",
+      "category": "Hardware & Compute",
+      "summary": "OpenAI and Broadcom unveil the Jalapeno inference chip optimized specifically for LLM inference performance.",
+      "important": true
+    },
+    {
       "title": "The Google Home Speaker sounds good and looks great — but it’s finicky",
       "url": "https://www.theverge.com/gadgets/955537/google-home-smart-speaker-hands-on",
       "source": "The Verge AI",
@@ -354,6 +804,16 @@
       "snippet": "The Speaker comes in four colors… but red is the way. | Photo: David Pierce / The Verge Right out of the box, the new Google Home Speaker passed a couple of important tests. Even with the volume at 100 percent and music blaring out of the speaker, it quickly ducked the audio and listened every time I said \"Hey, Google.\" In fact, in two days of testing, the speaker's three microphones haven't missed a single wake word - except for the time I stage-whispered to it from the other room while trying to avoid waking up the baby, but I'm not sure that's a fair test. I set up the speaker in the bathro",
       "category": "Applications",
       "summary": "The new Google Home Speaker offers strong audio quality and reliable wake-word detection but exhibits some usability inconsistencies in initial testing.",
+      "important": false
+    },
+    {
+      "title": "Reid Hoffman says SpaceX 'not an AI company', xAI 'complete train wreck'",
+      "url": "https://fortune.com/2026/06/24/reid-hoffman-spacex-musk-openai-anthropic-gen-z-mistake/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-24T12:23:59.000Z",
+      "snippet": "Article URL: https://fortune.com/2026/06/24/reid-hoffman-spacex-musk-openai-anthropic-gen-z-mistake/ Comments URL: https://news.ycombinator.com/item?id=48658647 Points: 236 # Comments: 266",
+      "category": "Business & Funding",
+      "summary": "Reid Hoffman criticizes xAI as a 'complete train wreck' while assessing SpaceX's limited AI focus among major AI players.",
       "important": false
     },
     {
@@ -367,6 +827,16 @@
       "important": false
     },
     {
+      "title": "Haystack: Open-Source AI Framework for Production Ready Agents, RAG",
+      "url": "https://haystack.deepset.ai/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-24T11:21:32.000Z",
+      "snippet": "Article URL: https://haystack.deepset.ai/ Comments URL: https://news.ycombinator.com/item?id=48658095 Points: 89 # Comments: 22",
+      "category": "Agent Frameworks",
+      "summary": "Haystack is an open-source framework for building production-ready agentic systems and RAG (Retrieval-Augmented Generation) applications.",
+      "important": false
+    },
+    {
       "title": "OpenAI and Broadcom unveil LLM-optimized inference chip",
       "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
       "source": "OpenAI Blog",
@@ -375,6 +845,16 @@
       "category": "Hardware & Compute",
       "summary": "OpenAI and Broadcom introduced Jalapeño, a custom LLM inference chip optimized for performance, efficiency, and scalability.",
       "important": true
+    },
+    {
+      "title": "US AI stock sell-off shakes markets from Wall Street to Asia",
+      "url": "https://www.theguardian.com/business/2026/jun/23/ai-stocks-sell-off-us-markets",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-24T03:36:50.000Z",
+      "snippet": "Article URL: https://www.theguardian.com/business/2026/jun/23/ai-stocks-sell-off-us-markets Comments URL: https://news.ycombinator.com/item?id=48654795 Points: 55 # Comments: 40",
+      "category": "Business & Funding",
+      "summary": "AI-related stock valuations experience significant sell-offs across US and Asian markets, reflecting market concerns.",
+      "important": false
     },
     {
       "title": "India’s MoEngage bets that the future of marketing is millions of AI agents",
@@ -457,6 +937,26 @@
       "important": false
     },
     {
+      "title": "AI's Affordability Crisis",
+      "url": "https://blog.dshr.org/2026/06/ais-affordability-crisis.html",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-23T15:11:17.000Z",
+      "snippet": "Article URL: https://blog.dshr.org/2026/06/ais-affordability-crisis.html Comments URL: https://news.ycombinator.com/item?id=48646276 Points: 330 # Comments: 419",
+      "category": "Other",
+      "summary": "An analysis of the rising computational and operational costs of AI systems, highlighting affordability challenges for widespread adoption.",
+      "important": false
+    },
+    {
+      "title": "Show HN: peerd – AI agent harness that runs entirely in your browser",
+      "url": "https://github.com/NotASithLord/peerd",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-23T15:05:00.000Z",
+      "snippet": "Hey HN. http://peerd.ai is an AI agent harness that lives entirely in your browser as a web extension. You don’t have to install a separate “AI browser”. You don’t have to bolt on or run some external process or manage a clunky mcp integration. It’s just a fully contained web extension, written in no build vanilla JS with minimal non-browser dependencies, using your own provider keys, and Apache 2. This isn’t just a fun hack. While it has largely been a solo side project, I genuinely believe the browser and the web could be the most natural platform for AI agents to operate safely, autonomousl",
+      "category": "Agent Frameworks",
+      "summary": "peerd is a browser-based web extension AI agent harness that operates entirely client-side without external dependencies or separate process management.",
+      "important": false
+    },
+    {
       "title": "The Fitbit Air takes a smarter approach to the AI health dumpster fire",
       "url": "https://www.theverge.com/tech/954768/google-fitbit-air-review-fitness-tracker-wearable-ai-health-coach",
       "source": "The Verge AI",
@@ -504,6 +1004,16 @@
       "snippet": "Sci-fi author/tech journalist Cory Doctorow on his new book, The Reverse Centaur's Guide to Life After AI.",
       "category": "Other",
       "summary": "Tech journalist Cory Doctorow discusses his new book on critiques of AI industry hype and sustainability.",
+      "important": false
+    },
+    {
+      "title": "The Low-Tech AI of Elden Ring",
+      "url": "https://nega.tv/posts/low-tech-ai-of-elden-ring.html",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-23T11:40:50.000Z",
+      "snippet": "Article URL: https://nega.tv/posts/low-tech-ai-of-elden-ring.html Comments URL: https://news.ycombinator.com/item?id=48643489 Points: 165 # Comments: 96",
+      "category": "Applications",
+      "summary": "An analysis of the relatively simple AI systems used in Elden Ring's enemy behavior and game design, exploring how effective game AI doesn't always require cutting-edge machine learning techniques.",
       "important": false
     },
     {
@@ -4449,54 +4959,54 @@
   ],
   "feedHealth": {
     "The Verge AI": {
-      "lastSuccess": "2026-06-25T08:46:26.679Z",
+      "lastSuccess": "2026-06-26T08:49:36.042Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "TechCrunch AI": {
-      "lastSuccess": "2026-06-25T08:46:26.710Z",
+      "lastSuccess": "2026-06-26T08:49:36.136Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Ars Technica AI": {
-      "lastSuccess": "2026-06-25T08:46:26.998Z",
+      "lastSuccess": "2026-06-26T08:49:36.603Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "VentureBeat AI": {
-      "lastSuccess": "2026-06-25T08:46:27.246Z",
+      "lastSuccess": "2026-06-26T08:49:36.803Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Anthropic News": {
       "lastSuccess": null,
       "lastError": "Status code 404",
-      "consecutiveFailures": 7
+      "consecutiveFailures": 8
     },
     "OpenAI Blog": {
-      "lastSuccess": "2026-06-25T08:46:28.737Z",
+      "lastSuccess": "2026-06-26T08:49:38.227Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Google DeepMind": {
-      "lastSuccess": "2026-06-25T08:46:29.055Z",
+      "lastSuccess": "2026-06-26T08:49:38.588Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "MIT Tech Review AI": {
-      "lastSuccess": "2026-06-25T08:46:29.163Z",
+      "lastSuccess": "2026-06-26T08:49:38.695Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "arXiv cs.AI": {
-      "lastSuccess": "2026-06-25T08:46:29.234Z",
+      "lastSuccess": "2026-06-26T08:49:38.879Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Hacker News (AI)": {
-      "lastSuccess": "2026-06-23T08:57:57.565Z",
-      "lastError": "Status code 502",
-      "consecutiveFailures": 1
+      "lastSuccess": "2026-06-26T08:49:43.633Z",
+      "lastError": null,
+      "consecutiveFailures": 0
     }
   }
 }
