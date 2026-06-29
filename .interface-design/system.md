@@ -10,8 +10,9 @@
 
 ## Depth Strategy
 
-**Borders-only.** No drop shadows anywhere.
-- Cards: `border-[rgba(240,246,252,0.07)]` default → `border-[rgba(240,246,252,0.16)]` on hover
+**Borders + subtle surface lift.** No drop shadows anywhere.
+- Cards: `border-[rgba(240,246,252,0.07)]` default → `border-[rgba(240,246,252,0.15)]` on hover
+- Cards also lift background on hover: `hover:bg-[#1c2128]` (midpoint between surface-1 and surface-2)
 - Section dividers: `bg-[rgba(240,246,252,0.06)]` 1px horizontal rule
 - No `shadow-*` classes used
 
@@ -93,13 +94,39 @@ This avoids sticky positioning math entirely.
 - Notable filter: far-right `ml-auto` button, only shown on Research tab
 
 ### Article Card
+
+Two variants: standard (`p-4`, `text-sm` title) and featured (`p-6`, `text-base` title). Pass via `featured` prop.
+
 ```tsx
-<article className="flex flex-col rounded border border-[rgba(240,246,252,0.07)] bg-surface-1 p-4 transition-colors hover:border-[rgba(240,246,252,0.16)]">
+<article className="flex flex-col rounded bg-surface-1 transition-colors hover:bg-[#1c2128]
+  border border-[rgba(240,246,252,0.07)] hover:border-[rgba(240,246,252,0.15)]">
 ```
-- Title: `text-sm font-semibold text-ink hover:text-accent`
-- Summary: `text-xs leading-relaxed text-ink-secondary`
-- Metadata: `font-mono text-[10px] text-ink-muted`
-- Notable badge: ember-bordered pill with `font-mono uppercase tracking-wider`
+
+Notable articles add a 2px left border accent:
+```tsx
+border-l-2 border-l-ember hover:border-l-ember
+```
+
+Internal layout (editorial — byline above title):
+1. Byline row: `font-mono text-[10px] text-ink-muted` — source · date, notable badge right-aligned
+2. Title: `text-sm font-semibold leading-snug text-ink hover:text-accent`
+3. Summary: `text-xs leading-relaxed text-ink-secondary`
+
+### Featured First Card
+
+In single-category view, the first article (`i === 0`) gets `sm:col-span-2` wrapper + `featured` prop. This spans the full grid width with more padding and a larger title. Applied only in single-category view, not the All-view preview.
+
+### All-View Preview
+
+In All view, each CategorySection receives `limit={4}` and `onSeeAll`. It slices to 4 articles and appends a `+N more →` button that calls `setActiveCategory(category)` to jump to the tab.
+
+### Pagination
+
+Single-category view only. 8 articles per page (`PAGE_SIZE = 8`). Controls rendered below content:
+```tsx
+← prev   01 / 04   next →
+```
+All in `font-mono text-xs`, separated by a `border-t border-[rgba(240,246,252,0.06)]`. Page resets to 0 on any filter change (category, search, notable toggle).
 
 ### Category Section Header (All-view only)
 ```tsx
