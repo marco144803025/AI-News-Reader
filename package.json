@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "ingest": "tsx ingest/ingest.ts"
+    "ingest": "tsx ingest/ingest.ts",
+    "backfill": "tsx ingest/backfill.ts",
+    "test": "tsx --test ingest/__tests__/*.test.ts src/lib/__tests__/*.test.ts"
   },
   "dependencies": {
     "react": "^19.1.0",

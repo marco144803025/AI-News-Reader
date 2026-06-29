@@ -1,3 +1,9 @@
+export type Tags = {
+  topics: string[];
+  traits: string[];
+  entities: string[];
+};
+
 export type Article = {
   title: string;
   url: string;
@@ -7,6 +13,7 @@ export type Article = {
   category: string;
   summary: string;
   important?: boolean;
+  tags?: Tags;
 };
 
 export type FeedHealth = {

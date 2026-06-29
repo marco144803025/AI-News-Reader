@@ -7,13 +7,9 @@ feature must reach **Done** before the next starts, unless explicitly paralleliz
 | --- | ---------------------------------------------------------------- | ----------- | ---------- |
 | F0  | [Repository setup & CI](./F0-repo-and-ci/)                       | Done        | Foundation |
 | F1  | [Smarter ingestion](./F1-smarter-ingestion/)                     | Done        | Backend    |
-| F1a | [Ingest verification harness](./F1a-ingest-verification/)        | Not started | Backend    |
-| F2a | [Trending topics](./F2a-trending-topics/)                        | Not started | UX         |
-| F2b | [Desktop notifications](./F2b-desktop-notifications/)            | Not started | UX         |
 | F2c | [Dark mode / Reader UI redesign](./F2c-dark-mode/)               | Done        | UX         |
 | F2d | [Category taxonomy expansion](./F2d-category-taxonomy/)          | Done        | UX         |
-| F3  | [Richer content](./F3-richer-content/)                           | Not started | Content    |
-| F4  | [Search & tag filtering](./F4-search-and-tags/)                  | Not started | UX         |
+| F4  | [Search & tag filtering](./F4-search-and-tags/)                  | Done        | UX         |
 | F6  | [UI modernization (A/B flag)](./F6-ui-modernization/)            | Not started | UX         |
 | F5  | [Email subscriptions per tag](./F5-email-subscriptions/)         | Not started | UX         |
 
@@ -42,13 +38,6 @@ In scope:
 
 ## Phase 2 — UX upgrades
 
-**F2a: Trending topics.** Aggregate entity / category counts across the rolling
-archive; surface a "trending this week" panel with deltas vs prior week.
-
-**F2b: Desktop notifications.** When a freshly ingested article matches a
-user-defined topic of interest, fire a system notification (Web Notifications API
-in PWA mode; fall back to in-app toast).
-
 **F2c: Dark mode / Reader UI redesign.** ✓ Done. Permanent dark-academic theme
 (no toggle — deliberate). Tab rail replaces dropdown. Pagination (8/page),
 All-view preview (4/section), featured first card, editorial byline layout,
@@ -61,16 +50,11 @@ descriptions. 7-day transition window for existing articles.
 
 ## Phase 3 — Content depth
 
-**F3: Richer content.** Move beyond RSS excerpts:
-- Fetch full article HTML, run through Mozilla Readability to extract clean text.
-- Cluster duplicate stories across outlets (embedding similarity, threshold-based).
-- Entity extraction in the same Claude call as categorization: pull model names
-  (`GPT-5`, `Claude 4.7`...), companies, products. Surface as filterable chips.
-
 **F4: Search & tag filtering.** Client-side keyword search over titles and
-summaries; tag/keyword chips as multi-select filters; URL-shareable filter state
-(`?q=…&tags=…`). Initially uses existing categories and naive keyword tokens;
-upgrades automatically once F3 entity extraction lands.
+summaries; tag/keyword chips as multi-select filters; URL-shareable filter
+state (`?q=…&tags=…`). Also bundled the ingest verification harness
+(originally tracked as F1a) — `node:test` suite over `ingest/lib.ts` plus
+CI test gates on PRs and the scheduled ingest workflow.
 
 **F6: UI modernization (A/B feature flag).** Build a second "modern/fancy"
 design lineage alongside the current dark-academic theme. Specifically targets

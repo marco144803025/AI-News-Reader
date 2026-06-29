@@ -5,27 +5,26 @@ import Parser from "rss-parser";
 import Anthropic from "@anthropic-ai/sdk";
 import "dotenv/config";
 import type { NewsData, FeedHealth } from "../src/types.ts";
+import {
+  buildFeedHealth,
+  computeEffectiveDaysBack,
+  computeGeneratedAt,
+  DAYS_BACK,
+  normalizeTags,
+  parseRetentionDays,
+  SEED_TAGS,
+  withRetry,
+  type Feed,
+} from "./lib.ts";
+import type { Tags } from "../src/types.ts";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
 
 const MODEL = "claude-haiku-4-5-20251001";
-const DAYS_BACK = 1;
 const BATCH_SIZE = 25;
 const ARXIV_CAP = 15;
 
-function parseRetentionDays(): number {
-  const raw = process.env.RETENTION_DAYS;
-  if (raw === undefined || raw === "") return 30;
-  const n = Number(raw);
-  if (!Number.isFinite(n) || n < 1) {
-    console.error(
-      `ERROR: RETENTION_DAYS must be a finite number >= 1, got: ${JSON.stringify(raw)}`
-    );
-    process.exit(1);
-  }
-  return n;
-}
 const RETENTION_DAYS = parseRetentionDays();
 
 const SEED_CATEGORIES = [
@@ -63,8 +62,6 @@ const ARXIV_KEYWORDS = [
   "retrieval",
 ];
 
-type Feed = { name: string; url: string };
-
 type RawArticle = {
   title: string;
   url: string;
@@ -77,6 +74,7 @@ type Article = RawArticle & {
   category: string;
   summary: string;
   important?: boolean;
+  tags?: Tags;
 };
 
 function stripHtml(s: string): string {
@@ -89,33 +87,6 @@ function stripHtml(s: string): string {
 function isArxivRelevant(title: string, snippet: string): boolean {
   const text = (title + " " + snippet).toLowerCase();
   return ARXIV_KEYWORDS.some((k) => text.includes(k));
-}
-
-async function withRetry<T>(
-  fn: () => Promise<T>,
-  maxRetries = 3
-): Promise<T> {
-  const delays = [1000, 2000, 4000];
-  let attempt = 0;
-  while (true) {
-    try {
-      return await fn();
-    } catch (err) {
-      const isTransient =
-        err instanceof Anthropic.RateLimitError ||
-        err instanceof Anthropic.InternalServerError ||
-        err instanceof Anthropic.APIConnectionError;
-      if (!isTransient || attempt >= maxRetries) throw err;
-      const baseDelay = delays[Math.min(attempt, delays.length - 1)];
-      let delay = baseDelay;
-      if (err instanceof Anthropic.RateLimitError) {
-        const retryAfter = err.headers?.get?.("retry-after");
-        delay = Math.max(baseDelay, parseFloat(retryAfter ?? "0") * 1000);
-      }
-      await new Promise((r) => setTimeout(r, delay));
-      attempt++;
-    }
-  }
 }
 
 async function loadExisting(path: string): Promise<NewsData | null> {
@@ -137,10 +108,8 @@ async function fetchFeeds(
   const articles: RawArticle[] = [];
   const successAt: Record<string, string> = {};
   const errors: Record<string, string> = {};
-  const attempted = new Set<string>();
 
   for (const feed of feeds) {
-    attempted.add(feed.name);
     try {
       const parsed = await parser.parseURL(feed.url);
       const fetchedAt = new Date().toISOString();
@@ -181,34 +150,7 @@ async function fetchFeeds(
     }
   }
 
-  // Three-way branch: succeeded / failed / not-attempted (currently dead branch
-  // since every feeds.json entry is iterated above — kept explicit so future
-  // partial-fetch paths can land without missing a case).
-  const health: Record<string, FeedHealth> = {};
-  for (const feed of feeds) {
-    if (successAt[feed.name]) {
-      health[feed.name] = {
-        lastSuccess: successAt[feed.name],
-        lastError: null,
-        consecutiveFailures: 0,
-      };
-    } else if (errors[feed.name]) {
-      const prev = prevHealth?.[feed.name];
-      health[feed.name] = {
-        lastSuccess: prev?.lastSuccess ?? null,
-        lastError: errors[feed.name],
-        consecutiveFailures: (prev?.consecutiveFailures ?? 0) + 1,
-      };
-    } else {
-      const prev = prevHealth?.[feed.name];
-      health[feed.name] = prev ?? {
-        lastSuccess: null,
-        lastError: null,
-        consecutiveFailures: 0,
-      };
-    }
-  }
-
+  const health = buildFeedHealth(feeds, successAt, errors, prevHealth);
   return { articles, health };
 }
 
@@ -227,16 +169,28 @@ function dedupeIncoming(
   return out;
 }
 
-async function classifyBatch(
+type ClassifyResult = {
+  category: string;
+  summary: string;
+  important: boolean;
+  tags: Tags;
+};
+
+export async function classifyBatch(
   client: Anthropic,
   batch: RawArticle[]
-): Promise<{ category: string; summary: string; important: boolean }[]> {
+): Promise<ClassifyResult[]> {
   const list = batch
     .map(
       (a, i) =>
         `[${i}] TITLE: ${a.title}\nSOURCE: ${a.source}\nEXCERPT: ${a.snippet}`
     )
     .join("\n\n");
+
+  const seedTagList =
+    `Topics: ${SEED_TAGS.topics.join(", ")}\n` +
+    `Traits: ${SEED_TAGS.traits.join(", ")}\n` +
+    `Entities: ${SEED_TAGS.entities.join(", ")}`;
 
   const message = await client.messages.create({
     model: MODEL,
@@ -245,7 +199,7 @@ async function classifyBatch(
       {
         type: "text",
         text:
-          "You categorize and summarize AI-related news articles.\n\n" +
+          "You categorize, summarize, and tag AI-related news articles.\n\n" +
           "Use exactly these categories — do not invent new ones:\n" +
           "- MCP: Model Context Protocol specs, integrations, server/client implementations\n" +
           "- Model Releases: New model launches, capability announcements, model comparisons and benchmarks (GPT, Claude, Gemini, Llama, Mistral, etc.)\n" +
@@ -260,15 +214,19 @@ async function classifyBatch(
           "- Hardware & Compute: AI chips, GPUs, data centers, inference infrastructure, energy\n" +
           "- Other: Only if nothing above fits\n\n" +
           "Write a concise 1-2 sentence summary for each article. " +
-          "Set important: true only for a significant research finding, major new model/capability, funding round $100M+, or landmark policy decision. Default to false.\n" +
-          'Respond ONLY with a JSON array: [{"index": number, "category": string, "summary": string, "important": boolean}]',
+          "Set important: true only for a significant research finding, major new model/capability, funding round $100M+, or landmark policy decision. Default to false.\n\n" +
+          "Also emit up to 6 short tags across three dimensions — topics (subject matter), traits (nature of the article), and entities (orgs, products, models). " +
+          "Prefer these seed tags when they fit; you may emit additional tags only when nothing in the seed list applies. " +
+          "Tags must be short (1-3 words). Aim for at most 3 topic tags, 2 trait tags, and 2 entity tags; the total across all dimensions must not exceed 6.\n" +
+          `${seedTagList}\n\n` +
+          'Respond ONLY with a JSON array: [{"index": number, "category": string, "summary": string, "important": boolean, "tags": string[]}]',
         cache_control: { type: "ephemeral" },
       },
     ],
     messages: [
       {
         role: "user",
-        content: `Categorize and summarize these ${batch.length} articles:\n\n${list}`,
+        content: `Categorize, summarize, and tag these ${batch.length} articles:\n\n${list}`,
       },
     ],
   });
@@ -285,16 +243,22 @@ async function classifyBatch(
     category: string;
     summary: string;
     important: boolean;
+    tags?: string[];
   }[];
 
-  const result: { category: string; summary: string; important: boolean }[] =
-    batch.map(() => ({ category: "Other", summary: "", important: false }));
+  const result: ClassifyResult[] = batch.map(() => ({
+    category: "Other",
+    summary: "",
+    important: false,
+    tags: { topics: [], traits: [], entities: [] },
+  }));
   for (const r of parsed) {
     if (r.index >= 0 && r.index < batch.length) {
       result[r.index] = {
         category: r.category?.trim() || "Other",
         summary: r.summary?.trim() || "",
         important: r.important === true,
+        tags: normalizeTags(Array.isArray(r.tags) ? r.tags : []),
       };
     }
   }
@@ -323,15 +287,11 @@ async function main() {
     `Existing: ${existingArticles.length} articles, categories: ${existingCategories.join(", ")}`
   );
 
-  // Catch-up window: widen if generatedAt is older than DAYS_BACK, capped at 7.
-  let effectiveDaysBack = DAYS_BACK;
-  if (existing !== null) {
-    const parsedAt = Date.parse(existing.generatedAt);
-    if (Number.isFinite(parsedAt)) {
-      const gapDays = Math.ceil((Date.now() - parsedAt) / 86400000);
-      effectiveDaysBack = Math.min(7, Math.max(DAYS_BACK, gapDays + 1));
-    }
-  }
+  const effectiveDaysBack = computeEffectiveDaysBack(
+    existing,
+    DAYS_BACK,
+    Date.now()
+  );
   console.log(`Fetching feeds (last ${effectiveDaysBack}d)...`);
 
   const feeds: Feed[] = JSON.parse(
@@ -347,11 +307,9 @@ async function main() {
   console.log(`${newCount} new articles after dedup.`);
 
   const retentionCutoff = Date.now() - RETENTION_DAYS * 24 * 60 * 60 * 1000;
-  // AC9: generatedAt advances iff at least one new article was fetched.
-  const generatedAt =
-    newCount > 0
-      ? new Date().toISOString()
-      : existing?.generatedAt ?? new Date().toISOString();
+  const generatedAt = computeGeneratedAt(newCount, existing, () =>
+    new Date().toISOString()
+  );
 
   if (newCount === 0) {
     console.log("No new articles — pruning and writing.");

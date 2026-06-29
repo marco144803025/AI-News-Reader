@@ -1,4 +1,5 @@
 import type { Article } from "../types";
+import TagChips from "./TagChips";
 
 function formatDate(iso: string): string {
   return new Date(iso).toLocaleDateString(undefined, {
@@ -60,6 +61,8 @@ export default function ArticleCard({
           {article.summary}
         </p>
       )}
+
+      {article.tags && <TagChips tags={article.tags} />}
     </article>
   );
 }

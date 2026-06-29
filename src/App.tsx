@@ -1,6 +1,9 @@
 import { useEffect, useMemo, useState } from "react";
 import type { NewsData } from "./types";
 import CategorySection from "./components/CategorySection";
+import FilterBar from "./components/FilterBar";
+import { useUrlState } from "./hooks/useUrlState";
+import { EMPTY_FILTER, filterArticles, hasActiveFilters } from "./lib/filter";
 
 const PAGE_SIZE = 8;
 const PREVIEW_SIZE = 4;
@@ -12,8 +15,7 @@ function daysAgo(iso: string): number {
 export default function App() {
   const [data, setData] = useState<NewsData | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [query, setQuery] = useState("");
-  const [activeCategory, setActiveCategory] = useState<string>("All");
+  const [filterState, setFilterState] = useUrlState();
   const [showNotableOnly, setShowNotableOnly] = useState(false);
   const [page, setPage] = useState(0);
 
@@ -29,36 +31,37 @@ export default function App() {
 
   useEffect(() => {
     setPage(0);
-  }, [activeCategory, query, showNotableOnly]);
+  }, [filterState, showNotableOnly]);
 
-  const searchFiltered = useMemo(() => {
+  const activeCategory = filterState.category;
+
+  // Category-scoped slice (drives FilterBar universe + per-tab counts), without tag/search filtering applied.
+  const categoryScoped = useMemo(() => {
     if (!data) return [];
-    const q = query.trim().toLowerCase();
-    if (!q) return data.articles;
-    return data.articles.filter(
-      (a) =>
-        a.title.toLowerCase().includes(q) ||
-        a.summary.toLowerCase().includes(q) ||
-        a.source.toLowerCase().includes(q)
-    );
-  }, [data, query]);
+    if (activeCategory === "All") return data.articles;
+    return data.articles.filter((a) => a.category === activeCategory);
+  }, [data, activeCategory]);
+
+  const filtered = useMemo(() => {
+    if (!data) return [];
+    const base = filterArticles(data.articles, filterState);
+    if (showNotableOnly && activeCategory === "Research") {
+      return base.filter((a) => a.important);
+    }
+    return base;
+  }, [data, filterState, showNotableOnly, activeCategory]);
 
   const categoryCounts = useMemo(() => {
+    // Counts reflect the search + tag filter (minus the category constraint) so users see how each tab would populate.
+    const stateWithoutCategory = { ...filterState, category: "All" };
+    const base = data ? filterArticles(data.articles, stateWithoutCategory) : [];
     const map = new Map<string, number>();
-    map.set("All", searchFiltered.length);
-    for (const a of searchFiltered) {
+    map.set("All", base.length);
+    for (const a of base) {
       map.set(a.category, (map.get(a.category) ?? 0) + 1);
     }
     return map;
-  }, [searchFiltered]);
-
-  const filtered = useMemo(() => {
-    return searchFiltered.filter((a) => {
-      if (activeCategory !== "All" && a.category !== activeCategory) return false;
-      if (showNotableOnly && activeCategory === "Research" && !a.important) return false;
-      return true;
-    });
-  }, [searchFiltered, activeCategory, showNotableOnly]);
+  }, [data, filterState]);
 
   const inSingleView = activeCategory !== "All";
   const totalPages = inSingleView ? Math.ceil(filtered.length / PAGE_SIZE) : 0;
@@ -99,6 +102,7 @@ export default function App() {
 
   const staleness = daysAgo(data.generatedAt);
   const tabs = ["All", ...data.categories];
+  const activeFiltersOn = hasActiveFilters(filterState);
 
   return (
     <div className="flex h-screen flex-col overflow-hidden bg-canvas text-ink">
@@ -111,8 +115,10 @@ export default function App() {
         <input
           type="search"
           placeholder="search articles..."
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
+          value={filterState.query}
+          onChange={(e) =>
+            setFilterState({ ...filterState, query: e.target.value })
+          }
           className="w-full max-w-[200px] rounded border border-[rgba(240,246,252,0.1)] bg-surface-2 px-3 py-1.5 font-mono text-xs text-ink placeholder:text-ink-muted focus:border-accent focus:outline-none"
         />
         <div className="hidden font-mono text-xs text-ink-muted sm:flex sm:items-center sm:gap-1.5">
@@ -132,7 +138,7 @@ export default function App() {
               <button
                 key={cat}
                 onClick={() => {
-                  setActiveCategory(cat);
+                  setFilterState({ ...filterState, category: cat });
                   setShowNotableOnly(false);
                 }}
                 className={`relative flex shrink-0 items-center gap-1.5 px-3 py-3 font-mono text-xs font-medium transition-colors ${
@@ -168,11 +174,34 @@ export default function App() {
         </div>
       </div>
 
+      {/* Filter Bar */}
+      <FilterBar
+        scopedArticles={categoryScoped}
+        state={filterState}
+        onChange={setFilterState}
+      />
+
       {/* Scrollable Content */}
       <main className="flex-1 overflow-y-auto">
         <div className="mx-auto max-w-5xl px-5 py-6">
           {grouped.length === 0 ? (
-            <p className="font-mono text-xs text-ink-muted">// no articles match</p>
+            <div className="flex flex-col items-start gap-3">
+              <p className="font-mono text-xs text-ink-muted">// no articles match</p>
+              {activeFiltersOn && (
+                <button
+                  type="button"
+                  onClick={() =>
+                    setFilterState({
+                      ...EMPTY_FILTER,
+                      category: filterState.category,
+                    })
+                  }
+                  className="rounded border border-[rgba(240,246,252,0.16)] px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-ink-secondary transition-colors hover:border-accent hover:text-accent"
+                >
+                  clear filters
+                </button>
+              )}
+            </div>
           ) : (
             <>
               {grouped.map(([category, articles]) => (
@@ -183,7 +212,7 @@ export default function App() {
                   showHeader={!inSingleView}
                   featuredFirst={inSingleView}
                   limit={!inSingleView ? PREVIEW_SIZE : undefined}
-                  onSeeAll={!inSingleView ? () => setActiveCategory(category) : undefined}
+                  onSeeAll={!inSingleView ? () => setFilterState({ ...filterState, category }) : undefined}
                 />
               ))}
 
