@@ -1,21 +1,291 @@
 {
-  "generatedAt": "2026-06-28T08:40:01.391Z",
+  "generatedAt": "2026-06-29T10:21:20.879Z",
   "daysBack": 3,
   "categories": [
-    "Developer Tools",
-    "Applications",
-    "Other",
-    "Regulation & Policy",
-    "Hardware & Compute",
-    "Business & Funding",
-    "Open Source",
-    "Research",
-    "Model Releases",
-    "AI Safety & Alignment",
     "Agent Frameworks",
+    "Research",
+    "Applications",
+    "Regulation & Policy",
+    "Other",
+    "Model Releases",
+    "Developer Tools",
+    "Business & Funding",
+    "Hardware & Compute",
+    "Open Source",
+    "AI Safety & Alignment",
     "MCP"
   ],
   "articles": [
+    {
+      "title": "When Does Personality Composition Matter for Multi-Agent LLM Teams?",
+      "url": "https://arxiv.org/abs/2606.27443",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-29T04:00:00.000Z",
+      "snippet": "arXiv:2606.27443v1 Announce Type: new Abstract: Personality prompting shapes how large language models communicate, yet whether these behavioral shifts affect objective task outcomes remains under-explored. Prior work shows that agents prompted with low agreeableness produce adversarial language, while those prompted with high agreeableness become cooperative, but the relationship between communication style and task performance has not been systematically examined across multiple domains. In this work, we investigate whether personality composition matters for multi-agent team performance by ",
+      "category": "Agent Frameworks",
+      "summary": "Research paper investigates whether personality-based prompting in multi-agent LLM teams affects task performance across different domains, examining the link between communication style and objective outcomes.",
+      "important": false
+    },
+    {
+      "title": "Internalizing the Future: A Unified Agentic Training Paradigm for World Model Planning",
+      "url": "https://arxiv.org/abs/2606.27483",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-29T04:00:00.000Z",
+      "snippet": "arXiv:2606.27483v1 Announce Type: new Abstract: Large language model (LLM) agents have demonstrated strong capability in sequential decision-making, yet they remains fundamentally reactive in long-horizon tasks. Unlike humans who employ \"what-if\" reasoning to evaluate potential plans before commitment, standard agents lack an internal world model to simulate future outcomes. Therefore, we propose to internalize future-aware planning by training a single autoregressive model to verbalize both a prospective state rollout and a plan-conditioned success estimate-a textual analogue of the Q-value. ",
+      "category": "Research",
+      "summary": "Paper proposes training LLM agents with internal world models that simulate future outcomes and estimate success probabilities, enabling prospective planning beyond reactive decision-making.",
+      "important": false
+    },
+    {
+      "title": "Odyssey: Constructing Verifiable Local Truth-Preserving Foundation Models",
+      "url": "https://arxiv.org/abs/2606.27593",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-29T04:00:00.000Z",
+      "snippet": "arXiv:2606.27593v1 Announce Type: new Abstract: We introduce a categorical framework called ODYSSEY for constructing verifiable, local truth-preserving foundation models as compositions of foundries: building-block architectural components that specify a cover of local contexts, local representation families, restriction maps, gluing rules, obstruction policies, update obligations, and human-facing views. A foundry is an organized sheaf of knowledge that carries within it an argumentation component. Concrete foundries are built from generic foundries such as evidence/argument, operational deci",
+      "category": "Research",
+      "summary": "ODYSSEY framework introduces a categorical approach for constructing verifiable, truth-preserving foundation models using foundries as composable knowledge components with argumentation support.",
+      "important": false
+    },
+    {
+      "title": "DysLexLens: A Low-Resource LLM Framework for Analysing Dyslexic Learners Insights from Online Forums",
+      "url": "https://arxiv.org/abs/2606.27619",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-29T04:00:00.000Z",
+      "snippet": "arXiv:2606.27619v1 Announce Type: new Abstract: Dyslexic learners increasingly use artificial intelligence (AI) tools to support reading, writing, organisation, and study-related tasks. However, their lived experiences with these tools remain largely underexamined. This paper proposes DysLexLens, a low-resource LLM framework, designed to analyse dyslexic learners experience with AI through online forum discussions. DysLexLens is designed as an end-to-end, evidence-traceable architecture which transforms noisy social media posts into a dictionary-driven corpora, provides knowledge-graph (KG)-ba",
+      "category": "Applications",
+      "summary": "DysLexLens is a low-resource LLM framework designed to analyze dyslexic learners' experiences with AI tools through online forum discussions using knowledge graphs and evidence-traceable analysis.",
+      "important": false
+    },
+    {
+      "title": "MER-R1: Multimodal Emotion Reasoning via Slow-Fast Thinking Synergy",
+      "url": "https://arxiv.org/abs/2606.27652",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-29T04:00:00.000Z",
+      "snippet": "arXiv:2606.27652v1 Announce Type: new Abstract: We find that explicit reasoning does not necessarily translate into better multimodal emotion recognition (MER) accuracy, even though it makes predictions more interpretable. Specifically, for reasoning-based MLLMs, fast thinking by triggering direct answers often outperforms slow thinking after deliberative reasoning. Our empirical analyses show that fast thinking improves recall with broader and more confident predictions, whereas slow thinking favors precision through conservative filtering of incorrect categories. Building on these insights, ",
+      "category": "Research",
+      "summary": "MER-R1 research shows that fast thinking (direct answers) often outperforms slow deliberative reasoning in multimodal emotion recognition, revealing a trade-off between recall and precision.",
+      "important": false
+    },
+    {
+      "title": "ToE: A Hierarchical and Explainable Claim Verification Framework with Dynamic Multi-source Evidence Retrieval and Aggregation",
+      "url": "https://arxiv.org/abs/2606.27736",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-29T04:00:00.000Z",
+      "snippet": "arXiv:2606.27736v1 Announce Type: new Abstract: The rapid spread of fake news poses increasing threats to information ecosystems, especially as AI-generated misinformation under Generative Engine Optimization (GEO) poisoning allows adversarially crafted content to be systematically surfaced by retrieval systems, contaminating LLM reasoning. In this paper, we propose Tree of Evidence (ToE), a hierarchical evidence reasoning framework for automated fact-checking that models each claim as a dynamically expanding argument tree. ToE integrates a reinforcement learning-driven multi-source retrieval ",
+      "category": "Research",
+      "summary": "Tree of Evidence (ToE) proposes a hierarchical fact-checking framework using reinforcement learning for multi-source evidence retrieval and aggregation to combat AI-generated misinformation.",
+      "important": false
+    },
+    {
+      "title": "Towards Reliable and Robust LLM Planning: Symbolic Feedback-Driven Iterative Self-Refinement Framework",
+      "url": "https://arxiv.org/abs/2606.27757",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-29T04:00:00.000Z",
+      "snippet": "arXiv:2606.27757v1 Announce Type: new Abstract: Large language models (LLMs) have attracted widespread attention from academia and industry, yet their deployment raises critical security concerns regarding robustness and reliability. Planning, a core component of intelligent behavior, remains challenging for LLMs, which often produce infeasible or incorrect solutions in long-horizon decision-making tasks due to inherent complexity. In this paper, we propose a symbolic feedback-driven iterative self-refinement framework to enhance the robustness and reliability of LLMs in long-horizon planning.",
+      "category": "Research",
+      "summary": "Paper presents a symbolic feedback-driven iterative refinement framework to improve LLM robustness and reliability in long-horizon planning and decision-making tasks.",
+      "important": false
+    },
+    {
+      "title": "Understanding Rollout Error in Graph World Models",
+      "url": "https://arxiv.org/abs/2606.27780",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-29T04:00:00.000Z",
+      "snippet": "arXiv:2606.27780v1 Announce Type: new Abstract: World models are often used for planning by rolling learned dynamics forward. Many planning environments, however, are not vectors or images; they are graphs of agents, tools, skills, routes, and dependencies. In these settings, a local prediction error may stay local or spread through the graph, and the failure mode changes again when edges are predicted rather than fixed. This paper studies long-horizon rollout error in Graph World Models (GWMs). We formulate a unified fixed-edge and dynamic-edge GWM framework with action nodes for node-, edge-",
+      "category": "Research",
+      "summary": "Study analyzes how prediction errors propagate in Graph World Models during long-horizon rollouts, examining both fixed-edge and dynamic-edge scenarios for structured planning environments.",
+      "important": false
+    },
+    {
+      "title": "Grounded Iterative Language Planning: How Parameterized World Models Reduce Hallucination Propagation in LLM Agents",
+      "url": "https://arxiv.org/abs/2606.27806",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-29T04:00:00.000Z",
+      "snippet": "arXiv:2606.27806v1 Announce Type: new Abstract: World models for language agents come in two useful forms. An agent-based world model calls an LLM API and reasons flexibly in language, but its errors appear as hallucinated state changes that are hard to score with ordinary regression losses. A parameterized world model is a trained transition predictor; its errors are easier to measure with quantities such as NodeMSE, delta accuracy, and validity accuracy, but it is usually weaker as a standalone planner. We compare these two families on four graph-structured planning benchmarks and introduce ",
+      "category": "Agent Frameworks",
+      "summary": "Research compares agent-based and parameterized world models for language agents, showing how trained transition predictors reduce hallucination propagation in planning tasks.",
+      "important": false
+    },
+    {
+      "title": "ATOD: Annealed Turn-aware On-policy Distillation for Multi-turn Autonomous Agents",
+      "url": "https://arxiv.org/abs/2606.27814",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-29T04:00:00.000Z",
+      "snippet": "arXiv:2606.27814v1 Announce Type: new Abstract: Training small language-model agents for long-horizon interactive tasks requires both fast imitation and reward-driven improvement. On-policy distillation (OPD) provides dense teacher guidance and typically improves rapidly in the early stage, but its gains saturate once the student approaches the teacher, limiting the final performance ceiling. Reinforcement learning (RL) directly optimizes environment rewards and encourages exploratory improvement toward a higher reward-defined ceiling, but sparse and delayed feedback makes early-stage learning",
+      "category": "Research",
+      "summary": "ATOD proposes an annealed turn-aware on-policy distillation approach combining dense teacher guidance with reinforcement learning to improve multi-turn autonomous agent training.",
+      "important": false
+    },
+    {
+      "title": "NormAct: A Benchmark for Hidden Social Norm Compliance in Embodied Planning",
+      "url": "https://arxiv.org/abs/2606.27826",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-29T04:00:00.000Z",
+      "snippet": "arXiv:2606.27826v1 Announce Type: new Abstract: Multimodal large language models (MLLMs) are increasingly deployed as embodied planners in egocentric environments, where task success requires not only achieving instructed goals but also acting in socially appropriate ways. While explicit goals may render certain actions optimal, implicit social norms often impose hidden constraints. Existing evaluations typically focus on explicit goal achievement or direct norm knowledge, seldom assessing whether planners can infer and apply these hidden constraints within action sequences. We introduce NormA",
+      "category": "Research",
+      "summary": "NormAct benchmark evaluates whether multimodal LLM-based embodied planners can infer and comply with hidden social norms while achieving explicit task goals.",
+      "important": false
+    },
+    {
+      "title": "Verifiable Geometry Problem Solving: Solver-Driven Autoformalization and Theorem Proposing",
+      "url": "https://arxiv.org/abs/2606.27926",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-29T04:00:00.000Z",
+      "snippet": "arXiv:2606.27926v1 Announce Type: new Abstract: Geometry Problem Solving have increasingly adopt the neuro-symbolic paradigm, combining neural intuition with symbolic rigor. However, current frameworks suffer from severe bottlenecks in two core stages: autoformalization, which treats multimodal translation as a static task decoupled from downstream solver compatibility, and theorem prediction, where solvers frequently hit a deductive impasse due to fixed rule libraries. To address these, we propose SD-GPS, a solver-driven framework that treats the symbolic solver as an execution oracle through",
+      "category": "Research",
+      "summary": "SD-GPS framework combines neural and symbolic approaches for geometry problem solving by treating symbolic solvers as execution oracles to guide autoformalization and theorem prediction.",
+      "important": false
+    },
+    {
+      "title": "RelBall: Relation Ball with Quaternion Rotation for Knowledge Graph Completion",
+      "url": "https://arxiv.org/abs/2606.27967",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-29T04:00:00.000Z",
+      "snippet": "arXiv:2606.27967v1 Announce Type: new Abstract: Real-world knowledge graphs are often incomplete, lacking many valid facts. Knowledge Graph Completion (KGC) aims to predict missing links using known triples, thereby enhancing graph coverage. A key challenge is modeling diverse relational patterns such as symmetry, antisymmetry, inversion, composition and semantic hierarchy. Existing models such as RotatE can capture symmetric, antisymmetric, inverse, and commutative composition patterns, yet struggle with non-commutative composition. Rotate3D addresses this by introducing non-commutativity via",
+      "category": "Research",
+      "summary": "RelBall introduces quaternion rotation-based modeling for knowledge graph completion to capture non-commutative composition patterns and diverse relational structures.",
+      "important": false
+    },
+    {
+      "title": "JD Oxygen AI Item Center (Oxygen AIIC) V1: An Industrial-Scale LLM/VLM-Centric Solution for Item Understanding, Management, and Applications",
+      "url": "https://arxiv.org/abs/2606.28070",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-29T04:00:00.000Z",
+      "snippet": "arXiv:2606.28070v1 Announce Type: new Abstract: JD.com, one of the world's largest e-commerce platforms, serves over 700 million active users and millions of merchants, with a catalog of tens of billions of SKUs. At this scale, high-quality, structured item knowledge underpins a better consumer experience, lower management costs, and higher operational efficiency-yet producing and serving it poses three industrial-scale challenges: fast-emerging concepts, high-quality knowledge production for massive SKUs, and diverse downstream requirements. To address these challenges, we present the JD Oxyg",
+      "category": "Applications",
+      "summary": "JD Oxygen AIIC V1 is an industrial-scale LLM/VLM solution developed by JD.com for managing item knowledge across tens of billions of SKUs in e-commerce.",
+      "important": false
+    },
+    {
+      "title": "Ontology-Guided Evidence Path Inference for Multi-hop Knowledge Graph Question Answering",
+      "url": "https://arxiv.org/abs/2606.28076",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-06-29T04:00:00.000Z",
+      "snippet": "arXiv:2606.28076v1 Announce Type: new Abstract: Knowledge graph question answering (KGQA) aims to answer natural-language questions by reasoning over structured facts. Existing multi-hop KGQA methods mainly rely on topic-centered expansion, which faces two key challenges: the search space rapidly grows with noisy mixed-type paths, and retrieved paths may fail to satisfy the semantic constraints of complex questions. To address these challenges, we propose OPI, an ontology-guided evidence path inference framework for multi-hop KGQA. OPI introduces a relation-centric ontology graph to capture th",
+      "category": "Research",
+      "summary": "OPI framework uses ontology-guided relation-centric reasoning to improve multi-hop knowledge graph question answering by constraining search spaces and satisfying semantic requirements.",
+      "important": false
+    },
+    {
+      "title": "AI boom risks global financial crash, warn central bankers",
+      "url": "https://www.telegraph.co.uk/business/2026/06/28/ai-boom-risks-global-financial-crash-central-bankers-warn/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-29T01:25:04.000Z",
+      "snippet": "Article URL: https://www.telegraph.co.uk/business/2026/06/28/ai-boom-risks-global-financial-crash-central-bankers-warn/ Comments URL: https://news.ycombinator.com/item?id=48713697 Points: 133 # Comments: 153",
+      "category": "Regulation & Policy",
+      "summary": "Central bankers warn that the AI boom poses risks of triggering a global financial crash, raising macroeconomic and systemic stability concerns.",
+      "important": true
+    },
+    {
+      "title": "Better Images of AI",
+      "url": "https://betterimagesofai.org/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-28T23:50:58.000Z",
+      "snippet": "Article URL: https://betterimagesofai.org/ Comments URL: https://news.ycombinator.com/item?id=48713051 Points: 52 # Comments: 27",
+      "category": "Other",
+      "summary": "Better Images of AI is a resource project aimed at improving visual representations and imagery associated with artificial intelligence.",
+      "important": false
+    },
+    {
+      "title": "China’s Z.ai claims it can match Mythos on cybersecurity",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/958804/chinas-z-ai-glm-52-mythos-cybersecurity",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-28T21:42:51.000Z",
+      "snippet": "China's Zhipu AI (Z.ai) released its open-weight GLM-5.2, and some researchers have claimed that it matches Mythos in certain bug-finding and cybersecurity scenarios. While GLM lags behind models from Anthropic and OpenAI in other, more general tasks, it seems that China has dramatically reduced the gap in the capabilities between its models and those of the US. This level of advancement is particularly concerning to the US government, which has worked to restrict China's access to powerful models like Anthropic's Mythos and Fable, as well as the hardware necessary to train and run them. The T",
+      "category": "Model Releases",
+      "summary": "China's Zhipu AI released GLM-5.2, an open-weight model that researchers claim matches Anthropic's Mythos in certain cybersecurity and bug-finding tasks, demonstrating significant advancement in closing the capability gap with US models.",
+      "important": true
+    },
+    {
+      "title": "Suno launches Spark incubator program to feed independent artists to its AI machine",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/958801/suno-launches-spark-incubator-program-to-feed-independent-artists-to-its-ai-machine",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-28T20:27:36.000Z",
+      "snippet": "Suno has ambitions to be more than just a toy to churn out AI slop, it also wants to be a streaming destination and to break new artists. Spark is their new incubator program for independent artists that provides grants, mentorship, and marketing support. To apply, artists need to be an unsigned singer, songwriter, or producer releasing music under their own name. They also need to agree to some terms and conditions that have raised some eyebrows over on the Suno subreddit. For one, you need to agree to make your songs available on Suno for remixing. That's not necessarily super concerning, bu",
+      "category": "Applications",
+      "summary": "Suno launched the Spark incubator program to support independent artists with grants, mentorship, and marketing, aiming to position itself as both a music generation tool and streaming destination.",
+      "important": false
+    },
+    {
+      "title": "Show HN: Bash4LLM+ – A lightweight, dependency-free Bash wrapper for LLM APIs",
+      "url": "https://github.com/kamaludu/bash4llm/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-28T19:43:10.000Z",
+      "snippet": "Bash4LLM is a single-file Bash wrapper for interacting with LLMs from the terminal. I created it because I wanted something simple that worked without installing Python, Node, or any other runtime. It uses only Bash, curl, and jq. You can send prompts, start a small chat, process files line by line, stream output, and save session metadata in JSON format. I tried to make it safe and predictable: no use of the system /tmp, no use of eval. Groq is supported by default, and other providers can be added with dedicated Bash scripts in the extras/providers/ folder. Example: echo \"explains the comman",
+      "category": "Developer Tools",
+      "summary": "Bash4LLM+ is a lightweight, single-file Bash wrapper for accessing LLM APIs from the terminal without external dependencies, supporting multiple providers including Groq.",
+      "important": false
+    },
+    {
+      "title": "Ford rehires ‘gray beard’ engineers after AI falls short",
+      "url": "https://techcrunch.com/2026/06/28/ford-rehires-gray-beard-engineers-after-ai-falls-short/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-28T19:05:39.000Z",
+      "snippet": "\"Mistakenly we thought that by just introducing artificial intelligence ... that would produce a high-quality product.”",
+      "category": "Applications",
+      "summary": "Ford rehired experienced engineers after discovering that introducing AI alone was insufficient to produce high-quality products, highlighting limitations of AI-only development approaches.",
+      "important": false
+    },
+    {
+      "title": "HP Inc. launches Frontier strategic partnership with OpenAI",
+      "url": "https://openai.com/index/hp-frontier-partnership",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-06-28T17:00:00.000Z",
+      "snippet": "HP Inc. scales its OpenAI Frontier partnership to deploy AI across customer experiences, software development, and enterprise operations.",
+      "category": "Business & Funding",
+      "summary": "HP Inc. expanded its strategic partnership with OpenAI (Frontier) to deploy AI across customer experiences, software development, and enterprise operations.",
+      "important": false
+    },
+    {
+      "title": "Professor denounces mass AI fraud on an exam at Brown",
+      "url": "https://english.elpais.com/education/2026-06-28/ai-fraud-at-brown-university-academic-integrity-is-at-risk.html",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-28T16:41:12.000Z",
+      "snippet": "Article URL: https://english.elpais.com/education/2026-06-28/ai-fraud-at-brown-university-academic-integrity-is-at-risk.html Comments URL: https://news.ycombinator.com/item?id=48708991 Points: 411 # Comments: 545",
+      "category": "Regulation & Policy",
+      "summary": "A Brown University professor exposed widespread AI fraud on exams, raising concerns about academic integrity as students use AI to circumvent assessment standards.",
+      "important": true
+    },
+    {
+      "title": "Reflections on software engineering in the age of AI",
+      "url": "https://adiamond.me/2026/06/software-engineering-in-the-age-of-ai/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-28T16:17:38.000Z",
+      "snippet": "Article URL: https://adiamond.me/2026/06/software-engineering-in-the-age-of-ai/ Comments URL: https://news.ycombinator.com/item?id=48708721 Points: 96 # Comments: 90",
+      "category": "Other",
+      "summary": "A reflection piece on how AI is changing software engineering practices and workflows in professional development.",
+      "important": false
+    },
+    {
+      "title": "Why Wall Street thinks US memory maker Micron is the next Nvidia",
+      "url": "https://techcrunch.com/2026/06/28/why-wall-street-thinks-us-memory-maker-micron-is-the-next-nvidia/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-28T15:00:00.000Z",
+      "snippet": "Eager to find more public AI-related companies that may do as well as Nvidia, Wall Street investors think they've found a winner with Micron.",
+      "category": "Hardware & Compute",
+      "summary": "Wall Street investors view Micron Technology as a potential successor to Nvidia for AI-related gains, betting on memory maker growth as AI infrastructure demand increases.",
+      "important": false
+    },
+    {
+      "title": "Prosecutors used ChatGPT logs as evidence in the Palisades fire trial",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/958751/prosecutors-chatgpt-palisades-wildfire-arson-mistrial",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-28T14:12:06.000Z",
+      "snippet": "Jonathan Rinderknecht was facing arson charges for setting a fire on New Year's Day in 2025, which became one of the deadliest wildfires in LA history. To make their case, prosecutors turned to location data from his iPhone, security camera footage, and witness testimony. But they also turned to his ChatGPT logs. Prosecutors said that Rinderknecht had ChatGPT generate images of fire, asked the chatbot, \"Why am I so angry all the time?\", and ranted to it about how the wealthy were destroying the world. They also pointed to a screen recording in which Rinderknecht asked ChatGPT whether someone c",
+      "category": "Applications",
+      "summary": "Prosecutors used ChatGPT logs as evidence in the Palisades fire arson trial, including AI-generated images and chat history, in a precedent-setting use of LLM interactions in criminal proceedings.",
+      "important": false
+    },
+    {
+      "title": "Google limits Meta's use of its Gemini AI models",
+      "url": "https://www.cnbc.com/2026/06/28/google-limits-metas-use-of-its-gemini-ai-models-ft-reports.html",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-28T13:30:06.000Z",
+      "snippet": "Article URL: https://www.cnbc.com/2026/06/28/google-limits-metas-use-of-its-gemini-ai-models-ft-reports.html Comments URL: https://news.ycombinator.com/item?id=48707103 Points: 154 # Comments: 71",
+      "category": "Business & Funding",
+      "summary": "Google has restricted Meta's access to and usage of its Gemini AI models, signaling competitive tensions between the two tech giants in the AI space.",
+      "important": true
+    },
     {
       "title": "Wayfinder Router: deterministic routing of queries between local and hosted LLM",
       "url": "https://github.com/itsthelore/wayfinder-router",
@@ -5249,52 +5519,52 @@
   ],
   "feedHealth": {
     "The Verge AI": {
-      "lastSuccess": "2026-06-28T08:39:54.058Z",
+      "lastSuccess": "2026-06-29T10:21:18.073Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "TechCrunch AI": {
-      "lastSuccess": "2026-06-28T08:39:54.182Z",
+      "lastSuccess": "2026-06-29T10:21:18.194Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Ars Technica AI": {
-      "lastSuccess": "2026-06-28T08:39:54.421Z",
+      "lastSuccess": "2026-06-29T10:21:18.340Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "VentureBeat AI": {
-      "lastSuccess": "2026-06-28T08:39:54.760Z",
+      "lastSuccess": "2026-06-29T10:21:18.541Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Anthropic News": {
       "lastSuccess": null,
       "lastError": "Status code 404",
-      "consecutiveFailures": 9
+      "consecutiveFailures": 10
     },
     "OpenAI Blog": {
-      "lastSuccess": "2026-06-28T08:39:58.843Z",
+      "lastSuccess": "2026-06-29T10:21:19.956Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Google DeepMind": {
-      "lastSuccess": "2026-06-28T08:39:59.227Z",
+      "lastSuccess": "2026-06-29T10:21:20.294Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "MIT Tech Review AI": {
-      "lastSuccess": "2026-06-28T08:39:59.342Z",
+      "lastSuccess": "2026-06-29T10:21:20.336Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "arXiv cs.AI": {
-      "lastSuccess": "2026-06-28T08:39:59.560Z",
+      "lastSuccess": "2026-06-29T10:21:20.451Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Hacker News (AI)": {
-      "lastSuccess": "2026-06-28T08:40:01.390Z",
+      "lastSuccess": "2026-06-29T10:21:20.878Z",
       "lastError": null,
       "consecutiveFailures": 0
     }
