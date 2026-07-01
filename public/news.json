@@ -1,21 +1,883 @@
 {
-  "generatedAt": "2026-06-30T08:55:43.224Z",
-  "daysBack": 2,
+  "generatedAt": "2026-07-01T09:28:55.351Z",
+  "daysBack": 3,
   "categories": [
+    "Open Source",
+    "Research",
+    "Evaluation",
+    "Agent Frameworks",
+    "AI Safety & Alignment",
+    "Applications",
+    "Other",
+    "Regulation & Policy",
     "Business & Funding",
     "Model Releases",
     "Hardware & Compute",
-    "Applications",
     "Developer Tools",
-    "Agent Frameworks",
-    "Regulation & Policy",
-    "AI Safety & Alignment",
-    "Research",
-    "Other",
-    "Open Source",
     "MCP"
   ],
   "articles": [
+    {
+      "title": "Godot will no longer accept AI-authored code contributions",
+      "url": "https://www.pcgamer.com/gaming-industry/open-source-game-engine-godot-will-no-longer-accept-ai-authored-code-contributions-we-cant-trust-heavy-users-of-ai-to-understand-their-code-enough-to-fix-it/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-07-01T07:43:22.000Z",
+      "snippet": "Article URL: https://www.pcgamer.com/gaming-industry/open-source-game-engine-godot-will-no-longer-accept-ai-authored-code-contributions-we-cant-trust-heavy-users-of-ai-to-understand-their-code-enough-to-fix-it/ Comments URL: https://news.ycombinator.com/item?id=48743472 Points: 87 # Comments: 52",
+      "category": "Open Source",
+      "summary": "Godot game engine announces policy to reject AI-authored code contributions due to concerns about maintainability and code understanding.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "open-source",
+          "policy",
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "What Drives Interactive Improvement from Feedback?",
+      "url": "https://arxiv.org/abs/2606.30774",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-01T04:00:00.000Z",
+      "snippet": "arXiv:2606.30774v1 Announce Type: new Abstract: We study when natural-language feedback produces improvement beyond the gains obtainable from repeated attempts alone. In multi-turn language agent setting, higher final accuracy can reflect useful feedback, but it can also arise from resampling, format correction, or additional test-time computation. To separate these effects, we introduce a controlled student-teacher protocol across Omni-MATH, Codeforces, BBEH Linguini, and ARC-AGI1, evaluating thirteen open-weight models in both student and teacher roles. We compare external feedback, self-fee",
+      "category": "Research",
+      "summary": "Study investigates when natural language feedback improves LLM performance in multi-turn agent settings, separating true learning from confounding factors like resampling.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "feedback",
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Contrastive Reflection for Iterative Prompt Optimization",
+      "url": "https://arxiv.org/abs/2606.30840",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-01T04:00:00.000Z",
+      "snippet": "arXiv:2606.30840v1 Announce Type: new Abstract: LLM agents are becoming central to information retrieval: they issue retrieval queries, synthesize answers, and increasingly serve as judges for IR evaluation. Improving the prompts that control these agents is an optimization problem, but in applied IR settings it often looks less like blind search and more like debugging. Engineers need to know which behavior failed, which nearby behavior still worked, what distinguishes the two, and whether a prompt edit improves held-out quality without introducing regressions. We present Contrastive Reflecti",
+      "category": "Research",
+      "summary": "Paper presents a method for optimizing LLM agent prompts through contrastive reflection, enabling engineers to identify and fix specific behavioral failures.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "optimization"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "How Can AI Find My Model? A Model-Finding Experimental Study Considering Data Formats, Embeddings, and Retrieval Strategies",
+      "url": "https://arxiv.org/abs/2606.30846",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-01T04:00:00.000Z",
+      "snippet": "arXiv:2606.30846v1 Announce Type: new Abstract: Discovering simulation models for reuse remains a fundamental challenge in Modeling and Simulation (M&S). When many models coexist, identifying those that align with a given modeling intent remains difficult. Recent advances in Artificial Intelligence (AI), particularly retrieval-based approaches, offer a promising pathway to operate at this semantic layer. In this paper, we present an experimental study investigating the impact of data representation, transformer-based embedding models, and retrieval strategies on the discovery of simulation mod",
+      "category": "Research",
+      "summary": "Study investigates retrieval-based AI methods for discovering and reusing simulation models across different formats and embedding strategies.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "rag",
+          "evaluation"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "BayesBench: Evaluating LLM Belief Trajectories Under Multi-Turn Evidence Accumulation",
+      "url": "https://arxiv.org/abs/2606.30850",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-01T04:00:00.000Z",
+      "snippet": "arXiv:2606.30850v1 Announce Type: new Abstract: Large language models (LLMs) are typically deployed in multi-turn conversations, where each turn provides new evidence that should reduce epistemic uncertainty about their environment. Acting rationally then requires inferring the unobserved quantities that govern it and updating beliefs about them as evidence accumulates. Yet most evaluations only score the model's final-turn answer in a single-turn format, leaving this process unexamined. We ask how closely LLMs' belief updates match those of a rational Bayesian reasoner in multi-turn settings,",
+      "category": "Evaluation",
+      "summary": "BayesBench evaluates how well LLMs update beliefs in multi-turn conversations compared to rational Bayesian reasoning under evidence accumulation.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning",
+          "evaluation"
+        ],
+        "traits": [
+          "benchmark"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "When Does Learning to Stop Help? A Cost-Aware Study of Early Exits in Reasoning Models",
+      "url": "https://arxiv.org/abs/2606.30852",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-01T04:00:00.000Z",
+      "snippet": "arXiv:2606.30852v1 Announce Type: new Abstract: Reasoning models spend different amounts of useful computation across instances, but it remains unclear when a learned stopping rule improves over simple confidence or convergence thresholds. We study this question with LearnStop, a hidden-state-free checkpoint stopper for reasoning language models. At fixed budget checkpoints, LearnStop probes a short answer from the current reasoning prefix and predicts prefix correctness from online features such as answer confidence, entropy, prefix vote share, answer stability, and backtracking-marker densit",
+      "category": "Research",
+      "summary": "Study examines when learned stopping rules improve efficiency in reasoning models, comparing different checkpoint-based early exit strategies.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning",
+          "inference"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Beyond expert users: agents should help users construct preferences, not just elicit them",
+      "url": "https://arxiv.org/abs/2606.30863",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-01T04:00:00.000Z",
+      "snippet": "arXiv:2606.30863v1 Announce Type: new Abstract: Agents typically assume an expert user -- one with well-formed preferences about what they want -- and default to clarifying questions whenever the task is underspecified. We argue this assumption is unrealistic. Users often lack the domain knowledge to have completely specified preferences; if asked about their preference on some feature, the user may be unable to answer without the agent helping the user to learn some domain knowledge needed to form a preference for that feature, e.g., via examples or explanations. To formalize these principles",
+      "category": "Research",
+      "summary": "Paper argues agents should help users construct preferences through domain knowledge education rather than just eliciting pre-formed preferences.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "interaction"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Investigating Multi-Agent Deliberation in Law",
+      "url": "https://arxiv.org/abs/2606.30906",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-01T04:00:00.000Z",
+      "snippet": "arXiv:2606.30906v1 Announce Type: new Abstract: Artificial Intelligence is increasingly applied to the field of law, and has the potential to increase access to justice. One particular movement that is gaining traction is that of agentic AI, wherein AI agents, based on Large Language Models (LLMs) can take autonomous actions. In particular, multi-agent approaches in the legal domain remain largely unexplored. In this paper, we investigate multi-agent deliberation methods for legal reasoning tasks using LLMs. We explore multi-agent deliberation (MAD) and introduce two novel multi-agent framewor",
+      "category": "Agent Frameworks",
+      "summary": "Research investigates multi-agent deliberation methods for legal reasoning tasks, introducing novel frameworks for LLM-based autonomous legal agents.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "applications"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Why Solve It Twice? Hierarchical Accumulation of Skills for Transfer-Efficient ML Engineering",
+      "url": "https://arxiv.org/abs/2606.30911",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-01T04:00:00.000Z",
+      "snippet": "arXiv:2606.30911v1 Announce Type: new Abstract: ML engineering agents waste compute rediscovering known techniques because every competition is a cold start. We present HASTE, a hierarchical multi-agent system that organizes cross-competition knowledge into three scope tiers (global, domain, and competition-specific), each coupled to a matching agent level. An orchestrator coordinates domain specialists and promotes learning between tiers via LLM-driven abstraction. A controlled ablation provides evidence for scoped loading: holding a 159-skill inventory constant across 8 competitions, tiered ",
+      "category": "Agent Frameworks",
+      "summary": "HASTE presents a hierarchical multi-agent system that organizes knowledge across competition scopes to improve transfer efficiency in ML engineering.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "multi-agent"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "RoPoLL: Robust Panel of LLM Judges",
+      "url": "https://arxiv.org/abs/2606.30931",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-01T04:00:00.000Z",
+      "snippet": "arXiv:2606.30931v1 Announce Type: new Abstract: The LLM Jury, a Panel of LLM Evaluators (PoLL) reporting consensus scores, has become a practical alternative to single-judge LLM evaluation, yet its statistical behavior remains poorly understood. We formalize the LLM Jury under the Huber contamination model and show that PoLL incurs unbounded bias under any positive contamination, regardless of jury size, whenever a single judge fails in a biased, LLM-typical way (mode collapse, sycophancy, safety refusal). Framing jury consensus as classical robust mean estimation, we propose RoPoLL (Robust Pa",
+      "category": "Evaluation",
+      "summary": "RoPoLL proposes robust statistical methods for evaluating LLM jury consensus, addressing bias issues in panel-based LLM evaluation systems.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "evaluation",
+          "safety"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "AgRefactor: Self-Evolving Agentic Workflow for HLS Compatibility and Performance",
+      "url": "https://arxiv.org/abs/2606.30949",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-01T04:00:00.000Z",
+      "snippet": "arXiv:2606.30949v1 Announce Type: new Abstract: High-Level Synthesis (HLS) provides a fast path from concepts to silicon, but converting real-world software into synthesizable HLS code remains challenging due to restrictive language support and the gap between software and hardware programming practices. Existing automated and LLM-based refactoring approaches partially address this problem, yet they often lack flexibility, struggle to scale, and incur high computational costs. We introduce AgRefactor, an LLM-based multi-agent workflow for refactoring software into HLS-compatible programs. AgRe",
+      "category": "Agent Frameworks",
+      "summary": "AgRefactor introduces an LLM-based multi-agent workflow for automatically refactoring software code into High-Level Synthesis-compatible programs.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "developer-tools"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Neuro-Bayesian-Symbolic Residual Attention Shallow Network: Explainable Deep Learning for Cybersecurity Risk Assessment",
+      "url": "https://arxiv.org/abs/2606.30953",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-01T04:00:00.000Z",
+      "snippet": "arXiv:2606.30953v1 Announce Type: new Abstract: We introduce the Neuro-Bayesian-Symbolic Residual Attention Shallow Network (NBS-RASN), a hybrid neural architecture for explainable cybersecurity risk assessment in open-source ecosystems. Unlike deep models that trade interpretability for accuracy, our shallow network encodes domain knowledge, causal reasoning, and expert judgment as differentiable components. It uses 80 interpretable neurons across 12 layers, including a gatekeeper that enforces five epistemological axioms - precision, causality, falsifiability, transparency, and completeness ",
+      "category": "AI Safety & Alignment",
+      "summary": "Paper introduces NBS-RASN, a shallow explainable neural network for cybersecurity risk assessment that encodes domain knowledge and causal reasoning.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "interpretability",
+          "safety"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "HyPOLE: Hyperproperty-Guided Multi-Agent Reinforcement Learning under Partial Observation",
+      "url": "https://arxiv.org/abs/2606.30966",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-01T04:00:00.000Z",
+      "snippet": "arXiv:2606.30966v1 Announce Type: new Abstract: Formal specification is a powerful tool to guide the learning process and provides significant advantages over reward shaping: (1) mathematical rigor; (2) expressiveness to specify objectives and constraints, and (3) the ability to define tactics to achieve objectives. However, these benefits remain largely unexplored in the context of Multi-Agent Reinforcement Learning (MARL). This paper introduces HyPOLE, a novel framework for MARL under partial observability, where learning is guided by the expressive power of the so-called hyperproperties and",
+      "category": "Agent Frameworks",
+      "summary": "HyPOLE framework guides multi-agent reinforcement learning under partial observability using formal specification and hyperproperties.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "safety"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "AgentBound: Verifiable Behavioral Governance for Autonomous AI Agents",
+      "url": "https://arxiv.org/abs/2606.30970",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-01T04:00:00.000Z",
+      "snippet": "arXiv:2606.30970v1 Announce Type: new Abstract: Autonomous AI agents increasingly perform consequential actions on behalf of human principals, including financial transactions, external communications, and enterprise workflows. Existing agent infrastructure relies on identity federation and delegated authorization to authenticate workloads and control resource access, but it cannot determine whether an authorized action should be executed under the current behavioral and operational context. We present AgentBound, a runtime governance framework that provides verifiable behavioral oversight for",
+      "category": "AI Safety & Alignment",
+      "summary": "AgentBound provides runtime governance framework for verifiable behavioral oversight of autonomous AI agents performing consequential actions.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "agentic"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "When Regulation Has Memory: Hysteresis and Control Burden in Artificial Agency",
+      "url": "https://arxiv.org/abs/2606.30975",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-01T04:00:00.000Z",
+      "snippet": "arXiv:2606.30975v1 Announce Type: new Abstract: Adaptive agents are usually judged by what they do, but an agent can appear stable while the internal effort required to keep it stable is increasing. This hidden regulatory burden matters for artificial agents operating under noise, delay, or changing demands: two systems may reach similar internal states while one requires much more corrective control to get there. Here, we study whether that burden depends on history. Using a computational model of adaptive uncertainty regulation, we drive an artificial agent through a continuous change in its",
+      "category": "Research",
+      "summary": "Study examines regulatory burden and internal effort required to maintain stable artificial agents under noise and changing demands.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "interpretability",
+          "agentic"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "A Three-Phase Foundation Model for Tax-Aware Personalized Portfolio Management",
+      "url": "https://arxiv.org/abs/2606.30997",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-01T04:00:00.000Z",
+      "snippet": "arXiv:2606.30997v1 Announce Type: new Abstract: We present a three-phase deep reinforcement learning system for personalized portfolio management that addresses three limitations shared by all prior financial RL work: 1) ticker lock-in, 2) monolithic objectives , and 3) static user models. Phase 1 pretrains a ticker-identity-free cross asset encoder via self-supervised learning on a multi-asset corpus, augmented by a frozen parallel branch using Chronos, a T5-based time series foundation model, fused via a learned gating mechanism. To our knowledge, this is the first application of a time seri",
+      "category": "Applications",
+      "summary": "Introduces a three-phase deep reinforcement learning system for personalized portfolio management addressing ticker lock-in and static user models.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "applications",
+          "finance"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "The ‘Father of the Internet’ is finally retiring",
+      "url": "https://techcrunch.com/2026/06/30/the-father-of-the-internet-is-finally-retiring/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-01T03:15:37.000Z",
+      "snippet": "Vinton Cerf, one of the creators of the protocols underlying the internet, will step down as Google's chief internet evangelist next week.",
+      "category": "Other",
+      "summary": "Vinton Cerf, a co-creator of internet protocols, is retiring from his role as Google's chief internet evangelist.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [],
+        "entities": [
+          "google"
+        ]
+      }
+    },
+    {
+      "title": "Trump drops restrictions on Anthropic’s Mythos and Fable models",
+      "url": "https://techcrunch.com/2026/06/30/trump-drops-restrictions-on-anthropics-mythos-and-fable-models/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-01T02:16:06.000Z",
+      "snippet": "The Trump administration's erratic approach to AI policymaking has left companies across the industry with little clarity about what will govern future model releases.",
+      "category": "Regulation & Policy",
+      "summary": "The Trump administration has removed restrictions on Anthropic's Mythos and Fable models, reflecting inconsistent AI policy decisions that create uncertainty for the industry.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "Wayve launches $85M employee tender offer at $8.5B valuation",
+      "url": "https://techcrunch.com/2026/06/30/wayve-launches-85m-employee-tender-offer-at-8-5b-valuation/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-01T02:04:40.000Z",
+      "snippet": "Wayve’s offering is part of a growing trend of AI startups using employee tenders as a strategic tool to attract and retain talent.",
+      "category": "Business & Funding",
+      "summary": "Autonomous vehicle company Wayve is conducting an $85M employee tender offer at an $8.5B valuation, part of a broader trend of AI startups using this strategy for talent retention.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "robotics"
+        ],
+        "traits": [
+          "funding"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Anthropic&#8217;s long-sidelined Fable 5 is greenlit to return",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/958964/anthropic-claude-fable-5-is-back",
+      "source": "The Verge AI",
+      "publishedAt": "2026-07-01T00:03:55.000Z",
+      "snippet": "After weeks of negotiating with the Trump administration, Anthropic is finally going to be able to bring Claude Fable 5 back online. In a post on X, Anthropic said it plans to begin restoring access Wednesday to users globally on Claude platforms, and that the company would re-enable access on AWS, Google Cloud, and Microsoft Foundry soon, but with no set timeline. Anthropic wrote: We've received notice that the Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5. We'll begin restoring access tomorrow, and will share an update soon. We're grateful to our users for ",
+      "category": "Regulation & Policy",
+      "summary": "Anthropic's Claude Fable 5 and Mythos 5 models have been cleared for restoration after the Trump administration lifted export controls, with the company beginning to re-enable global access across major cloud platforms.",
+      "important": true,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy",
+          "release"
+        ],
+        "entities": [
+          "claude"
+        ]
+      }
+    },
+    {
+      "title": "OpenClaw is finally available on Android and iOS",
+      "url": "https://techcrunch.com/2026/06/30/openclaw-is-finally-available-on-android-and-ios/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-30T21:53:28.000Z",
+      "snippet": "The free open source agentic program is finally invading your phone.",
+      "category": "Open Source",
+      "summary": "OpenClaw, a free open-source agentic program, is now available on Android and iOS platforms for mobile users.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "open-source",
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Claude Science is Anthropic’s newest flagship product",
+      "url": "https://www.technologyreview.com/2026/06/30/1139987/claude-science-is-anthropics-newest-flagship-product/",
+      "source": "MIT Tech Review AI",
+      "publishedAt": "2026-06-30T21:50:04.000Z",
+      "snippet": "At an event for pharmaceutical executives, biotech founders, and researchers on Tuesday, Anthropic announced Claude Science, a major new product intended to support scientific research in the same way that Claude Code supports software engineering. Like Claude Code, Claude Science can autonomously carry out meaningful work when given concise, high-level instructions, and it has access…",
+      "category": "Applications",
+      "summary": "Anthropic launches Claude Science, a flagship product designed to support scientific research with autonomous capabilities similar to Claude Code for software engineering.",
+      "important": true,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "claude",
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "The DeepMind trio who built a poker AI are now making money for quant hedge funds",
+      "url": "https://techcrunch.com/2026/06/30/the-deepmind-trio-who-built-a-poker-ai-are-now-making-money-for-quant-hedge-funds/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-30T20:33:48.000Z",
+      "snippet": "EquiLibre Technologies, a Prague-based AI lab founded by three ex-DeepMind researchers, is now valued at more than $500 million.",
+      "category": "Business & Funding",
+      "summary": "EquiLibre Technologies, founded by three ex-DeepMind researchers, has reached a $500M+ valuation by applying AI poker expertise to quantitative hedge fund strategies.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "funding"
+        ],
+        "entities": [
+          "deepmind"
+        ]
+      }
+    },
+    {
+      "title": "New attack provides one more reason why AI browsers are a bad idea",
+      "url": "https://arstechnica.com/security/2026/06/ai-browsers-can-be-lulled-into-a-dream-world-where-guardrails-no-longer-apply/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-06-30T20:03:14.000Z",
+      "snippet": "Telling an LLM that 2 + 2 = 5 is enough to make it follow forbidden instructions.",
+      "category": "AI Safety & Alignment",
+      "summary": "New research demonstrates that AI browsers can be exploited by simple prompt injection attacks, raising security concerns about integrating LLMs into browser functionality.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "research",
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Google’s NotebookLM can sum up your research in a TikTok-style clip",
+      "url": "https://www.theverge.com/tech/959778/google-notebooklm-ai-clips",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-30T19:24:51.000Z",
+      "snippet": "Google's NotebookLM is adding a new way to catch up on your notes: TikTok-style AI videos. The new feature is rolling out to Google AI Ultra and Pro subscribers, allowing NotebookLM to generate 60-second vertical AI clips based on the sources you upload to the app. The example shared by Google details Australia's unsuccessful war on emus, pairing paper cutout-style AI art of emus with narration. It adds to some of the other ways NotebookLM lets you interact with your research, including by generating AI podcasts, cinematic videos, and visual explainers. Doom scrolling but make it educational ð",
+      "category": "Applications",
+      "summary": "Google's NotebookLM is adding TikTok-style vertical video generation to help users create engaging 60-second clips from their research notes and uploaded sources.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "google"
+        ]
+      }
+    },
+    {
+      "title": "Google introduces a faster, cheaper image generator with Nano Banana 2 Lite",
+      "url": "https://techcrunch.com/2026/06/30/google-introduces-a-faster-cheaper-image-generator-with-nano-banana-2-lite/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-30T19:02:38.000Z",
+      "snippet": "Google is updating its image generator to make it faster and cheaper, making it a more useful tool for creators looking to make AI content.",
+      "category": "Model Releases",
+      "summary": "Google has released Nano Banana 2 Lite, a faster and cheaper image generation model designed to improve accessibility for AI content creators.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": [
+          "google"
+        ]
+      }
+    },
+    {
+      "title": "Google's new Nano Banana 2 Lite image model is its fastest and cheapest yet",
+      "url": "https://arstechnica.com/ai/2026/06/googles-new-nano-banana-2-lite-image-model-is-its-fastest-and-cheapest-yet/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-06-30T18:36:10.000Z",
+      "snippet": "They may not look as good, but Nano Banana 2 Lite images only take a few seconds to create.",
+      "category": "Model Releases",
+      "summary": "Google's Nano Banana 2 Lite image generation model prioritizes speed and cost over quality, producing images in seconds at lower computational expense.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": [
+          "google"
+        ]
+      }
+    },
+    {
+      "title": "Nvidia competitor Etched hits $5B valuation, $1B in sales for AI chip",
+      "url": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-30T18:13:02.000Z",
+      "snippet": "Nvidia AI chip competitor Etched says it has already booked $1 billion under contract for the inference systems powered by its chip.",
+      "category": "Hardware & Compute",
+      "summary": "AI chip startup Etched has reached a $5B valuation with $1B in booked sales for its inference-focused chip, positioning itself as a major Nvidia competitor.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "inference",
+          "hardware"
+        ],
+        "traits": [
+          "funding"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Anthropic launches Claude Sonnet 5 as a cheaper way to run agents",
+      "url": "https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-30T18:00:00.000Z",
+      "snippet": "Anthropic’s Claude Sonnet 5 brings stronger agentic capabilities, lower pricing, and improved safety, positioning the model as a cheaper alternative to Opus, GPT-5.5, and Gemini Pro.",
+      "category": "Model Releases",
+      "summary": "Anthropic launches Claude Sonnet 5, a cheaper model offering stronger agentic capabilities and improved safety compared to Opus and other competing models.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": [
+          "claude"
+        ]
+      }
+    },
+    {
+      "title": "Acti puts AI agents directly into your smartphone keyboard",
+      "url": "https://techcrunch.com/2026/06/30/acti-puts-ai-agents-directly-into-your-smartphone-keyboard/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-30T17:52:46.000Z",
+      "snippet": "Acti is betting the smartphone keyboard is the next home for AI assistants. The startup's new keyboard for iOS and Android works across apps and lets users create custom AI-powered shortcuts using natural language.",
+      "category": "Developer Tools",
+      "summary": "Acti's new iOS and Android keyboard integrates AI agents directly into smartphones, allowing users to create custom natural language shortcuts across apps.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Netflix is using an AI-generated Gene Wilder voice in its Willy Wonka reality show",
+      "url": "https://www.theverge.com/streaming/959684/netflix-wonka-golden-ticket-gene-wilder",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-30T17:19:15.000Z",
+      "snippet": "A new teaser trailer confirmed that Wonka's The Golden Ticket will premiere on Netflix on September 23rd, following its Squid Game reality show in the trend of creating real competitions based on fictional torture scenarios. While the sets seen in the trailer are real and not some Glasgow-style AI fakes, the voiceover is AI-generated. Deadline reports that Netflix worked with AI audio company ElevenLabs with consent from Wilder's family, after working on productions re-creating the voice of Michael Caine and Stan Lee. It also continues Netflix's 2021 partnership with the Roald Dahl company, an",
+      "category": "Applications",
+      "summary": "Netflix's Willy Wonka reality show 'The Golden Ticket' uses an AI-generated voice of Gene Wilder created by ElevenLabs with family consent, continuing Netflix's trend of AI voice recreation.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "audio"
+        ],
+        "traits": [
+          "commercial",
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Anthropic’s Claude Science bets on workflow, not a new model, to win over scientists",
+      "url": "https://techcrunch.com/2026/06/30/anthropics-claude-science-bets-on-workflow-not-a-new-model-to-win-over-scientists/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-30T17:00:00.000Z",
+      "snippet": "Anthropic's Claude Science is a workbench that gives scientists one environment to do computational research, saving them from the need to bounce between databases, pipelines, and tools.",
+      "category": "Applications",
+      "summary": "Anthropic's Claude Science provides a unified workbench for computational research, helping scientists avoid bouncing between multiple databases and tools.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "claude"
+        ]
+      }
+    },
+    {
+      "title": "Trump's plan to redesign every .gov website leads to AI-designed horrors",
+      "url": "https://arstechnica.com/tech-policy/2026/06/trumps-plan-to-redesign-every-gov-website-leads-to-ai-designed-horrors/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-06-30T16:59:02.000Z",
+      "snippet": "A year in, National Design Studio delays plan to update government web standards.",
+      "category": "Regulation & Policy",
+      "summary": "Trump's National Design Studio plan to redesign all .gov websites using AI has faced delays after producing problematic AI-generated designs.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy",
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Start building with Nano Banana 2 Lite and Gemini Omni Flash",
+      "url": "https://deepmind.google/blog/start-building-with-nano-banana-2-lite-and-gemini-omni-flash/",
+      "source": "Google DeepMind",
+      "publishedAt": "2026-06-30T16:02:40.000Z",
+      "snippet": "",
+      "category": "Model Releases",
+      "summary": "Google DeepMind announces Nano Banana 2 Lite and Gemini Omni Flash models for developers.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "release"
+        ],
+        "entities": [
+          "google",
+          "gemini"
+        ]
+      }
+    },
+    {
+      "title": "Trump asked Musk for SpaceX stock to seed US kids’ savings accounts, report says",
+      "url": "https://arstechnica.com/tech-policy/2026/06/spacex-may-donate-stock-to-trumps-savings-accounts-for-kids-report-says/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-06-30T15:38:08.000Z",
+      "snippet": "Sources suggest Musk may be mulling big donation to Trump Accounts.",
+      "category": "Business & Funding",
+      "summary": "Trump reportedly asked Elon Musk to donate SpaceX stock to seed a children's savings account program, suggesting possible major philanthropic involvement.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "funding"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Libby will filter out AI content, kind of",
+      "url": "https://www.theverge.com/column/959433/libby-ai-filter",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-30T15:30:00.000Z",
+      "snippet": "This is Lowpass by Janko Roettgers, a newsletter on the ever-evolving intersection of tech and entertainment, syndicated just for The Verge subscribers once a week. \"AI is the new frontier for us,\" says Marc DeBevoise, who took over as the new CEO of OverDrive last week. OverDrive is best known for the ebook lending app Libby that is available through tens of thousands of public libraries. Like the rest of the digital publishing industry, it's poised to face massive disruption from a huge wave of AI-generated books. To prepare for the AI onslaught, Libby is now getting ready to introduce AI co",
+      "category": "Applications",
+      "summary": "Libby's parent company OverDrive is introducing AI content filtering features to help libraries manage the growing wave of AI-generated books entering digital catalogs.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial",
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "X now offers an MCP server to make its platform easier for AI tools to use",
+      "url": "https://techcrunch.com/2026/06/30/x-now-offers-an-mcp-server-to-make-its-platform-easier-for-ai-tools-to-use/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-30T15:08:42.000Z",
+      "snippet": "X has launched a hosted MCP server, making it easier for developers to connect AI applications with the company’s API.",
+      "category": "MCP",
+      "summary": "X has launched a hosted Model Context Protocol (MCP) server to simplify integration between AI applications and the platform's API.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "mcp",
+          "developer-tools"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "Podcasting platform Riverside enters the newsletter publishing game",
+      "url": "https://techcrunch.com/2026/06/30/podcasting-platform-riverside-enters-the-newsletter-publishing-game/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-30T15:00:00.000Z",
+      "snippet": "Users will be able use AI to create newsletters based on their recordings.",
+      "category": "Applications",
+      "summary": "Podcasting platform Riverside is expanding into newsletter publishing by enabling users to create AI-generated newsletters based on their recorded content.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Amazon launches new $1 billion FDE org, following OpenAI and Anthropic",
+      "url": "https://techcrunch.com/2026/06/30/amazon-launches-new-1-billion-fde-org-following-openai-and-anthropic/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-30T15:00:00.000Z",
+      "snippet": "Engineers on the new team will embed within companies to deploy purpose-built agents, focusing on fast deployments and customer self-sufficiency.",
+      "category": "Business & Funding",
+      "summary": "Amazon launches a new $1B Frontier Development Engine organization to embed engineers within companies for deploying custom AI agents, matching OpenAI and Anthropic's strategies.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "funding"
+        ],
+        "entities": [
+          "microsoft"
+        ]
+      }
+    },
+    {
+      "title": "Lumo, Proton’s privacy-focused AI chatbot, gets an upgrade",
+      "url": "https://techcrunch.com/2026/06/30/lumo-protons-privacy-focused-ai-chatbot-gets-an-upgrade/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-30T14:00:00.000Z",
+      "snippet": "Proton's Lumo 2.0 is dropping this week, giving users a broader variety of capabilities.",
+      "category": "Applications",
+      "summary": "Proton's privacy-focused Lumo 2.0 AI chatbot is releasing this week with expanded capabilities for users seeking privacy-conscious AI interactions.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial",
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Meet the lawyer who beat Elon Musk — twice",
+      "url": "https://www.theverge.com/column/959270/elon-musk-open-ai-bill-savitt-twitter",
+      "source": "The Verge AI",
+      "publishedAt": "2026-06-30T12:00:00.000Z",
+      "snippet": "“After college, my plan was to come to New York and get a record deal.” | Cath Virginia / The Verge, Getty Images Watching Elon Musk fulminate at Bill Savitt during Musk v. Altman - the case in which Musk sued Sam Altman and OpenAI instead of seeing a therapist about his AI failures - was a bit like watching a toddler have a temper tantrum at his nursery school teacher. Savitt's questions were \"designed to trick me,\" Musk said. He also told Savitt at one point, \"You mostly do unfair questions.\" Savitt, who has the approximate demeanor of a handsome Droopy Dog, gently told Musk, \"I am trying to",
+      "category": "Business & Funding",
+      "summary": "Bill Savitt, the lawyer who successfully defended OpenAI against Elon Musk's lawsuit, reflects on his legal victories and confrontations with Musk during the trial.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "incident"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Agriculture is ready for AI, but its data isn’t",
+      "url": "https://www.technologyreview.com/2026/06/30/1139513/agriculture-is-ready-for-ai-but-its-data-isnt/",
+      "source": "MIT Tech Review AI",
+      "publishedAt": "2026-06-30T12:00:00.000Z",
+      "snippet": "Artificial intelligence is transforming what is possible in agriculture, but industry leaders should be wary of investing in AI without first laying the groundwork. The use cases are promising, especially for an industry navigating volatile fertilizer costs, unpredictable weather, and margins that leave little room for error. Research shows AI-enabled predictive models can improve crop…",
+      "category": "Applications",
+      "summary": "Analysis of AI adoption in agriculture reveals significant potential but highlights critical data quality and infrastructure gaps that must be addressed first.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "applications",
+          "agriculture"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Crypto exchange OKX wants AI agents to hire and pay each other",
+      "url": "https://techcrunch.com/2026/06/30/crypto-exchange-okx-wants-ai-agents-to-hire-and-pay-each-other/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-06-30T09:00:00.000Z",
+      "snippet": "OKX is bringing together payments, identity, and reputation into a marketplace for AI agents.",
+      "category": "Agent Frameworks",
+      "summary": "Crypto exchange OKX is building a marketplace that combines payments, identity, and reputation systems to enable AI agents to autonomously hire and pay each other.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "How ChatGPT adoption has expanded",
+      "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-06-30T09:00:00.000Z",
+      "snippet": "New OpenAI Signals data shows how ChatGPT adoption is growing globally, with users increasing usage, exploring more capabilities, and driving growth across regions and languages.",
+      "category": "Applications",
+      "summary": "New OpenAI Signals data reveals growing global ChatGPT adoption with increased user engagement, expanded feature exploration, and regional growth across multiple languages.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "gpt"
+        ]
+      }
+    },
     {
       "title": "The AI jobs debate just got messier",
       "url": "https://techcrunch.com/2026/06/29/the-ai-jobs-debate-just-got-messier/",
@@ -53,6 +915,62 @@
           "release",
           "commercial"
         ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Introducing GeneBench-Pro",
+      "url": "https://openai.com/index/introducing-genebench-pro",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-06-30T00:00:00.000Z",
+      "snippet": "Introducing GeneBench-Pro, a new benchmark testing AI performance in genomics, biology, and scientific research using complex, real-world datasets.",
+      "category": "Evaluation",
+      "summary": "OpenAI introduces GeneBench-Pro, a benchmark for evaluating AI performance on genomics and scientific research tasks using complex real-world datasets.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "benchmark",
+          "research"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Core dump epidemiology: fixing an 18-year-old bug",
+      "url": "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-06-30T00:00:00.000Z",
+      "snippet": "OpenAI engineers used large-scale core dump analysis to debug rare infrastructure crashes, uncovering both a hardware fault and a long-standing software bug.",
+      "category": "Developer Tools",
+      "summary": "OpenAI engineers used large-scale core dump analysis to identify and fix a rare infrastructure bug and underlying hardware fault in their systems.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "infrastructure"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Inside Genebench-Pro",
+      "url": "https://openai.com/index/genebench-pro/case-studies",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-06-30T00:00:00.000Z",
+      "snippet": "",
+      "category": "Other",
+      "summary": "No content provided.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [],
         "entities": []
       }
     },
@@ -11228,52 +12146,52 @@
   ],
   "feedHealth": {
     "The Verge AI": {
-      "lastSuccess": "2026-06-30T08:55:36.790Z",
+      "lastSuccess": "2026-07-01T09:28:42.118Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "TechCrunch AI": {
-      "lastSuccess": "2026-06-30T08:55:36.815Z",
+      "lastSuccess": "2026-07-01T09:28:42.239Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Ars Technica AI": {
-      "lastSuccess": "2026-06-30T08:55:37.008Z",
+      "lastSuccess": "2026-07-01T09:28:42.418Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "VentureBeat AI": {
-      "lastSuccess": "2026-06-30T08:55:37.170Z",
+      "lastSuccess": "2026-07-01T09:28:42.588Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Anthropic News": {
       "lastSuccess": null,
       "lastError": "Status code 404",
-      "consecutiveFailures": 11
+      "consecutiveFailures": 12
     },
     "OpenAI Blog": {
-      "lastSuccess": "2026-06-30T08:55:39.262Z",
+      "lastSuccess": "2026-07-01T09:28:43.124Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Google DeepMind": {
-      "lastSuccess": "2026-06-30T08:55:39.573Z",
+      "lastSuccess": "2026-07-01T09:28:43.500Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "MIT Tech Review AI": {
-      "lastSuccess": "2026-06-30T08:55:39.604Z",
+      "lastSuccess": "2026-07-01T09:28:43.527Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "arXiv cs.AI": {
-      "lastSuccess": "2026-06-30T08:55:39.673Z",
+      "lastSuccess": "2026-07-01T09:28:43.631Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Hacker News (AI)": {
-      "lastSuccess": "2026-06-30T08:55:43.224Z",
+      "lastSuccess": "2026-07-01T09:28:55.350Z",
       "lastError": null,
       "consecutiveFailures": 0
     }
