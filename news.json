@@ -1,22 +1,581 @@
 {
-  "generatedAt": "2026-07-01T09:28:55.351Z",
-  "daysBack": 3,
+  "generatedAt": "2026-07-02T08:41:40.684Z",
+  "daysBack": 2,
   "categories": [
-    "Open Source",
-    "Research",
-    "Evaluation",
-    "Agent Frameworks",
-    "AI Safety & Alignment",
     "Applications",
-    "Other",
-    "Regulation & Policy",
     "Business & Funding",
+    "AI Safety & Alignment",
+    "Agent Frameworks",
+    "Research",
     "Model Releases",
+    "Regulation & Policy",
+    "Other",
+    "Open Source",
+    "Evaluation",
     "Hardware & Compute",
     "Developer Tools",
     "MCP"
   ],
   "articles": [
+    {
+      "title": "The gauge broke: devs felt 20% faster with AI, measured 19% slower",
+      "url": "https://intrepidkarthi.com/writing/the-gauge-broke/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-07-02T06:44:34.000Z",
+      "snippet": "Article URL: https://intrepidkarthi.com/writing/the-gauge-broke/ Comments URL: https://news.ycombinator.com/item?id=48757440 Points: 65 # Comments: 70",
+      "category": "Applications",
+      "summary": "A study reveals a gap between developers' perceived productivity gains (20% faster) and actual measured performance (19% slower) when using AI coding assistants, questioning real-world effectiveness.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "developer-tools"
+        ],
+        "traits": [
+          "benchmark",
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Indian tech tycoon bets $30M of his own money to build AI alternative to Microsoft Office",
+      "url": "https://techcrunch.com/2026/07/01/indian-tech-tycoon-bets-30m-to-build-an-ai-alternative-to-microsoft-office/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-02T05:30:00.000Z",
+      "snippet": "Neo is Bhavin Turakhia’s fifth venture and his latest involving enterprise software. This time he's taking on Microsoft Office, Google Apps with AI.",
+      "category": "Business & Funding",
+      "summary": "Indian entrepreneur Bhavin Turakhia is investing $30M of his own capital to build Neo, an AI-powered alternative to Microsoft Office and Google Apps.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "office-alternative"
+        ],
+        "traits": [
+          "funding",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Constructive Alignment: Governing Preference Dynamics in Human-AI Interaction",
+      "url": "https://arxiv.org/abs/2607.00001",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-02T04:00:00.000Z",
+      "snippet": "arXiv:2607.00001v1 Announce Type: new Abstract: Most approaches to AI alignment treat human preferences as fixed targets to be inferred and optimized. This assumption conflicts with extensive empirical evidence showing that preferences are layered, dynamic, and constructed through interaction--particularly with adaptive technologies. As AI systems become more persistent, personalized, and socially embedded, they increasingly participate in shaping what people attend to, value, and endorse over time. We introduce Constructive Alignment, a paradigm that reframes alignment as a control problem ov",
+      "category": "AI Safety & Alignment",
+      "summary": "Researchers propose Constructive Alignment, a paradigm reframing AI alignment as a control problem that accounts for preferences being dynamic and shaped through human-AI interaction.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "alignment"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Bounded Morality: Defining the Space of Moral Computation",
+      "url": "https://arxiv.org/abs/2607.00002",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-02T04:00:00.000Z",
+      "snippet": "arXiv:2607.00002v1 Announce Type: new Abstract: Moral cognition has traditionally been modeled as adherence to fixed ethical theories--deontology, consequentialism, virtue ethics--implemented as static rules or value functions. We propose Bounded Morality, a formal framework for analyzing the computational demands of moral problems faced by finite agents. Extending Herbert Simon's notion of bounded rationality, we formalize moral situations along two orthogonal dimensions: moral breadth, the scope of entities treated as morally relevant, and moral depth, the inferential integration required to",
+      "category": "AI Safety & Alignment",
+      "summary": "Researchers introduce Bounded Morality, a formal framework extending bounded rationality to analyze the computational demands of moral problems faced by finite AI agents.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "alignment"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Making Failure Safe: A Constrained, Verifiable Agent Framework for Open-Web Data Collection",
+      "url": "https://arxiv.org/abs/2607.00035",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-02T04:00:00.000Z",
+      "snippet": "arXiv:2607.00035v1 Announce Type: new Abstract: LLMs and agents can generate web scrapers from natural-language requirements, but direct generation remains unreliable because of dependency errors, broken selectors, schema mismatches, and heterogeneous page structures. We propose a constrained, verifiable agent framework that shifts LLM output from free-form code to typed JSON collector configurations, combining a six-type collector taxonomy, template and utility-function constraints, static Airflow DAG execution, rule-based quality checking, and structured feedback correction. Experiments on 1",
+      "category": "Agent Frameworks",
+      "summary": "Researchers propose a constrained, verifiable agent framework that converts LLM outputs to typed JSON configurations for more reliable web scraping and data collection.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "safety"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Solution space path planning for supporting en-route air traffic control",
+      "url": "https://arxiv.org/abs/2607.00064",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-02T04:00:00.000Z",
+      "snippet": "arXiv:2607.00064v1 Announce Type: new Abstract: As technology advances, many path-planning algorithms have been proposed for Air Traffic Management, yet their operational adoption in tactical control remains limited, revealing a misalignment between algorithmic design priorities and air traffic controllers' needs. This underscores the need for decision-support solutions that are inherently interpretable, computationally efficient, and explicitly designed for human use. Focusing on this design challenge, this study develops a conflict-free path-planning algorithm for en-route Air Traffic Contro",
+      "category": "Applications",
+      "summary": "Researchers develop an interpretable, computationally efficient conflict-free path-planning algorithm for air traffic control decision support systems.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning",
+          "robotics"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "RareDxR1: Autonomous Medical Reasoning for Rare Disease Diagnosis Beyond Human Annotation",
+      "url": "https://arxiv.org/abs/2607.00147",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-02T04:00:00.000Z",
+      "snippet": "arXiv:2607.00147v1 Announce Type: new Abstract: Rare disease differential diagnosis is a critical yet arduous clinical task, requiring physicians to identify precise phenotypes from complex, unstructured patient symptoms and execute intricate reasoning within a vast search space. However, existing AI approaches typically rely on pipeline-based phenotype extraction or retrieval-augmented generation, which suffer from critical information loss due to predefined ontologies, retrieval bottlenecks, and a lack of diagnostic logic. To address these challenges, we introduce RareDxR1, an end-to-end rea",
+      "category": "Applications",
+      "summary": "RareDxR1 is an end-to-end autonomous medical reasoning system for rare disease diagnosis that avoids information loss from predefined ontologies and retrieval bottlenecks.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "A Contextual-Bandit Oversight Game with Two-Sided Informational Asymmetry",
+      "url": "https://arxiv.org/abs/2607.00155",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-02T04:00:00.000Z",
+      "snippet": "arXiv:2607.00155v1 Announce Type: new Abstract: We study runtime human oversight of an AI agent when private information runs in both directions: the human privately knows her reward function, while the AI privately knows the quality of the action it proposes. This is the kind of asymmetry that arises naturally when an autonomous robot or software agent has inspected a situation its human supervisor cannot directly assess. Building on Cooperative Inverse Reinforcement Learning (CIRL) and the Oversight Game, we introduce a contextual-bandit team game with two-sided asymmetric information and a ",
+      "category": "AI Safety & Alignment",
+      "summary": "Researchers study runtime human oversight of AI agents under two-sided informational asymmetry using a contextual-bandit oversight game framework.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "alignment",
+          "safety"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "From Signals to Structure: How Memory Architecture Drives Language Emergence in LLM Agents",
+      "url": "https://arxiv.org/abs/2607.00233",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-02T04:00:00.000Z",
+      "snippet": "arXiv:2607.00233v1 Announce Type: new Abstract: How do two agents invent a shared language from scratch? In a Lewis signaling game, a sender and receiver must coordinate on a code using only their interaction history. We study five memory architectures across varying channel configurations with LLM agents and find that memory architecture matters more than channel capacity. Agents with a persistent private notebook benefit from surplus channel capacity and avoid the high-capacity collapse seen in stateless agents, achieving the most reliable coordination ($0.867 \\pm 0.023$ at capacity = 25). S",
+      "category": "Research",
+      "summary": "Researchers investigate how memory architecture influences language emergence in LLM agents playing Lewis signaling games, finding architecture matters more than channel capacity.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Seed2.0 Model Card: Towards Intelligence Frontier for Real-World Complexity",
+      "url": "https://arxiv.org/abs/2607.00248",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-02T04:00:00.000Z",
+      "snippet": "arXiv:2607.00248v1 Announce Type: new Abstract: We present Seed2.0, a model series that takes a meaningful step toward solving complex, real-world tasks. Our approach begins with identifying users' genuine needs and constructing a reliable, forward-looking evaluation system by selecting and abstracting benchmarks grounded in these needs and in realistic, complex scenarios. Guided by this evaluation system, Seed2.0 targets two persistent challenges, long-tail knowledge and complex instruction following, substantially improving the model's reliability on intricate, long-horizon tasks. Beyond the",
+      "category": "Model Releases",
+      "summary": "Seed2.0 is a model series designed to solve complex, real-world tasks by improving long-tail knowledge and complex instruction following through grounded evaluation systems.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm",
+          "reasoning"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Mnemosyne: Agentic Transaction Processing for Validating and Repairing AI-generated Workflows",
+      "url": "https://arxiv.org/abs/2607.00269",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-02T04:00:00.000Z",
+      "snippet": "arXiv:2607.00269v1 Announce Type: new Abstract: LLMs, solvers, and agent teams increasingly generate workflow actions, repairs, and plans, but a generated action may be syntactically valid yet stale, infeasible, conflicting, or destructive of the evidence that triggered a repair. We introduce Agentic Transaction Processing (ATP), a transaction model that treats generated actions as untrusted proposals until they pass deterministic admission under a declared, executable constraint set C. The principle is two-sided: a proposal is not truth, and no proposal foresees every disruption: anything may",
+      "category": "Agent Frameworks",
+      "summary": "Mnemosyne introduces Agentic Transaction Processing, a framework treating LLM-generated actions as untrusted proposals until validated against declared constraints.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "safety"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Managed Autonomy at Runtime: Gear-Based Safety and Governance for Single- and Multi-Agent Cyber-Physical Systems",
+      "url": "https://arxiv.org/abs/2607.00334",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-02T04:00:00.000Z",
+      "snippet": "arXiv:2607.00334v1 Announce Type: new Abstract: Autonomous agents, whether LLM-driven software agents or robotic physical agents, face a common class of failure modes when operating without continuous human oversight: safety violations from unverified actions, behavioral instability from unconstrained loops, and continuity loss from unhandled error states. We develop \\system{}, a discrete-time control system that combines five execution gears (\\Gobs{}, \\Gsug{}, \\Gplan{}, \\Gexec{}, \\Gint{}) with utility-gated dispatch and event-driven fallback. For the single-agent case, we prove monotonic stab",
+      "category": "AI Safety & Alignment",
+      "summary": "Researchers develop Gear, a discrete-time control system with five execution gears for managing safety and governance in autonomous software and robotic agents.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "agentic"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Personalization as Inverse Planning: Learning Latent Design Intents for Agentic Slide Generation via Structural Denoising",
+      "url": "https://arxiv.org/abs/2607.00407",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-02T04:00:00.000Z",
+      "snippet": "arXiv:2607.00407v1 Announce Type: new Abstract: Slide design requires personalizing both deck themes and page layouts. Yet, current AI agent-based methods struggle with fine-grained, page-level design. Solely relying on prespecified templates or user verbose instructions, they fail to capture latent design intents, leaving Page-level Slide Personalization (PSP) unresolved. To close this gap, this work formulates PSP as an inverse planning problem. We propose to learn a design intent without assuming any knowledge of the specific executing tools (e.g., PowerPoint, Beamer) being used. However, r",
+      "category": "Agent Frameworks",
+      "summary": "Researchers formulate page-level slide personalization as an inverse planning problem, enabling AI agents to learn latent design intents without tool-specific knowledge.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "PHREEQC-MCQ-200: A Diagnostic Benchmark for Tool-Augmented Scientific Simulator Agents",
+      "url": "https://arxiv.org/abs/2607.00436",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-02T04:00:00.000Z",
+      "snippet": "arXiv:2607.00436v1 Announce Type: new Abstract: Large language model agents are increasingly connected to scientific software, yet it remains unclear when tool access makes scientific computation more reliable rather than merely more complex. We introduce PHREEQC-MCQ-200, a benchmark for evaluating tool-augmented agents on deterministic aqueous-geochemistry simulations. The benchmark contains 200 multiple-choice questions derived from 21 validated PHREEQC scenarios, requiring agents to construct simulator inputs, execute PHREEQC, inspect structured outputs, and commit to final answers. Across ",
+      "category": "Research",
+      "summary": "PHREEQC-MCQ-200 is a benchmark with 200 multiple-choice questions evaluating tool-augmented LLM agents on deterministic aqueous-geochemistry simulations.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "benchmark",
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Agri-SAGE: Simulation-Grounded Multi-Agent LLM for Context-Aware Agricultural Advisory Generation",
+      "url": "https://arxiv.org/abs/2607.00454",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-02T04:00:00.000Z",
+      "snippet": "arXiv:2607.00454v1 Announce Type: new Abstract: Agricultural advisory systems face a fundamental tension: static agronomic guidelines offer consistent, evidence-based recommendations, yet remain blind to in-season variability and dynamic uncertainties. Recent advisory systems powered by LLMs are liable for a different risk of generating recommendations that are agronomically credible but physiologically unconvincing. Agri-SAGE is a closed-loop framework designed to resolve the above two limitations by integrating retrieval-grounded multi-agent LLM reasoning with APSIM-based biophysical simulat",
+      "category": "Applications",
+      "summary": "Agri-SAGE is a closed-loop multi-agent LLM framework integrating retrieval-grounded reasoning with biophysical simulation for context-aware agricultural advisory generation.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Multi-scale Mixture of World Models for Embodied Agents in Evolving Environments",
+      "url": "https://arxiv.org/abs/2607.00457",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-02T04:00:00.000Z",
+      "snippet": "arXiv:2607.00457v1 Announce Type: new Abstract: Embodied agents operating in the real world require multi-scale reasoning and knowledge adaptation as conditions change. We identify two challenges in applying Mixture of Experts (MoE) to this setting: routing lacks an explicit notion of scale, preventing targeted updates at specific scales, and a uniform update policy cannot accommodate the different rates at which knowledge at each scale becomes outdated. We present MuSix, a framework that addresses both challenges through scale-aware world model mixture and evolution. A two-stage routing mecha",
+      "category": "Agent Frameworks",
+      "summary": "MuSix is a framework addressing scaling challenges in Mixture of Experts for embodied agents through scale-aware world model mixture and evolution.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "robotics"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "HARC: Coupling Harmfulness and Refusal Directions for Robust Safety Alignment",
+      "url": "https://arxiv.org/abs/2607.00572",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-02T04:00:00.000Z",
+      "snippet": "arXiv:2607.00572v1 Announce Type: new Abstract: Understanding how aligned LLMs internally represent safety is critical for diagnosing alignment vulnerabilities, as it explains why jailbreaks succeed and informs the design of robust alignment strategies. Prior work shows that aligned LLMs encode harmfulness and refusal as separable directions in the residual stream at prompt-side token positions. We show that jailbreaks succeed at prompt encoding by suppressing either the refusal or harmfulness direction before any token is generated, with distinct attack classes occupying separable regions of ",
+      "category": "AI Safety & Alignment",
+      "summary": "Researchers demonstrate that jailbreaks exploit separable harmfulness and refusal directions in aligned LLMs' residual streams, proposing coupled alignment strategies to create more robust defenses against such attacks.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "safety",
+          "alignment",
+          "interpretability"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Meta caps internal AI token spending",
+      "url": "https://mlq.ai/news/meta-caps-internal-ai-token-spending-after-costs-approach-billions-in-2026/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-07-01T23:58:48.000Z",
+      "snippet": "Article URL: https://mlq.ai/news/meta-caps-internal-ai-token-spending-after-costs-approach-billions-in-2026/ Comments URL: https://news.ycombinator.com/item?id=48754713 Points: 137 # Comments: 124",
+      "category": "Business & Funding",
+      "summary": "Meta has implemented caps on internal AI token spending as projected costs approach billions annually by 2026, signaling efforts to manage runaway AI infrastructure expenses.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "meta"
+        ]
+      }
+    },
+    {
+      "title": "SpaceX has an AI device prototype, and it sure sounds phone-ish",
+      "url": "https://techcrunch.com/2026/07/01/spacex-has-an-ai-device-prototype-and-it-sure-sounds-phone-ish/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-01T18:54:18.000Z",
+      "snippet": "SpaceX reportedly showed investors a \"handset-like\" AI device before going public. It could be another signal SpaceX wants to expand into wireless.",
+      "category": "Applications",
+      "summary": "SpaceX has developed an AI device prototype resembling a phone and showed it to investors, potentially signaling expansion into the wireless market.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "hardware",
+          "device"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Ashton Kutcher leaving Sound Ventures to launch new VC firm with Morgan Beller",
+      "url": "https://techcrunch.com/2026/07/01/ashton-kutcher-leaving-sound-ventures-to-launch-new-vc-firm-with-morgan-beller/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-01T18:47:22.000Z",
+      "snippet": "Sound built its reputation on concentrated, high-conviction bets in category-leading AI labs, while Kutcher's new fund appears to be chasing the layer underneath those companies — the infrastructure and energy that power them.",
+      "category": "Business & Funding",
+      "summary": "Ashton Kutcher is leaving Sound Ventures to launch a new VC fund with Morgan Beller focused on AI infrastructure and energy rather than AI lab companies.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "infrastructure"
+        ],
+        "traits": [
+          "funding",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Cloudflare’s new policy pushes AI companies to pay for publishers’ content",
+      "url": "https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-01T17:48:37.000Z",
+      "snippet": "Cloudflare is giving AI companies until September 15 to separate web crawlers used for search from those used for AI training and agents, or risk being blocked by default on many publisher sites.",
+      "category": "Regulation & Policy",
+      "summary": "Cloudflare implemented a policy requiring AI companies to separate web crawlers for search from those for AI training by September 15 or face blocking on publisher sites.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "crawling",
+          "publishers"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "After spooking Trump into safety testing, Anthropic AI models get global release",
+      "url": "https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-07-01T16:44:18.000Z",
+      "snippet": "US lifts curbs on Anthropic’s advanced Fable and Mythos models.",
+      "category": "Model Releases",
+      "summary": "The US lifted export restrictions on Anthropic's advanced Fable and Mythos models after the company conducted safety testing that satisfied regulators.",
+      "important": true,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "claude",
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "LLMs are stuck in a groupthink groove. This startup is trying to get them out.",
+      "url": "https://www.technologyreview.com/2026/07/01/1140003/llms-are-stuck-in-a-groupthink-rut-this-startup-is-trying-to-get-them-out/",
+      "source": "MIT Tech Review AI",
+      "publishedAt": "2026-07-01T14:35:16.000Z",
+      "snippet": "Let’s start with a game. Open up your chatbot of choice—Claude, ChatGPT, Gemini—and type “Give me a random number between 1 and 10.” You’re going to get 7. Almost always. Now type “Another” and you’ll get 3 or 4. Type “Another” again and you’ll get 8 or 9. That won’t work every time—but if it…",
+      "category": "Research",
+      "summary": "A startup is addressing groupthink in LLMs, where models produce similar outputs like the number 7 when asked for random numbers between 1-10.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm",
+          "evaluation"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Venice AI becomes a unicorn with $65M Series A as its privacy-first AI platform takes off",
+      "url": "https://techcrunch.com/2026/07/01/venice-ai-becomes-a-unicorn-with-65m-series-a-as-its-privacy-first-ai-platform-takes-off/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-01T14:25:23.000Z",
+      "snippet": "Venice AI is already profitable, with annualized run-rate revenues of over $70 million, CEO Erik Voorhees said.",
+      "category": "Business & Funding",
+      "summary": "Privacy-focused AI platform Venice AI reached unicorn status with a $65M Series A funding round, claiming over $70M in annualized revenue and already profitable operations.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "privacy"
+        ],
+        "traits": [
+          "funding",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Gemini Spark, Google’s agentic assistant, is now available on Mac",
+      "url": "https://techcrunch.com/2026/07/01/gemini-spark-googles-agentic-assistant-is-now-available-on-mac/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-01T14:20:19.000Z",
+      "snippet": "Google's 24/7 agentic assistant, Gemini Spark, comes to Mac alongside other improvements, like real-time tracking and support for more apps.",
+      "category": "Applications",
+      "summary": "Google's agentic assistant Gemini Spark is now available on Mac with improvements including real-time tracking and expanded app support.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "gemini"
+        ]
+      }
+    },
+    {
+      "title": "Builders Stage agenda revealed: Practical strategies for scaling startups at TechCrunch Disrupt 2026",
+      "url": "https://techcrunch.com/2026/07/01/builders-stage-agenda-revealed-practical-strategies-for-scaling-startups-at-techcrunch-disrupt-2026/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-01T14:00:00.000Z",
+      "snippet": "The Builders Stage is returning to TechCrunch Disrupt 2026, bringing together 10,000+ founders, startup operators, and investors for practical conversations. and Q&A on what it takes to build and scale successful companies. Register now to save up to $330.",
+      "category": "Other",
+      "summary": "TechCrunch Disrupt 2026 will feature the Builders Stage with practical startup scaling discussions for 10,000+ founders and investors.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "event"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Meta, like SpaceX, looks to turn excess AI compute into cash",
+      "url": "https://techcrunch.com/2026/07/01/meta-like-spacex-looks-to-turn-excess-ai-compute-into-cash/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-01T13:43:07.000Z",
+      "snippet": "Meta is developing plans for a cloud infrastructure business, selling access to AI compute power and models. The move would pit it against the big cloud providers like Amazon Web Services, Google Cloud, and Microsoft Azure.",
+      "category": "Business & Funding",
+      "summary": "Meta is developing a cloud infrastructure business to monetize excess AI compute, competing with AWS, Google Cloud, and Azure.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "meta"
+        ]
+      }
+    },
+    {
+      "title": "Google built a great smart speaker, but Gemini isn’t ready for it",
+      "url": "https://www.theverge.com/tech/959503/google-home-speaker-review-gemini-for-home",
+      "source": "The Verge AI",
+      "publishedAt": "2026-07-01T12:00:00.000Z",
+      "snippet": "The Google Home Speaker is Google’s first smart speaker in years. And it’s pretty! | Photo: Jennifer Patison Tuohy / The Verge Smart speakers have spent the past few years searching for a compelling second act. Beyond music, timers, and controlling your lights, they've struggled to justify taking up space on the kitchen counter. AI promised to change that. Amazon debuted its new hardware powered by a revamped Alexa last fall, and now it's finally Google's turn. The Google Home Speaker is the company's first new smart speaker in six years and its first \"built for Gemini.\" After years of neglect",
+      "category": "Applications",
+      "summary": "Google released its first smart speaker in six years, the Google Home Speaker, built for Gemini, but the AI assistant is not yet mature enough to justify the device's capabilities.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "gemini",
+          "google"
+        ]
+      }
+    },
     {
       "title": "Godot will no longer accept AI-authored code contributions",
       "url": "https://www.pcgamer.com/gaming-industry/open-source-game-engine-godot-will-no-longer-accept-ai-authored-code-contributions-we-cant-trust-heavy-users-of-ai-to-understand-their-code-enough-to-fix-it/",
@@ -32,6 +591,25 @@
           "open-source",
           "policy",
           "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "How employment changes when firms adopt generative AI",
+      "url": "https://ramp.com/data/ai-jobs-impact",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-07-01T04:14:11.000Z",
+      "snippet": "Article URL: https://ramp.com/data/ai-jobs-impact Comments URL: https://news.ycombinator.com/item?id=48742176 Points: 53 # Comments: 47",
+      "category": "Applications",
+      "summary": "Research examines employment impacts as firms adopt generative AI, analyzing workforce composition changes across industries and roles.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "applications"
+        ],
+        "traits": [
+          "research"
         ],
         "entities": []
       }
@@ -688,6 +1266,25 @@
           "google",
           "gemini"
         ]
+      }
+    },
+    {
+      "title": "Scammers Sell Seeds for Exotic AI-Generated Flowers That Don't Exist",
+      "url": "https://www.404media.co/scammers-sell-seeds-for-exotic-ai-generated-flowers-that-dont-exist/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-06-30T15:45:32.000Z",
+      "snippet": "Article URL: https://www.404media.co/scammers-sell-seeds-for-exotic-ai-generated-flowers-that-dont-exist/ Comments URL: https://news.ycombinator.com/item?id=48734389 Points: 50 # Comments: 34",
+      "category": "Other",
+      "summary": "Scammers are selling seeds for non-existent flowers marketed as AI-generated exotic species, exploiting consumer interest in AI-created products.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": []
       }
     },
     {
@@ -12146,52 +12743,52 @@
   ],
   "feedHealth": {
     "The Verge AI": {
-      "lastSuccess": "2026-07-01T09:28:42.118Z",
+      "lastSuccess": "2026-07-02T08:41:26.863Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "TechCrunch AI": {
-      "lastSuccess": "2026-07-01T09:28:42.239Z",
+      "lastSuccess": "2026-07-02T08:41:26.912Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Ars Technica AI": {
-      "lastSuccess": "2026-07-01T09:28:42.418Z",
+      "lastSuccess": "2026-07-02T08:41:27.314Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "VentureBeat AI": {
-      "lastSuccess": "2026-07-01T09:28:42.588Z",
+      "lastSuccess": "2026-07-02T08:41:27.400Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Anthropic News": {
       "lastSuccess": null,
       "lastError": "Status code 404",
-      "consecutiveFailures": 12
+      "consecutiveFailures": 13
     },
     "OpenAI Blog": {
-      "lastSuccess": "2026-07-01T09:28:43.124Z",
+      "lastSuccess": "2026-07-02T08:41:27.799Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Google DeepMind": {
-      "lastSuccess": "2026-07-01T09:28:43.500Z",
+      "lastSuccess": "2026-07-02T08:41:28.241Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "MIT Tech Review AI": {
-      "lastSuccess": "2026-07-01T09:28:43.527Z",
+      "lastSuccess": "2026-07-02T08:41:28.326Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "arXiv cs.AI": {
-      "lastSuccess": "2026-07-01T09:28:43.631Z",
+      "lastSuccess": "2026-07-02T08:41:28.448Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Hacker News (AI)": {
-      "lastSuccess": "2026-07-01T09:28:55.350Z",
+      "lastSuccess": "2026-07-02T08:41:40.684Z",
       "lastError": null,
       "consecutiveFailures": 0
     }
