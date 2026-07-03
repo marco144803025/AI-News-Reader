@@ -65,19 +65,51 @@ the lead headline with ≥ 5 letters; ties broken by earliest position.
 
 ## Tasks
 
-- [ ] Self-host fonts: download latin woff2 subsets for Anton, Archivo (400/500/italic-400), JetBrains Mono (400/500) into `public/fonts/` with OFL licenses; add `@font-face` + `font-display: swap` to `index.css`.
-- [ ] Theme infrastructure: `resolveTheme()` + `useTheme` hook + tests; extract `ClassicApp.tsx` from `App.tsx` (pure move — verify zero visual diff); shell renders by theme.
-- [ ] Extra tokens: `@theme` additions (`paper`, `paper-bright`, `ink-press`, `ink-dim`, `press-red`) + loudness-dial custom properties + reduced-motion media guards.
-- [ ] Primitives: `OffsetPanel` (offset ink block, no shadows), `Stamp`, `TapeChip` — rotation on inner wrapper, rectangular outer hit-area.
-- [ ] `rank.ts` + fixed-clock tests (lead selection with/without importants, fresh threshold at the 24h boundary, empty set).
-- [ ] `Masthead` + `TapeNav` (wrapping chips with counts, search input, theme toggle) — verify 375px wrap.
-- [ ] `LeadClipping` (ransom word, ghost numeral, NOTABLE stamp) + `ClippingRow` + `ClippingsList` with shared pagination.
-- [ ] `ExtraFilterBar` — tag chips as tape strips, reusing `lib/filter.ts` and URL state.
-- [ ] `BulletinPanel` (renders iff `data.brief` — F8 slot) + `PressFooter` (wires status; TRENDS block appears when F9's view exists).
-- [ ] Accessibility pass: focus-visible states on inverted hovers, aria labels on nav/toggle, AA contrast check of final token values.
-- [ ] Update `.interface-design/system.md`; check off ROADMAP.
+- [x] Self-host fonts: download latin woff2 subsets for Anton, Archivo (400/500/italic-400), JetBrains Mono (400/500) into `public/fonts/` with OFL licenses; add `@font-face` + `font-display: swap` to `index.css`. (~107KB total.)
+- [x] Theme infrastructure: `resolveTheme()` + `useTheme` hook + tests; extract `ClassicApp.tsx` from `App.tsx`; shell renders by theme.
+- [x] Extra tokens: `@theme` additions + loudness-dial custom properties + reduced-motion media guards.
+- [x] Primitives: `OffsetPanel`, `Stamp`, `TapeChip` — rotation on inner wrapper, rectangular outer hit-area.
+- [x] `rank.ts` + fixed-clock tests.
+- [x] `Masthead` + `TapeNav` — 375px wrap verified (13 chips, no horizontal scroll).
+- [x] `LeadClipping` + `ClippingRow` + `ClippingsList` with shared pagination.
+- [x] `ExtraFilterBar` — reuses `lib/filter.ts` + URL state.
+- [x] `BulletinPanel` (renders iff `data.brief` — F8 slot) + `PressFooter`.
+- [x] Accessibility pass: focus-visible states, aria labels, AA-driven token split (see deviations).
+- [x] Update `.interface-design/system.md`; ROADMAP updated.
+
+### Deviations from the original plan (recorded during Build)
+
+- **Extra tokens grew by two reds:** `press-red` (#e5341f) failed AA for small
+  text, so `press-red-deep` (#b3220e) carries small red text/stamps on paper
+  and `press-red-bright` (#ff6f54) carries red text on ink surfaces. Bright
+  red remains for display-size blocks (ransom word, masthead slash).
+- **Panels stay unrotated.** To honor the rectangular-hit-area AC to the
+  letter, tilt lives on decorative elements (stamps, strips, ghost numerals,
+  section label) and on inner visual wrappers of chips/rows; the offset-print
+  panels themselves are straight.
+- **Filters collapsed by default.** With the live 550-article archive the tag
+  universe is 100+ chips, which buried the lead clipping (worst at 375px).
+  `ExtraFilterBar` now collapses behind a `FILTERS +` toggle with an active
+  count; classic is unchanged.
+- **Entity-decode display fix.** Live data exposed raw HTML entities in feed
+  titles (`&#8217;`); added `src/lib/text.ts` (`decodeEntities`) applied in
+  the extra lineage. Root-cause ingest fix spun off as a separate task.
+- **Additional shared modules** beyond the original list: `lib/paginate.ts`
+  (used by both lineages), `lib/text.ts`, `categoryCounts`/`collectTagUniverse`
+  in `lib/filter.ts` (classic `FilterBar` now imports the shared universe
+  helper), and `useUrlState` now preserves non-filter URL params (`theme`,
+  future `view`) instead of rebuilding the query string.
 
 ## Verification
+
+Status 2026-07-02: 56/56 unit tests pass; `npm run build` clean; live checks
+done in the dev preview (flag/toggle/persistence, ranked hierarchy on real
+data, 375px wrap measured `scrollWidth === clientWidth` with all 13 chips,
+hover inversion, Primer-hex grep = 0 matches, Anton computed as the rendered
+font, built CSS carries the `/AI-News-Reader/` base on font URLs).
+**Still pending manual runs:** Lighthouse accessibility baseline comparison
+(AC10) and `prefers-reduced-motion` emulation (AC8 — the CSS guard is in
+place); font-blocked fallback rendering (AC6) not yet exercised.
 
 Maps to acceptance criteria in `spec.md`:
 

@@ -142,3 +142,63 @@ Hidden when a specific category tab is active — the tab itself provides contex
 ## Signature Element
 
 **Tab rail as intelligence dashboard ticker.** Categories render as monospace uppercase labels with live article counts. The active tab is anchored by a 2px electric-blue underline (`after:` pseudo-element). Counts update in real-time with search. This makes the interface feel like a tuned briefing channel rather than a generic filter.
+
+---
+
+# Lineage 2 — "Stop the Presses" (F6, `?theme=extra`)
+
+## Direction & Feel
+
+**Motif:** punk newsprint collage — the print room the morning a big story
+breaks. Clippings, rubber stamps, tape strips, misregistered offset printing.
+Persona-5-grade commitment: no element left neutral. Same content and logic as
+classic; divergence is presentation-only (components under
+`src/components/extra/`).
+
+## Color Tokens (Tailwind `@theme`, `src/index.css`)
+
+| Token              | Value     | Role                                                    |
+|--------------------|-----------|---------------------------------------------------------|
+| `paper`            | `#f2ecdf` | Page canvas (newsprint cream)                           |
+| `paper-bright`     | `#fffdf7` | Clipping/panel surfaces, reversed text on ink/red       |
+| `ink-press`        | `#131210` | Text, borders, slabs, inverted hover surfaces           |
+| `ink-dim`          | `#5d574c` | Metadata, secondary text (AA on paper)                  |
+| `press-red`        | `#e5341f` | Display-size red only: ransom word block, masthead slash |
+| `press-red-deep`   | `#b3220e` | Small red text, stamps, active/hover chips (AA on paper) |
+| `press-red-bright` | `#ff6f54` | Red text on ink surfaces (bulletin kicker, citations)   |
+
+**Contrast rule:** white-on-`press-red` only at Anton display sizes (AA
+large-text); anything smaller uses `press-red-deep` on paper or
+`press-red-bright` on ink.
+
+## Typography
+
+- **Display (`font-poster`):** Anton — masthead, headlines, section labels, stamps. Always uppercase.
+- **Body (`font-press`):** Archivo — summaries, bulletin text. Row titles: Archivo 500 uppercase 13px.
+- **Wire metadata (`font-wire`):** JetBrains Mono — datelines, counts, sources, tags, nav chips, 11px.
+- Self-hosted latin woff2 subsets in `public/fonts/` (OFL), `font-display: swap`; fallbacks Impact / system.
+
+## Signature Devices
+
+- **Offset-print panel** (`OffsetPanel`): solid slab (`ink` or `red`) behind the panel, misaligned 6px via margin + translate. Flat color, no shadows. Panels are never rotated (keeps link hit-areas rectangular).
+- **The loudness dial:** every rotation derives from `--tilt-unit` (1deg) and `--stamp-tilt` (-5deg) in `:root` — turn the whole design down in one place.
+- **Tilt placement:** decorative only (stamps ±5°, tape strips/labels ≤2°, row/chip visuals ≤1.2°) — always on an inner wrapper; the interactive outer element stays unrotated with a `focus-visible` red outline.
+- **Ransom word:** longest ≥5-letter word of the lead headline reversed in a tilted `press-red` block (`ransomWordIndex` in `lib/rank.ts`, deterministic).
+- **Hover inversion:** clipping rows flip to full black (`group-hover:bg-ink-press`, text to paper).
+- **Diegetic copy** lives in `components/extra/copy.ts` (EXTRA · EXTRA, THE CLIPPINGS, FRESH, BULLETIN, wires running).
+
+## Layout
+
+```
+Masthead (EXTRA strip · wires status · classic toggle · Anton title · red slash · dateline band)
+TapeNav   (wrapping tape chips w/ counts — all categories visible at 375px · search)
+Filters   (collapsed by default behind FILTERS + toggle)
+Bulletin  (F8 slot — renders iff data.brief)
+Lead clipping (offset panel · NOTABLE stamp · ransom headline · ghost 001)
+THE CLIPPINGS (tilted rows, 10/page, lead only on page 0)
+PressFooter (wires · archive age · page)
+```
+
+Front-page ranking: `rankFrontPage` — first `important` article leads, else
+newest; `FRESH` = published <24h (`isFresh`). Reduced motion: transitions
+zeroed under `prefers-reduced-motion` (guard in `index.css`).
