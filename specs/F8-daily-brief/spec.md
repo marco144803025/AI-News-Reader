@@ -29,10 +29,12 @@ adding only cents to the ingest cost.
 
 ## Acceptance criteria
 
-- WHEN an ingest run classifies one or more new articles THEN the pipeline
+- WHEN an ingest run classifies at least 3 new articles THEN the pipeline
   SHALL generate a brief of 3–5 bullets (≤ 40 words each) synthesized only from
   that run's newly classified articles, and SHALL store it in `news.json` with
-  its own generation timestamp.
+  its own generation timestamp. *(Amended during Build: runs with 1–2 new
+  articles cannot yield a valid 3-bullet brief, so they skip the call and
+  carry the previous brief forward — observed live before the amendment.)*
 - WHEN a brief bullet draws on specific articles THEN it SHALL carry references
   (article URLs or indices) and the UI SHALL render those references as links
   to the original articles.

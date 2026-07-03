@@ -66,12 +66,34 @@ validation, in which case the previous brief is carried forward.
 
 ## Tasks
 
-- [ ] Add `Brief` / `BriefBullet` types to `src/types.ts`.
-- [ ] `ingest/lib.ts`: implement `selectBriefInput` (cap ~50 articles, important first then newest), `buildBriefPrompt`, `parseBriefResponse` (shape + ref validation, index → URL resolution), `carryForwardBrief`.
-- [ ] Tests: valid response, malformed JSON, out-of-range refs dropped, bullet-count bounds enforced, carry-forward on empty run and on failure.
-- [ ] Wire `generateBrief` into `ingest/ingest.ts` (after classification, `withRetry` + try/catch); write `brief` on both output paths (new articles / no new articles).
-- [ ] `BriefPanel.tsx` + All-view integration in `App.tsx`; citation links open the cited article in a new tab.
-- [ ] Update `.interface-design/system.md` with the panel pattern.
+- [x] Add `Brief` / `BriefBullet` types to `src/types.ts`.
+- [x] `ingest/lib.ts`: `selectBriefInput`, `buildBriefPrompt`, `parseBriefResponse`, `carryForwardBrief`.
+- [x] Tests: valid response, malformed JSON, out-of-range refs dropped, bullet-count bounds enforced, carry-forward.
+- [x] Wire `generateBrief` into `ingest/ingest.ts` (after classification, `withRetry` + try/catch); `brief` written on both output paths.
+- [x] Brief panels in **both lineages** + All-view integration; citation links open the cited article in a new tab.
+- [x] Update `.interface-design/system.md` with the panel pattern.
+
+### Deviations (recorded during Build)
+
+- **Skip threshold added:** a live re-run with only 2 new articles showed the
+  model honestly returning 2 bullets, which the 3-bullet validation rejects —
+  a predictably wasted API call. Generation now requires ≥3 new articles;
+  smaller runs carry the previous brief forward without calling the API.
+  Spec AC1 amended accordingly.
+- **Two panels, not one:** F6 landed first, so the brief renders as the black
+  BULLETIN panel in the Stop the Presses lineage (slot built in F6, now on the
+  canonical `Brief` type) *and* as a new ember-bordered `BriefPanel` in the
+  classic lineage — satisfying the spec's dark-academic-language AC.
+
+### Verification status 2026-07-03 — all ACs passed, live
+
+Real ingest run: 5 new articles classified, brief generated first try —
+4 bullets, every ref validated against the archive, genuine cross-article
+synthesis (bullets 3–4 connect multiple stories), the day's NOTABLE story led
+(AC1/AC2/AC6). Immediate re-run with 2 new articles exercised the failure path
+live: validation rejected the 2-bullet response, the run completed, and the
+previous brief carried forward byte-identical (AC3/AC5). Both lineages render
+their panel in the All view only (AC4). 64/64 tests; build clean.
 
 ## Verification
 

@@ -202,3 +202,15 @@ PressFooter (wires · archive age · page)
 Front-page ranking: `rankFrontPage` — first `important` article leads, else
 newest; `FRESH` = published <24h (`isFresh`). Reduced motion: transitions
 zeroed under `prefers-reduced-motion` (guard in `index.css`).
+
+## Daily brief panels (F8)
+
+One `Brief` (3–5 bullets with URL citations, written by Claude at ingest),
+rendered per lineage in the All view only:
+
+- **Classic `BriefPanel`:** `surface-1` panel with 2px ember left border, mono
+  `// today's brief` header + date right, bullets `text-sm text-ink-secondary`,
+  citations as accent mono `[n]` links.
+- **Extra `BulletinPanel`:** `OffsetPanel slab="red" surface="ink"` — black
+  panel on red slab, `press-red-bright` Anton kicker `TODAY'S BULLETIN`,
+  bullets in Archivo on paper text, citations `press-red-bright` mono `[n]`.
