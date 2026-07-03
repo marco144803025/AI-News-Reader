@@ -1,5 +1,48 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Anton";
+  src: url("/fonts/anton-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Archivo";
+  src: url("/fonts/archivo-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Archivo";
+  src: url("/fonts/archivo-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Archivo";
+  src: url("/fonts/archivo-italic-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/fonts/jetbrains-mono-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/fonts/jetbrains-mono-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --color-canvas: #0d1117;
   --color-surface-1: #161b22;
@@ -9,4 +52,32 @@
   --color-ink-muted: #484f58;
   --color-accent: #58a6ff;
   --color-ember: #e3b341;
+
+  --color-paper: #f2ecdf;
+  --color-paper-bright: #fffdf7;
+  --color-ink-press: #131210;
+  --color-ink-dim: #5d574c;
+  --color-press-red: #e5341f;
+  --color-press-red-deep: #b3220e;
+  --color-press-red-bright: #ff6f54;
+
+  --font-poster: "Anton", Impact, "Arial Narrow", sans-serif;
+  --font-press: "Archivo", system-ui, sans-serif;
+  --font-wire: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Loudness dial for the Stop the Presses lineage: every rotation in the extra
+   theme derives from these, so the whole design can be turned down in one place. */
+:root {
+  --tilt-unit: 1deg;
+  --stamp-tilt: -5deg;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-extra *,
+  .theme-extra *::before,
+  .theme-extra *::after {
+    transition-duration: 0s !important;
+    animation: none !important;
+  }
 }
