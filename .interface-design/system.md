@@ -214,3 +214,20 @@ rendered per lineage in the All view only:
 - **Extra `BulletinPanel`:** `OffsetPanel slab="red" surface="ink"` — black
   panel on red slab, `press-red-bright` Anton kicker `TODAY'S BULLETIN`,
   bullets in Archivo on paper text, citations `press-red-bright` mono `[n]`.
+
+## Trends views (F9)
+
+One computation (`lib/trends.ts`), two presentations over `?view=trends`:
+
+- **Classic `TrendsView`:** rail item `◮ TRENDS` (right-aligned, accent
+  underline when active) + ember `N feeds down` header badge; surface-1
+  bordered rows, accent sparkline, accent-tinted share bars, entity chips in
+  the FilterBar entity style, feed issues in ember-tinted panels.
+- **Extra `PressTrends`:** footer `TRENDS →` red Anton block (flips to
+  `FRONT PAGE ↩`); ink label bands (RISING / COOLING / PRESS VOLUME /
+  SECTIONS / IN THE NEWS / WIRE HEALTH), press-red sparkline in an
+  `OffsetPanel`, solid ink share bars, hover-inverting rows, `WIRE DOWN`
+  stamps on red-slab panels for failing feeds.
+- Rows/chips navigate by writing the normal filter state (`?topics=`,
+  `?entities=`) and clearing `view` — trends are an entry point, not a dead
+  end.

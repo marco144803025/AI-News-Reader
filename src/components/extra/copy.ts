@@ -15,6 +15,8 @@ export const LABELS = {
   loading: "INKING THE PRESSES...",
   prev: "← PREV",
   next: "NEXT →",
+  trends: "TRENDS →",
+  frontPage: "FRONT PAGE ↩",
   curatedBy: "CURATED BY CLAUDE",
   wiresRunning: (ok: number, total: number) => `${ok}/${total} WIRES RUNNING`,
   clippingsFiled: (n: number) => `${n} CLIPPINGS FILED`,

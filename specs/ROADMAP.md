@@ -14,7 +14,7 @@ feature must reach **Done** before the next starts, unless explicitly paralleliz
 | F5  | [Email subscriptions per tag](./F5-email-subscriptions/)         | Not started | UX         |
 | F7  | [Portfolio presentation & shareability](./F7-portfolio-presentation/) | Done   | Portfolio  |
 | F8  | [AI Daily Brief](./F8-daily-brief/)                              | Done        | Content    |
-| F9  | [Trends & pipeline transparency](./F9-trends-dashboard/)         | Build       | Content    |
+| F9  | [Trends & pipeline transparency](./F9-trends-dashboard/)         | Done        | Content    |
 
 ## Phase 0 — Foundation
 

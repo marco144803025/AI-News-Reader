@@ -6,6 +6,7 @@ export type FilterState = {
   topics: string[];
   traits: string[];
   entities: string[];
+  view?: "trends"; // non-filter navigation state; ignored by filterArticles
 };
 
 export const EMPTY_FILTER: FilterState = {

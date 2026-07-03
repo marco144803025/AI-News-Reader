@@ -26,7 +26,7 @@ export default function TapeNav({
             key={cat}
             active={state.category === cat}
             tilt={CHIP_TILTS[i % CHIP_TILTS.length]}
-            onClick={() => onChange({ ...state, category: cat })}
+            onClick={() => onChange({ ...state, category: cat, view: undefined })}
           >
             {cat.toUpperCase()} {counts.get(cat) ?? 0}
           </TapeChip>

@@ -55,14 +55,40 @@ export type TrendsData = {
 
 ## Tasks
 
-- [ ] `src/lib/trends.ts`: `computeTrends(articles, feedHealth, now)` and helpers; export `FAILING_THRESHOLD = 2`.
-- [ ] Unit tests with a fixed clock: momentum windows, min-count filtering, UTC day bucketing, entity counting, feed-issue extraction, `sufficientHistory` edge (< 14 days of data).
-- [ ] Extend `useUrlState` with the `view` param; selecting a category or tag clears it.
-- [ ] SVG chart primitives (`Sparkline`, bar rows) in the design-system palette.
-- [ ] `TrendsView` — rising/falling tag lists (clickable → `?tags=`), volume sparkline, category share bars, "in the news" entities, feed-health strip with per-feed detail on expand.
-- [ ] `App.tsx` integration: right-aligned rail item, view switch, header warning badge (`N/M feeds failing`) shown only when failures exist.
-- [ ] Graceful low-data state: explanatory note instead of momentum lists when `sufficientHistory` is false.
-- [ ] Update `.interface-design/system.md`.
+- [x] `src/lib/trends.ts`: `computeTrends(articles, now)` + `feedIssues(feedHealth)`; `FAILING_THRESHOLD = 2` exported.
+- [x] Unit tests with a fixed clock: momentum windows, min-count filtering, UTC day bucketing, entity counting, feed-issue extraction, `sufficientHistory` edge.
+- [x] `useUrlState` + `FilterState` extended with the `view` param; category/tag selection clears it.
+- [x] `Sparkline` SVG primitive (lineage-neutral, currentColor); share bars per view.
+- [x] Trends views — rising/falling tag lists (clickable → topic filter), volume sparkline, category share bars, "in the news" entities, feed-health detail.
+- [x] Integration: classic rail `◮ TRENDS` item + header failing badge; extra footer `TRENDS →` block.
+- [x] Graceful low-data state when `sufficientHistory` is false.
+- [x] Update `.interface-design/system.md`.
+
+### Deviations (recorded during Build)
+
+- **Two views, one computation:** the plan predates F6 — trends now render as
+  `TrendsView` (classic, dark-academic) and `PressTrends` (Stop the Presses),
+  both thin presentations over the same `lib/trends.ts` output and the shared
+  `Sparkline` primitive.
+- **`view` lives on `FilterState`** (optional, ignored by `filterArticles`)
+  rather than a second URL hook — one writer for the URL, no races. Tag-click
+  URLs use the existing `?topics=`/`?entities=` keys (the spec's `?tags=`
+  shorthand).
+- **Entry points per lineage:** classic gets the right-aligned rail item plus
+  an ember `N feeds down` header badge (click-through to trends); extra gets
+  the footer `TRENDS →` red block per the F6 direction (masthead already
+  reports wire status there).
+
+### Verification status 2026-07-03 — all ACs passed
+
+71/71 tests (fixed-clock momentum/bucketing/threshold suites). Live on real
+data: rising/falling lists populated (e.g. applications +11 vs llm −9),
+26-day volume sparkline, category share, entity ranking; wire health names
+the real failing feed ("Anthropic News", 404) in both views and the classic
+header badge appears; clicking a rising tag navigated to
+`?topics=applications` with `view` cleared (shareable, AC3); low-data note
+covered by unit test; only network request remains `news.json` (the views
+compute from already-fetched state).
 
 ## Verification
 

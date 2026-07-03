@@ -14,6 +14,7 @@ import ExtraFilterBar from "./ExtraFilterBar";
 import LeadClipping from "./LeadClipping";
 import Masthead from "./Masthead";
 import PressFooter from "./PressFooter";
+import PressTrends from "./PressTrends";
 import TapeChip from "./TapeChip";
 import TapeNav from "./TapeNav";
 import { LABELS } from "./copy";
@@ -80,6 +81,7 @@ export default function ExtraApp({
 
   const tabs = ["All", ...data.categories];
   const brief = data.brief;
+  const isTrends = filterState.view === "trends";
 
   return (
     <div className="theme-extra min-h-screen overflow-x-clip bg-paper font-press text-ink-press">
@@ -91,6 +93,31 @@ export default function ExtraApp({
           state={filterState}
           onChange={setFilterState}
         />
+        {isTrends ? (
+          <PressTrends
+            data={data}
+            now={now}
+            onOpenTopic={(tag) =>
+              setFilterState({
+                query: "",
+                category: "All",
+                topics: [tag],
+                traits: [],
+                entities: [],
+              })
+            }
+            onOpenEntity={(tag) =>
+              setFilterState({
+                query: "",
+                category: "All",
+                topics: [],
+                traits: [],
+                entities: [tag],
+              })
+            }
+          />
+        ) : (
+          <>
         <ExtraFilterBar
           scopedArticles={categoryScoped}
           state={filterState}
@@ -148,8 +175,22 @@ export default function ExtraApp({
             )}
           </>
         )}
+          </>
+        )}
 
-        <PressFooter data={data} page={page} totalPages={totalPages} now={now} />
+        <PressFooter
+          data={data}
+          page={page}
+          totalPages={totalPages}
+          now={now}
+          trendsActive={isTrends}
+          onToggleTrends={() =>
+            setFilterState({
+              ...filterState,
+              view: isTrends ? undefined : "trends",
+            })
+          }
+        />
       </div>
     </div>
   );

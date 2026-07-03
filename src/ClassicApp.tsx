@@ -2,9 +2,11 @@ import { useEffect, useMemo, useState } from "react";
 import BriefPanel from "./components/BriefPanel";
 import CategorySection from "./components/CategorySection";
 import FilterBar from "./components/FilterBar";
+import TrendsView from "./components/TrendsView";
 import type { LineageProps } from "./lib/lineage";
 import { categoryCounts, EMPTY_FILTER, filterArticles, hasActiveFilters } from "./lib/filter";
 import { paginate } from "./lib/paginate";
+import { feedIssues } from "./lib/trends";
 
 const PAGE_SIZE = 8;
 const PREVIEW_SIZE = 4;
@@ -92,6 +94,8 @@ export default function ClassicApp({
   const staleness = daysAgo(data.generatedAt);
   const tabs = ["All", ...data.categories];
   const activeFiltersOn = hasActiveFilters(filterState);
+  const isTrends = filterState.view === "trends";
+  const failingFeeds = feedIssues(data.feedHealth).length;
 
   return (
     <div className="flex h-screen flex-col overflow-hidden bg-canvas text-ink">
@@ -115,6 +119,16 @@ export default function ClassicApp({
           <span className="opacity-30">·</span>
           <span>{data.articles.length} articles</span>
         </div>
+        {failingFeeds > 0 && (
+          <button
+            type="button"
+            onClick={() => setFilterState({ ...filterState, view: "trends" })}
+            title="Open wire health in trends"
+            className="shrink-0 rounded border border-[rgba(227,179,65,0.25)] bg-[rgba(227,179,65,0.07)] px-2 py-1 font-mono text-[10px] text-ember transition-colors hover:border-ember"
+          >
+            ▲ {failingFeeds} feed{failingFeeds > 1 ? "s" : ""} down
+          </button>
+        )}
         <button
           type="button"
           onClick={() => setTheme("extra")}
@@ -135,11 +149,11 @@ export default function ClassicApp({
               <button
                 key={cat}
                 onClick={() => {
-                  setFilterState({ ...filterState, category: cat });
+                  setFilterState({ ...filterState, category: cat, view: undefined });
                   setShowNotableOnly(false);
                 }}
                 className={`relative flex shrink-0 items-center gap-1.5 px-3 py-3 font-mono text-xs font-medium transition-colors ${
-                  isActive
+                  isActive && !isTrends
                     ? "text-ink after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-accent after:content-['']"
                     : "text-ink-secondary hover:text-ink"
                 }`}
@@ -157,30 +171,74 @@ export default function ClassicApp({
               </button>
             );
           })}
-          {activeCategory === "Research" && (
+          <div className="ml-auto flex shrink-0 items-stretch">
+            {activeCategory === "Research" && !isTrends && (
+              <button
+                onClick={() => setShowNotableOnly((v) => !v)}
+                className={`flex shrink-0 items-center gap-1.5 px-3 py-3 font-mono text-xs transition-colors ${
+                  showNotableOnly ? "text-ember" : "text-ink-secondary hover:text-ink"
+                }`}
+              >
+                <span>{showNotableOnly ? "★" : "☆"}</span>
+                <span>{showNotableOnly ? "notable only" : "show all"}</span>
+              </button>
+            )}
             <button
-              onClick={() => setShowNotableOnly((v) => !v)}
-              className={`ml-auto flex shrink-0 items-center gap-1.5 px-3 py-3 font-mono text-xs transition-colors ${
-                showNotableOnly ? "text-ember" : "text-ink-secondary hover:text-ink"
+              onClick={() =>
+                setFilterState({
+                  ...filterState,
+                  view: isTrends ? undefined : "trends",
+                })
+              }
+              className={`relative flex shrink-0 items-center gap-1.5 px-3 py-3 font-mono text-xs font-medium transition-colors ${
+                isTrends
+                  ? "text-ink after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-accent after:content-['']"
+                  : "text-ink-secondary hover:text-ink"
               }`}
             >
-              <span>{showNotableOnly ? "★" : "☆"}</span>
-              <span>{showNotableOnly ? "notable only" : "show all"}</span>
+              ◮ TRENDS
             </button>
-          )}
+          </div>
         </div>
       </div>
 
       {/* Filter Bar */}
-      <FilterBar
-        scopedArticles={categoryScoped}
-        state={filterState}
-        onChange={setFilterState}
-      />
+      {!isTrends && (
+        <FilterBar
+          scopedArticles={categoryScoped}
+          state={filterState}
+          onChange={setFilterState}
+        />
+      )}
 
       {/* Scrollable Content */}
       <main className="flex-1 overflow-y-auto">
         <div className="mx-auto max-w-5xl px-5 py-6">
+          {isTrends ? (
+            <TrendsView
+              data={data}
+              now={Date.now()}
+              onOpenTopic={(tag) =>
+                setFilterState({
+                  query: "",
+                  category: "All",
+                  topics: [tag],
+                  traits: [],
+                  entities: [],
+                })
+              }
+              onOpenEntity={(tag) =>
+                setFilterState({
+                  query: "",
+                  category: "All",
+                  topics: [],
+                  traits: [],
+                  entities: [tag],
+                })
+              }
+            />
+          ) : (
+            <>
           {!inSingleView && data.brief && <BriefPanel brief={data.brief} />}
           {grouped.length === 0 ? (
             <div className="flex flex-col items-start gap-3">
@@ -235,6 +293,8 @@ export default function ClassicApp({
                   </button>
                 </div>
               )}
+            </>
+          )}
             </>
           )}
         </div>

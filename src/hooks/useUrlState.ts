@@ -18,10 +18,11 @@ function readFromUrl(): FilterState {
     topics: parseList(p.get("topics")),
     traits: parseList(p.get("traits")),
     entities: parseList(p.get("entities")),
+    view: p.get("view") === "trends" ? "trends" : undefined,
   };
 }
 
-const FILTER_KEYS = ["q", "category", "topics", "traits", "entities"];
+const FILTER_KEYS = ["q", "category", "topics", "traits", "entities", "view"];
 
 function writeToUrl(state: FilterState) {
   // Start from the current URL so non-filter params (e.g. `theme`) survive.
@@ -33,6 +34,7 @@ function writeToUrl(state: FilterState) {
   if (state.topics.length) p.set("topics", state.topics.join(","));
   if (state.traits.length) p.set("traits", state.traits.join(","));
   if (state.entities.length) p.set("entities", state.entities.join(","));
+  if (state.view) p.set("view", state.view);
 
   const qs = p.toString();
   const next = `${window.location.pathname}${qs ? `?${qs}` : ""}${window.location.hash}`;
