@@ -21,8 +21,12 @@ function readFromUrl(): FilterState {
   };
 }
 
+const FILTER_KEYS = ["q", "category", "topics", "traits", "entities"];
+
 function writeToUrl(state: FilterState) {
-  const p = new URLSearchParams();
+  // Start from the current URL so non-filter params (e.g. `theme`) survive.
+  const p = new URLSearchParams(window.location.search);
+  for (const key of FILTER_KEYS) p.delete(key);
   if (state.query.trim()) p.set("q", state.query.trim());
   if (state.category && state.category !== "All")
     p.set("category", state.category);

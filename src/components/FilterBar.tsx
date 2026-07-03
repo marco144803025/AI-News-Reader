@@ -1,6 +1,10 @@
 import { useMemo, type ReactElement } from "react";
 import type { Article, Tags } from "../types";
-import { hasActiveFilters, type FilterState } from "../lib/filter";
+import {
+  collectTagUniverse,
+  hasActiveFilters,
+  type FilterState,
+} from "../lib/filter";
 
 type GroupKey = keyof Tags;
 
@@ -40,19 +44,6 @@ const GROUP_STYLES: Record<
   },
 };
 
-function collectUniverse(
-  articles: Article[],
-  group: GroupKey
-): string[] {
-  const set = new Set<string>();
-  for (const a of articles) {
-    const list = a.tags?.[group];
-    if (!list) continue;
-    for (const t of list) set.add(t);
-  }
-  return [...set].sort();
-}
-
 function toggle(list: string[], value: string): string[] {
   return list.includes(value)
     ? list.filter((v) => v !== value)
@@ -70,9 +61,9 @@ export default function FilterBar({
 }) {
   const universes = useMemo(
     () => ({
-      topics: collectUniverse(scopedArticles, "topics"),
-      traits: collectUniverse(scopedArticles, "traits"),
-      entities: collectUniverse(scopedArticles, "entities"),
+      topics: collectTagUniverse(scopedArticles, "topics"),
+      traits: collectTagUniverse(scopedArticles, "traits"),
+      entities: collectTagUniverse(scopedArticles, "entities"),
     }),
     [scopedArticles]
   );

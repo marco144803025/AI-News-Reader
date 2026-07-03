@@ -62,6 +62,35 @@ export function filterArticles(
   });
 }
 
+// Counts per category under the current search + tag filter, ignoring the
+// category constraint itself — drives navigation counts in both lineages.
+export function categoryCounts(
+  articles: Article[],
+  state: FilterState
+): Map<string, number> {
+  const base = filterArticles(articles, { ...state, category: "All" });
+  const map = new Map<string, number>();
+  map.set("All", base.length);
+  for (const a of base) {
+    map.set(a.category, (map.get(a.category) ?? 0) + 1);
+  }
+  return map;
+}
+
+// Unique, sorted tag values present in the given articles for one tag group.
+export function collectTagUniverse(
+  articles: Article[],
+  group: keyof Tags
+): string[] {
+  const set = new Set<string>();
+  for (const a of articles) {
+    const list = a.tags?.[group];
+    if (!list) continue;
+    for (const t of list) set.add(t);
+  }
+  return [...set].sort();
+}
+
 export function hasActiveFilters(state: FilterState): boolean {
   return (
     state.query.trim() !== "" ||
