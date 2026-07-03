@@ -1,22 +1,738 @@
 {
-  "generatedAt": "2026-07-02T08:41:40.684Z",
-  "daysBack": 2,
+  "generatedAt": "2026-07-03T08:48:46.992Z",
+  "daysBack": 3,
   "categories": [
-    "Applications",
-    "Business & Funding",
-    "AI Safety & Alignment",
-    "Agent Frameworks",
     "Research",
+    "Agent Frameworks",
     "Model Releases",
-    "Regulation & Policy",
+    "Applications",
+    "AI Safety & Alignment",
+    "MCP",
     "Other",
-    "Open Source",
-    "Evaluation",
-    "Hardware & Compute",
     "Developer Tools",
-    "MCP"
+    "Hardware & Compute",
+    "Business & Funding",
+    "Regulation & Policy",
+    "Open Source",
+    "Evaluation"
   ],
   "articles": [
+    {
+      "title": "PACE: A Neuro-Symbolic Framework for Plausible and Actionable Counterfactual Explanations",
+      "url": "https://arxiv.org/abs/2607.01306",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-03T04:00:00.000Z",
+      "snippet": "arXiv:2607.01306v1 Announce Type: new Abstract: Counterfactual explanations explain machine learning predictions by identifying minimal input changes that would alter a model's decision. Although many existing methods successfully generate prediction-changing alternatives, they often produce unrealistic or infeasible recommendations due to a lack of explicit mechanisms for incorporating domain knowledge and intervention constraints. Neuro-symbolic AI offers a promising direction by combining data-driven predictive models with symbolic reasoning capable of representing human-understandable rule",
+      "category": "Research",
+      "summary": "PACE is a neuro-symbolic framework that generates plausible and actionable counterfactual explanations for ML predictions using domain knowledge constraints.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "interpretability",
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Auto-FL-Research: Agentic Search for Federated Learning Algorithms",
+      "url": "https://arxiv.org/abs/2607.01366",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-03T04:00:00.000Z",
+      "snippet": "arXiv:2607.01366v1 Announce Type: new Abstract: Federated learning (FL) research often depends on many small but consequential algorithmic choices: optimizer variants, server aggregation rules, local training schedules, normalization, regularization, and model architecture. These choices are expensive to explore manually and difficult to compare fairly when candidate changes can also alter the FL training or evaluation path. In this work, we present Auto-FL-Research (AFR), a constrained coding-agent workflow for FL algorithmic recipe search. Agents may propose and implement candidate training ",
+      "category": "Agent Frameworks",
+      "summary": "Auto-FL-Research is an agentic workflow that automates algorithmic recipe search for federated learning through constrained code generation.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "training"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "The Wiola Architecture for Efficient Small Language Models",
+      "url": "https://arxiv.org/abs/2607.01394",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-03T04:00:00.000Z",
+      "snippet": "arXiv:2607.01394v1 Announce Type: new Abstract: We present Wiola, a fully original Small Language Model (SLM) architecture built from first principles, sharing no structural lineage with any existing model family including GPT, LLaMA, Mistral, or Falcon. Wiola introduces five independently novel components: (i) Spiral Rotary Positional Encoding (SRPE), which embeds token positions on a three-dimensional helical manifold combining absolute, relative, and hierarchical positional signals; (ii) Gated Cross-Layer Attention (GCLA), providing each decoder layer with soft cross-attention access to com",
+      "category": "Model Releases",
+      "summary": "Wiola is a novel small language model architecture with original components including spiral rotary positional encoding and gated cross-layer attention.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm"
+        ],
+        "traits": [
+          "research",
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Agent4cs: A Multi-agent System for Code Summarization in Large Hierarchical Codebases",
+      "url": "https://arxiv.org/abs/2607.01425",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-03T04:00:00.000Z",
+      "snippet": "arXiv:2607.01425v1 Announce Type: new Abstract: Understanding large, complex codebases, especially those with obfuscated structures and incomplete documentation, remains a significant challenge. Existing code summarization solutions often rely on a single language model or coding assistant like Claude Code, and treat source code as flat text, underutilizing the rich interdependencies and hierarchical information within a repository. To address these shortcomings, we propose Agent4cs - a multi-agent framework that summarizes large codebases in a bottom-up fashion, where a summarization agent fo",
+      "category": "Agent Frameworks",
+      "summary": "Agent4cs is a multi-agent system that summarizes large codebases by processing hierarchical code dependencies and interdependencies.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "applications"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "When Should Service Agents Reconsider? Difficulty-Routed Control in Customer-Service Operations",
+      "url": "https://arxiv.org/abs/2607.01426",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-03T04:00:00.000Z",
+      "snippet": "arXiv:2607.01426v1 Announce Type: new Abstract: Autonomous customer-service agents are shifting from conversational interfaces toward operational execution roles: they retrieve firm records, apply service policies, and execute backend writes such as refunds, cancellations, exchanges, order modifications, and reservation changes. This shift creates a service-control problem: firms must keep routine service fast and low-friction while preventing operational errors on requests where customer instructions, policy constraints, firm records, and backend writes interact. We propose a difficulty-route",
+      "category": "Agent Frameworks",
+      "summary": "A difficulty-routed control approach enables autonomous customer service agents to handle routine tasks efficiently while preventing operational errors on complex requests.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "applications"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "CreativityNeuro: Steering Language Model Weights to Improve Divergent Thinking and Reduce Mode Collapse",
+      "url": "https://arxiv.org/abs/2607.01433",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-03T04:00:00.000Z",
+      "snippet": "arXiv:2607.01433v1 Announce Type: new Abstract: Divergent thinking is a crucial aspect of creativity, yet large language models (LLMs) tend to consistently generate similar responses to open-ended questions, in what has been termed the artificial hivemind effect. Here, we introduce CreativityNeuro, a data-free method for enhancing divergent thinking in LLMs via contrastive weight steering. We evaluate our method across multiple creativity assessments and report several main findings. On the Divergent Association Task (DAT), a vocabulary-space creativity test, CreativityNeuro improves performan",
+      "category": "Research",
+      "summary": "CreativityNeuro uses contrastive weight steering to enhance divergent thinking in LLMs and reduce mode collapse on creative tasks.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm",
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Discrete Diffusion Language Models for Interactive Radiology Report Drafting",
+      "url": "https://arxiv.org/abs/2607.01436",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-03T04:00:00.000Z",
+      "snippet": "arXiv:2607.01436v1 Announce Type: new Abstract: Diffusion language models, which generate text by denoising a token canvas bidirectionally instead of emitting tokens left to right, have become competitive with autoregressive (AR) generation. Medical foundation models, however, remain almost entirely autoregressive. We adapt a mixture-of-experts diffusion language model, DiffusionGemma-26B, and benchmark it against its same-size AR sibling Gemma-4-26B under an identical LoRA recipe on medical visual question answering datasets, scored by a verbosity-robust LLM judge. Diffusion matches or exceed",
+      "category": "Applications",
+      "summary": "A diffusion language model adapted for medical report drafting matches or exceeds autoregressive baselines on radiology report generation tasks.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal",
+          "applications"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Beyond Next-Token Prediction: An RLVR Proof of Concept for Tool-Use Agents on Atlassian Workflows",
+      "url": "https://arxiv.org/abs/2607.01465",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-03T04:00:00.000Z",
+      "snippet": "arXiv:2607.01465v1 Announce Type: new Abstract: Large language models are trained to predict the next token, not to act inside a specific API. In niche enterprise SaaS workflows -- where success means hitting the right endpoint with the right nested arguments in the right order -- this objective mismatch shows up as silent failures: dropped required fields, hallucinated tools, or early stops after a single read. We ask whether Reinforcement Learning with Verifiable Rewards (RLVR), applied directly in the target environment, closes the gap. As a proof of concept we build a suite of five synthet",
+      "category": "Agent Frameworks",
+      "summary": "RLVR applied to tool-use agents improves performance on enterprise SaaS workflows by learning to hit correct API endpoints with proper arguments.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "applications"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "World Feedback for Clinical Agents: Diagnosing RL in FHIR Environments",
+      "url": "https://arxiv.org/abs/2607.01470",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-03T04:00:00.000Z",
+      "snippet": "arXiv:2607.01470v1 Announce Type: new Abstract: Clinical protocol-execution tasks -- checking a lab value, applying a threshold, placing a correctly structured FHIR order -- are natural candidates for RL from world feedback: once clinical SMEs encode decision logic into a verifier, that verifier grades unlimited rollouts without per-episode annotation. But applying RL requires a sound feedback channel and sufficient base capability. We audit MedAgentBench v1/v2, find a 41.7\\% silent-finish ceiling that makes inaction the RL dominant strategy, and construct \\textbf{MedAgentBench-v3 (MAB-v3)} (5",
+      "category": "Agent Frameworks",
+      "summary": "MedAgentBench-v3 provides a testbed for RL-based clinical agents with world feedback, identifying silent failures and improving verification mechanisms.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "applications"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Procedural Memory Distillation: Online Reflection for Self-Improving Language Models",
+      "url": "https://arxiv.org/abs/2607.01480",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-03T04:00:00.000Z",
+      "snippet": "arXiv:2607.01480v1 Announce Type: new Abstract: Reinforcement learning with verifiable rewards (RLVR), along with recent selfdistillation variants such as SDPO, evaluates each rollout against a verifier and updates the policy from that episode-level signal. However, the richer procedural information in the rollout is rarely retained or reused. Across episodes and epochs, the model repeatedly encounters related problems under a changing policy, producing cross-episode signals that episode-local updates cannot capture: which strategies consistently pass verification, which failure modes persist,",
+      "category": "Research",
+      "summary": "Procedural Memory Distillation captures and reuses cross-episode procedural knowledge to improve self-improving language models beyond episode-local RL updates.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm",
+          "training"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "The Agentic Garden of Forking Paths",
+      "url": "https://arxiv.org/abs/2607.01507",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-03T04:00:00.000Z",
+      "snippet": "arXiv:2607.01507v1 Announce Type: new Abstract: Empirical research rarely admits a unique analysis. Different analytical choices can lead to different conclusions from the same data, yet these hidden forking paths are difficult to observe. We show that AI agents capture much of the analytical variation among human researchers while making these paths explicit. Across four high-stakes domains, assigning different personas is sufficient for AI agents to report divergent, often opposing, conclusions from the same data and question, with findings systematically aligned with those beliefs. In a stu",
+      "category": "Research",
+      "summary": "AI agents reveal hidden analytical forking paths in research by generating divergent conclusions from the same data based on persona assignments.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Janus: a Playground for User-Involved Agentic Permission Management",
+      "url": "https://arxiv.org/abs/2607.01510",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-03T04:00:00.000Z",
+      "snippet": "arXiv:2607.01510v1 Announce Type: new Abstract: AI agents that autonomously execute tool calls on a user's behalf raise pressing questions about permission management: what role could users play, and what role should they play? Despite many proposed approaches, the user's role in agentic permission management remains under explored. We introduce Janus, a playground system for implementing and evaluating user-involved agentic permission management designs. Janus consists of two components: Janus-Core, a modular agentic system supporting a diverse spectrum of permission management designs, and J",
+      "category": "Agent Frameworks",
+      "summary": "Janus is a playground system for exploring user-involved permission management designs in autonomous AI agents executing tool calls.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "safety"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Revisiting Chain-of-Thought Reasoning under Limited Supervision: Semi-supervised Chain-of-Thought Learning",
+      "url": "https://arxiv.org/abs/2607.01511",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-03T04:00:00.000Z",
+      "snippet": "arXiv:2607.01511v1 Announce Type: new Abstract: Chain-of-thought (CoT) reasoning has emerged as an effective approach for activating latent reasoning capabilities in large language models. However, most existing CoT methods use reasoning chains mainly as inference-time prompts, while the generated reasoning traces are rarely reused as semi-supervised learning signals. In this report, we define \\textbf{Semi-supervised Chain-of-Thought Learning} and propose \\textbf{Semi-CoT}, a simple framework that uses unlabeled questions to construct pseudo reasoning supervision. Semi-CoT samples multiple pse",
+      "category": "Research",
+      "summary": "Proposes Semi-CoT, a framework that leverages unlabeled questions to generate pseudo reasoning supervision for chain-of-thought learning in LLMs, improving data efficiency of CoT methods.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning",
+          "training"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "OPINE-World: Programmatic World Modeling with Ontology-error-Prioritized Interactive Exploration",
+      "url": "https://arxiv.org/abs/2607.01531",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-03T04:00:00.000Z",
+      "snippet": "arXiv:2607.01531v1 Announce Type: new Abstract: Learning how an environment behaves from interaction is central to building agents that adapt to unfamiliar tasks. World models learned with deep networks are flexible but data-hungry and transfer poorly beyond their training distribution. Program-synthesized world models, written as source code by LLMs and refined through counterexample-guided inductive synthesis (CEGIS), are instead data-efficient and reusable, yet they have been demonstrated mainly on structured-state worlds with a given object vocabulary, and a single program search does not ",
+      "category": "Research",
+      "summary": "Introduces OPINE-World, which uses LLMs and counterexample-guided synthesis to create data-efficient, reusable program-synthesized world models for agent adaptation and environment interaction.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Scaling Trends for Lie Detector Oversight in Preference Learning",
+      "url": "https://arxiv.org/abs/2607.01567",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-03T04:00:00.000Z",
+      "snippet": "arXiv:2607.01567v1 Announce Type: new Abstract: Deceptive behavior in LLMs is costly to monitor and prevent, motivating approaches such as Scalable Oversight via Lie Detectors (SOLiD) (Cundy & Gleave, 2025), which uses lie detectors to identify responses for review by high-cost labelers. In this paper, we scale SOLiD to larger models and evaluate it in more diverse and realistic preference-learning settings. We find favorable scaling: undetected deception drops from 34% for 1B-parameter models to 14% for 405B-parameter models at a detector true positive rate of 99%, and expensive human labeler",
+      "category": "AI Safety & Alignment",
+      "summary": "Evaluates scaling properties of lie detector oversight (SOLiD) for detecting deceptive behavior in larger LLMs, finding that undetected deception decreases significantly from 1B to 405B parameter models.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "alignment"
+        ],
+        "traits": [
+          "benchmark"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "The Safari MCP server for web developers",
+      "url": "https://webkit.org/blog/18136/introducing-the-safari-mcp-server-for-web-developers/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-07-03T01:37:11.000Z",
+      "snippet": "Article URL: https://webkit.org/blog/18136/introducing-the-safari-mcp-server-for-web-developers/ Comments URL: https://news.ycombinator.com/item?id=48769639 Points: 78 # Comments: 13",
+      "category": "MCP",
+      "summary": "Apple introduces Safari MCP server, enabling web developers to integrate Safari browser capabilities with AI assistants through the Model Context Protocol.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "mcp",
+          "developer-tools"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Mark Zuckerberg tells staff that AI agents haven’t progressed as quickly as he’d hoped",
+      "url": "https://techcrunch.com/2026/07/02/mark-zuckerberg-tells-staff-that-ai-agents-havent-progressed-as-quickly-as-hed-hoped/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-02T23:38:10.000Z",
+      "snippet": "At an internal meeting, the Meta CEO reportedly said that AI development efforts were not moving as quickly as anticipated.",
+      "category": "Agent Frameworks",
+      "summary": "Meta CEO Mark Zuckerberg stated internally that AI agent development has progressed slower than expected.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "meta"
+        ]
+      }
+    },
+    {
+      "title": "Jersey Mike’s IPO illustrates how bad the AI hype has become",
+      "url": "https://techcrunch.com/2026/07/02/jersey-mikes-ipo-illustrates-how-bad-the-ai-hype-has-become/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-02T20:11:59.000Z",
+      "snippet": "Just for kicks, I took a look at Jersey Mike's IPO documents. Surely a sandwich shop would have no need to mention AI. But lo and behold.",
+      "category": "Other",
+      "summary": "A sandwich chain's IPO filing included AI references, illustrating the prevalence of AI hype across industries.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "hype"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "The short leash AI coding method for beating Fable",
+      "url": "https://blog.okturtles.org/2026/07/short-leash-ai-method/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-07-02T19:11:57.000Z",
+      "snippet": "Article URL: https://blog.okturtles.org/2026/07/short-leash-ai-method/ Comments URL: https://news.ycombinator.com/item?id=48766026 Points: 128 # Comments: 150",
+      "category": "Developer Tools",
+      "summary": "Presents a 'short leash AI' coding method as a technique for improving AI-assisted code generation and problem-solving workflows.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "coding"
+        ],
+        "traits": [
+          "tutorial",
+          "open-source"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Claude-real-video － any LLM can watch a video",
+      "url": "https://github.com/HUANGCHIHHUNGLeo/claude-real-video",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-07-02T19:10:12.000Z",
+      "snippet": "Article URL: https://github.com/HUANGCHIHHUNGLeo/claude-real-video Comments URL: https://news.ycombinator.com/item?id=48766005 Points: 131 # Comments: 41",
+      "category": "Developer Tools",
+      "summary": "Releases claude-real-video, an open-source tool enabling any LLM to process and analyze video content by integrating with Claude's vision capabilities.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal",
+          "vision"
+        ],
+        "traits": [
+          "open-source"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Meta quietly launches vibe-coded gaming app Pocket",
+      "url": "https://techcrunch.com/2026/07/02/meta-quietly-launches-vibe-coded-gaming-app-pocket/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-02T18:44:02.000Z",
+      "snippet": "Meta has quietly launched Pocket, an experimental AI app that lets users generate and share interactive mini games using text prompts.",
+      "category": "Applications",
+      "summary": "Meta quietly launched Pocket, an AI-powered app that generates interactive mini-games from text prompts.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": [
+          "meta"
+        ]
+      }
+    },
+    {
+      "title": "Anthropic is discussing a new custom chip with Samsung",
+      "url": "https://techcrunch.com/2026/07/02/anthropic-is-discussing-a-new-custom-chip-with-samsung/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-02T18:31:09.000Z",
+      "snippet": "The news comes about a week after OpenAI announced its own custom AI chip in a partnership with Broadcom.",
+      "category": "Hardware & Compute",
+      "summary": "Anthropic is in discussions with Samsung to develop a custom AI chip, following OpenAI's recent custom chip partnership with Broadcom.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "hardware"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "Weird Al Yankovic Pulled Out of AI Ad Deal: 'I Can't Be the Poster Boy for AI'",
+      "url": "https://variety.com/2026/biz/news/weird-al-yankovic-rejected-ai-commercial-money-offer-1236800794/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-07-02T17:03:30.000Z",
+      "snippet": "Article URL: https://variety.com/2026/biz/news/weird-al-yankovic-rejected-ai-commercial-money-offer-1236800794/ Comments URL: https://news.ycombinator.com/item?id=48764326 Points: 66 # Comments: 37",
+      "category": "Other",
+      "summary": "Musician Weird Al Yankovic declines a lucrative AI advertising deal, citing concerns about being the public face of AI technology.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy",
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Achieving operational excellence with AI",
+      "url": "https://www.technologyreview.com/2026/07/02/1140045/achieving-operational-excellence-with-ai/",
+      "source": "MIT Tech Review AI",
+      "publishedAt": "2026-07-02T15:37:08.000Z",
+      "snippet": "Frameworks like Lean Six Sigma and business process management (BPM) first gained traction because they promised clarity in the chaos—a structured way to bring order to messy, sprawling operations. Lean Six Sigma emphasized statistical rigor and quality control; BPM created end-to-end maps of how work should flow across departments. Both offered a repeatable way to…",
+      "category": "Applications",
+      "summary": "An article discusses how AI frameworks like Lean Six Sigma and business process management improve operational excellence across enterprises.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "applications"
+        ],
+        "traits": [
+          "tutorial",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "OpenAI proposed donating 5% of its equity to a US sovereign wealth fund",
+      "url": "https://techcrunch.com/2026/07/02/openai-proposed-donating-5-of-its-equity-to-a-us-sovereign-wealth-fund/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-02T15:20:51.000Z",
+      "snippet": "OpenAI CEO Sam Altman has reportedly proposed giving 5% of the company’s equity to a U.S. sovereign wealth fund, reviving discussions about letting the public share in the financial gains from the AI boom.",
+      "category": "Business & Funding",
+      "summary": "OpenAI CEO Sam Altman has proposed donating 5% of the company's equity to a U.S. sovereign wealth fund to share AI boom gains with the public.",
+      "important": true,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy",
+          "commercial"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Trump gets OpenAI to offer US 5% stake, far lower than Sanders’ target",
+      "url": "https://arstechnica.com/tech-policy/2026/07/openai-floats-giving-us-5-stake-to-win-over-ai-haters/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-07-02T15:12:25.000Z",
+      "snippet": "Insiders say Sam Altman is in active talks with the Trump administration.",
+      "category": "Business & Funding",
+      "summary": "Sam Altman is in active negotiations with the Trump administration regarding OpenAI offering a 5% U.S. stake, lower than Senator Bernie Sanders' target.",
+      "important": true,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy",
+          "commercial"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Launch HN: Manufact (YC S25) – MCP Cloud",
+      "url": "https://manufact.com",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-07-02T15:11:20.000Z",
+      "snippet": "Hi HN, we are Pietro and Luigi, cofounders of Manufact (https://manufact.com), a cloud for MCP apps and servers. We used to be called mcp-use, and still build open source SDKs for MCP under that name: https://github.com/mcp-use/mcp-use. We did a Show HN about that last year: https://news.ycombinator.com/item?id=44747229. Today we want to tell you about our cloud product, Manufact, which is to mcp-use as Vercel is to Next.js. Manufact is an MCP vertical cloud designed for dev teams putting MCP Apps and servers in production.You can ship, iterate on, test and monitor your MCPs, and get them read",
+      "category": "MCP",
+      "summary": "Manufact (YC S25) launches an MCP cloud platform for deploying and managing MCP applications in production, positioning itself as the infrastructure layer for MCP ecosystems.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "mcp"
+        ],
+        "traits": [
+          "commercial",
+          "funding"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Musk’s X poses “serious risk to Americans’ privacy,” advocates warn FTC",
+      "url": "https://arstechnica.com/tech-policy/2026/07/musks-x-poses-serious-risk-to-americans-privacy-advocates-warn-ftc/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-07-02T14:39:17.000Z",
+      "snippet": "FTC urged to reject Elon Musk’s bid to end X monitoring amid AI concerns.",
+      "category": "Regulation & Policy",
+      "summary": "Privacy advocates urged the FTC to reject Elon Musk's request to end X monitoring, citing serious privacy risks from AI processing.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy",
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "No LLM Code in Dependencies",
+      "url": "https://joeyh.name/blog/entry/no_LLM_code_in_dependencies/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-07-02T14:17:23.000Z",
+      "snippet": "Article URL: https://joeyh.name/blog/entry/no_LLM_code_in_dependencies/ Comments URL: https://news.ycombinator.com/item?id=48762008 Points: 117 # Comments: 106",
+      "category": "Regulation & Policy",
+      "summary": "Advocates for avoiding LLM code in package dependencies to reduce supply chain risks and maintain code transparency and control.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy",
+          "open-source"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Microsoft launches its own AI deployment company with $2.5 billion commitment",
+      "url": "https://techcrunch.com/2026/07/02/microsoft-launches-its-own-ai-deployment-company-with-2-5-billion-commitment/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-02T13:53:00.000Z",
+      "snippet": "Microsoft follows Amazon, OpenAI, and Anthropic with its new AI deployment group.",
+      "category": "Business & Funding",
+      "summary": "Microsoft announced a new AI deployment company with a $2.5 billion commitment, joining competitors in the AI infrastructure buildout.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "funding",
+          "commercial"
+        ],
+        "entities": [
+          "microsoft"
+        ]
+      }
+    },
+    {
+      "title": "AI can't be listed as inventor on patent applications, Japan's top court rules",
+      "url": "https://japannews.yomiuri.co.jp/science-nature/technology/20260306-314930/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-07-02T13:43:41.000Z",
+      "snippet": "Article URL: https://japannews.yomiuri.co.jp/science-nature/technology/20260306-314930/ Comments URL: https://news.ycombinator.com/item?id=48761536 Points: 374 # Comments: 195",
+      "category": "Regulation & Policy",
+      "summary": "Japan's top court rules that AI systems cannot be listed as inventors on patent applications, establishing important legal precedent for AI intellectual property.",
+      "important": true,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Teaching AI to run with the turbines",
+      "url": "https://www.technologyreview.com/2026/07/02/1138433/teaching-ai-to-run-with-the-turbines/",
+      "source": "MIT Tech Review AI",
+      "publishedAt": "2026-07-02T12:51:44.000Z",
+      "snippet": "Artificial intelligence may have captured the public imagination through chatbots and image generators, but some of its most consequential use cases are unfolding far from consumer-facing tools. In industries where physical infrastructure, operational continuity, and safety are paramount, AI is becoming a core operating layer. With its sprawling industrial systems and constant stream of operational…",
+      "category": "Applications",
+      "summary": "AI is becoming a core operating layer in industrial infrastructure management, with applications in wind turbine operation and physical infrastructure optimization.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "robotics",
+          "applications"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "AI fake news complaining about how AI fake news is the death of real news",
+      "url": "https://www.niemanlab.org/2026/07/now-were-getting-ai-fake-news-complaining-about-how-ai-fake-news-is-the-death-of-real-news/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-07-02T12:40:36.000Z",
+      "snippet": "Article URL: https://www.niemanlab.org/2026/07/now-were-getting-ai-fake-news-complaining-about-how-ai-fake-news-is-the-death-of-real-news/ Comments URL: https://news.ycombinator.com/item?id=48760598 Points: 156 # Comments: 57",
+      "category": "Other",
+      "summary": "Commentary on the ironic and recursive phenomenon of AI-generated disinformation about the dangers of AI-generated disinformation, highlighting meta-challenges in AI misinformation.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Yep, we’re using OpenClaw to date now",
+      "url": "https://techcrunch.com/2026/07/02/yep-were-using-openclaw-to-date-now/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-02T12:00:00.000Z",
+      "snippet": "Ben Guez has \"a bunch of potential international wives in [his] DMs,\" thanks to an automated script he set up using OpenClaw, Claude code, and Instagram trials.",
+      "category": "Applications",
+      "summary": "A developer created an automated dating script using Claude-based code automation and Instagram APIs to generate international dating prospects.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "claude"
+        ]
+      }
+    },
+    {
+      "title": "Google’s AI buildout drove 37% increase in electricity use in 2025",
+      "url": "https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-07-02T11:15:49.000Z",
+      "snippet": "Google tries balancing AI data center emissions with clean energy efforts.",
+      "category": "Hardware & Compute",
+      "summary": "Google's 2025 electricity consumption increased 37% due to AI infrastructure buildout, highlighting the energy demands of AI data centers.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": [
+          "google"
+        ]
+      }
+    },
+    {
+      "title": "OpenAI floats giving Trump administration 5 percent cut of AI boom",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/960588/openai-government-5-percent-stake-trump",
+      "source": "The Verge AI",
+      "publishedAt": "2026-07-02T10:23:27.000Z",
+      "snippet": "OpenAI has floated giving the US government a 5 percent ownership stake as a way of easing tensions with the Trump administration and blunting mounting public backlash against AI, according to the Financial Times. CEO Sam Altman argued that giving the public a financial interest in the company would be the best way to share the upside of AI, the FT reported, citing two unnamed people familiar with the talks. He's said to have first pitched the idea to Trump early last year. Altman reportedly suggested the 5 percent figure. Based on OpenAI's latest funding round, which ended with the company va",
+      "category": "Business & Funding",
+      "summary": "OpenAI CEO Sam Altman has proposed giving the U.S. government a 5% equity stake as a way to ease tensions with the Trump administration and allow the public to share in AI's financial gains.",
+      "important": true,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy",
+          "commercial"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
     {
       "title": "The gauge broke: devs felt 20% faster with AI, measured 19% slower",
       "url": "https://intrepidkarthi.com/writing/the-gauge-broke/",
@@ -12743,52 +13459,52 @@
   ],
   "feedHealth": {
     "The Verge AI": {
-      "lastSuccess": "2026-07-02T08:41:26.863Z",
+      "lastSuccess": "2026-07-03T08:48:22.557Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "TechCrunch AI": {
-      "lastSuccess": "2026-07-02T08:41:26.912Z",
+      "lastSuccess": "2026-07-03T08:48:22.627Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Ars Technica AI": {
-      "lastSuccess": "2026-07-02T08:41:27.314Z",
+      "lastSuccess": "2026-07-03T08:48:23.025Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "VentureBeat AI": {
-      "lastSuccess": "2026-07-02T08:41:27.400Z",
+      "lastSuccess": "2026-07-03T08:48:23.317Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Anthropic News": {
       "lastSuccess": null,
       "lastError": "Status code 404",
-      "consecutiveFailures": 13
+      "consecutiveFailures": 14
     },
     "OpenAI Blog": {
-      "lastSuccess": "2026-07-02T08:41:27.799Z",
+      "lastSuccess": "2026-07-03T08:48:29.003Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Google DeepMind": {
-      "lastSuccess": "2026-07-02T08:41:28.241Z",
+      "lastSuccess": "2026-07-03T08:48:29.445Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "MIT Tech Review AI": {
-      "lastSuccess": "2026-07-02T08:41:28.326Z",
+      "lastSuccess": "2026-07-03T08:48:29.647Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "arXiv cs.AI": {
-      "lastSuccess": "2026-07-02T08:41:28.448Z",
+      "lastSuccess": "2026-07-03T08:48:29.832Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Hacker News (AI)": {
-      "lastSuccess": "2026-07-02T08:41:40.684Z",
+      "lastSuccess": "2026-07-03T08:48:46.991Z",
       "lastError": null,
       "consecutiveFailures": 0
     }
