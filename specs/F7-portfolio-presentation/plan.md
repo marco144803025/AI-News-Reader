@@ -39,13 +39,28 @@ None — no code paths or JSON shapes change.
 
 ## Tasks
 
-- [ ] Add `LICENSE` (MIT).
-- [ ] Create `public/favicon.svg`; wire favicon link, `<title>`, and meta description into `index.html`.
-- [ ] Run the dev server, capture `docs/screenshot.png` (desktop width, All view with live data); derive `public/og-image.png` at 1200×630.
-- [ ] Add OG/Twitter meta tags to `index.html` with absolute URLs.
-- [ ] Rewrite `README.md` per the spec's acceptance criteria (badges reference `test.yml` and `ingest.yml` workflows).
-- [ ] Amend `CONSTITUTION.md` rule #4 with the text proposed above.
+- [x] Add `LICENSE` (MIT).
+- [x] Create `public/favicon.svg`; wire favicon link, `<title>`, and meta description into `index.html`.
+- [x] Capture `docs/screenshot.png` (1280×800) and `public/og-image.png` (1200×630) via headless Chrome against the dev server.
+- [x] Add OG/Twitter meta tags to `index.html` with absolute URLs.
+- [x] Rewrite `README.md` per the spec's acceptance criteria (badges reference `test.yml` and `ingest.yml` workflows).
+- [x] Amend `CONSTITUTION.md` rule #4 with the text proposed above.
 - [ ] (Stretch) Record an animated GIF of search/tag filtering for the README.
+
+### Deviations (recorded during Build)
+
+- Screenshots show the **Stop the Presses edition** (`?theme=extra`), not the
+  classic All view — F6 landed first and the new identity is the repo's face;
+  the README caption explains the two-edition flag. Favicon follows the same
+  identity (paper/ink/red mark).
+
+### Verification status 2026-07-02
+
+Local checks done: build clean; built `index.html` carries the rebased favicon
+path and absolute OG URLs; live preview confirms title, meta description,
+7 OG/Twitter tags, favicon served as `image/svg+xml`; README follows the AC
+order. **Pending the next push/deploy:** badge rendering on GitHub (AC1) and
+the social-card unfurl against the live origin (AC2).
 
 ## Verification
 

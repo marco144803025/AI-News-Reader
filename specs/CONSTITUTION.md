@@ -17,8 +17,12 @@ Updates require a discussion, not a quick edit.
 3. **Node 20+ for the build, ESM only.** No CommonJS in new code. Reason:
    matches the GitHub Actions runner; ESM-only avoids dual-package hazards.
 
-4. **No client-side JS frameworks.** Plain HTML + CSS + minimal vanilla JS.
-   Reason: the reader UI must work with JS disabled.
+4. **Lean client stack.** The UI is a React + Vite static SPA (adopted with
+   the F2c redesign) styled with Tailwind. No SSR, and no additional client
+   frameworks, state-management, or component libraries; the build must remain
+   plain static files servable from GitHub Pages. *(Amended 2026-07-02 via the
+   approved F7 plan — the original rule mandated vanilla JS and predated the
+   F2c implementation.)*
 
 ## Process
 
