@@ -1,5 +1,12 @@
 import Anthropic from "@anthropic-ai/sdk";
-import type { NewsData, FeedHealth, Tags } from "../src/types.ts";
+import type {
+  Article,
+  Brief,
+  BriefBullet,
+  NewsData,
+  FeedHealth,
+  Tags,
+} from "../src/types.ts";
 
 export type Feed = { name: string; url: string };
 
@@ -249,4 +256,101 @@ export function computeGeneratedAt(
 ): string {
   if (newCount > 0) return now();
   return existing?.generatedAt ?? now();
+}
+
+// ---------------------------------------------------------------------------
+// Daily brief (F8)
+
+export const BRIEF_INPUT_CAP = 50;
+export const BRIEF_MIN_BULLETS = 3;
+export const BRIEF_MAX_BULLETS = 5;
+
+// Important articles first (they must be visible to the model even on huge
+// runs), then everything else newest-first, capped so the prompt stays small.
+export function selectBriefInput(articles: Article[]): Article[] {
+  const byRecency = (a: Article, b: Article) =>
+    b.publishedAt.localeCompare(a.publishedAt);
+  const important = articles.filter((a) => a.important).sort(byRecency);
+  const rest = articles.filter((a) => !a.important).sort(byRecency);
+  return [...important, ...rest].slice(0, BRIEF_INPUT_CAP);
+}
+
+export function buildBriefPrompt(articles: Article[]): {
+  system: string;
+  user: string;
+} {
+  const list = articles
+    .map(
+      (a, i) =>
+        `[${i}] (${a.category}${a.important ? ", NOTABLE" : ""}) ${a.title} — ${a.summary}`
+    )
+    .join("\n");
+
+  const system =
+    "You are the editor of a daily AI-industry briefing. From today's newly " +
+    "ingested articles you write the executive brief: 3 to 5 bullets, each at " +
+    "most 40 words, synthesizing the day's most significant developments. " +
+    "Connect related articles into one bullet where they tell a single story. " +
+    "Weight NOTABLE articles toward inclusion, but lead with whatever is " +
+    "genuinely the day's biggest story. Each bullet cites the indices of the " +
+    "articles it draws from.\n\n" +
+    'Respond ONLY with a JSON array: [{"text": string, "refs": number[]}]';
+
+  const user = `Today's ${articles.length} new articles:\n\n${list}`;
+
+  return { system, user };
+}
+
+// Validates the model response and resolves cited indices to article URLs.
+// Throws on anything unusable — the caller carries the previous brief forward.
+export function parseBriefResponse(
+  text: string,
+  inputs: Article[]
+): BriefBullet[] {
+  const jsonMatch = text.match(/\[[\s\S]*\]/);
+  if (!jsonMatch) throw new Error("No JSON array in brief response");
+
+  let parsed: unknown;
+  try {
+    parsed = JSON.parse(jsonMatch[0]);
+  } catch {
+    throw new Error("Brief response is not valid JSON");
+  }
+  if (!Array.isArray(parsed)) throw new Error("Brief response is not an array");
+
+  const bullets: BriefBullet[] = [];
+  for (const item of parsed) {
+    if (typeof item !== "object" || item === null) continue;
+    const { text: bulletText, refs } = item as {
+      text?: unknown;
+      refs?: unknown;
+    };
+    if (typeof bulletText !== "string" || bulletText.trim() === "") continue;
+    const urls: string[] = [];
+    if (Array.isArray(refs)) {
+      for (const r of refs) {
+        if (
+          typeof r === "number" &&
+          Number.isInteger(r) &&
+          r >= 0 &&
+          r < inputs.length
+        ) {
+          const url = inputs[r].url;
+          if (!urls.includes(url)) urls.push(url);
+        }
+      }
+    }
+    bullets.push({ text: bulletText.trim(), refs: urls });
+  }
+
+  if (bullets.length < BRIEF_MIN_BULLETS || bullets.length > BRIEF_MAX_BULLETS) {
+    throw new Error(
+      `Brief has ${bullets.length} valid bullets (need ${BRIEF_MIN_BULLETS}-${BRIEF_MAX_BULLETS})`
+    );
+  }
+  return bullets;
+}
+
+export function carryForwardBrief(existing: NewsData | null): Brief | undefined {
+  return existing?.brief;
 }

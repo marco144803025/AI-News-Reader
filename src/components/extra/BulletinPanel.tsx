@@ -1,14 +1,8 @@
+import type { Brief } from "../../types";
 import OffsetPanel from "./OffsetPanel";
 import { LABELS } from "./copy";
 
-// Shape of the F8 daily brief. F8 owns the canonical type in src/types.ts once
-// it lands; this structural type keeps the slot decoupled until then.
-export type BriefLike = {
-  generatedAt: string;
-  bullets: { text: string; refs: string[] }[];
-};
-
-export default function BulletinPanel({ brief }: { brief: BriefLike }) {
+export default function BulletinPanel({ brief }: { brief: Brief }) {
   if (brief.bullets.length === 0) return null;
   return (
     <div className="mt-6">

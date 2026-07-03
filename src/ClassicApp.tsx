@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import BriefPanel from "./components/BriefPanel";
 import CategorySection from "./components/CategorySection";
 import FilterBar from "./components/FilterBar";
 import type { LineageProps } from "./lib/lineage";
@@ -180,6 +181,7 @@ export default function ClassicApp({
       {/* Scrollable Content */}
       <main className="flex-1 overflow-y-auto">
         <div className="mx-auto max-w-5xl px-5 py-6">
+          {!inSingleView && data.brief && <BriefPanel brief={data.brief} />}
           {grouped.length === 0 ? (
             <div className="flex flex-col items-start gap-3">
               <p className="font-mono text-xs text-ink-muted">// no articles match</p>

@@ -4,15 +4,20 @@ import { dirname, join } from "node:path";
 import Parser from "rss-parser";
 import Anthropic from "@anthropic-ai/sdk";
 import "dotenv/config";
-import type { NewsData, FeedHealth } from "../src/types.ts";
+import type { Brief, NewsData, FeedHealth } from "../src/types.ts";
 import {
+  BRIEF_MIN_BULLETS,
+  buildBriefPrompt,
   buildFeedHealth,
+  carryForwardBrief,
   computeEffectiveDaysBack,
   computeGeneratedAt,
   DAYS_BACK,
   normalizeTags,
+  parseBriefResponse,
   parseRetentionDays,
   SEED_TAGS,
+  selectBriefInput,
   withRetry,
   type Feed,
 } from "./lib.ts";
@@ -22,6 +27,9 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
 
 const MODEL = "claude-haiku-4-5-20251001";
+// The brief is one small synthesis call per run — quality is the feature, so
+// it runs on the current most capable default model.
+const BRIEF_MODEL = "claude-opus-4-8";
 const BATCH_SIZE = 25;
 const ARXIV_CAP = 15;
 
@@ -265,6 +273,33 @@ export async function classifyBatch(
   return result;
 }
 
+// One synthesis call over the run's new articles → 3-5 cited bullets.
+// Throws on invalid output; the caller decides what to do (carry forward).
+export async function generateBrief(
+  client: Anthropic,
+  articles: Article[]
+): Promise<Brief> {
+  const input = selectBriefInput(articles);
+  const { system, user } = buildBriefPrompt(input);
+
+  const message = await client.messages.create({
+    model: BRIEF_MODEL,
+    max_tokens: 2000,
+    system,
+    messages: [{ role: "user", content: user }],
+  });
+
+  const text = message.content
+    .filter((b): b is Anthropic.TextBlock => b.type === "text")
+    .map((b) => b.text)
+    .join("");
+
+  return {
+    generatedAt: new Date().toISOString(),
+    bullets: parseBriefResponse(text, input),
+  };
+}
+
 async function main() {
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) {
@@ -318,12 +353,14 @@ async function main() {
     );
     const categories = [...new Set(pruned.map((a) => a.category))];
     await mkdir(join(ROOT, "public"), { recursive: true });
+    const carried = carryForwardBrief(existing);
     const output: NewsData = {
       generatedAt,
       daysBack: effectiveDaysBack,
       categories,
       articles: pruned,
       feedHealth,
+      ...(carried ? { brief: carried } : {}),
     };
     await writeFile(outputPath, JSON.stringify(output, null, 2), "utf-8");
     console.log(`Done. ${pruned.length} articles retained.`);
@@ -354,6 +391,27 @@ async function main() {
     }
   }
 
+  // Daily brief: one synthesis call over this run's new articles. A brief
+  // failure must never fail the run — carry the previous brief forward.
+  // Runs with fewer new articles than the bullet minimum can't produce a
+  // valid brief, so skip the call instead of predictably failing validation.
+  let brief = carryForwardBrief(existing);
+  if (classified.length >= BRIEF_MIN_BULLETS) {
+    console.log("Generating daily brief...");
+    try {
+      brief = await withRetry(() => generateBrief(client, classified));
+      console.log(`  brief ok (${brief.bullets.length} bullets).`);
+    } catch (err) {
+      console.error(
+        `  brief skipped, carrying previous forward — ${(err as Error).message}`
+      );
+    }
+  } else if (classified.length > 0) {
+    console.log(
+      `Too few new articles for a brief (${classified.length} < ${BRIEF_MIN_BULLETS}) — carrying previous forward.`
+    );
+  }
+
   const merged = [...classified, ...existingArticles];
   const pruned = merged.filter(
     (a) => Date.parse(a.publishedAt) > retentionCutoff
@@ -368,6 +426,7 @@ async function main() {
     categories,
     articles: pruned,
     feedHealth,
+    ...(brief ? { brief } : {}),
   };
   await writeFile(outputPath, JSON.stringify(output, null, 2), "utf-8");
   console.log(

@@ -1,5 +1,4 @@
 import { useMemo } from "react";
-import type { NewsData } from "../../types";
 import type { LineageProps } from "../../lib/lineage";
 import {
   categoryCounts,
@@ -9,7 +8,7 @@ import {
 } from "../../lib/filter";
 import { paginate } from "../../lib/paginate";
 import { rankFrontPage } from "../../lib/rank";
-import BulletinPanel, { type BriefLike } from "./BulletinPanel";
+import BulletinPanel from "./BulletinPanel";
 import ClippingsList from "./ClippingsList";
 import ExtraFilterBar from "./ExtraFilterBar";
 import LeadClipping from "./LeadClipping";
@@ -80,7 +79,7 @@ export default function ExtraApp({
   }
 
   const tabs = ["All", ...data.categories];
-  const brief = (data as NewsData & { brief?: BriefLike }).brief;
+  const brief = data.brief;
 
   return (
     <div className="theme-extra min-h-screen overflow-x-clip bg-paper font-press text-ink-press">
