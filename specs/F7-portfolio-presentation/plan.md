@@ -59,8 +59,10 @@ None — no code paths or JSON shapes change.
 Local checks done: build clean; built `index.html` carries the rebased favicon
 path and absolute OG URLs; live preview confirms title, meta description,
 7 OG/Twitter tags, favicon served as `image/svg+xml`; README follows the AC
-order. **Pending the next push/deploy:** badge rendering on GitHub (AC1) and
-the social-card unfurl against the live origin (AC2).
+order. Post-deploy (2026-07-03): Test/Deploy/Pages workflows green on the
+pushed SHA; live origin serves 7 OG + 4 Twitter tags, `og-image.png`
+(image/png), `favicon.svg` (image/svg+xml), and fonts with correct types; the
+test badge renders "passing". Feature complete — F7 Done.
 
 ## Verification
 

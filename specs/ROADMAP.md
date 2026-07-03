@@ -12,7 +12,7 @@ feature must reach **Done** before the next starts, unless explicitly paralleliz
 | F4  | [Search & tag filtering](./F4-search-and-tags/)                  | Done        | UX         |
 | F6  | [UI redesign — Stop the Presses (A/B flag)](./F6-ui-modernization/) | Build    | UX         |
 | F5  | [Email subscriptions per tag](./F5-email-subscriptions/)         | Not started | UX         |
-| F7  | [Portfolio presentation & shareability](./F7-portfolio-presentation/) | Build  | Portfolio  |
+| F7  | [Portfolio presentation & shareability](./F7-portfolio-presentation/) | Done   | Portfolio  |
 | F8  | [AI Daily Brief](./F8-daily-brief/)                              | Build       | Content    |
 | F9  | [Trends & pipeline transparency](./F9-trends-dashboard/)         | Build       | Content    |
 
