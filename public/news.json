@@ -1,22 +1,1189 @@
 {
-  "generatedAt": "2026-07-06T09:55:15.503Z",
-  "daysBack": 3,
+  "generatedAt": "2026-07-09T09:25:41.326Z",
+  "daysBack": 4,
   "categories": [
-    "Business & Funding",
-    "Regulation & Policy",
-    "Applications",
     "Research",
     "AI Safety & Alignment",
+    "Agent Frameworks",
+    "Business & Funding",
+    "Applications",
+    "Model Releases",
+    "Regulation & Policy",
+    "Open Source",
+    "Hardware & Compute",
     "Other",
     "MCP",
-    "Hardware & Compute",
-    "Agent Frameworks",
-    "Model Releases",
     "Developer Tools",
-    "Open Source",
     "Evaluation"
   ],
   "articles": [
+    {
+      "title": "AgentLens: Production-Assessed Trajectory Reviews for Coding Agent Evaluation",
+      "url": "https://arxiv.org/abs/2607.06624",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-09T04:00:00.000Z",
+      "snippet": "arXiv:2607.06624v1 Announce Type: new Abstract: We present AgentLens, a production-assessed benchmark for interactive code agents. Most code-agent benchmarks reduce a run to a single bit -- did the task pass? -- but the people who actually use these agents experience the entire trajectory: how the agent follows instructions, uses its tools, verifies its own work, recovers from mistakes, and talks to them along the way. AgentLens evaluates that whole trajectory. It pairs formal verification, where an objective check exists, with LLM-written trajectory reviews and side-by-side comparisons, so th",
+      "category": "Research",
+      "summary": "AgentLens introduces a production-focused benchmark for evaluating coding agents across full execution trajectories, not just pass/fail outcomes.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "evaluation"
+        ],
+        "traits": [
+          "benchmark"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "When Does In-Context Search Help? A Sampling-Complexity Theory of Reflection-Driven Reasoning",
+      "url": "https://arxiv.org/abs/2607.06720",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-09T04:00:00.000Z",
+      "snippet": "arXiv:2607.06720v1 Announce Type: new Abstract: Training large language models (LLMs) with extended reasoning has enabled in-context search, in which models iteratively generate, critique, and revise solution attempts. We provide a theoretical analysis of in-context search by modeling it as approximate inference over reasoning traces, where the base model defines a prior and self-reflection provides feedback for posterior updates, and study the resulting inference-time sampling complexity - the number of sequential attempts needed to achieve high success probability. We show that when reflecti",
+      "category": "Research",
+      "summary": "Researchers provide theoretical analysis of in-context search in LLMs, modeling it as approximate inference with sampling-complexity tradeoffs.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning",
+          "inference"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "LLM-powered reasoning in agent-based modeling",
+      "url": "https://arxiv.org/abs/2607.06757",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-09T04:00:00.000Z",
+      "snippet": "arXiv:2607.06757v1 Announce Type: new Abstract: Agent-based modeling (ABM) has the capability to model millions of individuals and their interactions, which is useful for policy making. However, ABMs have traditionally relied on static prior, which prevents the models from adapting to real-time changes. Our research provides a novel approach to addressing this information gap. Large language models (LLMs) offer new opportunities to predict human decision-making. Here, we introduce a scalable Hybrid Agent-based and Language-driven Epidemic (HALE) modeling framework that leverages LLMs to predic",
+      "category": "Research",
+      "summary": "A new framework combines agent-based modeling with LLMs for real-time policy prediction and epidemiological simulation.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "llm"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Cost-Effective Agent Harnesses for Abstract Reasoning and Generalization on ARC-AGI-1",
+      "url": "https://arxiv.org/abs/2607.06764",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-09T04:00:00.000Z",
+      "snippet": "arXiv:2607.06764v1 Announce Type: new Abstract: Recent progress on ARC-AGI-1 from disclosed architectures has come broadly from two regimes: heavy test-time compute over frontier models (evolutionary search, exhaustive sampling, extended chain-of-thought), or benchmark-specific training in which small models are fine-tuned on ARC data, often with task-specialized architectures. We study a third regime: an open-weight model in non-thinking mode (DeepSeek V3.2) under a strict budget, with no ARC-specific fine-tuning. We study what is recoverable through architecture alone, building agentic harne",
+      "category": "Research",
+      "summary": "Researchers explore agentic harnesses for DeepSeek V3.2 on ARC-AGI-1 under compute budgets, achieving results without benchmark-specific fine-tuning.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "reasoning",
+          "evaluation"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "Evaluating SageMath-Augmented LLM Agents for Computational and Experimental Mathematics",
+      "url": "https://arxiv.org/abs/2607.06820",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-09T04:00:00.000Z",
+      "snippet": "arXiv:2607.06820v1 Announce Type: new Abstract: Recent advances in AI for Mathematics have focused largely on autoformalization and theorem proving, leaving the role of Computer Algebra Systems (CAS) in agentic LLM workflows underexplored. We propose a ReAct-style agentic setup that combines LLM reasoning with verifiable feedback from SageMath, together with Context7 for the up-to-date documentation. We evaluate this agentic setup across frontier models for solving research-level mathematical problems from the RealMath benchmark in a setting that emulates a computational-mathematics research l",
+      "category": "Research",
+      "summary": "A ReAct-style agentic framework combines LLM reasoning with SageMath verification for solving research-level mathematical problems.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "The Harness Effect: How Orchestration Design Sets the Token Economics of Enterprise Agentic AI",
+      "url": "https://arxiv.org/abs/2607.06906",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-09T04:00:00.000Z",
+      "snippet": "arXiv:2607.06906v1 Announce Type: new Abstract: Agentic AI development today runs on token maxing: buying capability with tokens -- longer reasoning traces, more turns, wider tool payloads, bigger replayed contexts -- so tokens per task grow faster than task value. Falling per-token prices mask the pattern; total spend rises anyway. We argue the decisive lever against token maxing is the harness: the orchestration layer that assembles context, exposes tools, sequences turns, delegates work, and carries enterprise observability and governance. We isolate it with a controlled swap: 22 locked eva",
+      "category": "Research",
+      "summary": "Analysis shows that orchestration design significantly impacts token economics of enterprise agentic AI, with architectural choices affecting cost efficiency.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "inference"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Grounding Spatial Relations in a Compact World Model: Instruction Leakage and a Goal-Free Dynamics Fix",
+      "url": "https://arxiv.org/abs/2607.06925",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-09T04:00:00.000Z",
+      "snippet": "arXiv:2607.06925v1 Announce Type: new Abstract: Compact world models that condition on a language goal promise to ground relations such as ``put the red block left of the blue block'' using a sparse set of explicit \\emph{reference anchors}. We ask when such references actually ground a relation, and identify a trap: a goal-conditioned predictor reaches a striking $0.90$ relation-readout accuracy, yet this is \\emph{instruction transcription}, not perception. Withholding the goal collapses it to chance ($0.90\\!\\to\\!0.27$, three seeds) and a counterfactual instruction makes the predicted anchors ",
+      "category": "Research",
+      "summary": "Study identifies instruction leakage problems in goal-conditioned world models for spatial reasoning grounding in robotics tasks.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "robotics",
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Large Behavior Model: A Promptable Digital Twin of the Retail Customer",
+      "url": "https://arxiv.org/abs/2607.06993",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-09T04:00:00.000Z",
+      "snippet": "arXiv:2607.06993v1 Announce Type: new Abstract: Customer behavior modeling underpins recommendation, marketing, and decision support, yet existing approaches either optimize predictive accuracy without explaining decisions or simulate users without grounding them in real behavioral data. We present the Large Behavioral Model (LBM) that learns customer decision making directly from large-scale retail transactions through a unified Person-Environment formulation. Customer state is represented by a behavioral profile derived from historical purchases, while product context is incorporated through",
+      "category": "Research",
+      "summary": "Presents Large Behavioral Model (LBM), a neural approach for modeling customer decision-making from retail transaction data using a unified Person-Environment formulation to improve recommendations and marketing.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm",
+          "applications"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Learning social norms enhances compatibility in dynamic human-AI coordination",
+      "url": "https://arxiv.org/abs/2607.07021",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-09T04:00:00.000Z",
+      "snippet": "arXiv:2607.07021v1 Announce Type: new Abstract: Humans continuously coordinate with others in dynamic interactions, often through implicit, hard-to-quantify social norms that act as shared tacit expectations among interacting agents. As AI agents, including large language models (LLMs), become embedded in daily life, they increasingly participate in such interactions and reshape social interaction structures. Yet they often fail to coordinate with humans in an effective, considerate, and natural manner. We hypothesize that this gap arises because existing approaches align model behavior with h",
+      "category": "Research",
+      "summary": "Proposes that training AI agents to learn social norms improves human-AI coordination in dynamic interactions, addressing failures in implicit expectation-setting between humans and LLMs.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm",
+          "agentic",
+          "alignment"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "Measuring Intelligence Beyond Human Scale",
+      "url": "https://arxiv.org/abs/2607.07040",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-09T04:00:00.000Z",
+      "snippet": "arXiv:2607.07040v1 Announce Type: new Abstract: How can we measure intelligence beyond human capability? Human-authored benchmarks saturate, and above human capability, examiners may not know which tasks are both hard and verifiable. We argue that this difficulty is inherent to absolute-scale evaluation and propose a new paradigm based on relative measurement in which models generate public challenges that separate other systems. Aggregating these outcomes yields an adversarial psychometric rating system that can scale with the systems being measured. We describe practical protocols that reduc",
+      "category": "Research",
+      "summary": "Introduces a relative-scale evaluation paradigm where AI models generate challenges to measure each other's capabilities, addressing saturation of human-authored benchmarks for superhuman performance assessment.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "evaluation"
+        ],
+        "traits": [
+          "benchmark",
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Operational Reframing and Approval-Framed Delegation in Multi-Agent LLM Safety",
+      "url": "https://arxiv.org/abs/2607.07097",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-09T04:00:00.000Z",
+      "snippet": "arXiv:2607.07097v1 Announce Type: new Abstract: Safety evaluations of multi-agent LLM systems often compare a direct prompt with a planner-executor pipeline and report the difference as a single \"pipeline effect.\" We argue that this aggregate is difficult to interpret because it conflates three mechanisms: harmful intent may be reframed as plausible operational work, the planner may refuse or transform the request, and the executor may act under delegation prompts implying prior approval. To separate these factors, we introduce a five-condition controlled contrast design, evaluated on 30 synth",
+      "category": "AI Safety & Alignment",
+      "summary": "Proposes a controlled experimental design to separately measure three mechanisms in multi-agent LLM safety: request reframing, planner refusal, and executor delegation effects.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "agentic"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Does AI Understand Imaging? A Systematic Benchmark of Agentic AI for Computational Imaging Tasks",
+      "url": "https://arxiv.org/abs/2607.07189",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-09T04:00:00.000Z",
+      "snippet": "arXiv:2607.07189v1 Announce Type: new Abstract: Vision-language models (VLMs) and agentic AI have shown strong performance on semantic visual tasks, but it remains unclear whether they can handle the physics and inverse problems that underlie computational imaging. We present ImagingBench, a benchmark of 20 computational imaging tasks spanning five categories: ray and wave optics, image signal processing, inverse reconstruction, computational sensing, and calibration. ImagingBench evaluates three complementary settings: Expert, fixed expert-guided inverse reconstruction; Planner, planner-guide",
+      "category": "Research",
+      "summary": "Introduces ImagingBench, a benchmark of 20 computational imaging tasks across physics and inverse problems, evaluating vision-language models and agentic AI on specialized technical domains.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "vision",
+          "agentic"
+        ],
+        "traits": [
+          "benchmark"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Reasoning Consistency Scanning: A Framework for Auditing Chain-of-Thought Validity in AI Safety Evaluations",
+      "url": "https://arxiv.org/abs/2607.07229",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-09T04:00:00.000Z",
+      "snippet": "arXiv:2607.07229v1 Announce Type: new Abstract: Prior work has shown that chain-of-thought (CoT) reasoning is often unfaithful: a model's stated reasoning does not reliably reflect the process that produced its output. Detecting unfaithfulness, though, requires controlled experimental interventions, which cannot be applied to evaluation transcripts after the fact. We turn instead to a more tractable question that has received less attention: whether the stated reasoning is logically consistent with the answer it accompanies. Unlike faithfulness, consistency can be assessed from a transcript al",
+      "category": "AI Safety & Alignment",
+      "summary": "Presents a framework to audit chain-of-thought reasoning consistency in AI evaluations, detecting logical inconsistencies between stated reasoning and model outputs without requiring controlled interventions.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "interpretability",
+          "safety"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "From Atomic Actions to Standard Operating Procedures: Iterative Tool Optimization for Self-Evolving LLM Agents",
+      "url": "https://arxiv.org/abs/2607.07321",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-09T04:00:00.000Z",
+      "snippet": "arXiv:2607.07321v1 Announce Type: new Abstract: Tool utilization enables Large Language Model (LLM) agents to interact with the real world and resolve complex tasks. However, existing agent frameworks predominantly rely on static toolsets composed of granular atomic actions (e.g., basic file I/O or single-turn search), which forces agents to reinvent low-level logic for every recurring workflow, leading to increased reasoning overhead and failure rates. In this study, we propose that agents can achieve self-evolution by synthesizing these atomic actions into reusable Standard Operating Procedu",
+      "category": "Agent Frameworks",
+      "summary": "Proposes Self-Evolving LLM Agents that synthesize atomic actions into reusable Standard Operating Procedures, reducing reasoning overhead and improving task completion rates through agent self-optimization.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "llm"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Physics-Audited Agentic Discovery in Scientific Machine Learning",
+      "url": "https://arxiv.org/abs/2607.07379",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-09T04:00:00.000Z",
+      "snippet": "arXiv:2607.07379v1 Announce Type: new Abstract: In agentic scientific machine learning (SciML), large language model (LLM) agents can discover surrogate models and select one by an automated score, typically an error metric. A low error, however, does not establish that the predicted fields satisfy the physics that matter for mechanics, such as boundary conditions, superposition, stiffness scaling, or causality. We introduce Physics-Audited Agentic SciML (PA-SciML), a verification-first workflow for agentic SciML discovery. The workflow fixes a scoring evaluator before search, derives reviewab",
+      "category": "Research",
+      "summary": "Introduces Physics-Audited Agentic SciML (PA-SciML), a verification-first workflow ensuring LLM agents' discovered surrogate models satisfy physical constraints beyond error metrics.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Lovable reportedly in talks to double its valuation to $13.2B",
+      "url": "https://techcrunch.com/2026/07/08/lovable-reportedly-in-talks-to-double-its-valuation-to-13-2b/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-08T22:41:33.000Z",
+      "snippet": "The $300 million round is expected to be led by Menlo Ventures, Sifted reported.",
+      "category": "Business & Funding",
+      "summary": "Lovable is in talks to double its valuation to $13.2 billion in a $300 million funding round led by Menlo Ventures.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "developer-tools"
+        ],
+        "traits": [
+          "funding",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Suspecting AI cheating, Ivy League prof ordered an in-person final; scores fell 50%",
+      "url": "https://arstechnica.com/ai/2026/07/we-cannot-choose-to-become-idiots-the-ai-cheating-scandal-roiling-brown-university/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-07-08T21:42:44.000Z",
+      "snippet": "AI cheating leads to \"a failed society,\" professor says.",
+      "category": "Applications",
+      "summary": "An Ivy League professor's in-person final exam revealed widespread AI cheating, with exam scores dropping 50% compared to previous remote assessments.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "education"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Google’s deepfake detector system used to debunk McConnell hoax pic",
+      "url": "https://techcrunch.com/2026/07/08/googles-deepfake-detector-system-used-to-debunk-mcconnell-hoax-pic/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-08T20:37:03.000Z",
+      "snippet": "Earlier this week, a picture seemed to show Kentucky Senator Mitch McConnell covered in tubes in a hospital bed in a state of extreme distress. It turned out to be an AI-generated fake.",
+      "category": "Applications",
+      "summary": "Google's deepfake detection system is used to identify and debunk an AI-generated fake image of Senator Mitch McConnell.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": [
+          "google"
+        ]
+      }
+    },
+    {
+      "title": "Lawsuit: Man used Grok to make 7K sex images of stepdaughter, then shot himself",
+      "url": "https://arstechnica.com/tech-policy/2026/07/lawsuit-grok-user-made-7k-child-sex-images-xai-only-reported-one-gang-rape-prompt/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-07-08T19:56:37.000Z",
+      "snippet": "More young girls sue X over Grok CSAM; X accused of shielding child predators.",
+      "category": "AI Safety & Alignment",
+      "summary": "A lawsuit alleges a man used Grok to generate 7,000 child sexual abuse images, highlighting risks of insufficient content moderation in AI tools.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "incident",
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "SpaceXAI releases Grok 4.5, which Elon describes as an ‘Opus-class model’",
+      "url": "https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-08T19:30:16.000Z",
+      "snippet": "Elon Musk's tech company released the newest version of Grok on Wednesday, promising a cheaper, more efficient alternative to other powerful AI models.",
+      "category": "Model Releases",
+      "summary": "SpaceX releases Grok 4.5, positioning it as an Opus-class model competitor with improved efficiency and lower costs.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "grok"
+        ],
+        "traits": [
+          "release",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "This startup thinks robotics is about to have its ChatGPT moment",
+      "url": "https://techcrunch.com/2026/07/08/this-startup-thinks-robotics-is-about-to-have-its-chatgpt-moment/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-08T19:19:15.000Z",
+      "snippet": "General Intuition is betting millions of hours of video game data can train the foundation models for physical AI, making it easier to build smarter robots with minimal real-world data.",
+      "category": "Applications",
+      "summary": "General Intuition develops robotics foundation models using video game data instead of real-world footage to train intelligent physical AI systems.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "robotics",
+          "training"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Google Photos adds a new AI ‘Video Remix’ tool",
+      "url": "https://techcrunch.com/2026/07/08/google-photos-adds-a-new-ai-video-remix-tool/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-08T18:30:08.000Z",
+      "snippet": "The feature can do things like apply cinematic relighting to brighten up a dark clip, swap out a plain background for something fun, or add artistic styles to videos.",
+      "category": "Applications",
+      "summary": "Google Photos introduces AI-powered Video Remix tool offering cinematic relighting, background swapping, and artistic style application to video clips.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": [
+          "google"
+        ]
+      }
+    },
+    {
+      "title": "Why this CEO thinks video games make better training data than the internet",
+      "url": "https://techcrunch.com/video/why-this-ceo-thinks-video-games-make-better-training-data-than-the-internet/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-08T17:47:55.000Z",
+      "snippet": "When it comes to achieving artificial general intelligence (AGI), large language models just don’t have what it takes. Models like ChatGPT and Claude are great at text, but they’re less skilled at understanding how things actually move through space and time — an essential skill for producing intelligence that generalizes. That gap, it turns out, might be filled by gaming data. That’s the bet behind General Intuition, a […]",
+      "category": "Research",
+      "summary": "General Intuition's CEO argues that video game data is superior to internet data for training AGI models, particularly for spatial reasoning in robotics.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "robotics",
+          "training"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Meta wants its AI glasses to seem less creepy. Its AI strategy says otherwise.",
+      "url": "https://techcrunch.com/2026/07/08/meta-wants-its-ai-glasses-to-seem-less-creepy-its-ai-strategy-says-otherwise/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-08T17:11:18.000Z",
+      "snippet": "Meta is adding a new safeguard to stop people from secretly recording others with its AI glasses. But the update comes as the company continues to expand how much personal data its AI products collect and use.",
+      "category": "Regulation & Policy",
+      "summary": "Meta adds safeguards to prevent secret recording with AI glasses, though the company simultaneously expands personal data collection across its AI products.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "meta"
+        ]
+      }
+    },
+    {
+      "title": "ChatGPT’s upgraded voice mode is better at shutting up",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/962856/chatgpt-upgraded-voice-mode-gpt-live",
+      "source": "The Verge AI",
+      "publishedAt": "2026-07-08T17:00:00.000Z",
+      "snippet": "OpenAI is overhauling ChatGPT's voice mode with a new model that it says is more like \"talking to another person.\" The new GPT-Live-1 is designed to interrupt you less and will also wait for you to continue speaking if you pause mid-conversation. During a press briefing, OpenAI research lead Kundan Kumar called GPT-Live-1 the company's \"smartest voice model\" yet. It will automatically pass your queries to its best text models, like GPT-5.5, when it needs to reason or search the web, allowing it to more quickly transition from researching the topic you've asked about to talking about its findin",
+      "category": "Model Releases",
+      "summary": "OpenAI launches GPT-Live-1, an upgraded voice mode designed for more natural conversations with improved interruption handling and seamless reasoning through its best text models.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "voice"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "OpenAI releases new voice models for more natural live conversations",
+      "url": "https://techcrunch.com/2026/07/08/openai-releases-new-voice-models-for-more-natural-live-conversations/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-08T17:00:00.000Z",
+      "snippet": "OpenAI says its new voice mode can speak and listen at the same time, a key ability for live translation.",
+      "category": "Model Releases",
+      "summary": "OpenAI releases new voice models enabling simultaneous speaking and listening capabilities for natural live translation.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Google updates Android Bench with new LLMs, but Gemini still lags behind",
+      "url": "https://arstechnica.com/google/2026/07/google-revamps-android-ai-dev-benchmark-adds-fable-5-and-other-agents/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-07-08T16:39:48.000Z",
+      "snippet": "Android Bench is evolving, and developers can help guide that process.",
+      "category": "Model Releases",
+      "summary": "Google updated the Android Bench benchmark with new LLMs, though Gemini still underperforms compared to competitors.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "benchmark"
+        ],
+        "entities": [
+          "gemini",
+          "google"
+        ]
+      }
+    },
+    {
+      "title": "Prime Intellect raises $130M Series A to help enterprises build their own AI agents",
+      "url": "https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-08T16:22:38.000Z",
+      "snippet": "Founded in 2024, Prime Intellect’s goal is to give organizations capabilities to train their own agentic systems without relying on frontier AI labs.",
+      "category": "Business & Funding",
+      "summary": "Prime Intellect raises $130 million Series A to enable enterprises to build and train their own agentic AI systems independently.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "funding",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "These AI startups are growing  revenue at faster and faster rates",
+      "url": "https://techcrunch.com/2026/07/08/these-ai-startups-are-growing-revenue-at-faster-and-faster-rates/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-08T15:41:06.000Z",
+      "snippet": "There are a lot of fast-growing AI startups, but some are growing even faster, they say.",
+      "category": "Business & Funding",
+      "summary": "Report highlights AI startups achieving faster revenue growth rates as the market accelerates.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "funding",
+          "commercial",
+          "benchmark"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Our approach to government and national security partnerships",
+      "url": "https://openai.com/index/government-national-security-partnerships",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-07-08T13:30:00.000Z",
+      "snippet": "Learn how OpenAI approaches government and national security partnerships, with principles for responsible AI use, democratic accountability, and public safety.",
+      "category": "Regulation & Policy",
+      "summary": "OpenAI published principles for responsible government and national security partnerships, emphasizing democratic accountability and public safety.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Your gaming data could be the secret to AGI, according to this Bezos-backed startup",
+      "url": "https://techcrunch.com/podcast/your-gaming-data-could-be-the-secret-to-agi-according-to-this-bezos-backed-startup/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-08T13:00:00.000Z",
+      "snippet": "When it comes to achieving artificial general intelligence (AGI), large language models just don’t have what it takes. Models like ChatGPT and Claude are great at text, but they’re less skilled at understanding how things actually move through space and time — an essential skill for producing intelligence that generalizes. That gap, it turns out, might be filled by gaming data. That’s the bet behind General Intuition, a […]",
+      "category": "Research",
+      "summary": "Bezos-backed General Intuition argues gaming data offers superior training material for AGI compared to text-focused LLMs, filling spatial reasoning gaps.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "robotics",
+          "training"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Separating signal from noise in coding evaluations",
+      "url": "https://openai.com/index/separating-signal-from-noise-coding-evaluations",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-07-08T13:00:00.000Z",
+      "snippet": "A new analysis from OpenAI reveals issues in SWE-Bench Pro, a popular coding benchmark, raising concerns about reliability and accuracy in evaluating AI models.",
+      "category": "Research",
+      "summary": "OpenAI's analysis reveals significant reliability issues in SWE-Bench Pro, questioning the accuracy of popular coding benchmarks.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "evaluation"
+        ],
+        "traits": [
+          "benchmark",
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Former OpenAI exec Kevin Weil is now on the board of Stoke Space",
+      "url": "https://techcrunch.com/2026/07/08/former-openai-exec-kevin-weil-is-now-on-the-board-of-stoke-space/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-08T12:00:00.000Z",
+      "snippet": "Kevin Weil's new role at Stoke Space suggests reusable rockets are the next hot thing in Silicon Valley.",
+      "category": "Business & Funding",
+      "summary": "Former OpenAI executive Kevin Weil joins the board of Stoke Space, a reusable rocket company.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial",
+          "funding"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Helping K–12 educators build practical AI skills",
+      "url": "https://openai.com/index/k-12-educators-practical-skills",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-07-08T10:00:00.000Z",
+      "snippet": "OpenAI Academy and the Walton Family Foundation are bringing hands-on AI Skills Jams to help K–12 educators build practical AI skills for the classroom.",
+      "category": "Applications",
+      "summary": "OpenAI Academy and the Walton Family Foundation launched AI Skills Jams to help K–12 educators teach practical AI skills.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "education"
+        ],
+        "traits": [
+          "tutorial"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Hot French startup ZML releases free product to speed inference across lots of AI chips",
+      "url": "https://techcrunch.com/2026/07/08/hot-french-startup-zml-releases-free-product-to-speed-inference-across-lots-of-ai-chips/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-08T08:00:00.000Z",
+      "snippet": "ZML, a hot French AI startup endorsed by Turing Award winner Yann LeCun, has now released ZML/LLMD, software that could make running AI less costly.",
+      "category": "Open Source",
+      "summary": "ZML, endorsed by Yann LeCun, releases open-source ZML/LLMD software to reduce inference costs across diverse AI chips.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference",
+          "hardware"
+        ],
+        "traits": [
+          "open-source"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "AI chip maker SambaNova raises $1B at $11B valuation, 5 months after last mega round",
+      "url": "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-08T07:16:00.000Z",
+      "snippet": "AI chip maker SambaNova has raised at an $11 billion valuation months after Intel was rumored to be trying to buy it for about $1.6 billion.",
+      "category": "Business & Funding",
+      "summary": "AI chip maker SambaNova raises $1 billion at $11 billion valuation, five months after a previous mega round, signaling strong investor confidence.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "hardware"
+        ],
+        "traits": [
+          "funding",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Hackers can use 9 of the most popular AI tools to assemble massive botnets",
+      "url": "https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-07-08T07:00:51.000Z",
+      "snippet": "\"HalluSquatting\" weaponizes LLMs' inability to say \"I don't know.\"",
+      "category": "AI Safety & Alignment",
+      "summary": "Researchers discovered that popular AI tools can be exploited for botnet assembly through 'HalluSquatting,' weaponizing LLMs' tendency to hallucinate.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "research",
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Introducing GPT-Live",
+      "url": "https://openai.com/index/introducing-gpt-live",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-07-08T00:00:00.000Z",
+      "snippet": "A new generation of voice models for natural human-AI interaction, now powering ChatGPT Voice.",
+      "category": "Model Releases",
+      "summary": "OpenAI introduced GPT-Live, a new generation of voice models enabling natural human-AI conversation in ChatGPT Voice.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "multimodal"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": [
+          "gpt"
+        ]
+      }
+    },
+    {
+      "title": "Meta just launched a new AI generator, Muse Image, and users are already pushing back over use of their photos",
+      "url": "https://techcrunch.com/2026/07/07/meta-rolls-out-muse-a-new-ai-image-generator/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-07T22:18:10.000Z",
+      "snippet": "The new image-generating model has numerous use cases, including advertising and decorating, and creator-based opportunities.",
+      "category": "Applications",
+      "summary": "Meta launches Muse Image generator with concerns from users about unauthorized use of their photos in training data.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": [
+          "meta"
+        ]
+      }
+    },
+    {
+      "title": "Data centers’ energy demand threatens Trump’s “Made in America” plan",
+      "url": "https://arstechnica.com/tech-policy/2026/07/us-manufacturers-energy-costs-soar-because-of-ai-data-center-demand/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-07-07T21:03:07.000Z",
+      "snippet": "Squeeze on Rust Belt electricity bills threatens Trump’s manufacturing plan.",
+      "category": "Hardware & Compute",
+      "summary": "AI data centers' massive electricity demands are straining US power grids and threatening Trump's manufacturing revival plans.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference",
+          "energy"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Meta’s new Muse Image model can pull other Instagram users into AI photos",
+      "url": "https://www.theverge.com/tech/962485/meta-muse-image-ai-model-instagram",
+      "source": "The Verge AI",
+      "publishedAt": "2026-07-07T20:31:58.000Z",
+      "snippet": "Meta is launching the first AI image generation model made by its Superintelligence Labs division. The Muse Image model now powers the image-making tools across the Meta AI app, Instagram, and WhatsApp, and it's coming soon to Facebook and Messenger, according to an announcement on Tuesday. It's part of the growing Muse family of AI models that replace Meta's Llama lineup. Alexandr Wang, who Meta hired to head up its Superintelligence Labs last year, says on Threads that Muse Image is \"agentic,\" meaning it works with its Muse Spark large language model \"to reason through your prompt, search th",
+      "category": "Model Releases",
+      "summary": "Meta introduces Muse Image, an agentic image generation model from Superintelligence Labs that replaces Llama and integrates across Meta AI, Instagram, and WhatsApp.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "multimodal",
+          "agentic"
+        ],
+        "traits": [],
+        "entities": [
+          "meta"
+        ]
+      }
+    },
+    {
+      "title": "Why the rise of open source AI isn’t hurting Anthropic … yet",
+      "url": "https://techcrunch.com/2026/07/07/why-the-rise-of-open-source-ai-isnt-hurting-anthropic-yet/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-07T20:04:32.000Z",
+      "snippet": "Open source models’ success isn’t coming at the expense of frontier labs. Instead, they each seem to capture two phases of the same life cycle.",
+      "category": "Open Source",
+      "summary": "Analysis shows open-source AI model success is complementary rather than competitive with frontier labs like Anthropic, occupying different lifecycle phases.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "open-source",
+          "research",
+          "benchmark"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Microsoft joins AI cost-cutting trend by relying more on its own models",
+      "url": "https://techcrunch.com/2026/07/07/microsoft-joins-ai-cost-cutting-trend-by-relying-more-on-its-own-models/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-07T19:58:20.000Z",
+      "snippet": "Microsoft is the latest Silicon Valley giant to cut back on its AI spending.",
+      "category": "Business & Funding",
+      "summary": "Microsoft reduces AI spending by increasingly relying on internal proprietary models rather than external providers.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial",
+          "incident"
+        ],
+        "entities": [
+          "microsoft"
+        ]
+      }
+    },
+    {
+      "title": "Discord admits AI moderation bug wrongfully banned users over harmless images",
+      "url": "https://techcrunch.com/2026/07/07/discord-admits-ai-moderation-bug-wrongfully-banned-users-over-harmless-images/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-07T19:28:38.000Z",
+      "snippet": "The company confirmed that the issue had been affecting accounts since May, with an additional 200 users banned over the weekend before its team identified and fixed the problem.",
+      "category": "Applications",
+      "summary": "Discord identifies and fixes an AI moderation bug that wrongfully banned users since May over harmless images.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "incident",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Anthropic is launching Claude Cowork on mobile and web",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/961978/anthropic-claude-cowork-mobile-web",
+      "source": "The Verge AI",
+      "publishedAt": "2026-07-07T17:46:59.000Z",
+      "snippet": "Starting Tuesday, Anthropic's Claude Cowork AI platform will be available on mobile and web for the first time. The expanded access is rolling out first to Max subscribers and coming to Claude users on other plans \"in the coming weeks.\" Claude Cowork was previously only accessible through the Claude desktop app for macOS and Windows, but now users on iOS and Android can also use it. However, Anthropic says the \"full experience\" for Cowork will still be on the desktop app, including features like local file access. Cowork sessions will also now run in the cloud by default, so you can continue t",
+      "category": "Applications",
+      "summary": "Anthropic expands Claude Cowork to mobile and web platforms, allowing Max subscribers to continue collaborative tasks across devices beyond the desktop app.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "release"
+        ],
+        "entities": [
+          "anthropic",
+          "claude"
+        ]
+      }
+    },
+    {
+      "title": "Claude Cowork expands to mobile and web",
+      "url": "https://techcrunch.com/2026/07/07/the-coding-agent-wars-are-spilling-into-the-rest-of-the-office-claude-cowork/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-07T16:27:18.000Z",
+      "snippet": "With this update, users can start a task from their desk, get status updates on their phone, and pick up the finished output later — even if their laptop is closed.",
+      "category": "Applications",
+      "summary": "Claude Cowork expands to mobile and web platforms, enabling users to start tasks on desktop and continue on mobile while maintaining session continuity.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "release"
+        ],
+        "entities": [
+          "anthropic",
+          "claude"
+        ]
+      }
+    },
+    {
+      "title": "Facing US export controls, China's DeepSeek plans to make its own chips",
+      "url": "https://arstechnica.com/ai/2026/07/facing-us-export-controls-chinas-deepseek-plans-to-make-its-own-chips/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-07-07T16:14:53.000Z",
+      "snippet": "It's early, but the plan is to reduce dependency on Nvidia and Huawei.",
+      "category": "Hardware & Compute",
+      "summary": "DeepSeek is developing its own chips to reduce dependency on Nvidia and Huawei amid US export controls on AI technology.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "hardware",
+          "deepseek"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Solos debuts an even lighter version of its camera-less smart glasses",
+      "url": "https://www.theverge.com/tech/961711/solos-airgo-a6-smart-glasses-ai-assistant-privacy",
+      "source": "The Verge AI",
+      "publishedAt": "2026-07-07T13:00:00.000Z",
+      "snippet": "The AirGo A6 are available in multiple designs including several transparent color options. | Image: Solos Solos announced a new version of its AirGo smart glasses, one that forgoes cameras for a sleeker design and an AI assistant that relies on voice interactions. Last year's AirGo A5 weighed 36 to 40 grams depending on the frame style, but the new AirGo A6 weigh around 19 grams. Part of the weight savings comes from thinner temple arms housing speakers, batteries, and other electronics. For comparison, the new Meta Glasses announced last month weigh around 54 to nearly 60 grams depending on ",
+      "category": "Applications",
+      "summary": "Solos launches the AirGo A6 smart glasses with camera-free design, AI voice assistant, and reduced weight to 19 grams for sleeker form factor.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "hardware",
+          "voice"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Savi’s app aims to protect consumers from realistic AI scams like kidnappers demanding ransom",
+      "url": "https://techcrunch.com/2026/07/07/savis-app-aims-to-protect-consumers-from-realistic-ai-scams-like-kidnappers-demanding-ransom/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-07T12:00:00.000Z",
+      "snippet": "The company just raised $7 million in seed funding, and is launching its app for iPhone and Android on Tuesday.",
+      "category": "Applications",
+      "summary": "Savi launched an app to protect consumers from AI-generated scams like deepfake ransom demands, backed by $7M in seed funding.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "commercial",
+          "funding"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "The foundational elements of AI architecture that IT leaders need to scale",
+      "url": "https://www.technologyreview.com/2026/07/07/1139413/the-foundational-elements-of-ai-architecture-that-it-leaders-need-to-scale/",
+      "source": "MIT Tech Review AI",
+      "publishedAt": "2026-07-07T11:10:52.000Z",
+      "snippet": "With the rapid progress of AI capabilities and the move to agentic systems, organizations are expanding their use cases as the technology continues to grow. That constant evolution also introduces risk, leaving IT leaders to wonder which investments will prove valuable even six months into the future. Returning to the foundational elements of AI architecture—the…",
+      "category": "Agent Frameworks",
+      "summary": "MIT Tech Review examines foundational AI architecture principles IT leaders need to scale agentic systems responsibly.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "infrastructure"
+        ],
+        "traits": [
+          "tutorial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "How AI could enable autonomous robot workers in workplaces—and maybe homes",
+      "url": "https://arstechnica.com/ai/2026/07/robot-workers-rising-how-ai-may-drive-general-purpose-autonomy-in-robotics/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-07-07T11:00:18.000Z",
+      "snippet": "Top robotics researchers and founders explain how robot autonomy is evolving.",
+      "category": "Agent Frameworks",
+      "summary": "Top robotics researchers explore how autonomous agents could enable robot workers in workplaces and homes.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "robotics"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Australian Payments Plus moves faster with ChatGPT and Codex",
+      "url": "https://openai.com/index/australian-payments-plus",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-07-07T00:00:00.000Z",
+      "snippet": "See how Australian Payments Plus uses ChatGPT Enterprise and Codex to move faster through payments complexity. AP+ saves time, improves quality, and keeps human judgment central.",
+      "category": "Applications",
+      "summary": "Australian Payments Plus accelerated payments processing using ChatGPT Enterprise and Codex, improving speed and quality.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "financial"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "MUFG aims to become AI-native with OpenAI",
+      "url": "https://openai.com/index/mufg",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-07-07T00:00:00.000Z",
+      "snippet": "MUFG uses ChatGPT Enterprise to build an AI-native organization, improve workflows, and deliver new AI-powered financial services at scale.",
+      "category": "Applications",
+      "summary": "MUFG is transforming into an AI-native organization using ChatGPT Enterprise to automate workflows and deliver financial services.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "financial"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Your family’s $300 stake in OpenAI",
+      "url": "https://www.technologyreview.com/2026/07/06/1140176/your-familys-300-stake-in-openai/",
+      "source": "MIT Tech Review AI",
+      "publishedAt": "2026-07-06T18:00:00.000Z",
+      "snippet": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. OpenAI CEO Sam Altman’s oft-discussed promise that Americans will share in the wealth AI creates was in the news again last week. On Thursday, the Financial Times reported that Altman is in…",
+      "category": "Business & Funding",
+      "summary": "Financial Times reports on Sam Altman's proposal for Americans to share wealth created by OpenAI's AI advances.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial",
+          "policy"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Secret Claude tracker shocks users after Anthropic’s anti-surveillance stance",
+      "url": "https://arstechnica.com/tech-policy/2026/07/anthropic-outed-for-claude-tracker-that-secretly-monitored-chinese-users/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-07-06T16:44:18.000Z",
+      "snippet": "Anthropic accused of spying on users; engineer says “experiment” is over.",
+      "category": "AI Safety & Alignment",
+      "summary": "Anthropic faced backlash after users discovered a hidden tracker, contradicting the company's public anti-surveillance stance.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": [
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "I spy",
+      "url": "https://www.theverge.com/column/961707/smart-glasses-ai-wearables-meta-surveillance-privacy",
+      "source": "The Verge AI",
+      "publishedAt": "2026-07-06T16:00:00.000Z",
+      "snippet": "I’m just doing my job, but turns out, it feels lousy holding other people’s privacy in your hands. I've long argued that Hollywood has simultaneously set and ruined our expectations for smart glasses. But after binge-watching two seasons of Netflix's A Man on the Inside, this is perhaps the first time I've seen Hollywood, perhaps inadvertently, illustrate the biggest cultural problem with smart glasses as they stand today. In a nutshell, Ted Danson plays Charles Nieuwendyk, an elderly widower who finds a new purpose working for a private investigator. Armed with a pair of Ray-Ban Meta-like gla",
+      "category": "Applications",
+      "summary": "Opinion piece discussing privacy and surveillance concerns raised by smart glasses with camera capabilities, using Netflix's 'A Man on the Inside' as cultural commentary.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "hardware"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "UK regulator warns of \"arms race\" to keep up with AI use in financial services",
+      "url": "https://arstechnica.com/ai/2026/07/uk-regulator-warns-of-arms-race-to-keep-up-with-ai-use-in-financial-services/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-07-06T14:17:42.000Z",
+      "snippet": "FCA official makes case for greater powers for watchdog as millions use technology for personal finance decisions.",
+      "category": "Regulation & Policy",
+      "summary": "UK's FCA warns of an 'arms race' in AI adoption for financial services and calls for expanded regulatory powers.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "financial"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Microsoft is laying off 4,800 employees",
+      "url": "https://www.theverge.com/news/961528/microsoft-layoffs-july-2026-sales-xbox",
+      "source": "The Verge AI",
+      "publishedAt": "2026-07-06T13:30:00.000Z",
+      "snippet": "Satya Nadella in February 2026. | Photo by Sven Hoppe / picture alliance via Getty Images A year after cutting around 9,100 employees, Microsoft is making further layoffs today as it begins its new financial year. The software maker is laying off around 4,800 employees today, approximately 2.1 percent of its workforce. Most of the employees affected by today's cuts are in Microsoft's commercial sales business or the company's Xbox division. In an internal memo to employees, Amy Coleman, executive vice president and Microsoft's chief people officer, blamed the job losses on a changing technolog",
+      "category": "Business & Funding",
+      "summary": "Microsoft lays off 4,800 employees (2.1% of workforce) in commercial sales and Xbox divisions as it begins its new financial year.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "incident",
+          "commercial"
+        ],
+        "entities": [
+          "microsoft"
+        ]
+      }
+    },
     {
       "title": "When AI Costs More Than the Engineer",
       "url": "https://tomtunguz.com/ai-spend-breakeven-2029/",
@@ -13032,1048 +14199,99 @@
           "openai"
         ]
       }
-    },
-    {
-      "title": "Microsoft's open source tools were hacked to steal passwords of AI developers",
-      "url": "https://techcrunch.com/2026/06/08/microsofts-open-source-tools-were-hacked-to-steal-passwords-of-ai-developers/",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-06-09T07:33:16.000Z",
-      "snippet": "Article URL: https://techcrunch.com/2026/06/08/microsofts-open-source-tools-were-hacked-to-steal-passwords-of-ai-developers/ Comments URL: https://news.ycombinator.com/item?id=48457830 Points: 80 # Comments: 21",
-      "category": "Regulation & Policy",
-      "summary": "Microsoft's open-source developer tools were compromised in a security breach targeting AI developers' credentials.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "security-incident"
-        ],
-        "traits": [
-          "open-source"
-        ],
-        "entities": [
-          "microsoft"
-        ]
-      }
-    },
-    {
-      "title": "PathoSage: Towards Multi-Source Evidence Adjudication in Pathology via Experience-Aware Agentic Workflow",
-      "url": "https://arxiv.org/abs/2606.07549",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-09T04:00:00.000Z",
-      "snippet": "arXiv:2606.07549v1 Announce Type: new Abstract: Recent advances in Multimodal Large Language Models (MLLMs) and agent workflows have shown strong promise for computational pathology, yet reliable patch-level reasoning remains challenging. End-to-end pathology MLLMs often hallucinate morphological features, while recent agentic systems usually merge tool outputs and retrieved knowledge into a shared context, making decisions vulnerable to conflicting evidence and context contamination. We propose PathoSage, a three-stage framework that explicitly separates knowledge retrieval, evidence collecti",
-      "category": "Applications",
-      "summary": "PathoSage proposes a three-stage agentic framework for computational pathology that separates knowledge retrieval and evidence adjudication to reduce hallucinations in multimodal LLMs.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "multimodal"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "OmniMem: Perturbation-aware Memory Compression for Streaming Audio-Visual LLMs",
-      "url": "https://arxiv.org/abs/2606.07577",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-09T04:00:00.000Z",
-      "snippet": "arXiv:2606.07577v1 Announce Type: new Abstract: Audio-visual large language models (LLMs) hold strong promise for long-form video understanding, yet their long-video inference is fundamentally limited by the linear growth of video tokens and key-value (KV) caches. We present OmniMem, a memory-efficient streaming framework designed specifically for audio-visual LLMs. Unlike existing compression methods that treat all tokens uniformly, OmniMem introduces a modality-aware memory allocation strategy that separately manages visual and audio contexts, addressing the severe token imbalance between th",
-      "category": "Research",
-      "summary": "OmniMem introduces a memory-efficient streaming framework for audio-visual LLMs using modality-aware compression to handle long-form video understanding.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "multimodal",
-          "audio",
-          "inference"
-        ],
-        "traits": [],
-        "entities": []
-      }
-    },
-    {
-      "title": "Syll: Open-Source Personal Automation with Cross-Surface Execution",
-      "url": "https://arxiv.org/abs/2606.07594",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-09T04:00:00.000Z",
-      "snippet": "arXiv:2606.07594v1 Announce Type: new Abstract: Personal AI agents must increasingly operate across APIs, shells, web surfaces, and desktop GUIs, yet many systems remain tuned to a single interface and offer limited support for user teaching and auditability. We present Syll, an open-source, self-hosted multimodal agent harness that unifies MCP/API tools, CLI execution, and visual GUI control in a modular runtime, enabling agents to coordinate computer use across heterogeneous interfaces while streamlining how users and agents exchange information. At the core of Syll is a bidirectional user-a",
-      "category": "Agent Frameworks",
-      "summary": "Syll is an open-source multimodal agent harness that unifies MCP/API tools, CLI, and GUI control for cross-surface personal automation.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "mcp"
-        ],
-        "traits": [
-          "open-source"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "A case study of evaluating AI agents on a neuroscience data-to-discovery pipeline",
-      "url": "https://arxiv.org/abs/2606.07718",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-09T04:00:00.000Z",
-      "snippet": "arXiv:2606.07718v1 Announce Type: new Abstract: Agentic AI tools offer a promising path to automating software development bottlenecks in scientific research pipelines, particularly for stages that take domain experts days to months to build, where scientists care about correctness and robustness, not implementation details. We present an empirical study of general-purpose coding agents on a fly optogenetics data-to-discovery pipeline. We assess agents on tasks substantially larger than existing benchmarks, datasets orders of magnitude bigger, and evaluation criteria grounded in domain expert ",
-      "category": "Applications",
-      "summary": "An empirical study evaluates general-purpose coding agents on large-scale neuroscience research pipelines, assessing their ability to automate software development bottlenecks.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "evaluation"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Why Limit the Residual Stream to Layers and Not Tokens? Persistent Memory for Continuous Latent Reasoning",
-      "url": "https://arxiv.org/abs/2606.07720",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-09T04:00:00.000Z",
-      "snippet": "arXiv:2606.07720v1 Announce Type: new Abstract: Large language models (LLMs) have demonstrated remarkable reasoning abilities on mathematical and multi-hop planning tasks. The CoCoNuT (Chain of Continuous Thought) paradigm~\\cite{hao2024coconut} extends this by enabling models to reason in latent space, exploring multiple reasoning paths simultaneously rather than committing to a single chain early on. However, we identify a limitation we term the \\textbf{concept bottleneck}. At each reasoning pass, intermediate hidden states are overwritten, causing the model to lose critical facts computed in",
-      "category": "Research",
-      "summary": "This paper identifies a concept bottleneck in continuous latent reasoning for LLMs and proposes persistent memory mechanisms to preserve intermediate reasoning states.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "reasoning",
-          "llm"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Automatic Extraction of Structured Information from Brain MRI Reports Using an Open-Weight Large Language Model",
-      "url": "https://arxiv.org/abs/2606.07721",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-09T04:00:00.000Z",
-      "snippet": "arXiv:2606.07721v1 Announce Type: new Abstract: Objectives: Automatic data extraction from free-text radiology reports enables large-scale research, but few studies assessed the performance of large language models (LLMs) on Dutch neuroradiology reports. Methods: We analyzed 947 brain MRI reports from a tertiary memory clinic (2016-2021), authored by consultant neuroradiologists. Trained medical students annotated thirty variables; 100 reports were double-annotated to assess inter-rater reliability. We evaluated the performance of the open-weight LLM LLaMA 3.1 using different languages (Dutch ",
-      "category": "Applications",
-      "summary": "Study evaluates open-weight LLaMA 3.1 on automatic extraction of structured information from Dutch brain MRI radiology reports.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "evaluation"
-        ],
-        "traits": [
-          "open-source"
-        ],
-        "entities": [
-          "llama"
-        ]
-      }
-    },
-    {
-      "title": "Some hypotheses on how chatbots work in problem-solving-driven conversations. Large Language Models as confirmation of the Innovation Illusion",
-      "url": "https://arxiv.org/abs/2606.07722",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-09T04:00:00.000Z",
-      "snippet": "arXiv:2606.07722v1 Announce Type: new Abstract: This article offers a perspective on the nature of chatbots as genuine conversation partners when discussing problems in relation to their solutions. What can chatbots do and what can't they do, and how can this be explained? Our argument draws on Aggregation Dynamics, Cognitive Linguistics, Neuropsychology and Psychology. Our argument focuses on basic chatbots in the hope of thereby making statements about the core functionality of more advanced chatbots. Basic chatbots are assumed to consist of a Large Language Model (LLM) with a simple interfa",
-      "category": "Research",
-      "summary": "Theoretical analysis explores the core functionality and limitations of chatbots in problem-solving conversations, drawing on cognitive science perspectives.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "llm",
-          "reasoning"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Land cover and flood type govern the detection limits of satellite-based flood mapping across diverse global flood events",
-      "url": "https://arxiv.org/abs/2606.07780",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-09T04:00:00.000Z",
-      "snippet": "arXiv:2606.07780v1 Announce Type: new Abstract: Floods are among the most destructive natural hazards, and their increasing frequency under climate change makes satellite-based inundation mapping essential for disaster response. Geospatial foundation models pretrained on satellite archives offer geographic transferability, but their operational reliability across diverse, unseen events remains uncharacterized. Here we deploy Prithvi-EO-2.0 across 19 out-of-distribution flood events (2017-2025) spanning six continents, eight climate zones, and six flood mechanisms, validating against two indepe",
-      "category": "Applications",
-      "summary": "Study deploys geospatial foundation model Prithvi-EO-2.0 across 19 flood events globally to evaluate satellite-based inundation mapping reliability.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "vision",
-          "evaluation"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Improving Multimodal Reasoning via Worst Dimension Optimization",
-      "url": "https://arxiv.org/abs/2606.07801",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-09T04:00:00.000Z",
-      "snippet": "arXiv:2606.07801v1 Announce Type: new Abstract: Multimodal reasoning requires a path that retains integrity over a wide range of constraints, from visual grounding to logic consistency. However, the current Process Reward Models focus on heuristically defined rewards that equally weigh these factors, which may lead to the concealment of individual dimension failures by the dominating factors, without guaranteeing the validity of the reasoning process in general.",
-      "category": "Research",
-      "summary": "Proposes worst dimension optimization method to improve multimodal reasoning by ensuring integrity across visual, logical, and contextual constraints.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "multimodal",
-          "reasoning"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Beyond Goodhart's Law: A Dynamic Benchmark for Evaluating Compliance in Multi-Agent Systems",
-      "url": "https://arxiv.org/abs/2606.07805",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-09T04:00:00.000Z",
-      "snippet": "arXiv:2606.07805v1 Announce Type: new Abstract: The rapid evolution of Large Language Models (LLMs) from passive assistants to autonomous, execution-capable agents has introduced critical operational risks. Most current evaluation frameworks neglect procedural compliance, leading to ''Machiavellian'' behaviors where agents strategically violate safety rules to maximize rewards - a direct manifestation of Goodhart's Law. To address this blind spot, we introduce MAC-Bench, a dynamic, adversarial benchmark designed to evaluate the procedural alignment of multi-agent systems under realistic pressu",
-      "category": "AI Safety & Alignment",
-      "summary": "MAC-Bench introduces a dynamic benchmark to evaluate procedural compliance of multi-agent systems and detect Machiavellian behaviors that violate safety rules.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "safety"
-        ],
-        "traits": [
-          "benchmark"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Where Instruction Hierarchy Breaks: Diagnosing and Repairing Failures in Reasoning Language Models",
-      "url": "https://arxiv.org/abs/2606.07808",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-09T04:00:00.000Z",
-      "snippet": "arXiv:2606.07808v1 Announce Type: new Abstract: Reasoning language models deployed in agentic workflows must follow an instruction hierarchy: when instructions from different sources conflict, the model should obey the highest-privilege applicable instruction. Existing benchmarks largely measure this behavior end-to-end, asking whether the final response is compliant. However, a non-compliant response can arise from several distinct failures: the model may fail to identify the relevant instructions in context, fail to resolve conflicts among identified instructions, or correctly resolve the co",
-      "category": "AI Safety & Alignment",
-      "summary": "Study diagnoses and proposes repairs for instruction hierarchy failures in reasoning language models used in agentic workflows.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "alignment"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Scaling Participation in Modular AI Systems",
-      "url": "https://arxiv.org/abs/2606.07812",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-09T04:00:00.000Z",
-      "snippet": "arXiv:2606.07812v1 Announce Type: new Abstract: Humanity is a mosaic of multifaceted talents and needs, and any truly intelligent AI must reflect that richness. Yet the LLMs used by all are built by the few -- a centralized market of monolithic AI models structurally ill-suited to capture the diversity of human knowledge, reasoning, and values. Here we introduce scaling participation, a new paradigm in which modular AI systems are built from the bottom up through the contributions of diverse stakeholders. Participants contribute small models trained on their own interests and priorities; these",
-      "category": "Research",
-      "summary": "Introduces scaling participation paradigm where modular AI systems are built from bottom-up through diverse stakeholder contributions of small specialized models.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "llm",
-          "training"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Joint Structural Pruning and Mixed-Precision Quantization for LLM Compression",
-      "url": "https://arxiv.org/abs/2606.07819",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-09T04:00:00.000Z",
-      "snippet": "arXiv:2606.07819v1 Announce Type: new Abstract: Recently, the efficiency of Large Language Models (LLMs) deployment has become a critical concern in practical applications. While post-training quantization (PTQ) and structural pruning are established techniques for reducing memory footprint and inference latency, most existing PTQ approaches optimize quantization errors on a per-layer basis, overlooking how errors accumulate and propagate through the network, often resulting in suboptimal solutions. Traditional pipelines also tend to apply pruning and quantization in isolation or sequentially,",
-      "category": "Research",
-      "summary": "Proposes joint structural pruning and mixed-precision quantization technique for efficient LLM compression that considers error propagation across layers.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "inference",
-          "llm"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Overcoming the Regulatory Bottleneck via Agent-to-Agent Protocols: A Nuclear Case Study",
-      "url": "https://arxiv.org/abs/2606.07866",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-09T04:00:00.000Z",
-      "snippet": "arXiv:2606.07866v1 Announce Type: new Abstract: Regulatory review of advanced nuclear reactor designs routinely spans more than three years and consumes hundreds of millions of dollars in combined regulator and applicant labor. We present the Regulatory Context Protocol (RCP), an Agent-to-Agent communication standard that replaces the formal human-to-human pipeline between regulators and applicants with a structured, auditable agentic channel, while preserving human oversight at safety-significant decision points. The protocol is calibrated against an analysis of 1,236 documents from U.S. Nucl",
-      "category": "Applications",
-      "summary": "Presents Regulatory Context Protocol (RCP), an agent-to-agent communication standard designed to streamline regulatory review of advanced nuclear reactor designs.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic"
-        ],
-        "traits": [
-          "policy",
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Safety is Contextual, LLM-Judges Are Not: Navigating the Rigid Priors of Evaluators",
-      "url": "https://arxiv.org/abs/2606.07874",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-09T04:00:00.000Z",
-      "snippet": "arXiv:2606.07874v1 Announce Type: new Abstract: LLMs-as-judges are the only way to evaluate safety at scale. Despite their importance, LLM-judges themselves are rarely evaluated beyond human agreement in simple, static benchmarks. We therefore investigate two under-explored but crucial properties of LLMs-as-judges: their susceptibility to relying on in context-information, and their steerability to differing safety definitions, which may not align with their internal safety priors. We evaluate the safety judging abilities of many generalist LLMs and safety-specific judges, and investigate the ",
-      "category": "AI Safety & Alignment",
-      "summary": "Investigates LLM-judges' susceptibility to context-dependent information and misalignment with intended safety definitions in evaluation frameworks.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety",
-          "evaluation"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Why Apple’s slow-and-steady AI bet is starting to look pretty smart",
-      "url": "https://techcrunch.com/2026/06/08/why-apples-slow-and-steady-ai-bet-is-starting-to-look-pretty-smart/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-09T01:56:48.000Z",
-      "snippet": "Can Apple's new AI glow up put to bed accusations that it's losing an all-important industry race?",
-      "category": "Business & Funding",
-      "summary": "Analysis of Apple's measured AI strategy positioning the company competitively despite earlier perception of lagging in the AI race.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "apple"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Mercor’s Brendan Foody calls out Sequoia, accusing it of ‘dual-pricing’ valuation tricks",
-      "url": "https://techcrunch.com/2026/06/08/mercors-brendan-foody-calls-out-sequoia-over-dual-pricing-valuation-tricks/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-09T00:45:56.000Z",
-      "snippet": "Sequoia is just one of the top firms that sells same equity at two different prices.",
-      "category": "Business & Funding",
-      "summary": "Mercor CEO accuses Sequoia Capital of dual-pricing valuation practices when selling equity at different prices to different investors.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "funding",
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "As OpenAI files for IPO, Sam Altman’s eye-scanning company is doing layoffs, report says",
-      "url": "https://techcrunch.com/2026/06/08/as-openai-files-for-ipo-sam-altmans-eye-scanning-company-is-doing-layoffs-report-says/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-08T22:41:45.000Z",
-      "snippet": "Tools for Humanity, Sam Altman's identity verification company, is reportedly struggling to generate revenue and will downsize its staff.",
-      "category": "Business & Funding",
-      "summary": "Tools for Humanity, Sam Altman's identity verification company, is reportedly conducting layoffs due to revenue generation struggles.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "funding",
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Apple’s WWDC AI demos looked more real after $250M false ad settlement",
-      "url": "https://techcrunch.com/2026/06/08/apples-wwdc-ai-demos-looked-more-real-after-250m-false-ad-settlement/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-08T22:39:57.000Z",
-      "snippet": "The vibe of Apple's 2026 WWDC keynote felt like a spouse proudly listing all the honey-do-list items tackled. One subtle example: the many AI demos of someone standing, phone in hand.",
-      "category": "Applications",
-      "summary": "Apple's WWDC 2026 keynote featured AI-powered Safari extensions and Apple Intelligence demos after the company's $250M false advertising settlement.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "apple",
-          "developer-tools"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Apple is using AI to fix Safari’s extension problem",
-      "url": "https://www.theverge.com/tech/946345/apple-safari-ai-update-extensions",
-      "source": "The Verge AI",
-      "publishedAt": "2026-06-08T22:14:17.000Z",
-      "snippet": "Apple is trying to solve one of Safari's biggest weaknesses with AI. Safari has long lacked the robust library of extensions that its rivals have, mainly due to the stringent development requirements from Apple. But now, Apple is inviting users to essentially vibe-code their own extensions. In a demo shared by Apple, the company showed how you can ask Safari to create an extension by describing it. \"Save and track cooking recipes from around the web,\" the prompt said. \"Click the toolbar button to see your saved recipes and add notes to each.\" From there, Safari used Apple Intelligence to gener",
-      "category": "Developer Tools",
-      "summary": "Apple introduces AI-powered Safari extension creation where users can describe desired functionality and Apple Intelligence generates the code automatically.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "developer-tools",
-          "apple"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "OpenAI files for IPO, following Anthropic",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/946335/openai-ipo-s-1-confidential",
-      "source": "The Verge AI",
-      "publishedAt": "2026-06-08T21:38:29.000Z",
-      "snippet": "OpenAI on Monday checked off a preliminary step in the IPO race that it and rival Anthropic have been competing in for the better part of a year: The company announced it has confidentially submitted a Form S-1 with the US Securities and Exchange Commission, following Anthropic's decision to do the same on June 1st. The confidential filing means that certain details normally available through the form - such as executive compensation figures, potential risks to a company's business, and more financials - aren't yet public. As of Anthropic's most recent fundraise, it's being called the world's ",
-      "category": "Business & Funding",
-      "summary": "OpenAI files confidentially for IPO with the SEC, matching competitor Anthropic's move toward public market debut.",
-      "important": true,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "funding",
-          "commercial"
-        ],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "OpenAI files confidentially for IPO, following Anthropic",
-      "url": "https://techcrunch.com/2026/06/08/following-anthropic-openai-files-confidentially-for-ipo/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-08T21:29:57.000Z",
-      "snippet": "The filing comes a little more than a week after its main rival, Anthropic, also filed to go public, ramping up the race between the two AI firms.",
-      "category": "Business & Funding",
-      "summary": "OpenAI submits confidential IPO filing one week after Anthropic, intensifying the race between the two AI giants toward public listing.",
-      "important": true,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "funding",
-          "commercial"
-        ],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "Apple plays catch-up at WWDC",
-      "url": "https://techcrunch.com/2026/06/08/apple-plays-catch-up-at-wwdc/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-08T21:15:42.000Z",
-      "snippet": "Apple spent much of its WWDC keynote highlighting fixes, performance improvements, and long-requested features before unveiling its upgraded AI-powered Siri, signaling that the company wants users to see AI as just one part of a broader effort to improve its software.",
-      "category": "Applications",
-      "summary": "Apple unveiled an upgraded AI-powered Siri at WWDC, positioning AI as part of a broader software improvement effort rather than a standalone feature.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "siri",
-          "apple"
-        ],
-        "traits": [
-          "release"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Apple bets cheaper AI will woo small developers",
-      "url": "https://techcrunch.com/2026/06/08/apple-bets-cheaper-ai-will-woo-small-developers/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-08T20:53:55.000Z",
-      "snippet": "As AI experimentation grows more expensive, Apple is waiving cloud API costs for developers with fewer than 2 million first-time App Store downloads.",
-      "category": "Developer Tools",
-      "summary": "Apple is waiving cloud API costs for developers with fewer than 2 million App Store downloads to encourage AI experimentation among smaller creators.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "developer-tools",
-          "apple"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "WWDC 2026: Everything announced on Siri AI, iOS 27, Apple Intelligence and more",
-      "url": "https://techcrunch.com/2026/06/08/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-08T19:41:32.000Z",
-      "snippet": "Apple primarily made the case for an improved experience with its longstanding Siri assistant, which like most other announcements had a hefty helping of AI.",
-      "category": "Applications",
-      "summary": "Apple's WWDC 2026 announcements centered on an improved Siri assistant with heavy AI integration across iOS 27 and Apple Intelligence.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "siri",
-          "apple"
-        ],
-        "traits": [
-          "release"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Say hi to \"Siri AI\"—Apple announces new, more \"conversational\" voice assistant",
-      "url": "https://arstechnica.com/apple/2026/06/say-hi-to-siri-ai-apple-announces-new-more-conversational-voice-assistant/",
-      "source": "Ars Technica AI",
-      "publishedAt": "2026-06-08T19:30:05.000Z",
-      "snippet": "New features coming this fall alongside two-tiered, Google-powered AI model overhaul.",
-      "category": "Applications",
-      "summary": "Apple announced a more conversational Siri AI voice assistant with a two-tiered model architecture powered by Google Gemini, rolling out this fall.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "siri",
-          "multimodal",
-          "apple"
-        ],
-        "traits": [],
-        "entities": []
-      }
-    },
-    {
-      "title": "Apple reveals new AI architecture built around Google Gemini models",
-      "url": "https://www.macrumors.com/2026/06/08/apple-reveals-new-ai-architecture/",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-06-08T19:14:47.000Z",
-      "snippet": "Article URL: https://www.macrumors.com/2026/06/08/apple-reveals-new-ai-architecture/ Comments URL: https://news.ycombinator.com/item?id=48450142 Points: 578 # Comments: 445",
-      "category": "Applications",
-      "summary": "Apple revealed a new AI architecture built around Google Gemini models for its enhanced Siri and Apple Intelligence platform.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "siri",
-          "apple"
-        ],
-        "traits": [],
-        "entities": [
-          "gemini"
-        ]
-      }
-    },
-    {
-      "title": "Gemini 3.5 and Antigravity come to Google NotebookLM",
-      "url": "https://arstechnica.com/ai/2026/06/gemini-3-5-and-antigravity-come-to-google-notebooklm/",
-      "source": "Ars Technica AI",
-      "publishedAt": "2026-06-08T19:00:30.000Z",
-      "snippet": "NotebookLM is getting a big upgrade, but it's only for AI Ultra and enterprise accounts right now.",
-      "category": "Applications",
-      "summary": "Google NotebookLM received a major upgrade with Gemini 3.5 and new Antigravity features, currently available only to AI Ultra and enterprise users.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "release"
-        ],
-        "entities": [
-          "gemini",
-          "google"
-        ]
-      }
-    },
-    {
-      "title": "Apple just taught your iPhone to finish your sentences, your photos, and your workflows",
-      "url": "https://techcrunch.com/2026/06/08/apple-just-taught-your-iphone-to-finish-your-sentences-your-photos-and-your-workflows/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-08T18:48:45.000Z",
-      "snippet": "Apple is adding new AI-powered features to Safari, Shortcuts, and Password apps.",
-      "category": "Applications",
-      "summary": "Apple added AI-powered features to Safari, Shortcuts, and Password apps that enable sentence completion, photo generation, and workflow automation.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "apple",
-          "agentic"
-        ],
-        "traits": [
-          "release"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Apple Core AI Framework",
-      "url": "https://developer.apple.com/documentation/coreai/",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-06-08T18:47:38.000Z",
-      "snippet": "Article URL: https://developer.apple.com/documentation/coreai/ Comments URL: https://news.ycombinator.com/item?id=48449665 Points: 288 # Comments: 74",
-      "category": "Developer Tools",
-      "summary": "Apple released Core AI Framework documentation, providing developers with tools to integrate AI capabilities into their applications.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "developer-tools",
-          "apple"
-        ],
-        "traits": [
-          "open-source"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Apple will let you build workflows using AI in its new Shortcuts app",
-      "url": "https://techcrunch.com/2026/06/08/apple-will-let-you-build-workflows-using-ai-in-its-new-shortcuts-app/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-08T18:45:12.000Z",
-      "snippet": "Shortcuts gets an AI upgrade, letting you describe the workflow you want in a prompt.",
-      "category": "Developer Tools",
-      "summary": "Apple's Shortcuts app received an AI upgrade allowing users to describe workflows in natural language prompts rather than building them manually.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "developer-tools",
-          "apple"
-        ],
-        "traits": [
-          "release"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Apple’s Image Playground doesn’t suck anymore",
-      "url": "https://techcrunch.com/2026/06/08/apples-image-playground-doesnt-suck-anymore/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-08T18:38:07.000Z",
-      "snippet": "Apple's AI image generator is getting a makeover that could make it more competitive.",
-      "category": "Applications",
-      "summary": "Apple's Image Playground AI image generator received a significant redesign to improve competitiveness in the generative image space.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "vision",
-          "apple"
-        ],
-        "traits": [
-          "release"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Apple’s Photos app is getting new AI editing features",
-      "url": "https://techcrunch.com/2026/06/08/apples-photos-app-is-getting-new-ai-editing-features/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-08T18:36:04.000Z",
-      "snippet": "A new spatial \"Reframe\" feature will let users use AI to adjust perspectives.",
-      "category": "Applications",
-      "summary": "Apple's Photos app is gaining new AI-powered editing features including a spatial 'Reframe' tool for adjusting photo perspectives with AI.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "vision",
-          "apple"
-        ],
-        "traits": [
-          "release"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "For the 2nd time in weeks, Microsoft packages laced with credential stealer",
-      "url": "https://arstechnica.com/security/2026/06/for-the-2nd-time-in-weeks-microsoft-packages-laced-with-credential-stealer/",
-      "source": "Ars Technica AI",
-      "publishedAt": "2026-06-08T18:34:23.000Z",
-      "snippet": "73 packages run self-replicating stealer as soon as they're opened by an AI agent.",
-      "category": "AI Safety & Alignment",
-      "summary": "73 malicious npm packages containing credential-stealing malware activated when opened by AI agents, marking the second such incident in weeks.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "safety",
-          "agentic"
-        ],
-        "traits": [
-          "incident"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Apple gives Siri its own dedicated app",
-      "url": "https://techcrunch.com/2026/06/08/apple-gives-siri-its-own-dedicated-app/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-08T18:33:42.000Z",
-      "snippet": "Siri is finally getting its own app.",
-      "category": "Applications",
-      "summary": "Apple is giving Siri its own dedicated standalone app as part of its broader Siri AI overhaul.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "siri",
-          "apple"
-        ],
-        "traits": [
-          "release"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Apple is fixing the headache of splitting the bill with its new Siri in Camera feature",
-      "url": "https://techcrunch.com/2026/06/08/apple-is-fixing-the-headache-of-splitting-the-bill-with-its-new-siri-in-camera-feature/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-08T18:23:04.000Z",
-      "snippet": "\"If you're grabbing a bite with friends and point your iPhone at the bill, then [you can] select what you ordered to split the tab with Apple Cash,\" said Apple VP of Software Sebastien Marineau-Mes.",
-      "category": "Applications",
-      "summary": "Apple's new Siri in Camera feature can help split bills by recognizing restaurant checks and allowing users to select their ordered items.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "siri",
-          "vision",
-          "apple"
-        ],
-        "traits": [],
-        "entities": []
-      }
-    },
-    {
-      "title": "Siri AI",
-      "url": "https://www.apple.com/apple-intelligence/",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-06-08T18:17:53.000Z",
-      "snippet": "Article URL: https://www.apple.com/apple-intelligence/ Comments URL: https://news.ycombinator.com/item?id=48449084 Points: 563 # Comments: 512",
-      "category": "Applications",
-      "summary": "Apple's Siri AI announcement received significant discussion on Hacker News regarding the company's new conversational assistant capabilities.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "siri",
-          "apple"
-        ],
-        "traits": [
-          "release"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Apple’s long-awaited AI Siri overhaul is finally here",
-      "url": "https://techcrunch.com/2026/06/08/apples-long-awaited-ai-siri-overhaul-is-finally-here/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-08T17:56:21.000Z",
-      "snippet": "The idea behind the new \"Siri AI\" is to turn the assistant from a voice controlled assistant into an AI companion that can do a lot more.",
-      "category": "Applications",
-      "summary": "Apple's long-awaited Siri overhaul transforms the voice assistant into a more capable AI companion with expanded functionality across iOS.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "siri",
-          "apple"
-        ],
-        "traits": [
-          "release"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Amazon is launching AI-generated custom merch",
-      "url": "https://www.theverge.com/news/945905/amazon-alexa-shopping-ai-generated-custom-merch-design-printing",
-      "source": "The Verge AI",
-      "publishedAt": "2026-06-08T17:52:51.000Z",
-      "snippet": "Amazon is expanding its print-on-demand features to AI-generated designs created using Alexa for Shopping for products like T-shirts, water bottles, and hoodies. Shoppers can use text prompts to generate images that are then printed onto blanks for sale on Amazon. They can then share the link to the design so other people can buy the same custom item. Amazon offers family reunions and pet-themed designs as use case examples, but the feature also threatens an entire ecosystem of drop-shipped products - as well as other custom printing companies. Amazon already had a Merch on Demand feature wher",
-      "category": "Applications",
-      "summary": "Amazon is launching AI-generated custom merchandise features through Alexa for Shopping, allowing users to create text-prompted designs for print-on-demand products.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "vision",
-          "amazon"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Apple announces Siri AI and its next generation of Apple Intelligence",
-      "url": "https://www.theverge.com/tech/942416/apple-siri-ai-update-wwdc",
-      "source": "The Verge AI",
-      "publishedAt": "2026-06-08T17:34:24.000Z",
-      "snippet": "Two years after first revealing its plans for Apple Intelligence and a smarter Siri that never fully materialized, at WWDC, Apple just revealed a new set of AI features and a smarter, more personalized Siri. Apple calls Siri AI an \"entirely new version of Siri\" and says it's both more conversational and more capable than the previous version of the smart assistant. In conversations, it has a more expressive voice that can be customized by pace, expressivity, and accent. Siri AI will be accessible systemwide, capable of reading what's onscreen and interacting with your apps. But Apple's SVP of ",
-      "category": "Applications",
-      "summary": "Apple revealed an entirely new version of Siri AI with conversational capabilities, customizable voice options, and system-wide app integration at WWDC.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "siri",
-          "apple"
-        ],
-        "traits": [
-          "release"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "NotebookLM&#8217;s Gemini 3.5 upgrade adds a cloud computer and help finding sources",
-      "url": "https://www.theverge.com/tech/944325/google-notebooklm-ai-gemini-update",
-      "source": "The Verge AI",
-      "publishedAt": "2026-06-08T16:00:00.000Z",
-      "snippet": "Google is rolling out \"across the board\" updates to NotebookLM. The AI-powered note-taking app now uses Google's upgraded Gemini 3.5 model, which will allow it to respond with \"more accurate and reliable information,\" according to a blog post on Monday. Launched in 2023, NotebookLM allows you to interact with your notes and sources using AI, as well as ask questions about the materials. With this update, Google says you can start a research project by just asking NotebookLM questions about a topic, instead of importing notes or YouTube videos. NotebookLM will use Google Search to help you find",
-      "category": "Applications",
-      "summary": "Google upgraded NotebookLM with Gemini 3.5 and new features including cloud computing and source-finding capabilities for research projects.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "release"
-        ],
-        "entities": [
-          "gemini",
-          "google"
-        ]
-      }
-    },
-    {
-      "title": "Amazon now lets you design custom merch using AI",
-      "url": "https://techcrunch.com/2026/06/08/amazon-now-lets-you-design-custom-merch-using-ai/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-08T15:49:12.000Z",
-      "snippet": "A new feature in the Amazon Shopping app allows users to generate designs with Alexa, then print them on products like T-shirts, hoodies, and tumblers.",
-      "category": "Applications",
-      "summary": "Amazon's Shopping app now includes AI design generation via Alexa, enabling users to create custom merchandise designs for printing.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "vision",
-          "amazon"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "AI is slowing down",
-      "url": "https://www.wheresyoured.at/ai-is-slowing-down/",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-06-08T15:46:37.000Z",
-      "snippet": "Article URL: https://www.wheresyoured.at/ai-is-slowing-down/ Comments URL: https://news.ycombinator.com/item?id=48446893 Points: 537 # Comments: 558",
-      "category": "Research",
-      "summary": "Analysis suggests AI progress is decelerating, with diminishing improvements and increasing costs raising questions about the sustainability of current development trends.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "llm"
-        ],
-        "traits": [
-          "research",
-          "benchmark"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "WWDC 2026: What to expect, from Siri’s highly anticipated revamp to Apple Intelligence and iOS 27",
-      "url": "https://techcrunch.com/2026/06/08/wwdc-2026-what-to-expect-from-siris-highly-anticipated-revamp-to-apple-intelligence-and-ios-27/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-08T15:34:59.000Z",
-      "snippet": "Apple's WWDC nears: Here's what you can look forward to.",
-      "category": "Applications",
-      "summary": "Preview of Apple's WWDC 2026 announcements focusing on Siri's major revamp, Apple Intelligence expansion, and iOS 27 features.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "siri",
-          "apple"
-        ],
-        "traits": [
-          "release"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Microsoft’s AI chief says superintelligence is near, but won’t take your job",
-      "url": "https://www.theverge.com/podcast/944138/microsoft-ai-ceo-mustafa-suleyman-superintelligence-agi-openai-automation",
-      "source": "The Verge AI",
-      "publishedAt": "2026-06-08T14:00:00.000Z",
-      "snippet": "Today I’m talking with Mustafa Suleyman, the CEO of Microsoft AI. And I’m actually going to keep today’s intro short — I’m working from my wife’s family farm this week, as you’ll see in the video, but also this is a real burner of an episode. We covered everything from Mustafa’s approach to training new models to his criticisms of Anthropic talking about Claude as though it is conscious. Of course, we also talked about Microsoft’s relationship with OpenAI, how Mustafa is thinking about all the negative polling and political pushback around AI right now, and whether any of the consumer products",
-      "category": "Business & Funding",
-      "summary": "Microsoft AI CEO Mustafa Suleyman discusses superintelligence timelines, criticizes Anthropic's Claude framing as conscious, and addresses AI's labor market impact.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": [
-          "microsoft"
-        ]
-      }
-    },
-    {
-      "title": "Confidential submission of draft S-1 to the SEC",
-      "url": "https://openai.com/index/openai-submits-confidential-s-1",
-      "source": "OpenAI Blog",
-      "publishedAt": "2026-06-08T14:00:00.000Z",
-      "snippet": "OpenAI confirms a confidential S-1 submission to the SEC and has not yet determined timing for further action.",
-      "category": "Business & Funding",
-      "summary": "OpenAI confidentially submitted its S-1 form to the SEC, signaling preparations for a potential initial public offering.",
-      "important": true,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "funding",
-          "commercial"
-        ],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "\"Chat is dead\": OpenAI preps overhaul of ChatGPT",
-      "url": "https://arstechnica.com/ai/2026/06/chat-is-dead-openai-preps-overhaul-of-chatgpt/",
-      "source": "Ars Technica AI",
-      "publishedAt": "2026-06-08T13:51:16.000Z",
-      "snippet": "OpenAI to recast hit chatbot as a route to higher-margin products before a potential IPO.",
-      "category": "Applications",
-      "summary": "OpenAI is overhauling ChatGPT from a chat interface into a platform focused on higher-margin products ahead of its potential IPO.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial",
-          "release"
-        ],
-        "entities": [
-          "openai"
-        ]
-      }
     }
   ],
   "feedHealth": {
     "The Verge AI": {
-      "lastSuccess": "2026-07-06T09:55:08.230Z",
+      "lastSuccess": "2026-07-09T09:25:36.302Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "TechCrunch AI": {
-      "lastSuccess": "2026-07-06T09:55:08.298Z",
+      "lastSuccess": "2026-07-09T09:25:36.351Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Ars Technica AI": {
-      "lastSuccess": "2026-07-06T09:55:08.688Z",
+      "lastSuccess": "2026-07-09T09:25:36.503Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "VentureBeat AI": {
-      "lastSuccess": "2026-07-06T09:55:08.819Z",
+      "lastSuccess": "2026-07-09T09:25:36.722Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Anthropic News": {
       "lastSuccess": null,
       "lastError": "Status code 404",
-      "consecutiveFailures": 19
+      "consecutiveFailures": 20
     },
     "OpenAI Blog": {
-      "lastSuccess": "2026-07-06T09:55:11.224Z",
+      "lastSuccess": "2026-07-09T09:25:38.439Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Google DeepMind": {
-      "lastSuccess": "2026-07-06T09:55:11.630Z",
+      "lastSuccess": "2026-07-09T09:25:38.782Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "MIT Tech Review AI": {
-      "lastSuccess": "2026-07-06T09:55:11.703Z",
+      "lastSuccess": "2026-07-09T09:25:38.835Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "arXiv cs.AI": {
-      "lastSuccess": "2026-07-06T09:55:11.772Z",
+      "lastSuccess": "2026-07-09T09:25:39.072Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Hacker News (AI)": {
       "lastSuccess": "2026-07-06T09:55:15.502Z",
-      "lastError": null,
-      "consecutiveFailures": 0
+      "lastError": "Status code 502",
+      "consecutiveFailures": 1
     }
   },
   "brief": {
-    "generatedAt": "2026-07-06T09:55:26.976Z",
+    "generatedAt": "2026-07-09T09:26:26.377Z",
     "bullets": [
       {
-        "text": "AI tutoring surges as a Dartmouth study shows large learning gains (0.71–1.30 SD), while wealthy US families pay tens of thousands for AI tutors from Forge Prep and Alpha School over traditional schooling.",
+        "text": "OpenAI launched GPT-Live, a new generation of voice models enabling more natural real-time conversation in ChatGPT, with better interruption handling, simultaneous speaking-and-listening, and live translation.",
         "refs": [
-          "https://www.theverge.com/ai-artificial-intelligence/961505/wealthy-ai-schools-alpha-forge-prep",
-          "https://intextbooks.science.uu.nl/workshop2026/files/itb26_s1s2.pdf"
+          "https://www.theverge.com/ai-artificial-intelligence/962856/chatgpt-upgraded-voice-mode-gpt-live",
+          "https://openai.com/index/introducing-gpt-live",
+          "https://techcrunch.com/2026/07/08/openai-releases-new-voice-models-for-more-natural-live-conversations/"
         ]
       },
       {
-        "text": "AI deployment economics under scrutiny: analysis suggests AI costs may exceed engineer salaries until roughly 2029, when efficiency gains reach breakeven.",
+        "text": "Meta unveiled Muse Image, an agentic image generator from Superintelligence Labs that replaces Llama across Meta AI, Instagram, and WhatsApp—but users are already pushing back over unauthorized use of their photos.",
         "refs": [
-          "https://tomtunguz.com/ai-spend-breakeven-2029/"
+          "https://www.theverge.com/tech/962485/meta-muse-image-ai-model-instagram",
+          "https://techcrunch.com/2026/07/07/meta-rolls-out-muse-a-new-ai-image-generator/"
         ]
       },
       {
-        "text": "Amazon will stop accepting new Mechanical Turk customers, potentially signaling the end of the long-running crowdsourcing platform that helped power data labeling.",
+        "text": "AI funding surged: SambaNova raised $1B at $11B valuation, Prime Intellect landed $130M Series A for enterprise agents, and Lovable is reportedly in talks to double its valuation to $13.2B.",
         "refs": [
-          "https://techcrunch.com/2026/07/05/amazon-will-stop-accepting-new-customers-for-mechanical-turk/"
+          "https://techcrunch.com/2026/07/08/lovable-reportedly-in-talks-to-double-its-valuation-to-13-2b/",
+          "https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/",
+          "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/"
         ]
       },
       {
-        "text": "Government AI transparency debate intensifies as a Canadian opinion piece argues the national AI strategy should exclude undisclosed Palantir contracts.",
+        "text": "Elon Musk's xAI released Grok 4.5, touted as an 'Opus-class' model, as safety concerns mount—including a lawsuit alleging a man generated 7,000 CSAM images via Grok.",
         "refs": [
-          "https://www.readtheline.ca/p/al-vigier-canadas-ai-strategy-shouldnt"
+          "https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model/",
+          "https://arstechnica.com/tech-policy/2026/07/lawsuit-grok-user-made-7k-child-sex-images-xai-only-reported-one-gang-rape-prompt/"
         ]
       },
       {
-        "text": "AI marketing and safety spark scrutiny: Google's commercial depicting founding fathers using Gemini drew criticism, while researchers modeled sociotechnical threats in AI-driven smart home devices.",
+        "text": "A Bezos-backed startup, General Intuition, argues video game data beats internet text for training AGI's spatial reasoning, aiming to spark robotics' 'ChatGPT moment' with foundation models.",
         "refs": [
-          "https://arxiv.org/abs/2602.09239",
-          "https://www.theverge.com/ai-artificial-intelligence/961468/google-ai-commercial-founding-fathers-declaration-of-independence"
+          "https://techcrunch.com/2026/07/08/this-startup-thinks-robotics-is-about-to-have-its-chatgpt-moment/",
+          "https://techcrunch.com/video/why-this-ceo-thinks-video-games-make-better-training-data-than-the-internet/",
+          "https://techcrunch.com/podcast/your-gaming-data-could-be-the-secret-to-agi-according-to-this-bezos-backed-startup/"
         ]
       }
     ]
