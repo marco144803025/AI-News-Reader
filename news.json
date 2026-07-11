@@ -1,22 +1,561 @@
 {
-  "generatedAt": "2026-07-10T09:18:31.878Z",
+  "generatedAt": "2026-07-11T07:39:35.565Z",
   "daysBack": 2,
   "categories": [
-    "Applications",
-    "Model Releases",
-    "Hardware & Compute",
-    "Business & Funding",
-    "Research",
-    "Regulation & Policy",
-    "Developer Tools",
-    "Open Source",
-    "AI Safety & Alignment",
     "Agent Frameworks",
+    "AI Safety & Alignment",
+    "Research",
+    "Model Releases",
+    "Applications",
+    "Regulation & Policy",
+    "Business & Funding",
+    "Open Source",
+    "Hardware & Compute",
+    "Developer Tools",
     "Other",
     "MCP",
     "Evaluation"
   ],
   "articles": [
+    {
+      "title": "Context Graphs for Proactive Enterprise Agents",
+      "url": "https://arxiv.org/abs/2607.07721",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-11T04:00:00.000Z",
+      "snippet": "arXiv:2607.07721v1 Announce Type: new Abstract: Retrieval-Augmented Generation (RAG) and agentic frameworks have advanced enterprise AI considerably, yet agents remain fundamentally reactive: they wait for a human query before acting. This paper argues that genuine enterprise productivity gains require proactive agents: systems that surface relevant, actionable information to workers before they ask. We propose the Context Graph, a live relational data structure that models enterprise entities, their relationships, and state transitions over time. Built on this graph, we define a Delta Detecti",
+      "category": "Agent Frameworks",
+      "summary": "This paper proposes Context Graphs for proactive enterprise agents that surface relevant information before users request it, advancing beyond traditional reactive RAG and agentic systems.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "rag"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Adversarial Social Epistemology for Assemblies of Humans and Large Language Models",
+      "url": "https://arxiv.org/abs/2607.07760",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-11T04:00:00.000Z",
+      "snippet": "arXiv:2607.07760v1 Announce Type: new Abstract: We outline an adversarial social epistemology (ASE) for densely interactive communicative landscapes in which public assertions are scaffolded by chains of testimony, inference, institutional certification, and tacit trust. In such landscapes, agents have incentives and affordances to distort, color, omit, fabricate, or strategically under-specify information for private, reputational, rhetorical, or material gains. We argue that these phenomena are not adequately captured by familiar descriptions of epistemic bubbles, echo chambers, or misinform",
+      "category": "AI Safety & Alignment",
+      "summary": "The paper outlines an adversarial social epistemology framework for understanding misinformation and distortion in densely interactive landscapes of humans and LLMs.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "alignment",
+          "safety"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Aligning Clinical Needs and AI Capabilities: A Survey on LLMs for Medical Reasoning",
+      "url": "https://arxiv.org/abs/2607.07761",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-11T04:00:00.000Z",
+      "snippet": "arXiv:2607.07761v1 Announce Type: new Abstract: Large language models (LLMs) have emerged as important tools in healthcare, showing growing potential for clinical reasoning and patient care. This survey examines recent progress in medical LLMs, focusing on reasoning applications and requirements. We present a dual-view approach that connects clinical practice with computational methods. On the clinical side, we establish a five-level competency scheme following Miller's Pyramid, progressing from knowledge recall to dynamic case management. On the computational side, we link deductive, inductiv",
+      "category": "Research",
+      "summary": "A survey examines recent progress in medical LLMs, connecting clinical practice with computational methods through Miller's Pyramid competency levels and various reasoning approaches.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm",
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Alignment Plausibility: A New Standard for Assuring AI in Healthcare",
+      "url": "https://arxiv.org/abs/2607.07766",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-11T04:00:00.000Z",
+      "snippet": "arXiv:2607.07766v1 Announce Type: new Abstract: Large language models (LLMs) have become significant providers of mental health support, yet they remain products of an attention economy whose operational and commercial targets favour sustained engagement over the friction that effective psychological support often requires. Developers' safety responses have been largely reactive, addressing the most visible and acute harms while subtler, longer-term patterns of risk (e.g., dependency, boundary erosion, the amplification of distorted beliefs) receive less attention. We contend that making LLMs ",
+      "category": "AI Safety & Alignment",
+      "summary": "The paper proposes 'Alignment Plausibility' as a new standard for assuring LLMs in healthcare, addressing subtle long-term risks like dependency and boundary erosion in mental health support.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "alignment"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Infinity-Parser2 Technical Report",
+      "url": "https://arxiv.org/abs/2607.07836",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-11T04:00:00.000Z",
+      "snippet": "arXiv:2607.07836v1 Announce Type: new Abstract: We present Infinity-Parser2, a large multimodal model that couples a controllable data-synthesis pipeline with multi-task reinforcement learning for end-to-end document parsing, addressing the persistent scarcity of faithfully annotated parsing corpora. Our contributions are threefold. First, we build a scalable synthesis engine, pairing a controllable rendering framework with an iterative refinement loop, and use it to construct and open-source Infinity-Doc2-5M: a 5-million-sample bilingual (Chinese/English) corpus spanning diverse document type",
+      "category": "Model Releases",
+      "summary": "Infinity-Parser2 is a multimodal model for document parsing that includes a synthetic data pipeline and open-sources a 5-million-sample bilingual corpus for diverse document types.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal"
+        ],
+        "traits": [
+          "open-source",
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "VectorizationLLM: Smart Vectorization Based AI Assistant",
+      "url": "https://arxiv.org/abs/2607.07846",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-11T04:00:00.000Z",
+      "snippet": "arXiv:2607.07846v1 Announce Type: new Abstract: VectorizationLLM is a specialized Large Language Model based on Google open-weight LLMs. The model is designed to assist students to learn smart vectorization, time/wave vector analysis, piecewise functions, Fourier analysis, and differential equations in MATLAB. The course application is CTEC 247: Applied Computational Analysis II by the Department of Electrical & Computer Engineering Technology at New York Institute of Technology Old Westbury. The LLM model is designed to be an instructive assistant, providing detailed explanations of concepts ",
+      "category": "Applications",
+      "summary": "VectorizationLLM is a fine-tuned educational assistant based on Google's open-weight models, designed to teach vectorization, wave analysis, and differential equations in MATLAB.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm",
+          "fine-tuning",
+          "application"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "Agentic AI and Retrieval-Augmented Models in Straight-Through Underwriting",
+      "url": "https://arxiv.org/abs/2607.07858",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-11T04:00:00.000Z",
+      "snippet": "arXiv:2607.07858v1 Announce Type: new Abstract: Artificial intelligence (AI) is beginning to reshape actuarial practice, particularly in domains that require reasoning over unstructured documents, heterogeneous data sources, and regulated decision workflows. Actuaries now face a design space that ranges from traditional rule-based automation to large language models (LLMs), retrieval-augmented generation (RAG), and multi-agent ``agentic'' systems that plan, retrieve, call tools, and reflect. This paper examines how these emerging architectures can support actuarial priorities such as transpare",
+      "category": "Agent Frameworks",
+      "summary": "This paper examines how agentic systems, RAG, and LLMs can support actuarial practice, addressing reasoning over unstructured documents and regulated decision workflows.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "rag"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Feedback Manipulation Regularization: Enabling Offline Agent Alignment for Imitation Learning",
+      "url": "https://arxiv.org/abs/2607.07859",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-11T04:00:00.000Z",
+      "snippet": "arXiv:2607.07859v1 Announce Type: new Abstract: Reinforcement learning (RL) research has increasingly shifted focus towards alignment, ensuring agents learn behaviors adhering to human values. While human demonstrations and feedback have proven crucial for alignment, existing approaches predominantly combine these signals using multi-stage pipelines designed for the contextual bandit framing of language generation. Yet little work explores how these complementary inputs can serve as a richer, interconnected signal for single-stage offline training in fully sequential decision-making environmen",
+      "category": "AI Safety & Alignment",
+      "summary": "The paper proposes Feedback Manipulation Regularization to enable offline alignment of agents in imitation learning by combining human demonstrations with feedback signals.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "alignment",
+          "training"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Nigeria Machinery: A Low-Resource Industrial Dataset with a Domain-Grounded Reasoning Layer",
+      "url": "https://arxiv.org/abs/2607.07883",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-11T04:00:00.000Z",
+      "snippet": "arXiv:2607.07883v1 Announce Type: new Abstract: There is relatively little, public, and model-ready data on industrial machinery for African economies. This makes it hard to do quantitative analysis or to train language models on numeric tasks grounded in that setting. We release two things to help with part of this problem. The first is the Nigeria Machinery Usage and Failures Dataset: 89 machine-level records across 28 indicators, covering Nigeria's manufacturing and oil and gas sectors from 2006 to 2025. Every record names a public source and is decoded by a codebook. The second is a method",
+      "category": "Research",
+      "summary": "The Nigeria Machinery dataset provides 89 machine-level records across African manufacturing and oil/gas sectors with domain-grounded reasoning methods to enable quantitative analysis.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning"
+        ],
+        "traits": [
+          "research",
+          "benchmark"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Persona Cartography: Charting Language Model Personality Traits in Weight Space",
+      "url": "https://arxiv.org/abs/2607.07916",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-11T04:00:00.000Z",
+      "snippet": "arXiv:2607.07916v1 Announce Type: new Abstract: Large language models exhibit recurring behavioural patterns -- personas -- that shape generalisation and safety, but we lack reliable tools for decomposing, measuring, and controlling them. Our central insight is to treat personas as positions in a space of behavioural traits, using the OCEAN framework to describe model personas in terms of Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism. We train low-rank adapters to amplify or suppress individual traits, and evaluate their effects using an LLM-judge calibrated against",
+      "category": "AI Safety & Alignment",
+      "summary": "Persona Cartography maps LLM personality traits using the OCEAN framework and low-rank adapters to decompose, measure, and control behavioral patterns affecting generalization and safety.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "interpretability",
+          "alignment"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Agentic Neural Architecture Search",
+      "url": "https://arxiv.org/abs/2607.07984",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-11T04:00:00.000Z",
+      "snippet": "arXiv:2607.07984v1 Announce Type: new Abstract: Neural architecture search (NAS) methods have grown increasingly efficient, yet they remain bounded by manually engineered search spaces that require substantial domain expertise and must be rebuilt for every new task. Large language models (LLMs) can generate architectures in an open-ended space, but how to optimally divide the labor between LLM-driven design and NAS-driven search remains unexplored. We propose a mechanism that bridges these two paradigms: an LLM produces a high-quality seed architecture, then decomposes it into a \"slotted archi",
+      "category": "Agent Frameworks",
+      "summary": "Agentic Neural Architecture Search bridges LLMs and NAS by having LLMs generate seed architectures that are then decomposed and optimized through automated search.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "training"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Concretized Proposition Prompting Resolves Composition-Knowledge Dichotomy in Large Language Models",
+      "url": "https://arxiv.org/abs/2607.08018",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-11T04:00:00.000Z",
+      "snippet": "arXiv:2607.08018v1 Announce Type: new Abstract: LLMs often struggle to balance compositionality with knowledgeability, a challenge we define as Composition-Knowledge Dichotomy. To address this, we propose Concretized Proposition Prompting (CPP), a framework that explicitly concretizes propositions relevant to questions. The results demonstrate that CPP significantly enhances reasoning performance, particularly in medical benchmarks where precise knowledge is paramount, while being competitive on math benchmarks where deductive reasoning is prioritized. Additional experiments reveal that CPP is",
+      "category": "Research",
+      "summary": "Concretized Proposition Prompting addresses the composition-knowledge dichotomy in LLMs by explicitly concretizing relevant propositions, improving reasoning on medical and math benchmarks.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning",
+          "evaluation"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "From Prompts to Contracts: Harness Engineering for Auditable Enterprise LLM Agents",
+      "url": "https://arxiv.org/abs/2607.08028",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-11T04:00:00.000Z",
+      "snippet": "arXiv:2607.08028v1 Announce Type: new Abstract: Enterprise large language model (LLM) applications often begin as prototypes whose behavior is carried by prompts and retrieval context. Productization adds requirements for source boundaries, entity routing, answer contracts, and reproducible traces. We present a harness-engineering approach that reconstructs this pattern into a traceable, auditable LLM-agent architecture: deterministic behavior moves into code, manifests, schemas, and validation artifacts around a replaceable composition boundary, while source-backed claims remain the authority",
+      "category": "Agent Frameworks",
+      "summary": "This paper presents a harness-engineering approach to productionize LLM agents through traceable, auditable architectures with deterministic code, manifests, and validation artifacts.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "developer-tools"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "A safety-oriented hypothetico-deductive framework for AI-assisted differential diagnosis",
+      "url": "https://arxiv.org/abs/2607.08038",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-11T04:00:00.000Z",
+      "snippet": "arXiv:2607.08038v1 Announce Type: new Abstract: Diagnostic error is a major threat to patient safety, yet current large language model (LLM) systems often treat diagnosis as a one-shot prediction task, lacking safeguards against missed high-risk alternatives or rigorous verification of their reasoning. Here, we present AegisDx, a safety-oriented framework for hypothetico-deductive clinical reasoning. AegisDx coordinates specialized LLM components through role-specific contracts, structured intermediate outputs, evidence-retrieval interfaces, and verification gates to generate broad differentia",
+      "category": "Applications",
+      "summary": "AegisDx is a safety-oriented framework for AI-assisted clinical diagnosis using role-specific LLM components with structured verification gates and evidence-retrieval interfaces.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "reasoning",
+          "application"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "When LLMs Agree, Are They Right? Auditing Self-Consistency and Cross-Model Agreement as Confidence Signals",
+      "url": "https://arxiv.org/abs/2607.08065",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-11T04:00:00.000Z",
+      "snippet": "arXiv:2607.08065v1 Announce Type: new Abstract: LLM-as-judge (Zheng et al., 2023) is increasingly the default for evaluating AI systems in enterprise pipelines, often scaled to ensembles (Verga et al., 2024) or \"mixture-of-experts\" (Shazeer et al., 2017) panels of judges. These systems share a key assumption: that consistency -- agreement among judges, or among a model's own samples -- indicates correctness. We show this assumption is unreliable. Agreement is not accuracy: a model can agree with itself, and different models can agree with each other, out of shared bias, a memorized heuristic, ",
+      "category": "Research",
+      "summary": "This paper audits LLM-as-judge systems, showing that agreement among models or self-consistency does not reliably indicate correctness due to shared biases and memorized heuristics.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "evaluation",
+          "interpretability"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Meta removes controversial AI feature on Instagram after backlash",
+      "url": "https://techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-10T23:55:07.000Z",
+      "snippet": "\"Our intent was to provide a useful creative tool and to give people control over whether their public content could be referenced in this way,\" the company said in a blog post. \"We've heard the feedback that this feature missed the mark, so it's no longer available.\"",
+      "category": "Regulation & Policy",
+      "summary": "Meta removed its controversial AI image feature on Instagram after user backlash regarding unauthorized use of public content.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy",
+          "incident"
+        ],
+        "entities": [
+          "meta"
+        ]
+      }
+    },
+    {
+      "title": "Meta turns off the Instagram feature that let users make AI deepfakes of public accounts",
+      "url": "https://www.theverge.com/tech/964416/meta-instagram-ai-muse-image-deepfakes",
+      "source": "The Verge AI",
+      "publishedAt": "2026-07-10T23:49:50.000Z",
+      "snippet": "Following significant backlash, Meta is turning off the feature it announced this week that let users generate AI images based on content from public Instagram accounts just by tagging them. The feature, as originally set up, meant that content from any public Instagram account could be used in AI creations without the account owner's permission. \"Earlier this week, we announced that one way for people to generate images in Meta AI is by @-mentioning public Instagram accounts that they want to reference,\" Meta says in an update to a blog post about its new Muse Image AI model. \"Our intent was ",
+      "category": "Regulation & Policy",
+      "summary": "Meta disabled its AI image generation feature that allowed users to create deepfakes from public Instagram accounts without permission, following backlash over privacy and consent concerns.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy",
+          "incident"
+        ],
+        "entities": [
+          "meta"
+        ]
+      }
+    },
+    {
+      "title": "Apple sues OpenAI for allegedly stealing hardware secrets",
+      "url": "https://www.theverge.com/tech/964350/apple-openai-lawsuit-trade-secrets",
+      "source": "The Verge AI",
+      "publishedAt": "2026-07-10T21:36:51.000Z",
+      "snippet": "Apple has sued OpenAI, alleging that engineers stole Apple secrets to advance the AI startup's hardware plans. In its complaint, Apple says it uncovered \"a pattern of theft of Apple's trade secrets by OpenAI employees who were formerly at Apple.\" In addition to OpenAI, the lawsuit also names IO Products - Jony Ive's hardware startup, which OpenAI bought in 2025 - along with two specific employees, Tang Tan (OpenAI's chief hardware officer) and Chang Liu (who joined OpenAI from Apple in January). An Apple spokesperson shared this statement with 9to5Mac: At Apple, our teams are constantly develo",
+      "category": "Business & Funding",
+      "summary": "Apple sued OpenAI for allegedly stealing trade secrets through former Apple employees, including OpenAI's chief hardware officer, to advance hardware development plans.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "apple"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Apple sues OpenAI over alleged trade secret theft",
+      "url": "https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-10T21:00:29.000Z",
+      "snippet": "Apple alleges the misconduct was directed by OpenAI's senior leadership, including a longtime former employee.",
+      "category": "Business & Funding",
+      "summary": "Apple alleges OpenAI's senior leadership directed trade secret theft by former Apple employees now working at the AI company.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "apple"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Open source AI matters more than ever, according to Hugging Face’s Clem Delangue",
+      "url": "https://techcrunch.com/podcast/open-source-ai-matters-more-than-ever-according-to-hugging-faces-clem-delangue/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-10T19:00:00.000Z",
+      "snippet": "Open source AI is booming, according to Hugging Face CEO Clem Delangue. The company has grown into something like a GitHub for AI in recent years, where AI builders can share and download open models and datasets, now used by roughly half the Fortune 500. Delangue has seen the same story play out again and again: companies start […]",
+      "category": "Open Source",
+      "summary": "Hugging Face CEO highlights the booming open source AI ecosystem, where the platform now serves roughly half of Fortune 500 companies as a hub for sharing models and datasets.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "hugging-face"
+        ],
+        "traits": [
+          "open-source",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "How the terrorist group Boko Haram uses frontier AI",
+      "url": "https://casp.ac/reports/ai-enabled-terrorism",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-07-10T18:49:26.000Z",
+      "snippet": "Article URL: https://casp.ac/reports/ai-enabled-terrorism Comments URL: https://news.ycombinator.com/item?id=48863707 Points: 202 # Comments: 172",
+      "category": "Regulation & Policy",
+      "summary": "Report examining how terrorist organizations like Boko Haram are adopting frontier AI technologies for operational purposes, raising critical safety and policy concerns.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy",
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "SK Hynix raises $26.5B in the biggest foreign IPO in US history, is urged to build new US fabs",
+      "url": "https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-10T17:17:12.000Z",
+      "snippet": "The AI chip boom just produced its biggest Wall Street moment yet. Now SK Hynix and Samsung are being asked to build U.S. factories.",
+      "category": "Hardware & Compute",
+      "summary": "SK Hynix raised $26.5B in the largest foreign IPO in US history, driven by AI chip demand, amid calls for new US semiconductor manufacturing facilities.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "hardware",
+          "infrastructure"
+        ],
+        "traits": [
+          "funding"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Disable autoplay and infinite scroll or risk massive fines, EU tells Meta",
+      "url": "https://arstechnica.com/tech-policy/2026/07/disable-auto-play-and-infinite-scroll-or-risk-massive-fines-eu-tells-meta/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-07-10T15:46:18.000Z",
+      "snippet": "Digital Services Act may force Meta to make big changes on its platforms.",
+      "category": "Regulation & Policy",
+      "summary": "The EU's Digital Services Act may force Meta to disable autoplay and infinite scroll features to avoid massive fines.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "meta"
+        ]
+      }
+    },
+    {
+      "title": "Hugging Face’s CEO on why companies are done renting their AI",
+      "url": "https://techcrunch.com/2026/07/10/hugging-faces-ceo-on-why-companies-are-done-renting-their-ai/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-10T14:00:00.000Z",
+      "snippet": "Open source AI is booming, according to Hugging Face CEO Clem Delangue. The company has grown into something like a GitHub for AI in recent years, where AI builders can share and download open models and datasets, now used by roughly half the Fortune 500. Delangue has seen the same story play out again and again: companies start […]",
+      "category": "Open Source",
+      "summary": "Hugging Face CEO discusses how companies are increasingly adopting open source AI models rather than renting proprietary solutions, with the platform serving half the Fortune 500.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "hugging-face"
+        ],
+        "traits": [
+          "open-source",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Instagram’s Adam Mosseri: If you don&#8217;t like AI, &#8216;then you shouldn&#8217;t have it in your feed&#8217;",
+      "url": "https://www.theverge.com/tech/963961/instagram-adam-mosseri-ai-feed-filters",
+      "source": "The Verge AI",
+      "publishedAt": "2026-07-10T13:45:02.000Z",
+      "snippet": "Though Instagram head Adam Mosseri doesn't want to filter out AI content on the platform, he argues that you \"shouldn't have it in your feed\" if you don't like it. \"I don't think we should filter out AI content,\" Mosseri said during an interview on Lenny Rachitsky's podcast. \"I think we should let you know if content is AI content or not.\" At the same time, Mosseri seems to be drawing a distinction between content-based sorting and banning AI from the platform entirely. In fact, he believes people who love AI content \"should be able to have a feed that's just AI town.\" Instagram, like many oth",
+      "category": "Applications",
+      "summary": "Instagram head Adam Mosseri stated the platform will label AI content rather than filter it out, allowing users to customize their feeds based on AI content preferences.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial",
+          "policy"
+        ],
+        "entities": [
+          "meta"
+        ]
+      }
+    },
+    {
+      "title": "Would you host part of an AI data center in your home?",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/963930/sunrun-distributed-ai-data-center",
+      "source": "The Verge AI",
+      "publishedAt": "2026-07-10T13:20:25.000Z",
+      "snippet": "A solar and home energy storage company is expanding into AI data centers, but not by building one - instead, it's offering to pay its customers to put its compute units in their homes. Sunrun is launching a pilot program for a new \"distributed AI compute\" program that will \"place numerous compute nodes in homes equipped with Sunrun solar and battery storage systems.\" Customers will be \"compensated\" for participating in the pilot program. Sunrun plans to sell the distributed compute power from the nodes to \"enterprise compute buyers,\" like AI companies. It's a new approach to finding resources",
+      "category": "Hardware & Compute",
+      "summary": "Sunrun is launching a pilot distributed AI compute program that compensates customers for hosting compute nodes in their homes equipped with solar and battery systems.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference",
+          "hardware"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "AI-generated videos to maximally drive a target brain region",
+      "url": "https://nevo-project.epfl.ch/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-07-10T07:39:11.000Z",
+      "snippet": "Article URL: https://nevo-project.epfl.ch/ Comments URL: https://news.ycombinator.com/item?id=48856904 Points: 276 # Comments: 228",
+      "category": "Research",
+      "summary": "Study demonstrates generating AI videos optimized to maximally stimulate specific brain regions, with implications for neuroscience and AI capabilities.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal",
+          "vision"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
     {
       "title": "How Deutsche Telekom is rewiring telecommunications with AI",
       "url": "https://openai.com/index/deutsche-telekom",
@@ -231,6 +770,26 @@
       }
     },
     {
+      "title": "Building a real-time AI tutor for 5-year-olds",
+      "url": "https://www.ello.com/blog/teaching-a-child-in-1000-ms",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-07-09T20:51:06.000Z",
+      "snippet": "Hey HN! We've spent the good part of this past year building an AI tutor that teaches kids ages 4-9 reading, math, ESL and more. Getting an AI tutor to effectively teach a child turns out to be a really hard technical challenge, this took getting the underlying architecture right. Our tutor steers the UX in real-time and makes complex decisions on the fly. Doing both at conversation speed required us to replace the standard tool-use loop. We built our own tutor harness that utilizes a streaming interpreter that executes actions, while an asynchronous planner model reasons ahead of the conversa",
+      "category": "Applications",
+      "summary": "Real-time AI tutor for children ages 4-9 that makes complex pedagogical decisions through streaming execution and asynchronous planning, overcoming latency challenges in conversational AI.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "reasoning"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
       "title": "The ChatGPT browser is already dead",
       "url": "https://www.theverge.com/ai-artificial-intelligence/963654/openai-chatgpt-atlas-ai-browser-shut-down-sunset",
       "source": "The Verge AI",
@@ -309,6 +868,26 @@
         "entities": [
           "google"
         ]
+      }
+    },
+    {
+      "title": "Show HN: Reviving my 2001 college band with AI",
+      "url": "https://www.fadingmaize.com",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-07-09T19:49:37.000Z",
+      "snippet": "25 years ago, I joined a band called Fading Maize at Ripon College in Wisconsin. We did what we could with what we had. We recorded 3 albums over the next 3 years and played at as many bars and coffee shops as we could. We built a website with Microsoft Frontpage. Then we went our separate ways, got married, had kids, focused on other things. Earlier this year I had the idea to approach the lead singer who wrote all of the lyrics and melodies to the stuff we played back then, and wanted to \"reimagine\" everything in 2026 using AI. That's the project I want to share here! The site has a before/a",
+      "category": "Applications",
+      "summary": "Project using AI to reimagine and recreate a 25-year-old college band's music catalog with modern generative techniques.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "audio",
+          "multimodal"
+        ],
+        "traits": [
+          "open-source"
+        ],
+        "entities": []
       }
     },
     {
@@ -526,6 +1105,42 @@
       }
     },
     {
+      "title": "AI 2040: Plan A",
+      "url": "https://ai-2040.com/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-07-09T16:21:44.000Z",
+      "snippet": "Article URL: https://ai-2040.com/ Comments URL: https://news.ycombinator.com/item?id=48848425 Points: 231 # Comments: 234",
+      "category": "Regulation & Policy",
+      "summary": "Initiative outlining strategic plans and governance frameworks for AI development through 2040.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy",
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "AI content is everywhere on social media, especially LinkedIn",
+      "url": "https://www.pangram.com/blog/ai-in-your-feed",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-07-09T15:50:09.000Z",
+      "snippet": "Article URL: https://www.pangram.com/blog/ai-in-your-feed Comments URL: https://news.ycombinator.com/item?id=48847940 Points: 240 # Comments: 214",
+      "category": "Applications",
+      "summary": "Analysis showing widespread proliferation of AI-generated content on social media platforms, particularly LinkedIn, raising concerns about authenticity and misinformation.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy",
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
       "title": "Anthropic’s new Claude feature is quietly selling you on AI",
       "url": "https://techcrunch.com/2026/07/09/anthropics-new-claude-feature-is-quietly-selling-you-on-ai/",
       "source": "TechCrunch AI",
@@ -566,6 +1181,44 @@
       }
     },
     {
+      "title": "The next era of AI is about infrastructure, not just models",
+      "url": "https://blog.mozilla.ai/the-control-layer-why-the-next-era-of-ai-is-about-infrastructure-not-just-models/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-07-09T14:50:01.000Z",
+      "snippet": "Article URL: https://blog.mozilla.ai/the-control-layer-why-the-next-era-of-ai-is-about-infrastructure-not-just-models/ Comments URL: https://news.ycombinator.com/item?id=48846842 Points: 59 # Comments: 23",
+      "category": "Developer Tools",
+      "summary": "Essay arguing that the next phase of AI advancement will focus on control and infrastructure layers rather than model capability alone.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference"
+        ],
+        "traits": [
+          "tutorial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "DeepSeek aims to make its own AI chip",
+      "url": "https://www.proactiveinvestors.com/companies/news/1095178/deepseek-makes-pivot-that-should-put-silicon-valley-on-high-alert-1095178.html",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-07-09T14:42:21.000Z",
+      "snippet": "Article URL: https://www.proactiveinvestors.com/companies/news/1095178/deepseek-makes-pivot-that-should-put-silicon-valley-on-high-alert-1095178.html Comments URL: https://news.ycombinator.com/item?id=48846708 Points: 72 # Comments: 14",
+      "category": "Hardware & Compute",
+      "summary": "DeepSeek announces plans to develop custom AI chips, signaling shift toward vertical integration and reduced dependence on external semiconductor suppliers.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "hardware"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
       "title": "Meta says its new AI model is ready to compete on coding",
       "url": "https://www.theverge.com/ai-artificial-intelligence/963193/meta-muse-spark-model-api",
       "source": "The Verge AI",
@@ -601,6 +1254,26 @@
           "claude",
           "anthropic"
         ]
+      }
+    },
+    {
+      "title": "Show HN: FableCut – A browser video editor AI agents can drive (zero deps)",
+      "url": "https://github.com/ronak-create/FableCut",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-07-09T13:23:10.000Z",
+      "snippet": "Article URL: https://github.com/ronak-create/FableCut Comments URL: https://news.ycombinator.com/item?id=48845422 Points: 95 # Comments: 58",
+      "category": "Agent Frameworks",
+      "summary": "Open-source browser-based video editor designed to be driven by AI agents with zero external dependencies, enabling agentic video editing workflows.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "developer-tools"
+        ],
+        "traits": [
+          "open-source"
+        ],
+        "entities": []
       }
     },
     {
@@ -14019,100 +14692,93 @@
   ],
   "feedHealth": {
     "The Verge AI": {
-      "lastSuccess": "2026-07-10T09:18:07.628Z",
+      "lastSuccess": "2026-07-11T07:39:29.232Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "TechCrunch AI": {
-      "lastSuccess": "2026-07-10T09:18:07.654Z",
+      "lastSuccess": "2026-07-11T07:39:29.302Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Ars Technica AI": {
-      "lastSuccess": "2026-07-10T09:18:07.934Z",
+      "lastSuccess": "2026-07-11T07:39:29.763Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "VentureBeat AI": {
-      "lastSuccess": "2026-07-10T09:18:08.137Z",
+      "lastSuccess": "2026-07-11T07:39:29.986Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Anthropic News": {
       "lastSuccess": null,
       "lastError": "Status code 404",
-      "consecutiveFailures": 21
+      "consecutiveFailures": 22
     },
     "OpenAI Blog": {
-      "lastSuccess": "2026-07-10T09:18:11.313Z",
+      "lastSuccess": "2026-07-11T07:39:34.302Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Google DeepMind": {
-      "lastSuccess": "2026-07-10T09:18:11.728Z",
+      "lastSuccess": "2026-07-11T07:39:34.725Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "MIT Tech Review AI": {
-      "lastSuccess": "2026-07-10T09:18:11.782Z",
+      "lastSuccess": "2026-07-11T07:39:34.807Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "arXiv cs.AI": {
-      "lastSuccess": "2026-07-10T09:18:11.855Z",
+      "lastSuccess": "2026-07-11T07:39:34.925Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Hacker News (AI)": {
-      "lastSuccess": "2026-07-06T09:55:15.502Z",
-      "lastError": "Request timed out after 20000ms",
-      "consecutiveFailures": 2
+      "lastSuccess": "2026-07-11T07:39:35.565Z",
+      "lastError": null,
+      "consecutiveFailures": 0
     }
   },
   "brief": {
-    "generatedAt": "2026-07-10T09:19:04.858Z",
+    "generatedAt": "2026-07-11T07:40:09.587Z",
     "bullets": [
       {
-        "text": "OpenAI launched its GPT-5.6 model family after Trump administration approval, touting improved token efficiency and cybersecurity, alongside 'ChatGPT Work'—an agentic Codex-powered tool that autonomously executes tasks for hours. The approval process drew transparency questions.",
+        "text": "Apple sued OpenAI, alleging its senior leadership orchestrated trade-secret theft via former Apple employees—including OpenAI's chief hardware officer—to accelerate its hardware ambitions.",
         "refs": [
-          "https://techcrunch.com/2026/07/09/openai-launches-its-new-family-of-models-with-gpt-5-6/",
-          "https://www.theverge.com/ai-artificial-intelligence/963464/openai-gpt-5-6-codex-chatgpt-work",
-          "https://openai.com/index/gpt-5-6",
-          "https://arstechnica.com/ai/2026/07/openai-wants-its-new-tool-to-do-your-work-for-you-and-with-you/",
-          "https://techcrunch.com/2026/07/09/how-did-the-government-decide-openais-frontier-model-was-safe-to-release/",
-          "https://openai.com/index/chatgpt-for-your-most-ambitious-work"
+          "https://www.theverge.com/tech/964350/apple-openai-lawsuit-trade-secrets",
+          "https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/"
         ]
       },
       {
-        "text": "GPT-5.6 became the preferred/default model for Microsoft 365 Copilot, reinforcing the partnership amid breakup speculation, as OpenAI also sunset its Atlas browser to fold agentic browsing into its desktop app and Chrome.",
+        "text": "SK Hynix raised $26.5B in the largest foreign IPO in US history, fueled by AI memory-chip demand, amid pressure to build domestic fabs; separately, DeepSeek plans its own custom AI chip.",
         "refs": [
-          "https://techcrunch.com/2026/07/09/openai-says-gpt-5-6-is-the-preferred-model-for-microsoft-copilot-amid-breakup-chatter/",
-          "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
-          "https://techcrunch.com/2026/07/09/openai-is-shutting-down-atlas-but-its-ai-browser-ambitions-are-still-growing/",
-          "https://www.theverge.com/ai-artificial-intelligence/963654/openai-chatgpt-atlas-ai-browser-shut-down-sunset"
+          "https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs/",
+          "https://www.proactiveinvestors.com/companies/news/1095178/deepseek-makes-pivot-that-should-put-silicon-valley-on-high-alert-1095178.html"
         ]
       },
       {
-        "text": "The New York Times filed for sanctions, alleging OpenAI hid and deleted evidence—tools, datasets, and ChatGPT logs—in its copyright suit, a potential misstep that could prove damaging.",
+        "text": "Meta disabled its Instagram feature that let users generate AI deepfakes from public accounts after privacy backlash, while Instagram's Mosseri defended labeling—not filtering—AI content amid its social-media proliferation.",
         "refs": [
-          "https://arstechnica.com/tech-policy/2026/07/openai-faked-inability-to-search-training-data-hid-billions-of-logs-nyt-says/",
-          "https://techcrunch.com/2026/07/09/new-york-times-says-openai-hid-evidence-in-chatgpt-copyright-trial/"
+          "https://techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash/",
+          "https://www.theverge.com/tech/964416/meta-instagram-ai-muse-image-deepfakes",
+          "https://www.theverge.com/tech/963961/instagram-adam-mosseri-ai-feed-filters",
+          "https://www.pangram.com/blog/ai-in-your-feed"
         ]
       },
       {
-        "text": "OpenAI's AGI chief Fidji Simo stepped down to a part-time advisory role due to a neuroimmune condition, leaving a leadership gap during IPO planning—part of projections that Anthropic, OpenAI, and SpaceX will outvalue 25 years of US VC exits.",
+        "text": "Hugging Face's CEO argues open-source AI matters more than ever, with the platform now serving roughly half the Fortune 500 as companies shift from renting proprietary models to owning open ones.",
         "refs": [
-          "https://techcrunch.com/2026/07/09/fidji-simo-steps-down-from-openais-no-2-role/",
-          "https://www.theverge.com/ai-artificial-intelligence/963738/openai-fidji-simo-steps-down-ceo-advisor",
-          "https://techcrunch.com/2026/07/09/anthropic-openai-and-spacex-are-bigger-than-the-last-25-years-of-tech-exits/"
+          "https://techcrunch.com/podcast/open-source-ai-matters-more-than-ever-according-to-hugging-faces-clem-delangue/",
+          "https://techcrunch.com/2026/07/10/hugging-faces-ceo-on-why-companies-are-done-renting-their-ai/"
         ]
       },
       {
-        "text": "Funding stayed hot: France's Nvidia-backed voice startup Gradium raised $100M seed, agent startup Lyzr let its own AI run a $100M round, and open-source tool Ollama raised $65M amid nearly 9M users.",
+        "text": "A new report examines how terrorist groups like Boko Haram are adopting frontier AI for operations, spotlighting urgent safety and policy concerns.",
         "refs": [
-          "https://techcrunch.com/2026/07/09/paris-based-ai-voice-startup-gradium-raises-100m-seed-backed-by-nvidia/",
-          "https://techcrunch.com/2026/07/09/an-ai-agent-startup-just-let-its-agent-run-its-100-million-fundraise/",
-          "https://techcrunch.com/2026/07/09/popular-open-source-ai-developer-tool-ollama-raises-65m-grows-to-nearly-9m-users/"
+          "https://casp.ac/reports/ai-enabled-terrorism"
         ]
       }
     ]
