@@ -1,22 +1,421 @@
 {
-  "generatedAt": "2026-07-12T07:59:06.418Z",
+  "generatedAt": "2026-07-13T08:47:33.426Z",
   "daysBack": 3,
   "categories": [
+    "Agent Frameworks",
+    "Applications",
+    "Research",
+    "Open Source",
+    "Model Releases",
     "Hardware & Compute",
     "Other",
-    "Applications",
     "AI Safety & Alignment",
-    "Agent Frameworks",
-    "Research",
-    "Model Releases",
     "Regulation & Policy",
     "Business & Funding",
-    "Open Source",
     "Developer Tools",
     "MCP",
     "Evaluation"
   ],
   "articles": [
+    {
+      "title": "CogniConsole: Externalizing Inference-Time Control as a Formal Abstraction for Reliable LLM Interactions",
+      "url": "https://arxiv.org/abs/2607.08774",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-13T04:00:00.000Z",
+      "snippet": "arXiv:2607.08774v1 Announce Type: new Abstract: Reliability in large language model (LLM) systems is typically framed as a function of model capability. We challenge this by demonstrating that reliability is significantly influenced by \\emph{inference-time control} -- the computational layer governing task framing and context selection. We introduce \\emph{CogniConsole}, an architectural instantiation that externalizes this control into a structured interface combining programmatic coordination with bounded prompt-based reasoning. Through \\emph{controllability-oriented probes} ($N=489$) in a mu",
+      "category": "Agent Frameworks",
+      "summary": "CogniConsole introduces an architectural framework that externalizes inference-time control for LLM reliability by separating programmatic coordination from reasoning-based task framing.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "inference"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "GATS: Graph-Augmented Tree Search with Layered World Models for Efficient Agent Planning",
+      "url": "https://arxiv.org/abs/2607.08894",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-13T04:00:00.000Z",
+      "snippet": "arXiv:2607.08894v1 Announce Type: new Abstract: Large Language Model (LLM) agents have shown promise in multi-step planning tasks, but existing approaches like LATS (Language Agent Tree Search) and ReAct rely heavily on LLM inference during planning, leading to high computational costs and stochastic behavior. We present \\textbf{GATS} (Graph-Augmented Tree Search), a planning framework that combines systematic UCB1-based tree search with a layered world model to eliminate LLM calls during inference while achieving superior planning performance. Our three-layer world model integrates: (L1) exac",
+      "category": "Agent Frameworks",
+      "summary": "GATS proposes a planning framework combining tree search with layered world models to reduce computational costs in LLM agent planning while improving performance.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading",
+      "url": "https://arxiv.org/abs/2607.08964",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-13T04:00:00.000Z",
+      "snippet": "arXiv:2607.08964v1 Announce Type: new Abstract: AI agents have become capable of autonomously completing short, well-specified tasks. However, existing terminal benchmarks largely focus on simple problems that finish within minutes and are evaluated only by their final outcome. This setup overlooks intermediate progress and partial solutions, yielding sparse reward signals and an incomplete picture of agent capability. We introduce Long-Horizon-Terminal-Bench, a terminal benchmark of 46 long-horizon tasks spanning nine categories, including experiment reproduction, software engineering, multim",
+      "category": "Agent Frameworks",
+      "summary": "Long-Horizon-Terminal-Bench introduces a benchmark of 46 long-horizon tasks to evaluate AI agents on complex, multi-step problems requiring sustained autonomous reasoning.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "evaluation"
+        ],
+        "traits": [
+          "benchmark"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "ARCANA: A Reflective Multi-Agent Program Synthesis Framework for ARC-AGI-2 Reasoning",
+      "url": "https://arxiv.org/abs/2607.09059",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-13T04:00:00.000Z",
+      "snippet": "arXiv:2607.09059v1 Announce Type: new Abstract: We present ARCANA, a collaborative multi agent framework for solving ARC AGI 2 tasks under strict test time and hardware constraints. ARCANA decomposes each task into iterative perception, hypothesis generation, symbolic execution, and reflective refinement. A perceptual grounding agent builds object centric scene graphs from raw grids, a latent program policy proposes diverse DSL programs, a symbolic executor verifies candidates on demonstrations, and a reflective agent synthesizes failure driven feedback for the next turn. These agents communic",
+      "category": "Agent Frameworks",
+      "summary": "ARCANA presents a reflective multi-agent framework for solving reasoning tasks through iterative perception, hypothesis generation, and symbolic execution with failure-driven refinement.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Neuro-Agentic Control: A Deep Learning-based LLM-Powered Agentic AI Framework for Controlling Security Controls",
+      "url": "https://arxiv.org/abs/2607.09076",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-13T04:00:00.000Z",
+      "snippet": "arXiv:2607.09076v1 Announce Type: new Abstract: Cyberattacks on operational technology are increasingly causing costly downtime and physical damage, exposing the limitations of traditional rule-based monitoring in industrial IoT environments. While Large Language Models (LLMs) have strong semantic reasoning abilities to assist in decision support, their hallucinatory nature presents unacceptable safety liabilities for closed-loop control. This paper introduces a neuro-agentic control framework, a novel architecture that couples an LLM-based planner (i.e., such as Gemini 2.5 Flash-Lite) with a ",
+      "category": "Applications",
+      "summary": "A neuro-agentic control framework couples LLM-based planners with symbolic execution to enable safe closed-loop control for industrial IoT security without hallucinations.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "safety",
+          "application"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "L-MAD: A Systematic Evaluation of Multi-Agent Debate Structures in Legal Reasoning",
+      "url": "https://arxiv.org/abs/2607.09099",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-13T04:00:00.000Z",
+      "snippet": "arXiv:2607.09099v1 Announce Type: new Abstract: While multi-agent debate (MAD) frameworks have shown significant potential in general reasoning, their effectiveness in highly structured, knowledge-heavy legal domains remains under-explored. In this work, we introduce the Legal Multi-Agent Debate (L-MAD) framework to systematically evaluate different debate structures and aggregation methods within Legal Textual Entailment. By assigning distinct expert personas to multiple agents, L-MAD improves upon strong single-agent baselines by up to 8\\%. Furthermore, analyzing how debate scales reveals a ",
+      "category": "Agent Frameworks",
+      "summary": "L-MAD systematically evaluates multi-agent debate structures in legal reasoning tasks, showing improvements over single-agent baselines through expert persona assignment.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "reasoning"
+        ],
+        "traits": [
+          "benchmark"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "MedRealMM: A Real-World Multimodal Benchmark for Chinese Online Medical Consultation",
+      "url": "https://arxiv.org/abs/2607.09142",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-13T04:00:00.000Z",
+      "snippet": "arXiv:2607.09142v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly deployed in online medical consultation, yet existing benchmarks remain poorly aligned with real clinical practice. Many rely on synthetic conversations or patient simulators, omit patient-uploaded medical images, or evaluate open-ended clinical responses using multiple-choice or lexical-overlap metrics that poorly reflect clinical quality. We introduce \\textbf{MedRealMM}, a large-scale benchmark for multimodal online medical consultation built from de-identified patient-doctor interactions collected ",
+      "category": "Research",
+      "summary": "MedRealMM introduces a real-world multimodal benchmark for evaluating LLMs on Chinese online medical consultation using actual patient-doctor interactions and clinical images.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal",
+          "evaluation"
+        ],
+        "traits": [
+          "benchmark"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "KV-PRM: Efficient Process Reward Modeling via KV-Cache Transfer for Multi-Agent Test-Time Scaling",
+      "url": "https://arxiv.org/abs/2607.09153",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-13T04:00:00.000Z",
+      "snippet": "arXiv:2607.09153v1 Announce Type: new Abstract: Process Reward Models (PRMs) have been proven to be highly effective in guiding test-time scaling (TTS) methods, which significantly boost the capabilities of LLM-based multi-agent systems. However, existing PRMs are text-based: they re-encode the entire trajectory text from scratch. In long multi-agent rollouts, the scoring cost, growing quadratically with respect to sequence length L, creates a severe computational bottleneck, severely limiting PRMs' application in long-context scenarios. To resolve this, we introduce KV-PRM, a highly efficient",
+      "category": "Agent Frameworks",
+      "summary": "KV-PRM proposes an efficient process reward model leveraging KV-cache transfer to reduce computational bottlenecks in scoring long multi-agent trajectories.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "inference"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Scoped Verification for Reliable Long-Horizon Agentic Context Evolution under Distribution Shift",
+      "url": "https://arxiv.org/abs/2607.09175",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-13T04:00:00.000Z",
+      "snippet": "arXiv:2607.09175v1 Announce Type: new Abstract: Deployed LLM agents rely on agentic context, the model-external textual control content assembled by an operational harness. In this work, the mutable component of that context is a persistent system-level instruction that is updated from operational experience while the model, tools, and harness remain fixed. Over long evolution horizons, flat-text maintenance makes verification increasingly difficult as accumulated instructions grow and interact. We propose Graph-Regularized Agentic Context Evolution (GRACE), which maintains the persistent inst",
+      "category": "Agent Frameworks",
+      "summary": "GRACE maintains agentic context evolution through graph-regularized instruction sets to enable reliable long-horizon LLM agent deployment under distribution shift.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "safety"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Toward Auditable AI Scientists: A Hypothesis Evolution Protocol for LLM Agents",
+      "url": "https://arxiv.org/abs/2607.09195",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-13T04:00:00.000Z",
+      "snippet": "arXiv:2607.09195v1 Announce Type: new Abstract: Large language model (LLM) agents are increasingly expected to play a central role in AI-driven scientific discovery. Equipped with broad knowledge, flexible reasoning, and tool use, they have the potential to autonomously explore and solve scientific problems by repeatedly proposing hypotheses, testing them, and revising their beliefs in the light of the evidence. In current agents, however, these hypotheses, tests, and belief updates are buried in unstructured logs, and no mechanism lets the agent or the human researcher audit that process. Her",
+      "category": "Agent Frameworks",
+      "summary": "This work proposes a hypothesis evolution protocol for LLM agents conducting scientific discovery, enabling audit trails and human oversight of autonomous reasoning.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "interpretability"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "OpenProver: Agentic and Interactive Theorem Proving with Lean 4",
+      "url": "https://arxiv.org/abs/2607.09217",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-13T04:00:00.000Z",
+      "snippet": "arXiv:2607.09217v1 Announce Type: new Abstract: In this system paper, we present OpenProver, an open-source system for LLM-driven automated theorem proving (ATP) with integrated Lean 4 formal verification. OpenProver integrates a Planner-Worker-Verifier architecture inspired by recent ATP agentic systems such as Aletheia. A Planner agent maintains a compact Whiteboard scratchpad and an unbounded Repository of intermediate findings, and decomposes mathematical work into parallel Workers. OpenProver is fully open-source, offers reproducible evaluation through automatic formal verification of gen",
+      "category": "Open Source",
+      "summary": "OpenProver is an open-source system for LLM-driven automated theorem proving integrating Lean 4 formal verification with a Planner-Worker-Verifier agentic architecture.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "reasoning"
+        ],
+        "traits": [
+          "open-source"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "LongMedBench: Benchmarking Medical Agents for Long-Horizon Clinical Decision-Making",
+      "url": "https://arxiv.org/abs/2607.09322",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-13T04:00:00.000Z",
+      "snippet": "arXiv:2607.09322v1 Announce Type: new Abstract: In this work, we introduce LongMedBench, a real-world EHR-based benchmark for long-horizon clinical decision-making. Prior evaluations of LLM-based medical agents have largely emphasized short-context knowledge QA and tool use. However, real-world medical care is inherently longitudinal, and clinicians must aggregate evidence across repeated visits, tests, and evolving treatments. Therefore, long-horizon interaction is essential for realistic assessment. LongMedBench is constructed via a reproducible pipeline that integrates MIMIC-IV admission re",
+      "category": "Research",
+      "summary": "LongMedBench introduces a real-world EHR-based benchmark for evaluating medical agents on long-horizon clinical decision-making across repeated patient visits.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "evaluation"
+        ],
+        "traits": [
+          "benchmark"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Communication-Efficient Digital-Twin Coordination for Heterogeneous LLM Embodied Agents over Computing Power Networks",
+      "url": "https://arxiv.org/abs/2607.09330",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-13T04:00:00.000Z",
+      "snippet": "arXiv:2607.09330v1 Announce Type: new Abstract: Embodied agent teams powered by heterogeneous large language models (LLMs) are being widely deployed in physical artificial intelligence such as smart factories, warehouses, and service robotics. To enable collaboration among such an agent team, efficient coordination mechanisms that operate reliably under limited network resources are required. However, existing heterogeneous LLM-agent coordination frameworks that rely on multi-round natural-language-based conversations introduce three coupled challenges. First, inter-agent dialogue incurs commu",
+      "category": "Agent Frameworks",
+      "summary": "A communication-efficient coordination framework enables heterogeneous LLM-powered embodied agent teams to collaborate reliably under limited network resources.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "robotics"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Fictional Worldbuilding: Multi-Agent LLM Collaboration with Hierarchical Context Compression and Iterative Review",
+      "url": "https://arxiv.org/abs/2607.09403",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-13T04:00:00.000Z",
+      "snippet": "arXiv:2607.09403v1 Announce Type: new Abstract: Worldbuilding, the construction of coherent fictional worlds, is a foundational task in game design and literary creation. Large Language Models (LLMs) offer new possibilities for automated content generation, but their application to worldbuilding faces three challenges: context explosion that grows linearly with the building process, the tension between creative diversity and content consistency, and the absence of automated quality assurance. This paper presents AutoWorldBuilder, a multi-agent collaborative system that addresses these challeng",
+      "category": "Agent Frameworks",
+      "summary": "AutoWorldBuilder is a multi-agent system for collaborative fictional worldbuilding that uses hierarchical context compression and iterative review to manage coherence and quality.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "multimodal"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "ProofCouncil: An LLM Agent for Solving Open Mathematical Problems",
+      "url": "https://arxiv.org/abs/2607.09474",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-13T04:00:00.000Z",
+      "snippet": "arXiv:2607.09474v1 Announce Type: new Abstract: Large language models (LLMs) have shown increasing promise in solving open problems in mathematics. However, their performance can be further improved through agentic workflows tailored to real-world mathematical practice. To this end, we introduce ProofCouncil, a mathematical agent that is designed to tackle open problems using an author-critic architecture. ProofCouncil served as a submission to the second batch of FirstProof, a challenge consisting of 10 real-world mathematical problems that agents must solve autonomously. Its submissions for ",
+      "category": "Agent Frameworks",
+      "summary": "ProofCouncil implements an author-critic agentic architecture for solving open mathematical problems, submitted to the FirstProof challenge.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Lorde says Ray-Ban Meta AI glasses are ‘not sexy’",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/964539/lorde-says-ray-ban-meta-ai-glasses-are-not-sexy",
+      "source": "The Verge AI",
+      "publishedAt": "2026-07-12T20:10:19.000Z",
+      "snippet": "Lorde performing at the 2026 Governors Ball. | Photo: Siegfried Anthony/Billboard via Getty Images Lorde was performing at the Real Cool Festival in Madrid on Thursday and took some time during her set to speak out against AI glasses. While she didn't specify any brands in particular, it's likely she was taking a shot at festival sponsor Ray-Ban, which has collaborated with Meta on a pair of AI smartglasses. The comments were captured in videos shared to social media. After thanking the crowd for being there and taking part in \"something real,\" she said that it was increasingly hard to know is",
+      "category": "Applications",
+      "summary": "Singer Lorde criticized Ray-Ban Meta AI glasses during a festival performance, commenting on their lack of appeal and broader concerns about AI wearables.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "vision"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "meta"
+        ]
+      }
+    },
+    {
+      "title": "Migrating a production AI agent to GPT-5.6: 2.2x faster, 27% cheaper",
+      "url": "https://ploy.ai/blog/migrating-a-production-ai-agent-to-gpt-5-6",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-07-12T17:13:07.000Z",
+      "snippet": "Article URL: https://ploy.ai/blog/migrating-a-production-ai-agent-to-gpt-5-6 Comments URL: https://news.ycombinator.com/item?id=48882716 Points: 199 # Comments: 86",
+      "category": "Model Releases",
+      "summary": "A production AI agent migration to GPT-5.6 achieved 2.2x faster performance and 27% cost reduction, demonstrating practical improvements in newer model versions.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "gpt"
+        ]
+      }
+    },
+    {
+      "title": "Apple’s failed self-driving car program left a legacy of powerful AI chips",
+      "url": "https://www.theverge.com/tech/964519/apple-silicon-self-driving-car-ai-m7-ultra",
+      "source": "The Verge AI",
+      "publishedAt": "2026-07-12T16:27:06.000Z",
+      "snippet": "Apple's self-driving car program never really got off the ground, but it may have been what made the company's chips the powerful AI performers they are. Early in the development of the self-driving platform, Apple realized that it would need powerful on-device AI processing. While the car processor was never finished, as Mark Gurman details in his latest Power On newsletter, it did lead to the development of the Neural Engine, the backbone of Apple's on-device AI processing. The Neural Engine made its debut with the iPhone X and the A11 Bionic. In those early days, it was primarily used for c",
+      "category": "Hardware & Compute",
+      "summary": "Apple's abandoned self-driving car program indirectly led to the development of the Neural Engine, a powerful on-device AI processing chip that became central to modern iPhones.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "apple",
+          "inference",
+          "hardware"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "AI boosts research careers but narrow the span of ideas explored: study",
+      "url": "https://spectrum.ieee.org/ai-science-research-flattens-discovery",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-07-12T13:26:13.000Z",
+      "snippet": "Article URL: https://spectrum.ieee.org/ai-science-research-flattens-discovery Comments URL: https://news.ycombinator.com/item?id=48881043 Points: 145 # Comments: 103",
+      "category": "Research",
+      "summary": "A study finds that AI adoption in scientific research accelerates career progression but narrows the diversity of research ideas explored by scientists.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "research",
+          "policy",
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "The fight against AI data centers is just beginning",
+      "url": "https://www.theverge.com/column/963346/ai-data-centers-fight",
+      "source": "The Verge AI",
+      "publishedAt": "2026-07-12T12:00:00.000Z",
+      "snippet": "A yard sign opposing a planned data center is displayed along Route 54 in Mount Carmel Township Northumberland County. | Image: Getty Images This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on the data center buildout, follow Emma Roth. The Stepback arrives in our subscribers' inboxes on Sunday at 8AM ET. Opt in for The Stepback here. How it started Years before the AI boom threatened local power grids, a small group of protesters set the stage for the battles cropping up across communities today. In 2015, Apple announced plans to build ",
+      "category": "Hardware & Compute",
+      "summary": "Communities across the US are mobilizing against AI data center construction projects, raising concerns about power grid capacity and local environmental impact.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "infrastructure"
+        ],
+        "traits": [
+          "policy",
+          "incident"
+        ],
+        "entities": []
+      }
+    },
     {
       "title": "Mesh LLM: distributed AI computing on iroh",
       "url": "https://www.iroh.computer/blog/mesh-llm",
@@ -13880,483 +14279,98 @@
         ],
         "entities": []
       }
-    },
-    {
-      "title": "Andrew Yang thinks the next big startup opportunity is lowering the cost of living",
-      "url": "https://techcrunch.com/2026/06/12/andrew-yang-thinks-the-next-big-startup-opportunity-is-lowering-the-cost-of-living/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-13T04:14:19.000Z",
-      "snippet": "Andrew Yang made a list of everything Americans overpay for — housing, food, wireless — and thinks the next startup gold rush is giving that money back.",
-      "category": "Business & Funding",
-      "summary": "Andrew Yang identifies cost-of-living reduction as the next major startup opportunity, highlighting areas where Americans overpay.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "business"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Anthropic shuts down Fable, Mythos models following Trump admin directive",
-      "url": "https://arstechnica.com/ai/2026/06/anthropic-shuts-down-fable-mythos-models-following-trump-admin-directive/",
-      "source": "Ars Technica AI",
-      "publishedAt": "2026-06-13T03:00:34.000Z",
-      "snippet": "Commerce dept. worries that a Fable 5 \"jailbreak\" could be a national security threat.",
-      "category": "Regulation & Policy",
-      "summary": "Anthropic discontinues Fable and Mythos models following a Trump administration directive citing national security concerns over potential jailbreaks.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "safety"
-        ],
-        "traits": [
-          "policy"
-        ],
-        "entities": [
-          "anthropic"
-        ]
-      }
-    },
-    {
-      "title": "Anthropic’s safety warnings may have just backfired — the government has pulled the plug on its most powerful AI",
-      "url": "https://techcrunch.com/2026/06/12/anthropics-safety-warnings-may-have-just-backfired-the-government-has-pulled-the-plug-on-its-most-powerful-ai/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-13T02:26:30.000Z",
-      "snippet": "Anthropic isn't hiding its frustration. \"We disagree that the finding of a narrow potential jailbreak should be cause for recalling a commercial model deployed to hundreds of millions of people,\" the company wrote in a blog post.",
-      "category": "Regulation & Policy",
-      "summary": "The U.S. government has forced Anthropic to recall its most powerful AI models based on narrow jailbreak findings, sparking company pushback.",
-      "important": true,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "policy",
-          "incident"
-        ],
-        "entities": [
-          "anthropic"
-        ]
-      }
-    },
-    {
-      "title": "SpaceX IPO: Live updates on everything you need to know",
-      "url": "https://techcrunch.com/2026/06/12/spacex-ipo-live-updates-on-everything-you-need-to-know/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-12T23:15:14.000Z",
-      "snippet": "TechCrunch has followed SpaceX's start, struggles, and successes from the early days. And we're here for what happens next too. This package of SpaceX IPO coverage includes who stands to win (and maybe some who won't), pre-IPO deals, and what's tucked inside its S-1 registration document.",
-      "category": "Business & Funding",
-      "summary": "SpaceX proceeds with its IPO, marking a significant milestone for Elon Musk's aerospace and AI integration company.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "spacex"
-        ],
-        "traits": [
-          "funding",
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Meta’s months-old AI unit is a soul-crushing gulag, say the engineers stuck inside it",
-      "url": "https://techcrunch.com/2026/06/12/metas-months-old-ai-unit-is-a-soul-crushing-gulag-say-the-engineers-stuck-inside-it/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-12T23:00:54.000Z",
-      "snippet": "A new report suggests the unit, which employs 6,500 people, is on the verge of revolt.",
-      "category": "Business & Funding",
-      "summary": "Meta's 6,500-person AI unit is reportedly facing internal morale issues and potential revolt among engineers.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "incident"
-        ],
-        "entities": [
-          "meta"
-        ]
-      }
-    },
-    {
-      "title": "Chinese cybercrime operation that used AI to scam ‘hundreds of thousands of victims’ sued by Google",
-      "url": "https://techcrunch.com/2026/06/12/chinese-cybercrime-operation-that-used-ai-to-scam-hundreds-of-thousands-of-victims-sued-by-google/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-12T20:38:09.000Z",
-      "snippet": "The tech giant said a group called \"Outsider Enterprise\" used AI to scam hundreds of thousands of victims, sending 2.5 million text messages over a span of two weeks.",
-      "category": "Applications",
-      "summary": "Google sues Chinese cybercrime group 'Outsider Enterprise' for using AI to scam hundreds of thousands of victims via 2.5M fraudulent text messages.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety"
-        ],
-        "traits": [
-          "incident"
-        ],
-        "entities": [
-          "google"
-        ]
-      }
-    },
-    {
-      "title": "Here's what Jeff Bezos' new startup Prometheus will do",
-      "url": "https://arstechnica.com/ai/2026/06/heres-what-jeff-bezos-new-startup-prometheus-will-do/",
-      "source": "Ars Technica AI",
-      "publishedAt": "2026-06-12T18:45:40.000Z",
-      "snippet": "It isn't the only startup tackling physical AI, but it's one of the best-funded.",
-      "category": "Applications",
-      "summary": "Jeff Bezos' startup Prometheus aims to develop AI-powered engineering tools for physical product design with significant venture backing.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "robotics"
-        ],
-        "traits": [
-          "commercial",
-          "funding"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Ukraine's one-time test used fully autonomous drones to kill Russian soldiers",
-      "url": "https://arstechnica.com/ai/2026/06/ukraines-one-time-test-used-fully-autonomous-drones-to-kill-russian-soldiers/",
-      "source": "Ars Technica AI",
-      "publishedAt": "2026-06-12T18:03:29.000Z",
-      "snippet": "Full autonomy is rare, but Ukraine is installing AI modules on drones and robots.",
-      "category": "Applications",
-      "summary": "Ukraine has deployed fully autonomous AI-enabled drones and robots for military operations against Russian forces.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "robotics",
-          "agentic"
-        ],
-        "traits": [],
-        "entities": []
-      }
-    },
-    {
-      "title": "Mistral is rumored to be raising €3B at €20B valuation",
-      "url": "https://techcrunch.com/2026/06/12/mistral-is-rumored-to-be-raising-e3b-at-e20-valuation/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-12T17:38:11.000Z",
-      "snippet": "The funding round would value the company at around €20 billion (about $23.15 billion), nearly double its Series C valuation of €11.7 billion.",
-      "category": "Business & Funding",
-      "summary": "Mistral is reported to be raising €3B at a €20B valuation, nearly doubling its Series C valuation.",
-      "important": true,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "funding",
-          "commercial"
-        ],
-        "entities": [
-          "mistral"
-        ]
-      }
-    },
-    {
-      "title": "$130 billion in data center projects blocked by protests so far this year",
-      "url": "https://arstechnica.com/tech-policy/2026/06/130-billion-in-data-center-projects-blocked-by-protests-so-far-this-year/",
-      "source": "Ars Technica AI",
-      "publishedAt": "2026-06-12T17:18:49.000Z",
-      "snippet": "Winning fight against AI data centers gives people a \"taste of political power.\"",
-      "category": "Hardware & Compute",
-      "summary": "Protests have blocked $130 billion worth of AI data center projects in 2025, giving communities leverage against development.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "infrastructure"
-        ],
-        "traits": [
-          "policy"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Siri is good now??",
-      "url": "https://www.theverge.com/podcast/949079/siri-ai-good-vergecast",
-      "source": "The Verge AI",
-      "publishedAt": "2026-06-12T17:17:04.000Z",
-      "snippet": "You'd be forgiven for thinking this day would never come. Siri has spent a decade and half somewhere between \"sort of useful at a few things\" and \"utterly disastrous, why did I even try, can it honestly not even set a timer.\" But the wildest thing just happened: Apple put out a new version of Siri, and it actually seems to be pretty good. On this episode of The Vergecast, David and Nilay talk about their early experiences with Siri AI, and what it means for users, and the rest of the AI industry, for the iPhone's built-in assistant to be good enough at most things. There's very little about Si",
-      "category": "Applications",
-      "summary": "Apple's redesigned Siri AI assistant now performs competently across most tasks, marking a major improvement after years of poor reception.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial",
-          "release"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "When it comes to total water use, AI data centers are a drop in the bucket",
-      "url": "https://arstechnica.com/ai/2026/06/when-it-comes-to-total-water-use-ai-data-centers-are-a-drop-in-the-bucket/",
-      "source": "Ars Technica AI",
-      "publishedAt": "2026-06-12T16:51:38.000Z",
-      "snippet": "Even moderately sized data centers can have an outsized local impact.",
-      "category": "Hardware & Compute",
-      "summary": "While AI data centers' total water consumption is modest, their local impact on water resources can be significant.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "infrastructure"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Google sues Chinese cybercrime network that used Gemini to automate scams",
-      "url": "https://arstechnica.com/google/2026/06/google-sues-chinese-cybercrime-network-that-used-gemini-to-automate-scams/",
-      "source": "Ars Technica AI",
-      "publishedAt": "2026-06-12T16:34:36.000Z",
-      "snippet": "The fraudsters allegedly targeted hundreds of thousands of people with Gemini-coded scams sites.",
-      "category": "Applications",
-      "summary": "Google sues a Chinese cybercrime network that allegedly used Gemini to automate and scale scam websites targeting hundreds of thousands.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety"
-        ],
-        "traits": [
-          "incident"
-        ],
-        "entities": [
-          "gemini"
-        ]
-      }
-    },
-    {
-      "title": "Elon Musk is the world&#8217;s first trillionaire",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/948409/elon-musk-trillionaire-spacex-ipo",
-      "source": "The Verge AI",
-      "publishedAt": "2026-06-12T16:24:39.000Z",
-      "snippet": "Elon Musk's net worth has passed the trillion-dollar mark after SpaceX's IPO. His net worth, which was hovering around $800 billion before the IPO, includes the value of his 4.8 billion shares in SpaceX, along with his wealth from his other companies, like Tesla. Shares of SPCX opened at $150 and have remained well above the $138 benchmark that gives Musk a 13-figure net worth. SpaceX combined Musk's rocket, AI, and social media platforms earlier this year, and said in its S-1 that its goal is to \"build the systems and technologies necessary to make life multiplanetary, to understand the true ",
-      "category": "Business & Funding",
-      "summary": "Elon Musk becomes the world's first trillionaire following SpaceX's successful IPO and share price surge.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "spacex"
-        ],
-        "traits": [
-          "funding",
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "SpaceX, Anthropic, and OpenAI’s hot IPO summer",
-      "url": "https://techcrunch.com/video/spacex-anthropic-and-openais-hot-ipo-summer/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-12T16:23:25.000Z",
-      "snippet": "The IPO market is back, and it’s not the same companies leading the charge. FAANG had a good run, but a new acronym is taking over: MANGOS — Meta (or Microsoft, depending on who you ask), Anthropic, Nvidia, Google, OpenAI, and SpaceX. Half of that bunch is heading to public markets in the same window, and it’s a stress test for investors, for valuations, and for […]",
-      "category": "Business & Funding",
-      "summary": "A new wave of IPOs from Anthropic, OpenAI, Nvidia, and SpaceX signals a shift in market leadership from traditional FAANG companies.",
-      "important": true,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "funding"
-        ],
-        "entities": [
-          "openai",
-          "anthropic"
-        ]
-      }
-    },
-    {
-      "title": "It’s hot IPO summer, and the MANGOS are ripe",
-      "url": "https://techcrunch.com/podcast/its-hot-ipo-summer-and-the-mangos-are-ripe/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-12T15:50:52.000Z",
-      "snippet": "The IPO market is back, and it’s not the same companies leading the charge. FAANG had a good run, but a new acronym is taking over: MANGOS — Meta (or Microsoft, depending on who you ask), Anthropic, Nvidia, Google, OpenAI, and SpaceX. Half of that bunch is heading to public markets in the same window, and it’s a stress test for investors, for valuations, and for […]",
-      "category": "Business & Funding",
-      "summary": "The 'MANGOS' acronym captures the new IPO wave with Anthropic, Nvidia, Google, OpenAI, and SpaceX going public in the same window.",
-      "important": true,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "funding",
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "SpaceX’s massive IPO: all the latest news",
-      "url": "https://www.theverge.com/business/948996/spacex-ipo-elon-musk",
-      "source": "The Verge AI",
-      "publishedAt": "2026-06-12T14:35:48.000Z",
-      "snippet": "SpaceX’s IPO on Friday allows the public to buy shares of the combined rocket, AI, and social media company for the first time, and raised enough money to make Elon Musk the first trillionaire. He has more wealth, on paper at least, than the economies of nations like Ireland, Sweden, or his home country of South Africa (CNN cites the International Monetary Fund saying only 20 countries have economies larger than $1.1 trillion), now linked to the promise of a business based on launching AI datacenters into space. Follow along here for the latest updates. SpaceX reportedly rented out Colossus 1 ",
-      "category": "Business & Funding",
-      "summary": "SpaceX's IPO raises substantial capital and makes Elon Musk the world's first trillionaire, combining rocket, AI, and social media operations.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "spacex"
-        ],
-        "traits": [
-          "funding",
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Jeff Bezos’ AI startup aims to build an ‘artificial general engineer’",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/949005/jeff-bezos-prometheus-artificial-general-engineer",
-      "source": "The Verge AI",
-      "publishedAt": "2026-06-12T14:03:39.000Z",
-      "snippet": "Amazon founder Jeff Bezos says his new AI startup will work toward developing an \"artificial general engineer,\" according to reports from The New York Times and CNBC. The startup, called Prometheus, aims to develop AI-powered engineering tools to aid in the design of physical products. The NYT first reported on Prometheus last November, but now Bezos is sharing more information about the startup after a $12 billion funding round, putting the company at a $41 billion valuation. Bezos serves as co-CEO of Prometheus alongside Vik Bajaj, who co-founded Alphabet's health-focused research group, Ver",
-      "category": "Applications",
-      "summary": "Jeff Bezos' Prometheus startup aims to build an 'artificial general engineer' for AI-assisted physical product design, backed by a $12B funding round.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "robotics"
-        ],
-        "traits": [
-          "funding"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Pokémon Go players unwittingly contributed to tech with military drone uses",
-      "url": "https://arstechnica.com/ai/2026/06/pokemon-go-players-unwittingly-contributed-to-tech-with-military-drone-uses/",
-      "source": "Ars Technica AI",
-      "publishedAt": "2026-06-12T11:15:41.000Z",
-      "snippet": "The repurposing of Pokémon Go data for AI training continues to draw scrutiny.",
-      "category": "Research",
-      "summary": "Pokémon Go player data is being repurposed for AI training in military drone applications, raising privacy and consent concerns.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "robotics",
-          "safety"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "New OpenAI Academy courses for the next era of work",
-      "url": "https://openai.com/index/academy-courses-applying-ai-at-work",
-      "source": "OpenAI Blog",
-      "publishedAt": "2026-06-12T10:00:00.000Z",
-      "snippet": "OpenAI introduces three Academy courses that help people build practical AI skills, create repeatable workflows, and apply agents in everyday work.",
-      "category": "Developer Tools",
-      "summary": "OpenAI launches three new Academy courses teaching practical AI skills, workflow automation, and agent implementation for professionals.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic"
-        ],
-        "traits": [
-          "tutorial"
-        ],
-        "entities": [
-          "openai"
-        ]
-      }
     }
   ],
   "feedHealth": {
     "The Verge AI": {
-      "lastSuccess": "2026-07-12T07:58:54.979Z",
+      "lastSuccess": "2026-07-13T08:47:21.901Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "TechCrunch AI": {
-      "lastSuccess": "2026-07-12T07:58:55.049Z",
+      "lastSuccess": "2026-07-13T08:47:22.010Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Ars Technica AI": {
-      "lastSuccess": "2026-07-12T07:58:55.468Z",
+      "lastSuccess": "2026-07-13T08:47:22.219Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "VentureBeat AI": {
-      "lastSuccess": "2026-07-12T07:58:55.727Z",
+      "lastSuccess": "2026-07-13T08:47:22.374Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Anthropic News": {
       "lastSuccess": null,
       "lastError": "Status code 404",
-      "consecutiveFailures": 23
+      "consecutiveFailures": 24
     },
     "OpenAI Blog": {
-      "lastSuccess": "2026-07-12T07:58:59.086Z",
+      "lastSuccess": "2026-07-13T08:47:24.461Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Google DeepMind": {
-      "lastSuccess": "2026-07-12T07:58:59.475Z",
+      "lastSuccess": "2026-07-13T08:47:24.761Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "MIT Tech Review AI": {
-      "lastSuccess": "2026-07-12T07:58:59.570Z",
+      "lastSuccess": "2026-07-13T08:47:24.793Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "arXiv cs.AI": {
-      "lastSuccess": "2026-07-12T07:58:59.661Z",
+      "lastSuccess": "2026-07-13T08:47:24.914Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Hacker News (AI)": {
-      "lastSuccess": "2026-07-12T07:59:06.417Z",
+      "lastSuccess": "2026-07-13T08:47:33.425Z",
       "lastError": null,
       "consecutiveFailures": 0
     }
   },
   "brief": {
-    "generatedAt": "2026-07-12T07:59:18.911Z",
+    "generatedAt": "2026-07-13T08:47:54.163Z",
     "bullets": [
       {
-        "text": "Microsoft's latest sustainability report shows a 25% emissions increase tied to AI data center expansion, spotlighting the mounting environmental cost of scaling AI infrastructure.",
+        "text": "OpenAI's GPT-5.6 shows real production gains: a migrated agent ran 2.2x faster and 27% cheaper, signaling tangible efficiency improvements as newer model versions reach deployment.",
         "refs": [
-          "https://www.windowscentral.com/microsoft/dropping-greenwashing-credits-and-expanding-ai-datacenters-caused-microsofts-25-percent-emissions-jump"
+          "https://ploy.ai/blog/migrating-a-production-ai-agent-to-gpt-5-6"
         ]
       },
       {
-        "text": "OpenAI is hiring a product manager to build ChatGPT experiences for families, caregivers, and older adults, while Meta pulled a new AI image feature after days of backlash—showing divergent consumer-AI strategies.",
+        "text": "A wave of agentic research targets long-horizon reliability, with new benchmarks (Long-Horizon-Terminal-Bench, LongMedBench) and frameworks addressing context evolution under distribution shift, planning efficiency, and multi-agent process rewards.",
         "refs": [
-          "https://techcrunch.com/2026/07/11/openai-bets-on-families-as-chatgpt-goes-deeper-into-households/",
-          "https://www.bbc.com/news/articles/c2dy6e8klw0o"
+          "https://arxiv.org/abs/2607.08964",
+          "https://arxiv.org/abs/2607.09175",
+          "https://arxiv.org/abs/2607.08894",
+          "https://arxiv.org/abs/2607.09153",
+          "https://arxiv.org/abs/2607.09322"
         ]
       },
       {
-        "text": "Hardware options for running AI diversify: AMD's Ryzen AI Halo targets on-device inference, while Mesh LLM proposes decentralized, distributed inference across networks via iroh.",
+        "text": "Multiple agentic systems tackle formal reasoning and science: OpenProver and ProofCouncil pursue theorem proving in Lean 4, while auditable hypothesis-evolution protocols aim to give humans oversight of autonomous AI scientists.",
         "refs": [
-          "https://www.microcenter.com/site/mc-news/article/amd-ryzen-ai-halo-review.aspx",
-          "https://www.iroh.computer/blog/mesh-llm"
+          "https://arxiv.org/abs/2607.09217",
+          "https://arxiv.org/abs/2607.09474",
+          "https://arxiv.org/abs/2607.09195"
         ]
       },
       {
-        "text": "Skeptical commentary pushes back on AI hype, questioning the reflex to 'ask an LLM,' probing AI's limits with legacy software, and offering Ghost Font, a typeface readable to humans but not AI vision models.",
+        "text": "A study warns AI adoption accelerates research careers but narrows the diversity of ideas explored, raising concerns that productivity gains may come at the cost of intellectual breadth.",
         "refs": [
-          "https://blog.yaelwrites.com/stop-telling-me-to-ask-an-llm/",
-          "https://www.jamesdrandall.com/posts/thrust_ai_powered_software_archaeology/",
-          "https://www.mixfont.com/ghost-font"
+          "https://spectrum.ieee.org/ai-science-research-flattens-discovery"
+        ]
+      },
+      {
+        "text": "AI's physical footprint draws scrutiny: US communities are mobilizing against data centers over power and environmental strain, while Apple's abandoned car program left a legacy in its Neural Engine chips.",
+        "refs": [
+          "https://www.theverge.com/column/963346/ai-data-centers-fight",
+          "https://www.theverge.com/tech/964519/apple-silicon-self-driving-car-ai-m7-ultra"
         ]
       }
     ]
