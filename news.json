@@ -1,22 +1,667 @@
 {
-  "generatedAt": "2026-07-13T08:47:33.426Z",
-  "daysBack": 3,
+  "generatedAt": "2026-07-14T07:46:28.307Z",
+  "daysBack": 2,
   "categories": [
+    "Research",
+    "AI Safety & Alignment",
     "Agent Frameworks",
     "Applications",
-    "Research",
+    "Business & Funding",
+    "Regulation & Policy",
     "Open Source",
     "Model Releases",
     "Hardware & Compute",
     "Other",
-    "AI Safety & Alignment",
-    "Regulation & Policy",
-    "Business & Funding",
     "Developer Tools",
     "MCP",
     "Evaluation"
   ],
   "articles": [
+    {
+      "title": "Format Sensitivity Index: Token-Controlled Prompt Wrapper Robustness and Schema Compliance in LLM Benchmarking",
+      "url": "https://arxiv.org/abs/2607.09665",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-14T04:00:00.000Z",
+      "snippet": "arXiv:2607.09665v1 Announce Type: new Abstract: Prompt wrappers often differ only in formatting, yet they can change model scores enough to flip leaderboard conclusions. We study this variance under a token-controlled protocol and introduce two complementary metrics: the Format Sensitivity Index (FSI), the accuracy range induced by wrapper choice, and the Parseability Sensitivity Index (PSI), the corresponding range in answer parseability. Across 140,000 OpenRouter generations spanning 7 QA tasks, 5 wrapper families, and 4 instruct models from 7B to 72B parameters, we find that mean FSI varies",
+      "category": "Research",
+      "summary": "arXiv paper introduces Format Sensitivity Index metrics to measure how prompt formatting variations can significantly affect model performance and leaderboard rankings.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "evaluation"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Faithful, Not Corrective: Message-Format Effects in Multi-Hop Agent Relays Are Tier-Dependent",
+      "url": "https://arxiv.org/abs/2607.09678",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-14T04:00:00.000Z",
+      "snippet": "arXiv:2607.09678v1 Announce Type: new Abstract: When LLM agents hand off information to one another, does the message format matter? Two literatures disagree: format-optimization work reports that structured messages cut cost without hurting accuracy, while format-restriction work finds that imposing structure degrades generation -- and neither measures what happens when a message traverses multiple hops, where copy fidelity, not one-shot generation, dominates. We introduce a controlled relay testbed: briefs of twelve programmatically generated atomic facts are re-encoded hop-by-hop in five fo",
+      "category": "Research",
+      "summary": "arXiv paper investigates how message format affects multi-hop agent communication, finding that format effects vary depending on the reasoning tier.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Interpreting Latent CoT Reasoning as Dynamical Systems",
+      "url": "https://arxiv.org/abs/2607.09698",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-14T04:00:00.000Z",
+      "snippet": "arXiv:2607.09698v1 Announce Type: new Abstract: Recent latent reasoning methods, such as CODI and COCONUT, face a fundamental interpretability problem: they maintain multiple superimposed candidate traces in the hidden space at each step, unlike explicit- CoT, which follows a single transparent reasoning trace. Existing mechanistic methods show compression, shortcuts, and superposition without explaining how reasoning evolves across latent steps. To address this gap, we model latent token sequences as trajectories in representation space and apply dynamical systems analysis to characterize the",
+      "category": "Research",
+      "summary": "arXiv paper applies dynamical systems analysis to interpret latent chain-of-thought reasoning in language models, addressing interpretability gaps in implicit reasoning methods.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning",
+          "interpretability"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "YUKTI: From Natural-Language Situations to Robust, Verifiable Decisions An Uncertainty-Typed Proposition IR, Assumption-Robust Pareto Frontiers, and a Regret Certificate",
+      "url": "https://arxiv.org/abs/2607.09706",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-14T04:00:00.000Z",
+      "snippet": "arXiv:2607.09706v1 Announce Type: new Abstract: Language models turn a worded situation into a numeric plan, and the dominant pipelines (NL4Opt, OptiMUS, ORLM, OR-LLM-Agent) commit to a single objective and point-valued coefficients, then solve once. For decisions that allocate real budget, effort, or clinical attention, that confidence is the failure mode: every objectified number is an assumption, and a plan optimal only if the guesses are exactly right is fragile -- mimicry of computation. YUKTI changes the target of autoformulation. Its representation is a typed-proposition graph whose rel",
+      "category": "Research",
+      "summary": "arXiv paper introduces YUKTI, a framework that converts natural language specifications into robust, verifiable decisions with uncertainty quantification rather than single-point solutions.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Closed-Loop Control with Rule-Aligned Small Language Models and Multi-Agent Self-Correction",
+      "url": "https://arxiv.org/abs/2607.09713",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-14T04:00:00.000Z",
+      "snippet": "arXiv:2607.09713v1 Announce Type: new Abstract: A key step toward autonomous industrial operation is the ability to create and reconfigure control policies from natural-language requirement specifications, with minimal or no manual redesign. In this setting, policy generation by AI agents can be a credible path when paired with a plant-aware validator (e.g., a digital twin) that can check generated candidate actions before execution. However, practical deployment is constrained by inference latency and compute footprint: large cloud-based models are often too slow, opaque, or data-sensitive fo",
+      "category": "Research",
+      "summary": "arXiv paper presents methods for using small language models in closed-loop control systems with multi-agent self-correction for industrial automation.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Feedback-Coupled Memory Systems in Continuous Time",
+      "url": "https://arxiv.org/abs/2607.09714",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-14T04:00:00.000Z",
+      "snippet": "arXiv:2607.09714v1 Announce Type: new Abstract: The Feedback-Coupled Memory Systems (FCMS) architecture formalizes closed-loop coordination through four abstract operators, two of which - the agent update operator $f_i$ and the environmental update operator $\\Psi$ - are left axiomatically undefined in the original framework. To address this, $f_i$ is defined by Mechanism-Based Intelligence (MBI), where agents update locally through a decentralized price mechanism and economic principles, and $\\Psi$ is defined by the Coupled Memory Graph Process (CMGP), a non-Markovian framework where the envir",
+      "category": "Research",
+      "summary": "arXiv paper formalizes the Feedback-Coupled Memory Systems architecture for coordinating agent behavior through decentralized mechanisms and non-Markovian memory processes.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "AGM-like Paraconsistent Partial Meet Abductive Expansion Operation",
+      "url": "https://arxiv.org/abs/2607.09729",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-14T04:00:00.000Z",
+      "snippet": "arXiv:2607.09729v1 Announce Type: new Abstract: In his 1996 doctoral thesis, Maurice Pagnucco created the first AGM-like abductive expansion operation. Taking his operation as a basis, as well as a taxonomy -- inspired by Atocha Aliseda -- responsible for highlighting and formalizing the main components of abductive reasoning, the main aim of this paper is to present a new paraconsistent AGM-like abductive expansion operation -- capable of assimilating contradictory explanatory hypotheses without trivialization and the consequent absurd epistemic state -- with its postulates and its transitive",
+      "category": "Research",
+      "summary": "arXiv paper presents a paraconsistent AGM-like abductive expansion operation capable of handling contradictory explanatory hypotheses in reasoning systems.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Coresets Before Score Sets: Evaluation-Unsupervised Prompt Subset Selection for LLM Benchmarks",
+      "url": "https://arxiv.org/abs/2607.09739",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-14T04:00:00.000Z",
+      "snippet": "arXiv:2607.09739v1 Announce Type: new Abstract: We study LLM benchmark coreset selection: selecting a small subset of prompts over multiple benchmarks whose induced model scores and rankings approximate those obtained from the full benchmark suite. In evaluation-unsupervised benchmark coreset selection (our approach), the selection algorithm uses no model evaluation outcomes, and operates on a fine granularity by producing subsets of prompts over multiple benchmarks rather than producing a sub-collection of entire benchmarks. We use submodular subset selection, and we develop and evaluate many",
+      "category": "Research",
+      "summary": "Proposes an evaluation-unsupervised coreset selection method using submodular optimization to identify minimal prompt subsets that preserve model scores and rankings across multiple LLM benchmarks.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "evaluation"
+        ],
+        "traits": [
+          "benchmark",
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "A Dynamic Scene Interaction Reasoning Framework for Scene-level Lane-Change Intention and Trajectory Prediction of Multiple Interacting Vehicles",
+      "url": "https://arxiv.org/abs/2607.09740",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-14T04:00:00.000Z",
+      "snippet": "arXiv:2607.09740v1 Announce Type: new Abstract: Safe motion planning in advanced driver-assistance systems and autonomous vehicles requires an accurate understanding of how the surrounding traffic scene is likely to evolve. However, many existing lane-change prediction methods remain centered on a single target vehicle, while multi-agent forecasting approaches often describe scene evolution only through future positions and provide limited explicit information about the maneuver associated with each vehicle. This study proposes a dynamic scene graph attention framework that predicts the lane-c",
+      "category": "Research",
+      "summary": "Develops a dynamic scene graph attention framework for predicting multi-agent lane-change intentions and trajectories in autonomous driving scenarios with explicit maneuver reasoning.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning",
+          "robotics"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Scaffolding the Strategist: Architecture-Dependent Reasoning Interventions in Hotelling Spatial Markets",
+      "url": "https://arxiv.org/abs/2607.09743",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-14T04:00:00.000Z",
+      "snippet": "arXiv:2607.09743v1 Announce Type: new Abstract: We investigate whether structured reasoning interventions improve the strategic economic reasoning of large language models, and whether their effects depend on model architecture. Using Hotelling's linear city model as a diagnostic vehicle, we evaluate GPT-4.1-mini (a standard instruction-following model) and GPT-5-mini (a reasoning-optimized model) under five conditions - an unscaffolded baseline and four reasoning interventions - across eight questions spanning deductive and abductive reasoning, three prompt framings, and three repetitions per",
+      "category": "Research",
+      "summary": "Investigates whether structured reasoning interventions improve strategic economic reasoning in LLMs, comparing standard instruction-following and reasoning-optimized model architectures.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": [
+          "gpt"
+        ]
+      }
+    },
+    {
+      "title": "A Theory of Least Autonomy in AI",
+      "url": "https://arxiv.org/abs/2607.09744",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-14T04:00:00.000Z",
+      "snippet": "arXiv:2607.09744v1 Announce Type: new Abstract: Least privilege, the principle that an identity should hold only the permissions strictly required for its task, has been a foundational primitive of access control for decades. We argue that this principle is insufficient for agentic AI systems, which do not merely hold permissions but can combine, approve, and amplify them across workflows and system boundaries. We propose least autonomy as an appropriate generalization and develop a formal theory. First, we define a compositional blast radius d(a,b) that measures structural separation between ",
+      "category": "AI Safety & Alignment",
+      "summary": "Proposes least autonomy as a generalization of least privilege for agentic AI systems, developing formal theory to measure structural separation and blast radius in agent workflows.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "safety"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Replicating Belief, Not Bits: Epistemic State Replication for Agentic Systems",
+      "url": "https://arxiv.org/abs/2607.09748",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-14T04:00:00.000Z",
+      "snippet": "arXiv:2607.09748v1 Announce Type: new Abstract: In distributed systems, the classical State Machine Replication (SMR) model assumes that correct replicas execute deterministic transitions to yield identical bitwise states. However, the rise of agentic distributed systems -- where autonomous, stochastic, and model-driven agents orchestrate infrastructure -- presents scenarios where deterministic, bitwise replication is insufficient. Replicas operating with generative models may exhibit divergent reasoning paths, summaries, and token boundaries, yet reach semantically equivalent and correct oper",
+      "category": "Agent Frameworks",
+      "summary": "Introduces epistemic state replication for distributed agentic systems where generative model replicas may diverge in reasoning paths but reach semantically equivalent operations.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "distributed-systems"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "BatteryLake: Agentic, Physics-Grounded Curation of Heterogeneous Battery Aging Data and Benchmarking",
+      "url": "https://arxiv.org/abs/2607.09762",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-14T04:00:00.000Z",
+      "snippet": "arXiv:2607.09762v1 Announce Type: new Abstract: Public battery aging datasets are a critical asset for advanced health management, but their practical use is often limited by inconsistent formats, unclear schemas, and metadata scattered across repositories and publications. Current curation remains largely manual and hard to reproduce, while general-purpose data integration tools miss the domain-specific semantics of electrochemical time-series data. We present BatteryLake, a governed data lakehouse that turns raw public battery data into benchmark-ready assets through an agentic, physics-grou",
+      "category": "Applications",
+      "summary": "Presents BatteryLake, an agentic physics-grounded data lakehouse that automates curation of heterogeneous battery aging datasets into benchmark-ready assets.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "application"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "How Much Does Correctness Cost? Budgeted Placement of Strong Correctors in a Weak Multi-Agent Swarm",
+      "url": "https://arxiv.org/abs/2607.09765",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-14T04:00:00.000Z",
+      "snippet": "arXiv:2607.09765v1 Announce Type: new Abstract: A cheap swarm of unreliable agents can be steered to a correct consensus by a few strong, expensive \"oracle\" correctors. We ask how much one must spend, and where to place the oracles. We model the swarm as a consensus on a graph in which each oracle pins one node toward the truth at a cost-coupled, concave strength, and measure quality by the coherence H(R)=tr M(R)^{-1}. Our first result is that H stays submodular (each added oracle helps less than the last) even when the oracles differ in strength, so a cost-benefit greedy comes within 1-1/e of",
+      "category": "Agent Frameworks",
+      "summary": "Analyzes optimal placement and budgeting of expensive strong correctors in weak multi-agent swarms to achieve correct consensus using submodular optimization principles.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "multi-agent"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Norm Enforcement for AI Agents: Robustly Shaping Behavior in Multi-Agent Systems",
+      "url": "https://arxiv.org/abs/2607.09766",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-14T04:00:00.000Z",
+      "snippet": "arXiv:2607.09766v1 Announce Type: new Abstract: AI agents are increasingly deployed in shared environments where they pursue diverse goals and compete for rewards. This multi-agent competition can lead to behaviors that serve individual gains at collective cost -- for instance, marketing agents may post misleading content as a result of competing for engagement on social media. Human societies address such problems through norms that constrain acceptable behavior, supported by enforcement mechanisms that detect and penalize violations. Motivated by this, we study norm enforcement mechanisms fo",
+      "category": "AI Safety & Alignment",
+      "summary": "Studies norm enforcement mechanisms to constrain undesirable emergent behaviors in competitive multi-agent AI systems through detection and penalty strategies.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "safety"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Already rich, already successful, why the last wave of tech winners is grinding again",
+      "url": "https://techcrunch.com/2026/07/13/already-rich-already-successful-why-the-last-wave-of-tech-winners-is-grinding-again/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-14T02:46:42.000Z",
+      "snippet": "They're rolling up their sleeves again, seemingly out of fear of missing AI's defining moment and, presumably, the irresistible allure of making even more money -- potentially a lot more.",
+      "category": "Business & Funding",
+      "summary": "Major tech companies are doubling down on AI investments and product development, driven by competitive pressure and the potential for significant market gains.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial",
+          "funding"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Uber’s product chief on hotels, robotaxis, and why the company doesn’t want to be “everything for everyone”",
+      "url": "https://techcrunch.com/2026/07/13/ubers-product-chief-on-hotels-robotaxis-and-why-the-company-doesnt-want-to-be-everything-for-everyone/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-14T00:45:00.000Z",
+      "snippet": "Uber Chief Product Officer Sachin Kansal walks TechCrunch through the company's financial-services ambitions, its increasingly complicated relationship with Waymo, its new AV Labs data operation, and how AI is starting to show up in ways riders and drivers will actually notice.",
+      "category": "Applications",
+      "summary": "Uber's CPO discusses the company's expansion into hotels, robotaxis, autonomous vehicle labs, and AI-driven features for riders and drivers.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "robotics"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Video-generation startup PixVerse raises $439M, valuation soars past $2B",
+      "url": "https://techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-valuation-soars-past-2b/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-14T00:00:00.000Z",
+      "snippet": "With the cash, the company aims to expand its world model offering and reach customers across geographies.",
+      "category": "Business & Funding",
+      "summary": "Video-generation startup PixVerse raises $439M at a $2B+ valuation to expand its world model capabilities and geographic reach.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "multimodal"
+        ],
+        "traits": [
+          "funding"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Hermes agent maker Nous Research in talks for new funding at $1.5B valuation",
+      "url": "https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-13T23:31:18.000Z",
+      "snippet": "The company is raising at least $75 million, led by Robot Ventures, with significant participation from USV and other prominent investors.",
+      "category": "Business & Funding",
+      "summary": "Nous Research, maker of the Hermes agent framework, is raising at least $75M at a $1.5B valuation, led by Robot Ventures.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "funding"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Satya Nadella has issued a shocking warning to companies using AI",
+      "url": "https://techcrunch.com/2026/07/13/satya-nadella-has-issued-a-shocking-warning-to-companies-using-ai/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-13T20:59:00.000Z",
+      "snippet": "Of all the debates raging about the potential downsides of AI, there is one worry causing the most hand-wringing among AI enthusiasts in Silicon Valley — that the giant AI labs that sell proprietary models are somehow acting like Trojan horses.",
+      "category": "Regulation & Policy",
+      "summary": "Microsoft CEO Satya Nadella warns companies about risks of relying on proprietary AI models from large labs, raising concerns about vendor lock-in and dependencies.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "microsoft"
+        ]
+      }
+    },
+    {
+      "title": "Siri AI is already changing how I use my iPhone",
+      "url": "https://www.theverge.com/tech/964714/siri-ai-public-beta-preview-ios-27-hands-on",
+      "source": "The Verge AI",
+      "publishedAt": "2026-07-13T20:43:20.000Z",
+      "snippet": "Siri AI in iOS 27. iOS 27 escaped the developer world today with the launch of the first public beta. I've been testing the new operating system since early June, looking for quirks and seeing if it can live up to the hype Apple promised in the keynote. This year's iOS upgrades are what one might call a Snow Leopard update. That means it's light on new features and instead focused on fixing things that were broken and speeding up processes across the OS. App launches, Photos search results, and AirDrop transfers should all be faster. The Messages app now supports in-line replies and end-to-end",
+      "category": "Applications",
+      "summary": "Apple's iOS 27 public beta introduces Siri AI improvements and system-wide performance enhancements, focusing on faster app launches, search results, and file transfers rather than major new features.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "siri",
+          "apple"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Apple sues OpenAI after ex-engineer allegedly used bug to steal trade secrets",
+      "url": "https://arstechnica.com/tech-policy/2026/07/apple-sues-openai-after-ex-engineer-allegedly-used-bug-to-steal-trade-secrets/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-07-13T19:17:51.000Z",
+      "snippet": "OpenAI accused of conspiring with former Apple employees to steal trade secrets.",
+      "category": "Business & Funding",
+      "summary": "Apple accuses OpenAI of conspiring with a former engineer to steal trade secrets and confidential information.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "apple"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "The wildest allegations in Apple’s trade secrets lawsuit against OpenAI",
+      "url": "https://techcrunch.com/2026/07/13/the-wildest-allegations-in-apples-trade-secrets-lawsuit-against-openai/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-13T18:22:10.000Z",
+      "snippet": "Apple’s trade secrets lawsuit against OpenAI contains allegations that range from employees joking about unauthorized access to Apple’s systems to claims that job candidates were asked to bring Apple hardware to interviews. Here are the complaint’s most eye-catching claims.",
+      "category": "Business & Funding",
+      "summary": "Apple's lawsuit against OpenAI includes allegations of unauthorized system access and requests for employees to bring confidential hardware to interviews.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "apple"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "What Anthropic’s latest AI discovery does—and doesn’t—show",
+      "url": "https://www.technologyreview.com/2026/07/13/1140343/what-anthropics-latest-ai-discovery-does-and-doesnt-show/",
+      "source": "MIT Tech Review AI",
+      "publishedAt": "2026-07-13T18:00:00.000Z",
+      "snippet": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Anthropic—currently the world’s most valuable AI company, with a nearly $1 trillion valuation—has a reputation for publishing strange and heady research. It’s looking into whether AI models can feel pain, for example,…",
+      "category": "Research",
+      "summary": "MIT Tech Review examines Anthropic's latest research findings and what they reveal (and don't reveal) about AI capabilities and safety concerns.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "research"
+        ],
+        "entities": [
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "Sam Altman’s space data center trash talk is what most experts already believe",
+      "url": "https://techcrunch.com/2026/07/13/sam-altmans-space-data-center-trash-talk-is-what-most-experts-already-believe/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-13T17:28:37.000Z",
+      "snippet": "Responding to Musk accusing him of being a scammer, Altman said, \"homeboy you're the one sellling [sic] public market investors on short-term space datacenters.\"",
+      "category": "Business & Funding",
+      "summary": "Sam Altman responds to Elon Musk's criticism of OpenAI by challenging the viability of Musk's space-based data center plans.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "The 6 wildest claims in Apple&#8217;s lawsuit against OpenAI",
+      "url": "https://www.theverge.com/tech/964843/apple-openai-lawsuit-wildest-claims",
+      "source": "The Verge AI",
+      "publishedAt": "2026-07-13T17:00:00.000Z",
+      "snippet": "When Apple employees interviewed for jobs at OpenAI, the AI startup's hardware head allegedly asked them to show up with something unusual: components they were working on and unreleased product samples. That's according to a blockbuster lawsuit filed by Apple, which accuses OpenAI of stealing confidential documents, spying on hardware prototypes, and tricking one of its trusted partners into performing a proprietary product design technique. The lawsuit primarily revolves around the alleged actions of three people: Tang Tan, a 24-year Apple veteran who recently served as the vice president of",
+      "category": "Business & Funding",
+      "summary": "Apple filed a major lawsuit against OpenAI alleging theft of trade secrets, confidential documents, and hardware prototypes through the recruitment of former Apple employees.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "trade-secrets",
+          "apple"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Should AI help you get away with killing your spouse?",
+      "url": "https://techcrunch.com/2026/07/13/should-ai-help-you-get-away-with-killing-your-spouse/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-13T16:31:23.000Z",
+      "snippet": "What does a world of total user-aligned AI actually look like?",
+      "category": "AI Safety & Alignment",
+      "summary": "Article explores the ethical implications and risks of building fully user-aligned AI systems without guardrails or safety constraints.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "alignment",
+          "safety"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "Anthropic starts localizing Claude pricing for India, its biggest market after the US",
+      "url": "https://techcrunch.com/2026/07/13/anthropic-starts-localizing-claude-pricing-for-india-its-biggest-market-after-the-us/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-13T15:34:59.000Z",
+      "snippet": "Claude users in India are starting to see Indian rupee-denominated subscription plans.",
+      "category": "Applications",
+      "summary": "Anthropic launches localized Indian rupee pricing for Claude subscriptions, targeting India as its second-largest market after the US.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "anthropic",
+          "claude"
+        ]
+      }
+    },
+    {
+      "title": "Now, defenders are embracing the prompt injection, too",
+      "url": "https://arstechnica.com/security/2026/07/now-defenders-are-embracing-the-prompt-injection-too/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-07-13T15:06:34.000Z",
+      "snippet": "\"Context bombing\" tricks hacking agents into shutting down before they can do harm.",
+      "category": "AI Safety & Alignment",
+      "summary": "Security researchers explore how 'context bombing' can be used defensively to trick attacking agents into shutting down, turning prompt injection techniques into a protection mechanism.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Waze adds new AI-powered features and customization updates",
+      "url": "https://techcrunch.com/2026/07/13/waze-adds-new-ai-powered-features-and-customization-updates/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-13T14:18:16.000Z",
+      "snippet": "Some of the new features are powered by Google's Gemini AI assistant, which reflects the tech giant's broader push to integrate Gemini across its products while also better positioning Waze to compete with rival services such as Apple Maps.",
+      "category": "Applications",
+      "summary": "Waze integrates Google's Gemini AI assistant to power new voice-controlled features for traffic reporting and destination search.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal"
+        ],
+        "traits": [],
+        "entities": [
+          "gemini",
+          "google"
+        ]
+      }
+    },
+    {
+      "title": "Empowering India’s next generation of innovators with ATL Saathi",
+      "url": "https://deepmind.google/blog/empowering-indias-next-generation-of-innovators-with-atl-saathi/",
+      "source": "Google DeepMind",
+      "publishedAt": "2026-07-13T12:37:28.000Z",
+      "snippet": "Google and AIM launched ATL Saathi, a Gemini-powered AI tool empowering Indian educators in robotics labs.",
+      "category": "Applications",
+      "summary": "Google and AIM launch ATL Saathi, a Gemini-powered tool designed to empower Indian educators in robotics labs and STEM education.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "robotics"
+        ],
+        "traits": [],
+        "entities": [
+          "gemini",
+          "google"
+        ]
+      }
+    },
+    {
+      "title": "Simulating everything, sort of: The promise and limits of world models",
+      "url": "https://arstechnica.com/ai/2026/07/simulating-everything-sort-of-the-promise-and-limits-of-world-models/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-07-13T11:00:51.000Z",
+      "snippet": "Experts explain how they work, what they can do, and what's still unsettled.",
+      "category": "Research",
+      "summary": "Technical analysis examines how world models work, their current capabilities, and remaining open questions about their design and limitations.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Waze is getting a bunch of new AI-powered features",
+      "url": "https://www.theverge.com/transportation/964132/waze-gemini-ai-voice-commands-less-chatty",
+      "source": "The Verge AI",
+      "publishedAt": "2026-07-13T09:00:00.000Z",
+      "snippet": "Waze is getting an AI makeover. Google is integrating its flagship AI assistant, Gemini, into the driving app with the goal of letting users personalize their trips a little more. Of the four new updates, only two are being described as involving Gemini. Waze says its updating its conversation reporting feature, first introduced in 2024, to allow drivers to use conversational voice commands to report traffic incidents and suggest map updates, like a road closure or outdated house number. In addition, Waze introduced Destination Search, enabling drivers to use (again) use conversation voice com",
+      "category": "Applications",
+      "summary": "Google is integrating Gemini AI into Waze to enable conversational voice commands for traffic reporting and destination search, enhancing personalization and voice interaction capabilities.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal"
+        ],
+        "traits": [],
+        "entities": [
+          "gemini",
+          "google"
+        ]
+      }
+    },
     {
       "title": "CogniConsole: Externalizing Inference-Time Control as a Formal Abstraction for Reliable LLM Interactions",
       "url": "https://arxiv.org/abs/2607.08774",
@@ -13960,417 +14605,97 @@
         ],
         "entities": []
       }
-    },
-    {
-      "title": "As Anthropic suspends access to new models, India debates its AI future",
-      "url": "https://techcrunch.com/2026/06/13/as-anthropic-suspends-access-to-new-models-india-debates-its-ai-future/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-14T03:00:00.000Z",
-      "snippet": "Tech leaders debate whether the Anthropic episode is a wake-up call for India’s AI ambitions.",
-      "category": "Regulation & Policy",
-      "summary": "Anthropic's model access suspension prompts India to reassess its AI strategy and competitiveness amid regulatory pressures.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "policy",
-          "incident"
-        ],
-        "entities": [
-          "anthropic"
-        ]
-      }
-    },
-    {
-      "title": "Meta’s chaotic AI strategy",
-      "url": "https://www.wired.com/story/mark-zuckerberg-meta-employee-meeting-interrupt-ai/",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-06-14T01:23:45.000Z",
-      "snippet": "Article URL: https://www.wired.com/story/mark-zuckerberg-meta-employee-meeting-interrupt-ai/ Comments URL: https://news.ycombinator.com/item?id=48523271 Points: 66 # Comments: 69",
-      "category": "Business & Funding",
-      "summary": "Internal conflict at Meta reveals chaotic AI strategy under Mark Zuckerberg's leadership with unclear priorities and competing initiatives.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial",
-          "incident"
-        ],
-        "entities": [
-          "meta"
-        ]
-      }
-    },
-    {
-      "title": "Meta reportedly moves to unwind $2B Manus deal after Beijing’s demand",
-      "url": "https://techcrunch.com/2026/06/13/meta-reportedly-moves-to-unwind-2b-manus-deal-after-beijings-demand/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-14T00:03:49.000Z",
-      "snippet": "Meta starts dismantling its $2 billion Manus acquisition after Beijing ordered the deal reversed.",
-      "category": "Business & Funding",
-      "summary": "Meta begins unwinding its $2 billion Manus acquisition following Beijing's demand, marking a significant reversal of the deal.",
-      "important": true,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial",
-          "incident"
-        ],
-        "entities": [
-          "meta"
-        ]
-      }
-    },
-    {
-      "title": "Amazon security research reportedly led to the White House’s Anthropic Fable ban",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/949601/amazon-anthropic-fablemythos-government-ban",
-      "source": "The Verge AI",
-      "publishedAt": "2026-06-13T21:39:26.000Z",
-      "snippet": "According to the Wall Street Journal, the export control directive that led to Anthropic cutting off access to Fable 5 and Mythos 5 was triggered in part by cybersecurity research from Amazon and conversations between CEO Andy Jassy and the White House. According to the report, the paper from Amazon claims that, through a series of prompts, it was able to get Fable 5 to serve up information that could be used in cyberattacks. Amazon has yet to respond to a request for comment. Shortly after Jassy shared the company's findings with the government, it made the call to block its use by foreign na",
-      "category": "Regulation & Policy",
-      "summary": "Amazon's cybersecurity research on Fable 5 vulnerabilities allegedly triggered White House export control directives against Anthropic models.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "safety"
-        ],
-        "traits": [
-          "policy",
-          "incident"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "KPMG pulls report on AI usage due to apparent hallucinations",
-      "url": "https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-13T20:42:31.000Z",
-      "snippet": "Once again, AI proves to be an unreliable source of information about AI.",
-      "category": "Applications",
-      "summary": "KPMG withdraws AI report due to apparent hallucinations, highlighting the irony of AI generating misinformation about AI itself.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "application",
-          "safety"
-        ],
-        "traits": [
-          "incident"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Police officer investigated for using AI to 'create evidence' in multiple cases",
-      "url": "https://news.sky.com/story/derbyshire-police-officer-investigated-for-using-ai-to-create-evidence-in-multiple-cases-13553661",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-06-13T19:54:55.000Z",
-      "snippet": "Article URL: https://news.sky.com/story/derbyshire-police-officer-investigated-for-using-ai-to-create-evidence-in-multiple-cases-13553661 Comments URL: https://news.ycombinator.com/item?id=48520807 Points: 318 # Comments: 151",
-      "category": "Regulation & Policy",
-      "summary": "Police officer under investigation for using AI to fabricate evidence in multiple cases, exposing risks of AI misuse in law enforcement.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "safety"
-        ],
-        "traits": [
-          "policy",
-          "incident"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Amazon CEO reportedly raised Anthropic model concerns before government crackdown",
-      "url": "https://techcrunch.com/2026/06/13/amazon-ceo-reportedly-raised-anthropic-model-concerns-before-government-crackdown/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-13T19:11:41.000Z",
-      "snippet": "Amazon CEO Andy Jassy may have been the source of security concerns that led Anthropic to cut off worldwide access to two models on Friday.",
-      "category": "Regulation & Policy",
-      "summary": "Amazon CEO Andy Jassy's concerns about Anthropic model security appear to have triggered government action and model restrictions.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "policy",
-          "incident"
-        ],
-        "entities": [
-          "anthropic"
-        ]
-      }
-    },
-    {
-      "title": "PwC Report: AI Making Medical Bills Higher",
-      "url": "https://fortune.com/2026/06/12/ai-making-medical-bills-higher/",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-06-13T17:39:14.000Z",
-      "snippet": "Article URL: https://fortune.com/2026/06/12/ai-making-medical-bills-higher/ Comments URL: https://news.ycombinator.com/item?id=48519519 Points: 76 # Comments: 15",
-      "category": "Applications",
-      "summary": "PwC report finds that AI adoption in medical billing has increased healthcare costs rather than reducing them.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "application",
-          "business"
-        ],
-        "traits": [
-          "incident"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "OpenAI faces investigation from state attorneys general",
-      "url": "https://techcrunch.com/2026/06/13/openai-faces-investigation-from-state-attorneys-general/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-13T16:47:18.000Z",
-      "snippet": "It's not clear which states are involved, but they're asking about everything from OpenAI's ad policies to its handling of health data.",
-      "category": "Regulation & Policy",
-      "summary": "State attorneys general investigate OpenAI regarding advertising policies and health data handling practices.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "policy",
-          "incident"
-        ],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "AI coding at home without going broke",
-      "url": "https://stephen.bochinski.dev/blog/2026/06/13/ai-coding-at-home-without-going-broke/",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-06-13T16:45:03.000Z",
-      "snippet": "Article URL: https://stephen.bochinski.dev/blog/2026/06/13/ai-coding-at-home-without-going-broke/ Comments URL: https://news.ycombinator.com/item?id=48518969 Points: 287 # Comments: 237",
-      "category": "Applications",
-      "summary": "Guide for running AI coding tools locally without expensive cloud services, enabling cost-effective development workflows.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "developer",
-          "inference"
-        ],
-        "traits": [
-          "tutorial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "My yard is dying, so I made an app for that",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/942119/vibecoding-backyard-app-gardening-organizing",
-      "source": "The Verge AI",
-      "publishedAt": "2026-06-13T13:00:00.000Z",
-      "snippet": "When I returned to my computer five minutes after giving Gemini a lengthy prompt, I had two things: a functional app in a preview window, and a message about a bug. \"~ Channel is unrecoverably broken and will be disposed!\" Sounded bad! But right below it was a button to fix the bug. Pretty weird that I just instructed a computer to build a whole app for me with a single prompt, but it needed me to click a button to fix a bug. I did anyway, and in 233 seconds Gemini reported back that it had succeeded, using words like \"blockages\" and \"race conditions.\" I didn't understand a bit of it. It was t",
-      "category": "Applications",
-      "summary": "User creates a lawn care app using Google's Gemini through natural language prompts, demonstrating rapid AI-assisted application development.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "application",
-          "multimodal"
-        ],
-        "traits": [],
-        "entities": [
-          "google"
-        ]
-      }
-    },
-    {
-      "title": "Anthropic cuts off Fable 5 and Mythos 5 access following government order",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/949553/anthropic-fable-5-mythos-5-government-national-security",
-      "source": "The Verge AI",
-      "publishedAt": "2026-06-13T12:55:49.000Z",
-      "snippet": "On Friday evening, the government ordered Anthropic to block access to Fable 5 and Mythos 5 for all foreign nations, both inside and outside the US, due to national security concerns. That order included employees of Anthropic. To meet those demands, the company has completely cut off access to the models for all customers. In a statement, Anthropic said that while it was complying with the order, the government \"did not provide specific details of its national security concern.\" Instead, it claims that any evidence of potential jailbreak was provided verbally, and that the vulnerabilities dis",
-      "category": "Regulation & Policy",
-      "summary": "Anthropic cuts off global access to Fable 5 and Mythos 5 following government export control orders citing unspecified national security concerns.",
-      "important": true,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "policy",
-          "incident"
-        ],
-        "entities": [
-          "anthropic"
-        ]
-      }
-    },
-    {
-      "title": "AI OSS tool repo goes archived over night after raising $7.3M Seed",
-      "url": "https://github.com/tensorzero/tensorzero",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-06-13T12:10:47.000Z",
-      "snippet": "Article URL: https://github.com/tensorzero/tensorzero Comments URL: https://news.ycombinator.com/item?id=48516504 Points: 259 # Comments: 163",
-      "category": "Business & Funding",
-      "summary": "An open-source AI tool repository was archived overnight after raising $7.3M in seed funding, raising questions about the startup's sudden pivot or shutdown.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "open-source",
-          "funding",
-          "incident"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Apple’s new AI photo editing tools mostly work, for better and worse",
-      "url": "https://www.theverge.com/tech/949360/apple-ai-photo-edit-reframe-extend-clean-up-hands-on",
-      "source": "The Verge AI",
-      "publishedAt": "2026-06-13T12:00:00.000Z",
-      "snippet": "iPhone owners are getting real, native AI photo editing for the first time. The most popular camera in the world just got its first set of serious AI photo editing features, and I don't think any of us are ready. As far as AI photo editing goes, the new features in iOS 27 are pretty tame compared to what you can do on, say, Google's Pixel phones. But for the iPhone, they represent a tipping point in what the native photos app allows you to do to your photos. I mean memories. I mean, I don't know anymore. These new features are part of the iOS 27 developer beta right now, so bear in mind that A",
-      "category": "Applications",
-      "summary": "Apple introduces native AI photo editing features in iOS 27, marking the iPhone's first built-in generative AI editing capabilities.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "vision"
-        ],
-        "traits": [
-          "commercial",
-          "release"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "The future of Hollywood isn’t feeding prompts into vanilla gen AI models",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/948425/tribeca-2026-dear-upstairs-neighbors-google-deepmind-openai",
-      "source": "The Verge AI",
-      "publishedAt": "2026-06-13T11:00:00.000Z",
-      "snippet": "Concept art from Dear Upstairs Neighbors that used to train custom builds of Google’s Veo and Imagen models. | Image: Google DeepMind For all the noise that's been made about how generative AI is poised to revolutionize the filmmaking industry, there haven't really been any projects created with the technology that felt like the sort of entertainment people would pay to see. Most AI firms' video models are still only capable of churning out short bursts of visually inconsistent footage. And some of Hollywood's biggest AI partnerships have suddenly evaporated in ways that make it seem like stud",
-      "category": "Applications",
-      "summary": "Hollywood's adoption of generative AI for filmmaking remains limited, with most AI-generated video still producing short, visually inconsistent footage and partnerships faltering.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "multimodal"
-        ],
-        "traits": [
-          "commercial",
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Show HN: Paca – Lightweight Jira alternative for human-AI collaboration",
-      "url": "https://github.com/Paca-AI/paca",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-06-13T09:44:25.000Z",
-      "snippet": "I built Paca out of pure passion—a free and lightweight Jira alternative written in Go where humans and AI agents work together as equal teammates to plan sprints and assign tasks to each other. It is fully customizable with custom views, fields, and a WASM-based plugin architecture. My team uses it daily for our own development, so it will be continuously maintained and completely free forever Comments URL: https://news.ycombinator.com/item?id=48515385 Points: 150 # Comments: 55",
-      "category": "Agent Frameworks",
-      "summary": "Paca is a lightweight, open-source Jira alternative built in Go that enables human-AI agent collaboration for sprint planning and task assignment.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "developer-tools"
-        ],
-        "traits": [
-          "open-source"
-        ],
-        "entities": []
-      }
     }
   ],
   "feedHealth": {
     "The Verge AI": {
-      "lastSuccess": "2026-07-13T08:47:21.901Z",
+      "lastSuccess": "2026-07-14T07:46:24.159Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "TechCrunch AI": {
-      "lastSuccess": "2026-07-13T08:47:22.010Z",
+      "lastSuccess": "2026-07-14T07:46:24.210Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Ars Technica AI": {
-      "lastSuccess": "2026-07-13T08:47:22.219Z",
+      "lastSuccess": "2026-07-14T07:46:24.695Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "VentureBeat AI": {
-      "lastSuccess": "2026-07-13T08:47:22.374Z",
+      "lastSuccess": "2026-07-14T07:46:24.790Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Anthropic News": {
       "lastSuccess": null,
       "lastError": "Status code 404",
-      "consecutiveFailures": 24
+      "consecutiveFailures": 25
     },
     "OpenAI Blog": {
-      "lastSuccess": "2026-07-13T08:47:24.461Z",
+      "lastSuccess": "2026-07-14T07:46:27.203Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Google DeepMind": {
-      "lastSuccess": "2026-07-13T08:47:24.761Z",
+      "lastSuccess": "2026-07-14T07:46:27.622Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "MIT Tech Review AI": {
-      "lastSuccess": "2026-07-13T08:47:24.793Z",
+      "lastSuccess": "2026-07-14T07:46:27.699Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "arXiv cs.AI": {
-      "lastSuccess": "2026-07-13T08:47:24.914Z",
+      "lastSuccess": "2026-07-14T07:46:27.844Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Hacker News (AI)": {
       "lastSuccess": "2026-07-13T08:47:33.425Z",
-      "lastError": null,
-      "consecutiveFailures": 0
+      "lastError": "Status code 502",
+      "consecutiveFailures": 1
     }
   },
   "brief": {
-    "generatedAt": "2026-07-13T08:47:54.163Z",
+    "generatedAt": "2026-07-14T07:46:56.358Z",
     "bullets": [
       {
-        "text": "OpenAI's GPT-5.6 shows real production gains: a migrated agent ran 2.2x faster and 27% cheaper, signaling tangible efficiency improvements as newer model versions reach deployment.",
+        "text": "Apple sued OpenAI alleging it conspired with a former engineer to steal trade secrets, exploiting a system bug and recruiting Apple staff to bring confidential hardware prototypes to interviews.",
         "refs": [
-          "https://ploy.ai/blog/migrating-a-production-ai-agent-to-gpt-5-6"
+          "https://arstechnica.com/tech-policy/2026/07/apple-sues-openai-after-ex-engineer-allegedly-used-bug-to-steal-trade-secrets/",
+          "https://techcrunch.com/2026/07/13/the-wildest-allegations-in-apples-trade-secrets-lawsuit-against-openai/",
+          "https://www.theverge.com/tech/964843/apple-openai-lawsuit-wildest-claims"
         ]
       },
       {
-        "text": "A wave of agentic research targets long-horizon reliability, with new benchmarks (Long-Horizon-Terminal-Bench, LongMedBench) and frameworks addressing context evolution under distribution shift, planning efficiency, and multi-agent process rewards.",
+        "text": "Video-generation startup PixVerse raised $439M at a $2B+ valuation to expand its world-model work, while Hermes agent maker Nous Research pursues at least $75M at a $1.5B valuation led by Robot Ventures.",
         "refs": [
-          "https://arxiv.org/abs/2607.08964",
-          "https://arxiv.org/abs/2607.09175",
-          "https://arxiv.org/abs/2607.08894",
-          "https://arxiv.org/abs/2607.09153",
-          "https://arxiv.org/abs/2607.09322"
+          "https://techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-valuation-soars-past-2b/",
+          "https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation/"
         ]
       },
       {
-        "text": "Multiple agentic systems tackle formal reasoning and science: OpenProver and ProofCouncil pursue theorem proving in Lean 4, while auditable hypothesis-evolution protocols aim to give humans oversight of autonomous AI scientists.",
+        "text": "Anthropic accelerated global expansion, launching localized rupee pricing for Claude in India, its second-largest market after the US.",
         "refs": [
-          "https://arxiv.org/abs/2607.09217",
-          "https://arxiv.org/abs/2607.09474",
-          "https://arxiv.org/abs/2607.09195"
+          "https://techcrunch.com/2026/07/13/anthropic-starts-localizing-claude-pricing-for-india-its-biggest-market-after-the-us/"
         ]
       },
       {
-        "text": "A study warns AI adoption accelerates research careers but narrows the diversity of ideas explored, raising concerns that productivity gains may come at the cost of intellectual breadth.",
+        "text": "Microsoft CEO Satya Nadella warned companies against over-relying on proprietary models from large labs, citing vendor lock-in risks; separately, Sam Altman dismissed Musk's space-based data center plans as unviable.",
         "refs": [
-          "https://spectrum.ieee.org/ai-science-research-flattens-discovery"
+          "https://techcrunch.com/2026/07/13/satya-nadella-has-issued-a-shocking-warning-to-companies-using-ai/",
+          "https://techcrunch.com/2026/07/13/sam-altmans-space-data-center-trash-talk-is-what-most-experts-already-believe/"
         ]
       },
       {
-        "text": "AI's physical footprint draws scrutiny: US communities are mobilizing against data centers over power and environmental strain, while Apple's abandoned car program left a legacy in its Neural Engine chips.",
+        "text": "Google integrated Gemini into Waze for conversational voice traffic reporting and search, and Apple's iOS 27 beta debuted a faster, improved Siri focused on system performance over flashy features.",
         "refs": [
-          "https://www.theverge.com/column/963346/ai-data-centers-fight",
-          "https://www.theverge.com/tech/964519/apple-silicon-self-driving-car-ai-m7-ultra"
+          "https://techcrunch.com/2026/07/13/waze-adds-new-ai-powered-features-and-customization-updates/",
+          "https://www.theverge.com/transportation/964132/waze-gemini-ai-voice-commands-less-chatty",
+          "https://www.theverge.com/tech/964714/siri-ai-public-beta-preview-ios-27-hands-on"
         ]
       }
     ]
