@@ -1,22 +1,800 @@
 {
-  "generatedAt": "2026-07-15T07:49:44.669Z",
+  "generatedAt": "2026-07-16T07:55:13.023Z",
   "daysBack": 3,
   "categories": [
     "Business & Funding",
-    "Other",
-    "Applications",
-    "Regulation & Policy",
-    "Research",
-    "Developer Tools",
-    "AI Safety & Alignment",
     "Agent Frameworks",
+    "Research",
+    "Applications",
+    "AI Safety & Alignment",
+    "Developer Tools",
     "Open Source",
+    "Other",
+    "Regulation & Policy",
     "Model Releases",
     "Hardware & Compute",
     "MCP",
     "Evaluation"
   ],
   "articles": [
+    {
+      "title": "Applied Computing wants to give oil and gas operators an AI model for the entire plant",
+      "url": "https://techcrunch.com/2026/07/15/applied-computing-wants-to-give-oil-and-gas-operators-an-ai-model-for-the-entire-plant/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-16T04:00:00.000Z",
+      "snippet": "Applied Computing has raised a $20M Series A to build a foundation AI model for the oil, gas and petrochemical industry.",
+      "category": "Business & Funding",
+      "summary": "Applied Computing raises $20M Series A to build a foundation AI model tailored specifically for the oil, gas, and petrochemical industry.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "domain-specific",
+          "industrial"
+        ],
+        "traits": [
+          "funding"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "SPINE: Bridging the Cyber-Physical Gap with Agentic AI",
+      "url": "https://arxiv.org/abs/2607.13049",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-16T04:00:00.000Z",
+      "snippet": "arXiv:2607.13049v1 Announce Type: new Abstract: Foundation models have given robots a sophisticated brain for complex decision-making, yet deploying that intelligence into a physical platform still demands tedious, expert-driven calibration. This deployment gap, the robot's spinal cord, remains a primary bottleneck to scalable Embodied AI. Hence, we propose SPINE (Scalable Physical Integration with ageNtic Expertise): an agentic framework for systematically debugging and deploying bimanual robots with minimal robotics expertise. SPINE's harness comprises two orchestrated multi-agent workflows:",
+      "category": "Agent Frameworks",
+      "summary": "SPINE is an agentic framework that systematically debugs and deploys bimanual robots with minimal robotics expertise, bridging the gap between foundation models and physical embodied systems.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "robotics"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Interventional Grounding Audits: Black-Box Premise-Dependency Tests for LLM Chain-of-Thought via Predicate Substitution",
+      "url": "https://arxiv.org/abs/2607.13069",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-16T04:00:00.000Z",
+      "snippet": "arXiv:2607.13069v1 Announce Type: new Abstract: Large language models produce chain-of-thought (CoT) reasoning that appears logically sound yet may not genuinely depend on its stated premises. We introduce interventional grounding audits, a black-box, step-level test of premise dependency: we intervene on a single premise by substituting its target predicate with a fresh symbol, re-run the model, and check whether each reasoning step's normalized conclusion (canonical predicate form) changes. We evaluate on ProntoQA, a synthetic multi-hop deductive reasoning benchmark with gold proof trees, wh",
+      "category": "Research",
+      "summary": "This paper introduces interventional grounding audits, a black-box testing method to verify whether LLM chain-of-thought reasoning genuinely depends on stated premises by substituting predicates and observing conclusion changes.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning",
+          "interpretability"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Probabilistic Extension of Neuro-Symbolic AGI Robots based on Belnap's Typed Intensional FOL",
+      "url": "https://arxiv.org/abs/2607.13073",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-16T04:00:00.000Z",
+      "snippet": "arXiv:2607.13073v1 Announce Type: new Abstract: Neuro-symbolic AI based on $IFOL_B$ is a way to combine neural learning and symbolic reasoning to overcome limitations of purely neural systems (like lack of interpretability and logical structure) with formal logical machinery for self-reference. In this paper we expand the cognitive power of $IFOL_B$ by using the probability computation for the currently unknown sentences, based on Nilsson's probability structure for the $IFOL_B$. We introduce the global symmetry transformation that preserves the current knowledge database and logical deduction",
+      "category": "Research",
+      "summary": "The paper extends neuro-symbolic AI based on intensional first-order logic with probabilistic reasoning capabilities to enhance interpretability and logical structure in autonomous systems.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "neuro-symbolic",
+          "interpretability"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Self-Improvements in Modern Agentic Systems: A Survey",
+      "url": "https://arxiv.org/abs/2607.13104",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-16T04:00:00.000Z",
+      "snippet": "arXiv:2607.13104v1 Announce Type: new Abstract: Self-improving autonomous agents are moving from research prototypes to deployed systems. The primary goal is controllable evolution, or adaptation, from experience with minimal or even no human input. This survey frames modern self-improving agents as adaptive systems that convert experience into accumulated capability gains. We offer a system-level framework that represents a modern agent as a configuration coupling a foundation model with an operational scaffold of prompts, memory, tools, and control logic. Within this framework, self-improvem",
+      "category": "Research",
+      "summary": "A survey frames self-improving autonomous agents as adaptive systems that evolve from experience, presenting a system-level framework coupling foundation models with prompts, memory, tools, and control logic.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "research",
+          "benchmark"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Improving Molecular Property Prediction in Small Language Models Using Graph-based Tools",
+      "url": "https://arxiv.org/abs/2607.13115",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-16T04:00:00.000Z",
+      "snippet": "arXiv:2607.13115v1 Announce Type: new Abstract: Small language models (SLMs) have shown promise for zero-shot molecular property prediction from SMILES strings, yet they often suffer from structural blindness because sequence representations under-specify key graph-topological cues. We propose a modular Context-Augmented Prompting framework that enables agentic tool use at inference time: a trained GNN expert model provides a predictive hint with confidence, and a GNN extracts an instance-specific explanatory subgraph (e.g., a subgraph SMILES and an accompanying explanatory paragraph). We eval",
+      "category": "Applications",
+      "summary": "The paper proposes a Context-Augmented Prompting framework enabling small language models to improve molecular property prediction through agentic tool use with GNN experts and explanatory subgraphs.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "rag",
+          "multimodal"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "Oracle Agent Memory as an Enterprise Memory Substrate for Long-Horizon AI Agents",
+      "url": "https://arxiv.org/abs/2607.13157",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-16T04:00:00.000Z",
+      "snippet": "arXiv:2607.13157v1 Announce Type: new Abstract: Agent memory is a systems problem for long-horizon agents. Practical deployments require retention of task state across extended conversations, recovery of user-specific facts and preferences across sessions, and accumulation of procedural knowledge from prior outcomes. These requirements extend beyond document retrieval: a memory layer must determine which interactions become durable state, how that state is scoped, how it is retrieved under latency constraints, and how it is revised or removed over time. This report studies Oracle Agent Memory ",
+      "category": "Applications",
+      "summary": "Oracle Agent Memory addresses the systems problem of maintaining task state, user preferences, and procedural knowledge for long-horizon enterprise AI agents across extended conversations and sessions.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "rag"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Learning Safe Agent Behaviour from Human Preferences and Justifications via World Models",
+      "url": "https://arxiv.org/abs/2607.13172",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-16T04:00:00.000Z",
+      "snippet": "arXiv:2607.13172v1 Announce Type: new Abstract: We address the problem of safely training an agent policy and deploying a good and safe policy, in settings where the environment dynamics are unknown and no suitable reward function is available. In the context of safety-critical environments, we consider traditional reinforcement learning impractical and resort to the resource of human input. We introduce DROPJ, a human-centred method for both safe training and deployment. We first learn a world model (a learned simulator) from a dataset of prior real-world trajectories. A human then plays the ",
+      "category": "AI Safety & Alignment",
+      "summary": "DROPJ presents a human-centered method for safely training and deploying agent policies in unknown environments by learning world models and leveraging human preferences and justifications.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "alignment"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Networked Intelligence: Active Shared Context Graphs for Human-AI Team Science",
+      "url": "https://arxiv.org/abs/2607.13220",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-16T04:00:00.000Z",
+      "snippet": "arXiv:2607.13220v1 Announce Type: new Abstract: Most AI-for-science systems focus on scaling a single reasoning process through better models, larger context windows, long-horizon agentic execution, or digital co-scientists working with one principal user. However, challenging scientific problems are rarely solved by one reasoner alone. They are solved by teams whose members bring different priors, experimental backgrounds, tacit knowledge, and domain-trained intuitions. The open problem is therefore not only how to scale models, but how to cultivate networked intelligence: scaling the connect",
+      "category": "Applications",
+      "summary": "The paper proposes networked intelligence using active shared context graphs to enable human-AI teams to collaborate on scientific problems by integrating diverse reasoners and domain knowledge.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "reasoning"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "AI-Native Insurance for Agentic AI: Pricing, Underwriting, and End-to-End Automation",
+      "url": "https://arxiv.org/abs/2607.13230",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-16T04:00:00.000Z",
+      "snippet": "arXiv:2607.13230v1 Announce Type: new Abstract: Agentic AI introduces new insurance challenges because autonomous AI systems can make decisions, invoke tools, modify external environments, and interact with third-party services. This paper develops an AI-native mathematical framework for underwriting, pricing, and contract design for agentic AI deployments. A deployment is represented by a risk state that captures autonomy level, operational authority, permission exposure, governance maturity, and dependency concentration. The framework maps the risk state to event probabilities, loss severiti",
+      "category": "Business & Funding",
+      "summary": "The paper develops a mathematical framework for underwriting, pricing, and contract design specifically for agentic AI deployments, mapping risk states to event probabilities and loss severities.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "policy",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Cost-Optimal Foundation Model Deployment Portfolio for Transportation Management",
+      "url": "https://arxiv.org/abs/2607.13239",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-16T04:00:00.000Z",
+      "snippet": "arXiv:2607.13239v1 Announce Type: new Abstract: Foundation models, including large language models (LLMs) and vision-language models (VLMs), are increasingly used for transportation management center (TMC) tasks such as anomaly detection, incident reporting, and traveler information. Deploying multiple such models across TMC functions raises a portfolio question: which model should serve each function, in which deployment mode, and under what shared hardware budget? We formulate this as the Foundation Model Deployment Portfolio (FMDP) problem, a mixed-integer program minimizing total cost of o",
+      "category": "Applications",
+      "summary": "This work formulates the Foundation Model Deployment Portfolio problem as a mixed-integer optimization to minimize cost when deploying multiple LLMs and VLMs across transportation management tasks.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference",
+          "multimodal"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Harness Handbook: Making Evolving Agent Harnesses Readable,Navigable, and Editable",
+      "url": "https://arxiv.org/abs/2607.13285",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-16T04:00:00.000Z",
+      "snippet": "arXiv:2607.13285v1 Announce Type: new Abstract: The capability of a modern AI agent depends not only on its foundation model but also on its harness, which constructs prompts, manages state, invokes tools, and coordinates execution. As models, APIs, environments, and requirements evolve, the harness must be continually modified. Before such a change can be made, a developer or coding agent must identify all code locations that implement the target behavior. This is difficult because production harnesses are large, tightly coupled, and behaviorally distributed, while modification requests descr",
+      "category": "Developer Tools",
+      "summary": "Harness Handbook addresses the challenge of making evolving AI agent harnesses readable and editable by helping developers identify code locations implementing target behaviors in large, tightly-coupled systems.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "developer"
+        ],
+        "traits": [
+          "tutorial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "EZSMT Version 3, Matured",
+      "url": "https://arxiv.org/abs/2607.13344",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-16T04:00:00.000Z",
+      "snippet": "arXiv:2607.13344v1 Announce Type: new Abstract: Constraint Answer Set Programming (CASP) is a hybrid reasoning paradigm that combines Answer Set Programming (ASP) with Constraint Processing and Satisfiability Modulo Theories (SMT), enabling powerful declarative encodings of complex combinatorial search problems. This paper presents the design and implementation of EZSMTV3, an extensible SMT-based CASP framework that advances the translational approach to CASP solving. Building upon the foundation of the EZSMT+ system, EZSMTV3 introduces a more expressive input language, supports optimization v",
+      "category": "Open Source",
+      "summary": "EZSMTV3 presents an extensible SMT-based framework for Constraint Answer Set Programming that combines ASP with constraint processing and satisfiability solving for complex combinatorial problems.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning"
+        ],
+        "traits": [
+          "open-source",
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Set-shifting Behavioral Test for Harnessed Agents",
+      "url": "https://arxiv.org/abs/2607.13396",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-16T04:00:00.000Z",
+      "snippet": "arXiv:2607.13396v1 Announce Type: new Abstract: What happens to an LLM agent's tool choice when the reliable tool silently changes within an ongoing session? We borrow set-shifting from cognitive psychology to study how well agents adapt to hidden reliability shifts. Our benchmark mounts tool-skill libraries with redundancies, where many tools solve the same task but differ in hidden reliability. In our evaluation framework, a branched schedule shifts the reliable tool group at hidden boundaries and pairs every shift with a no-shift control. We find that agents, by default, settle on a small r",
+      "category": "Research",
+      "summary": "Set-shifting Behavioral Test applies cognitive psychology methods to evaluate how well LLM agents adapt when tool reliability changes hidden within a session.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "evaluation"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "LAPO: Leave-One-Turn Attribution for Self-Generated Process Rewards in Multi-Turn Search Reasoning",
+      "url": "https://arxiv.org/abs/2607.13501",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-16T04:00:00.000Z",
+      "snippet": "arXiv:2607.13501v1 Announce Type: new Abstract: Reinforcement learning for multi-turn search reasoning typically relies on terminal outcome rewards, which cannot distinguish useful, redundant, and harmful intermediate interactions. We propose LAPO, a self-generated process-supervision method based on backward leave-one-turn attribution. For each search turn, LAPO replaces the turn and its retrieval observation with a fixed [DELETE] placeholder and measures the resulting change in the current policy's mean log-likelihood of the gold answer. This Answer-Likelihood Gain estimates the turn's contr",
+      "category": "Research",
+      "summary": "LAPO proposes a self-generated process-supervision method using leave-one-turn attribution to distinguish useful, redundant, and harmful intermediate steps in multi-turn reasoning with search.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning",
+          "training"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "How Far Can Root Cause Analysis Go on Real-World Telemetry Data?",
+      "url": "https://arxiv.org/abs/2607.13548",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-16T04:00:00.000Z",
+      "snippet": "arXiv:2607.13548v1 Announce Type: new Abstract: Identifying root causes in production microservice failures requires reasoning over large-scale, multimodal telemetry spanning metrics, logs, and traces, a problem that has proved resistant to both classical and LLM-based approaches. The OpenRCA dataset exemplifies these challenges: it is large-scale, multimodal, and lacks detailed domain knowledge, and yields consistently low accuracy across all existing methods. We show that classical causal discovery methods and existing LLM-based multi-agent systems fail to reliably identify root causes on th",
+      "category": "Applications",
+      "summary": "This work evaluates root cause analysis on real-world microservice telemetry, showing that classical causal discovery and existing LLM-based multi-agent systems fail on large-scale multimodal production data.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "reasoning"
+        ],
+        "traits": [
+          "benchmark"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Microsoft is reportedly training salespeople to talk down OpenAI and Anthropic",
+      "url": "https://techcrunch.com/2026/07/15/microsoft-is-reportedly-training-salespeople-to-talk-down-openai-and-anthropic/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-15T23:59:44.000Z",
+      "snippet": "Microsoft is looking to sell its in-house AI models as more efficient and cost-effective than its competitors' models.",
+      "category": "Business & Funding",
+      "summary": "Microsoft is training its sales teams to position its in-house AI models as more efficient and cost-effective alternatives to OpenAI and Anthropic offerings.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "competitive"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "microsoft"
+        ]
+      }
+    },
+    {
+      "title": "Agentic orchestration: Enterprise AI organizations have a deployment problem, not a platform problem — and most are calling chatbots agents",
+      "url": "https://venturebeat.com/ai/agentic-orchestration-enterprise-ai-organizations-have-a-deployment-problem-not-a-platform-problem-and-most-are-calling-chatbots-agents",
+      "source": "VentureBeat AI",
+      "publishedAt": "2026-07-15T22:24:17.000Z",
+      "snippet": "Across 101 enterprises, agent orchestration is consolidating onto model-provider platforms — Anthropic’s Claude leads by a wide margin — chosen for the gravity of the underlying model and judged on reliable multi-step execution. But the ambition runs well ahead of the reality: most deployed “agents” are still chatbot wrappers, the control plane enterprises expect is deliberately hybrid to avoid lock-in, and real-time fiscal control over token burn remains the exception. This wave of VentureBeat Pulse Research examines enterprise agent orchestration: which platforms enterprises run on, what dri",
+      "category": "Agent Frameworks",
+      "summary": "VentureBeat research reveals that enterprise AI organizations face deployment challenges rather than platform issues, with most deployed 'agents' still functioning as chatbot wrappers on Claude-dominated platforms.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "enterprise"
+        ],
+        "traits": [
+          "benchmark"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "xAI sues a man for using Grok to generate CSAM &#8216;deepfakes&#8217;",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/966293/xai-grok-user-lawsuit-csam",
+      "source": "The Verge AI",
+      "publishedAt": "2026-07-15T21:33:20.000Z",
+      "snippet": "The Elon Musk-owned xAI is suing a South Carolina man who allegedly used the company's Grok AI chatbot to generate child sexual abuse material (CSAM). In a lawsuit reported earlier by Reuters, xAI claims Terry Wayne Harwood \"knowingly and intentionally used Grok to circumvent safeguards, alter nonconsensual images, and generate and distribute CSAM,\" breaching the company's policies. Harwood was arrested in February for allegedly possessing and distributing CSAM and is facing eight felony charges. The lawsuit claims \"at least some\" of the images related to Harwood's criminal charges \"were gener",
+      "category": "AI Safety & Alignment",
+      "summary": "xAI is suing a South Carolina man who allegedly used Grok to generate child sexual abuse material (CSAM) by circumventing the company's safeguards.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "safety",
+          "grok"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "AI slop movies are the new direct-to-video cash grabs",
+      "url": "https://www.theverge.com/entertainment/965616/ash-koosha-odysseus-the-fall-foundtain-zero-tilly-norwood",
+      "source": "The Verge AI",
+      "publishedAt": "2026-07-15T20:00:00.000Z",
+      "snippet": "This weekend, cinephiles across the world will march to their local theaters to feast their eyes on Christopher Nolan's new adaptation of The Odyssey. It's on track to rake in anywhere between $80-$100 million in just a few days. People are clearly excited to see how Nolan uses cutting-edge filmmaking tech to make the Homeric classic feel fresh. But another director is trying to capitalize on the buzz around Nolan's project to drum up interest in an Odysseus-focused movie of his own. On Tuesday, film studio Fountain 0 announced that it is working on an AI-generated reimagining of The Odyssey t",
+      "category": "Applications",
+      "summary": "AI-generated movie studios are capitalizing on interest in major film releases by producing low-cost, AI-generated content directly to audiences.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "generative",
+          "media"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Amid hardware legal battle, OpenAI releases a $230 keyboard for Codex",
+      "url": "https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-15T19:41:38.000Z",
+      "snippet": "OpenAI, which is in the middle of a legal battle with Apple over hardware trade theft allegations, just released a light-up keyboard designed to be paired with its agentic coding app.",
+      "category": "Developer Tools",
+      "summary": "OpenAI releases a $230 light-up keyboard designed for its Codex agentic coding platform while navigating legal disputes with Apple over hardware trade practices.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "developer-tools",
+          "hardware"
+        ],
+        "traits": [],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "SpaceX falls to $135 IPO price ahead of Starship launch",
+      "url": "https://techcrunch.com/2026/07/15/spacex-falls-to-135-ipo-price-ahead-of-starship-launch/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-15T18:06:05.000Z",
+      "snippet": "The stock has steadily fallen from the euphoric post-IPO high, showing that markets may be sobering up to the promises CEO Elon Musk made before and after SpaceX went public.",
+      "category": "Other",
+      "summary": "SpaceX's stock price declines from post-IPO highs as markets reassess CEO Elon Musk's ambitious promises.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "spacex",
+          "market"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "Thinking Machines amps up its bet against one-size-fits-all AI with its first open model, Inkling",
+      "url": "https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-15T18:04:06.000Z",
+      "snippet": "It's the company's first public proof point after a year and a half spent building AI infrastructure largely out of public view.",
+      "category": "Open Source",
+      "summary": "Thinking Machines launches Inkling, its first open-source AI model, positioning itself against one-size-fits-all foundation models.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inkling"
+        ],
+        "traits": [
+          "open-source",
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Suno snatched millions of songs from YouTube, Genius, and Deezer",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/966072/suno-ai-music-training-scraping-youtube-hack",
+      "source": "The Verge AI",
+      "publishedAt": "2026-07-15T17:48:01.000Z",
+      "snippet": "So when is fair use actually just stealing? | Cath Virginia / The Verge | Photo from Getty Images Suno data obtained in a hacking incident has exposed that the AI music generator was trained by scraping millions of songs and lyrics from online audio platforms, including YouTube Music, Deezer, and Genius, 404 Media reports. Given that Suno has avoided revealing what's in its training datasets and how they were acquired, this a rare glimpse into what Suno has actually been taking from online platforms. That's relevant because Suno has been the subject of several lawsuits that allege it used copy",
+      "category": "AI Safety & Alignment",
+      "summary": "Hacked data reveals that music AI generator Suno scraped millions of songs from YouTube, Deezer, and Genius without clear consent, raising fair use questions.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "training",
+          "suno"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Meet GPT-Red: an LLM super-hacker OpenAI built to make its models safer",
+      "url": "https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer/",
+      "source": "MIT Tech Review AI",
+      "publishedAt": "2026-07-15T17:09:37.000Z",
+      "snippet": "OpenAI has built an LLM super-hacker called GPT-Red that it uses as a sparring partner to help its other models boost their defenses against cyberattacks. Last week the company released the latest version of its flagship LLM, GPT-5.6. OpenAI says that training it against GPT-Red made the model its most robust release yet. GPT-Red automates…",
+      "category": "AI Safety & Alignment",
+      "summary": "GPT-Red, OpenAI's automated red-teaming LLM, serves as a sparring partner to harden models against cyberattacks, with GPT-5.6 becoming the most robust release after training against it.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "safety",
+          "alignment"
+        ],
+        "traits": [],
+        "entities": [
+          "gpt"
+        ]
+      }
+    },
+    {
+      "title": "Hack suggests AI music generator Suno scraped YouTube for training data",
+      "url": "https://techcrunch.com/2026/07/15/hack-suggests-ai-music-generator-suno-scraped-youtube-for-training-data/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-15T17:00:34.000Z",
+      "snippet": "The hacker used an employee's credentials to access source code, which revealed how Suno scraped decades of audio.",
+      "category": "AI Safety & Alignment",
+      "summary": "Hacked employee credentials exposed Suno's practice of scraping decades of audio from YouTube to train its AI music generator.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "training",
+          "suno"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Whatnot acquires Shaped to power real-time live shopping recommendations",
+      "url": "https://techcrunch.com/2026/07/15/whatnot-acquires-shaped-to-power-real-time-live-shopping-recommendations/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-15T17:00:00.000Z",
+      "snippet": "Livestream shopping platform Whatnot has acquired AI startup Shaped, a machine learning company focused on real-time recommendations and search. The deal will bolster Whatnot’s personalization and discovery features as it expands into new product categories.",
+      "category": "Applications",
+      "summary": "Livestream shopping platform Whatnot acquires AI recommendation startup Shaped to enhance real-time personalization and product discovery features.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "acquisition",
+          "recommendations",
+          "commerce"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "Microsoft patches record number of security vulnerabilities, citing its use of AI",
+      "url": "https://techcrunch.com/2026/07/15/microsoft-patches-record-number-of-security-vulnerabilities-citing-its-use-of-ai/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-15T16:20:18.000Z",
+      "snippet": "Microsoft's monthly release of security fixes, dubbed Patch Tuesday, resolved a record 570 security vulnerabilities across the company's product line, thanks to discoveries with AI.",
+      "category": "AI Safety & Alignment",
+      "summary": "Microsoft resolved a record 570 security vulnerabilities in its monthly Patch Tuesday, partly credited to AI-assisted discovery of flaws.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "security"
+        ],
+        "traits": [],
+        "entities": [
+          "microsoft"
+        ]
+      }
+    },
+    {
+      "title": "OpenAI's first branded hardware is... a light-up keyboard?",
+      "url": "https://arstechnica.com/ai/2026/07/openais-first-branded-hardware-is-a-light-up-keyboard/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-07-15T16:00:33.000Z",
+      "snippet": "The Codex Micro is designed to monitor multiple agentic threads at a glance.",
+      "category": "Developer Tools",
+      "summary": "OpenAI's first branded hardware is the Codex Micro, a light-up keyboard designed to monitor multiple agentic coding workflows simultaneously.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "hardware",
+          "developer-tools"
+        ],
+        "traits": [],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "OpenAI finally launches hardware… for Codex",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/965901/openai-hardware-codex-micro-launch",
+      "source": "The Verge AI",
+      "publishedAt": "2026-07-15T16:00:00.000Z",
+      "snippet": "OpenAI is finally releasing some hardware. No, it isn't the mysterious AI-powered device the company is developing with former Apple designer Jony Ive, a project already tangled up in a messy lawsuit. Instead, it's a product designed to be used with its coding platform, Codex. The device, a square-shaped block of buttons called Codex Micro, is a collaboration between the AI company and keyboard maker Work Louder. OpenAI said it is a limited-run collaboration that will give users more ways to monitor and manage their agents. The pad closely resembles Work Louder's Creator Micro 2, and marketing",
+      "category": "Developer Tools",
+      "summary": "OpenAI releases Codex Micro, a limited-run hardware pad designed to monitor and manage agentic coding workflows in collaboration with keyboard maker Work Louder.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "developer-tools",
+          "hardware"
+        ],
+        "traits": [],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Apple Intelligence approved for launch in China with Alibaba’s Qwen AI",
+      "url": "https://techcrunch.com/2026/07/15/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-15T15:29:33.000Z",
+      "snippet": "The deal, which was rumored to be in the works last year, marks an important step for Apple's AI ambitions in a key market.",
+      "category": "Business & Funding",
+      "summary": "Apple's Intelligence feature gains approval for launch in China through a partnership with Alibaba's Qwen AI model.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "partnership",
+          "apple"
+        ],
+        "traits": [],
+        "entities": [
+          "qwen"
+        ]
+      }
+    },
+    {
+      "title": "Inside Ode with Anthropic, the startup betting AI services are the future of enterprise",
+      "url": "https://techcrunch.com/video/inside-ode-with-anthropic-the-startup-betting-ai-services-are-the-future-of-enterprise/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-15T15:00:00.000Z",
+      "snippet": "Can a handful of engineers really do the work of an army of consultants? That’s the bet behind Ode with Anthropic — the joint venture dedicated to embedding forward-deployed engineers in enterprise firms, backed by Anthropic, Blackstone, Hellman & Friedman, Goldman Sachs and others. On this episode of TechCrunch’s Equity podcast, Rebecca Bellan sits down with Ode’s leaders Chris Taylor and Eddie Siegel, who founded Fractional AI, […]",
+      "category": "Business & Funding",
+      "summary": "Ode, a joint venture backed by Anthropic, Blackstone, and Goldman Sachs, launches to embed forward-deployed engineers in enterprises for AI implementation.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "enterprise"
+        ],
+        "traits": [
+          "funding"
+        ],
+        "entities": [
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "Anthropic, Blackstone bet the next trillion-dollar AI business is implementation, not just models",
+      "url": "https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-15T13:10:47.000Z",
+      "snippet": "Anthropic-backed Ode launches as AI labs bet that embedding forward-deployed engineers inside enterprises is the key to accelerating enterprise AI adoption.",
+      "category": "Business & Funding",
+      "summary": "Anthropic and Blackstone bet that enterprise AI implementation through embedded engineers, not just models, will drive the next trillion-dollar business.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "enterprise"
+        ],
+        "traits": [
+          "funding"
+        ],
+        "entities": [
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "Reelful’s AI turns your camera roll into short-form videos for social media",
+      "url": "https://techcrunch.com/2026/07/15/reelfuls-ai-turns-your-camera-roll-into-short-form-videos-for-social-media/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-15T13:00:00.000Z",
+      "snippet": "The app is designed for people who want to create social content, but find traditional video editing tools too complex or time-consuming.",
+      "category": "Applications",
+      "summary": "Reelful launches an AI app that automatically transforms smartphone photos into short-form social media videos for users unfamiliar with traditional video editing.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "generative",
+          "video",
+          "consumer"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "Rime picks up $24M Series A to help enterprises field customer calls",
+      "url": "https://techcrunch.com/2026/07/15/rime-picks-up-24m-series-a-to-help-enterprises-field-customer-calls/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-15T13:00:00.000Z",
+      "snippet": "Rime is handling over 100 million calls each month across multiple companies.",
+      "category": "Business & Funding",
+      "summary": "Customer service platform Rime raises $24M Series A while processing over 100 million calls monthly for multiple enterprises.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "customer-service"
+        ],
+        "traits": [
+          "funding",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Indian AI coding startup Emergent becomes a unicorn with $130M Series C",
+      "url": "https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-unicorn-just-over-a-year-after-launch/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-15T12:00:00.000Z",
+      "snippet": "The startup has reached a $120 million annualized revenue run rate and more than 200,000 paying customers.",
+      "category": "Business & Funding",
+      "summary": "Indian AI coding startup Emergent achieves unicorn status with $130M Series C funding, reporting $120M annualized revenue and over 200,000 paying customers.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "unicorn",
+          "coding"
+        ],
+        "traits": [
+          "funding"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Vint Cerf is working on a plan to unleash AI agents on the open internet",
+      "url": "https://techcrunch.com/2026/07/15/vint-cerf-is-working-on-a-plan-to-unleash-ai-agents-on-the-open-internet/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-15T12:00:00.000Z",
+      "snippet": "The guy behind TCP/IP is working on a standard for identifying AI agents in the wild.",
+      "category": "Regulation & Policy",
+      "summary": "Vint Cerf, internet pioneer behind TCP/IP, is developing a standard to identify and distinguish AI agents operating across the open internet.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "internet"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "The US is advancing AI safety through state and federal action",
+      "url": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-07-15T12:00:00.000Z",
+      "snippet": "OpenAI outlines a “reverse federalism” approach to AI governance, where state laws help build a national framework for safe, democratic AI.",
+      "category": "Regulation & Policy",
+      "summary": "OpenAI proposes a 'reverse federalism' approach to AI governance where state-level policies help inform a cohesive national framework for safe AI.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "governance"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "GPT-Red: Unlocking Self-Improvement for Robustness",
+      "url": "https://openai.com/index/unlocking-self-improvement-gpt-red",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-07-15T10:00:00.000Z",
+      "snippet": "Explore GPT-Red, OpenAI’s automated red teaming system that uses self-play to improve AI safety, alignment, and prompt injection robustness.",
+      "category": "AI Safety & Alignment",
+      "summary": "OpenAI introduces GPT-Red, an automated red-teaming system using self-play to improve model robustness against adversarial attacks and prompt injection.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "safety",
+          "alignment"
+        ],
+        "traits": [],
+        "entities": [
+          "gpt"
+        ]
+      }
+    },
     {
       "title": "OpenAI researcher Miles Wang in talks to launch AI drug discovery startup valued at $2B",
       "url": "https://techcrunch.com/2026/07/14/openai-researcher-miles-wang-in-talks-to-launch-ai-drug-discovery-startup-valued-at-2b/",
@@ -14320,555 +15098,98 @@
         "traits": [],
         "entities": []
       }
-    },
-    {
-      "title": "Malaysia’s AI agent-powered messaging app Respond.io raises $62.5M, eyes acquisitions",
-      "url": "https://techcrunch.com/2026/06/15/malaysias-respond-io-raises-62-5m-eyes-acquisitions-in-north-america-and-europe/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-16T06:59:00.000Z",
-      "snippet": "Respond.io, one of Malaysia's startups to watch, uses AI agents to handle high volumes of customer inquiries and charges per convo, not per seat.",
-      "category": "Business & Funding",
-      "summary": "Malaysia-based Respond.io raises $62.5M for its AI agent-powered customer service platform, planning acquisitions to expand market presence.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic"
-        ],
-        "traits": [
-          "funding"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Inside the fight over Claude Mythos 5",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/950412/anthropic-trump-adminstration-claude-mythos-fable-5-export-controls",
-      "source": "The Verge AI",
-      "publishedAt": "2026-06-16T03:00:00.000Z",
-      "snippet": "As the rest of the country celebrated the USA's first World Cup win and the New York Knicks championship, Anthropic spent its weekend fighting the Trump administration over its latest model release. At 5:21 PM on Friday, the company received a US export control directive to suspend access to its Mythos 5 and Fable 5 AI models by \"any foreign national\" inside or outside the US, \"including foreign national Anthropic employees.\" The only way that was possible, Anthropic determined, was to completely disable products it spent the past week hyping - and travel to Washington, DC in hopes of changing",
-      "category": "Regulation & Policy",
-      "summary": "Trump administration issued export control directive forcing Anthropic to suspend foreign access to its Mythos 5 and Fable 5 models.",
-      "important": true,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "policy",
-          "incident"
-        ],
-        "entities": [
-          "anthropic"
-        ]
-      }
-    },
-    {
-      "title": "Microsoft turns to AWS as GitHub faces AI capacity crunch",
-      "url": "https://runtimewire.com/article/microsoft-github-aws-ai-capacity-crunch",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-06-16T02:47:57.000Z",
-      "snippet": "Article URL: https://runtimewire.com/article/microsoft-github-aws-ai-capacity-crunch Comments URL: https://news.ycombinator.com/item?id=48549918 Points: 154 # Comments: 73",
-      "category": "Business & Funding",
-      "summary": "Microsoft turns to AWS infrastructure as GitHub Copilot faces AI capacity constraints, indicating scaling challenges for developer tooling.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "developer-tools"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Predicting model behavior before release by simulating deployment",
-      "url": "https://openai.com/index/deployment-simulation",
-      "source": "OpenAI Blog",
-      "publishedAt": "2026-06-16T00:00:00.000Z",
-      "snippet": "OpenAI introduces Deployment Simulation, a method to predict AI model behavior before deployment using real conversation data to improve safety and evaluation accuracy.",
-      "category": "AI Safety & Alignment",
-      "summary": "OpenAI introduces Deployment Simulation method to predict model behavior before release using real conversation data for improved safety evaluation.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety",
-          "evaluation"
-        ],
-        "traits": [],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "Sundar Pichai faces boos, walkout at Stanford graduation ceremony over Google’s Israel, ICE ties",
-      "url": "https://techcrunch.com/2026/06/15/sundar-pichai-faces-boos-walkout-at-stanford-graduation-ceremony-over-googles-israel-ice-ties/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-15T23:51:44.000Z",
-      "snippet": "AI is once again at the heart of a college graduation protest — this time for the technology's use in Google's defense contracts.",
-      "category": "Regulation & Policy",
-      "summary": "Stanford graduation ceremony disrupted as students protest Google's AI involvement in defense contracts and ICE operations.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "policy",
-          "incident"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "The US government’s Anthropic models ban was never about an AI jailbreak",
-      "url": "https://techcrunch.com/2026/06/15/the-us-governments-anthropic-models-ban-was-never-about-an-ai-jailbreak/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-15T21:50:21.000Z",
-      "snippet": "The Trump administration's decision that forced Anthropic to pull its latest cybersecurity models could be reactionary, retaliatory, or both, but the message is clear: The AI industry isn't immune from U.S. government interference.",
-      "category": "Regulation & Policy",
-      "summary": "Analysis reveals Trump administration's ban on Anthropic cybersecurity models reflects broader government AI industry interference beyond stated technical concerns.",
-      "important": true,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "policy"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Facebook’s new AI Mode search gets its info from public posts",
-      "url": "https://www.theverge.com/tech/950264/meta-ai-mode-search-facebook",
-      "source": "The Verge AI",
-      "publishedAt": "2026-06-15T21:15:08.000Z",
-      "snippet": "Your public Facebook posts could help inform AI-generated results in Meta's new AI Mode. When you search on Facebook, the \"AI Mode\" option will appear alongside the usual search modes like \"People\" and \"Marketplace.\" It's one of several new AI features Meta is rolling out starting today, including photo presets that swap sports jerseys onto fans and suggestions for collage templates. Instead of \"just links,\" it gives users AI-generated results that pull from publicly-posted content across Meta's platforms, like the AI search feature in its new Reddit-like Forum app. Users can also ask Meta's A",
-      "category": "Applications",
-      "summary": "Meta launches AI Mode search feature on Facebook that generates results from public posts, expanding AI-powered discovery across its platforms.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "rag"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": [
-          "meta"
-        ]
-      }
-    },
-    {
-      "title": "Chipmaker Nvidia seeks to raise over $25B in first bond deal since 2021",
-      "url": "https://arstechnica.com/ai/2026/06/chipmaker-nvidia-seeks-to-raise-over-25b-in-first-bond-deal-since-2021/",
-      "source": "Ars Technica AI",
-      "publishedAt": "2026-06-15T19:07:02.000Z",
-      "snippet": "Debt sale set to test investor appetite for further exposure to AI sector amid a deluge of borrowing.",
-      "category": "Hardware & Compute",
-      "summary": "Nvidia seeks to raise over $25 billion in its first major bond offering since 2021 to fund AI chip production amid sector growth.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "hardware"
-        ],
-        "traits": [
-          "funding"
-        ],
-        "entities": [
-          "nvidia"
-        ]
-      }
-    },
-    {
-      "title": "All the news about Anthropic&#8217;s new AI fight with the White House",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/950026/anthropic-fable-mythos-ban-ai-shutdown",
-      "source": "The Verge AI",
-      "publishedAt": "2026-06-15T19:04:53.000Z",
-      "snippet": "Anthropic was already navigating one dispute with the government in its standoff with the Pentagon, and then came an order on June 12th to block off foreign access to its most recently released AI models, Fable 5 and Mythos 5. When they launched on June 9th, Anthropic said “Fable 5’s capabilities exceed those of any model we’ve ever made generally available,” and that Claude Mythos 5 had the same underlying model, “but with the safeguards lifted in some areas.” According to reports, the order came after conversations between Amazon and the White House about researchers saying they found ways t",
-      "category": "Regulation & Policy",
-      "summary": "Anthropic faces White House export control order blocking foreign access to Fable 5 and Mythos 5 models following government pressure over security concerns.",
-      "important": true,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "policy",
-          "incident"
-        ],
-        "entities": [
-          "anthropic"
-        ]
-      }
-    },
-    {
-      "title": "Why do South Koreans love AI so much?",
-      "url": "https://www.technologyreview.com/2026/06/15/1138983/why-do-south-koreans-love-ai-so-much/",
-      "source": "MIT Tech Review AI",
-      "publishedAt": "2026-06-15T18:46:08.000Z",
-      "snippet": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. When I landed in Seoul after a grueling 12-hour flight from San Francisco, I walked through an unmanned immigration checkpoint, where a machine scanned my face and passport. On the subway home,…",
-      "category": "Applications",
-      "summary": "South Korea's widespread adoption of AI technologies, from unmanned immigration checkpoints to AI-powered services, reflects the country's strong tech infrastructure and cultural embrace of automation.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "ai-adoption",
-          "south-korea"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Meta’s new ‘AI Mode’ on Facebook pulls from public info across its platforms",
-      "url": "https://techcrunch.com/2026/06/15/metas-new-ai-mode-on-facebook-pulls-from-public-info-across-its-platforms/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-15T18:30:58.000Z",
-      "snippet": "Meta announced Monday that it's rolling out a wave of new AI features on Facebook, the latest sign of the company's effort to catch up in the AI race and keep users more engaged on the platform.",
-      "category": "Applications",
-      "summary": "Meta launches 'AI Mode' on Facebook, integrating AI features across its platforms to enhance user engagement and compete in the AI race.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "multimodal"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": [
-          "meta"
-        ]
-      }
-    },
-    {
-      "title": "Trump’s Anthropic shutdown just made the case for non-American AI",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/949986/anthropic-fable-mythos-shutdown-sovereign-ai",
-      "source": "The Verge AI",
-      "publishedAt": "2026-06-15T18:10:27.000Z",
-      "snippet": "At Washington's request, Anthropic suddenly took its newest and most powerful AI models offline over the weekend. The American company said it had little choice after the White House demanded it block access for all foreign nationals, including its own employees. Abroad, the incident offered a sobering reminder that the US not only dominates frontier AI - its government also wields power over who gets to use it. The Trump administration's action was swift, sweeping, and imposed with little warning or explanation. The unprecedented shutdown of the Fable 5 and Mythos 5 models - which were alread",
-      "category": "Regulation & Policy",
-      "summary": "The Trump administration forced Anthropic to take offline its Fable 5 and Mythos 5 models, blocking access for foreign nationals in an unprecedented AI model shutdown that highlights US government control over frontier AI.",
-      "important": true,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "policy",
-          "incident"
-        ],
-        "entities": [
-          "anthropic"
-        ]
-      }
-    },
-    {
-      "title": "Show HN: Veterinarian turned founder, AI lawn diagnosis",
-      "url": "https://grassdx.com/",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-06-15T17:56:00.000Z",
-      "snippet": "I know, it's kind of weird. What is a veterinarian doing creating an analysis tool for lawn problems? Frankly, the idea was born of my own lawn care struggles. Endless lawn care company fees without any actual improvement. Googling problems and finding generic solutions without regional considerations. One time I overseeded my grass not realizing I had to actually put soil down too. One day, I decided to run lawn pictures through AI and found some pretty helpful information. So I decided with my clinical background (the idea of treating the cause, not just the symptoms), as well as tech savvy,",
-      "category": "Applications",
-      "summary": "A veterinarian-founded startup uses AI to diagnose lawn care problems, offering region-specific treatment recommendations based on image analysis.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "vision",
-          "startup"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Big Tech’s desperate last push at AI regulation",
-      "url": "https://www.theverge.com/policy/949970/ai-regulation-child-safety-kosa-congress",
-      "source": "The Verge AI",
-      "publishedAt": "2026-06-15T17:44:10.000Z",
-      "snippet": "U.S. Sen. Marsha Blackburn (R-TN) and Majority Leader Chuck Schumer (D-NY) arrive for a news conference with bipartisan senators on passage of the Online Privacy Protection Act at the Capitol on July 30, 2024 in Washington, DC. | Kent Nishimura/Getty Images. For months, Big Tech's Washington lobbyists have chased after the holy grail of pro-AI legislation: preemption. This would be a comprehensive federal law, passed in Congress and signed by the president, applying one set of AI rules across the entire country and overriding the legally messy state-by-state approach to regulation. For months,",
-      "category": "Regulation & Policy",
-      "summary": "Tech lobbyists push for federal AI preemption legislation to override state-by-state regulatory approaches, seeking a unified national AI regulatory framework.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "policy",
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Cybersecurity vets protest ‘dangerous’ US government ban on Anthropic’s most powerful models",
-      "url": "https://techcrunch.com/2026/06/15/cybersecurity-vets-protest-dangerous-us-government-ban-on-anthropics-most-powerful-models/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-15T15:29:51.000Z",
-      "snippet": "A group made up of dozens of cybersecurity experts urged the White House to remove export-control restrictions on Anthropic’s Fable and Mythos models, arguing that the order is going to limit the ability of cybersecurity defenders to secure their software and products.",
-      "category": "Regulation & Policy",
-      "summary": "Cybersecurity experts protest the US government's export controls on Anthropic's Fable and Mythos models, arguing the restrictions will weaken cybersecurity defenses.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety"
-        ],
-        "traits": [
-          "policy"
-        ],
-        "entities": [
-          "anthropic"
-        ]
-      }
-    },
-    {
-      "title": "My Homelab AI Dev Platform",
-      "url": "https://rsgm.dev/post/ai-dev-platform/",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-06-15T15:09:40.000Z",
-      "snippet": "Article URL: https://rsgm.dev/post/ai-dev-platform/ Comments URL: https://news.ycombinator.com/item?id=48542433 Points: 360 # Comments: 57",
-      "category": "Developer Tools",
-      "summary": "A personal development platform for running AI models in a homelab environment, enabling local AI experimentation and infrastructure.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "inference"
-        ],
-        "traits": [
-          "open-source",
-          "tutorial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Salesforce acquires AI customer service platform Fin for $3.6B",
-      "url": "https://techcrunch.com/2026/06/15/salesforce-acquires-ai-customer-service-platform-fin-for-3-6b/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-15T14:34:45.000Z",
-      "snippet": "Salesforce says it wants to use Fin's team and technology to improve Agentforce, its existing enterprise platform that businesses can use to build custom AI agents that automate tasks.",
-      "category": "Business & Funding",
-      "summary": "Salesforce acquires AI customer service platform Fin for $3.6 billion to enhance its Agentforce enterprise agent-building platform.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "agentic",
-          "salesforce"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Skydio CEO Adam Bry on why Silicon Valley shouldn’t draw red lines for drone use",
-      "url": "https://www.theverge.com/podcast/949195/skydio-ceo-adam-bry-autonmous-drones-china-red-lines-military",
-      "source": "The Verge AI",
-      "publishedAt": "2026-06-15T14:00:00.000Z",
-      "snippet": "Today, I’m talking with Adam Bry, who is CEO of Skydio, the leading US maker of autonomous drones. Before we recorded this episode, I actually got to remotely operate one of Skydio’s drones in the Bay Area from Adam’s laptop in our podcast studio in New York and fly an indoor drone around our office. You can check out the full video of that on our YouTube channel. Beyond flying drones around the country, Adam and I talked about why Skydio is so focused on the enterprise market — I asked him a lot about working with police and military, but you’ll hear him say a lot of Skydio’s customers are ut",
-      "category": "Applications",
-      "summary": "Skydio CEO discusses the company's focus on enterprise autonomous drone applications and advocates against policy restrictions on drone technology use.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "robotics"
-        ],
-        "traits": [
-          "commercial",
-          "policy"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Sarvam becomes India’s newest AI unicorn with $234 million funding round led by HCLTech",
-      "url": "https://techcrunch.com/2026/06/15/sarvam-becomes-indias-newest-ai-unicorn-with-234-million-funding-round-led-by-hcltech/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-15T13:46:08.000Z",
-      "snippet": "Indian IT services company HCLTech is investing $150 million in the Bengaluru startup.",
-      "category": "Business & Funding",
-      "summary": "Indian startup Sarvam AI reaches unicorn status with $234 million funding round led by HCLTech, becoming India's newest AI unicorn.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "india"
-        ],
-        "traits": [
-          "funding",
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Can Europe train a frontier AI model on the compute it owns?",
-      "url": "https://github.com/sammysltd/euromesh",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-06-15T13:31:09.000Z",
-      "snippet": "Article URL: https://github.com/sammysltd/euromesh Comments URL: https://news.ycombinator.com/item?id=48541014 Points: 140 # Comments: 290",
-      "category": "Hardware & Compute",
-      "summary": "Discussion of Europe's capacity to train frontier AI models using its own compute infrastructure and resources.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "inference",
-          "hardware"
-        ],
-        "traits": [
-          "policy"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "As AI agents become employees, NewCore emerges with $66M to give them identities",
-      "url": "https://techcrunch.com/2026/06/15/ai-agents-are-becoming-employees-newcore-emerges-with-66m-to-give-them-identities/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-15T13:00:00.000Z",
-      "snippet": "NewCore argues the next challenge in enterprise security will be managing AI agents, not people.",
-      "category": "Agent Frameworks",
-      "summary": "NewCore emerges with $66 million funding to address enterprise security challenges around managing AI agents as employees in organizations.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic"
-        ],
-        "traits": [
-          "funding",
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "A satellite just learned to find things on its own — here’s what that means",
-      "url": "https://techcrunch.com/2026/06/15/a-satellite-just-learned-to-find-things-on-its-own-heres-what-that-means/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-15T12:00:00.000Z",
-      "snippet": "In April, for the first time ever, an Earth observation satellite found what it was looking for, all on its own.",
-      "category": "Applications",
-      "summary": "An Earth observation satellite successfully located objects autonomously for the first time, demonstrating self-directed AI capabilities in space applications.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "robotics"
-        ],
-        "traits": [
-          "release"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Show HN: I wrote a C++ ray tracer from scratch without AI",
-      "url": "https://github.com/themartiano/luz",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-06-15T09:34:10.000Z",
-      "snippet": "Article URL: https://github.com/themartiano/luz Comments URL: https://news.ycombinator.com/item?id=48538833 Points: 153 # Comments: 64",
-      "category": "Other",
-      "summary": "Developer shares a custom C++ ray tracer implementation created without AI assistance, demonstrating traditional software engineering approaches.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "developer"
-        ],
-        "traits": [
-          "open-source",
-          "tutorial"
-        ],
-        "entities": []
-      }
     }
   ],
   "feedHealth": {
     "The Verge AI": {
-      "lastSuccess": "2026-07-15T07:49:40.216Z",
+      "lastSuccess": "2026-07-16T07:55:08.410Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "TechCrunch AI": {
-      "lastSuccess": "2026-07-15T07:49:40.262Z",
+      "lastSuccess": "2026-07-16T07:55:08.503Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Ars Technica AI": {
-      "lastSuccess": "2026-07-15T07:49:40.541Z",
+      "lastSuccess": "2026-07-16T07:55:08.909Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "VentureBeat AI": {
-      "lastSuccess": "2026-07-15T07:49:40.855Z",
+      "lastSuccess": "2026-07-16T07:55:09.256Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Anthropic News": {
       "lastSuccess": null,
       "lastError": "Status code 404",
-      "consecutiveFailures": 26
+      "consecutiveFailures": 27
     },
     "OpenAI Blog": {
-      "lastSuccess": "2026-07-15T07:49:43.874Z",
+      "lastSuccess": "2026-07-16T07:55:09.756Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Google DeepMind": {
-      "lastSuccess": "2026-07-15T07:49:44.193Z",
+      "lastSuccess": "2026-07-16T07:55:10.154Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "MIT Tech Review AI": {
-      "lastSuccess": "2026-07-15T07:49:44.313Z",
+      "lastSuccess": "2026-07-16T07:55:10.349Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "arXiv cs.AI": {
-      "lastSuccess": "2026-07-15T07:49:44.416Z",
+      "lastSuccess": "2026-07-16T07:55:10.631Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Hacker News (AI)": {
       "lastSuccess": "2026-07-13T08:47:33.425Z",
       "lastError": "Status code 502",
-      "consecutiveFailures": 2
+      "consecutiveFailures": 3
     }
   },
   "brief": {
-    "generatedAt": "2026-07-15T07:50:16.550Z",
+    "generatedAt": "2026-07-16T07:55:50.087Z",
     "bullets": [
       {
-        "text": "New York became the first state to enact a one-year moratorium on new hyperscale data centers over 50MW, with Governor Hochul citing rising energy costs and environmental impact, rattling an AI industry hungry for compute.",
+        "text": "OpenAI unveiled GPT-Red, an automated red-teaming LLM using self-play to harden models against cyberattacks and prompt injection, making GPT-5.6 its most robust release yet trained against the adversarial sparring partner.",
         "refs": [
-          "https://techcrunch.com/2026/07/14/new-york-state-halts-construction-of-all-new-data-centers/",
-          "https://arstechnica.com/tech-policy/2026/07/new-york-is-the-first-state-to-impose-a-data-center-moratorium/",
-          "https://www.theverge.com/policy/965110/new-york-ai-data-center-moratorium"
+          "https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer/",
+          "https://openai.com/index/unlocking-self-improvement-gpt-red"
         ]
       },
       {
-        "text": "Apple sued OpenAI in California federal court, alleging former Apple employees stole hardware trade secrets—a threat to OpenAI's hardware ambitions as it reportedly readies a screenless, mobile ChatGPT speaker with cameras and sensors. OpenAI disputes the claims.",
+        "text": "Anthropic, Blackstone, and Goldman Sachs backed Ode, a venture embedding forward-deployed engineers in enterprises, betting AI implementation—not just models—is the next trillion-dollar business as VentureBeat finds most enterprise 'agents' remain chatbot wrappers.",
         "refs": [
-          "https://www.theverge.com/ai-artificial-intelligence/965294/openai-apple-trade-secrets-lawsuit-sam-altman-ipo",
-          "https://techcrunch.com/2026/07/14/openais-first-hardware-device-is-reportedly-a-screenless-speaker-that-can-move/",
-          "https://techcrunch.com/2026/07/14/openai-pushes-back-on-apple-trade-secret-lawsuit/",
-          "https://www.theverge.com/ai-artificial-intelligence/965670/openai-chatgpt-ai-smart-speaker-hardware-device"
+          "https://techcrunch.com/video/inside-ode-with-anthropic-the-startup-betting-ai-services-are-the-future-of-enterprise/",
+          "https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/",
+          "https://venturebeat.com/ai/agentic-orchestration-enterprise-ai-organizations-have-a-deployment-problem-not-a-platform-problem-and-most-are-calling-chatbots-agents"
         ]
       },
       {
-        "text": "DeepMind CEO Demis Hassabis called for an independent, US-led global AI watchdog modeled on FINRA to test frontier models and set safety standards ahead of their release.",
+        "text": "AI music generator Suno was exposed by a hack for scraping millions of songs from YouTube, Deezer, and Genius without clear consent, reigniting fair-use and training-data legal questions.",
         "refs": [
-          "https://techcrunch.com/2026/07/14/deepmind-ceo-calls-for-an-independent-standards-body-to-regulate-frontier-ai/",
-          "https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog"
+          "https://www.theverge.com/ai-artificial-intelligence/966072/suno-ai-music-training-scraping-youtube-hack",
+          "https://techcrunch.com/2026/07/15/hack-suggests-ai-music-generator-suno-scraped-youtube-for-training-data/"
         ]
       },
       {
-        "text": "Meta faces a lawsuit alleging its AI ranking tools drove discriminatory layoffs targeting workers on disability, medical, and parental leave—claims the company denies.",
+        "text": "xAI is suing a South Carolina man who allegedly circumvented Grok safeguards to generate CSAM deepfakes, while Microsoft credited AI for helping discover a record 570 patched vulnerabilities.",
         "refs": [
-          "https://arstechnica.com/tech-policy/2026/07/lawsuit-claims-metas-layoff-decisions-were-made-by-ai-not-humans/",
-          "https://www.theverge.com/tech/965486/meta-lawsuit-former-employees-ai-layoffs"
+          "https://www.theverge.com/ai-artificial-intelligence/966293/xai-grok-user-lawsuit-csam",
+          "https://techcrunch.com/2026/07/15/microsoft-patches-record-number-of-security-vulnerabilities-citing-its-use-of-ai/"
         ]
       },
       {
-        "text": "Enterprise AI economics come into focus: Hugging Face argues open-weight models are winning on cost and ownership, Reflection signed a $1B Nebius compute deal, and Meta's Mosseri predicted per-engineer AI token budget caps.",
+        "text": "OpenAI launched its first branded hardware—the $230 light-up Codex Micro keyboard for monitoring agentic coding workflows—amid an ongoing hardware legal battle with Apple.",
         "refs": [
-          "https://techcrunch.com/2026/07/14/reflection-inks-1b-compute-deal-with-nebius/",
-          "https://techcrunch.com/2026/07/14/metas-adam-mosseri-says-ai-token-budgets-could-soon-be-capped-per-engineer/",
-          "https://techcrunch.com/2026/07/14/the-real-ai-race-may-no-longer-be-at-the-frontier-open-models-hugging-face/"
+          "https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex/",
+          "https://arstechnica.com/ai/2026/07/openais-first-branded-hardware-is-a-light-up-keyboard/",
+          "https://www.theverge.com/ai-artificial-intelligence/965901/openai-hardware-codex-micro-launch"
         ]
       }
     ]
