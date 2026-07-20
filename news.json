@@ -1,22 +1,481 @@
 {
-  "generatedAt": "2026-07-19T07:58:35.790Z",
+  "generatedAt": "2026-07-20T08:39:45.213Z",
   "daysBack": 3,
   "categories": [
+    "Research",
+    "Model Releases",
+    "Agent Frameworks",
+    "AI Safety & Alignment",
+    "Business & Funding",
+    "Applications",
     "Other",
     "Regulation & Policy",
-    "Model Releases",
-    "Applications",
-    "Business & Funding",
     "Hardware & Compute",
     "Open Source",
-    "Research",
     "Developer Tools",
-    "AI Safety & Alignment",
-    "Agent Frameworks",
     "MCP",
     "Evaluation"
   ],
   "articles": [
+    {
+      "title": "GraphDx: A Cost-Aware Knowledge-Enhanced Multi-Agent Framework for Sequential Diagnosis",
+      "url": "https://arxiv.org/abs/2607.15280",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-20T04:00:00.000Z",
+      "snippet": "arXiv:2607.15280v1 Announce Type: new Abstract: Sequential diagnosis requires balancing diagnostic accuracy against resource costs through iterative information gathering. Existing Large Language Model (LLM) approaches exhibit a critical knowledge-reasoning gap: despite encoding extensive medical knowledge, they struggle to reason systematically under cost constraints, often resorting to excessive testing. We propose GraphDx, a knowledge-enhanced framework with two core innovations. First, we design an automated pipeline that leverages LLMs to construct Medical Diagnosis Knowledge Graphs (MDKG",
+      "category": "Research",
+      "summary": "GraphDx proposes a knowledge-enhanced multi-agent framework that balances diagnostic accuracy with resource costs in sequential medical diagnosis using LLMs.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Causal-Audit: Explicit and Auditable Graph-based Reasoning via Target-Aware Causal Chain Construction",
+      "url": "https://arxiv.org/abs/2607.15281",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-20T04:00:00.000Z",
+      "snippet": "arXiv:2607.15281v1 Announce Type: new Abstract: Causal and intervention-based question answering is fundamental to advancing large language models (LLMs) toward reasoning beyond surface-level correlations and understanding underlying causal mechanisms. However, existing LLM-based methods often rely on implicit language-level reasoning, resulting in opaque causal assumptions, unverifiable reasoning paths, and fragile predictions under complex interventions, particularly in context-free settings. In this paper, we propose an explicit and auditable causal reasoning framework for context-free inte",
+      "category": "Research",
+      "summary": "Causal-Audit introduces an explicit and auditable causal reasoning framework for LLMs to answer intervention-based questions with transparent reasoning paths.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning",
+          "interpretability"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Cura 1T: Specialized Model for Agentic Healthcare",
+      "url": "https://arxiv.org/abs/2607.15314",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-20T04:00:00.000Z",
+      "snippet": "arXiv:2607.15314v1 Announce Type: new Abstract: Healthcare spans high-stakes communication, expert reasoning, and workflow execution, yet specialized LLMs that cover these use cases together remain limited. A healthcare model must handle patient consultation, clinical reasoning over text and images, interactive diagnosis, and electronic health record (EHR) tool use. These capabilities fail in different ways, and a narrow update for one task can degrade another. We present Cura 1T, a healthcare-specialized LLM trained through a human-gated self-evolution loop. In each evolution round, a trainin",
+      "category": "Model Releases",
+      "summary": "Cura 1T is a specialized healthcare LLM trained through human-gated self-evolution to handle patient consultation, clinical reasoning, and EHR tool integration.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm",
+          "agentic"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "AnovaX: A Local, Multi-Agent Voice Assistant with LLM Planning, Typed Executors, and Adaptive Recovery",
+      "url": "https://arxiv.org/abs/2607.15367",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-20T04:00:00.000Z",
+      "snippet": "arXiv:2607.15367v1 Announce Type: new Abstract: Desktop voice assistants are still dominated by cloud pipelines that ship raw audio off the machine and expose a fixed set of skills. We describe AnovaX, a small local-first assistant that runs entirely on the user's computer and treats the desktop itself as its action surface. A single Python process wires together a wake-word gate, a speech pipeline, an LLM planner (Gemini) that emits a JSON plan of tool calls, a whitelist-and-denylist safety layer, a multi-agent orchestrator that translates each plan into typed child agents on a bounded thread",
+      "category": "Agent Frameworks",
+      "summary": "AnovaX is a local-first multi-agent voice assistant that runs entirely on-device using an LLM planner with typed executors and adaptive recovery mechanisms.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "audio"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Precise but Uncoupled: Reviewer Precision Does Not Guarantee Critique Uptake in Multi-Agent Math Reasoning",
+      "url": "https://arxiv.org/abs/2607.15388",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-20T04:00:00.000Z",
+      "snippet": "arXiv:2607.15388v1 Announce Type: new Abstract: Many math- and science-oriented agent systems use hierarchical designs with specialized reviewer roles, assuming that a dedicated review stage should help turn wrong candidates into correct ones. We test this assumption on 4,181 verifier-grounded Omni-MATH problems using matched gpt-oss-120b actors. Collaboration adds little on the easiest tiers, but from tier 4 onward the gains open sharply; in this harder regime, broadcast-style peer discussion reaches higher final accuracy than a planner-executor-reviewer pipeline (PER). We ask whether this ga",
+      "category": "Research",
+      "summary": "A study reveals that hierarchical reviewer agents don't guarantee improved math reasoning compared to peer-discussion approaches, challenging common agentic design assumptions.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "DrawingVQA: A Real-World Benchmark for Multi-Depth Visual-Textual Reasoning on Construction Drawings",
+      "url": "https://arxiv.org/abs/2607.15418",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-20T04:00:00.000Z",
+      "snippet": "arXiv:2607.15418v1 Announce Type: new Abstract: We introduce DrawingVQA, the first benchmark designed to evaluate multimodal large language models (MLLMs) on real-world construction drawings -- a core media in architecture, civil, and many other engineering practices. Unlike natural images or schematic floor plans, construction drawings fuse abstract geometry, symbolic notation, tabular data, annotations, and domain-specific text, forming a uniquely complex visual-textual domain core to engineering workflows. DrawingVQA bridges this gap with 33 \"Issued for Construction\" drawings and 92 expertl",
+      "category": "Research",
+      "summary": "DrawingVQA introduces the first benchmark for evaluating multimodal LLMs on real-world construction drawings with complex visual-textual domain requirements.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal"
+        ],
+        "traits": [
+          "benchmark",
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Do Coding Agents Need Executable World Models, Simplification, and Verification to Solve ARC-AGI-3?",
+      "url": "https://arxiv.org/abs/2607.15439",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-20T04:00:00.000Z",
+      "snippet": "arXiv:2607.15439v1 Announce Type: new Abstract: Our previous ARC-AGI-3 agent bundled executable world modeling, scheduled simplification, and exact replay verification, leaving unclear which idea accounted for its performance. We address this attribution question with four nested Codex-based agents: a textual baseline; a flexible-interface executable world model without replay verification; the same executable model with scheduled simplification; and a fixed-interface verification treatment that retains simplification and requires exact reproduction of recorded observations. The main study eva",
+      "category": "Research",
+      "summary": "An ablation study isolates which components (executable world models, simplification, verification) drive performance improvements in ARC-AGI-3 coding agents.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Beyond a Joke: Multi-Angle Reasoning for Detecting and Explaining Harmful Humor in Memes",
+      "url": "https://arxiv.org/abs/2607.15442",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-20T04:00:00.000Z",
+      "snippet": "arXiv:2607.15442v1 Announce Type: new Abstract: Internet memes intertwine visual cues, textual content, and cultural context, making them particularly challenging to interpret in scenarios where humor, sarcasm, and harmful intent coexist. These complexities highlight the need for explainable meme understanding systems that can provide reliable and structured reasoning to support both accurate classification and human interpretability. However, existing multimodal classifiers either overlook these interdependencies or provide only limited interpretability. In this paper, we introduce MAR-12, a ",
+      "category": "Research",
+      "summary": "MAR-12 framework enables explainable detection and reasoning about harmful humor in internet memes by integrating visual, textual, and cultural context analysis.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal",
+          "interpretability"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "SeerGuard: A Safety Framework for Mobile GUI Agents via World Model Prediction",
+      "url": "https://arxiv.org/abs/2607.15550",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-20T04:00:00.000Z",
+      "snippet": "arXiv:2607.15550v1 Announce Type: new Abstract: Mobile graphical user interface (GUI) agents have demonstrated remarkable capabilities in automating complex tasks, yet they introduce critical safety risks where a single erroneous action can lead to irreversible consequences. Existing safety mechanisms are primarily reactive, lacking the ability to assess risks before execution. In this paper, we introduce SeerGuard, a consequence-aware safety framework designed to mitigate these risks through pre-execution instruction-level screening and action-level risk assessment. Specifically, the action-l",
+      "category": "Research",
+      "summary": "SeerGuard introduces a safety framework for mobile GUI agents using world model prediction to assess action consequences before execution.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "safety"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "MGDT: MLLM-Guided Diffusion Transformer with Relation-Adaptive Mixture-of-Experts for Multimodal Knowledge Graph Completion",
+      "url": "https://arxiv.org/abs/2607.15592",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-20T04:00:00.000Z",
+      "snippet": "arXiv:2607.15592v1 Announce Type: new Abstract: Multimodal Knowledge Graph Completion (MKGC) requires inferring missing entities from structural, textual, and visual cues. Existing diffusion-based MKGC methods usually denoise directly on raw multimodal features. Such a design forces the denoiser to simultaneously perform relation-dependent cue selection, cross-modal semantic alignment, and structure-aware entity generation, which introduces noisy and semantically inconsistent conditions for diffusion and consequently leads to suboptimal completion performance. To address this limitation, we pr",
+      "category": "Research",
+      "summary": "MGDT proposes an MLLM-guided diffusion transformer with mixture-of-experts routing for improved multimodal knowledge graph completion.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal",
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Neuro-Symbolic AI for LEED compliance: Document-Centric Benchmarking, Deterministic Numeric Checking, and When Multimodal Hurts",
+      "url": "https://arxiv.org/abs/2607.15647",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-20T04:00:00.000Z",
+      "snippet": "arXiv:2607.15647v1 Announce Type: new Abstract: LEED v4.1 BD+C certification remains a document-intensive process that requires reviewers to read hundreds of pages of project evidence and apply credit-specific threshold logic by hand. This paper investigates whether small, locally deployed language models can perform meaningful screening of LEED documentation and how deterministic symbolic components should share that work. A neuro-symbolic pipeline is introduced that aligns project PDFs to LEED credit sections, retrieves evidence with credit-aware keyword signatures, verifies compliance with ",
+      "category": "Research",
+      "summary": "A neuro-symbolic pipeline combines small language models with deterministic components to automate LEED sustainability certification document screening.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning"
+        ],
+        "traits": [
+          "benchmark",
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "ToolVerse: Unlocking Massive Environments and Long-Horizon Tasks for Agentic Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2607.15660",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-20T04:00:00.000Z",
+      "snippet": "arXiv:2607.15660v1 Announce Type: new Abstract: While LLM agents demonstrate strong reasoning abilities in compact and well-defined scenarios, they struggle to maintain robustness and effectiveness when faced with large-scale, diverse, and dynamic real-world environments that demand seamless tool integration. To address this gap, we introduce ToolVerse, a comprehensive framework that scales up agentic RL environments and enables agents to perform complex long-horizon reasoning in Tool-Integrated Reasoning (TIR) tasks. First, ToolVerse automatically builds the massive executable agent training ",
+      "category": "Agent Frameworks",
+      "summary": "ToolVerse is a framework that scales agentic RL environments to support complex long-horizon reasoning tasks with massive tool integration.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "training"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "S1-Omni: A Unified Multimodal Reasoning Model for Scientific Understanding, Prediction, and Generation",
+      "url": "https://arxiv.org/abs/2607.15686",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-20T04:00:00.000Z",
+      "snippet": "arXiv:2607.15686v1 Announce Type: new Abstract: We present S1-Omni, a unified multimodal reasoning model for scientific understanding, prediction, and generation. AI for Science (AI4S) has advanced significantly through domain-specific models, tool-augmented LLMs, and scientific language models. However, model capabilities remain highly fragmented, limiting the joint modeling of heterogeneous data, scientific laws, and expert knowledge. S1-Omni addresses this gap by consolidating these capabilities into a single, coherent scientific reasoning model. The architecture of S1-Omni is built upon th",
+      "category": "Model Releases",
+      "summary": "S1-Omni is a unified multimodal reasoning model consolidating scientific understanding, prediction, and generation capabilities into a single coherent system.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal",
+          "reasoning"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Behavioral Controllability of Agentic Models for Information Extraction: From Fixed Workflows to Reflective Agents",
+      "url": "https://arxiv.org/abs/2607.15715",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-20T04:00:00.000Z",
+      "snippet": "arXiv:2607.15715v1 Announce Type: new Abstract: Large language model (LLM) agents are increasingly used for complex information-extraction tasks, yet it remains unclear whether agentic components such as reflection and memory lead to observable and controllable improvements over fixed LLM workflows. We study this question through conference-paper dataset extraction, where a system must identify datasets mentioned in scholarly PDFs and produce structured records. We compare a fixed workflow baseline with reflective agent variants and specify an optimized agent condition (S2) that extends the sa",
+      "category": "Research",
+      "summary": "A study compares fixed LLM workflows with reflective agent variants for information extraction, measuring the impact of agentic components on controllability.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "benchmark",
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "NeurOWL: An LLM-Based Neural-symbolic Framework for Incomplete OWL Ontology Reasoning",
+      "url": "https://arxiv.org/abs/2607.15776",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-20T04:00:00.000Z",
+      "snippet": "arXiv:2607.15776v1 Announce Type: new Abstract: OWL ontologies provide a formal knowledge representation framework that enables semantic reasoning, and have been widely adopted across domains such as healthcare and bioinformatics. In practice, however, real-world ontologies are often incomplete, which pose challenges for reasoning. In this work, we focus on a fundamental subsumption reasoning problem: given an incomplete ontology and a candidate (non-entailed) subsumption, determine whether the subsumption is semantically plausible and, if so, providing a logically sound explanation containing",
+      "category": "Research",
+      "summary": "NeurOWL combines LLMs with neural-symbolic reasoning to handle incomplete OWL ontology subsumption reasoning with logically sound explanations.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning",
+          "interpretability"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "AI advice made people less accurate but more confident – sudy",
+      "url": "https://thenextweb.com/news/ai-advice-suppresses-critical-thinking-wrong-answers-study",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-07-19T21:18:10.000Z",
+      "snippet": "Article URL: https://thenextweb.com/news/ai-advice-suppresses-critical-thinking-wrong-answers-study Comments URL: https://news.ycombinator.com/item?id=48971738 Points: 335 # Comments: 188",
+      "category": "AI Safety & Alignment",
+      "summary": "A study finds that AI-generated advice reduces critical thinking and increases unjustified confidence in decision-making, raising concerns about overreliance.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "benchmark",
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "What to watch for after Jensen Huang’s Japan visit",
+      "url": "https://techcrunch.com/2026/07/19/what-to-watch-for-after-jensen-huangs-japan-visit/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-19T21:16:07.000Z",
+      "snippet": "Jensen Huang left Tokyo with deals spanning Japan's entire tech ecosystem.",
+      "category": "Business & Funding",
+      "summary": "Jensen Huang concludes Japan visit with deals spanning the country's tech ecosystem, signaling Nvidia's strategic expansion in the region.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "nvidia"
+        ]
+      }
+    },
+    {
+      "title": "Can an Apple lawsuit derail OpenAI’s hardware plans?",
+      "url": "https://techcrunch.com/2026/07/19/can-an-apple-lawsuit-derail-openais-hardware-plans/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-19T19:24:45.000Z",
+      "snippet": "On the latest episode of Equity, we debate whether Apple's lawsuit will cast over OpenAi's much-discussed plans to get into hardware and go public.",
+      "category": "Business & Funding",
+      "summary": "An analysis of whether Apple's lawsuit against OpenAI could impact the company's hardware ambitions and public market plans.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "I hate that I don’t hate this song made with Suno",
+      "url": "https://www.theverge.com/entertainment/967678/1010benja-semiramis-dream-suno-ai-music",
+      "source": "The Verge AI",
+      "publishedAt": "2026-07-19T17:35:54.000Z",
+      "snippet": "1010Benja won’t apologize for using AI. | Image: 1010Benja / Instagram I would never go so far as to say there's no place for AI in music (I'm a fan of Holly Herndon, after all). But I generally find music made with generative AI to be offensively boring, especially the outputs of Suno. So I'm having a bit of a tough time processing the fact that I actually quite enjoy 1010Benja's \"Semiramis' Dream.\" Benja has been unapologetic about his use of generative AI on his latest EP, Time Has Nothing To Do With What You Choose… The other three tracks can't quite hold a candle to what you find on 2024'",
+      "category": "Applications",
+      "summary": "A music critic discovers unexpectedly enjoyable AI-generated music from artist 1010Benja using Suno, challenging preconceptions about AI-created audio quality.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "audio",
+          "suno"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Moonshot AI suspends new subscriptions due to Kimi K3 demand",
+      "url": "https://twitter.com/kimi_moonshot/status/2078855608565207130",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-07-19T16:02:25.000Z",
+      "snippet": "Article URL: https://twitter.com/kimi_moonshot/status/2078855608565207130 Comments URL: https://news.ycombinator.com/item?id=48969291 Points: 256 # Comments: 106",
+      "category": "Business & Funding",
+      "summary": "Moonshot AI suspends new subscriptions to their Kimi K3 service due to overwhelming demand, indicating strong market adoption.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm",
+          "moonshot-ai"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "‘Odyssey’ director Christopher Nolan calls AI an obvious ‘Trojan horse’",
+      "url": "https://techcrunch.com/2026/07/19/odyssey-director-christopher-nolan-calls-ai-an-obvious-trojan-horse/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-19T14:52:08.000Z",
+      "snippet": "\"Everybody knows the Greeks are inside.\"",
+      "category": "Other",
+      "summary": "Filmmaker Christopher Nolan compares AI to a Trojan horse, expressing skepticism about the technology's hidden implications for creative industries.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Nonprofit Current AI is racing to build the World Wide Web of AI, free for all",
+      "url": "https://techcrunch.com/2026/07/19/nonprofit-current-ai-is-racing-to-build-the-world-wide-web-of-ai-free-for-all/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-19T14:00:00.000Z",
+      "snippet": "Current AI, a non-profit building AI that leaves no one culture behind, has made remarkable progress across devices, AI chat and more.",
+      "category": "Applications",
+      "summary": "Current AI, a nonprofit, is building open and accessible AI infrastructure intended to serve diverse global communities without leaving cultures behind.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "current-ai"
+        ],
+        "traits": [
+          "open-source"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Perforce charges $500 for training training videos.. and it's AI narrated",
+      "url": "https://training.perforce.com/learn/courses/535/p4-helix-core-user-basic",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-07-19T08:00:24.000Z",
+      "snippet": "Article URL: https://training.perforce.com/learn/courses/535/p4-helix-core-user-basic Comments URL: https://news.ycombinator.com/item?id=48965886 Points: 53 # Comments: 83",
+      "category": "Applications",
+      "summary": "Perforce charges $500 for training videos that are narrated using AI, raising questions about fair pricing and AI adoption in corporate education.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "audio"
+        ],
+        "traits": [
+          "commercial",
+          "incident"
+        ],
+        "entities": []
+      }
+    },
     {
       "title": "AI Mania Is Eviscerating Global Decision-Making",
       "url": "https://ludic.mataroa.blog/blog/ai-mania-is-eviscerating-global-decision-making/#fnref:3",
@@ -13944,644 +14403,95 @@
         ],
         "entities": []
       }
-    },
-    {
-      "title": "Deontic Policies for Runtime Governance of Agentic AI Systems",
-      "url": "https://arxiv.org/abs/2606.19464",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-20T04:00:00.000Z",
-      "snippet": "arXiv:2606.19464v1 Announce Type: new Abstract: Autonomous agentic AI systems driven by Large Language Models (LLMs) introduce a new class of security, privacy, and compliance challenges: an agent that can invoke tools, manipulate data, install software, and coordinate with peer agents across organizational boundaries must be constrained not just by authentication and access control, but by the full structure of enterprise governance. This includes specifying what agents are permitted and prohibited from doing, what they areobliged to do after certain actions (e.g., notify the CISO), under wha",
-      "category": "AI Safety & Alignment",
-      "summary": "Research paper proposing deontic policy frameworks for constraining autonomous LLM agents across enterprise governance boundaries.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "safety"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Measuring Curriculum Alignment across Topical Coverage, Competency, and Cognitive Depth: A Longitudinal Framework Applied to CS2013 and CS2023",
-      "url": "https://arxiv.org/abs/2606.19469",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-20T04:00:00.000Z",
-      "snippet": "arXiv:2606.19469v1 Announce Type: new Abstract: Undergraduate computer science is governed by international curricular guidelines revised about once a decade, yet programs lack a reliable, reproducible way to measure how completely they cover the current guidelines and how that coverage shifts when the guidelines are restructured. We address this with a human-in-the-loop pipeline that measures a program's coverage of an external body of knowledge, applied longitudinally to one accredited BSc in Computer Science against Computer Science Curricula 2013 (CS2013) and 2023 (CS2023). The pipeline re",
-      "category": "Research",
-      "summary": "Academic study developing a longitudinal framework to measure computer science curriculum alignment with international guidelines.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "evaluation"
-        ],
-        "traits": [
-          "research",
-          "benchmark"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Diffusion Language Models: An Experimental Analysis",
-      "url": "https://arxiv.org/abs/2606.19475",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-20T04:00:00.000Z",
-      "snippet": "arXiv:2606.19475v1 Announce Type: new Abstract: Large Language Models (LLMs) have revolutionized language modeling through autoregressive generation, enabling strong performance across a wide range of tasks. Recently, Diffusion Language Models (DLMs) have emerged as an alternative paradigm that generates text through iterative denoising rather than next-token prediction, allowing parallel refinement of entire sequences. While numerous diffusion-based architectures have been proposed, differences in evaluation protocols, datasets, inference budgets, and generation hyperparameters make it diffic",
-      "category": "Research",
-      "summary": "Experimental analysis comparing diffusion-based language models against traditional autoregressive LLM architectures.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "llm"
-        ],
-        "traits": [
-          "research",
-          "benchmark"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Hidden Anchors in Multi-Agent LLM Deliberation",
-      "url": "https://arxiv.org/abs/2606.19494",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-20T04:00:00.000Z",
-      "snippet": "arXiv:2606.19494v1 Announce Type: new Abstract: Multi-agent LLM deliberation, where agents exchange and revise answers over several rounds, is increasingly used to improve reasoning and accuracy, yet how and why it works is rarely modelled. Such deliberation mirrors how humans reach decisions. As social animals we are pulled both by the group, the herd effect that classical opinion-dynamics models such as DeGroot and Friedkin--Johnsen capture, and by our own internal belief, which they do not. We model multi-agent deliberation as a closed-loop dynamical system in which each agent carries a hid",
-      "category": "Research",
-      "summary": "Study modeling multi-agent LLM deliberation as a dynamical system to understand consensus-building and opinion formation mechanisms.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "reasoning"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "DeXposure-Claw: An Agentic System for DeFi Risk Supervision",
-      "url": "https://arxiv.org/abs/2606.19501",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-20T04:00:00.000Z",
-      "snippet": "arXiv:2606.19501v1 Announce Type: new Abstract: Decentralized finance exposes supervisors to fast-moving, networked credit risks. General-purpose LLM agents fit this setting poorly: they over-read weak evidence and recommend high-stakes interventions, while existing evaluations offer no regulator-aligned way to measure the resulting false alarms. We introduce DeXposure-Claw, a forecast-grounded agentic supervision system that routes LLM decisions through structured evidence: (1) DeXposure-FM, a graph time-series foundation model, forecasts future exposure networks; (2) deterministic monitors a",
-      "category": "Applications",
-      "summary": "DeXposure-Claw presents an agentic system for DeFi risk supervision using graph time-series models and structured evidence routing.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "application",
-          "finance"
-        ],
-        "traits": [],
-        "entities": []
-      }
-    },
-    {
-      "title": "LLM Doesn't Know What It Doesn't Know: Detecting Epistemic Blind Spots via Cross-Model Attribution Divergence on Clinical Tabular Data",
-      "url": "https://arxiv.org/abs/2606.19509",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-20T04:00:00.000Z",
-      "snippet": "arXiv:2606.19509v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly applied to structured clinical data, yet whether they can recognize the limits of their own knowledge on such tasks remains unexplored. We study this question through the lens of cross-model attribution divergence with the goal of reducing epistemic uncertainty for structured tasks, comparing Qwen 2.5 7B and XGBoost on a prediction task via attribution divergence analysis. We report four findings. First, LLM verbalized confidence is epistemically vacuous, it outputs a near-constant (0.856-0.937) regar",
-      "category": "AI Safety & Alignment",
-      "summary": "Research investigating whether LLMs can recognize their own knowledge limitations on clinical structured data through attribution divergence analysis.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "interpretability",
-          "safety"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "REVEAL++: Differentiable Phenotypic Grouping for Vision-Language Retinal Modeling of Alzheimer's Disease Risk",
-      "url": "https://arxiv.org/abs/2606.19522",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-20T04:00:00.000Z",
-      "snippet": "arXiv:2606.19522v1 Announce Type: new Abstract: The retina offers a noninvasive window into neurodegenerative disease, capturing subtle structural patterns associated with a risk of future cognitive decline. Vision-language alignment frameworks such as REVEAL have shown that pairing retinal fundus images with structured clinical risk narratives improves early prediction of Alzheimer's disease (AD). A key design choice in these approaches is the use of phenotypic grouping, where individuals with similar risk profiles are treated as multi-positive pairs during contrastive learning. However, exis",
-      "category": "Research",
-      "summary": "Vision-language model for predicting Alzheimer's disease risk from retinal images using differentiable phenotypic grouping.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "multimodal",
-          "vision"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Emergent Alignment",
-      "url": "https://arxiv.org/abs/2606.19527",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-20T04:00:00.000Z",
-      "snippet": "arXiv:2606.19527v1 Announce Type: new Abstract: Can Large Language Models (LLMs) discern when their own outputs are misaligned with human ethics? And can they self-correct? We endow an LLM with a conscience step that reviews its own reasoning and outputs, and we extend the training loss with an alignment component using Direct Preference Optimization (DPO) to steer the model away from non-ethical outputs. The result is an online technique to align models in a wide range of applications: training, fine-tuning, adversarial prompting, and zero-shot learning. It does not require a weaker or strong",
-      "category": "AI Safety & Alignment",
-      "summary": "Proposes online alignment technique enabling LLMs to self-assess ethical misalignment and self-correct using Direct Preference Optimization.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "alignment",
-          "training"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "ITNet: A Learnable Integral Transform That Subsumes Convolution, Attention, and Recurrence",
-      "url": "https://arxiv.org/abs/2606.19538",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-20T04:00:00.000Z",
-      "snippet": "arXiv:2606.19538v1 Announce Type: new Abstract: Convolutional networks, recurrent networks, and transformers each encode different inductive biases -- locality, sequential memory, and content-dependent pairwise interaction -- and have remained mathematically distinct since their inception. We show that this fragmentation reflects not a fundamental diversity in how signals should be processed, but rather incomplete views of a single underlying mathematical object: a learnable integral transform. We introduce the Integral Transform Network (ITNet), a unified architecture built around a learnable",
-      "category": "Research",
-      "summary": "Introduces Integral Transform Network (ITNet), a unified architecture that mathematically subsumes convolution, attention, and recurrence mechanisms.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "architecture",
-          "reasoning"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Uncertainty Decomposition for Clarification Seeking in LLM Agents",
-      "url": "https://arxiv.org/abs/2606.19559",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-20T04:00:00.000Z",
-      "snippet": "arXiv:2606.19559v1 Announce Type: new Abstract: Recent position papers argue that the classical aleatoric/epistemic uncertainty framework is insufficient for interactive large language model (LLM) agents and call for underspecification-aware, decomposed, and communicable uncertainty representations that can unlock new agent capabilities such as proactive clarification seeking and shared mental-model building. Practical deployment constraints -- black-box APIs, interactive latency budgets, and the absence of labeled trajectories -- rule out logprob-based, multi-sampling, and training-based meth",
-      "category": "Research",
-      "summary": "Proposes decomposed uncertainty representations for enabling LLM agents to perform proactive clarification-seeking without retraining.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "uncertainty"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Analyzing the Narration Gap in LLM-Solver Loops",
-      "url": "https://arxiv.org/abs/2606.19588",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-20T04:00:00.000Z",
-      "snippet": "arXiv:2606.19588v1 Announce Type: new Abstract: Formal tools such as SAT and SMT solvers are increasingly embedded in language model reasoning pipelines when a safety or security critical question can be formulated in logic. Unlike chain of thought whose steps are sampled from the model distribution without formal guarantee, a solver produces a sound and independently verifiable answer. However, the soundness guarantee can be lost in the interaction between the solver and the model. The hybrid pipeline has three components: formalizing the question, deciding it, and narrating the result. Prior",
-      "category": "Research",
-      "summary": "Analyzes the narration gap in hybrid LLM-solver reasoning pipelines where formal verification can be lost in translation.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "reasoning",
-          "safety"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Configurable Clinical Information Extraction with Agentic RAG: What Works, What Breaks, and Why",
-      "url": "https://arxiv.org/abs/2606.19602",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-20T04:00:00.000Z",
-      "snippet": "arXiv:2606.19602v1 Announce Type: new Abstract: Patient contexts span hundreds of heterogeneous documents and thousands of structured data points, yet the document-level metadata that AI systems need for retrieval and triage is absent or incomplete. Standard retrieval-augmented generation fails on this data, mishandling temporal reasoning, cross-document dependencies, and missing metadata. We deploy ACIE (Agentic Clinical Information Extraction) at University Medicine Essen: an on-premise agentic RAG pipeline that reasons over complete patient contexts and grounds every answer in source passag",
-      "category": "Applications",
-      "summary": "Agentic RAG deployment for clinical information extraction at University Medicine Essen demonstrating real-world healthcare application.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "rag",
-          "application"
-        ],
-        "traits": [],
-        "entities": []
-      }
-    },
-    {
-      "title": "Which Pairs to Compare for LLM Post-Training?",
-      "url": "https://arxiv.org/abs/2606.19607",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-20T04:00:00.000Z",
-      "snippet": "arXiv:2606.19607v1 Announce Type: new Abstract: Preference-based post-training has become a central paradigm for aligning language models. A common data-collection strategy is to generate a small set of completions for each prompt and label the resulting comparison pairs. However, human preference labels are often much more expensive than generating additional completions, suggesting a different use of the same labeling budget: generate a larger pool of completions, but label only the most informative comparison pairs. This paper studies which pairs should be compared in preference-based post-",
-      "category": "Research",
-      "summary": "Studies optimal comparison pair selection strategies for preference-based LLM post-training with limited labeling budgets.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "training"
-        ],
-        "traits": [
-          "research",
-          "benchmark"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Toten: Knowledge-Based Ontological Tokenization Of Physical Quantities And Technical Notation In Brazilian Portuguese",
-      "url": "https://arxiv.org/abs/2606.19626",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-20T04:00:00.000Z",
-      "snippet": "arXiv:2606.19626v1 Announce Type: new Abstract: Byte-Pair Encoding tokenization is statistically efficient for vocabulary compression, but semantically blind to structured technical entities, fragmenting physical quantities, numbers, units, and symbolic expressions into lexically arbitrary subwords. We present TOTEN, a knowledge-based ontological tokenization framework that replaces statistical derivation with declarative classification grounded in a formal ontology of engineering entities (OEE). We formalize TOTEN as the triple : the ontology gathers types, structural principles, composition ",
-      "category": "Research",
-      "summary": "Proposes TOTEN, a knowledge-based ontological tokenization framework for Brazilian Portuguese that preserves semantic meaning of technical entities.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "training",
-          "nlp"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "AI4SE and SE4AI Exploration: A Decade Looking Back and Forward",
-      "url": "https://arxiv.org/abs/2606.19630",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-06-20T04:00:00.000Z",
-      "snippet": "arXiv:2606.19630v1 Announce Type: new Abstract: The March 2020 INCOSE INSIGHT special issue on AI and Systems Engineering (SE) became the most downloaded issue in the publication's history and launched a research community that now draws over 250 registrants to its annual workshop. In this article, we trace the progress in AI and SE across three phases (labeled here foundational, applied, and LLM inflection) based on the authors' reading of the field's core papers, and describe our opinions of where the community has converged and where critical gaps remain. Separately, a human-AI agreement li",
-      "category": "Research",
-      "summary": "Decade-spanning survey of AI for Software Engineering and Software Engineering for AI, tracing foundational, applied, and LLM-era research phases.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "llm",
-          "survey"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "From PGP to Mythos: a brief history of export controls that didn’t stop anyone",
-      "url": "https://techcrunch.com/2026/06/19/encryption-spyware-and-now-mythos-history-shows-why-cyber-export-control-doesnt-work/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-19T22:40:14.000Z",
-      "snippet": "For the last 30 years, stopping the flow of cybersecurity-related software has proven to be ineffective. It's unclear why it would work now with Anthropic’s cybersecurity model Mythos.",
-      "category": "Regulation & Policy",
-      "summary": "Analysis examining the historical ineffectiveness of export controls on cybersecurity software and implications for AI model restrictions.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "security"
-        ],
-        "traits": [
-          "policy"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Companies rein in AI usage as costs strain budgets",
-      "url": "https://www.ft.com/content/1d37cc08-e0aa-45a4-a45d-4ad282529314",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-06-19T19:57:18.000Z",
-      "snippet": "https://archive.ph/z24oE Comments URL: https://news.ycombinator.com/item?id=48602571 Points: 120 # Comments: 104",
-      "category": "Business & Funding",
-      "summary": "Report indicating companies are reducing AI spending due to escalating operational costs straining corporate budgets.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "business",
-          "cost"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Is AI ruining our skills? Early results are in – and they're not good",
-      "url": "https://www.nature.com/articles/d41586-026-01947-1",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-06-19T18:00:48.000Z",
-      "snippet": "Article URL: https://www.nature.com/articles/d41586-026-01947-1 Comments URL: https://news.ycombinator.com/item?id=48601286 Points: 240 # Comments: 313",
-      "category": "Research",
-      "summary": "Early research findings suggesting AI usage may be eroding human skill development and competency.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "safety",
-          "impact"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Is the US government’s Anthropic ban accidentally helping the brand?",
-      "url": "https://techcrunch.com/video/is-the-us-governments-anthropic-ban-accidentally-helping-the-brand/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-19T16:08:17.000Z",
-      "snippet": "Just as last week was ending, the US government forced Anthropic to pull its two newest models, Fable 5 and Mythos 5, citing national security concerns after Amazon researchers allegedly found a way to bypass Fable 5’s guardrails. Cybersecurity researchers have since signed an open letter calling the move dangerous, and Anthropic itself noted the same jailbreaks exist in other models. So is […]",
-      "category": "Regulation & Policy",
-      "summary": "The US government banned Anthropic's Fable 5 and Mythos 5 models citing national security concerns over guardrail bypasses, though cybersecurity researchers and Anthropic argue similar vulnerabilities exist across other models.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "safety"
-        ],
-        "traits": [
-          "policy"
-        ],
-        "entities": [
-          "anthropic"
-        ]
-      }
-    },
-    {
-      "title": "AI Engineer Claims to Have Cracked Linear A",
-      "url": "https://aiclambake.com/clamtakes/linear-a/",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-06-19T16:04:42.000Z",
-      "snippet": "Article URL: https://aiclambake.com/clamtakes/linear-a/ Comments URL: https://news.ycombinator.com/item?id=48600107 Points: 440 # Comments: 173",
-      "category": "Research",
-      "summary": "An AI engineer claims to have deciphered Linear A, an ancient undeciphered writing system, using AI techniques.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "breakthrough"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Norway imposes near ban on AI in elementary school",
-      "url": "https://www.reuters.com/technology/norway-imposes-near-ban-ai-elementary-school-2026-06-19/",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-06-19T16:03:15.000Z",
-      "snippet": "Article URL: https://www.reuters.com/technology/norway-imposes-near-ban-ai-elementary-school-2026-06-19/ Comments URL: https://news.ycombinator.com/item?id=48600093 Points: 797 # Comments: 571",
-      "category": "Regulation & Policy",
-      "summary": "Norway has imposed a near-total ban on AI use in elementary schools, reflecting growing policy concerns about AI in education.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "education"
-        ],
-        "traits": [
-          "policy"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "The US banned Anthropic’s Fable 5 release, but the numbers don’t seem to care",
-      "url": "https://techcrunch.com/podcast/the-us-banned-anthropics-fable-5-release-but-the-numbers-dont-seem-to-care/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-19T16:01:03.000Z",
-      "snippet": "Just as last week was ending, the US government forced Anthropic to pull its two newest models, Fable 5 and Mythos 5, citing national security concerns after Amazon researchers allegedly found a way to bypass Fable 5’s guardrails. Cybersecurity researchers have since signed an open letter calling the move dangerous, and Anthropic itself noted the same jailbreaks exist in other models. So is […]",
-      "category": "Regulation & Policy",
-      "summary": "Following the US government ban on Anthropic's Fable 5 and Mythos 5 models over security concerns, market reactions suggest limited practical impact despite the regulatory action.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "policy",
-          "incident"
-        ],
-        "entities": [
-          "anthropic"
-        ]
-      }
-    },
-    {
-      "title": "Munich 1991: The Roots of the Current AI Boom",
-      "url": "https://people.idsia.ch/~juergen/ai-boom-roots-munich-1991.html",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-06-19T15:54:23.000Z",
-      "snippet": "Article URL: https://people.idsia.ch/~juergen/ai-boom-roots-munich-1991.html Comments URL: https://news.ycombinator.com/item?id=48599998 Points: 90 # Comments: 33",
-      "category": "Research",
-      "summary": "A retrospective analysis traces the roots of the current AI boom back to pioneering work at Munich's IDSIA institute in 1991.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "history"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Billionaire Ambani wants AI in every call, app, and home",
-      "url": "https://techcrunch.com/2026/06/19/billionaire-ambani-wants-ai-in-every-call-app-and-home/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-19T15:23:28.000Z",
-      "snippet": "Reliance is weaving AI into telecom services used by more than 500 million people.",
-      "category": "Applications",
-      "summary": "Indian billionaire Mukesh Ambani's Reliance is integrating AI across telecom services serving over 500 million users.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "applications"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "The film about Sam Altman has been dropped by Amazon MGM",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/952906/sam-altman-film-artificial-openai-amazon-mgm-dropped",
-      "source": "The Verge AI",
-      "publishedAt": "2026-06-19T14:15:29.000Z",
-      "snippet": "Luca Guadagnino's film about OpenAI CEO Sam Altman, Artificial, has reportedly been dropped by Amazon MGM. The film, which stars Andrew Garfield and covers the rollercoaster five days in 2023 spanning Altman's termination and reinstatement as CEO, had been in the works for about a year. The cast also includes A Complete Unknown actress Monica Barbaro as OpenAI CTO Mira Murati, Ike Barinholtz as Elon Musk, and Anora's Yura Borisov as OpenAI chief scientist Ilya Sutskever. In a statement to Deadline, the studio said it believes the movie \"will be better served if it were released by a different ",
-      "category": "Other",
-      "summary": "Amazon MGM has dropped the planned film about OpenAI CEO Sam Altman starring Andrew Garfield, reportedly to seek a different distributor.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "incident"
-        ],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "The CEO of Allbirds’ new AI biz has a plan, but no team",
-      "url": "https://techcrunch.com/2026/06/19/the-ceo-of-allbirds-new-ai-biz-has-a-plan-but-no-employees/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-19T13:00:00.000Z",
-      "snippet": "Call it a startup with a sole founder and a very large seed round, but what's next is less clear.",
-      "category": "Business & Funding",
-      "summary": "Allbirds CEO launches a new AI business with substantial seed funding but faces challenges in building the team to execute the vision.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "startup"
-        ],
-        "traits": [
-          "funding"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "A startup claims it broke through a bottleneck that’s holding back LLMs",
-      "url": "https://www.technologyreview.com/2026/06/19/1139313/a-startup-claims-it-broke-through-a-bottleneck-thats-holding-back-llms/",
-      "source": "MIT Tech Review AI",
-      "publishedAt": "2026-06-19T10:40:24.000Z",
-      "snippet": "Miami-based AI startup Subquadratic came out of stealth mode last month with a huge claim. It announced that it had solved a mathematical bottleneck that had been holding back large language models for almost a decade. The details were thin, and many people were unconvinced. But Subquadratic has started to bring the receipts, sharing the…",
-      "category": "Research",
-      "summary": "Miami-based startup Subquadratic claims to have solved a mathematical bottleneck limiting LLM scalability for nearly a decade, with early technical validation.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "llm",
-          "breakthrough"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "The US says ASML’s top chip tool may be in China, but how?",
-      "url": "https://techcrunch.com/2026/06/19/the-us-says-asmls-top-chip-tool-may-be-in-china-asml-says-it-isnt/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-19T07:59:12.000Z",
-      "snippet": "There's a commercial logic that cuts against the idea that ASML would risk its export license to arm a Chinese customer.",
-      "category": "Hardware & Compute",
-      "summary": "Questions arise about how ASML's advanced chip manufacturing equipment could have reached China despite strict export controls and commercial disincentives.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "hardware"
-        ],
-        "traits": [
-          "policy"
-        ],
-        "entities": []
-      }
     }
   ],
   "feedHealth": {
     "The Verge AI": {
-      "lastSuccess": "2026-07-19T07:58:11.472Z",
+      "lastSuccess": "2026-07-20T08:39:34.263Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "TechCrunch AI": {
-      "lastSuccess": "2026-07-19T07:58:11.671Z",
+      "lastSuccess": "2026-07-20T08:39:34.343Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Ars Technica AI": {
-      "lastSuccess": "2026-07-19T07:58:12.102Z",
+      "lastSuccess": "2026-07-20T08:39:34.597Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "VentureBeat AI": {
-      "lastSuccess": "2026-07-19T07:58:12.354Z",
+      "lastSuccess": "2026-07-20T08:39:35.063Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Anthropic News": {
       "lastSuccess": null,
       "lastError": "Status code 404",
-      "consecutiveFailures": 30
+      "consecutiveFailures": 31
     },
     "OpenAI Blog": {
-      "lastSuccess": "2026-07-19T07:58:19.354Z",
+      "lastSuccess": "2026-07-20T08:39:40.943Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Google DeepMind": {
-      "lastSuccess": "2026-07-19T07:58:19.723Z",
+      "lastSuccess": "2026-07-20T08:39:41.314Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "MIT Tech Review AI": {
-      "lastSuccess": "2026-07-19T07:58:19.802Z",
+      "lastSuccess": "2026-07-20T08:39:41.407Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "arXiv cs.AI": {
-      "lastSuccess": "2026-07-19T07:58:19.917Z",
+      "lastSuccess": "2026-07-20T08:39:41.584Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Hacker News (AI)": {
-      "lastSuccess": "2026-07-19T07:58:35.789Z",
+      "lastSuccess": "2026-07-20T08:39:45.212Z",
       "lastError": null,
       "consecutiveFailures": 0
     }
   },
   "brief": {
-    "generatedAt": "2026-07-19T07:58:45.685Z",
+    "generatedAt": "2026-07-20T08:40:08.035Z",
     "bullets": [
       {
-        "text": "Moonshot AI released a new version of its Kimi model, drawing market attention and debate over its competitive positioning among frontier models.",
+        "text": "A new study warns AI advice erodes critical thinking, making users less accurate but more confident—raising overreliance concerns as AI adoption accelerates across sectors.",
         "refs": [
-          "https://techcrunch.com/2026/07/18/kimi-threat-or-menace/"
+          "https://thenextweb.com/news/ai-advice-suppresses-critical-thinking-wrong-answers-study"
         ]
       },
       {
-        "text": "The government is piloting an AI system to automate insurance prior authorization decisions, raising questions about whether it will streamline approvals or worsen fairness and access.",
+        "text": "Nvidia's Jensen Huang wraps a Japan visit with ecosystem-spanning deals, while Moonshot AI suspends new Kimi K3 subscriptions amid overwhelming demand, signaling surging global AI infrastructure appetite.",
         "refs": [
-          "https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse/"
+          "https://techcrunch.com/2026/07/19/what-to-watch-for-after-jensen-huangs-japan-visit/",
+          "https://twitter.com/kimi_moonshot/status/2078855608565207130"
         ]
       },
       {
-        "text": "AI-content backlash spread: author Dave Eggers told OpenAI staff ChatGPT is 'silencing an entire generation' of writers, while data visualized AI's erosion of Stack Overflow's community activity.",
+        "text": "Apple's lawsuit against OpenAI could complicate the company's hardware ambitions and public-market path, per new analysis.",
         "refs": [
-          "https://www.theverge.com/ai-artificial-intelligence/967630/dave-eggers-openai-chatgpt-silencing-an-entire-generation",
-          "https://data.stackexchange.com/stackoverflow/query/1953768#graph"
+          "https://techcrunch.com/2026/07/19/can-an-apple-lawsuit-derail-openais-hardware-plans/"
         ]
       },
       {
-        "text": "Policymakers targeted AI deception, with a mayoral proposal barring landlords from secretly using AI-generated images in property advertisements to protect consumers.",
+        "text": "Healthcare agents advanced: Cura 1T, trained via human-gated self-evolution, targets clinical reasoning and EHR integration, while GraphDx offers cost-aware multi-agent sequential diagnosis.",
         "refs": [
-          "https://petapixel.com/2026/07/16/mayor-mamdani-says-landlords-cant-secretly-use-ai-images-to-advertise-properties/"
+          "https://arxiv.org/abs/2607.15314",
+          "https://arxiv.org/abs/2607.15280"
         ]
       },
       {
-        "text": "Opinion pieces warned that AI hype is eroding sound decision-making across global institutions.",
+        "text": "Creative-industry skepticism grows as director Christopher Nolan brands AI a 'Trojan horse,' even as critics reluctantly praise Suno-generated music and firms like Perforce monetize AI-narrated training.",
         "refs": [
-          "https://ludic.mataroa.blog/blog/ai-mania-is-eviscerating-global-decision-making/#fnref:3",
-          "https://ludic.mataroa.blog/blog/ai-mania-is-eviscerating-global-decision-making/"
+          "https://techcrunch.com/2026/07/19/odyssey-director-christopher-nolan-calls-ai-an-obvious-trojan-horse/",
+          "https://www.theverge.com/entertainment/967678/1010benja-semiramis-dream-suno-ai-music",
+          "https://training.perforce.com/learn/courses/535/p4-helix-core-user-basic"
         ]
       }
     ]
