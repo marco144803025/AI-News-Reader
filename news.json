@@ -1,22 +1,747 @@
 {
-  "generatedAt": "2026-07-20T08:39:45.213Z",
-  "daysBack": 3,
+  "generatedAt": "2026-07-21T08:07:36.663Z",
+  "daysBack": 2,
   "categories": [
+    "AI Safety & Alignment",
     "Research",
+    "Developer Tools",
+    "Business & Funding",
+    "Regulation & Policy",
+    "Applications",
+    "Hardware & Compute",
+    "Other",
+    "MCP",
+    "Open Source",
     "Model Releases",
     "Agent Frameworks",
-    "AI Safety & Alignment",
-    "Business & Funding",
-    "Applications",
-    "Other",
-    "Regulation & Policy",
-    "Hardware & Compute",
-    "Open Source",
-    "Developer Tools",
-    "MCP",
     "Evaluation"
   ],
   "articles": [
+    {
+      "title": "Rater State Bias in RLHF Preference Data: An Audit Framework",
+      "url": "https://arxiv.org/abs/2607.16195",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-21T04:00:00.000Z",
+      "snippet": "arXiv:2607.16195v1 Announce Type: new Abstract: We identify a structured confound in Reinforcement Learning from Human Feedback (RLHF). Pairwise preference labels are intended to reflect the compared outputs, but they may also reflect the rater's state during annotation. Under sustained stressful or distressing conditions, raters' preferences may shift over time. As a result, preference data can encode rater state alongside judgments about response quality. These shifts differ from ordinary disagreement or random label noise. They are state dependent, can be shared across annotators working un",
+      "category": "AI Safety & Alignment",
+      "summary": "Research identifies how rater emotional state during RLHF annotation can introduce systematic biases into preference data.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "alignment"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Some Large Language Models Exhibit Consistent Risk Attitudes",
+      "url": "https://arxiv.org/abs/2607.16197",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-21T04:00:00.000Z",
+      "snippet": "arXiv:2607.16197v1 Announce Type: new Abstract: As artificial intelligence systems are deployed in open-ended, high-stakes settings, a critical dimension remains unmeasured: how perceived risk is translated into action. We test whether large language models (LLMs) exhibit systematic and consistent risk attitudes under uncertainty. We introduce a cross-domain framework that decouples contextual risk belief from categorical decision, and apply it to six representative LLMs and 100 human participants across spatial navigation, clinical triage, and financial allocation tasks. Using regression mode",
+      "category": "Research",
+      "summary": "Study reveals that large language models exhibit consistent and measurable risk attitudes across different domains and decision contexts.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm",
+          "evaluation"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "PlanFlip: Attacking Multi-Agent LLM Systems via Planning-Phase Prompt Injection",
+      "url": "https://arxiv.org/abs/2607.16199",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-21T04:00:00.000Z",
+      "snippet": "arXiv:2607.16199v1 Announce Type: new Abstract: Multi-agent LLM systems increasingly rely on a Planner to decompose goals into sub-task sequences that downstream Executor and Critic agents execute and audit. We identify the planning phase as a critical attack surface: a single injection into the Planner's context achieves cascade amplification, corrupting all downstream sub-tasks simultaneously. We introduce PlanFlip, a framework comprising four planning-phase prompt injection attacks -- GoalSubstitution (PF-1), PriorityInversion (PF-2), ContextPollution (PF-3), and RoleConfusion (PF-4) -- eac",
+      "category": "AI Safety & Alignment",
+      "summary": "PlanFlip framework demonstrates critical vulnerabilities in multi-agent LLM systems through planning-phase prompt injection attacks that cascade downstream.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "safety"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Deterministic Replay for AI Agent Systems",
+      "url": "https://arxiv.org/abs/2607.16200",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-21T04:00:00.000Z",
+      "snippet": "arXiv:2607.16200v1 Announce Type: new Abstract: AI agent systems that couple large language models (LLMs) with external tools and APIs are inherently non-deterministic: LLM sampling variance, external API state, CDN infrastructure headers, and execution-environment noise collectively prevent any prior agent run from being faithfully re-executed. Existing observability platforms capture execution logs but cannot reproduce a run in isolation. We present agrepl, a developer-first CLI framework for deterministic replay of agent executions. agrepl intercepts all external interactions at the transpo",
+      "category": "Developer Tools",
+      "summary": "Agrepl is a new developer CLI framework enabling deterministic replay of non-deterministic AI agent executions for debugging and observability.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "developer"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Generative Ontology Induction: Domain-Agnostic Schema Discovery from Document Corpora Using Large Language Models",
+      "url": "https://arxiv.org/abs/2607.16201",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-21T04:00:00.000Z",
+      "snippet": "arXiv:2607.16201v1 Announce Type: new Abstract: Ontology engineering remains a critical bottleneck in knowledge-intensive AI systems. Existing automated approaches either depend on predefined schemas, operate within narrow domains, or produce unstructured outputs unsuitable for downstream pipelines. We introduce Generative Ontology Induction (GOI), a domain-agnostic framework that induces a generative blueprint - entities, dimensions, properties, relationships, and constraints - from a corpus of examples and exports it as a typed graph (six node types, seven edge types) in YAML/JSON. We introd",
+      "category": "Research",
+      "summary": "Generative Ontology Induction framework uses LLMs to automatically discover structured schemas from document corpora without predefined templates.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm",
+          "rag"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Democratizing AI with Small Language Models: Structured Benchmarking and Parameter-Efficient Fine-Tuning for Local Deployment",
+      "url": "https://arxiv.org/abs/2607.16202",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-21T04:00:00.000Z",
+      "snippet": "arXiv:2607.16202v1 Announce Type: new Abstract: AI democratization is not primarily a question of matching frontier-scale generality; it is a question of whether capable models can be selected, audited, and specialized under hardware and governance constraints that ordinary institutions can actually satisfy. This paper studies that problem through a controlled evaluation of nine open-weight language models between 135M and 3B parameters on a 1,085-example, 16-topic multiple-choice benchmark designed for structured local deployment. The benchmark emphasizes symbolic precision, constrained forma",
+      "category": "Research",
+      "summary": "Study evaluates small language models (135M-3B parameters) for local deployment with parameter-efficient fine-tuning under hardware constraints.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm",
+          "fine-tuning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Masked Diffusion Language Models are Strong and Steerable Text-Based World Models for Agentic RL",
+      "url": "https://arxiv.org/abs/2607.16204",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-21T04:00:00.000Z",
+      "snippet": "arXiv:2607.16204v1 Announce Type: new Abstract: Recent growth in reinforcement learning (RL) has surfaced a need for diverse, specialized training environments. Hand-curated environments with fixed task and reward difficulties become ineffective signals as model performance improves, and sparse rewards over long horizons induce mode collapse on specific workflows or tool structures. World models that simulate environment states have matched pure rollout performance, making them promising for scaling diversity on-demand. However, autoregressive (AR) world models suffer from a left-to-right bias",
+      "category": "Research",
+      "summary": "Masked diffusion language models serve as effective world models for agentic reinforcement learning without left-to-right autoregressive bias.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "It Takes 8 Tokens: Weak-to-Strong Off-Policy RL via Auxiliary Branches",
+      "url": "https://arxiv.org/abs/2607.16205",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-21T04:00:00.000Z",
+      "snippet": "arXiv:2607.16205v1 Announce Type: new Abstract: Reinforcement learning with verifiable rewards has emerged as a standard approach for enhancing reasoning in large language models, which typically optimizes the policy by contrasting multiple self generated rollouts. However, we identify a critical support limited bottleneck in this paradigm: on challenging reasoning tasks, the target model's samples often exhibit semantic redundancy, converging into the same erroneous \"reasoning basins\" that offer negligible reward contrast for policy updates. In this paper, we propose to overcome this limitati",
+      "category": "Research",
+      "summary": "Weak-to-strong reinforcement learning approach addresses semantic redundancy bottleneck in LLM reasoning by using auxiliary branches for policy updates.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm",
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "PPO-HSC: An Exploratory Reinforcement Learning Framework Based on Wide-Area Policy Coverage Optimization",
+      "url": "https://arxiv.org/abs/2607.16206",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-21T04:00:00.000Z",
+      "snippet": "arXiv:2607.16206v1 Announce Type: new Abstract: This paper introduces PPO-HSC (Proximal Policy Optimization with High-order Sampling Coverage), an exploratory reinforcement learning framework designed to address the \"Invisible Shackles\" of mode collapse in Large Language Model (LLM) fine-tuning. While standard Reinforcement Learning from Verifiable Rewards (RLVR) effectively reinforces high-reward trajectories, it often leads models to over-optimize known solutions, sacrificing curiosity and the ability to explore broader solution manifolds. To overcome this, PPO-HSC incorporates a High-order ",
+      "category": "Research",
+      "summary": "PPO-HSC introduces a reinforcement learning framework that addresses mode collapse in LLM fine-tuning by optimizing policy coverage to encourage exploration beyond known solutions.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "training",
+          "llm"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "JUMP: Single-Pass Membership Inference on Fine-Tuned Diffusion Language Models",
+      "url": "https://arxiv.org/abs/2607.16207",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-21T04:00:00.000Z",
+      "snippet": "arXiv:2607.16207v1 Announce Type: new Abstract: Membership inference attacks (MIAs) test whether a candidate example appeared in a model's training data. We study MIAs for fine-tuned discrete diffusion language models (dLLMs), where membership means inclusion in the target model's fine-tuning set. Unlike autoregressive language models, dLLMs allow an attacker to choose arbitrary mask sets and obtain token distributions for all masked positions in parallel. The prior dLLM attack, SAMA, follows a natural loss-mimicking strategy by averaging reconstruction signals over many randomly sampled masks",
+      "category": "AI Safety & Alignment",
+      "summary": "JUMP presents a membership inference attack method for fine-tuned diffusion language models, exploiting parallel token distribution queries to determine if examples appeared in training data.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "fine-tuning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "ColGraphRAG: Late-Interaction Evidence Retrieval for Multimodal GraphRAG",
+      "url": "https://arxiv.org/abs/2607.16208",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-21T04:00:00.000Z",
+      "snippet": "arXiv:2607.16208v1 Announce Type: new Abstract: Graph-grounded multimodal question answering organizes text, tables, and images in a structured evidence graph, yet end-to-end accuracy depends on which multimodal assets are ranked highly enough to enter downstream reasoning; for graph-linked images, single-vector bi-encoder similarity can discard patch- and token-level structure needed for fine-grained alignment. We evaluate replacing the visual candidate-ranking operator over graph-linked image nodes with late-interaction MaxSim-style multi-vector scoring in the ColBERT/ColPali lineage, while ",
+      "category": "Research",
+      "summary": "ColGraphRAG improves multimodal graph-based question answering by applying late-interaction multi-vector scoring to better rank image evidence in structured retrieval systems.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "rag",
+          "multimodal"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Shapley Context Pruning: A Cooperative Game Perspective for Context Reranking and Pruning",
+      "url": "https://arxiv.org/abs/2607.16209",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-21T04:00:00.000Z",
+      "snippet": "arXiv:2607.16209v1 Announce Type: new Abstract: Context reranking and pruning have become essential for improving the efficiency of modern Retrieval-Augmented Generation (RAG) systems, yet an interpretable and unified framework remains underexplored. Previous work has primarily emphasized lexical retrieval, cross-encoder architectures, model distillation, and Low-Rank Adaptation (LoRA), mostly relying on heuristic loss functions and empirical attribution. This paper presents Shapley Context Pruning (SCP), a novel framework for context reranking that establishes a cooperative-game-theory perspe",
+      "category": "Research",
+      "summary": "Shapley Context Pruning applies cooperative game theory to context reranking and pruning in RAG systems, providing an interpretable unified framework for selecting relevant information.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "rag",
+          "interpretability"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "A Survey on the Verification of Reinforcement Learning Policies",
+      "url": "https://arxiv.org/abs/2607.16210",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-21T04:00:00.000Z",
+      "snippet": "arXiv:2607.16210v1 Announce Type: new Abstract: Reinforcement learning (RL) is increasingly applied in complex, safety-critical domains, yet the lack of rigorous behavioral guarantees for neural network-based policies remains a major barrier to deployment. Recent advances in policy expressiveness and scale have intensified this challenge, leading to a rapidly growing but conceptually fragmented body of work on RL policy verification. This survey provides a unifying perspective on RL verification methods. We introduce a taxonomy that clarifies relationships among existing approaches along three",
+      "category": "Research",
+      "summary": "A comprehensive survey examining verification methods for neural network-based reinforcement learning policies, providing taxonomy and perspective on safety guarantees for safety-critical deployments.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "alignment"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Accurate and Efficient Long-Term Memory for LLM Agents",
+      "url": "https://arxiv.org/abs/2607.16211",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-21T04:00:00.000Z",
+      "snippet": "arXiv:2607.16211v1 Announce Type: new Abstract: LLM agents augmented with persistent memory can recall past interactions, but existing systems suffer from two limitations: flat, unstructured storage loses relational context needed for multi-hop and temporal reasoning, and reliance on expensive LLM-based classification makes them impractical for latency-sensitive deployment. Without mechanisms to validate new information against stored knowledge, these systems silently accumulate contradictions. We present MOSAIC (Memory-Organized Structured Agent for Information Collection), a structured, conf",
+      "category": "Research",
+      "summary": "MOSAIC proposes a structured memory system for LLM agents that organizes information hierarchically and validates consistency, improving efficiency and reliability of persistent memory.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "llm"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Symbolic Augmentation Closes a Canonical-Equivalence Blind Spot in Neural Fact-Checkers",
+      "url": "https://arxiv.org/abs/2607.16212",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-21T04:00:00.000Z",
+      "snippet": "arXiv:2607.16212v1 Announce Type: new Abstract: Large language models hallucinate numbers and units when summarizing scientific text, a failure mode that can silently invert a scientific claim. We recast the detection of such errors as typed verification: we introduce a five-class typed-quantity error taxonomy and a 1500-item benchmark, rewritten from PMC and arXiv sources and labeled by two independent LLM annotators with adjudication (Krippendorff's alpha = 0.882). A ModernBERT encoder fine-tuned on this benchmark reaches macro-F1 = 0.899, far above any off-the-shelf neural fact-checker, yet",
+      "category": "Research",
+      "summary": "This work introduces a typed-quantity error taxonomy and benchmark for detecting numerical hallucinations in LLM scientific text summaries, achieving 0.899 macro-F1 with ModernBERT.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "evaluation"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Five US tech giants' hidden debts soar to $1.65T on opaque AI funding",
+      "url": "https://asia.nikkei.com/business/technology/five-us-tech-giants-hidden-debts-soar-to-1.65tn-on-opaque-ai-funding",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-07-21T03:56:03.000Z",
+      "snippet": "Article URL: https://asia.nikkei.com/business/technology/five-us-tech-giants-hidden-debts-soar-to-1.65tn-on-opaque-ai-funding Comments URL: https://news.ycombinator.com/item?id=48987863 Points: 241 # Comments: 112",
+      "category": "Business & Funding",
+      "summary": "Five major US tech giants have accumulated $1.65T in hidden debt through opaque AI funding arrangements, raising concerns about financial transparency in AI infrastructure investments.",
+      "important": true,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "funding",
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Anthropic’s landmark $1.5B copyright settlement is approved",
+      "url": "https://techcrunch.com/2026/07/20/anthropics-landmark-1-5b-copyright-settlement-is-approved/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-21T00:12:24.000Z",
+      "snippet": "The final approval settles one case, but it doesn't resolve the broader issue of using copyrighted works to train AI models.",
+      "category": "Regulation & Policy",
+      "summary": "Anthropic's landmark $1.5B copyright settlement with music rightsholders receives final approval, though broader questions about training on copyrighted works remain unresolved.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "copyright",
+          "settlement"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "Americans hate AI so much that politicians are losing their jobs over it",
+      "url": "https://fortune.com/2026/07/14/voters-ai-backlash-politicians-lose-seats/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-07-20T23:06:09.000Z",
+      "snippet": "Article URL: https://fortune.com/2026/07/14/voters-ai-backlash-politicians-lose-seats/ Comments URL: https://news.ycombinator.com/item?id=48986003 Points: 54 # Comments: 35",
+      "category": "Regulation & Policy",
+      "summary": "Public backlash against AI has contributed to politicians losing their jobs, indicating significant voter opposition to AI adoption policies.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy",
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Trump’s latest AI czar has already resigned",
+      "url": "https://techcrunch.com/2026/07/20/trumps-latest-ai-czar-has-already-resigned/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-20T22:21:04.000Z",
+      "snippet": "The director role for the Center for AI Standards and Innovation (CAISI) has become a revolving door since David Sacks left his position as czar.",
+      "category": "Regulation & Policy",
+      "summary": "The director of Trump's Center for AI Standards and Innovation resigned after David Sacks left his role as AI czar.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "governance"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Here are the 30,000 songs Sony is suing Udio&#8217;s AI music generator over",
+      "url": "https://www.theverge.com/tech/968375/sony-udio-lawsuit-songs-ai-copyright",
+      "source": "The Verge AI",
+      "publishedAt": "2026-07-20T22:19:12.000Z",
+      "snippet": "Sony Music Entertainment has filed another lawsuit against Udio, accusing the AI music generator of infringing the copyright of more than 30,000 of its songs, ranging from Elvis Presley's Hound Dog to Beyoncé's Say My Name, and Harry Styles' As It Was. The lawsuit, filed in a New York court on Monday, claims that this list represents \"only a small portion of Plaintiffs' works that Udio infringed,\" as reported earlier by Music Business Worldwide. In 2024, Sony, along with Universal Music Group and Warner Records, filed a lawsuit against Udio and the AI music-maker Suno. After gaining access to ",
+      "category": "Regulation & Policy",
+      "summary": "Sony Music has filed a lawsuit against AI music generator Udio over alleged copyright infringement of more than 30,000 songs, continuing the music industry's legal battle against AI music tools.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "music",
+          "copyright",
+          "legal",
+          "udio"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "Firefighting drones in the works as wildfires plague US nearly year-round",
+      "url": "https://arstechnica.com/ai/2026/07/firefighting-drones-in-the-works-as-wildfires-plague-us-nearly-year-round/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-07-20T21:55:52.000Z",
+      "snippet": "California and XPRIZE competition tests whether drones can stop wildfires early.",
+      "category": "Applications",
+      "summary": "XPRIZE competition and California agencies are testing firefighting drones to combat year-round wildfires.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "robotics",
+          "application"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "Google is working on a new AI chip designed to make Gemini more efficient",
+      "url": "https://techcrunch.com/2026/07/20/google-is-working-on-a-new-ai-chip-designed-to-make-gemini-more-efficient/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-20T21:21:15.000Z",
+      "snippet": "Alphabet, Google's parent company, is reportedly working on a new chip designed to make its Gemini models run much more efficiently.",
+      "category": "Hardware & Compute",
+      "summary": "Google is developing a custom AI chip designed to improve efficiency of its Gemini models.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": [
+          "google",
+          "gemini"
+        ]
+      }
+    },
+    {
+      "title": "SpaceX in your index fund, explained",
+      "url": "https://www.theverge.com/business/968257/spacex-in-your-index-fund-explained",
+      "source": "The Verge AI",
+      "publishedAt": "2026-07-20T21:00:00.000Z",
+      "snippet": "AUUUUUGH | Image: Cath Virginia / The Verge, Getty Images Index funds are touted as one of the safest ways to invest. Rather than picking and choosing individual stocks, index funds let you bet on the market as a whole. So what happens when a company like SpaceX - a giant gamble, and, in my opinion, terribly overpriced - is fast-tracked into the Nasdaq-100? Does it suddenly threaten the stability of index funds based on the Nasdaq-100? Can a $1.77 trillion IPO crater the retirement funds of regular people who would ordinarily have no interest in investing in Elon Musk's meme stock? The answer ",
+      "category": "Other",
+      "summary": "Article discusses the impact of SpaceX's potential Nasdaq-100 inclusion on index fund stability and retail investors.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "spacex",
+          "investment"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "AI’s most important protocol is getting a little bit easier to use",
+      "url": "https://techcrunch.com/2026/07/20/ais-most-important-protocol-is-getting-a-little-bit-easier-to-use/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-20T20:50:40.000Z",
+      "snippet": "Under the new system, the protocol will take a looser, \"stateless\" approach to session IDs on the server side, similar to how most ordinary websites already work.",
+      "category": "MCP",
+      "summary": "A key AI protocol is becoming easier to use by adopting a stateless approach to session management.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "mcp",
+          "infrastructure"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "X relaunches a rebuilt Android app after year-long effort",
+      "url": "https://techcrunch.com/2026/07/20/x-relaunches-a-rebuilt-android-app-after-year-long-effort/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-20T19:37:39.000Z",
+      "snippet": "X says the rebuilt version of its Android app is now available globally.",
+      "category": "Other",
+      "summary": "X has relaunched a rebuilt Android app after a year-long development effort.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "x"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "OpenAI is scared of open-weight models. Should the US be?",
+      "url": "https://techcrunch.com/2026/07/20/openai-is-scared-of-open-weight-models-should-the-us-be/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-20T19:33:25.000Z",
+      "snippet": "Talk of banning Chinese-made open-weight LLMs reveals the challenge of turning AI into a business.",
+      "category": "Regulation & Policy",
+      "summary": "OpenAI's concerns about open-weight models from China reveal tensions between open-source AI development and national security interests.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "open-source",
+          "policy"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "China’s AI models have Trump’s AI world at war with itself",
+      "url": "https://www.technologyreview.com/2026/07/20/1140675/chinas-ai-models-have-trumps-ai-world-at-war-with-itself/",
+      "source": "MIT Tech Review AI",
+      "publishedAt": "2026-07-20T18:00:00.000Z",
+      "snippet": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Over the weekend, several current and former advisors to President Donald Trump on AI publicly lobbed insults at the country’s leading AI companies. David Sacks, the president’s AI and crypto “czar” until…",
+      "category": "Regulation & Policy",
+      "summary": "Trump administration AI advisors clash over policy responses to advancing Chinese AI capabilities.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "china",
+          "geopolitics"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "How we measured AI writing across arXiv, and where the measurement breaks",
+      "url": "https://unslop.run/blog/measuring-ai-writing-on-arxiv",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-07-20T16:36:36.000Z",
+      "snippet": "Article URL: https://unslop.run/blog/measuring-ai-writing-on-arxiv Comments URL: https://news.ycombinator.com/item?id=48981206 Points: 219 # Comments: 152",
+      "category": "Research",
+      "summary": "Analysis of AI-generated content detection methods on arXiv reveals limitations in current measurement approaches for identifying synthetic writing.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "evaluation"
+        ],
+        "traits": [
+          "research",
+          "benchmark"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Adobe’s ‘natural look’ camera app embraces generative AI",
+      "url": "https://www.theverge.com/tech/967791/adobe-indigo-camera-app-ai-playground-update",
+      "source": "The Verge AI",
+      "publishedAt": "2026-07-20T16:00:00.000Z",
+      "snippet": "Welcome to the “what is a photo” debate, Adobe. | Image: Adobe Adobe's experimental camera app has taken an unexpected turn. After Project Indigo was launched last year to provide a \"more natural (SLR-like) look\" for iPhone photography, the Indigo camera app is now being updated with a suite of generative AI tools. And the change doesn't rely upon Adobe's own Firefly AI models. Adobe describes the new \"AI Playground\" tooling suite as an experiment and says there's a button that allows users to opt out and continue using the app as before. Free access to the suite with no sign-on requirement is",
+      "category": "Applications",
+      "summary": "Adobe's Project Indigo camera app now integrates generative AI tools for photo editing without relying on Firefly models.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "generative",
+          "multimodal",
+          "adobe"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Adobe camera app’s new feature will critique your photos using AI",
+      "url": "https://techcrunch.com/2026/07/20/adobe-camera-apps-new-feature-will-critique-your-photos-using-ai/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-20T15:45:00.000Z",
+      "snippet": "Adobe's Project Indigo can now remove all kinds of backgrounds from photos you snap using the app.",
+      "category": "Applications",
+      "summary": "Adobe's Project Indigo now includes AI-powered photo critique and background removal features.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "vision",
+          "adobe",
+          "feature"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "Mythologizing AI makes it more likely that we’ll fail to operate it well (2023)",
+      "url": "https://www.newyorker.com/science/annals-of-artificial-intelligence/there-is-no-ai",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-07-20T15:28:32.000Z",
+      "snippet": "Article URL: https://www.newyorker.com/science/annals-of-artificial-intelligence/there-is-no-ai Comments URL: https://news.ycombinator.com/item?id=48980238 Points: 70 # Comments: 108",
+      "category": "Regulation & Policy",
+      "summary": "Commentary on how mythologizing AI capabilities may hinder effective operational governance and realistic assessment of the technology.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy",
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "YouTube clarifies policies around AI slop and upsetting videos",
+      "url": "https://techcrunch.com/2026/07/20/youtube-clarifies-policies-around-ai-slop-and-upsetting-videos/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-20T15:23:06.000Z",
+      "snippet": "YouTube has updated its monetization policies to more clearly define the kinds of AI-generated and low-quality videos that can’t earn ad revenue.",
+      "category": "Regulation & Policy",
+      "summary": "YouTube updated its monetization policies to clarify restrictions on AI-generated and low-quality content.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "content"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "China’s open-weights AI strategy is winning",
+      "url": "https://werd.io/american-ai-is-locked-down-and-proprietary-its-losing/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-07-20T14:21:47.000Z",
+      "snippet": "Article URL: https://werd.io/american-ai-is-locked-down-and-proprietary-its-losing/ Comments URL: https://news.ycombinator.com/item?id=48979269 Points: 1089 # Comments: 831",
+      "category": "Open Source",
+      "summary": "Analysis argues that China's open-weights AI model strategy is gaining competitive advantage over proprietary approaches dominant in the US.",
+      "important": true,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "open-source",
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Beyond grep: The case for a context-rich AI coding harness",
+      "url": "https://arstechnica.com/ai/2026/07/beyond-grep-the-case-for-a-context-rich-ai-coding-harness/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-07-20T11:20:10.000Z",
+      "snippet": "Augment Code's Vinay Perneti talks models, harnesses, and context.",
+      "category": "Developer Tools",
+      "summary": "Augment Code's Vinay Perneti discusses building context-rich AI coding harnesses beyond simple grep-like tools.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "coding",
+          "developer"
+        ],
+        "traits": [
+          "tutorial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "China delivers a one-two punch to America’s AI dominance",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/967781/chinese-ai-models-open-source-moonshot-kimi-k3-alibaba-qwen",
+      "source": "The Verge AI",
+      "publishedAt": "2026-07-20T10:16:33.000Z",
+      "snippet": "China's leading AI companies are ramping up the pressure on Silicon Valley, as Moonshot and Alibaba unveiled models they claim can go toe-to-toe with the best from OpenAI and Anthropic at a fraction of the cost. The rapid-fire releases suggest America's lead at the AI frontier is increasingly tight, just as the technology is becoming central to national security, economic power, and geopolitical influence. The opening salvo came from Beijing-based Moonshot AI, one of China's leading AI model developers, which unveiled Kimi K3 on Friday. Moonshot claims its own testing ranks it consistently abo",
+      "category": "Model Releases",
+      "summary": "Chinese AI companies Moonshot and Alibaba launched new models claiming competitive performance with OpenAI and Anthropic at lower costs, intensifying AI competition.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "llm",
+          "china",
+          "competitive"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Safety and alignment in an era of long-horizon models",
+      "url": "https://openai.com/index/safety-alignment-long-horizon-models",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-07-20T10:00:00.000Z",
+      "snippet": "OpenAI shares lessons from deploying long-running AI models, highlighting new safety risks, observed failures, and improved safeguards through iterative deployment.",
+      "category": "AI Safety & Alignment",
+      "summary": "OpenAI shares safety lessons and improved safeguards learned from deploying long-running AI models in real-world settings.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "alignment"
+        ],
+        "traits": [],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "AI is more likely than humans to form biases when hiring",
+      "url": "https://www.technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans/",
+      "source": "MIT Tech Review AI",
+      "publishedAt": "2026-07-20T08:39:01.000Z",
+      "snippet": "The next time you apply for a job, AI may screen your résumé before any human sees it. But there’s good reason to question whether AI will judge you fairly. Researchers already know that LLMs pick up human biases from their training data. New research suggests that LLMs can also develop their own biases from…",
+      "category": "AI Safety & Alignment",
+      "summary": "Research demonstrates that AI language models can develop their own hiring biases independently of training data, beyond mere reflection of human bias.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "bias"
+        ],
+        "traits": [
+          "benchmark"
+        ],
+        "entities": []
+      }
+    },
     {
       "title": "GraphDx: A Cost-Aware Knowledge-Enhanced Multi-Agent Framework for Sequential Diagnosis",
       "url": "https://arxiv.org/abs/2607.15280",
@@ -14224,274 +14949,98 @@
         ],
         "entities": []
       }
-    },
-    {
-      "title": "The 100k Whys of AI",
-      "url": "https://lcamtuf.substack.com/p/the-100000-whys-of-ai",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-06-21T05:45:21.000Z",
-      "snippet": "Article URL: https://lcamtuf.substack.com/p/the-100000-whys-of-ai Comments URL: https://news.ycombinator.com/item?id=48616017 Points: 105 # Comments: 54",
-      "category": "Research",
-      "summary": "An in-depth exploration of fundamental questions about AI systems, examining the reasoning and interpretability challenges underlying modern AI models.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "interpretability",
-          "reasoning"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Don’t use AI to write things that you present as your own work",
-      "url": "https://www.satisfice.com/blog/archives/488148",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-06-21T04:50:46.000Z",
-      "snippet": "Article URL: https://www.satisfice.com/blog/archives/488148 Comments URL: https://news.ycombinator.com/item?id=48615776 Points: 93 # Comments: 84",
-      "category": "Other",
-      "summary": "Discussion of ethical considerations around using AI to generate content and presenting it as one's own work.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety",
-          "ethics"
-        ],
-        "traits": [
-          "policy"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Building reliable agentic AI systems",
-      "url": "https://martinfowler.com/articles/reliable-llm-bayer.html",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-06-21T04:28:39.000Z",
-      "snippet": "Article URL: https://martinfowler.com/articles/reliable-llm-bayer.html Comments URL: https://news.ycombinator.com/item?id=48615680 Points: 99 # Comments: 20",
-      "category": "Agent Frameworks",
-      "summary": "Article exploring best practices and reliability patterns for building agentic AI systems.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "reliability"
-        ],
-        "traits": [
-          "tutorial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "When I reject AI code even if it works",
-      "url": "https://vinibrasil.com/when-i-reject-ai-code-even-if-it-works/",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-06-21T00:58:13.000Z",
-      "snippet": "Article URL: https://vinibrasil.com/when-i-reject-ai-code-even-if-it-works/ Comments URL: https://news.ycombinator.com/item?id=48614631 Points: 175 # Comments: 99",
-      "category": "Developer Tools",
-      "summary": "Developer discusses criteria for rejecting AI-generated code despite functional correctness, emphasizing code quality and maintainability.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "coding",
-          "quality"
-        ],
-        "traits": [
-          "tutorial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Signal’s Meredith Whittaker wants you to remember that AI chatbots ‘are not your friends’",
-      "url": "https://techcrunch.com/2026/06/20/signals-meredith-whittaker-wants-you-to-remember-that-ai-chatbots-are-not-your-friends/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-20T20:32:29.000Z",
-      "snippet": "\"These are not your friends. These are not conscious beings. These are not sentient interlocutors.”",
-      "category": "AI Safety & Alignment",
-      "summary": "Signal's Meredith Whittaker warns against anthropomorphizing AI chatbots and treating them as sentient entities.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety",
-          "ethics"
-        ],
-        "traits": [
-          "policy"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "In the Weights is your new AI-centric vanity search",
-      "url": "https://techcrunch.com/2026/06/20/in-the-weights-is-your-new-ai-centric-vanity-search/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-20T19:41:11.000Z",
-      "snippet": "So ... what's your In the Weights score?",
-      "category": "Applications",
-      "summary": "Introduction to 'In the Weights,' a vanity search tool for AI-related information.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "application",
-          "search",
-          "tool"
-        ],
-        "traits": [],
-        "entities": []
-      }
-    },
-    {
-      "title": "The Atlantic created a searchable database of the music used to train AI",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/953183/the-atlantic-searchable-database-music-ai-training-data",
-      "source": "The Verge AI",
-      "publishedAt": "2026-06-20T18:46:48.000Z",
-      "snippet": "Atlantic reporter Alex Reisner recently uncovered four datasets of music being used to train AI models and made them fully searchable for the public. Two of the sets are absolutely enormous at 12 million and 9 million tracks. The other two are much smaller, but still represent a significant amount of training data at over 100,000 songs each. According to Reisner, the sets have been downloaded thousands of times and, while it's impossible to know exactly who has used them, Google and Stability have both confirmed they have in research papers. Some of the sources, like the Free Music Archive dat",
-      "category": "Open Source",
-      "summary": "The Atlantic created a searchable public database of music datasets used to train AI models, totaling millions of tracks.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "training-data",
-          "transparency"
-        ],
-        "traits": [
-          "open-source"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Nobel laureate John Jumper is leaving DeepMind for rival Anthropic",
-      "url": "https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-20T16:39:57.000Z",
-      "snippet": "Jumper isn't the only big name leaving Google DeepMind.",
-      "category": "Business & Funding",
-      "summary": "Nobel laureate John Jumper transitions from DeepMind to Anthropic, signaling continued talent migration in AI research.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "hiring"
-        ],
-        "traits": [],
-        "entities": [
-          "anthropic",
-          "deepmind"
-        ]
-      }
-    },
-    {
-      "title": "Temporary Cloudflare accounts for AI agents",
-      "url": "https://blog.cloudflare.com/temporary-accounts/",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-06-20T11:19:05.000Z",
-      "snippet": "Article URL: https://blog.cloudflare.com/temporary-accounts/ Comments URL: https://news.ycombinator.com/item?id=48608394 Points: 206 # Comments: 110",
-      "category": "Agent Frameworks",
-      "summary": "Cloudflare introduces temporary account capabilities designed to support AI agent automation workflows.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "infrastructure"
-        ],
-        "traits": [
-          "release"
-        ],
-        "entities": []
-      }
     }
   ],
   "feedHealth": {
     "The Verge AI": {
-      "lastSuccess": "2026-07-20T08:39:34.263Z",
+      "lastSuccess": "2026-07-21T08:07:25.888Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "TechCrunch AI": {
-      "lastSuccess": "2026-07-20T08:39:34.343Z",
+      "lastSuccess": "2026-07-21T08:07:25.965Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Ars Technica AI": {
-      "lastSuccess": "2026-07-20T08:39:34.597Z",
+      "lastSuccess": "2026-07-21T08:07:26.223Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "VentureBeat AI": {
-      "lastSuccess": "2026-07-20T08:39:35.063Z",
+      "lastSuccess": "2026-07-21T08:07:26.598Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Anthropic News": {
       "lastSuccess": null,
       "lastError": "Status code 404",
-      "consecutiveFailures": 31
+      "consecutiveFailures": 32
     },
     "OpenAI Blog": {
-      "lastSuccess": "2026-07-20T08:39:40.943Z",
+      "lastSuccess": "2026-07-21T08:07:28.302Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Google DeepMind": {
-      "lastSuccess": "2026-07-20T08:39:41.314Z",
+      "lastSuccess": "2026-07-21T08:07:28.663Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "MIT Tech Review AI": {
-      "lastSuccess": "2026-07-20T08:39:41.407Z",
+      "lastSuccess": "2026-07-21T08:07:28.877Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "arXiv cs.AI": {
-      "lastSuccess": "2026-07-20T08:39:41.584Z",
+      "lastSuccess": "2026-07-21T08:07:29.122Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Hacker News (AI)": {
-      "lastSuccess": "2026-07-20T08:39:45.212Z",
+      "lastSuccess": "2026-07-21T08:07:36.662Z",
       "lastError": null,
       "consecutiveFailures": 0
     }
   },
   "brief": {
-    "generatedAt": "2026-07-20T08:40:08.035Z",
+    "generatedAt": "2026-07-21T08:08:07.935Z",
     "bullets": [
       {
-        "text": "A new study warns AI advice erodes critical thinking, making users less accurate but more confident—raising overreliance concerns as AI adoption accelerates across sectors.",
+        "text": "China intensified its AI challenge as Moonshot and Alibaba launched models rivaling OpenAI and Anthropic at lower cost, with analysts arguing its open-weights strategy is winning—fueling clashes among Trump's AI advisors and OpenAI's own anxieties.",
         "refs": [
-          "https://thenextweb.com/news/ai-advice-suppresses-critical-thinking-wrong-answers-study"
+          "https://werd.io/american-ai-is-locked-down-and-proprietary-its-losing/",
+          "https://www.theverge.com/ai-artificial-intelligence/967781/chinese-ai-models-open-source-moonshot-kimi-k3-alibaba-qwen",
+          "https://techcrunch.com/2026/07/20/openai-is-scared-of-open-weight-models-should-the-us-be/",
+          "https://www.technologyreview.com/2026/07/20/1140675/chinas-ai-models-have-trumps-ai-world-at-war-with-itself/"
         ]
       },
       {
-        "text": "Nvidia's Jensen Huang wraps a Japan visit with ecosystem-spanning deals, while Moonshot AI suspends new Kimi K3 subscriptions amid overwhelming demand, signaling surging global AI infrastructure appetite.",
+        "text": "Financial scrutiny mounted as five US tech giants were revealed to hold $1.65T in hidden debt from opaque AI funding arrangements, raising transparency concerns over the AI infrastructure buildout.",
         "refs": [
-          "https://techcrunch.com/2026/07/19/what-to-watch-for-after-jensen-huangs-japan-visit/",
-          "https://twitter.com/kimi_moonshot/status/2078855608565207130"
+          "https://asia.nikkei.com/business/technology/five-us-tech-giants-hidden-debts-soar-to-1.65tn-on-opaque-ai-funding"
         ]
       },
       {
-        "text": "Apple's lawsuit against OpenAI could complicate the company's hardware ambitions and public-market path, per new analysis.",
+        "text": "AI's legal reckoning over music deepened: Anthropic's $1.5B copyright settlement won final approval, while Sony Music sued AI generator Udio over 30,000 allegedly infringed songs.",
         "refs": [
-          "https://techcrunch.com/2026/07/19/can-an-apple-lawsuit-derail-openais-hardware-plans/"
+          "https://techcrunch.com/2026/07/20/anthropics-landmark-1-5b-copyright-settlement-is-approved/",
+          "https://www.theverge.com/tech/968375/sony-udio-lawsuit-songs-ai-copyright"
         ]
       },
       {
-        "text": "Healthcare agents advanced: Cura 1T, trained via human-gated self-evolution, targets clinical reasoning and EHR integration, while GraphDx offers cost-aware multi-agent sequential diagnosis.",
+        "text": "Political and public backlash grew as voters punish politicians over AI policy and Trump's latest AI czar resigned following David Sacks' departure, signaling turmoil in US AI governance.",
         "refs": [
-          "https://arxiv.org/abs/2607.15314",
-          "https://arxiv.org/abs/2607.15280"
+          "https://fortune.com/2026/07/14/voters-ai-backlash-politicians-lose-seats/",
+          "https://techcrunch.com/2026/07/20/trumps-latest-ai-czar-has-already-resigned/"
         ]
       },
       {
-        "text": "Creative-industry skepticism grows as director Christopher Nolan brands AI a 'Trojan horse,' even as critics reluctantly praise Suno-generated music and firms like Perforce monetize AI-narrated training.",
+        "text": "OpenAI detailed safety safeguards for long-horizon models, while new research warned AI systems can independently develop hiring biases beyond their training data, and multi-agent systems face planning-phase prompt-injection attacks.",
         "refs": [
-          "https://techcrunch.com/2026/07/19/odyssey-director-christopher-nolan-calls-ai-an-obvious-trojan-horse/",
-          "https://www.theverge.com/entertainment/967678/1010benja-semiramis-dream-suno-ai-music",
-          "https://training.perforce.com/learn/courses/535/p4-helix-core-user-basic"
+          "https://openai.com/index/safety-alignment-long-horizon-models",
+          "https://www.technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans/",
+          "https://arxiv.org/abs/2607.16199"
         ]
       }
     ]
