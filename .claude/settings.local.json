@@ -8,7 +8,27 @@
       "mcp__mcp-registry__search_mcp_registry",
       "PowerShell(Get-ChildItem *)",
       "PowerShell(head *)",
-      "PowerShell(Get-Item *)"
+      "PowerShell(Get-Item *)",
+      "Bash(Get-ChildItem -Path \"f:\\\\project\\\\AI-news\" -Force)",
+      "Bash(Select-Object Name, PSIsContainer)",
+      "Bash(npx tsc *)",
+      "Bash(ls \"/c/Users/Marco/.claude/skills/adversarial-review/\")",
+      "Bash(node -e ' *)",
+      "Bash(cd /d F:\\\\project\\\\lathe)",
+      "Bash(go build *)",
+      "Bash(F:/project/lathe/lathe.exe version *)",
+      "Bash(erl -version)",
+      "Bash(erl -eval \"io:format\\(\\\\\"~s~n\\\\\", [erlang:system_info\\(otp_release\\)]\\), halt\\(\\).\" -noshell)",
+      "Bash(mkdir -p \"F:/tmp/lathe-3d-slicer-erlang\")",
+      "Bash(F:/project/lathe/lathe.exe voice *)",
+      "WebFetch(domain:github.com)",
+      "Bash(mv public/news.json.bak public/news.json)",
+      "Bash(node -e \"const d=JSON.parse\\(require\\('fs'\\).readFileSync\\('public/news.json','utf8'\\)\\);console.log\\('articles:',d.articles.length,'tagged:',d.articles.filter\\(a=>a.tags\\).length\\);\")",
+      "Bash(git commit -m ' *)",
+      "Skill(claude-api)",
+      "Skill(claude-api:*)",
+      "PowerShell(npm run build 2>&1)",
+      "WebSearch"
     ]
   }
 }
