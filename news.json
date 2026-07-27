@@ -1,22 +1,441 @@
 {
-  "generatedAt": "2026-07-26T08:07:30.452Z",
+  "generatedAt": "2026-07-27T09:29:32.652Z",
   "daysBack": 3,
   "categories": [
+    "Agent Frameworks",
+    "AI Safety & Alignment",
+    "Hardware & Compute",
+    "Research",
+    "Applications",
     "Business & Funding",
     "Regulation & Policy",
     "Developer Tools",
     "Other",
-    "Hardware & Compute",
     "Open Source",
     "Model Releases",
-    "Applications",
-    "Research",
-    "Agent Frameworks",
-    "AI Safety & Alignment",
     "MCP",
     "Evaluation"
   ],
   "articles": [
+    {
+      "title": "FlowEvo: Self-Evolving Agents through the Co-Evolution of Workflows and Executable Skills",
+      "url": "https://arxiv.org/abs/2607.21596",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-27T04:00:00.000Z",
+      "snippet": "arXiv:2607.21596v1 Announce Type: new Abstract: Large language model agents increasingly solve complex tasks by constructing inference-time workflows that combine reasoning, tool use, and code execution. While such workflows enable flexible problem solving, the useful procedures discovered during execution are often transient: they help solve the current task but are not retained in a form that can systematically benefit future tasks. We present FlowEvo, a training-free framework that compiles successful traces into reusable skill records. Each record pairs a callable artifact with auxiliary s",
+      "category": "Agent Frameworks",
+      "summary": "FlowEvo introduces a training-free framework that automatically converts successful agent execution traces into reusable skills, enabling LLM agents to retain and build upon discovered procedures.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "inference"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Securing Multimodal AI through Internal Information Decomposition",
+      "url": "https://arxiv.org/abs/2607.21600",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-27T04:00:00.000Z",
+      "snippet": "arXiv:2607.21600v1 Announce Type: new Abstract: Multimodal large language models introduce attack surfaces absent in unimodal systems: adversaries can distribute malicious intent across modalities to evade unimodal safeguards. This motivates using cross-modal consistency as a detection signal rather than inspecting each modality in isolation. Our key observation is that benign inputs induce compatible predictive behavior from text-only and vision-only reasoning that stabilizes when fused, whereas adversarial manipulation disrupts this consistency, causing abnormal multimodal behavior. Existing",
+      "category": "AI Safety & Alignment",
+      "summary": "Research demonstrates how multimodal models can be secured by detecting adversarial attacks through cross-modal consistency checks rather than inspecting each modality separately.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "multimodal"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Transferable Latency Prediction for Fast LLM Screening on Heterogeneous Edge Devices",
+      "url": "https://arxiv.org/abs/2607.21602",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-27T04:00:00.000Z",
+      "snippet": "arXiv:2607.21602v1 Announce Type: new Abstract: Accurate latency prediction is critical for deploying large language models (LLMs) on heterogeneous edge devices, where inference latency is affected by model architecture, prompt behavior, runtime backend, hardware utilization, dynamic voltage and frequency scaling (DVFS), and thermal variation. This paper presents a runtime-aware latency prediction framework for deployment-oriented LLM selection. The framework represents each inference request as a hardware-runtime-model-prompt configuration, separates inference into prefill and decode phases, ",
+      "category": "Hardware & Compute",
+      "summary": "Proposes runtime-aware latency prediction framework for deploying LLMs on heterogeneous edge devices by modeling configuration-specific inference dynamics.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference",
+          "hardware"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "AgentKVShift: Efficient KV Cache Reuse for Agentic Memory Systems",
+      "url": "https://arxiv.org/abs/2607.21604",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-27T04:00:00.000Z",
+      "snippet": "arXiv:2607.21604v1 Announce Type: new Abstract: Memory-augmented LLM agents maintain context across hundreds of interactions through agentic memory systems that actively curate retrieved content with LLM-generated metadata such as summaries, keywords, and tags. From an inference cost standpoint, every retrieval triggers a full re-encoding of these structured memory units into Key-Value (KV) states, which dominates prefill latency. Existing training-free KV reuse methods mitigate this by selectively recomputing a small fraction of tokens, but were designed for RAG-style raw passages and degrade",
+      "category": "Agent Frameworks",
+      "summary": "AgentKVShift optimizes KV cache reuse in memory-augmented LLM agents by efficiently caching structured memory metadata, reducing prefill latency for agent systems.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "inference"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "TILT: Improving Compositional Generation in Diffusion Models with a Model-Intrinsic Reward",
+      "url": "https://arxiv.org/abs/2607.21606",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-27T04:00:00.000Z",
+      "snippet": "arXiv:2607.21606v1 Announce Type: new Abstract: Recent advances in powerful text-to-image generation models have made it increasingly important to develop test-time methods that modify the sampling trajectory to produce images more faithful to complex compositional prompts. We present TILT, a training-free framework for compositional text-to-image generation via test-time reward alignment. We interpret compositional failures as overlap modes between joint and single-concept distributions, and define a reward that favors samples where all concepts are jointly present. This reward is intrinsic t",
+      "category": "Research",
+      "summary": "TILT presents a training-free test-time optimization method for improving compositional text-to-image generation through intrinsic reward alignment.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal",
+          "inference"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Coupled Hierarchical Search over Topology and Execution for Agentic Workflow Synthesis",
+      "url": "https://arxiv.org/abs/2607.21609",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-27T04:00:00.000Z",
+      "snippet": "arXiv:2607.21609v1 Announce Type: new Abstract: Although structured workflows empower Large Language Models (LLMs) to tackle complex problems, automating their creation is severely hindered by a vast combinatorial search space, frequently resulting in inflexible and resource-heavy offline training dependencies. To address this, we conceptualize workflow generation as an intertwined topology-and-execution search paradigm, where the broader topological layer dictates subtask boundaries and lower-level execution outcomes actively reshape the topology itself. Building on this foundation, we introd",
+      "category": "Agent Frameworks",
+      "summary": "Proposes coupled topology-and-execution search paradigm for automated agentic workflow synthesis, eliminating offline training dependencies through intertwined search space exploration.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "SCOPE and SCION: A Benchmark and an Auditable Reference Pipeline for Schema Induction and Fusion from Text",
+      "url": "https://arxiv.org/abs/2607.21610",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-27T04:00:00.000Z",
+      "snippet": "arXiv:2607.21610v1 Announce Type: new Abstract: Schema graphs are an upstream bottleneck of schema-grounded information extraction and knowledge graph construction, yet most extraction systems assume the schema is already available. We introduce SCOPE (Schema Construction and Ontology-induction Pipeline Evaluation), a train-text-only benchmark for corpus-to-schema induction and optional schema fusion from raw text, built from 24 public information extraction sources (15 RE and 9 EE) normalized into evaluation-only gold schema graphs; its core event-extraction target covers event types and with",
+      "category": "Research",
+      "summary": "Introduces SCOPE benchmark and SCION pipeline for schema induction and fusion from raw text, addressing upstream bottleneck in schema-grounded information extraction tasks.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "evaluation"
+        ],
+        "traits": [
+          "research",
+          "benchmark"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Procedural Knowledge Is Not Low-Rank: Why LoRA Fails to Internalize Multi-Step Procedures",
+      "url": "https://arxiv.org/abs/2607.21612",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-27T04:00:00.000Z",
+      "snippet": "arXiv:2607.21612v1 Announce Type: new Abstract: Parameter-efficient fine-tuning methods like LoRA have become the default for adapting large language models, succeeding across instruction following, style transfer, and factual adaptation. We show that for procedural knowledge--the ability to follow multi-step procedures with conditional branching through to terminal states--LoRA fails to match full fine-tuning at the ranks where it retains its efficiency advantage. In a systematic ablation (r = 16--128) on a procedural travel booking task (14 nodes), all LoRA configurations fail uniformly (tas",
+      "category": "Research",
+      "summary": "Demonstrates that LoRA parameter-efficient fine-tuning fails for procedural knowledge tasks requiring multi-step procedures with branching, suggesting procedural knowledge requires full-rank adaptation.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "fine-tuning",
+          "training"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "The Hard Decision Layer: Evidence for Committed Inference in Transformers",
+      "url": "https://arxiv.org/abs/2607.21613",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-27T04:00:00.000Z",
+      "snippet": "arXiv:2607.21613v1 Announce Type: new Abstract: We investigate where and how transformer-based language models commit to predictions in multiple-choice question answering. We identify the _Hard Decision Layer_ (HDL), a natural architectural property where answer option rankings stabilize abruptly during inference. Empirical validation across four language models (Qwen, Llama, Granite, Mistral) and four benchmark datasets demonstrates consistent HDL emergence without learned routing policies. We also show that the HDL is invariant to fine-tuning. Our results reveal striking accuracy improvement",
+      "category": "Research",
+      "summary": "Identifies the Hard Decision Layer (HDL) in transformers where answer rankings stabilize during inference, revealing architectural properties consistent across Qwen, Llama, Granite, and Mistral models.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "interpretability",
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Household Movement Detection in Mixed-Format Occupancy Data Using LLM-Based Entity Resolution",
+      "url": "https://arxiv.org/abs/2607.21614",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-27T04:00:00.000Z",
+      "snippet": "arXiv:2607.21614v1 Announce Type: new Abstract: Entity resolution (ER) typically relies on pairwise similarity comparisons between records, which limits its ability to capture indirect relationships present in demographic occupancy data. An important indirect pattern arises from household movement, where multiple individuals relocate together across addresses, but detecting such patterns is difficult due to mixed-format records, noise, duplication, and the absence of stable identifiers. This paper proposes an AI-enhanced framework for detecting indirect entity links associated with household m",
+      "category": "Applications",
+      "summary": "Proposes LLM-based entity resolution framework for detecting household movement patterns in mixed-format occupancy data by capturing indirect demographic relationships.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm",
+          "rag"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Lost in Context: Addressing Context Anxiety in Large Language Models",
+      "url": "https://arxiv.org/abs/2607.21616",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-27T04:00:00.000Z",
+      "snippet": "arXiv:2607.21616v1 Announce Type: new Abstract: Conventional wisdom suggests that reasoning models fail when problems exceed their capabilities. However, we find that frontier reasoning models sometimes possess the necessary capabilities to solve problems but fail due to premature self-doubt -- a phenomenon informally known as context anxiety. We provide the first systematic study of context anxiety, demonstrating that it arises, in part, from a model's inability to accurately estimate the tokens required to complete a task. We also show that context anxiety leads to material efficiency losses",
+      "category": "Research",
+      "summary": "First systematic study of 'context anxiety' in reasoning models showing they fail due to premature self-doubt and inaccurate token estimation, not capability limits.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning",
+          "interpretability"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Do VLMs Read or Rewrite? On Transcription Faithfulness in Vision-Language Models",
+      "url": "https://arxiv.org/abs/2607.21617",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-27T04:00:00.000Z",
+      "snippet": "arXiv:2607.21617v1 Announce Type: new Abstract: Vision Language Models (VLMs) are increasingly used in place of traditional OCR pipelines for document understanding. In this paper, we show they do not always act as faithful transcribers: when text is imperfect, they often tend to rewrite it into a more plausible form - a behavior that clean-text OCR benchmarks cannot detect. We introduce FaithC4, a multilingual perturbation benchmark of 1,455 single-page documents (English, Chinese, Korean) with three perturbation families: scramble, random substitution, and visually similar substitution. We u",
+      "category": "Research",
+      "summary": "Shows VLMs often rewrite rather than faithfully transcribe imperfect text, introducing FaithC4 multilingual perturbation benchmark to detect this behavior.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "vision",
+          "evaluation"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "LeafData: An Agentic System for Data Migration",
+      "url": "https://arxiv.org/abs/2607.21618",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-27T04:00:00.000Z",
+      "snippet": "arXiv:2607.21618v1 Announce Type: new Abstract: Modern data migration relies on JSON configuration to define data connection, pipeline logic, and orchestration behavior. This requires domain knowledge from users and is time-consuming and error-prone. In this paper, we present LeafData, an agentic system that converts user intent into validated and executable JSON configuration for data migration. Specifically, LeafData comprises a frontend chatbot and the backend service. The chatbot incrementally collects required information from users and performs schema-driven validation, while the backend",
+      "category": "Applications",
+      "summary": "LeafData is an agentic system that converts user intent into validated JSON configurations for data migration, combining chatbot frontend with schema-driven backend validation.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "applications"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "From Profiles to Steering Vectors: Global Sparse Priors and Local Semantic Calibration for Personalized Text Generation",
+      "url": "https://arxiv.org/abs/2607.21620",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-27T04:00:00.000Z",
+      "snippet": "arXiv:2607.21620v1 Announce Type: new Abstract: Personalized text generation requires models to capture user-specific writing styles from historical data. Existing approaches based on retrieval, parameter-efficient fine-tuning, or activation steering either introduce inference and storage overhead or struggle to separate stylistic signals from semantic content. We propose GLASS, a training-free framework for personalized generation via Global-Local Activation Steering with Sparse priors. GLASS uses sparse autoencoders to extract a global user-style prior from historical responses and construct",
+      "category": "Research",
+      "summary": "GLASS framework enables training-free personalized text generation by combining sparse autoencoders for global style extraction with local activation steering.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "fine-tuning",
+          "inference"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "FBLayout: Optimizing Memory Layout for Efficient LLM Finetuning on Mobile GPUs",
+      "url": "https://arxiv.org/abs/2607.21624",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-07-27T04:00:00.000Z",
+      "snippet": "arXiv:2607.21624v1 Announce Type: new Abstract: Transformer-based models have enabled unprecedented capabilities across language, vision, and multimodal tasks. On-device fine-tuning of transformer models offers a privacy-preserving path to personalized AI, yet remains inefficient on mobile GPUs due to severe memory constraints and frequent layout transformations in attention mechanism during training. Existing mobile training frameworks either use unified layouts for forward and backward passes -- leading to fragmented memory access and poor GPU utilization during backpropagation -- or rely on",
+      "category": "Hardware & Compute",
+      "summary": "FBLayout optimizes memory layout patterns for efficient LLM fine-tuning on mobile GPUs by reducing fragmentation and improving attention mechanism performance during training.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "training",
+          "hardware"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Are brain waves the next unlock for physical AI?",
+      "url": "https://techcrunch.com/2026/07/26/are-brain-waves-the-next-unlock-for-physical-ai/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-27T00:19:14.000Z",
+      "snippet": "Forget YouTube videos—frontier physical AI models need multiple camera angles, dense annotation, and soon, brain wave readings.",
+      "category": "Research",
+      "summary": "Study explores incorporating brain wave readings alongside multimodal inputs to improve physical AI model training and performance beyond traditional video-based approaches.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "robotics",
+          "multimodal"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Making sense of the panic over Chinese AI",
+      "url": "https://techcrunch.com/2026/07/26/making-sense-of-the-panic-over-chinese-ai/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-26T19:40:57.000Z",
+      "snippet": "On the latest episode of Equity, we discussed why Moonshot AI's Kimi seemed to panic Silicon Valley and Wall Street.",
+      "category": "Business & Funding",
+      "summary": "Discussion of market reaction to Moonshot AI's Kimi model release and concerns about competitive Chinese AI developments among Silicon Valley investors.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy",
+          "commercial"
+        ],
+        "entities": [
+          "qwen"
+        ]
+      }
+    },
+    {
+      "title": "Hugging Face CEO calls for ‘radical transparency’ after ‘unprecedented’ OpenAI hack",
+      "url": "https://techcrunch.com/2026/07/26/hugging-face-ceo-calls-for-radical-transparency-after-unprecedented-openai-hack/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-07-26T16:33:13.000Z",
+      "snippet": "\"The first autonomous agent cyberattack is an unprecedented event. It deserves an unprecedented response!\"",
+      "category": "Regulation & Policy",
+      "summary": "Hugging Face CEO calls for transparency and unprecedented response measures following reported autonomous agent cyberattack on OpenAI, highlighting emerging security vulnerabilities.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "This July I Was Fired from Simple AI (A Deeply YC Company)",
+      "url": "https://andys.blog/this-july-i-was-fired-from-simple-ai/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-07-26T16:14:46.000Z",
+      "snippet": "Article URL: https://andys.blog/this-july-i-was-fired-from-simple-ai/ Comments URL: https://news.ycombinator.com/item?id=49059587 Points: 52 # Comments: 122",
+      "category": "Business & Funding",
+      "summary": "Personal account of employment termination at Simple AI, a Y Combinator-backed startup, discussing workplace practices and company culture.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "incident",
+          "commercial",
+          "funding"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "The New AI Superpowers: Focus and Followthrough",
+      "url": "https://www.rickmanelius.com/p/the-new-ai-superpowers-focus-and",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-07-26T13:13:03.000Z",
+      "snippet": "Article URL: https://www.rickmanelius.com/p/the-new-ai-superpowers-focus-and Comments URL: https://news.ycombinator.com/item?id=49057877 Points: 199 # Comments: 64",
+      "category": "Applications",
+      "summary": "Essay discusses emerging AI capabilities in focus and task completion as key competitive advantages for AI systems in production environments.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "applications",
+          "reasoning"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "Terence Tao: Mathematics in the Age of AI [pdf]",
+      "url": "https://teorth.github.io/tao-web/slides/age-of-ai-icm-2026.pdf",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-07-26T10:32:35.000Z",
+      "snippet": "Article URL: https://teorth.github.io/tao-web/slides/age-of-ai-icm-2026.pdf Comments URL: https://news.ycombinator.com/item?id=49056620 Points: 124 # Comments: 49",
+      "category": "Research",
+      "summary": "Terence Tao's presentation on mathematics in the age of AI, exploring implications and opportunities for mathematical research and reasoning with AI systems.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning",
+          "llm"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
     {
       "title": "Monday.com is the latest tech company to blame AI for layoffs — here are 20 others",
       "url": "https://techcrunch.com/2026/07/25/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/",
@@ -186,6 +605,46 @@
         ],
         "traits": [
           "open-source"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "The AI jobs apocalypse probably isn't coming anytime soon",
+      "url": "https://www.theguardian.com/technology/2026/jul/25/ai-jobs-apocalypse-human-labor",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-07-25T14:41:06.000Z",
+      "snippet": "Article URL: https://www.theguardian.com/technology/2026/jul/25/ai-jobs-apocalypse-human-labor Comments URL: https://news.ycombinator.com/item?id=49047969 Points: 53 # Comments: 90",
+      "category": "Business & Funding",
+      "summary": "Analysis argues that widespread AI-driven job displacement is unlikely in the near term despite rapid capability improvements, citing structural economic factors.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "applications"
+        ],
+        "traits": [
+          "policy",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "The AI Productivity Illusion",
+      "url": "https://www.hardresetmedia.com/p/the-ai-productivity-illusion",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-07-25T13:43:33.000Z",
+      "snippet": "Article URL: https://www.hardresetmedia.com/p/the-ai-productivity-illusion Comments URL: https://news.ycombinator.com/item?id=49047526 Points: 69 # Comments: 26",
+      "category": "Applications",
+      "summary": "Critical examination of AI productivity claims, questioning whether measured gains represent genuine productivity improvements or measurement artifacts.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "applications"
+        ],
+        "traits": [
+          "commercial",
+          "research"
         ],
         "entities": []
       }
@@ -14922,436 +15381,96 @@
         ],
         "entities": []
       }
-    },
-    {
-      "title": "DSpark: Speculative decoding accelerates LLM inference [pdf]",
-      "url": "https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-06-27T09:18:52.000Z",
-      "snippet": "Article URL: https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf Comments URL: https://news.ycombinator.com/item?id=48696585 Points: 756 # Comments: 318",
-      "category": "Research",
-      "summary": "DSpark introduces speculative decoding techniques to accelerate LLM inference, offering significant performance improvements for practical deployment.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "inference"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Trump Admin releases Anthropic Mythos to be used by more than 100 US companies, agencies",
-      "url": "https://techcrunch.com/2026/06/26/trump-admin-releases-anthropic-mythos-to-be-used-by-more-than-100-us-companies-agencies/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-27T01:01:37.000Z",
-      "snippet": "Over 100 companies and government agencies are reportedly authorized to use Mythos 5, including their non-American employees.",
-      "category": "Regulation & Policy",
-      "summary": "The Trump administration authorized over 100 U.S. companies and agencies to use Anthropic's Mythos 5 model, including non-American employees.",
-      "important": true,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "policy"
-        ],
-        "entities": [
-          "claude"
-        ]
-      }
-    },
-    {
-      "title": "Anthropic&#8217;s Mythos 5 is back",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/958458/anthropic-mythos-5-is-back-trump-negotiations",
-      "source": "The Verge AI",
-      "publishedAt": "2026-06-27T00:33:44.000Z",
-      "snippet": "After a rollercoaster negotiation process with the Trump administration that dragged on for two weeks, Anthropic's Mythos 5 is finally back in action - at least, somewhat, for a select group of organizations, according to a letter from the government to Anthropic that was viewed by The Verge. Fable 5, however - the public-facing Mythos-class model - appears to still be in limbo, with no apparent timeline for a rollout agreement. The letter, dated June 26th and sent by Commerce Secretary Howard Lutnick to Anthropic co-founder Tom Brown, who had been recently leading negotiations, states that th",
-      "category": "Regulation & Policy",
-      "summary": "After negotiations with the Trump administration, Anthropic's Mythos 5 is cleared for use by select U.S. organizations, though public-facing Fable 5 remains in limbo.",
-      "important": true,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "policy"
-        ],
-        "entities": [
-          "claude"
-        ]
-      }
-    },
-    {
-      "title": "U.S. allows Anthropic to release Mythos AI to ‘trusted’ US organizations",
-      "url": "https://www.semafor.com/article/06/27/2026/us-releases-powerful-anthropic-model-mythos-to-some-us-companies",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-06-26T22:48:28.000Z",
-      "snippet": "https://archive.md/ArXuF https://www.nbcnews.com/tech/tech-news/us-government-gives-a... Comments URL: https://news.ycombinator.com/item?id=48692995 Points: 546 # Comments: 759",
-      "category": "Regulation & Policy",
-      "summary": "The U.S. government permits Anthropic to release Mythos to 'trusted' American organizations following a contentious approval process.",
-      "important": true,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "policy"
-        ],
-        "entities": [
-          "claude"
-        ]
-      }
-    },
-    {
-      "title": "AI in mathematics is forcing big questions",
-      "url": "https://spectrum.ieee.org/ai-in-mathematics",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-06-26T22:36:51.000Z",
-      "snippet": "Article URL: https://spectrum.ieee.org/ai-in-mathematics Comments URL: https://news.ycombinator.com/item?id=48692883 Points: 201 # Comments: 169",
-      "category": "Research",
-      "summary": "AI's growing role in mathematics research is raising fundamental questions about the nature of mathematical proof, understanding, and validation.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "reasoning"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "South Korea plans to train entire military as \"drone warriors\"",
-      "url": "https://arstechnica.com/ai/2026/06/south-korea-plans-to-train-entire-military-as-drone-warriors/",
-      "source": "Ars Technica AI",
-      "publishedAt": "2026-06-26T22:19:05.000Z",
-      "snippet": "Half-million strong military will train on drones as “universal combat tool.”",
-      "category": "Applications",
-      "summary": "South Korea plans to train its entire half-million-strong military as 'drone warriors,' integrating autonomous systems as universal combat tools.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "robotics"
-        ],
-        "traits": [
-          "policy"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "NYT slams Microsoft for building copyright-infringing supercomputer for OpenAI",
-      "url": "https://arstechnica.com/tech-policy/2026/06/microsoft-built-supercomputer-to-help-openai-infringe-copyrights-nyt-alleged/",
-      "source": "Ars Technica AI",
-      "publishedAt": "2026-06-26T20:04:55.000Z",
-      "snippet": "NYT shifts OpenAI/Microsoft copyright claims after SCOTUS ruling against Sony.",
-      "category": "Regulation & Policy",
-      "summary": "The New York Times alleges Microsoft built a copyright-infringing supercomputer for OpenAI, escalating legal disputes after a SCOTUS ruling against Sony.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "policy"
-        ],
-        "entities": [
-          "gpt"
-        ]
-      }
-    },
-    {
-      "title": "OpenAI limits GPT-5.6 rollout after government request, says restrictions shouldn’t be the norm",
-      "url": "https://techcrunch.com/2026/06/26/openai-limits-gpt-5-6-rollout-after-government-request-says-restrictions-shouldnt-be-the-norm/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-26T18:32:14.000Z",
-      "snippet": "“We don’t believe this kind of government access process should become the long-term default,” says OpenAI. “It keeps the best tools from users, developers, enterprises, cyber defenders, and global partners who need them.”",
-      "category": "Regulation & Policy",
-      "summary": "OpenAI limits GPT-5.6 rollout at government request, arguing such restrictions shouldn't become standard practice and hinder AI access globally.",
-      "important": true,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "policy"
-        ],
-        "entities": [
-          "gpt"
-        ]
-      }
-    },
-    {
-      "title": "OpenAI poaches Uber India chief to lead its biggest market outside the US",
-      "url": "https://techcrunch.com/2026/06/26/openai-poaches-uber-india-chief-to-lead-its-biggest-market-outside-the-u-s/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-26T18:19:36.000Z",
-      "snippet": "The hire marks OpenAI's latest push into India, expanding offices, partnerships and hiring.",
-      "category": "Business & Funding",
-      "summary": "OpenAI hires Uber India's chief executive to lead operations in India, expanding its presence in the company's largest market outside the U.S.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [],
-        "entities": [
-          "gpt",
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "Why everyone from OpenAI to SpaceX is building their own chips (and turning up the heat on Nvidia)",
-      "url": "https://techcrunch.com/video/why-everyone-from-openai-to-spacex-is-building-their-own-chips-and-turning-up-the-heat-on-nvidia/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-26T17:43:22.000Z",
-      "snippet": "Nvidia has dominated the AI chip market for years, but the era of total dependence might be ending. OpenAI just shared its plans to spice things up with Jalapeño, its custom inference chip built with Broadcom, joining Google, Apple, and SpaceX in a growing list of companies building their way out of single-supplier risk. The goal is less of a […]",
-      "category": "Hardware & Compute",
-      "summary": "OpenAI, Google, Apple, and SpaceX are building custom AI chips to reduce dependence on Nvidia, challenging the chipmaker's dominant market position.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "hardware"
-        ],
-        "traits": [],
-        "entities": [
-          "gpt"
-        ]
-      }
-    },
-    {
-      "title": "OpenAI unveils GPT-5.6 amid US AI regulatory drama",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/957845/openai-gpt-5-6-trump-administration-ai-preview",
-      "source": "The Verge AI",
-      "publishedAt": "2026-06-26T17:00:00.000Z",
-      "snippet": "Less than 24 hours after news broke that OpenAI would stagger its next model release at the request of the Trump administration, that model, GPT-5.6, is here. On Friday, the company unveiled the limited preview of its new GPT 5.6 model suite: Sol, the flagship; Terra, a medium-tier model for \"high-volume work\"; and Luna, a \"fast and affordable\" everyday model. OpenAI says it's especially skilled at coding, cybersecurity, and biology, as well as staying focused during long-horizon agentic AI tasks. Per million tokens, GPT-5.6 Sol is priced at $5 input / $30 output (nearly half the cost of Anthr",
-      "category": "Model Releases",
-      "summary": "OpenAI unveils GPT-5.6 with three variants (Sol, Terra, Luna) optimized for coding, cybersecurity, and agentic tasks, following government-requested staggered release.",
-      "important": true,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "release"
-        ],
-        "entities": [
-          "gpt"
-        ]
-      }
-    },
-    {
-      "title": "It’s not about Anthropic vs. OpenAI anymore",
-      "url": "https://techcrunch.com/2026/06/26/its-not-about-anthropic-vs-openai-anymore/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-26T16:24:47.000Z",
-      "snippet": "AI models have progressed to the point where their capabilities have real political consequences. Dealing with those consequences will require collective action.",
-      "category": "Regulation & Policy",
-      "summary": "The AI industry is now entering a phase where model capabilities have direct political consequences, requiring collective action beyond individual company rivalry.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "policy",
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "The AI industry is pouring millions into US elections",
-      "url": "https://www.bloodinthemachine.com/p/the-ai-industry-is-pouring-hundreds",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-06-26T15:02:43.000Z",
-      "snippet": "Article URL: https://www.bloodinthemachine.com/p/the-ai-industry-is-pouring-hundreds Comments URL: https://news.ycombinator.com/item?id=48687483 Points: 120 # Comments: 82",
-      "category": "Business & Funding",
-      "summary": "The AI industry is investing millions in U.S. elections, reflecting growing political stakes and influence of major AI companies in electoral outcomes.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "funding",
-          "policy"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Anthropic&#8217;s Mythos mess is only getting worse",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/957327/anthropic-mythos-fable-ai-trump-administration-negotiations",
-      "source": "The Verge AI",
-      "publishedAt": "2026-06-26T14:07:03.000Z",
-      "snippet": "It's been two weeks since Anthropic took its Mythos-class models offline after a Friday evening ultimatum from the Trump administration. The company sprang into action immediately, sending a barrage of executives to Washington, DC. But updates have been suspiciously lacking, with no resolution in sight. Anthropic declined to comment multiple times this week about the state of the talks, saying there was no news to share. But the lack of news is the story here. After 14 days of high-intensity negotiations, nobody knows when or if Anthropic's most powerful AI models will come back, let alone whe",
-      "category": "Regulation & Policy",
-      "summary": "Anthropic's Mythos-class models remain offline after a Trump administration ultimatum two weeks ago, with negotiations ongoing but no resolution or timeline announced.",
-      "important": true,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "policy",
-          "incident"
-        ],
-        "entities": [
-          "anthropic"
-        ]
-      }
-    },
-    {
-      "title": "OpenAI’s Jalapeño chip is Big Tech’s spiciest move away from Nvidia",
-      "url": "https://techcrunch.com/podcast/openais-jalapeno-chip-is-big-techs-spiciest-move-away-from-nvidia/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-26T14:00:00.000Z",
-      "snippet": "Nvidia has dominated the AI chip market for years, but the era of total dependence might be ending. OpenAI just shared its plans to spice things up with Jalapeño, its custom inference chip built with Broadcom, joining Google, Apple, and SpaceX in a growing list of companies building their way out of single-supplier risk. The goal is less of a […]",
-      "category": "Hardware & Compute",
-      "summary": "OpenAI is developing Jalapeño, a custom inference chip built with Broadcom, to reduce dependence on Nvidia and join other tech giants in building proprietary AI hardware.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "inference"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "The AI backlash is only getting started",
-      "url": "https://www.economist.com/leaders/2026/06/25/the-ai-backlash-is-only-getting-started",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-06-26T13:12:04.000Z",
-      "snippet": "Article URL: https://www.economist.com/leaders/2026/06/25/the-ai-backlash-is-only-getting-started Comments URL: https://news.ycombinator.com/item?id=48686219 Points: 95 # Comments: 265",
-      "category": "Other",
-      "summary": "Discussion of growing backlash against AI technologies without specific details provided.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "policy"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Early Bird pricing ends tonight for TechCrunch Founder Summit",
-      "url": "https://techcrunch.com/2026/06/26/early-bird-pricing-ends-tonight-for-techcrunch-founder-summit/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-06-26T13:00:00.000Z",
-      "snippet": "Save up to $190 on your pass to TechCrunch Founder Summit 2026. Early Bird pricing ends today, at 11:59 p.m. PT, after which rates increase. Register now.",
-      "category": "Other",
-      "summary": "Promotional announcement for TechCrunch Founder Summit early-bird registration deadline.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [],
-        "entities": []
-      }
-    },
-    {
-      "title": "Previewing GPT-5.6 Sol: a next-generation model",
-      "url": "https://openai.com/index/previewing-gpt-5-6-sol",
-      "source": "OpenAI Blog",
-      "publishedAt": "2026-06-26T10:00:00.000Z",
-      "snippet": "OpenAI previews GPT-5.6 Sol, a next-generation model with stronger capabilities in coding, science, and cybersecurity, paired with its most advanced safety stack.",
-      "category": "Model Releases",
-      "summary": "OpenAI previews GPT-5.6 Sol, a next-generation model with enhanced capabilities in coding, science, and cybersecurity alongside advanced safety measures.",
-      "important": true,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "release"
-        ],
-        "entities": [
-          "gpt",
-          "openai"
-        ]
-      }
     }
   ],
   "feedHealth": {
     "The Verge AI": {
-      "lastSuccess": "2026-07-26T08:07:25.706Z",
+      "lastSuccess": "2026-07-27T09:29:29.591Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "TechCrunch AI": {
-      "lastSuccess": "2026-07-26T08:07:25.757Z",
+      "lastSuccess": "2026-07-27T09:29:29.692Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Ars Technica AI": {
-      "lastSuccess": "2026-07-26T08:07:25.986Z",
+      "lastSuccess": "2026-07-27T09:29:29.923Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "VentureBeat AI": {
-      "lastSuccess": "2026-07-26T08:07:26.132Z",
+      "lastSuccess": "2026-07-27T09:29:30.114Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Anthropic News": {
       "lastSuccess": null,
       "lastError": "Status code 404",
-      "consecutiveFailures": 37
+      "consecutiveFailures": 38
     },
     "OpenAI Blog": {
-      "lastSuccess": "2026-07-26T08:07:26.326Z",
+      "lastSuccess": "2026-07-27T09:29:30.333Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Google DeepMind": {
-      "lastSuccess": "2026-07-26T08:07:26.702Z",
+      "lastSuccess": "2026-07-27T09:29:30.691Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "MIT Tech Review AI": {
-      "lastSuccess": "2026-07-26T08:07:26.723Z",
+      "lastSuccess": "2026-07-27T09:29:30.789Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "arXiv cs.AI": {
-      "lastSuccess": "2026-07-26T08:07:26.775Z",
+      "lastSuccess": "2026-07-27T09:29:31.141Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Hacker News (AI)": {
-      "lastSuccess": "2026-07-26T08:07:30.452Z",
+      "lastSuccess": "2026-07-27T09:29:32.652Z",
       "lastError": null,
       "consecutiveFailures": 0
     }
   },
   "brief": {
-    "generatedAt": "2026-07-26T08:07:53.883Z",
+    "generatedAt": "2026-07-27T09:29:55.598Z",
     "bullets": [
       {
-        "text": "Corporate America is pulling back on AI spending after weak returns, even as companies like Oracle cut 21,000 jobs and Monday.com joins 20+ firms blaming AI for layoffs, revealing tension between cost-cutting and investment.",
+        "text": "Hugging Face's CEO called for 'radical transparency' after an unprecedented autonomous-agent cyberattack reportedly hit OpenAI, spotlighting new security risks as agentic AI systems gain capability in production environments.",
         "refs": [
-          "https://www.wsj.com/business/china-us-ai-model-costs-53a12e96",
-          "https://www.jpost.com/business-and-innovation/tech-and-start-ups/article-903442",
-          "https://www.msn.com/en-us/money/economy/ai-bet-goes-awry-oracle-fires-21-000-employees/ar-AA28vWuD",
-          "https://techcrunch.com/2026/07/25/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/"
+          "https://techcrunch.com/2026/07/26/hugging-face-ceo-calls-for-radical-transparency-after-unprecedented-openai-hack/"
         ]
       },
       {
-        "text": "A debate over open-weight AI intensifies: analysts frame it as AI's 'Kubernetes moment,' NVIDIA ties open models to American leadership, and startup founders urge Washington not to block Chinese open-weight models.",
+        "text": "China's competitive pressure escalated: Silicon Valley investors reacted with alarm to Moonshot AI's Kimi release, fueling debate over whether US labs still hold a durable lead.",
         "refs": [
-          "https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/",
-          "https://images.nvidia.com/pdf/Open-Weights-and-American-AI-Leadership.pdf",
-          "https://www.politico.com/news/2026/07/22/startup-founders-urge-trump-not-to-shut-off-chinese-open-weight-ai-01008992",
-          "https://tombedor.dev/arguments-against-open-source-ai-are-very-bad/"
+          "https://techcrunch.com/2026/07/26/making-sense-of-the-panic-over-chinese-ai/"
         ]
       },
       {
-        "text": "DARPA and the U.S. Air Force successfully flew an AI-controlled F-16, demonstrating autonomous operation of a manned fighter platform.",
+        "text": "Two contrarian analyses tempered AI hype—one arguing mass job displacement is unlikely near-term due to structural factors, another questioning whether measured productivity gains are real or measurement artifacts.",
         "refs": [
-          "https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16"
+          "https://www.theguardian.com/technology/2026/jul/25/ai-jobs-apocalypse-human-labor",
+          "https://www.hardresetmedia.com/p/the-ai-productivity-illusion"
         ]
       },
       {
-        "text": "Growing AI backlash surfaces as U.S. libraries host viral 'Avoiding AI' workshops and essays question whether organizations genuinely benefit from AI or merely follow hype.",
+        "text": "Research probed LLM reasoning limits: studies identified 'context anxiety' causing premature self-doubt, a 'Hard Decision Layer' where answers stabilize, and evidence that LoRA fails on multi-step procedural knowledge.",
         "refs": [
-          "https://techcrunch.com/2026/07/25/librarians-are-hosting-viral-avoiding-ai-workshops-for-people-who-are-fed-up-with-big-tech/",
-          "https://louwrentius.com/i-think-you-might-be-fooling-yourself-with-ai.html",
-          "https://daringfireball.net/linked/2026/07/25/ai-mania-nikhil-suresh"
+          "https://arxiv.org/abs/2607.21616",
+          "https://arxiv.org/abs/2607.21613",
+          "https://arxiv.org/abs/2607.21612"
         ]
       },
       {
-        "text": "A Northern Virginia power-line failure exposed AI data centers' fragility during grid disruptions, spotlighting mounting infrastructure and resilience concerns for the compute buildout.",
+        "text": "Agent frameworks advanced with FlowEvo turning execution traces into reusable skills, coupled topology-execution workflow synthesis, and AgentKVShift optimizing KV-cache reuse for memory-augmented agents—all training-free approaches.",
         "refs": [
-          "https://techcrunch.com/2026/07/25/one-fallen-power-line-exposed-a-growing-ai-data-center-problem-heres-how-to-fix-it/"
+          "https://arxiv.org/abs/2607.21596",
+          "https://arxiv.org/abs/2607.21609",
+          "https://arxiv.org/abs/2607.21604"
         ]
       }
     ]
