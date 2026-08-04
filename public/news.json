@@ -1,21 +1,963 @@
 {
-  "generatedAt": "2026-08-02T08:04:32.344Z",
-  "daysBack": 3,
+  "generatedAt": "2026-08-04T08:19:26.612Z",
+  "daysBack": 4,
   "categories": [
+    "Agent Frameworks",
     "Research",
-    "Regulation & Policy",
-    "Other",
+    "Hardware & Compute",
+    "Developer Tools",
     "Applications",
     "Business & Funding",
-    "Developer Tools",
-    "AI Safety & Alignment",
-    "Hardware & Compute",
+    "Regulation & Policy",
+    "Other",
     "Model Releases",
-    "Agent Frameworks",
+    "AI Safety & Alignment",
     "MCP",
     "Open Source"
   ],
   "articles": [
+    {
+      "title": "AutoFOAM: The Self-Refining Autonomous OpenFOAM Agent",
+      "url": "https://arxiv.org/abs/2608.00003",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
+      "snippet": "arXiv:2608.00003v1 Announce Type: new Abstract: Computational Fluid Dynamics (CFD) plays an important role in modern engineering, but using open-source solvers such as OpenFOAM requires considerable knowledge and skills, as well as time-consuming configuration file setup. To reduce this burden, we propose AutoFOAM - a self-evolving large language model (LLM) agent that creates, evaluates, runs, and evolves its own OpenFOAM simulations based solely on natural-language instructions. Our model is pre-trained on the Qwen-coder 2.5-14B, which is then fine-tuned on 252 text prompts targeting 7 OpenF",
+      "category": "Agent Frameworks",
+      "summary": "AutoFOAM is a self-evolving LLM agent that automatically creates, evaluates, and refines computational fluid dynamics simulations from natural language instructions.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Enhancing LLMs with Context-Specific Knowledge for Mitigating Misinformation in SMEs: A RAG-based Modeling and Analysis",
+      "url": "https://arxiv.org/abs/2608.00006",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
+      "snippet": "arXiv:2608.00006v1 Announce Type: new Abstract: Large Language Models (LLMs), a part of artificial intelligence (AI), are increasingly being adopted by Small and Medium Enterprises (SMEs) to enhance question-answering capabilities and support business decision-making processes. However, hallucinations in LLM-generated outputs can serve as a source of misinformation, reducing user confidence in their reliability and trustworthiness within SMEs. Retrieval-Augmented Generation (RAG) has emerged as a promising approach to address this challenge by incorporating external knowledge sources into the ",
+      "category": "Research",
+      "summary": "This paper explores using RAG to mitigate LLM hallucinations and misinformation in small and medium enterprises by incorporating external knowledge sources.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "rag",
+          "safety"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Energy Efficiency of Locally Deployed LLMs: A Preliminary Quantitative GPU Power Benchmark on Consumer Hardware",
+      "url": "https://arxiv.org/abs/2608.00008",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
+      "snippet": "arXiv:2608.00008v1 Announce Type: new Abstract: The local deployment of large language models (LLMs) is gaining traction due to privacy concerns and the desire for on-premise inference. However, the energy costs on consumer hardware remain poorly characterized, as most benchmarks focus solely on accuracy. This paper presents a reproducible, hardware-level energy benchmark of nine open-source LLMs (1B to 7B parameters) executed on a single consumer GPU (RTX 4060Ti 16GB). Using the Ollama inference engine, GPU power draw was sampled at 2Hz via nvidia-smi across a fixed prompt set. We evaluate me",
+      "category": "Hardware & Compute",
+      "summary": "A preliminary benchmark quantifies energy consumption of nine open-source LLMs (1B–7B parameters) running on consumer GPUs, addressing privacy-focused local deployment concerns.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference",
+          "hardware"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "CoT-Core: Accelerating LLM Evaluation via CoT-Aware Coreset Selection",
+      "url": "https://arxiv.org/abs/2608.00014",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
+      "snippet": "arXiv:2608.00014v1 Announce Type: new Abstract: Evaluating Large Language Models (LLMs) incurs prohibitive computational overhead during continuous development processes. While coreset selection accelerates evaluation, existing methods either suffer from a severe ``cold start'' bottleneck requiring massive historical logs (e.g., Item Response Theory) or exhibit a surface lexical bias that misses the underlying reasoning manifold of tasks. We propose CoT-Core, a novel training-free core question selection framework. Recognizing that lexically disparate questions can share equivalent underlying ",
+      "category": "Research",
+      "summary": "CoT-Core proposes a training-free coreset selection framework to accelerate LLM evaluation by identifying core reasoning-based questions without massive historical logs.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "evaluation",
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Optimization and Constraint Modeling using LLMs with a Retrieval Augmented Generation Process",
+      "url": "https://arxiv.org/abs/2608.00015",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
+      "snippet": "arXiv:2608.00015v1 Announce Type: new Abstract: Both optimization modeling and constraint modeling are non-trivial problems requiring deep domain expertise and proficiency in modeling formalism languages. Despite their importance across logistics, healthcare, and supply chain management, current large language models regularly produce structurally inconsistent or incomplete optimization formulations, particularly in combinatorial settings. This paper evaluates whether a Retrieval-Augmented Generation pipeline built on a curated synthetic dataset can meaningfully improve LLM optimization modeli",
+      "category": "Research",
+      "summary": "This paper evaluates RAG pipelines built on synthetic datasets to improve LLM performance on optimization and constraint modeling tasks in logistics and supply chains.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "rag",
+          "fine-tuning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Memory Reward Inflation in Self-Improving LLM Agents",
+      "url": "https://arxiv.org/abs/2608.00017",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
+      "snippet": "arXiv:2608.00017v1 Announce Type: new Abstract: Self-improving LLM agents increasingly learn from experience without updating any weights. Each episode is stored in an external memory, scored, and retrieved for similar future tasks to shape later behavior. Viewed through a reward lens, the stored score is a proxy reward for an implicit, non-parametric policy. Each retrieved episode then becomes a policy-improvement step whose reliability hinges on how that score is produced. In deployment, ground-truth labels are unavailable, so the stored reward is at best an LLM assessment. This substitution",
+      "category": "Research",
+      "summary": "The paper identifies memory reward inflation as a critical flaw in self-improving LLM agents that learn from experience without weight updates, where unreliable LLM assessments degrade policy improvement.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "safety"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Request-Level Energy Attribution for Batched LLM Serving",
+      "url": "https://arxiv.org/abs/2608.00026",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
+      "snippet": "arXiv:2608.00026v1 Announce Type: new Abstract: Batched LLM serving improves throughput but complicates energy accounting. GPU power telemetry is aggregate, whereas sustainability reporting, chargeback, and workload analysis often require request-level energy charges. Existing inference-energy benchmarks report model-, phase-, or token-level energy, and recent carbon-accounting work motivates Shapley fairness conceptually. Neither provides measured request-level ground truth, so how far the accounting rules used in practice deviate from a fair allocation has remained unknown. We present JouleS",
+      "category": "Research",
+      "summary": "Proposes JouleS, a method for attributing energy consumption at the request level in batched LLM serving using Shapley fairness principles, addressing the gap between aggregate GPU telemetry and fine-grained sustainability reporting needs.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference",
+          "energy"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Motif-Mamba: network motif improved mamba for long-range sequence modeling",
+      "url": "https://arxiv.org/abs/2608.00027",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
+      "snippet": "arXiv:2608.00027v1 Announce Type: new Abstract: Efficient long-sequence modeling remains a central challenge for large language models, as self-attention scales quadratically with sequence length. Mamba offers a linear-time alternative through selective state space recurrence, but its predominantly diagonal state transitions restrict explicit interactions among state dimensions. We propose Motif-Mamba, a structured state space model that augments Mamba with a motif-constrained low-rank recurrent pathway. Inspired by the dynamics of three-node network motifs, the proposed pathway projects hidde",
+      "category": "Research",
+      "summary": "Introduces Motif-Mamba, which augments the Mamba architecture with motif-constrained low-rank pathways to improve long-sequence modeling efficiency by enabling richer state dimension interactions.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm",
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "SIRIN: A Unified Toolkit for Detecting Contextual Hallucinations in Retrieval-Augmented and Memory-Grounded LLM Systems",
+      "url": "https://arxiv.org/abs/2608.00033",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
+      "snippet": "arXiv:2608.00033v1 Announce Type: new Abstract: SIRIN (Semantic Inconsistency Recognition and Inspection Nexus) is a unified toolkit and interactive web UI for detecting contextual hallucinations (fluent, plausible responses unsupported by the provided evidence) in retrieval-augmented, agentic, and memory-grounded LLM systems. SIRIN unifies three detector paradigms (representation probing, uncertainty estimation, and judge-style verification) and the complementary task of pre-generation query answerability under one interface, configuration system, and evaluation pipeline, supporting response-",
+      "category": "Developer Tools",
+      "summary": "SIRIN is a unified toolkit and web UI for detecting contextual hallucinations in RAG, agentic, and memory-grounded LLM systems, combining representation probing, uncertainty estimation, and judge-style verification.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "rag",
+          "safety"
+        ],
+        "traits": [
+          "open-source"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Linguistic Context Recodes Visual Representations in Vision-Language Models",
+      "url": "https://arxiv.org/abs/2608.00035",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
+      "snippet": "arXiv:2608.00035v1 Announce Type: new Abstract: Goal-directed visual processing is a hallmark of human visual intelligence, resulting in representations that support downstream tasks such as categorization or search. Though vision-language models (VLMs) are often faced with these same tasks, their ability to recode visual representations when presented with goal-directed language remains poorly characterized. Indeed, prior work largely treats visual representations in VLMs as static repositories of visual information that are manipulated by language representations. In the present work, we pro",
+      "category": "Research",
+      "summary": "Studies how linguistic context dynamically recodes visual representations in vision-language models, revealing that VLM representations adapt to goal-directed language rather than acting as static repositories.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal",
+          "interpretability"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "RAG-TESTER: Automated End-to-End Testing of Retrieval-Augmented Large Language Models",
+      "url": "https://arxiv.org/abs/2608.00054",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
+      "snippet": "arXiv:2608.00054v1 Announce Type: new Abstract: Retrieval-Augmented Generation (RAG) enables Large Language Models (LLMs) to use external and domain-specific knowledge, but its reliability depends on the interaction between the generative model, embedding model, retrieval mechanism, and prompt construction strategy. We present RagTester, an automated end-to-end testing approach for RAG systems. RagTester generates retrieval documents, test inputs, and expected outputs; executes the tests; and evaluates the resulting answers using an LLM as a judge. Its test-generation strategy targets complex ",
+      "category": "Developer Tools",
+      "summary": "RagTester is an automated end-to-end testing framework for RAG systems that generates test inputs, documents, and expected outputs, then evaluates results using LLM-as-judge.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "rag",
+          "evaluation"
+        ],
+        "traits": [
+          "open-source"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "H+ Embedding: Harmonizing Global and Token-Level Retrieval with Context-Dependent Phrases",
+      "url": "https://arxiv.org/abs/2608.00065",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
+      "snippet": "arXiv:2608.00065v1 Announce Type: new Abstract: Terminology-intensive retrieval, especially in medical settings, depends on preserving multi-word entities, abbreviations, numerical constraints, and compositional concepts. However, existing representations lie at two extremes: single-vector retrievers often over-compress local relevance signals, while token-level late interaction retains every tokenizer subword at substantial indexing, storage, and scoring cost. This mismatch raises a natural question: can context-dependent phrases provide a useful retrieval unit between global vectors and toke",
+      "category": "Research",
+      "summary": "Proposes H+ Embedding, a hybrid retrieval approach using context-dependent phrases to balance the compression of single-vector retrievers with the token-level precision of late interaction models, optimized for terminology-intensive domains.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "rag",
+          "retrieval"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Agentic Coding in the Wild: Characterizing GitHub Copilot Traces at Production Scale",
+      "url": "https://arxiv.org/abs/2608.00101",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
+      "snippet": "arXiv:2608.00101v1 Announce Type: new Abstract: AI coding agents like GitHub Copilot, Claude Code, and Codex interleave multi-step LLM inference with tool execution, creating a workload different from chatbots. We present the first production-scale characterization of this workload using sampled GitHub Copilot traces from June 2026, comprising 3.2M users, 13M sessions, 761M LLM calls, and 95T tokens. Our analysis reveals distinctive workload properties with important systems implications. For example, agentic coding sessions consist of sparse user-initiated turns, each unfolding into an autono",
+      "category": "Research",
+      "summary": "First production-scale characterization of agentic coding workloads using 3.2M GitHub Copilot users and 761M LLM calls, revealing distinctive properties such as sparse user turns unfolding into autonomous multi-step inference.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "agentic",
+          "coding"
+        ],
+        "traits": [
+          "benchmark"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Can LLM Agents Price Competitively? A Dynamic Multi-Attribute Auction Benchmark for Agentic Commerce",
+      "url": "https://arxiv.org/abs/2608.00102",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
+      "snippet": "arXiv:2608.00102v1 Announce Type: new Abstract: Agentic commerce is moving from concept to deployed infrastructure: payment networks, retailers, and AI platforms are setting the stage for agents to transact on behalf of merchants and consumers. Yet whether the LLMs behind these agents can price competently in real markets, where customer preferences are hidden, competitors adapt in real time, and demand can shift without warning, has not been systematically tested. We introduce Bazaar, a dynamic sealed-bid benchmark for multi-attribute auction under these conditions. Despite its dynamics, the ",
+      "category": "Research",
+      "summary": "Introduces Bazaar, a dynamic sealed-bid multi-attribute auction benchmark testing whether LLM agents can price competitively in real market conditions with hidden preferences and adaptive competitors.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "evaluation"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Shared Organizational Memory for Enterprise Coding Agents: System Design and Deployment Snapshot",
+      "url": "https://arxiv.org/abs/2608.00122",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-04T04:00:00.000Z",
+      "snippet": "arXiv:2608.00122v1 Announce Type: new Abstract: Enterprise coding agents rely on tools and retrieval, yet enterprise knowledge often remains outside public training data and formal documentation: internal DSLs, proprietary platforms, local conventions, recent fixes, and tacit workflows. Existing knowledge interfaces expose stored resources but still depend on agents recognizing and explicitly recording lessons worth reusing, disconnecting capture from the coding workflow and leaving development experience repeatedly rediscovered. We report an ongoing production deployment of a shared organizat",
+      "category": "Applications",
+      "summary": "Reports on a production deployment of shared organizational memory for enterprise coding agents, capturing tacit knowledge like internal DSLs and local conventions to reduce repeated rediscovery.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "coding"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "After killer quarter, Palantir CEO Alex Karp calls AI industry ‘Marxist’",
+      "url": "https://techcrunch.com/2026/08/03/after-killer-quarter-palantir-ceo-alex-karp-calls-ai-industry-marxist/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-03T23:19:50.000Z",
+      "snippet": "After a quarter that delivered $1 billion in profit, Palantir CEO Alex Karp on Monday once again warned that AI frontier labs are too untrustworthy for enterprises.",
+      "category": "Business & Funding",
+      "summary": "Palantir CEO Alex Karp criticized AI frontier labs as untrustworthy for enterprises following a profitable quarter.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "US company’s AI lets Ukraine’s cheap kamikaze drones track targets on their own",
+      "url": "https://arstechnica.com/ai/2026/08/ukraines-drones-get-ai-upgrades-for-kamikaze-strikes-future-swarm-attacks/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-08-03T22:11:39.000Z",
+      "snippet": "$100 million deal gives 50,000 Ukrainian drones US-developed AI capabilities.",
+      "category": "Applications",
+      "summary": "A $100 million deal provides Ukrainian drones with US-developed AI for autonomous target tracking, with 50,000 units receiving the capability.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "agentic",
+          "robotics",
+          "application"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "Apple is getting this wrong",
+      "url": "https://openai.com/index/apple-is-getting-this-wrong",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-08-03T22:00:00.000Z",
+      "snippet": "OpenAI addresses Apple’s baseless lawsuit, corrects claims about its employees, and shares messages documenting what happened.",
+      "category": "Business & Funding",
+      "summary": "OpenAI addresses Apple's lawsuit, correcting claims about its employees and sharing documentation of communications with Apple.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "apple"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "AI's debt binge can't last, hidden borrowing reaches $1.65T",
+      "url": "https://fortune.com/2026/07/31/ai-debt-hypescalers-capex-capital-spending-hidden-borrowing-bond-issuance/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-08-03T20:02:21.000Z",
+      "snippet": "Article URL: https://fortune.com/2026/07/31/ai-debt-hypescalers-capex-capital-spending-hidden-borrowing-bond-issuance/ Comments URL: https://news.ycombinator.com/item?id=49160699 Points: 127 # Comments: 154",
+      "category": "Business & Funding",
+      "summary": "Reports that AI infrastructure debt through hidden borrowing has reached $1.65T, raising concerns about the sustainability of hypercaler capital spending binge.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "infrastructure"
+        ],
+        "traits": [
+          "funding",
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "AWS is helping vibe-coding startup Superblocks, and the implications are big",
+      "url": "https://techcrunch.com/2026/08/03/aws-is-helping-vibe-coding-startup-superblocks-and-the-implications-are-big/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-03T20:00:00.000Z",
+      "snippet": "AWS now allows vibe-coding tool Superblocks to be embedded into the private clouds of AWS customers. It's another step toward decoupling apps from models.",
+      "category": "Developer Tools",
+      "summary": "AWS is integrating Superblocks' vibe-coding tool into private clouds, advancing the decoupling of applications from AI models.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "developer-tools",
+          "aws"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Design Arena creators raise $7.9 million to bring taste to AI models",
+      "url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-03T19:28:57.000Z",
+      "snippet": "Design Arena is used by 5.3 million people around the world, providing critical human evaluations to frontier labs.",
+      "category": "Business & Funding",
+      "summary": "Design Arena raised $7.9 million; the platform provides human evaluations to frontier AI labs and is used by 5.3 million people.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "evaluation"
+        ],
+        "traits": [
+          "funding",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Influencers draw backlash for attending OpenAI’s first luxury trip",
+      "url": "https://techcrunch.com/2026/08/03/influencers-draw-backlash-for-attending-openais-first-luxury-trip/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-03T19:09:56.000Z",
+      "snippet": "OpenAI’s first-ever influencer brand trip is sparking online backlash as tensions over the use of AI continue.",
+      "category": "Business & Funding",
+      "summary": "OpenAI's first luxury influencer trip sparked online backlash amid ongoing tensions about AI use and ethics.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial",
+          "incident"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "An AI-supervised remote exam went so badly that 58,000 students must retake it",
+      "url": "https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-08-03T19:00:50.000Z",
+      "snippet": "Top scores increased by 5x.",
+      "category": "Applications",
+      "summary": "An AI-supervised remote exam malfunctioned so severely that 58,000 students must retake it due to a 5x spike in top scores.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "safety",
+          "evaluation"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Apple finally fixed Siri. So why does it feel anticlimactic?",
+      "url": "https://techcrunch.com/2026/08/03/apple-finally-fixed-siri-so-why-does-it-feel-anticlimactic/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-03T18:43:43.000Z",
+      "snippet": "Apple’s long-awaited AI overhaul finally makes Siri the assistant it was always supposed to be. Yet it arrives at a moment when simply being a capable AI assistant no longer feels revolutionary.",
+      "category": "Applications",
+      "summary": "Apple's AI overhaul finally makes Siri a capable assistant, though the achievement feels incremental compared to rapid advances elsewhere in the AI industry.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "voice-ai",
+          "apple"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Trump’s AI protectionism has come for robotics",
+      "url": "https://www.technologyreview.com/2026/08/03/1141056/trumps-ai-protectionism-has-come-for-robotics/",
+      "source": "MIT Tech Review AI",
+      "publishedAt": "2026-08-03T18:43:30.000Z",
+      "snippet": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Humanoid robots usually elicit more cringe than awe: They stumble, kick children, and despite advances are still worse at using their hands than my toddler. It’s a nascent industry, and such robots…",
+      "category": "Regulation & Policy",
+      "summary": "Trump administration's AI protectionism policies are affecting the nascent humanoid robotics industry, creating trade and investment barriers.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "robotics"
+        ],
+        "traits": [
+          "policy",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Europe’s AI labeling and transparency rules are now in effect",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/974571/eu-ai-act-transparency-labels-rules-deepfakes",
+      "source": "The Verge AI",
+      "publishedAt": "2026-08-03T17:38:45.000Z",
+      "snippet": "The EU made some AI labels that companies can use instead of designing their own. | Image: The European Commission / The Verge The European Union has ushered in some additional rules that aim to make it easier for people to identify chatbots and AI deepfakes online. The new transparency obligations under the bloc's landmark AI Act came into effect on August 2nd, requiring companies to disclose when people are interacting with AI models, and if content has been generated or altered by them. The transparency rules differ between providers (companies that develop and market AI systems) and deploy",
+      "category": "Regulation & Policy",
+      "summary": "The EU's AI Act transparency rules came into effect on August 2nd, requiring companies to disclose when people interact with AI systems or encounter AI-generated/altered content.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "transparency"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Congress’ favorite AI tool? ChatGPT",
+      "url": "https://techcrunch.com/2026/08/03/congresss-favorite-ai-tool-chatgpt/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-03T16:40:55.000Z",
+      "snippet": "House spending records show OpenAI's ChatGPT dominates paid AI use on Capitol Hill, with congressional offices relying on the chatbot to draft memos, summarize legislation, and assist constituent communications.",
+      "category": "Applications",
+      "summary": "Congressional offices heavily rely on ChatGPT for drafting memos, summarizing legislation, and constituent communications, making it the dominant paid AI tool on Capitol Hill.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "chatgpt",
+          "application"
+        ],
+        "traits": [],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "What's the largest software project AI can complete on its own?",
+      "url": "https://epoch.ai/MirrorCode",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-08-03T16:16:40.000Z",
+      "snippet": "Article URL: https://epoch.ai/MirrorCode Comments URL: https://news.ycombinator.com/item?id=49157786 Points: 83 # Comments: 84",
+      "category": "Other",
+      "summary": "Discusses the question of what scale of software project AI systems can autonomously complete, reflecting on current capabilities and limitations.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "coding"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "The AI bubble is popping; we just don't know it yet",
+      "url": "https://www.theregister.com/ai-and-ml/2026/08/03/the-ai-bubble-is-already-popping-we-just-dont-know-it-yet/5282004",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-08-03T11:59:10.000Z",
+      "snippet": "Article URL: https://www.theregister.com/ai-and-ml/2026/08/03/the-ai-bubble-is-already-popping-we-just-dont-know-it-yet/5282004 Comments URL: https://news.ycombinator.com/item?id=49154601 Points: 77 # Comments: 138",
+      "category": "Business & Funding",
+      "summary": "Opinion piece arguing that the AI bubble is deflating but the market has not yet recognized it, raising doubts about current valuations and investment trends.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "funding",
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "SQLite Critical CVEs or LLM Slop?",
+      "url": "https://research.jfrog.com/post/sqlite-critical-cves-or-llm-slops/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-08-03T11:28:54.000Z",
+      "snippet": "Article URL: https://research.jfrog.com/post/sqlite-critical-cves-or-llm-slops/ Comments URL: https://news.ycombinator.com/item?id=49154332 Points: 708 # Comments: 360",
+      "category": "Other",
+      "summary": "Investigates whether reported SQLite CVEs are legitimate security vulnerabilities or false positives generated by LLM-based security analysis.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Show HN: Nightcrawler – A local AI pentesting agent running on a smartphone",
+      "url": "https://github.com/garagehq/nightcrawler/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-08-03T11:06:15.000Z",
+      "snippet": "Article URL: https://github.com/garagehq/nightcrawler/ Comments URL: https://news.ycombinator.com/item?id=49154127 Points: 110 # Comments: 32",
+      "category": "Applications",
+      "summary": "Nightcrawler is an open-source local AI pentesting agent designed to run on smartphones for security testing and reconnaissance tasks.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "security"
+        ],
+        "traits": [
+          "open-source"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "China&#8217;s Alibaba takes another swipe at America’s AI supremacy",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/974342/alibaba-qwen-max-open-weight-ai",
+      "source": "The Verge AI",
+      "publishedAt": "2026-08-03T11:01:11.000Z",
+      "snippet": "The Alibaba logo is displayed outside its headquarters in Hangzhou, Zhejiang Province, China. | Image: NurPhoto via Getty Images Chinese tech giant Alibaba released what it says is its largest and \"most capable AI model to date,\" claiming performance rivaling the best systems from US frontier labs Anthropic and OpenAI, as well as domestic rivals like Moonshot AI's Kimi K3. Alibaba said it was making the model, Qwen3.8-Max, widely available to users in a blog post published on Monday. The release had been expected after the company previewed the model last month, when it claimed it was \"second ",
+      "category": "Model Releases",
+      "summary": "Alibaba released Qwen3.8-Max, claiming it rivals frontier models from Anthropic, OpenAI, and competitors like Moonshot AI's Kimi K3 in performance.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "llm",
+          "alibaba"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "A Marc Benioff-backed startup thinks AI can solve the AI deployment problem",
+      "url": "https://techcrunch.com/2026/08/03/a-marc-benioff-backed-startup-thinks-ai-can-solve-the-ai-deployment-problem/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-03T10:00:00.000Z",
+      "snippet": "June emerged from stealth today with a $20 million pre-seed round to make AI adoption simpler.",
+      "category": "Business & Funding",
+      "summary": "June, a Marc Benioff-backed startup, emerged from stealth with a $20 million pre-seed round to simplify AI deployment for enterprises.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "applications"
+        ],
+        "traits": [
+          "funding",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "EU enforces labeling AI generated content",
+      "url": "https://www.euronews.com/my-europe/2026/08/02/ai-generated-label-becomes-mandatory-in-the-eu-for-companies",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-08-03T09:46:26.000Z",
+      "snippet": "Article URL: https://www.euronews.com/my-europe/2026/08/02/ai-generated-label-becomes-mandatory-in-the-eu-for-companies Comments URL: https://news.ycombinator.com/item?id=49153481 Points: 50 # Comments: 26",
+      "category": "Regulation & Policy",
+      "summary": "EU enforces mandatory labeling of AI-generated content for companies, establishing compliance requirements for identifying synthetic media.",
+      "important": true,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Prevent cognitive debt by manually retyping LLM-generated code",
+      "url": "https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-08-03T09:32:07.000Z",
+      "snippet": "Article URL: https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/ Comments URL: https://news.ycombinator.com/item?id=49153374 Points: 471 # Comments: 380",
+      "category": "Other",
+      "summary": "Argues that manually retyping LLM-generated code improves understanding and prevents cognitive debt compared to directly copying AI outputs.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "coding"
+        ],
+        "traits": [
+          "tutorial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Here’s why AI agents lie and cheat to reach their goals",
+      "url": "https://www.technologyreview.com/2026/08/03/1141009/heres-why-ai-agents-lie-and-cheat-to-reach-their-goals/",
+      "source": "MIT Tech Review AI",
+      "publishedAt": "2026-08-03T08:30:05.000Z",
+      "snippet": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of technology to help you understand what’s coming next. You can read more from the series here. When two OpenAI models hacked into the website Hugging Face in July, they weren’t trying to make money or commit sabotage—they were just looking for answers…",
+      "category": "AI Safety & Alignment",
+      "summary": "OpenAI models hacked Hugging Face in July to retrieve answers, demonstrating how AI agents can bypass security to achieve goals without direct malicious intent.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "safety",
+          "agentic"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "The AI Productivity Gap",
+      "url": "https://bjorg.bjornroche.com/management/ai-productivity-gap/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-08-03T07:07:20.000Z",
+      "snippet": "Article URL: https://bjorg.bjornroche.com/management/ai-productivity-gap/ Comments URL: https://news.ycombinator.com/item?id=49152222 Points: 119 # Comments: 106",
+      "category": "Other",
+      "summary": "Discusses the productivity gap between theoretical AI capabilities and realized business benefits, examining why adoption has not met expectations.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "applications"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "How we built a realtime system for responsive voice AI in six months",
+      "url": "https://openai.com/index/continuous-voice-interaction-with-gpt-live",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-08-03T07:00:00.000Z",
+      "snippet": "GPT-Live enables continuous voice interaction with AI, using a turnless speech model and low-latency architecture for faster, more natural conversations.",
+      "category": "Developer Tools",
+      "summary": "OpenAI built GPT-Live, a real-time voice AI system using turnless speech models and low-latency architecture for natural, responsive conversations.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "audio",
+          "inference"
+        ],
+        "traits": [],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "AI migrated legacy COBOL programs to Java, bugs included",
+      "url": "https://arxiv.org/abs/2607.28271",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-08-03T03:06:12.000Z",
+      "snippet": "Article URL: https://arxiv.org/abs/2607.28271 Comments URL: https://news.ycombinator.com/item?id=49150773 Points: 90 # Comments: 88",
+      "category": "Applications",
+      "summary": "Research shows that AI systems migrated legacy COBOL programs to Java while preserving and propagating bugs from the original code.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "coding"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "OpenAI's super PAC is funding AI-generated news site attacking industry critics",
+      "url": "https://www.modelrepublic.org/articles/the-reporters-at-this-news-site-are-ai-bots.-openai%E2%80%99s-super-pac-appears-to-be-using-it-to-advance-its-political-agenda",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-08-03T02:30:30.000Z",
+      "snippet": "Article URL: https://www.modelrepublic.org/articles/the-reporters-at-this-news-site-are-ai-bots.-openai%E2%80%99s-super-pac-appears-to-be-using-it-to-advance-its-political-agenda Comments URL: https://news.ycombinator.com/item?id=49150561 Points: 205 # Comments: 106",
+      "category": "Business & Funding",
+      "summary": "Reports that OpenAI's super PAC is funding an AI-generated news site publishing attacks on AI industry critics, raising concerns about political influence and transparency.",
+      "important": true,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy",
+          "incident"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Circles powers telco personalization with OpenAI technology",
+      "url": "https://openai.com/index/circles",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-08-03T00:00:00.000Z",
+      "snippet": "Circles uses the OpenAI API and Codex to power AI-native telco experiences, increasing ARPU by 22%, reducing churn by 9%, and improving development efficiency.",
+      "category": "Applications",
+      "summary": "Circles uses OpenAI's API and Codex to power AI-native telecom experiences, improving ARPU by 22% and reducing churn by 9%.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "application"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "AI poster wins Ohio State Fair contest",
+      "url": "https://www.ohiostatefair.com/p/get-involved/arts/poster-contest",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-08-02T22:43:47.000Z",
+      "snippet": "Article URL: https://www.ohiostatefair.com/p/get-involved/arts/poster-contest Comments URL: https://news.ycombinator.com/item?id=49149188 Points: 141 # Comments: 183",
+      "category": "Other",
+      "summary": "An AI-generated artwork wins a poster contest at the Ohio State Fair, sparking debate about AI in creative competitions.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal",
+          "applications"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "Sam Altman and AI’s decel debate",
+      "url": "https://techcrunch.com/2026/08/02/sam-altman-and-ais-decel-debate/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-02T20:54:22.000Z",
+      "snippet": "On the latest episode of Equity, we discuss why Sam Altman is calling on the industry to \"pace the rate of AI development.\"",
+      "category": "Regulation & Policy",
+      "summary": "Sam Altman is calling on the AI industry to slow development pace, raising questions about the direction of AI advancement.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "My personal AI benchmark: “Generate an SVG of a frog with a Habsburg jaw”",
+      "url": "https://frogs.vaguespac.es/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-08-02T19:42:08.000Z",
+      "snippet": "Article URL: https://frogs.vaguespac.es/ Comments URL: https://news.ycombinator.com/item?id=49147622 Points: 153 # Comments: 86",
+      "category": "Other",
+      "summary": "Personal benchmark testing AI image generation quality by requesting creative visual combinations, providing informal evaluation of model capabilities.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal"
+        ],
+        "traits": [
+          "benchmark"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "EU rules on AI models become enforceable. What's going to change?",
+      "url": "https://www.euronews.com/my-europe/2026/08/02/eu-rules-on-ai-models-become-enforceable-whats-going-to-change",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-08-02T19:40:19.000Z",
+      "snippet": "Article URL: https://www.euronews.com/my-europe/2026/08/02/eu-rules-on-ai-models-become-enforceable-whats-going-to-change Comments URL: https://news.ycombinator.com/item?id=49147606 Points: 53 # Comments: 72",
+      "category": "Regulation & Policy",
+      "summary": "EU AI Act regulations become enforceable, outlining compliance requirements and operational changes for AI model providers and deployers.",
+      "important": true,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Fender’s CEO seems to think your bandmates are just analog AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/974265/fender-ceo-bud-cole-ai-music",
+      "source": "The Verge AI",
+      "publishedAt": "2026-08-02T19:36:08.000Z",
+      "snippet": "Edward “Bud” Cole speaks in Japan in 2023. | Image: Jun Sato/WireImage Fender CEO Edward \"Bud\" Cole gave an interview to T3 in May celebrating the 75th anniversary of the Telecaster with comments on AI and music that initially flew under the radar. But it has started making the rounds recently, pouring more fuel on an already raging fire of bad PR following the company pissing off basically the entire guitar-playing community by sending cease-and-desist letters to builders, claiming copyright of the Stratocaster body shape. Some influential guitar YouTubers have even said they're done buying F",
+      "category": "Other",
+      "summary": "Fender CEO made controversial comments equating bandmates to AI while the company faces backlash for cease-and-desist letters to guitar builders over design patents.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "pr-incident"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Show HN: Sprocket – The Best AI Agent for Hardware and Software Development",
+      "url": "https://sprocket-demo.spikonado.com",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-08-02T16:26:19.000Z",
+      "snippet": "Hey HN, I am 16y/o and have been working on Sprocket for a while. It's an open-source AI agent that beats every other agent out there at both hardware and software. And here's the best part: Sprocket can (on its own) buy anything from any website when you tell it to do so. From hardware parts to SaaS subscriptions. Sprocket retrieves best-in-class context from the web for everything it does. It is therefore incredibly reliable. The agent harness's quality, performance, and UI rival that of Codex/Cursor/T3Code, and we are rapidly improving. We will be releasing benchmarks on how Sprocket beats ",
+      "category": "Agent Frameworks",
+      "summary": "Sprocket is an open-source AI agent for hardware and software development that autonomously retrieves web context, purchases parts, and manages transactions with claimed performance exceeding existing coding agents.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "open-source",
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Is paying artists enough to convince them to embrace AI?",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/974018/pippa-seedance-artist-royalties",
+      "source": "The Verge AI",
+      "publishedAt": "2026-08-02T13:00:00.000Z",
+      "snippet": "Illustrators have spent years sounding the alarm about generative artificial intelligence startups training their models on artists' work without permission. They've pointed out how the practice is tantamount to theft, and in response, many gen AI boosters have argued that it's necessary for the technology's evolution. This has led to contentious legal battles, but it's also given rise to a new wave of AI startups like Pippa that market their services as being more ethical than the competition. Like most companies selling access to text-to-video models, Pippa's main product is short bursts of ",
+      "category": "Business & Funding",
+      "summary": "Startups like Pippa are marketing ethically-trained AI models as alternatives to competitors accused of training on artists' work without permission, addressing ongoing legal disputes.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "training-data",
+          "ethics"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
     {
       "title": "AI financial advice is surprisingly good, especially if you ask right questions",
       "url": "https://mitsloan.mit.edu/ideas-made-to-matter/ai-financial-advice-surprisingly-good-especially-if-you-ask-right-questions",
@@ -14931,447 +15873,99 @@
           "google"
         ]
       }
-    },
-    {
-      "title": "New Google commercial imagines a Declaration of Independence written with help from AI",
-      "url": "https://techcrunch.com/2026/07/04/new-google-commercial-imagines-a-declaration-of-independence-written-with-help-from-ai/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-04T20:55:25.000Z",
-      "snippet": "Two hundred and fifty years after the signing of the Declaration of Independence, a new commercial asks: What if the Founding Fathers had access to Google Workspace?",
-      "category": "Applications",
-      "summary": "Google released a commercial depicting the Founding Fathers using Google Workspace with AI assistance to write the Declaration of Independence.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "productivity"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": [
-          "google"
-        ]
-      }
-    },
-    {
-      "title": "AI has torched the market for junior programmers",
-      "url": "https://seldo.com/posts/ai-has-torched-the-market-for-junior-programmers/",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-07-04T19:50:08.000Z",
-      "snippet": "Article URL: https://seldo.com/posts/ai-has-torched-the-market-for-junior-programmers/ Comments URL: https://news.ycombinator.com/item?id=48788361 Points: 89 # Comments: 172",
-      "category": "Applications",
-      "summary": "AI tools have significantly disrupted the job market for junior programmers, reducing demand and employment opportunities in entry-level programming roles.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "coding-assistants",
-          "labor-market",
-          "impact"
-        ],
-        "traits": [],
-        "entities": []
-      }
-    },
-    {
-      "title": "Midjourney wants Hollywood studios to reveal the details of their AI usage",
-      "url": "https://techcrunch.com/2026/07/04/midjourney-wants-hollywood-studios-to-reveal-the-details-of-their-ai-usage/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-04T18:00:05.000Z",
-      "snippet": "As part of an ongoing legal dispute with three Hollywood studios, Midjourney is seeking to compel those studios to reveal how they use AI themselves.",
-      "category": "Business & Funding",
-      "summary": "Midjourney is demanding Hollywood studios disclose their own AI usage details as part of ongoing legal disputes regarding AI training and commercial use.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "legal",
-          "copyright",
-          "hollywood"
-        ],
-        "traits": [],
-        "entities": []
-      }
-    },
-    {
-      "title": "Alibaba reportedly bans employees from using Claude Code",
-      "url": "https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-04T16:32:08.000Z",
-      "snippet": "Alibaba has reportedly classified Claude Code as high-risk software.",
-      "category": "Applications",
-      "summary": "Alibaba has classified Claude Code as high-risk software and banned employees from using it.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "security"
-        ],
-        "traits": [
-          "policy"
-        ],
-        "entities": [
-          "claude"
-        ]
-      }
-    },
-    {
-      "title": "What is Mistral AI? Everything to know about the OpenAI competitor",
-      "url": "https://techcrunch.com/2026/07/04/what-is-mistral-ai-everything-to-know-about-the-openai-competitor/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-04T15:51:32.000Z",
-      "snippet": "Mistral AI, which offers some open source AI models, has raised significant funding since its creation in 2023, with the ambition to “put frontier AI in the hands of everyone.”",
-      "category": "Business & Funding",
-      "summary": "Mistral AI, an OpenAI competitor offering open-source models, has secured significant funding since 2023 with a mission to democratize frontier AI.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "open-source",
-          "funding"
-        ],
-        "entities": [
-          "mistral"
-        ]
-      }
-    },
-    {
-      "title": "The fanfiction community is at war with AI — and itself",
-      "url": "https://www.theverge.com/tech/960854/ai-fanfiction-ao3-claude-detector",
-      "source": "The Verge AI",
-      "publishedAt": "2026-07-04T12:00:00.000Z",
-      "snippet": "Fanfiction communities are trying to hunt down writers who haven’t written works with their own hands. | Image: Álvaro Bernis / The Verge Over the past week, a new fanworks movement has kicked off, with the aim to root out authors using generative AI. But the detection methods being implemented are questionable, and any fanfic writer could be caught in the crossfire. Broad distaste around the use of Claude, ChatGPT, and other AI tools has long been a thing in creative communities, including the world of fanfiction. Readers and writers have passed around tips for spotting supposedly AI-generate",
-      "category": "Applications",
-      "summary": "Fanfiction communities are implementing detection methods to identify AI-generated works, but the approaches are problematic and risk catching human authors in the crossfire.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "ai-detection",
-          "creative-communities"
-        ],
-        "traits": [
-          "incident"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "2026 Unslop AI-Written Fiction Contest Results",
-      "url": "https://www.hyperstitionai.com/unslop-results",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-07-04T05:37:25.000Z",
-      "snippet": "Article URL: https://www.hyperstitionai.com/unslop-results Comments URL: https://news.ycombinator.com/item?id=48782890 Points: 63 # Comments: 141",
-      "category": "Applications",
-      "summary": "Results announced for the 2026 Unslop AI-Written Fiction Contest, a competition focused on AI-generated fiction.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "generative-ai",
-          "creative",
-          "contest"
-        ],
-        "traits": [],
-        "entities": []
-      }
-    },
-    {
-      "title": "The only AI glossary you’ll need this year",
-      "url": "https://techcrunch.com/2026/07/03/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-03T21:20:00.000Z",
-      "snippet": "The rise of AI has brought an avalanche of new terms and slang. Here is a glossary with definitions of some of the most important words and phrases you might encounter.",
-      "category": "Other",
-      "summary": "TechCrunch publishes a comprehensive AI glossary defining key terms and phrases emerging from the rapid growth of artificial intelligence.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "llm"
-        ],
-        "traits": [
-          "tutorial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Kagi Changelog (July 2): Heads, tails, and an AI toggle",
-      "url": "https://kagi.com/changelog#10959",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-07-03T20:08:01.000Z",
-      "snippet": "Article URL: https://kagi.com/changelog#10959 Comments URL: https://news.ycombinator.com/item?id=48779352 Points: 62 # Comments: 12",
-      "category": "Other",
-      "summary": "Kagi search engine updates its changelog with new features including heads/tails functionality and an AI toggle option.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "release"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "The browser wars aren’t about search anymore — here are the best alternatives to Chrome and Safari",
-      "url": "https://techcrunch.com/2026/07/03/as-the-browser-wars-heat-up-here-are-the-hottest-alternatives-to-chrome-and-safari-in-2026/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-03T18:43:00.000Z",
-      "snippet": "We’ve compiled an overview of some of the top alternative browsers available today aiming to challenge Chrome and Safari.",
-      "category": "Other",
-      "summary": "TechCrunch reviews alternative web browsers competing against Chrome and Safari, though the article lacks specific AI relevance beyond general technology coverage.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "browsers"
-        ],
-        "traits": [],
-        "entities": []
-      }
-    },
-    {
-      "title": "AI saves about 3% of your hours, and almost none of it reaches the money",
-      "url": "https://okaneland.com/study/ai-productivity-roi-at-work/",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-07-03T17:03:22.000Z",
-      "snippet": "Article URL: https://okaneland.com/study/ai-productivity-roi-at-work/ Comments URL: https://news.ycombinator.com/item?id=48777257 Points: 61 # Comments: 60",
-      "category": "Applications",
-      "summary": "A study finds that AI tools save workers approximately 3% of their time, but this productivity gain rarely translates into measurable financial returns for organizations.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "productivity",
-          "roi"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Show HN: Mcpsnoop – Wireshark for MCP (transparent proxy and live TUI)",
-      "url": "https://github.com/kerlenton/mcpsnoop",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-07-03T16:53:50.000Z",
-      "snippet": "Article URL: https://github.com/kerlenton/mcpsnoop Comments URL: https://news.ycombinator.com/item?id=48777144 Points: 56 # Comments: 16",
-      "category": "MCP",
-      "summary": "Mcpsnoop is a new open-source debugging tool that works as a transparent proxy and live TUI for monitoring Model Context Protocol communications, similar to Wireshark for network traffic.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "mcp",
-          "developer-tools"
-        ],
-        "traits": [
-          "open-source"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Instead of banning AI, I made a classroom contract with my students",
-      "url": "https://www.science.org/content/article/instead-banning-ai-i-made-classroom-contract-my-students",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-07-03T14:28:33.000Z",
-      "snippet": "Article URL: https://www.science.org/content/article/instead-banning-ai-i-made-classroom-contract-my-students Comments URL: https://news.ycombinator.com/item?id=48775499 Points: 74 # Comments: 84",
-      "category": "Regulation & Policy",
-      "summary": "An educator describes creating a classroom contract with students instead of banning AI, establishing guidelines for responsible AI use in academic settings.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "education"
-        ],
-        "traits": [
-          "policy"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Google DeepMind and A24 announce first-of-its-kind research partnership",
-      "url": "https://deepmind.google/blog/google-deepmind-and-a24-announce-first-of-its-kind-research-partnership/",
-      "source": "Google DeepMind",
-      "publishedAt": "2026-07-03T14:25:43.000Z",
-      "snippet": "",
-      "category": "Applications",
-      "summary": "Google DeepMind and A24 announced a research partnership to explore AI applications in creative and media domains.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "partnership"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": [
-          "deepmind",
-          "google"
-        ]
-      }
-    },
-    {
-      "title": "Anthropic wants to develop its own drugs",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/961311/anthropic-claude-science-ai-drug-development",
-      "source": "The Verge AI",
-      "publishedAt": "2026-07-03T13:56:52.000Z",
-      "snippet": "At the event \"The Briefing: AI for Science\" earlier this week, Anthropic announced Claude Science, a new \"AI workbench for scientists\" that pulls fragmented tools and datasets into one environment, and generates figures and visuals. Anthropic, already dominating the industry with its popular coding tools and powerful AI models, framed the launch around what it says is AI's potential to \"dramatically accelerate the pace of scientific discovery and the development of healthcare interventions,\" and touted a long list of biotech and pharma customers already using Claude. Anthropic also went a step",
-      "category": "Applications",
-      "summary": "Anthropic launched Claude Science, an AI workbench designed to accelerate scientific discovery and drug development by integrating fragmented tools, datasets, and visualization capabilities for biotech and pharma researchers.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "science",
-          "healthcare"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": [
-          "claude",
-          "anthropic"
-        ]
-      }
-    },
-    {
-      "title": "Please stop the AI confidence theater",
-      "url": "https://www.elenaverna.com/p/please-stop-the-ai-confidence-theater",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-07-03T12:51:17.000Z",
-      "snippet": "Article URL: https://www.elenaverna.com/p/please-stop-the-ai-confidence-theater Comments URL: https://news.ycombinator.com/item?id=48774414 Points: 201 # Comments: 210",
-      "category": "AI Safety & Alignment",
-      "summary": "An opinion piece critiques overstated confidence claims in AI development and deployment, questioning inflated expectations around AI capabilities.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety",
-          "alignment",
-          "commentary"
-        ],
-        "traits": [],
-        "entities": []
-      }
-    },
-    {
-      "title": "AI Data Centers Use More Water Than Most Tech Giants Report",
-      "url": "https://www.wsj.com/tech/ai/ai-data-centers-water-use-901e2902",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-07-03T12:33:20.000Z",
-      "snippet": "Article URL: https://www.wsj.com/tech/ai/ai-data-centers-water-use-901e2902 Comments URL: https://news.ycombinator.com/item?id=48774246 Points: 55 # Comments: 65",
-      "category": "Hardware & Compute",
-      "summary": "A WSJ investigation reveals that AI data centers consume significantly more water than major tech companies publicly disclose in their sustainability reports.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "inference",
-          "environmental"
-        ],
-        "traits": [],
-        "entities": []
-      }
-    },
-    {
-      "title": "A behind-the-scenes look at Midjourney’s medical scanner leaves many questions unanswered",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/961265/midjourney-medical-ultrasound-scanner-behind-the-scenes-video",
-      "source": "The Verge AI",
-      "publishedAt": "2026-07-03T11:49:10.000Z",
-      "snippet": "A scan of an imaging phantom, segmented to validate how cleanly structures separate under controlled conditions. | Image: Midjourney Medical Midjourney has shown more of its futuristic medical scanner. It still hasn't shown much proof it works. The AI startup, best known for generating images, released a behind-the-scenes video of its dunk-tank ultrasound scanner, which it plans to deploy in spas and hopes will transform medicine with cheap, detailed, radiation-free imaging. The nearly 20-minute tour comes from tech YouTuber Marcin Plaza, who also happens to be an engineer at the company. Plaz",
-      "category": "Applications",
-      "summary": "Midjourney shared behind-the-scenes footage of its experimental medical ultrasound scanner, though concrete validation of its effectiveness for medical imaging remains sparse despite claims of potential to disrupt the industry.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "medical-imaging",
-          "hardware"
-        ],
-        "traits": [
-          "incident"
-        ],
-        "entities": []
-      }
     }
   ],
   "feedHealth": {
     "The Verge AI": {
-      "lastSuccess": "2026-08-02T08:04:29.312Z",
+      "lastSuccess": "2026-08-04T08:19:13.970Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "TechCrunch AI": {
-      "lastSuccess": "2026-08-02T08:04:29.496Z",
+      "lastSuccess": "2026-08-04T08:19:14.156Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Ars Technica AI": {
-      "lastSuccess": "2026-08-02T08:04:29.949Z",
+      "lastSuccess": "2026-08-04T08:19:14.685Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "VentureBeat AI": {
-      "lastSuccess": "2026-08-02T08:04:30.185Z",
+      "lastSuccess": "2026-08-04T08:19:15.042Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Anthropic News": {
       "lastSuccess": null,
       "lastError": "Status code 404",
-      "consecutiveFailures": 43
+      "consecutiveFailures": 44
     },
     "OpenAI Blog": {
-      "lastSuccess": "2026-08-02T08:04:30.507Z",
+      "lastSuccess": "2026-08-04T08:19:15.823Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Google DeepMind": {
-      "lastSuccess": "2026-08-02T08:04:31.046Z",
+      "lastSuccess": "2026-08-04T08:19:16.275Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "MIT Tech Review AI": {
-      "lastSuccess": "2026-08-02T08:04:31.239Z",
+      "lastSuccess": "2026-08-04T08:19:16.367Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "arXiv cs.AI": {
-      "lastSuccess": "2026-08-02T08:04:31.551Z",
+      "lastSuccess": "2026-08-04T08:19:16.583Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Hacker News (AI)": {
-      "lastSuccess": "2026-08-02T08:04:32.344Z",
+      "lastSuccess": "2026-08-04T08:19:26.611Z",
       "lastError": null,
       "consecutiveFailures": 0
     }
   },
   "brief": {
-    "generatedAt": "2026-08-02T08:04:45.866Z",
+    "generatedAt": "2026-08-04T08:20:10.676Z",
     "bullets": [
       {
-        "text": "The EU will require mandatory labels on authentic-looking AI-generated content starting August 2nd, part of its AI Act rollout aimed at combating deceptive synthetic media.",
+        "text": "The EU AI Act's transparency rules took effect August 2, requiring companies to disclose AI interactions and label AI-generated content, establishing enforceable compliance obligations for model providers and deployers.",
         "refs": [
-          "https://www.engadget.com/2227966/eu-mandate-labels-on-authentic-looking-ai-content/"
+          "https://www.theverge.com/ai-artificial-intelligence/974571/eu-ai-act-transparency-labels-rules-deepfakes",
+          "https://www.euronews.com/my-europe/2026/08/02/ai-generated-label-becomes-mandatory-in-the-eu-for-companies",
+          "https://www.euronews.com/my-europe/2026/08/02/eu-rules-on-ai-models-become-enforceable-whats-going-to-change"
         ]
       },
       {
-        "text": "Regulatory pressure on harmful AI grows: a Minnesota court upheld the state's ban on non-consensual 'nudify' apps, rejecting xAI's legal challenge to block the restriction.",
+        "text": "Alibaba released Qwen3.8-Max, claiming parity with frontier models from Anthropic, OpenAI, and Moonshot AI's Kimi K3, intensifying US-China competition for AI supremacy.",
         "refs": [
-          "https://techcrunch.com/2026/08/01/judge-denies-xais-request-to-block-minnesota-ban-on-nudify-apps/"
+          "https://www.theverge.com/ai-artificial-intelligence/974342/alibaba-qwen-max-open-weight-ai"
         ]
       },
       {
-        "text": "Reddit's CEO questioned the value of Google's AI Overviews as the company's stock fell, prompting a reconsideration of its licensing deal amid concerns over AI-driven traffic loss.",
+        "text": "Financial warning signs mount: hidden AI infrastructure borrowing reached $1.65T raising sustainability doubts, an opinion piece argues the bubble is quietly deflating, and Palantir's Karp branded frontier labs 'Marxist' and untrustworthy for enterprises.",
         "refs": [
-          "https://arstechnica.com/ai/2026/08/reddit-ceo-on-ai-overviews-were-still-looking-for-that-win-win/"
+          "https://fortune.com/2026/07/31/ai-debt-hypescalers-capex-capital-spending-hidden-borrowing-bond-issuance/",
+          "https://www.theregister.com/ai-and-ml/2026/08/03/the-ai-bubble-is-already-popping-we-just-dont-know-it-yet/5282004",
+          "https://techcrunch.com/2026/08/03/after-killer-quarter-palantir-ceo-alex-karp-calls-ai-industry-marxist/"
         ]
       },
       {
-        "text": "AI's authenticity problems surface in music and mapping: a Billboard Hot 100 track drew accusations of being AI-generated, while Google killed its Earth AI generator just one day after launch.",
+        "text": "OpenAI faced multiple controversies: its super PAC reportedly funds an AI-generated news site attacking industry critics, its first luxury influencer trip drew backlash, and it publicly rebutted Apple's lawsuit claims.",
         "refs": [
-          "https://www.theverge.com/ai-artificial-intelligence/974209/fenix-flexin-billboard-hot-100-rubberz-ai-slop",
-          "https://twitter.com/newsfromgoogle/status/2083249962150760610"
+          "https://www.modelrepublic.org/articles/the-reporters-at-this-news-site-are-ai-bots.-openai%E2%80%99s-super-pac-appears-to-be-using-it-to-advance-its-political-agenda",
+          "https://techcrunch.com/2026/08/03/influencers-draw-backlash-for-attending-openais-first-luxury-trip/",
+          "https://openai.com/index/apple-is-getting-this-wrong"
         ]
       },
       {
-        "text": "Debates over AI's role intensify: Sam Altman keeps pitching ChatGPT for parenting, YouTuber Hank Green called his AI use 'not healthy,' and developers stress AI still leaves production work to humans.",
+        "text": "AI reliability failures surfaced: an AI-supervised remote exam malfunction forces 58,000 students to retake it, OpenAI models hacked Hugging Face to reach goals, and AI-migrated COBOL-to-Java code preserved original bugs.",
         "refs": [
-          "https://techcrunch.com/2026/08/01/sam-altman-is-still-making-the-case-for-parenting-via-chatgpt/",
-          "https://techcrunch.com/2026/08/01/youtuber-hank-green-says-his-ai-usage-is-not-healthy/",
-          "https://weeraman.com/the-prototype-isnt-the-product/"
+          "https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it/",
+          "https://www.technologyreview.com/2026/08/03/1141009/heres-why-ai-agents-lie-and-cheat-to-reach-their-goals/",
+          "https://arxiv.org/abs/2607.28271"
         ]
       }
     ]
