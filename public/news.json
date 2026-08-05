@@ -1,21 +1,581 @@
 {
-  "generatedAt": "2026-08-04T08:19:26.612Z",
-  "daysBack": 4,
+  "generatedAt": "2026-08-05T08:16:07.088Z",
+  "daysBack": 2,
   "categories": [
-    "Agent Frameworks",
-    "Research",
-    "Hardware & Compute",
-    "Developer Tools",
-    "Applications",
-    "Business & Funding",
     "Regulation & Policy",
+    "AI Safety & Alignment",
+    "Hardware & Compute",
+    "Business & Funding",
+    "Applications",
+    "Research",
+    "Agent Frameworks",
+    "Developer Tools",
     "Other",
     "Model Releases",
-    "AI Safety & Alignment",
     "MCP",
     "Open Source"
   ],
   "articles": [
+    {
+      "title": "Rust-lang/rust is adopting an LLM policy",
+      "url": "https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-08-05T05:52:24.000Z",
+      "snippet": "Article URL: https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/ Comments URL: https://news.ycombinator.com/item?id=49179039 Points: 50 # Comments: 30",
+      "category": "Regulation & Policy",
+      "summary": "The Rust programming language project adopts an LLM policy to govern the use of large language models in project activities.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm"
+        ],
+        "traits": [
+          "policy",
+          "open-source"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "AI fuels more than half of cybercrime in Africa as scams surge – Interpol",
+      "url": "https://www.africanews.com/2026/08/04/ai-fuels-more-than-half-of-cybercrime-in-africa-as-digital-scams-surge-interpol/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-08-04T22:01:41.000Z",
+      "snippet": "https://www.interpol.int/Media/Documents/Publications/Cyberc... Comments URL: https://news.ycombinator.com/item?id=49175826 Points: 219 # Comments: 166",
+      "category": "Regulation & Policy",
+      "summary": "Interpol reports that AI fuels more than half of cybercrime in Africa, highlighting the role of generative AI in enabling criminal scams across the continent.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy",
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Security Incident INC-2026-07-28-01 – UK AI Security Institute [pdf]",
+      "url": "https://cdn.prod.website-files.com/663bd486c5e4c81588db7a1d/6a724858f7db25c81487016d_Security%20Incident%20INC-2026-07-28-01.pdf",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-08-04T21:52:58.000Z",
+      "snippet": "Article URL: https://cdn.prod.website-files.com/663bd486c5e4c81588db7a1d/6a724858f7db25c81487016d_Security%20Incident%20INC-2026-07-28-01.pdf Comments URL: https://news.ycombinator.com/item?id=49175717 Points: 57 # Comments: 47",
+      "category": "AI Safety & Alignment",
+      "summary": "UK AI Security Institute publishes security incident report INC-2026-07-28-01 documenting a significant AI-related security event.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "research",
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "SpaceX has bought $329M worth of Tesla Megapacks so far this year",
+      "url": "https://techcrunch.com/2026/08/04/spacex-has-bought-329m-worth-of-tesla-megapacks-so-far-this-year/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-04T21:07:26.000Z",
+      "snippet": "The purchase illustrates just how interconnected Elon Musk's universe of companies are.",
+      "category": "Hardware & Compute",
+      "summary": "SpaceX has purchased $329M worth of Tesla Megapacks in 2024, illustrating the energy infrastructure demands of AI compute operations.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "hardware",
+          "inference"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "AMD&#8217;s data center business is booming while gaming takes a backseat",
+      "url": "https://www.theverge.com/tech/975381/amd-q2-2026-earnings-ai-gaming-ryzen",
+      "source": "The Verge AI",
+      "publishedAt": "2026-08-04T20:57:49.000Z",
+      "snippet": "Driven by demand for AI capacity, AMD's data center revenue more than doubled year-over-year in its latest earnings report, reaching $6.7 billion. That's up from $5.8 billion in Q1, and jumping 107 percent from the $3.2 billion it reported for the same period a year ago. During Tuesday's earnings call, AMD CEO Lisa Su said the company expects \"data center segment revenue to more than double year-over-year in 2027,\" as well. At the same time, AMD's gaming revenue fell 31 percent compared to last year, to $779 million, as price hikes and component shortages slowed sales for the Xbox Series X / S",
+      "category": "Hardware & Compute",
+      "summary": "AMD's data center revenue more than doubled year-over-year to $6.7B driven by AI capacity demand, with the company projecting further doubling in 2027 as gaming revenue declines.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "inference"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "nvidia"
+        ]
+      }
+    },
+    {
+      "title": "SpaceX made more revenue as an AI company than a space company",
+      "url": "https://www.theverge.com/science/975335/spacex-made-more-money-as-a-neocloud",
+      "source": "The Verge AI",
+      "publishedAt": "2026-08-04T20:47:55.000Z",
+      "snippet": "SpaceX's AI revenue grew more than three times to $2.6 billion from the year before, mostly because of deals that the company made to provide compute to other AI companies, according to SpaceX's quarterly earnings. The AI division, which the company said in its documents to go public was the source of most of its value, lost $1.5 billion this quarter, slightly less than in the same quarter last year. SpaceX made deals with Anthropic in May and Google in June to provide compute to the other two AI companies, putting it in competition with other neoclouds such as CoreWeave. The increased presenc",
+      "category": "Business & Funding",
+      "summary": "SpaceX's AI division generated $2.6B in revenue through compute deals with Anthropic and Google, positioning the company as a competitor to cloud providers like CoreWeave.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "compute"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "Texas halts data center connections to power grid amid overwhelming demand",
+      "url": "https://arstechnica.com/ai/2026/08/texas-halts-data-center-connections-to-power-grid-amid-overwhelming-demand/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-08-04T20:34:28.000Z",
+      "snippet": "Governor who touted Texas as AI “epicenter” pauses data center grid connections.",
+      "category": "Regulation & Policy",
+      "summary": "Texas halts data center grid connections amid overwhelming demand pressure, conflicting with the governor's prior positioning of Texas as an AI epicenter.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "hardware",
+          "inference"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Open-weight AI models are catching up to the frontier. The safety gap remains.",
+      "url": "https://techcrunch.com/2026/08/04/open-weight-ai-models-are-catching-up-to-the-frontier-the-safety-gap-remains/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-04T20:05:26.000Z",
+      "snippet": "A new SaferAI report finds Z.ai's open-weight GLM-5.2 approaches frontier AI capabilities while lacking key safety mitigations, renewing concerns that powerful open models could outpace governance and safeguards.",
+      "category": "AI Safety & Alignment",
+      "summary": "A SaferAI report finds open-weight GLM-5.2 approaches frontier capabilities while lacking key safety mitigations, raising concerns about open models outpacing safety governance.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "research",
+          "open-source"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Anthropic signs $10B deal with AI cloud startup Volta",
+      "url": "https://techcrunch.com/2026/08/04/anthropic-signs-10-billion-deal-with-ai-cloud-startup-volta/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-04T19:48:40.000Z",
+      "snippet": "Anthropic has been on a cloud partnership spree in recent months, and its latest move is reportedly a $10 billion deal with AI cloud startup Volta.",
+      "category": "Business & Funding",
+      "summary": "Anthropic signs a reported $10 billion compute partnership deal with AI cloud startup Volta, continuing its strategy of securing dedicated cloud infrastructure.",
+      "important": true,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "funding",
+          "commercial"
+        ],
+        "entities": [
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "Meet Wrinkles, an app that uncovers the hidden stories of the places around you",
+      "url": "https://techcrunch.com/2026/08/04/meet-wrinkles-an-ai-app-that-uncovers-the-hidden-stories-of-the-places-around-you/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-04T19:34:34.000Z",
+      "snippet": "Wrinkles, available on both iOS and Android, essentially acts as an AI-powered audio tour guide that reveals hidden history and local stories.",
+      "category": "Applications",
+      "summary": "Wrinkles is an AI-powered audio tour guide app available on iOS and Android that reveals hidden histories and local stories about nearby places.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "audio",
+          "multimodal"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Nvidia doesn’t mess around: A week after open AI industry group formed, it’s already showing progress",
+      "url": "https://techcrunch.com/2026/08/04/nvidia-doesnt-mess-around-a-week-after-open-ai-industry-group-formed-its-already-showing-progress/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-04T19:28:49.000Z",
+      "snippet": "The week-old Open Secure AI Alliance, spearheaded by Nvidia and grown to over 120 companies, already has proposals out for defending against AI agents.",
+      "category": "Regulation & Policy",
+      "summary": "The week-old Open Secure AI Alliance led by Nvidia and comprising 120+ companies has already proposed defenses against malicious AI agents.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "nvidia"
+        ]
+      }
+    },
+    {
+      "title": "Third-party cyber evaluations involving OpenAI models",
+      "url": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-08-04T19:00:00.000Z",
+      "snippet": "OpenAI explains recent third-party cybersecurity evaluation incidents and outlines new safeguards to strengthen AI model testing and evaluation.",
+      "category": "AI Safety & Alignment",
+      "summary": "OpenAI outlines new safeguards for third-party AI model cybersecurity evaluations following recent evaluation-related incidents.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "AI Data Centers Are Driving Up Power Bills – This Map Shows Where",
+      "url": "https://www.gadgetreview.com/ai-data-centers-are-driving-up-power-bills-this-map-shows-where",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-08-04T17:57:15.000Z",
+      "snippet": "Article URL: https://www.gadgetreview.com/ai-data-centers-are-driving-up-power-bills-this-map-shows-where Comments URL: https://news.ycombinator.com/item?id=49172433 Points: 66 # Comments: 22",
+      "category": "Hardware & Compute",
+      "summary": "AI data centers are significantly driving up power bills in certain regions, with a map showing the geographic concentration of infrastructure-related energy costs.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "hardware",
+          "inference"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "How an OpenAI influencer trip backfired",
+      "url": "https://www.theverge.com/tech/975173/openai-influencers-brand-trip-ai-backlash-marketing",
+      "source": "The Verge AI",
+      "publishedAt": "2026-08-04T17:46:41.000Z",
+      "snippet": "The brand trip is a right of passage for influencers. It's a mark of legitimacy that a sponsor wants to invite them on an all-expenses-paid vacation, often with luxurious freebies and activities. Trips can also spur hard feelings from uninvited influencers, trigger criticism from the public, and project a certain frivolousness. Usually it is fast fashion companies or beauty brands flying out influencers with the goal of flooding social media with sponsored content. This time, it was a major AI company. Over the weekend, several influencers began posting about OpenAI's \"first ever brand trip,\" ",
+      "category": "Applications",
+      "summary": "OpenAI faced backlash after organizing an influencer brand trip, sparking broader conversation about AI company marketing and influence in creator communities.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial",
+          "incident"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "‘Not healthy’ LLM use is more common than you think",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/975180/llm-ai-chatbot-use-not-healthy",
+      "source": "The Verge AI",
+      "publishedAt": "2026-08-04T17:33:46.000Z",
+      "snippet": "Hank Green, a popular YouTuber and science communicator, said he is stepping back from production amid intense criticism over his use of AI. Green described his AI usage as \"not healthy,\" but stressed that he used it for finding research sources and not to write scripts. Much of the ensuing firestorm in this corner of the internet has centered on how a creator can square a brand built on authenticity and credibility with a technology trained on the (often uncompensated) works of others, and which has a well-known tendency to generate plausible-sounding falsehoods. Some attention has fallen on ",
+      "category": "Applications",
+      "summary": "YouTuber Hank Green stepped back from production following criticism over his use of AI for research, highlighting tensions between creator authenticity and AI tool adoption.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "incident",
+          "tutorial"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "When AI Benchmarks Plateau: A Systematic Study of Benchmark Saturation",
+      "url": "https://arxiv.org/abs/2602.16763",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-08-04T16:10:39.000Z",
+      "snippet": "Article URL: https://arxiv.org/abs/2602.16763 Comments URL: https://news.ycombinator.com/item?id=49170915 Points: 94 # Comments: 95",
+      "category": "Research",
+      "summary": "A systematic study examining how AI benchmarks saturate and plateau, revealing limitations in current evaluation methodologies for measuring model progress.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "evaluation"
+        ],
+        "traits": [
+          "benchmark",
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "The AI Demand Bubble",
+      "url": "https://www.wheresyoured.at/the-ai-demand-bubble/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-08-04T15:51:51.000Z",
+      "snippet": "Article URL: https://www.wheresyoured.at/the-ai-demand-bubble/ Comments URL: https://news.ycombinator.com/item?id=49170648 Points: 106 # Comments: 132",
+      "category": "Business & Funding",
+      "summary": "Analysis discussing whether current AI market demand may be inflated and unsustainable, examining hype cycles in the AI industry.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "market-analysis"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Spotify expands AI remix and covers project with Merlin partnership",
+      "url": "https://techcrunch.com/2026/08/04/spotify-adds-merlin-to-its-ai-music-remix-and-covers-effort/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-04T15:50:06.000Z",
+      "snippet": "Spotify says Merlin, which represents more than 30,000 independent labels and distributors, has joined Universal Music Group in backing its upcoming AI-powered remix and covers product. The paid tool will let fans create AI-generated covers and remixes of participating artists’ music while ensuring artists opt in, receive credit, and are compensated.",
+      "category": "Applications",
+      "summary": "Spotify expands its AI remix and covers tool with backing from Merlin (representing 30,000+ indie labels), ensuring artist opt-in, credit, and compensation.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "audio"
+        ],
+        "traits": [
+          "commercial",
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Texas halts new data centers as governor calls for audits",
+      "url": "https://techcrunch.com/2026/08/04/texas-halts-new-data-centers-as-governor-calls-for-audits/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-04T15:42:35.000Z",
+      "snippet": "Tech companies and developers have been scouring the U.S. for places to build data centers, and they’ve been drawn to Texas’ loose regulations and seemingly abundant power supply. But even Texas can be pushed to the brink.",
+      "category": "Regulation & Policy",
+      "summary": "Texas governor halts new data center grid connections and calls for audits, tempering the state's position as an AI infrastructure hub due to overwhelming demand.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "hardware",
+          "inference"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Texas says data centers must pass an audit before connecting to the grid",
+      "url": "https://www.theverge.com/policy/975071/texas-data-center-audit",
+      "source": "The Verge AI",
+      "publishedAt": "2026-08-04T15:33:21.000Z",
+      "snippet": "Texas announced new a audit on data centers that could slow approval for new facilities seeking to connect to the state energy grid. Governor Greg Abbott (R) on Monday directed the Public Utility Commission of Texas (PUCT) and the Electric Reliability Council of Texas (ERCOT) to verify and audit new data center proposals, writing that the review is needed to \"keep the grid stable and reliable.\" Data centers will need to provide information on state and local incentives they've received, how much they'd rely on the state grid, expected water consumption and sources, and how they plan to track c",
+      "category": "Regulation & Policy",
+      "summary": "Texas announced mandatory audits for new data centers seeking grid connections to ensure grid stability, potentially slowing AI infrastructure expansion in the state.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "hardware",
+          "inference"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Elon Musk spends half his time talking robots and AI on Tesla earnings calls",
+      "url": "https://techcrunch.com/2026/08/04/elon-musk-spends-half-his-time-talking-robots-and-ai-on-tesla-earnings-calls/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-04T15:20:06.000Z",
+      "snippet": "An analysis of the last seven years of Tesla earnings calls shows just how little attention Musk pays to Tesla's car business.",
+      "category": "Applications",
+      "summary": "Analysis of Tesla earnings calls over seven years shows Elon Musk dedicates roughly half his time discussing robotics and AI rather than car manufacturing.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "robotics",
+          "agentic"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "It's not a fear of \"AI communism\"; it's a fear of competitive market capitalism",
+      "url": "http://observationalepidemiology.blogspot.com/2026/07/its-not-fear-of-ai-communism-its-fear.html",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-08-04T14:07:30.000Z",
+      "snippet": "Article URL: http://observationalepidemiology.blogspot.com/2026/07/its-not-fear-of-ai-communism-its-fear.html Comments URL: https://news.ycombinator.com/item?id=49169227 Points: 85 # Comments: 79",
+      "category": "Regulation & Policy",
+      "summary": "Opinion piece analyzing competitive market concerns around AI development and deployment, addressing economic implications beyond alignment fears.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "economics"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Apple says more ex-employees may have taken confidential data to OpenAI",
+      "url": "https://techcrunch.com/2026/08/04/apple-says-more-ex-employees-may-have-taken-confidential-data-to-openai/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-04T14:03:01.000Z",
+      "snippet": "Apple says its trade secrets investigation into OpenAI has widened. In a new court filing, Apple claims additional former staff may have retained or accessed confidential information.",
+      "category": "Business & Funding",
+      "summary": "Apple expands its trade secrets investigation into OpenAI, claiming additional former employees may have retained or accessed confidential information.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "incident",
+          "commercial"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Is the future of data centers portable? Runware builds a pod to find out",
+      "url": "https://techcrunch.com/2026/08/04/is-the-future-of-data-centers-portable-runware-builds-a-pod-to-find-out/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-04T13:00:00.000Z",
+      "snippet": "On Tuesday, AI infrastructure company Runware announced the launch of its own modular data center called Sonic Inference Pod.",
+      "category": "Hardware & Compute",
+      "summary": "Runware launches Sonic Inference Pod, a modular data center pod designed to make AI infrastructure more portable and scalable.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "hardware",
+          "inference"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "EON wants to move the data superhighway from ocean fiber to space lasers",
+      "url": "https://techcrunch.com/2026/08/04/eon-wants-to-move-the-data-superhighway-from-ocean-fiber-to-space-lasers/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-04T12:00:00.000Z",
+      "snippet": "Endeavor Optical Networks is planning to launch the fastest space laser communications system yet built.",
+      "category": "Hardware & Compute",
+      "summary": "Endeavor Optical Networks is developing the fastest space laser communications system to establish a satellite-based alternative to undersea fiber networks.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "hardware",
+          "inference"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "AI-Generated Images Discourage Me from Reading Your Blog",
+      "url": "https://nelson.cloud/ai-generated-images-discourage-me-from-reading-your-blog/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-08-04T11:30:17.000Z",
+      "snippet": "Article URL: https://nelson.cloud/ai-generated-images-discourage-me-from-reading-your-blog/ Comments URL: https://news.ycombinator.com/item?id=49167113 Points: 756 # Comments: 440",
+      "category": "Applications",
+      "summary": "User commentary on how AI-generated imagery affects blog readership and engagement, reflecting broader concerns about synthetic content quality perception.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "vision",
+          "multimodal"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "OpenAI drags Apple’s lawsuit into the court of public opinion",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/974914/openai-blog-response-apple-lawsuit-messages",
+      "source": "The Verge AI",
+      "publishedAt": "2026-08-04T11:27:55.000Z",
+      "snippet": "OpenAI says Apple’s lawsuit is “careless, aggressive, and oddly personal.” | Image: Cath Virginia / The Verge, Getty Images Apple's legal battle against OpenAI just got messier now that the ChatGPT-maker has publicly aired receipts to counter Apple's version of events. In a blog post published overnight titled \"Apple is getting this wrong,\" OpenAI said that Apple's lawsuit accusing it of stealing trade secrets is \"careless, aggressive, and oddly personal,\" sharing iMessage and email exchanges to challenge allegations central to the case. This isn't a legal response from OpenAI, but it's an att",
+      "category": "Business & Funding",
+      "summary": "OpenAI publicly countered Apple's trade secret theft allegations in a blog post, escalating their legal dispute by sharing private communications to challenge Apple's claims.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "incident",
+          "commercial"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Can Reddit fend off a new wave of AI SEO spam?",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/973098/reddit-ai-search-seo-marketing-brands-spam",
+      "source": "The Verge AI",
+      "publishedAt": "2026-08-04T10:00:00.000Z",
+      "snippet": "Earlier this year, a Reddit user had asked members of a skincare-focused subreddit if anyone had tried a specific hypochlorous acid spray, a product often used for acne. There were dozens of responses; one from a user named Primary-Taro4254 seemed innocuous enough, at least at first. \"I haven't personally tried [that brand] so I can't fully compare, sorry,\" they commented. \"But I have been using a similar hypochlorous acid spray from Honeydew Labs and I've honestly really liked it.\" Primary-Taro4254 helpfully shared their experience using the spray to calm their skin's redness and irritation, ",
+      "category": "Regulation & Policy",
+      "summary": "Reddit faces an influx of AI-generated spam posts designed to promote products, demonstrating how generative AI is being weaponized for SEO manipulation on social platforms.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm"
+        ],
+        "traits": [
+          "incident",
+          "policy"
+        ],
+        "entities": []
+      }
+    },
     {
       "title": "AutoFOAM: The Self-Refining Autonomous OpenFOAM Agent",
       "url": "https://arxiv.org/abs/2608.00003",
@@ -317,6 +877,26 @@
       }
     },
     {
+      "title": "New ways to learn and teach with ChatGPT Work and Codex",
+      "url": "https://openai.com/index/learn-teach-chatgpt-work-codex",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-08-04T00:00:00.000Z",
+      "snippet": "Explore new education plugins for ChatGPT Work and Codex that help K–12 teachers, college educators, and students learn, teach, research, and build.",
+      "category": "Developer Tools",
+      "summary": "OpenAI announces new education plugins for ChatGPT Work and Codex to help K–12 and college educators integrate AI into teaching and learning.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "tutorial",
+          "release"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
       "title": "After killer quarter, Palantir CEO Alex Karp calls AI industry ‘Marxist’",
       "url": "https://techcrunch.com/2026/08/03/after-killer-quarter-palantir-ceo-alex-karp-calls-ai-industry-marxist/",
       "source": "TechCrunch AI",
@@ -511,6 +1091,26 @@
         "traits": [
           "policy",
           "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Show HN: Hacker News with AI stories filtered out",
+      "url": "https://hcker.news/?view=frontpage&ai=exclude",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-08-03T17:39:56.000Z",
+      "snippet": "Hi folks, I've noticed that a lot of people here seem exhausted by the amount of AI news on the front page. I shared hcker.news here a year ago and it has since gained a ton of filtering features, including a dedicated AI filter, so I figured I should tell more people about it. The filter works in three passes: 1. Known AI-related keywords and domains are filtered automatically. 2. An agent reviews the remaining articles and removes those it identifies as AI-related. 3. I make the call on uncertain cases. - Commit messages for agent attribution - Contributors for known coding agents - Reposito",
+      "category": "Developer Tools",
+      "summary": "Open-source tool providing filtering capabilities to remove AI-related stories from Hacker News using keyword matching and AI-powered content classification.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "developer-tools"
+        ],
+        "traits": [
+          "open-source"
         ],
         "entities": []
       }
@@ -15733,239 +16333,99 @@
           "microsoft"
         ]
       }
-    },
-    {
-      "title": "When AI Costs More Than the Engineer",
-      "url": "https://tomtunguz.com/ai-spend-breakeven-2029/",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-07-06T07:05:25.000Z",
-      "snippet": "Article URL: https://tomtunguz.com/ai-spend-breakeven-2029/ Comments URL: https://news.ycombinator.com/item?id=48801493 Points: 84 # Comments: 69",
-      "category": "Business & Funding",
-      "summary": "Analysis examines the economics of AI deployment, suggesting AI costs may exceed engineer salaries until around 2029 when efficiency gains reach breakeven.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "economics",
-          "inference"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Al Vigier: Canada's AI strategy shouldn't include secret Palantir bills",
-      "url": "https://www.readtheline.ca/p/al-vigier-canadas-ai-strategy-shouldnt",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-07-06T00:04:48.000Z",
-      "snippet": "Article URL: https://www.readtheline.ca/p/al-vigier-canadas-ai-strategy-shouldnt Comments URL: https://news.ycombinator.com/item?id=48799256 Points: 153 # Comments: 67",
-      "category": "Regulation & Policy",
-      "summary": "Opinion piece argues Canada's AI strategy should not include undisclosed Palantir contracts, raising transparency concerns in government AI procurement.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "canada",
-          "transparency"
-        ],
-        "traits": [
-          "policy"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Some of the nation’s rich are letting AI teach their kids",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/961505/wealthy-ai-schools-alpha-forge-prep",
-      "source": "The Verge AI",
-      "publishedAt": "2026-07-05T22:30:54.000Z",
-      "snippet": "Most Americans don't trust AI. It's proven that it doesn't know what safe toppings for pizza are. People don't even want to listen to AI music. But none of that matters for some of America's wealthy, who are turning to AI to teach their kids instead of traditional schools. Companies like Forge Prep and Alpha School are charging families tens of thousands of dollars to turn their kids into beta testers for AI tutors and \"interactive project-based workshops.\" Unsurprisingly, Silicon Valley have been major adopters of this new model. Shaun Johnson, a San Francisco-based venture capitalist, told T",
-      "category": "Applications",
-      "summary": "Wealthy American families are adopting AI tutoring services from companies like Forge Prep and Alpha School, paying tens of thousands of dollars for AI-powered personalized education rather than traditional schooling, with Silicon Valley leading adoption.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "ai-tutoring",
-          "education"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "New AI tutor achieves 0.71-1.30 SD effect size in Dartmouth course [pdf]",
-      "url": "https://intextbooks.science.uu.nl/workshop2026/files/itb26_s1s2.pdf",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-07-05T18:47:43.000Z",
-      "snippet": "Article URL: https://intextbooks.science.uu.nl/workshop2026/files/itb26_s1s2.pdf Comments URL: https://news.ycombinator.com/item?id=48796817 Points: 164 # Comments: 99",
-      "category": "Research",
-      "summary": "Academic study from Dartmouth demonstrates that a new AI tutor achieves significant learning gains (0.71-1.30 standard deviations) in course outcomes.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "education",
-          "evaluation"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Amazon will stop accepting new customers for Mechanical Turk",
-      "url": "https://techcrunch.com/2026/07/05/amazon-will-stop-accepting-new-customers-for-mechanical-turk/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-05T17:43:36.000Z",
-      "snippet": "These may be the last days of Amazon’s Mechanical Turk.",
-      "category": "Applications",
-      "summary": "Amazon announced it will stop accepting new customers for Mechanical Turk, potentially marking the end of the long-running crowdsourcing platform.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "crowdsourcing",
-          "amazon"
-        ],
-        "traits": [
-          "policy"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "A sociotechnical threat model for AI-driven smart home devices",
-      "url": "https://arxiv.org/abs/2602.09239",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-07-05T17:05:57.000Z",
-      "snippet": "Article URL: https://arxiv.org/abs/2602.09239 Comments URL: https://news.ycombinator.com/item?id=48795830 Points: 83 # Comments: 66",
-      "category": "AI Safety & Alignment",
-      "summary": "Research paper presents a sociotechnical threat model for AI-driven smart home devices, identifying potential security and safety risks in IoT environments.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety",
-          "smart-home"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Infuriating Google commercial imagines the founding fathers embracing AI",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/961468/google-ai-commercial-founding-fathers-declaration-of-independence",
-      "source": "The Verge AI",
-      "publishedAt": "2026-07-05T14:23:11.000Z",
-      "snippet": "I call BS: the founding fathers definitely would have been Microsoft Teams users. | Image: Google \"Group project, but make it 1776.\" That's how a new commercial for Google Workspace opens. And things only get cringier from there. The clip imagines what it would be like if the founding fathers turned to Google's collaboration tools and Gemini to help them draft the Declaration of Independence. Ben Franklin texts Thomas Jefferson to check on the status of a draft, who takes a photo and uses AI to transcribe it into a Google Doc. Franklin and Adams hop in to make edits in suggestion mode, Gemini ",
-      "category": "Applications",
-      "summary": "Google released a commercial promoting Workspace and Gemini by imagining the founding fathers using AI collaboration tools to draft the Declaration of Independence, sparking criticism for its tone.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial"
-        ],
-        "entities": [
-          "gemini",
-          "google"
-        ]
-      }
     }
   ],
   "feedHealth": {
     "The Verge AI": {
-      "lastSuccess": "2026-08-04T08:19:13.970Z",
+      "lastSuccess": "2026-08-05T08:16:04.327Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "TechCrunch AI": {
-      "lastSuccess": "2026-08-04T08:19:14.156Z",
+      "lastSuccess": "2026-08-05T08:16:04.384Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Ars Technica AI": {
-      "lastSuccess": "2026-08-04T08:19:14.685Z",
+      "lastSuccess": "2026-08-05T08:16:04.634Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "VentureBeat AI": {
-      "lastSuccess": "2026-08-04T08:19:15.042Z",
+      "lastSuccess": "2026-08-05T08:16:04.800Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Anthropic News": {
       "lastSuccess": null,
       "lastError": "Status code 404",
-      "consecutiveFailures": 44
+      "consecutiveFailures": 45
     },
     "OpenAI Blog": {
-      "lastSuccess": "2026-08-04T08:19:15.823Z",
+      "lastSuccess": "2026-08-05T08:16:05.050Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Google DeepMind": {
-      "lastSuccess": "2026-08-04T08:19:16.275Z",
+      "lastSuccess": "2026-08-05T08:16:05.286Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "MIT Tech Review AI": {
-      "lastSuccess": "2026-08-04T08:19:16.367Z",
+      "lastSuccess": "2026-08-05T08:16:05.385Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "arXiv cs.AI": {
-      "lastSuccess": "2026-08-04T08:19:16.583Z",
+      "lastSuccess": "2026-08-05T08:16:05.649Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Hacker News (AI)": {
-      "lastSuccess": "2026-08-04T08:19:26.611Z",
+      "lastSuccess": "2026-08-05T08:16:07.087Z",
       "lastError": null,
       "consecutiveFailures": 0
     }
   },
   "brief": {
-    "generatedAt": "2026-08-04T08:20:10.676Z",
+    "generatedAt": "2026-08-05T08:16:36.235Z",
     "bullets": [
       {
-        "text": "The EU AI Act's transparency rules took effect August 2, requiring companies to disclose AI interactions and label AI-generated content, establishing enforceable compliance obligations for model providers and deployers.",
+        "text": "Texas halted new data center grid connections and mandated audits, citing overwhelming demand and grid stability concerns, reversing the governor's push to make the state an AI infrastructure epicenter.",
         "refs": [
-          "https://www.theverge.com/ai-artificial-intelligence/974571/eu-ai-act-transparency-labels-rules-deepfakes",
-          "https://www.euronews.com/my-europe/2026/08/02/ai-generated-label-becomes-mandatory-in-the-eu-for-companies",
-          "https://www.euronews.com/my-europe/2026/08/02/eu-rules-on-ai-models-become-enforceable-whats-going-to-change"
+          "https://arstechnica.com/ai/2026/08/texas-halts-data-center-connections-to-power-grid-amid-overwhelming-demand/",
+          "https://techcrunch.com/2026/08/04/texas-halts-new-data-centers-as-governor-calls-for-audits/",
+          "https://www.theverge.com/policy/975071/texas-data-center-audit"
         ]
       },
       {
-        "text": "Alibaba released Qwen3.8-Max, claiming parity with frontier models from Anthropic, OpenAI, and Moonshot AI's Kimi K3, intensifying US-China competition for AI supremacy.",
+        "text": "AI compute deals reshaped balance sheets: AMD's data center revenue doubled to $6.7B on AI demand, Anthropic signed a reported $10B pact with Volta, and SpaceX's AI division out-earned its space business at $2.6B.",
         "refs": [
-          "https://www.theverge.com/ai-artificial-intelligence/974342/alibaba-qwen-max-open-weight-ai"
+          "https://www.theverge.com/tech/975381/amd-q2-2026-earnings-ai-gaming-ryzen",
+          "https://techcrunch.com/2026/08/04/anthropic-signs-10-billion-deal-with-ai-cloud-startup-volta/",
+          "https://www.theverge.com/science/975335/spacex-made-more-money-as-a-neocloud"
         ]
       },
       {
-        "text": "Financial warning signs mount: hidden AI infrastructure borrowing reached $1.65T raising sustainability doubts, an opinion piece argues the bubble is quietly deflating, and Palantir's Karp branded frontier labs 'Marxist' and untrustworthy for enterprises.",
+        "text": "The Apple-OpenAI trade secrets fight escalated publicly, with Apple alleging more ex-employees took confidential data while OpenAI countered in a blog post sharing private communications to challenge the claims.",
         "refs": [
-          "https://fortune.com/2026/07/31/ai-debt-hypescalers-capex-capital-spending-hidden-borrowing-bond-issuance/",
-          "https://www.theregister.com/ai-and-ml/2026/08/03/the-ai-bubble-is-already-popping-we-just-dont-know-it-yet/5282004",
-          "https://techcrunch.com/2026/08/03/after-killer-quarter-palantir-ceo-alex-karp-calls-ai-industry-marxist/"
+          "https://techcrunch.com/2026/08/04/apple-says-more-ex-employees-may-have-taken-confidential-data-to-openai/",
+          "https://www.theverge.com/ai-artificial-intelligence/974914/openai-blog-response-apple-lawsuit-messages"
         ]
       },
       {
-        "text": "OpenAI faced multiple controversies: its super PAC reportedly funds an AI-generated news site attacking industry critics, its first luxury influencer trip drew backlash, and it publicly rebutted Apple's lawsuit claims.",
+        "text": "Safety concerns mounted as SaferAI found open-weight GLM-5.2 nearing frontier capability without key mitigations, Interpol blamed AI for over half of African cybercrime, and Nvidia's new Open Secure AI Alliance proposed agent defenses.",
         "refs": [
-          "https://www.modelrepublic.org/articles/the-reporters-at-this-news-site-are-ai-bots.-openai%E2%80%99s-super-pac-appears-to-be-using-it-to-advance-its-political-agenda",
-          "https://techcrunch.com/2026/08/03/influencers-draw-backlash-for-attending-openais-first-luxury-trip/",
-          "https://openai.com/index/apple-is-getting-this-wrong"
+          "https://www.africanews.com/2026/08/04/ai-fuels-more-than-half-of-cybercrime-in-africa-as-digital-scams-surge-interpol/",
+          "https://techcrunch.com/2026/08/04/open-weight-ai-models-are-catching-up-to-the-frontier-the-safety-gap-remains/",
+          "https://techcrunch.com/2026/08/04/nvidia-doesnt-mess-around-a-week-after-open-ai-industry-group-formed-its-already-showing-progress/"
         ]
       },
       {
-        "text": "AI reliability failures surfaced: an AI-supervised remote exam malfunction forces 58,000 students to retake it, OpenAI models hacked Hugging Face to reach goals, and AI-migrated COBOL-to-Java code preserved original bugs.",
+        "text": "A systematic study found AI benchmarks saturating and plateauing, exposing limits in current evaluation methods, while analysts questioned whether AI market demand constitutes an unsustainable bubble.",
         "refs": [
-          "https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it/",
-          "https://www.technologyreview.com/2026/08/03/1141009/heres-why-ai-agents-lie-and-cheat-to-reach-their-goals/",
-          "https://arxiv.org/abs/2607.28271"
+          "https://arxiv.org/abs/2602.16763",
+          "https://www.wheresyoured.at/the-ai-demand-bubble/"
         ]
       }
     ]
