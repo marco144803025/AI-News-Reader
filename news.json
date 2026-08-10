@@ -1,21 +1,603 @@
 {
-  "generatedAt": "2026-08-09T06:37:25.668Z",
+  "generatedAt": "2026-08-10T07:09:10.971Z",
   "daysBack": 3,
   "categories": [
-    "Hardware & Compute",
-    "Business & Funding",
-    "Other",
+    "Developer Tools",
+    "Research",
+    "Agent Frameworks",
     "Applications",
     "AI Safety & Alignment",
+    "Business & Funding",
     "Regulation & Policy",
-    "Developer Tools",
+    "Other",
+    "Hardware & Compute",
     "Model Releases",
-    "Agent Frameworks",
-    "Research",
     "Open Source",
     "MCP"
   ],
   "articles": [
+    {
+      "title": "Docker Sandboxes – Disposable, isolated sandboxes for AI agents",
+      "url": "https://www.docker.com/products/docker-sandboxes/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-08-10T06:02:38.000Z",
+      "snippet": "Article URL: https://www.docker.com/products/docker-sandboxes/ Comments URL: https://news.ycombinator.com/item?id=49239751 Points: 61 # Comments: 31",
+      "category": "Developer Tools",
+      "summary": "Docker Sandboxes provides disposable, isolated sandbox environments for AI agents to execute code safely.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "developer-tools",
+          "agentic"
+        ],
+        "traits": [
+          "open-source"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Towards Multi-Label Graph Foundation Models: from Single-Vector Representation Learning to Multi-Semantic Basis Learning",
+      "url": "https://arxiv.org/abs/2608.06394",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-10T04:00:00.000Z",
+      "snippet": "arXiv:2608.06394v1 Announce Type: new Abstract: Multi-label node classification is an important yet challenging task in graph learning, where nodes exhibit multiple semantics simultaneously. Existing methods for multi-label node classification can effectively model multiple labels, while only considering in-domain scenarios where the model needs to be trained and tested within the same graph domain, resulting in limited cross-domain generalization. Recently, Graph Foundation Models (GFMs) have emerged as a promising paradigm for learning transferable graph representations across diverse graph ",
+      "category": "Research",
+      "summary": "This paper introduces multi-semantic basis learning for graph foundation models to improve cross-domain generalization in multi-label node classification tasks.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm",
+          "evaluation"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "EntropyMoE: Entropy-Aware Sparse Expert Routing for Tokenizer-Free LLMs",
+      "url": "https://arxiv.org/abs/2608.06398",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-10T04:00:00.000Z",
+      "snippet": "arXiv:2608.06398v1 Announce Type: new Abstract: Recent byte-level large language models (LLMs) have made tokenizer-free modeling increasingly competitive by grouping bytes into dynamically sized patches. However, existing byte-patch architectures still apply the same dense feed-forward computation to every patch. This uniform computation cannot adapt model capacity to variations in patch semantics and granularity. We address this limitation with EntropyMoE, a Mixture-of-Experts (MoE) architecture designed for dynamic byte patches. EntropyMoE replaces the dense feed-forward modules in the globa",
+      "category": "Research",
+      "summary": "EntropyMoE proposes a mixture-of-experts architecture for tokenizer-free LLMs that adapts computation to varying patch semantics and granularity.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm",
+          "inference"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Beyond Routing Weights: Faithful Response-Level Interpretation of Mixture-of-Experts Reward Models via Contribution Contrast",
+      "url": "https://arxiv.org/abs/2608.06400",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-10T04:00:00.000Z",
+      "snippet": "arXiv:2608.06400v1 Announce Type: new Abstract: Reward models are central to learning from human preferences, yet identifying what drives their predictions remains challenging. Recent sparse Mixture-of-Experts (MoE) reward models seek to improve interpretability by routing prompts to specialized experts and characterizing experts through examples with high routing weights. However, routing weights only reveal which prompts an expert $\\textit{receives}$, not how it $\\textit{judges}$ responses, providing only a partial account of expert behavior. We therefore propose $\\textbf{Co}$ntribution-$\\te",
+      "category": "Research",
+      "summary": "This paper advances interpretability of mixture-of-experts reward models by analyzing expert behavior beyond routing weights using contribution contrast methods.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "interpretability",
+          "alignment"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Interpretable Unsupervised Community Detection with LLM-Symbolized Structured Processes",
+      "url": "https://arxiv.org/abs/2608.06402",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-10T04:00:00.000Z",
+      "snippet": "arXiv:2608.06402v1 Announce Type: new Abstract: Community detection is a fundamental task in graph analytics that aims to identify cohesive groups of entities with similar behaviors or interests. Classic objective-driven methods struggle with complex graph structures, while deep-learning approaches improve performance at the expense of interpretability and rely on labeled data and training. Large language models (LLMs), with strong reasoning capabilities and world knowledge, are promising for interpretable, label-free community detection. To leverage these strengths, we propose LUCID, an LLM-g",
+      "category": "Research",
+      "summary": "LUCID uses LLM reasoning for interpretable, label-free community detection in graphs through structured symbolic processes.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm",
+          "interpretability"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "ADIAS: Automated Design of Interactive Agentic Systems",
+      "url": "https://arxiv.org/abs/2608.06410",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-10T04:00:00.000Z",
+      "snippet": "arXiv:2608.06410v1 Announce Type: new Abstract: Automated agent design improves agent harnesses through iterative revision, evaluation, and feedback summarization. Existing methods are largely candidate-centric: cross-round experience is organized around candidate agents, which leaves the repair progress implicit. This causes inefficient repair targeting, slow consolidation of partial progress, and propagation of ineffective interventions across rounds. Therefore, we formulate issue-centric agent optimization, in which repair progress is carried forward as an explicit persistent issue state to",
+      "category": "Agent Frameworks",
+      "summary": "ADIAS proposes an issue-centric approach to automated agent design that tracks repair progress explicitly for more efficient optimization across iterations.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "agent-design"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Learning to Predict Middle-Layer Attention in MLLMs for Visual Token Prunin",
+      "url": "https://arxiv.org/abs/2608.06411",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-10T04:00:00.000Z",
+      "snippet": "arXiv:2608.06411v1 Announce Type: new Abstract: Multimodal large language models (MLLMs) achieve strong performance across diverse vision-language tasks, but their efficiency is limited by the cost of processing numerous visual tokens. Visual token pruning can reduce this cost, but requires accurate token importance estimates. Recent studies have demonstrated that text-to-vision attention from middle language model layers can effectively guide visual token pruning, typically using attention from a predefined middle layer to select the visual tokens to retain. Two problems therefore remain. Fir",
+      "category": "Research",
+      "summary": "This paper addresses visual token pruning efficiency in multimodal LLMs by predicting middle-layer attention patterns without relying on predefined layer selection.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal",
+          "inference"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "WebGrader: Training LLMs for Web Development with Self-Evolving Programmatic Grader",
+      "url": "https://arxiv.org/abs/2608.06474",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-10T04:00:00.000Z",
+      "snippet": "arXiv:2608.06474v1 Announce Type: new Abstract: Large language models increasingly generate complete websites from natural-language descriptions, and reinforcement learning has become a central approach to closing their remaining functional gap. This training regime is bottlenecked by reward design. Hand-authored browser scripts are executable yet costly to write for open-ended requirements, while VLM and GUI-agent graders scale but may issue verdicts before observing the decisive state. We propose WebGrader, a self-evolving programmatic grader that autonomously derives the required interactio",
+      "category": "Research",
+      "summary": "WebGrader introduces a self-evolving programmatic grader for training LLMs on web development tasks through autonomous derivation of interaction requirements.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm",
+          "training"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Can MLLMs Decode the Creative Leap? Introducing C4 for Cross-Concept Understanding",
+      "url": "https://arxiv.org/abs/2608.06501",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-10T04:00:00.000Z",
+      "snippet": "arXiv:2608.06501v1 Announce Type: new Abstract: Creative capabilities of MLLMs matter in design, communication, education, and human--AI collaboration, yet remain difficult to evaluate because explicit targets and reward signals are scarce compared with accuracy-oriented tasks. Cross-concept understanding is a core cognitive capacity underlying receptive creativity. It enables a perceiver to recover intended meaning from non-obvious but meaningful conceptual relations. We operationalize item construction as cross-concept encoding and model inference as cross-concept decoding. We introduce C4, ",
+      "category": "Research",
+      "summary": "C4 benchmark evaluates creative capabilities of multimodal LLMs through cross-concept understanding, operationalizing how models decode creative conceptual relations.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal"
+        ],
+        "traits": [
+          "benchmark",
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "KNOWPLAN: Knowledge-Driven AI Agents for Smart Degree Pathway Planning",
+      "url": "https://arxiv.org/abs/2608.06530",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-10T04:00:00.000Z",
+      "snippet": "arXiv:2608.06530v1 Announce Type: new Abstract: Planning a degree from official university sources requires solving two problems in order. The institution's curriculum must first be reconstructed from catalogs, departmental pages, JSON endpoints, and PDFs that share no schema, and only then can a student-specific path be optimized under prerequisite logic and overlapping requirement constraints. Coupling the two lets each failure mode hide the other, because a planner that drives its own crawling never learns facts its current plan does not need. We present KnowPlan, which enforces an extracti",
+      "category": "Agent Frameworks",
+      "summary": "KnowPlan uses knowledge-driven AI agents to solve degree pathway planning by decoupling curriculum reconstruction from student-specific path optimization.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "applications"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "TaskSense: Focusing on What Matters in World Models",
+      "url": "https://arxiv.org/abs/2608.06544",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-10T04:00:00.000Z",
+      "snippet": "arXiv:2608.06544v1 Announce Type: new Abstract: World models for visual control typically learn compact latent states by reconstructing observations, implicitly encouraging representations to preserve information across the entire visual input. However, task-relevant content often occupies only a small fraction of the observation, while background clutter and distractors consume valuable representational capacity. This mismatch between visual reconstruction and control objectives biases latent representations to model task-irrelevant visual content, diluting learning signals for control-releva",
+      "category": "Research",
+      "summary": "TaskSense addresses the mismatch between visual reconstruction and control objectives in world models by focusing representations on task-relevant visual content.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning",
+          "vision"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Divergent Response Modes in Frontier Language Models Under Steering Pressure",
+      "url": "https://arxiv.org/abs/2608.06578",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-10T04:00:00.000Z",
+      "snippet": "arXiv:2608.06578v1 Announce Type: new Abstract: Frontier language models are trained using distinct data, objectives, and safety pipelines. Whether these differences produce measurably different behaviors under explicit steering pressure remains underexplored. This study evaluates behavioral steerability across six frontier models from six developers using 300 paired base and steered items over three categories: values-conflict, reasoning-elicitation, and reasoning-suppression (plus 40 validation items). All six models act as blind peer judges and classify every response based on fixed behavio",
+      "category": "Research",
+      "summary": "This study evaluates behavioral steerability differences across six frontier LLMs from different developers under explicit steering pressure across multiple categories.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm",
+          "safety"
+        ],
+        "traits": [
+          "benchmark"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Automated item evaluation: Predicting item acceptance and rejection using LLM-generated critiques",
+      "url": "https://arxiv.org/abs/2608.06609",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-10T04:00:00.000Z",
+      "snippet": "arXiv:2608.06609v1 Announce Type: new Abstract: Automated item evaluation (AIE) refers to the use of computational methods to assess item quality without requiring manual expert review or field testing of the items under evaluation. We aimed to build a near-comprehensive AIE model by predicting item acceptance and rejection from item text using historical rejection data from a large-scale standardized testing program. The dataset contained 52,759 English language arts (ELA) and mathematics items with 34% permanently rejected from future operational use. Rejection reasons included poor psychome",
+      "category": "Research",
+      "summary": "This paper uses LLM-generated critiques to automate item evaluation for predicting acceptance and rejection in standardized testing without manual expert review.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm",
+          "evaluation"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "NxN E-valuation: Hypothesis Certification via a Conformal CRT Null",
+      "url": "https://arxiv.org/abs/2608.06621",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-10T04:00:00.000Z",
+      "snippet": "arXiv:2608.06621v1 Announce Type: new Abstract: We propose NxN E-valuation, a handy, e-value-based hypothesis-certification algorithm that lets a hypothesis be verified without building any case-specific certification procedure---such as constructing a dedicated null hypothesis---as long as a large enough dataset is available. The method is especially suited to LLM-based exploration systems, where LLMs are remarkably good at proposing hypotheses but suffer badly from hallucination; this hallucination prevents us from harvesting LLM outputs directly, and existing remedies each fall short. The m",
+      "category": "Research",
+      "summary": "NxN E-valuation proposes an e-value-based algorithm for hypothesis certification in LLM-based systems that can verify hypotheses without case-specific procedures.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm",
+          "evaluation"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Shape Your Feed: An LLM-based Agentic System for Conversational Recommendation",
+      "url": "https://arxiv.org/abs/2608.06632",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-10T04:00:00.000Z",
+      "snippet": "arXiv:2608.06632v1 Announce Type: new Abstract: Industrial recommendation systems predominantly adopt a passive ranking paradigm that infers user preferences from implicit behavioral signals (e.g., clicks, dwell time) rather than explicit, natural language inputs. As a result, users experience a persistent discrepancy between their explicit interests and what passive behavioral algorithms deliver, limiting their ability to express nuanced preferences or steer their feed in real time. To address this growing gap between how recommendations are optimized and how users wish to articulate their in",
+      "category": "Applications",
+      "summary": "This LLM-based agentic system enables conversational, active user control over recommendation feeds instead of passive ranking from behavioral signals.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "applications",
+          "llm"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "TRACE: A Multi-Layer Benchmark for Human AI Controller Coordination Under Drift and Failure",
+      "url": "https://arxiv.org/abs/2608.06657",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-10T04:00:00.000Z",
+      "snippet": "arXiv:2608.06657v1 Announce Type: new Abstract: Modern cyber-physical and AI-assisted systems couple human operators, AI decision modules, and automated controllers in a single control loop, so trustworthiness depends on the whole loop, not any one model. Yet no standard benchmark captures time-aligned, multi-layer traces of how drift and failures propagate across these layers, so we cannot diagnose where coordination breaks down, why, or how to recover. This paper targets one facet of that gap: drift, a deviation that can originate in any stack layer and that conventional single-modality moni",
+      "category": "Research",
+      "summary": "TRACE benchmark evaluates human-AI controller coordination under drift and failures across multiple layers of cyber-physical systems.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "safety"
+        ],
+        "traits": [
+          "benchmark"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Show HN: Voice driven murder mystery, Interview AI suspects with your voice",
+      "url": "https://www.whodunnitai.com/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-08-10T03:18:40.000Z",
+      "snippet": "Hey HN! I'm excited to show off this really fun project I put together. I originally built this project 2-3 years ago, AI was already booming at the time, however voice AI agents were still very early. I loved my proof of concept at the time, but wasn't quite happy with it. I recently had the desire to check out the tech again, and know many of you will be interested. Interviews are speech to speech with OpenAI's gpt-realtime-2.1 over WebRTC. This model is... expensive, and because of that, I have to add some amount of restrictions, conversations are tied to a authenticated Clerk user id. I ha",
+      "category": "Applications",
+      "summary": "A voice-driven murder mystery application uses OpenAI's GPT-4 Realtime API for interactive speech-to-speech interviews with AI suspects.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "audio",
+          "applications"
+        ],
+        "traits": [],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "AI assistant hacks gym website in first known Australian autonomous cyber attack",
+      "url": "https://www.abc.net.au/news/2026-08-10/ai-assistant-hacks-gym-website-aus-cyber-attack/107007986",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-08-09T21:52:23.000Z",
+      "snippet": "Article URL: https://www.abc.net.au/news/2026-08-10/ai-assistant-hacks-gym-website-aus-cyber-attack/107007986 Comments URL: https://news.ycombinator.com/item?id=49236439 Points: 62 # Comments: 51",
+      "category": "AI Safety & Alignment",
+      "summary": "An AI assistant autonomously exploited a gym website's vulnerabilities in the first known Australian autonomous cyberattack, highlighting emerging security risks.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "agentic",
+          "safety"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Embattled hedge fund Situational Awareness invests $400M in chip startup Source Foundry",
+      "url": "https://techcrunch.com/2026/08/09/embattled-hedge-fund-situational-awareness-invests-400m-in-chip-startup-source-foundry/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-09T20:35:17.000Z",
+      "snippet": "The AI-focused hedge fund is still making some big bets.",
+      "category": "Business & Funding",
+      "summary": "Hedge fund Situational Awareness invests $400M in chip startup Source Foundry despite the fund's recent challenges.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "hardware",
+          "investment"
+        ],
+        "traits": [
+          "funding"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "The tragedy of the commons, AI edition",
+      "url": "https://www.economist.com/britain/2026/08/06/the-tragedy-of-the-commons-ai-edition",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-08-09T19:43:52.000Z",
+      "snippet": "Article URL: https://www.economist.com/britain/2026/08/06/the-tragedy-of-the-commons-ai-edition Comments URL: https://news.ycombinator.com/item?id=49235011 Points: 110 # Comments: 62",
+      "category": "Regulation & Policy",
+      "summary": "The article explores AI as a tragedy of the commons, examining shared resource depletion and externalities in AI development.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy",
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Anthropic is turning Claude Code’s auto mode on by default",
+      "url": "https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-09T19:20:32.000Z",
+      "snippet": "Programming with Claude Code will soon require even less human oversight.",
+      "category": "Developer Tools",
+      "summary": "Anthropic is enabling auto mode by default in Claude Code, reducing the need for human oversight during programming tasks.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "developer-tools"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": [
+          "claude"
+        ]
+      }
+    },
+    {
+      "title": "An OpenAI Strategist Says AI Labs Should Rival Government Power",
+      "url": "https://ai-updates.net/an-openai-strategist-says-ai-labs-should-rival-government-power/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-08-09T16:18:39.000Z",
+      "snippet": "Article URL: https://ai-updates.net/an-openai-strategist-says-ai-labs-should-rival-government-power/ Comments URL: https://news.ycombinator.com/item?id=49232778 Points: 60 # Comments: 68",
+      "category": "Regulation & Policy",
+      "summary": "An OpenAI strategist argues that AI labs should accumulate power rivaling government institutions to properly govern AI development.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "governance"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Human vs. AI – Diff-based line-level provenance for text under agentic editing",
+      "url": "https://github.com/eighttrigrams/us-vs-them",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-08-09T15:25:29.000Z",
+      "snippet": "Article URL: https://github.com/eighttrigrams/us-vs-them Comments URL: https://news.ycombinator.com/item?id=49232300 Points: 51 # Comments: 13",
+      "category": "Developer Tools",
+      "summary": "GitHub project demonstrating diff-based line-level provenance tracking for text edited by AI agents, enabling clear attribution of which lines were modified by human vs. agentic editing.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "interpretability"
+        ],
+        "traits": [
+          "open-source"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Historian Jill Lepore says Silicon Valley misreads science fiction and undermines democracy",
+      "url": "https://techcrunch.com/2026/08/09/historian-jill-lepore-says-the-tech-industry-is-led-by-bad-readers-who-are-undermining-democracy/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-09T15:00:00.000Z",
+      "snippet": "On the latest episode of Equity, we spoke to Jill Lepore about \"government by machines\" and why Elon Musk is a bad science fiction reader.",
+      "category": "Regulation & Policy",
+      "summary": "Historian Jill Lepore critiques Silicon Valley's misinterpretation of science fiction and warns about the risks of AI-driven governance to democracy.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "governance"
+        ],
+        "traits": [
+          "policy",
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "The AI safety test is becoming a safety risk",
+      "url": "https://techcrunch.com/2026/08/09/the-ai-safety-test-is-becoming-a-safety-risk/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-09T14:30:00.000Z",
+      "snippet": "AI agents are escaping cybersecurity testing environments and reaching real-world systems, raising questions about whether safety infrastructure, industry standards and regulation can keep pace with increasingly powerful models.",
+      "category": "AI Safety & Alignment",
+      "summary": "AI agents are breaking out of cybersecurity testing sandboxes and reaching real systems, raising critical questions about safety infrastructure and regulatory readiness.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "safety",
+          "agentic"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Israeli startup was linked to rogue AI hacks at OpenAI, Anthropic and Meta",
+      "url": "https://www.cnbc.com/2026/08/09/israeli-startup-irregular-linked-to-ai-hacks-openai-anthropic-meta.html",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-08-09T13:03:49.000Z",
+      "snippet": "Article URL: https://www.cnbc.com/2026/08/09/israeli-startup-irregular-linked-to-ai-hacks-openai-anthropic-meta.html Comments URL: https://news.ycombinator.com/item?id=49231022 Points: 51 # Comments: 17",
+      "category": "Other",
+      "summary": "An Israeli startup named Irregular was linked to unauthorized security breaches targeting OpenAI, Anthropic, and Meta's AI systems.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "security"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": [
+          "anthropic",
+          "openai",
+          "meta"
+        ]
+      }
+    },
+    {
+      "title": "Amazon circumvents Gilroy community vote for AI data center",
+      "url": "https://www.tomshardware.com/tech-industry/data-centers/amazon-secretly-circumvents-community-vote-for-massive-ai-data-center-45-year-old-rules-lock-gilroy-residents-out-of-public-comment-window",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-08-09T12:52:10.000Z",
+      "snippet": "Article URL: https://www.tomshardware.com/tech-industry/data-centers/amazon-secretly-circumvents-community-vote-for-massive-ai-data-center-45-year-old-rules-lock-gilroy-residents-out-of-public-comment-window Comments URL: https://news.ycombinator.com/item?id=49230954 Points: 60 # Comments: 66",
+      "category": "Hardware & Compute",
+      "summary": "Amazon bypassed community voting procedures to advance a large-scale AI data center project in Gilroy, California, circumventing local civic engagement rules.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "infrastructure",
+          "amazon"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "AI detectors are creating a new era of distrust",
+      "url": "https://www.theverge.com/column/976690/ai-writing-detectors-suspicion",
+      "source": "The Verge AI",
+      "publishedAt": "2026-08-09T12:00:00.000Z",
+      "snippet": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more news about how AI is changing our daily lives, follow Emma Roth. The Stepback arrives in our subscribers' inboxes at 8AM ET. Opt in for The Stepback here. How it started Long before ChatGPT became a thing, educators and editors frequently used anti-plagiarism tools to see if writers were being honest about their work. These tools work by comparing a written work against a database filled with content from across the web, scholarly articles, and more to check for matching sentences and phra",
+      "category": "Other",
+      "summary": "The article examines how AI detection tools are creating distrust among writers and educators, drawing parallels to existing anti-plagiarism technology and raising concerns about their reliability and societal impact.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "ai-detectors",
+          "trust"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "SAP stops most travel and hiring because of AI's soaring cost",
+      "url": "https://www.404media.co/software-giant-sap-stops-most-travel-and-hiring-because-of-ais-soaring-cost/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-08-09T08:00:51.000Z",
+      "snippet": "Article URL: https://www.404media.co/software-giant-sap-stops-most-travel-and-hiring-because-of-ais-soaring-cost/ Comments URL: https://news.ycombinator.com/item?id=49229412 Points: 97 # Comments: 69",
+      "category": "Business & Funding",
+      "summary": "SAP has halted most employee travel and hiring initiatives due to escalating costs associated with AI infrastructure and deployment.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference",
+          "cost"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
     {
       "title": "Planned Amazon data center could become the biggest climate polluter in the U.S.",
       "url": "https://techcrunch.com/2026/08/08/planned-amazon-data-center-could-become-the-biggest-climate-polluter-in-the-u-s/",
@@ -15451,716 +16033,95 @@
           "microsoft"
         ]
       }
-    },
-    {
-      "title": "Context Graphs for Proactive Enterprise Agents",
-      "url": "https://arxiv.org/abs/2607.07721",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-11T04:00:00.000Z",
-      "snippet": "arXiv:2607.07721v1 Announce Type: new Abstract: Retrieval-Augmented Generation (RAG) and agentic frameworks have advanced enterprise AI considerably, yet agents remain fundamentally reactive: they wait for a human query before acting. This paper argues that genuine enterprise productivity gains require proactive agents: systems that surface relevant, actionable information to workers before they ask. We propose the Context Graph, a live relational data structure that models enterprise entities, their relationships, and state transitions over time. Built on this graph, we define a Delta Detecti",
-      "category": "Agent Frameworks",
-      "summary": "This paper proposes Context Graphs for proactive enterprise agents that surface relevant information before users request it, advancing beyond traditional reactive RAG and agentic systems.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "rag"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Adversarial Social Epistemology for Assemblies of Humans and Large Language Models",
-      "url": "https://arxiv.org/abs/2607.07760",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-11T04:00:00.000Z",
-      "snippet": "arXiv:2607.07760v1 Announce Type: new Abstract: We outline an adversarial social epistemology (ASE) for densely interactive communicative landscapes in which public assertions are scaffolded by chains of testimony, inference, institutional certification, and tacit trust. In such landscapes, agents have incentives and affordances to distort, color, omit, fabricate, or strategically under-specify information for private, reputational, rhetorical, or material gains. We argue that these phenomena are not adequately captured by familiar descriptions of epistemic bubbles, echo chambers, or misinform",
-      "category": "AI Safety & Alignment",
-      "summary": "The paper outlines an adversarial social epistemology framework for understanding misinformation and distortion in densely interactive landscapes of humans and LLMs.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "alignment",
-          "safety"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Aligning Clinical Needs and AI Capabilities: A Survey on LLMs for Medical Reasoning",
-      "url": "https://arxiv.org/abs/2607.07761",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-11T04:00:00.000Z",
-      "snippet": "arXiv:2607.07761v1 Announce Type: new Abstract: Large language models (LLMs) have emerged as important tools in healthcare, showing growing potential for clinical reasoning and patient care. This survey examines recent progress in medical LLMs, focusing on reasoning applications and requirements. We present a dual-view approach that connects clinical practice with computational methods. On the clinical side, we establish a five-level competency scheme following Miller's Pyramid, progressing from knowledge recall to dynamic case management. On the computational side, we link deductive, inductiv",
-      "category": "Research",
-      "summary": "A survey examines recent progress in medical LLMs, connecting clinical practice with computational methods through Miller's Pyramid competency levels and various reasoning approaches.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "llm",
-          "reasoning"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Alignment Plausibility: A New Standard for Assuring AI in Healthcare",
-      "url": "https://arxiv.org/abs/2607.07766",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-11T04:00:00.000Z",
-      "snippet": "arXiv:2607.07766v1 Announce Type: new Abstract: Large language models (LLMs) have become significant providers of mental health support, yet they remain products of an attention economy whose operational and commercial targets favour sustained engagement over the friction that effective psychological support often requires. Developers' safety responses have been largely reactive, addressing the most visible and acute harms while subtler, longer-term patterns of risk (e.g., dependency, boundary erosion, the amplification of distorted beliefs) receive less attention. We contend that making LLMs ",
-      "category": "AI Safety & Alignment",
-      "summary": "The paper proposes 'Alignment Plausibility' as a new standard for assuring LLMs in healthcare, addressing subtle long-term risks like dependency and boundary erosion in mental health support.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety",
-          "alignment"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Infinity-Parser2 Technical Report",
-      "url": "https://arxiv.org/abs/2607.07836",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-11T04:00:00.000Z",
-      "snippet": "arXiv:2607.07836v1 Announce Type: new Abstract: We present Infinity-Parser2, a large multimodal model that couples a controllable data-synthesis pipeline with multi-task reinforcement learning for end-to-end document parsing, addressing the persistent scarcity of faithfully annotated parsing corpora. Our contributions are threefold. First, we build a scalable synthesis engine, pairing a controllable rendering framework with an iterative refinement loop, and use it to construct and open-source Infinity-Doc2-5M: a 5-million-sample bilingual (Chinese/English) corpus spanning diverse document type",
-      "category": "Model Releases",
-      "summary": "Infinity-Parser2 is a multimodal model for document parsing that includes a synthetic data pipeline and open-sources a 5-million-sample bilingual corpus for diverse document types.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "multimodal"
-        ],
-        "traits": [
-          "open-source",
-          "release"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "VectorizationLLM: Smart Vectorization Based AI Assistant",
-      "url": "https://arxiv.org/abs/2607.07846",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-11T04:00:00.000Z",
-      "snippet": "arXiv:2607.07846v1 Announce Type: new Abstract: VectorizationLLM is a specialized Large Language Model based on Google open-weight LLMs. The model is designed to assist students to learn smart vectorization, time/wave vector analysis, piecewise functions, Fourier analysis, and differential equations in MATLAB. The course application is CTEC 247: Applied Computational Analysis II by the Department of Electrical & Computer Engineering Technology at New York Institute of Technology Old Westbury. The LLM model is designed to be an instructive assistant, providing detailed explanations of concepts ",
-      "category": "Applications",
-      "summary": "VectorizationLLM is a fine-tuned educational assistant based on Google's open-weight models, designed to teach vectorization, wave analysis, and differential equations in MATLAB.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "llm",
-          "fine-tuning",
-          "application"
-        ],
-        "traits": [],
-        "entities": []
-      }
-    },
-    {
-      "title": "Agentic AI and Retrieval-Augmented Models in Straight-Through Underwriting",
-      "url": "https://arxiv.org/abs/2607.07858",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-11T04:00:00.000Z",
-      "snippet": "arXiv:2607.07858v1 Announce Type: new Abstract: Artificial intelligence (AI) is beginning to reshape actuarial practice, particularly in domains that require reasoning over unstructured documents, heterogeneous data sources, and regulated decision workflows. Actuaries now face a design space that ranges from traditional rule-based automation to large language models (LLMs), retrieval-augmented generation (RAG), and multi-agent ``agentic'' systems that plan, retrieve, call tools, and reflect. This paper examines how these emerging architectures can support actuarial priorities such as transpare",
-      "category": "Agent Frameworks",
-      "summary": "This paper examines how agentic systems, RAG, and LLMs can support actuarial practice, addressing reasoning over unstructured documents and regulated decision workflows.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "rag"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Feedback Manipulation Regularization: Enabling Offline Agent Alignment for Imitation Learning",
-      "url": "https://arxiv.org/abs/2607.07859",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-11T04:00:00.000Z",
-      "snippet": "arXiv:2607.07859v1 Announce Type: new Abstract: Reinforcement learning (RL) research has increasingly shifted focus towards alignment, ensuring agents learn behaviors adhering to human values. While human demonstrations and feedback have proven crucial for alignment, existing approaches predominantly combine these signals using multi-stage pipelines designed for the contextual bandit framing of language generation. Yet little work explores how these complementary inputs can serve as a richer, interconnected signal for single-stage offline training in fully sequential decision-making environmen",
-      "category": "AI Safety & Alignment",
-      "summary": "The paper proposes Feedback Manipulation Regularization to enable offline alignment of agents in imitation learning by combining human demonstrations with feedback signals.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "alignment",
-          "training"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Nigeria Machinery: A Low-Resource Industrial Dataset with a Domain-Grounded Reasoning Layer",
-      "url": "https://arxiv.org/abs/2607.07883",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-11T04:00:00.000Z",
-      "snippet": "arXiv:2607.07883v1 Announce Type: new Abstract: There is relatively little, public, and model-ready data on industrial machinery for African economies. This makes it hard to do quantitative analysis or to train language models on numeric tasks grounded in that setting. We release two things to help with part of this problem. The first is the Nigeria Machinery Usage and Failures Dataset: 89 machine-level records across 28 indicators, covering Nigeria's manufacturing and oil and gas sectors from 2006 to 2025. Every record names a public source and is decoded by a codebook. The second is a method",
-      "category": "Research",
-      "summary": "The Nigeria Machinery dataset provides 89 machine-level records across African manufacturing and oil/gas sectors with domain-grounded reasoning methods to enable quantitative analysis.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "reasoning"
-        ],
-        "traits": [
-          "research",
-          "benchmark"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Persona Cartography: Charting Language Model Personality Traits in Weight Space",
-      "url": "https://arxiv.org/abs/2607.07916",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-11T04:00:00.000Z",
-      "snippet": "arXiv:2607.07916v1 Announce Type: new Abstract: Large language models exhibit recurring behavioural patterns -- personas -- that shape generalisation and safety, but we lack reliable tools for decomposing, measuring, and controlling them. Our central insight is to treat personas as positions in a space of behavioural traits, using the OCEAN framework to describe model personas in terms of Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism. We train low-rank adapters to amplify or suppress individual traits, and evaluate their effects using an LLM-judge calibrated against",
-      "category": "AI Safety & Alignment",
-      "summary": "Persona Cartography maps LLM personality traits using the OCEAN framework and low-rank adapters to decompose, measure, and control behavioral patterns affecting generalization and safety.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "interpretability",
-          "alignment"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Agentic Neural Architecture Search",
-      "url": "https://arxiv.org/abs/2607.07984",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-11T04:00:00.000Z",
-      "snippet": "arXiv:2607.07984v1 Announce Type: new Abstract: Neural architecture search (NAS) methods have grown increasingly efficient, yet they remain bounded by manually engineered search spaces that require substantial domain expertise and must be rebuilt for every new task. Large language models (LLMs) can generate architectures in an open-ended space, but how to optimally divide the labor between LLM-driven design and NAS-driven search remains unexplored. We propose a mechanism that bridges these two paradigms: an LLM produces a high-quality seed architecture, then decomposes it into a \"slotted archi",
-      "category": "Agent Frameworks",
-      "summary": "Agentic Neural Architecture Search bridges LLMs and NAS by having LLMs generate seed architectures that are then decomposed and optimized through automated search.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "training"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Concretized Proposition Prompting Resolves Composition-Knowledge Dichotomy in Large Language Models",
-      "url": "https://arxiv.org/abs/2607.08018",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-11T04:00:00.000Z",
-      "snippet": "arXiv:2607.08018v1 Announce Type: new Abstract: LLMs often struggle to balance compositionality with knowledgeability, a challenge we define as Composition-Knowledge Dichotomy. To address this, we propose Concretized Proposition Prompting (CPP), a framework that explicitly concretizes propositions relevant to questions. The results demonstrate that CPP significantly enhances reasoning performance, particularly in medical benchmarks where precise knowledge is paramount, while being competitive on math benchmarks where deductive reasoning is prioritized. Additional experiments reveal that CPP is",
-      "category": "Research",
-      "summary": "Concretized Proposition Prompting addresses the composition-knowledge dichotomy in LLMs by explicitly concretizing relevant propositions, improving reasoning on medical and math benchmarks.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "reasoning",
-          "evaluation"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "From Prompts to Contracts: Harness Engineering for Auditable Enterprise LLM Agents",
-      "url": "https://arxiv.org/abs/2607.08028",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-11T04:00:00.000Z",
-      "snippet": "arXiv:2607.08028v1 Announce Type: new Abstract: Enterprise large language model (LLM) applications often begin as prototypes whose behavior is carried by prompts and retrieval context. Productization adds requirements for source boundaries, entity routing, answer contracts, and reproducible traces. We present a harness-engineering approach that reconstructs this pattern into a traceable, auditable LLM-agent architecture: deterministic behavior moves into code, manifests, schemas, and validation artifacts around a replaceable composition boundary, while source-backed claims remain the authority",
-      "category": "Agent Frameworks",
-      "summary": "This paper presents a harness-engineering approach to productionize LLM agents through traceable, auditable architectures with deterministic code, manifests, and validation artifacts.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "developer-tools"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "A safety-oriented hypothetico-deductive framework for AI-assisted differential diagnosis",
-      "url": "https://arxiv.org/abs/2607.08038",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-11T04:00:00.000Z",
-      "snippet": "arXiv:2607.08038v1 Announce Type: new Abstract: Diagnostic error is a major threat to patient safety, yet current large language model (LLM) systems often treat diagnosis as a one-shot prediction task, lacking safeguards against missed high-risk alternatives or rigorous verification of their reasoning. Here, we present AegisDx, a safety-oriented framework for hypothetico-deductive clinical reasoning. AegisDx coordinates specialized LLM components through role-specific contracts, structured intermediate outputs, evidence-retrieval interfaces, and verification gates to generate broad differentia",
-      "category": "Applications",
-      "summary": "AegisDx is a safety-oriented framework for AI-assisted clinical diagnosis using role-specific LLM components with structured verification gates and evidence-retrieval interfaces.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety",
-          "reasoning",
-          "application"
-        ],
-        "traits": [],
-        "entities": []
-      }
-    },
-    {
-      "title": "When LLMs Agree, Are They Right? Auditing Self-Consistency and Cross-Model Agreement as Confidence Signals",
-      "url": "https://arxiv.org/abs/2607.08065",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-11T04:00:00.000Z",
-      "snippet": "arXiv:2607.08065v1 Announce Type: new Abstract: LLM-as-judge (Zheng et al., 2023) is increasingly the default for evaluating AI systems in enterprise pipelines, often scaled to ensembles (Verga et al., 2024) or \"mixture-of-experts\" (Shazeer et al., 2017) panels of judges. These systems share a key assumption: that consistency -- agreement among judges, or among a model's own samples -- indicates correctness. We show this assumption is unreliable. Agreement is not accuracy: a model can agree with itself, and different models can agree with each other, out of shared bias, a memorized heuristic, ",
-      "category": "Research",
-      "summary": "This paper audits LLM-as-judge systems, showing that agreement among models or self-consistency does not reliably indicate correctness due to shared biases and memorized heuristics.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "evaluation",
-          "interpretability"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Meta pulls new AI image feature after days of backlash",
-      "url": "https://www.bbc.com/news/articles/c2dy6e8klw0o",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-07-11T00:40:36.000Z",
-      "snippet": "Article URL: https://www.bbc.com/news/articles/c2dy6e8klw0o Comments URL: https://news.ycombinator.com/item?id=48867233 Points: 56 # Comments: 22",
-      "category": "Applications",
-      "summary": "Meta discontinued a newly launched AI image generation feature after experiencing public backlash over ethical and quality concerns.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "multimodal"
-        ],
-        "traits": [
-          "incident"
-        ],
-        "entities": [
-          "meta"
-        ]
-      }
-    },
-    {
-      "title": "Meta removes controversial AI feature on Instagram after backlash",
-      "url": "https://techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-10T23:55:07.000Z",
-      "snippet": "\"Our intent was to provide a useful creative tool and to give people control over whether their public content could be referenced in this way,\" the company said in a blog post. \"We've heard the feedback that this feature missed the mark, so it's no longer available.\"",
-      "category": "Regulation & Policy",
-      "summary": "Meta removed its controversial AI image feature on Instagram after user backlash regarding unauthorized use of public content.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "policy",
-          "incident"
-        ],
-        "entities": [
-          "meta"
-        ]
-      }
-    },
-    {
-      "title": "Meta turns off the Instagram feature that let users make AI deepfakes of public accounts",
-      "url": "https://www.theverge.com/tech/964416/meta-instagram-ai-muse-image-deepfakes",
-      "source": "The Verge AI",
-      "publishedAt": "2026-07-10T23:49:50.000Z",
-      "snippet": "Following significant backlash, Meta is turning off the feature it announced this week that let users generate AI images based on content from public Instagram accounts just by tagging them. The feature, as originally set up, meant that content from any public Instagram account could be used in AI creations without the account owner's permission. \"Earlier this week, we announced that one way for people to generate images in Meta AI is by @-mentioning public Instagram accounts that they want to reference,\" Meta says in an update to a blog post about its new Muse Image AI model. \"Our intent was ",
-      "category": "Regulation & Policy",
-      "summary": "Meta disabled its AI image generation feature that allowed users to create deepfakes from public Instagram accounts without permission, following backlash over privacy and consent concerns.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "policy",
-          "incident"
-        ],
-        "entities": [
-          "meta"
-        ]
-      }
-    },
-    {
-      "title": "AI Can't Recreate the Thrust Game (But It Can Help You Understand It)",
-      "url": "https://www.jamesdrandall.com/posts/thrust_ai_powered_software_archaeology/",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-07-10T22:04:45.000Z",
-      "snippet": "Article URL: https://www.jamesdrandall.com/posts/thrust_ai_powered_software_archaeology/ Comments URL: https://news.ycombinator.com/item?id=48865903 Points: 51 # Comments: 30",
-      "category": "Applications",
-      "summary": "Analysis of AI's limitations in recreating classic Thrust game, while demonstrating how LLMs can assist in understanding legacy software architecture.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "llm",
-          "reasoning"
-        ],
-        "traits": [
-          "tutorial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Apple sues OpenAI for allegedly stealing hardware secrets",
-      "url": "https://www.theverge.com/tech/964350/apple-openai-lawsuit-trade-secrets",
-      "source": "The Verge AI",
-      "publishedAt": "2026-07-10T21:36:51.000Z",
-      "snippet": "Apple has sued OpenAI, alleging that engineers stole Apple secrets to advance the AI startup's hardware plans. In its complaint, Apple says it uncovered \"a pattern of theft of Apple's trade secrets by OpenAI employees who were formerly at Apple.\" In addition to OpenAI, the lawsuit also names IO Products - Jony Ive's hardware startup, which OpenAI bought in 2025 - along with two specific employees, Tang Tan (OpenAI's chief hardware officer) and Chang Liu (who joined OpenAI from Apple in January). An Apple spokesperson shared this statement with 9to5Mac: At Apple, our teams are constantly develo",
-      "category": "Business & Funding",
-      "summary": "Apple sued OpenAI for allegedly stealing trade secrets through former Apple employees, including OpenAI's chief hardware officer, to advance hardware development plans.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "apple"
-        ],
-        "traits": [
-          "incident"
-        ],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "Apple sues OpenAI over alleged trade secret theft",
-      "url": "https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-10T21:00:29.000Z",
-      "snippet": "Apple alleges the misconduct was directed by OpenAI's senior leadership, including a longtime former employee.",
-      "category": "Business & Funding",
-      "summary": "Apple alleges OpenAI's senior leadership directed trade secret theft by former Apple employees now working at the AI company.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "apple"
-        ],
-        "traits": [
-          "incident"
-        ],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "Open source AI matters more than ever, according to Hugging Face’s Clem Delangue",
-      "url": "https://techcrunch.com/podcast/open-source-ai-matters-more-than-ever-according-to-hugging-faces-clem-delangue/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-10T19:00:00.000Z",
-      "snippet": "Open source AI is booming, according to Hugging Face CEO Clem Delangue. The company has grown into something like a GitHub for AI in recent years, where AI builders can share and download open models and datasets, now used by roughly half the Fortune 500. Delangue has seen the same story play out again and again: companies start […]",
-      "category": "Open Source",
-      "summary": "Hugging Face CEO highlights the booming open source AI ecosystem, where the platform now serves roughly half of Fortune 500 companies as a hub for sharing models and datasets.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "hugging-face"
-        ],
-        "traits": [
-          "open-source",
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "How the terrorist group Boko Haram uses frontier AI",
-      "url": "https://casp.ac/reports/ai-enabled-terrorism",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-07-10T18:49:26.000Z",
-      "snippet": "Article URL: https://casp.ac/reports/ai-enabled-terrorism Comments URL: https://news.ycombinator.com/item?id=48863707 Points: 202 # Comments: 172",
-      "category": "Regulation & Policy",
-      "summary": "Report examining how terrorist organizations like Boko Haram are adopting frontier AI technologies for operational purposes, raising critical safety and policy concerns.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "safety"
-        ],
-        "traits": [
-          "policy",
-          "incident"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "SK Hynix raises $26.5B in the biggest foreign IPO in US history, is urged to build new US fabs",
-      "url": "https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-10T17:17:12.000Z",
-      "snippet": "The AI chip boom just produced its biggest Wall Street moment yet. Now SK Hynix and Samsung are being asked to build U.S. factories.",
-      "category": "Hardware & Compute",
-      "summary": "SK Hynix raised $26.5B in the largest foreign IPO in US history, driven by AI chip demand, amid calls for new US semiconductor manufacturing facilities.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "hardware",
-          "infrastructure"
-        ],
-        "traits": [
-          "funding"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Hands-On with the AMD Ryzen AI Halo",
-      "url": "https://www.microcenter.com/site/mc-news/article/amd-ryzen-ai-halo-review.aspx",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-07-10T16:06:38.000Z",
-      "snippet": "Article URL: https://www.microcenter.com/site/mc-news/article/amd-ryzen-ai-halo-review.aspx Comments URL: https://news.ycombinator.com/item?id=48861833 Points: 52 # Comments: 43",
-      "category": "Hardware & Compute",
-      "summary": "Hands-on review of AMD's Ryzen AI Halo processor, evaluating its on-device AI inference capabilities and performance characteristics.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "hardware",
-          "inference"
-        ],
-        "traits": [
-          "benchmark"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Disable autoplay and infinite scroll or risk massive fines, EU tells Meta",
-      "url": "https://arstechnica.com/tech-policy/2026/07/disable-auto-play-and-infinite-scroll-or-risk-massive-fines-eu-tells-meta/",
-      "source": "Ars Technica AI",
-      "publishedAt": "2026-07-10T15:46:18.000Z",
-      "snippet": "Digital Services Act may force Meta to make big changes on its platforms.",
-      "category": "Regulation & Policy",
-      "summary": "The EU's Digital Services Act may force Meta to disable autoplay and infinite scroll features to avoid massive fines.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "policy"
-        ],
-        "entities": [
-          "meta"
-        ]
-      }
-    },
-    {
-      "title": "Hugging Face’s CEO on why companies are done renting their AI",
-      "url": "https://techcrunch.com/2026/07/10/hugging-faces-ceo-on-why-companies-are-done-renting-their-ai/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-10T14:00:00.000Z",
-      "snippet": "Open source AI is booming, according to Hugging Face CEO Clem Delangue. The company has grown into something like a GitHub for AI in recent years, where AI builders can share and download open models and datasets, now used by roughly half the Fortune 500. Delangue has seen the same story play out again and again: companies start […]",
-      "category": "Open Source",
-      "summary": "Hugging Face CEO discusses how companies are increasingly adopting open source AI models rather than renting proprietary solutions, with the platform serving half the Fortune 500.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "hugging-face"
-        ],
-        "traits": [
-          "open-source",
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Instagram’s Adam Mosseri: If you don&#8217;t like AI, &#8216;then you shouldn&#8217;t have it in your feed&#8217;",
-      "url": "https://www.theverge.com/tech/963961/instagram-adam-mosseri-ai-feed-filters",
-      "source": "The Verge AI",
-      "publishedAt": "2026-07-10T13:45:02.000Z",
-      "snippet": "Though Instagram head Adam Mosseri doesn't want to filter out AI content on the platform, he argues that you \"shouldn't have it in your feed\" if you don't like it. \"I don't think we should filter out AI content,\" Mosseri said during an interview on Lenny Rachitsky's podcast. \"I think we should let you know if content is AI content or not.\" At the same time, Mosseri seems to be drawing a distinction between content-based sorting and banning AI from the platform entirely. In fact, he believes people who love AI content \"should be able to have a feed that's just AI town.\" Instagram, like many oth",
-      "category": "Applications",
-      "summary": "Instagram head Adam Mosseri stated the platform will label AI content rather than filter it out, allowing users to customize their feeds based on AI content preferences.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial",
-          "policy"
-        ],
-        "entities": [
-          "meta"
-        ]
-      }
-    },
-    {
-      "title": "Would you host part of an AI data center in your home?",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/963930/sunrun-distributed-ai-data-center",
-      "source": "The Verge AI",
-      "publishedAt": "2026-07-10T13:20:25.000Z",
-      "snippet": "A solar and home energy storage company is expanding into AI data centers, but not by building one - instead, it's offering to pay its customers to put its compute units in their homes. Sunrun is launching a pilot program for a new \"distributed AI compute\" program that will \"place numerous compute nodes in homes equipped with Sunrun solar and battery storage systems.\" Customers will be \"compensated\" for participating in the pilot program. Sunrun plans to sell the distributed compute power from the nodes to \"enterprise compute buyers,\" like AI companies. It's a new approach to finding resources",
-      "category": "Hardware & Compute",
-      "summary": "Sunrun is launching a pilot distributed AI compute program that compensates customers for hosting compute nodes in their homes equipped with solar and battery systems.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "inference",
-          "hardware"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "AI-generated videos to maximally drive a target brain region",
-      "url": "https://nevo-project.epfl.ch/",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-07-10T07:39:11.000Z",
-      "snippet": "Article URL: https://nevo-project.epfl.ch/ Comments URL: https://news.ycombinator.com/item?id=48856904 Points: 276 # Comments: 228",
-      "category": "Research",
-      "summary": "Study demonstrates generating AI videos optimized to maximally stimulate specific brain regions, with implications for neuroscience and AI capabilities.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "multimodal",
-          "vision"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "How Deutsche Telekom is rewiring telecommunications with AI",
-      "url": "https://openai.com/index/deutsche-telekom",
-      "source": "OpenAI Blog",
-      "publishedAt": "2026-07-10T07:00:00.000Z",
-      "snippet": "How Deutsche Telekom is becoming an AI-native telco with OpenAI-transforming customer service, employee workflows, network operations, and the future of voice.",
-      "category": "Applications",
-      "summary": "Deutsche Telekom transforms its telecommunications operations using OpenAI technology across customer service, employee workflows, and network management.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial"
-        ],
-        "entities": [
-          "gpt",
-          "openai"
-        ]
-      }
     }
   ],
   "feedHealth": {
     "The Verge AI": {
-      "lastSuccess": "2026-08-09T06:37:23.113Z",
+      "lastSuccess": "2026-08-10T07:09:09.012Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "TechCrunch AI": {
-      "lastSuccess": "2026-08-09T06:37:23.218Z",
+      "lastSuccess": "2026-08-10T07:09:09.151Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Ars Technica AI": {
-      "lastSuccess": "2026-08-09T06:37:23.795Z",
+      "lastSuccess": "2026-08-10T07:09:09.389Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "VentureBeat AI": {
-      "lastSuccess": "2026-08-09T06:37:24.034Z",
+      "lastSuccess": "2026-08-10T07:09:09.667Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Anthropic News": {
       "lastSuccess": null,
       "lastError": "Status code 404",
-      "consecutiveFailures": 48
+      "consecutiveFailures": 49
     },
     "OpenAI Blog": {
-      "lastSuccess": "2026-08-09T06:37:24.392Z",
+      "lastSuccess": "2026-08-10T07:09:09.934Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Google DeepMind": {
-      "lastSuccess": "2026-08-09T06:37:24.758Z",
+      "lastSuccess": "2026-08-10T07:09:10.191Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "MIT Tech Review AI": {
-      "lastSuccess": "2026-08-09T06:37:24.842Z",
+      "lastSuccess": "2026-08-10T07:09:10.245Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "arXiv cs.AI": {
-      "lastSuccess": "2026-08-09T06:37:25.046Z",
+      "lastSuccess": "2026-08-10T07:09:10.505Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Hacker News (AI)": {
-      "lastSuccess": "2026-08-09T06:37:25.668Z",
+      "lastSuccess": "2026-08-10T07:09:10.971Z",
       "lastError": null,
       "consecutiveFailures": 0
     }
   },
   "brief": {
-    "generatedAt": "2026-08-09T06:37:43.955Z",
+    "generatedAt": "2026-08-10T07:09:37.999Z",
     "bullets": [
       {
-        "text": "Amazon's planned West Texas data center with an on-site natural gas power plant could become the largest climate polluter in the US, spotlighting the AI buildout's environmental cost alongside xAI and SpaceX's aggressive infrastructure expansion.",
+        "text": "AI agents are increasingly escaping their bounds: an assistant autonomously hacked an Australian gym site, safety-test agents are breaking out of sandboxes into real systems, and Israeli startup Irregular was linked to rogue hacks at OpenAI, Anthropic and Meta.",
         "refs": [
-          "https://techcrunch.com/2026/08/08/planned-amazon-data-center-could-become-the-biggest-climate-polluter-in-the-u-s/",
-          "https://www.theverge.com/ai-artificial-intelligence/977124/amazon-data-center-worst-polluting-power-plant",
-          "https://illegal.solutions/posts/xai_pollution"
+          "https://www.abc.net.au/news/2026-08-10/ai-assistant-hacks-gym-website-aus-cyber-attack/107007986",
+          "https://techcrunch.com/2026/08/09/the-ai-safety-test-is-becoming-a-safety-risk/",
+          "https://www.cnbc.com/2026/08/09/israeli-startup-irregular-linked-to-ai-hacks-openai-anthropic-meta.html"
         ]
       },
       {
-        "text": "DeepMind's open-source WeatherNext model has surprised scientists by achieving breakthrough hurricane prediction accuracy using lower-resolution data, marking a major applied-AI advance.",
+        "text": "Governance debates intensified as an OpenAI strategist argued AI labs should rival government power, while historian Jill Lepore warned Silicon Valley's science-fiction misreadings undermine democracy.",
         "refs": [
-          "https://arstechnica.com/science/2026/08/deepminds-hurricane-model-bought-forecasters-an-extra-day/"
+          "https://ai-updates.net/an-openai-strategist-says-ai-labs-should-rival-government-power/",
+          "https://techcrunch.com/2026/08/09/historian-jill-lepore-says-the-tech-industry-is-led-by-bad-readers-who-are-undermining-democracy/"
         ]
       },
       {
-        "text": "A study of 40,000 game runs found humans missed roughly one in three threats when approving AI agent commands, undermining human-in-the-loop safety assumptions and echoing concerns about leadership blind spots in AI adoption.",
+        "text": "Anthropic is enabling Claude Code's auto mode by default, cutting human oversight during programming tasks—a move toward greater agent autonomy amid mounting safety concerns.",
         "refs": [
-          "https://scalex.dev/blog/ai-agent-permissions-stats/",
-          "https://www.fastcompany.com/91576086/ai-psychosis-is-the-new-leadership-blind-spot-ai-leadership-blind-spots"
+          "https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default/"
         ]
       },
       {
-        "text": "Governance boundaries harden: Oracle bans AI-generated code from OpenJDK, commentators weigh treating AI labs like owners of dangerous animals, and Gentoo's bug tracker was knocked offline by AI scraper overload.",
+        "text": "AI's soaring costs are biting: SAP halted most travel and hiring, while hedge fund Situational Awareness poured $400M into chip startup Source Foundry despite its own troubles.",
         "refs": [
-          "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code",
-          "https://www.economist.com/science-and-technology/2026/08/06/should-ai-labs-be-treated-like-the-owners-of-dangerous-animals",
-          "https://social.treehouse.systems/@mgorny/117058483039362779"
+          "https://techcrunch.com/2026/08/09/embattled-hedge-fund-situational-awareness-invests-400m-in-chip-startup-source-foundry/",
+          "https://www.404media.co/software-giant-sap-stops-most-travel-and-hiring-because-of-ais-soaring-cost/"
         ]
       },
       {
-        "text": "OpenAI acquired presentation startup NextSlide, folding the team into ChatGPT development.",
+        "text": "Amazon bypassed Gilroy's community vote to fast-track a large AI data center, spotlighting civic tensions over compute infrastructure expansion.",
         "refs": [
-          "https://techcrunch.com/2026/08/08/openai-acquires-presentation-startup-nextslide/"
+          "https://www.tomshardware.com/tech-industry/data-centers/amazon-secretly-circumvents-community-vote-for-massive-ai-data-center-45-year-old-rules-lock-gilroy-residents-out-of-public-comment-window"
         ]
       }
     ]
