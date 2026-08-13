@@ -1,21 +1,800 @@
 {
-  "generatedAt": "2026-08-12T07:07:11.677Z",
+  "generatedAt": "2026-08-13T07:11:28.192Z",
   "daysBack": 3,
   "categories": [
-    "Applications",
-    "Business & Funding",
-    "Developer Tools",
+    "Agent Frameworks",
     "Research",
+    "Developer Tools",
+    "Applications",
+    "Hardware & Compute",
     "AI Safety & Alignment",
     "Regulation & Policy",
-    "Agent Frameworks",
-    "Other",
-    "Hardware & Compute",
+    "Business & Funding",
     "Model Releases",
+    "Other",
     "Open Source",
     "MCP"
   ],
   "articles": [
+    {
+      "title": "Dynamic Governance of Multi-LLM Agent Systems for Collaborative Conversational Outcomes",
+      "url": "https://arxiv.org/abs/2608.11207",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-13T04:00:00.000Z",
+      "snippet": "arXiv:2608.11207v1 Announce Type: new Abstract: When two LLM agents with structurally opposed objectives interact across multiple turns, the absence of a shared goal function produces not competition but collapse: the visitor capitulates, the site agent stops varying its approach, and the conversation terminates without achieving either agent's stated objective. This paper asks whether a control-theoretic governance layer can substitute for that missing goal function. The Experience Orchestrator (EO) addresses this in a simulated financial services environment where a site agent guides a visit",
+      "category": "Agent Frameworks",
+      "summary": "Proposes an Experience Orchestrator, a control-theoretic governance layer that enables collaborative multi-agent LLM systems to overcome deadlock and achieve shared objectives through dynamic coordination.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "multi-agent"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Distribird: Literature-Informed Prior Distribution Design for Bayesian Model Calibration",
+      "url": "https://arxiv.org/abs/2608.11210",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-13T04:00:00.000Z",
+      "snippet": "arXiv:2608.11210v1 Announce Type: new Abstract: Bayesian calibration of process-based models requires a prior distribution for each model parameter. Despite decades of methodological work, researchers almost always fall back on uniform priors. The main reason is that building informative priors from scientific literature is slow and needs both domain and statistical expertise. We present \\textbf{Distribird}, an agentic web application that automates this process. Given a parameter name, physical description, and domain context, Distribird deploys a multi-agent pipeline that searches the litera",
+      "category": "Agent Frameworks",
+      "summary": "Introduces Distribird, an agentic web application that automates the design of informative Bayesian priors by deploying a multi-agent pipeline to extract parameter information from scientific literature.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "automation"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "A Forced-Structure Reduction and Verifiable Bounds for Conway's 99-Graph",
+      "url": "https://arxiv.org/abs/2608.11211",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-13T04:00:00.000Z",
+      "snippet": "arXiv:2608.11211v1 Announce Type: new Abstract: Conway's 99-graph problem asks whether a strongly regular graph with parameters $\\mathrm{srg}(99,14,1,2)$ exists. We report a systematic, fully reproducible attack by an autonomous AI research agent, scored under the track's partial-credit metric. Our verifiable contributions are: (1) an exhaustive proof that no circulant graph on $\\mathbb{Z}/99$ satisfies more than $3366/4950=68.0\\%$ of the constraints ($33$ of $49$ difference-classes), with the same ceiling for the other abelian group of order $99$; (2) a forced-structure reduction: $\\lambda=1$",
+      "category": "Research",
+      "summary": "Demonstrates autonomous AI research agent capabilities by systematically attacking Conway's 99-graph problem with reproducible, verifiable contributions to graph structure reduction.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "autonomous"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Poor Man's Agentic Modeling: Simulating Large LLM-Agent Societies on a Laptop",
+      "url": "https://arxiv.org/abs/2608.11215",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-13T04:00:00.000Z",
+      "snippet": "arXiv:2608.11215v1 Announce Type: new Abstract: Simulating societies of many large language model (LLM) agents is expensive, yet the questions asked of such simulations are usually macroscopic: phase behaviour, stylised facts, and scaling with the number of agents $N$, not the cognition of any single agent. We turn a statistical-physics observation into a method: replace each LLM agent by a low-parameter model fitted from a few hundred to a few thousand cheap queries, then run the society at any $N$ on a laptop. Whether this works is decided before the simulation runs, chiefly by what each age",
+      "category": "Agent Frameworks",
+      "summary": "Presents a method to simulate large-scale LLM-agent societies efficiently by replacing individual agents with low-parameter statistical models fitted from cheap queries, enabling macroscopic analysis on limited compute.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "inference"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "AutoWorldModel-Bench: A State-Centric Benchmark for Automated World-Model Research",
+      "url": "https://arxiv.org/abs/2608.11216",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-13T04:00:00.000Z",
+      "snippet": "arXiv:2608.11216v1 Announce Type: new Abstract: World modeling is an unsettled field: architectures, training objectives, and state representations interact in complex ways, and no single recipe dominates across environments. This makes it an ideal testbed for AI coding agents acting as autonomous researchers--a setting in which the improvement direction is not specified in advance, unlike the engineering-to-spec tasks that dominate current agent benchmarks. We introduce AutoWorldModel-Bench, a closed-loop benchmark in which frontier coding agents autonomously improve a provided world-model st",
+      "category": "Agent Frameworks",
+      "summary": "Introduces AutoWorldModel-Bench, a closed-loop benchmark enabling frontier coding agents to autonomously research and improve world-model architectures without pre-specified improvement directions.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "benchmark",
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "MaSRead: Content-Addressed Reading of Replicated Latent Stores",
+      "url": "https://arxiv.org/abs/2608.11218",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-13T04:00:00.000Z",
+      "snippet": "arXiv:2608.11218v1 Announce Type: new Abstract: Independent agents that reason in latent space can share computed state as key-value cache fragments rather than text. Merged by a conflict-free replicated data type, these fragments form a store that converges under any delivery order or duplication. Yet a later query, unknown at encode time, cannot reliably read the merged cache: colocated fragments interfere, so colocation is not addressability. MaSRead addresses the read to content. It routes through opaque keyed tag sets derived from fragment words and decodes each selected fragment under a ",
+      "category": "Agent Frameworks",
+      "summary": "Proposes MaSRead, a content-addressed reading mechanism for shared latent state across independent reasoning agents using conflict-free replicated data types and opaque keyed tag routing.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "inference"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "From Monolithic to Modular: Segment-level Automatic Prompt Optimization",
+      "url": "https://arxiv.org/abs/2608.11219",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-13T04:00:00.000Z",
+      "snippet": "arXiv:2608.11219v1 Announce Type: new Abstract: Automatic Prompt Optimization (APO) often rewrites prompts monolithically, which can improve one behavior while degrading others. We present SAPO, a segment-level APO method that decomposes prompts into role, context, tasks, and output format, then applies targeted improvements based on top-5 and bottom-5 examples. The optimization loop uses one LLM with static meta-prompts and structured outputs for segmentation, weakness analysis, and candidate generation. We describe a train/validation protocol and a two-stage generation process: (1) segment-l",
+      "category": "Developer Tools",
+      "summary": "Presents SAPO, a segment-level automatic prompt optimization method that decomposes prompts into functional components and applies targeted improvements based on top/bottom example analysis.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm",
+          "fine-tuning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "LLMs in Process Diagram Engineering: From Optimal PFDs to Validated P&IDs",
+      "url": "https://arxiv.org/abs/2608.11220",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-13T04:00:00.000Z",
+      "snippet": "arXiv:2608.11220v1 Announce Type: new Abstract: Nowadays, the creation of a process flow diagram (PFD) and its subsequent transformation into a piping and instrumentation diagram (P&ID) is predominantly performed manually. Applying artificial intelligence in the task could potentially lead not only to process automation and time savings, but also to financial gains by exploring numerous diagram's topology options and reducing manual labor. This research presents P&ID Pilot - a practical end-to-end AI pipeline capable of handling flowsheet developing for both stages. The first stage focuses on ",
+      "category": "Applications",
+      "summary": "Describes P&ID Pilot, an end-to-end AI pipeline that automates the creation and transformation of process flow diagrams (PFDs) into piping and instrumentation diagrams (P&IDs) for engineering workflows.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm",
+          "agentic",
+          "applications"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "Harnessing agent memory to build lifelong AI partners for materials scientists",
+      "url": "https://arxiv.org/abs/2608.11224",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-13T04:00:00.000Z",
+      "snippet": "arXiv:2608.11224v1 Announce Type: new Abstract: Materials research advances through accumulated experience - scripts that work, protocols that are trusted, warnings attached to failed calculations or experiments, and judgement that links a new question to an old result. This experience is essential for reproducibility and knowledge transfer, yet it is usually fragmented across notebooks, repositories, job logs and individual memory, and it is rarely portable across artificial-intelligence agents. Here we argue that a lifelong AI partner for materials science can be designed around persistent m",
+      "category": "Applications",
+      "summary": "Proposes lifelong AI partners for materials scientists designed around persistent agent memory, enabling knowledge accumulation, reproducibility, and experience transfer across research tasks.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "applications",
+          "memory"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "Cutting AI Datacenter Energy with Reinforcement Learning: Measured Power Control of LLM Training from One GPU to the Fleet",
+      "url": "https://arxiv.org/abs/2608.11226",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-13T04:00:00.000Z",
+      "snippet": "arXiv:2608.11226v1 Announce Type: new Abstract: Reinforcement-learning post-training dominates modern language-model development, yet its power behavior on GPU hardware has not been characterized, and datacenters manage GPU power with workload-blind mechanisms, static caps and reactive throttling, that slow hardware indiscriminately. We instrument GRPO training with half-second power telemetry at 7B, 14B, and 72B scales on one to four A100s (380,000+ samples), and train a PPO meta-controller that adapts the workload's own generation parameters to measured power. Against the full 500-step 7B tr",
+      "category": "Hardware & Compute",
+      "summary": "Applies reinforcement learning to optimize GPU power consumption during LLM training at scales from 7B to 72B parameters, reducing datacenter energy via dynamic workload-aware control.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "training",
+          "inference",
+          "hardware"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "Forecasting Side Effects of Activation Steering",
+      "url": "https://arxiv.org/abs/2608.11227",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-13T04:00:00.000Z",
+      "snippet": "arXiv:2608.11227v1 Announce Type: new Abstract: Activation steering modifies a language model by adding a learned direction to its hidden activations, enabling targeted behavioral changes without retraining. While effective, steering often produces unintended side effects on other behaviors, making it difficult to deploy safely. We therefore ask: can these side effects be forecasted before steering is applied? We answer this question by constructing a cross-effect matrix over a taxonomy of 67 behaviors across three open-weight language models. We find that side effects are common, structured, ",
+      "category": "AI Safety & Alignment",
+      "summary": "Develops a cross-effect matrix taxonomy to forecast unintended side effects of activation steering across 67 behaviors, enabling safer deployment of model behavioral modifications.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "interpretability"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Synchronizing Beliefs with Second-Order Theory-of-Mind in Human-Autonomy Teams (Extended Version)",
+      "url": "https://arxiv.org/abs/2608.11229",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-13T04:00:00.000Z",
+      "snippet": "arXiv:2608.11229v1 Announce Type: new Abstract: Comparative feedback, asking people which of two behaviors they prefer, has become a standard way to align robot and agent behavior with human intent when the reward itself cannot be specified directly. Preference-based reward learning typically casts the human teacher as a passive oracle answering learner-generated queries. We argue this forfeits the teacher's defining advantage: knowledge of the objective. A teacher who knows the target can construct training examples more efficiently than any learner-driven acquisition strategy, an advantage t",
+      "category": "Agent Frameworks",
+      "summary": "Proposes second-order theory-of-mind framework for human-autonomy teams where informed teachers construct efficient preference-based training examples rather than acting as passive reward oracles.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "alignment"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "LinearKV: One Cached State Suffices for Position-Independent Caching in Hybrid LLMs",
+      "url": "https://arxiv.org/abs/2608.11231",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-13T04:00:00.000Z",
+      "snippet": "arXiv:2608.11231v1 Announce Type: new Abstract: LLM serving is increasingly accelerated by position-independent caching (PIC). Existing PIC methods, however, are built for full-attention models, where a token-indexed KV cache underlies its core operations: matching reusable token chunks, concatenating their KV entries, and selectively recomputing a few tokens to restore cross-chunk context. Hybrid LLMs break these primitives---they replace most attention layers with linear recurrences that expose only a fixed-size state, leaving no token-indexed KV to concatenate or to locally repair. This rai",
+      "category": "Developer Tools",
+      "summary": "Introduces LinearKV, a position-independent KV caching method adapted for hybrid LLMs combining attention layers with linear recurrences, enabling efficient serving with fixed-size state.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference",
+          "llm"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "InfraBench: Evaluating Infrastructure Agents Across Layers, Lifecycle, and Risk",
+      "url": "https://arxiv.org/abs/2608.11234",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-13T04:00:00.000Z",
+      "snippet": "arXiv:2608.11234v1 Announce Type: new Abstract: Managing modern computing infrastructure has become a steadily harder problem due to the ever-increasing complexity. Recent advances in AI agents create a timely opportunity to automate infrastructure management tasks, but it remains unclear how well such agents can handle real-world infrastructure complexity. We present InfraBench, a benchmark suite for evaluating AI agents on realistic infrastructure tasks across the full system stack and full operational lifecycle with fine-grained risk assessment. Experiments with 15 agent-model configuration",
+      "category": "Agent Frameworks",
+      "summary": "Presents InfraBench, a comprehensive benchmark for evaluating AI agents on realistic infrastructure management tasks across system stack layers, operational lifecycle, and risk scenarios.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "evaluation"
+        ],
+        "traits": [
+          "benchmark"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "CORA-Diff: Confidence-Oriented Residual Acceptance for Efficient Diffusion Language Model Inference",
+      "url": "https://arxiv.org/abs/2608.11235",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-13T04:00:00.000Z",
+      "snippet": "arXiv:2608.11235v1 Announce Type: new Abstract: Diffusion language models (DLMs) update many tokens in parallel, yet practical decoders often use a fixed denoising horizon. Many predictions stabilize early, but blockwise decoding continues until all positions are resolved, causing repeated dense forward passes. Existing accelerators often rely on learned filters, modified scores, dependency models, or cache-specific mechanisms. We ask whether native trajectory signals can identify residual positions likely to match the deterministic dense endpoint. We propose CORA-Diff, a training-free method ",
+      "category": "Developer Tools",
+      "summary": "Proposes CORA-Diff, a training-free acceleration method for diffusion language models that identifies which token positions have stabilized early, skipping unnecessary dense forward passes.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference",
+          "llm"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Some Claude users are mad that Anthropic’s new watermarks will catch them using it at their jobs, classes",
+      "url": "https://techcrunch.com/2026/08/12/some-claude-users-are-mad-that-anthropics-new-watermarks-will-catch-them-cheating-at-their-jobs-classes/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-12T22:26:37.000Z",
+      "snippet": "Is Anthropic's new watermarking system a travesty? Some have taken to social media to complain that it is.",
+      "category": "AI Safety & Alignment",
+      "summary": "Anthropic's new watermarking system for Claude is generating backlash from users concerned about detection of AI usage in workplace and educational settings.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": [
+          "claude"
+        ]
+      }
+    },
+    {
+      "title": "The web’s newest weapon against AI scrapers is a font",
+      "url": "https://arstechnica.com/ai/2026/08/new-font-turns-ordinary-webpages-into-nonsense-for-ai-scrapers/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-08-12T22:02:25.000Z",
+      "snippet": "“ShieldFont” aims to poison AI training data without making pages unreadable for people.",
+      "category": "Regulation & Policy",
+      "summary": "ShieldFont, a new web font, aims to poison AI training data by making content unreadable to scrapers while remaining legible to humans.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy",
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Terabytes of credentials leaked in massive supply-chain attack",
+      "url": "https://arstechnica.com/security/2026/08/terabytes-of-credentials-leaked-in-massive-supply-chain-attack/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-08-12T21:43:21.000Z",
+      "snippet": "The data was scraped and exfiltrated from 2,500 users of a compromised AI package.",
+      "category": "AI Safety & Alignment",
+      "summary": "Terabytes of user credentials were leaked in a massive supply-chain attack targeting 2,500 users of a compromised AI package.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "security"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Twitch content has trained Amazon AI for years, but users can opt out now",
+      "url": "https://arstechnica.com/ai/2026/08/twitch-content-has-trained-amazon-ai-for-years-but-users-can-opt-out-now/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-08-12T21:00:30.000Z",
+      "snippet": "Streaming platform says user-generated content \"may be used for future Gen AI model improvements.\"",
+      "category": "Regulation & Policy",
+      "summary": "Twitch has informed users that their content has been used to train Amazon AI for years, now allowing opt-out for future generative AI training.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "training",
+          "amazon"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Amazon will train on Twitch streamers’ content by default, unless they opt out",
+      "url": "https://techcrunch.com/2026/08/12/amazon-will-train-on-twitch-streamers-content-by-default-unless-they-opt-out/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-12T20:10:40.000Z",
+      "snippet": "\"If this was opt-in, nobody would opt in,\" Twitch CPO Mike Minton said on a livestream responding to user feedback. \"That's honestly the answer.\"",
+      "category": "Regulation & Policy",
+      "summary": "Amazon will use Twitch streamers' content for AI training by default unless they opt out, with Twitch leadership acknowledging an opt-in approach would have minimal participation.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "training",
+          "amazon"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "AI coding startup Cognition reportedly already in talks to raise at $40B valuation",
+      "url": "https://techcrunch.com/2026/08/12/ai-coding-startup-cognition-reportedly-already-in-talks-to-raise-at-40b-valuation/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-12T18:19:12.000Z",
+      "snippet": "Cognition may be looking to raise another mega round just a few months after raising $1 billion at a $26 billion valuation.",
+      "category": "Business & Funding",
+      "summary": "AI coding startup Cognition is reportedly in talks to raise another mega-round at a $40 billion valuation, just months after securing $1 billion at $26 billion.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "cognition"
+        ],
+        "traits": [
+          "funding",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "As AI safety concerns mount, three pioneers make the case for staying open",
+      "url": "https://techcrunch.com/2026/08/12/as-ai-safety-concerns-mount-three-pioneers-make-the-case-for-staying-open/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-12T17:51:00.000Z",
+      "snippet": "At Ai4, three of the world's most respected AI experts — Geoffrey Hinton, Fei-Fei Li, and Andrew Ng — debated regulation, open source access, and how America can compete as China advances in Asia.",
+      "category": "Regulation & Policy",
+      "summary": "AI pioneers Geoffrey Hinton, Fei-Fei Li, and Andrew Ng debated regulation, open-source access, and U.S. competitiveness against China at the AI4 conference.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy",
+          "research",
+          "open-source"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "OpenAI-backed Thrive Holdings raises $2B to bring AI to the enterprise",
+      "url": "https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-12T17:41:29.000Z",
+      "snippet": "Thrive Holdings has raised $2 billion in new funding at a $12 billion valuation from investors like SoftBank, D1 Capital Partners, and Altimeter Capital.",
+      "category": "Business & Funding",
+      "summary": "OpenAI-backed Thrive Holdings raised $2 billion at a $12 billion valuation from major investors to bring AI solutions to enterprises.",
+      "important": true,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "funding",
+          "commercial"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Twitch streamers can now opt out from training Amazon’s AI",
+      "url": "https://www.theverge.com/tech/979112/twitch-streamers-can-now-opt-out-from-training-amazons-ai",
+      "source": "The Verge AI",
+      "publishedAt": "2026-08-12T17:29:10.000Z",
+      "snippet": "Twitch users can now opt out of allowing their content to be used to train Amazon's generative AI models. Opting out means that \"your streams, VODs, clips, stream chats, and pictures and text on your channel\" won't be used in \"future training\" of an Amazon AI model \"whose purpose is to generate or synthesize text, audio, images, or video,\" according to a Twitch support page. Other \"AI-supported\" features like captions and safety tools will still function if you opt-out of generative AI training. However, if you participate in a chat on another person's stream, \"their opt-out preferences govern",
+      "category": "Regulation & Policy",
+      "summary": "Twitch users can now opt out of having their content used to train Amazon's generative AI models, though the opt-out is limited to future training and doesn't affect AI-supported features like captions.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "training",
+          "amazon"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Mesh, Automattic’s CRM for everyone, comes to Android",
+      "url": "https://techcrunch.com/2026/08/12/mesh-automattics-crm-for-everyone-comes-to-android/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-12T16:57:58.000Z",
+      "snippet": "Mesh, an AI-powered contacts app and relationship manager from Automattic, is now an Android app.",
+      "category": "Applications",
+      "summary": "Automattic's AI-powered contacts and relationship management app Mesh is now available on Android, expanding its availability beyond iOS.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "automattic"
+        ],
+        "traits": [
+          "commercial",
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Scaling AI agents with trustworthy data",
+      "url": "https://www.technologyreview.com/2026/08/12/1141032/scaling-ai-agents-with-trustworthy-data/",
+      "source": "MIT Tech Review AI",
+      "publishedAt": "2026-08-12T16:51:57.000Z",
+      "snippet": "Business and technology leaders need no convincing that the time of agentic AI is here. Organizations are rapidly adopting agents, and few executives doubt the technology’s potential to transform work. But many organizations find that realizing the desired return on investment (ROI) from AI hinges on having the right foundation, with inadequate infrastructure and data…",
+      "category": "Applications",
+      "summary": "Organizations are rapidly adopting AI agents but many struggle with infrastructure and data foundations needed to achieve adequate ROI from agentic AI.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "commercial",
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Why Stream ring-maker Sandbar says the future of AI wearables is voice",
+      "url": "https://techcrunch.com/video/why-stream-ring-maker-sandbar-says-the-future-of-ai-wearables-is-voice/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-12T16:46:02.000Z",
+      "snippet": "AI notetaking hardware has taken off over the past couple of years, with credit-card-sized devices, pendants, pins, and even transcribing earbuds all promising to capture your meetings and turn them into summaries and action items. Now, a whole wave of wearables — rings especially — are betting people want to capture stray thoughts and ideas the same way. One of […]",
+      "category": "Applications",
+      "summary": "Wearable startup Sandbar is positioning voice-enabled AI rings as the future of wearable notetaking, competing with existing credit-card-sized and pendant devices.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "audio",
+          "hardware"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Lovable confirms new $13.3B valuation, raises another $400M",
+      "url": "https://techcrunch.com/2026/08/12/lovable-confirms-new-13-3b-valuation-raises-another-400m/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-12T16:04:27.000Z",
+      "snippet": "This new funding comes after Lovable hit $500 million in annualized run rate revenue in June, the startup told TechCrunch.",
+      "category": "Business & Funding",
+      "summary": "AI web development platform Lovable raised $400 million at a $13.3 billion valuation after achieving $500 million in annualized revenue.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "lovable"
+        ],
+        "traits": [
+          "funding",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Guitar company D’Addario admits that AI music was used in a promotional video",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/978982/daddario-guitar-ai-music-suno",
+      "source": "The Verge AI",
+      "publishedAt": "2026-08-12T15:52:07.000Z",
+      "snippet": "Maybe don’t let the AI shred next time. | Image: D’Addario After weeks of controversy and speculation, music company D'Addario has admitted that AI, specifically Suno, was used as part of a recent promotional video. For nearly two weeks, the company has denied the allegations, even as evidence piled up against it. It offered various explanations, from low-quality exports, to combinations of plug-ins like Autotune introducing digital noise, and the use of AI-assisted mastering tools from LANDR and Logic. But now the company has edited its original Instagram post denying the use of generative AI",
+      "category": "Applications",
+      "summary": "Guitar company D'Addario admitted to using AI-generated music from Suno in a promotional video after weeks of denials, sparking debate about AI in commercial content.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "audio",
+          "suno"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "How a $250 million acquisition collapsed into allegations of fraud and forged signatures",
+      "url": "https://techcrunch.com/2026/08/12/how-a-250-million-acquisition-collapsed-into-allegations-of-fraud-and-forged-signatures/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-12T15:44:56.000Z",
+      "snippet": "Investors are still waiting for their share of the $250 million windfall, and VideoVerse co-founder Vinayak Shrivastav is now at the center of multiple legal cases.",
+      "category": "Business & Funding",
+      "summary": "A $250 million acquisition of AI startup VideoVerse collapsed amid allegations of fraud and forged signatures, leaving investors waiting for promised returns.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "incident",
+          "commercial",
+          "funding"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Booksellers suspect AI firms are buying and then destroying rare books",
+      "url": "https://arstechnica.com/tech-policy/2026/08/heres-a-balm-if-the-idea-of-destroying-books-to-train-ai-breaks-your-heart/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-08-12T15:19:17.000Z",
+      "snippet": "AI firms quietly bulk buying rare books face resistance from booksellers.",
+      "category": "Regulation & Policy",
+      "summary": "Booksellers report that AI companies are quietly bulk-buying and destroying rare books, raising concerns about data acquisition practices.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "training"
+        ],
+        "traits": [
+          "policy",
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Why Sandbar thinks it’s voice-enabled ring can avoid the AI hardware graveyard",
+      "url": "https://techcrunch.com/podcast/why-sandbar-thinks-its-voice-enabled-ring-can-avoid-the-ai-hardware-graveyard/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-12T14:22:00.000Z",
+      "snippet": "AI notetaking hardware has taken off over the past couple of years, with credit-card-sized devices, pendants, pins, and even transcribing earbuds all promising to capture your meetings and turn them into summaries and action items. Now, a whole wave of wearables — rings especially — are betting people want to capture stray thoughts and ideas the same way. One of […]",
+      "category": "Applications",
+      "summary": "Sandbar's voice-enabled AI ring aims to succeed where other AI hardware has failed by focusing on capturing stray thoughts through conversational voice interaction.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "audio",
+          "hardware"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Everything announced at Made by Google ’26: Pixel 11, Pixel Watch 5, Pixel Tag, and tons of Gemini features",
+      "url": "https://techcrunch.com/2026/08/12/google-unveils-pixel-11-lineup-new-airtag-rival-and-gemini-features-at-made-by-google-2026/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-12T14:20:33.000Z",
+      "snippet": "From the Pixel 11 series and a brand new competitor to Apple’s AirTag, here are all the announcements from the Made by Google 2026 event.",
+      "category": "Model Releases",
+      "summary": "Google announced the Pixel 11, Pixel Watch 5, Pixel Tag, and numerous Gemini AI features at Made by Google 2026 event.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "release",
+          "commercial"
+        ],
+        "entities": [
+          "google"
+        ]
+      }
+    },
+    {
+      "title": "Putting sign language AI into users’ hands",
+      "url": "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/",
+      "source": "Google DeepMind",
+      "publishedAt": "2026-08-12T14:01:59.000Z",
+      "snippet": "Introducing sign-language-to-text (SL2T), our breakthrough model powering new sign language features for Deaf and hard of hearing users.",
+      "category": "Applications",
+      "summary": "Google DeepMind introduced sign-language-to-text (SL2T), a breakthrough model enabling new sign language features for Deaf and hard of hearing users.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": [
+          "deepmind"
+        ]
+      }
+    },
+    {
+      "title": "Google’s Pixel Watch 5 dives deeper into AI and health",
+      "url": "https://www.theverge.com/tech/978094/pixel-watch-5-hands-on-made-by-google-gemini-wearables-smartwatch",
+      "source": "The Verge AI",
+      "publishedAt": "2026-08-12T14:00:00.000Z",
+      "snippet": "At least there’s no new proprietary charger this year. Huzzah!! | Photo: David Imel / The Verge The $399 Google Pixel Watch 5 isn't about the hardware. Sure, there's a new satin pyrite case finish, a few new strap colors, and a Steph Curry Special Edition. Under the hood, there's a slightly faster Qualcomm processor and an itty-bitty battery bump. There's a $50 price hike from last year, too, because the Pixel Watch 5 isn't immune to RAMageddon - none of us are. Otherwise, no one would blame you for looking at this watch and thinking absolutely nothing's changed. That's because the big updates",
+      "category": "Applications",
+      "summary": "Google's Pixel Watch 5 features expanded AI and health capabilities including new processor and health monitoring features as the primary upgrade.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "vision"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "google"
+        ]
+      }
+    },
+    {
+      "title": "Of course the ChatGPT dog cancer vaccine spawned a startup",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/978671/ai-cured-dog-cancer-mrna-vaccine-startup-gamgee",
+      "source": "The Verge AI",
+      "publishedAt": "2026-08-12T12:09:34.000Z",
+      "snippet": "Remember that much-hyped story about an Australian tech entrepreneur using ChatGPT, Grok, and other AI tools to craft a personalized cancer vaccine for his dog? Well, surprise: He's launched a startup. That entrepreneur is Paul Conyngham, who says he is launching Gamgee to offer \"personalised mRNA cancer vaccines for dogs.\" But his ambitions go well beyond dogs - and pets - with Gamgee's website promising the company will harness AI and genetics to develop personalized treatments for a range of diseases and species, including humans. At the center of Gamgee's origin story is Rosie, Conyngham's",
+      "category": "Applications",
+      "summary": "Paul Conyngham, who used ChatGPT and Grok to develop a personalized mRNA cancer vaccine for his dog, has launched startup Gamgee to commercialize AI-powered personalized treatments for pets and humans.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm"
+        ],
+        "traits": [
+          "commercial",
+          "funding"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Grok is now an AI ‘teammate’ you can assign work",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/978666/spacexai-grok-bot-ai-agent-beta-launch",
+      "source": "The Verge AI",
+      "publishedAt": "2026-08-12T11:58:54.000Z",
+      "snippet": "You’ll have to be fine with letting Grok sign into your online accounts, however. | Image: SpaceXAI SpaceXAI has introduced Grok Bot, an always-on AI agent service designed to behave like independent \"AI teammates\" that can do your work for you. The bots share their own cloud-based computer environment, and can sign into apps, tools, and websites you already use to complete multi-step workplace tasks, only coming back when their assigned work is completed or if something requires approval. Grok Bot (or Bots, as SpaceXAI inconsistently pluralizes it) is the latest push from Elon Musk's AI compa",
+      "category": "Agent Frameworks",
+      "summary": "SpaceXAI introduced Grok Bot, an always-on AI agent service that can autonomously complete multi-step workplace tasks by signing into apps and tools on behalf of users.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "grok"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "AI code-testing startup Blacksmith’s valuation jumps almost 10x in less than a year",
+      "url": "https://techcrunch.com/2026/08/12/blacksmiths-valuation-jumps-10x-to-550m-as-ai-coding-fuels-software-validation/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-12T11:00:00.000Z",
+      "snippet": "Blacksmith says revenue has grown more than tenfold over the past year.",
+      "category": "Business & Funding",
+      "summary": "AI code-testing startup Blacksmith's valuation jumped nearly 10x in under a year, with revenue also growing more than tenfold.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "development"
+        ],
+        "traits": [
+          "funding",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "From assistance to execution: How enterprises put AI to work",
+      "url": "https://openai.com/index/how-enterprises-put-ai-to-work",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-08-12T06:00:00.000Z",
+      "snippet": "OpenAI research reveals how enterprises are adopting agentic AI, using ChatGPT and Codex, and how frontier firms are pulling ahead in AI adoption.",
+      "category": "Applications",
+      "summary": "OpenAI research reveals how enterprises are adopting agentic AI using ChatGPT and Codex, with frontier firms pulling ahead in AI adoption.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
     {
       "title": "Saber denies replacing Rideshare Stimulator&#8217;s writers with ChatGPT",
       "url": "https://www.theverge.com/games/978558/rideshare-stimulator-writer-ai-saber-interactive",
@@ -31,6 +810,27 @@
         ],
         "traits": [
           "incident"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "How RingCentral builds AI-native work from engineering to ops",
+      "url": "https://openai.com/index/ringcentral",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-08-12T00:00:00.000Z",
+      "snippet": "See how RingCentral uses ChatGPT Work and Codex to accelerate AI product development and centralize operational intelligence across engineering and operations.",
+      "category": "Applications",
+      "summary": "RingCentral uses ChatGPT Work and Codex to accelerate AI product development and centralize operational intelligence across engineering and operations.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "development"
+        ],
+        "traits": [
+          "commercial"
         ],
         "entities": [
           "openai"
@@ -16002,787 +16802,102 @@
         ],
         "entities": []
       }
-    },
-    {
-      "title": "Format Sensitivity Index: Token-Controlled Prompt Wrapper Robustness and Schema Compliance in LLM Benchmarking",
-      "url": "https://arxiv.org/abs/2607.09665",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-14T04:00:00.000Z",
-      "snippet": "arXiv:2607.09665v1 Announce Type: new Abstract: Prompt wrappers often differ only in formatting, yet they can change model scores enough to flip leaderboard conclusions. We study this variance under a token-controlled protocol and introduce two complementary metrics: the Format Sensitivity Index (FSI), the accuracy range induced by wrapper choice, and the Parseability Sensitivity Index (PSI), the corresponding range in answer parseability. Across 140,000 OpenRouter generations spanning 7 QA tasks, 5 wrapper families, and 4 instruct models from 7B to 72B parameters, we find that mean FSI varies",
-      "category": "Research",
-      "summary": "arXiv paper introduces Format Sensitivity Index metrics to measure how prompt formatting variations can significantly affect model performance and leaderboard rankings.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "evaluation"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Faithful, Not Corrective: Message-Format Effects in Multi-Hop Agent Relays Are Tier-Dependent",
-      "url": "https://arxiv.org/abs/2607.09678",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-14T04:00:00.000Z",
-      "snippet": "arXiv:2607.09678v1 Announce Type: new Abstract: When LLM agents hand off information to one another, does the message format matter? Two literatures disagree: format-optimization work reports that structured messages cut cost without hurting accuracy, while format-restriction work finds that imposing structure degrades generation -- and neither measures what happens when a message traverses multiple hops, where copy fidelity, not one-shot generation, dominates. We introduce a controlled relay testbed: briefs of twelve programmatically generated atomic facts are re-encoded hop-by-hop in five fo",
-      "category": "Research",
-      "summary": "arXiv paper investigates how message format affects multi-hop agent communication, finding that format effects vary depending on the reasoning tier.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Interpreting Latent CoT Reasoning as Dynamical Systems",
-      "url": "https://arxiv.org/abs/2607.09698",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-14T04:00:00.000Z",
-      "snippet": "arXiv:2607.09698v1 Announce Type: new Abstract: Recent latent reasoning methods, such as CODI and COCONUT, face a fundamental interpretability problem: they maintain multiple superimposed candidate traces in the hidden space at each step, unlike explicit- CoT, which follows a single transparent reasoning trace. Existing mechanistic methods show compression, shortcuts, and superposition without explaining how reasoning evolves across latent steps. To address this gap, we model latent token sequences as trajectories in representation space and apply dynamical systems analysis to characterize the",
-      "category": "Research",
-      "summary": "arXiv paper applies dynamical systems analysis to interpret latent chain-of-thought reasoning in language models, addressing interpretability gaps in implicit reasoning methods.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "reasoning",
-          "interpretability"
-        ],
-        "traits": [],
-        "entities": []
-      }
-    },
-    {
-      "title": "YUKTI: From Natural-Language Situations to Robust, Verifiable Decisions An Uncertainty-Typed Proposition IR, Assumption-Robust Pareto Frontiers, and a Regret Certificate",
-      "url": "https://arxiv.org/abs/2607.09706",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-14T04:00:00.000Z",
-      "snippet": "arXiv:2607.09706v1 Announce Type: new Abstract: Language models turn a worded situation into a numeric plan, and the dominant pipelines (NL4Opt, OptiMUS, ORLM, OR-LLM-Agent) commit to a single objective and point-valued coefficients, then solve once. For decisions that allocate real budget, effort, or clinical attention, that confidence is the failure mode: every objectified number is an assumption, and a plan optimal only if the guesses are exactly right is fragile -- mimicry of computation. YUKTI changes the target of autoformulation. Its representation is a typed-proposition graph whose rel",
-      "category": "Research",
-      "summary": "arXiv paper introduces YUKTI, a framework that converts natural language specifications into robust, verifiable decisions with uncertainty quantification rather than single-point solutions.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "reasoning"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Closed-Loop Control with Rule-Aligned Small Language Models and Multi-Agent Self-Correction",
-      "url": "https://arxiv.org/abs/2607.09713",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-14T04:00:00.000Z",
-      "snippet": "arXiv:2607.09713v1 Announce Type: new Abstract: A key step toward autonomous industrial operation is the ability to create and reconfigure control policies from natural-language requirement specifications, with minimal or no manual redesign. In this setting, policy generation by AI agents can be a credible path when paired with a plant-aware validator (e.g., a digital twin) that can check generated candidate actions before execution. However, practical deployment is constrained by inference latency and compute footprint: large cloud-based models are often too slow, opaque, or data-sensitive fo",
-      "category": "Research",
-      "summary": "arXiv paper presents methods for using small language models in closed-loop control systems with multi-agent self-correction for industrial automation.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Feedback-Coupled Memory Systems in Continuous Time",
-      "url": "https://arxiv.org/abs/2607.09714",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-14T04:00:00.000Z",
-      "snippet": "arXiv:2607.09714v1 Announce Type: new Abstract: The Feedback-Coupled Memory Systems (FCMS) architecture formalizes closed-loop coordination through four abstract operators, two of which - the agent update operator $f_i$ and the environmental update operator $\\Psi$ - are left axiomatically undefined in the original framework. To address this, $f_i$ is defined by Mechanism-Based Intelligence (MBI), where agents update locally through a decentralized price mechanism and economic principles, and $\\Psi$ is defined by the Coupled Memory Graph Process (CMGP), a non-Markovian framework where the envir",
-      "category": "Research",
-      "summary": "arXiv paper formalizes the Feedback-Coupled Memory Systems architecture for coordinating agent behavior through decentralized mechanisms and non-Markovian memory processes.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "AGM-like Paraconsistent Partial Meet Abductive Expansion Operation",
-      "url": "https://arxiv.org/abs/2607.09729",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-14T04:00:00.000Z",
-      "snippet": "arXiv:2607.09729v1 Announce Type: new Abstract: In his 1996 doctoral thesis, Maurice Pagnucco created the first AGM-like abductive expansion operation. Taking his operation as a basis, as well as a taxonomy -- inspired by Atocha Aliseda -- responsible for highlighting and formalizing the main components of abductive reasoning, the main aim of this paper is to present a new paraconsistent AGM-like abductive expansion operation -- capable of assimilating contradictory explanatory hypotheses without trivialization and the consequent absurd epistemic state -- with its postulates and its transitive",
-      "category": "Research",
-      "summary": "arXiv paper presents a paraconsistent AGM-like abductive expansion operation capable of handling contradictory explanatory hypotheses in reasoning systems.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "reasoning"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Coresets Before Score Sets: Evaluation-Unsupervised Prompt Subset Selection for LLM Benchmarks",
-      "url": "https://arxiv.org/abs/2607.09739",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-14T04:00:00.000Z",
-      "snippet": "arXiv:2607.09739v1 Announce Type: new Abstract: We study LLM benchmark coreset selection: selecting a small subset of prompts over multiple benchmarks whose induced model scores and rankings approximate those obtained from the full benchmark suite. In evaluation-unsupervised benchmark coreset selection (our approach), the selection algorithm uses no model evaluation outcomes, and operates on a fine granularity by producing subsets of prompts over multiple benchmarks rather than producing a sub-collection of entire benchmarks. We use submodular subset selection, and we develop and evaluate many",
-      "category": "Research",
-      "summary": "Proposes an evaluation-unsupervised coreset selection method using submodular optimization to identify minimal prompt subsets that preserve model scores and rankings across multiple LLM benchmarks.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "evaluation"
-        ],
-        "traits": [
-          "benchmark",
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "A Dynamic Scene Interaction Reasoning Framework for Scene-level Lane-Change Intention and Trajectory Prediction of Multiple Interacting Vehicles",
-      "url": "https://arxiv.org/abs/2607.09740",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-14T04:00:00.000Z",
-      "snippet": "arXiv:2607.09740v1 Announce Type: new Abstract: Safe motion planning in advanced driver-assistance systems and autonomous vehicles requires an accurate understanding of how the surrounding traffic scene is likely to evolve. However, many existing lane-change prediction methods remain centered on a single target vehicle, while multi-agent forecasting approaches often describe scene evolution only through future positions and provide limited explicit information about the maneuver associated with each vehicle. This study proposes a dynamic scene graph attention framework that predicts the lane-c",
-      "category": "Research",
-      "summary": "Develops a dynamic scene graph attention framework for predicting multi-agent lane-change intentions and trajectories in autonomous driving scenarios with explicit maneuver reasoning.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "reasoning",
-          "robotics"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Scaffolding the Strategist: Architecture-Dependent Reasoning Interventions in Hotelling Spatial Markets",
-      "url": "https://arxiv.org/abs/2607.09743",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-14T04:00:00.000Z",
-      "snippet": "arXiv:2607.09743v1 Announce Type: new Abstract: We investigate whether structured reasoning interventions improve the strategic economic reasoning of large language models, and whether their effects depend on model architecture. Using Hotelling's linear city model as a diagnostic vehicle, we evaluate GPT-4.1-mini (a standard instruction-following model) and GPT-5-mini (a reasoning-optimized model) under five conditions - an unscaffolded baseline and four reasoning interventions - across eight questions spanning deductive and abductive reasoning, three prompt framings, and three repetitions per",
-      "category": "Research",
-      "summary": "Investigates whether structured reasoning interventions improve strategic economic reasoning in LLMs, comparing standard instruction-following and reasoning-optimized model architectures.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "reasoning"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": [
-          "gpt"
-        ]
-      }
-    },
-    {
-      "title": "A Theory of Least Autonomy in AI",
-      "url": "https://arxiv.org/abs/2607.09744",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-14T04:00:00.000Z",
-      "snippet": "arXiv:2607.09744v1 Announce Type: new Abstract: Least privilege, the principle that an identity should hold only the permissions strictly required for its task, has been a foundational primitive of access control for decades. We argue that this principle is insufficient for agentic AI systems, which do not merely hold permissions but can combine, approve, and amplify them across workflows and system boundaries. We propose least autonomy as an appropriate generalization and develop a formal theory. First, we define a compositional blast radius d(a,b) that measures structural separation between ",
-      "category": "AI Safety & Alignment",
-      "summary": "Proposes least autonomy as a generalization of least privilege for agentic AI systems, developing formal theory to measure structural separation and blast radius in agent workflows.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "safety"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Replicating Belief, Not Bits: Epistemic State Replication for Agentic Systems",
-      "url": "https://arxiv.org/abs/2607.09748",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-14T04:00:00.000Z",
-      "snippet": "arXiv:2607.09748v1 Announce Type: new Abstract: In distributed systems, the classical State Machine Replication (SMR) model assumes that correct replicas execute deterministic transitions to yield identical bitwise states. However, the rise of agentic distributed systems -- where autonomous, stochastic, and model-driven agents orchestrate infrastructure -- presents scenarios where deterministic, bitwise replication is insufficient. Replicas operating with generative models may exhibit divergent reasoning paths, summaries, and token boundaries, yet reach semantically equivalent and correct oper",
-      "category": "Agent Frameworks",
-      "summary": "Introduces epistemic state replication for distributed agentic systems where generative model replicas may diverge in reasoning paths but reach semantically equivalent operations.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "distributed-systems"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "BatteryLake: Agentic, Physics-Grounded Curation of Heterogeneous Battery Aging Data and Benchmarking",
-      "url": "https://arxiv.org/abs/2607.09762",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-14T04:00:00.000Z",
-      "snippet": "arXiv:2607.09762v1 Announce Type: new Abstract: Public battery aging datasets are a critical asset for advanced health management, but their practical use is often limited by inconsistent formats, unclear schemas, and metadata scattered across repositories and publications. Current curation remains largely manual and hard to reproduce, while general-purpose data integration tools miss the domain-specific semantics of electrochemical time-series data. We present BatteryLake, a governed data lakehouse that turns raw public battery data into benchmark-ready assets through an agentic, physics-grou",
-      "category": "Applications",
-      "summary": "Presents BatteryLake, an agentic physics-grounded data lakehouse that automates curation of heterogeneous battery aging datasets into benchmark-ready assets.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "application"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "How Much Does Correctness Cost? Budgeted Placement of Strong Correctors in a Weak Multi-Agent Swarm",
-      "url": "https://arxiv.org/abs/2607.09765",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-14T04:00:00.000Z",
-      "snippet": "arXiv:2607.09765v1 Announce Type: new Abstract: A cheap swarm of unreliable agents can be steered to a correct consensus by a few strong, expensive \"oracle\" correctors. We ask how much one must spend, and where to place the oracles. We model the swarm as a consensus on a graph in which each oracle pins one node toward the truth at a cost-coupled, concave strength, and measure quality by the coherence H(R)=tr M(R)^{-1}. Our first result is that H stays submodular (each added oracle helps less than the last) even when the oracles differ in strength, so a cost-benefit greedy comes within 1-1/e of",
-      "category": "Agent Frameworks",
-      "summary": "Analyzes optimal placement and budgeting of expensive strong correctors in weak multi-agent swarms to achieve correct consensus using submodular optimization principles.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "multi-agent"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Norm Enforcement for AI Agents: Robustly Shaping Behavior in Multi-Agent Systems",
-      "url": "https://arxiv.org/abs/2607.09766",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-14T04:00:00.000Z",
-      "snippet": "arXiv:2607.09766v1 Announce Type: new Abstract: AI agents are increasingly deployed in shared environments where they pursue diverse goals and compete for rewards. This multi-agent competition can lead to behaviors that serve individual gains at collective cost -- for instance, marketing agents may post misleading content as a result of competing for engagement on social media. Human societies address such problems through norms that constrain acceptable behavior, supported by enforcement mechanisms that detect and penalize violations. Motivated by this, we study norm enforcement mechanisms fo",
-      "category": "AI Safety & Alignment",
-      "summary": "Studies norm enforcement mechanisms to constrain undesirable emergent behaviors in competitive multi-agent AI systems through detection and penalty strategies.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "safety"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Already rich, already successful, why the last wave of tech winners is grinding again",
-      "url": "https://techcrunch.com/2026/07/13/already-rich-already-successful-why-the-last-wave-of-tech-winners-is-grinding-again/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-14T02:46:42.000Z",
-      "snippet": "They're rolling up their sleeves again, seemingly out of fear of missing AI's defining moment and, presumably, the irresistible allure of making even more money -- potentially a lot more.",
-      "category": "Business & Funding",
-      "summary": "Major tech companies are doubling down on AI investments and product development, driven by competitive pressure and the potential for significant market gains.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial",
-          "funding"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Uber’s product chief on hotels, robotaxis, and why the company doesn’t want to be “everything for everyone”",
-      "url": "https://techcrunch.com/2026/07/13/ubers-product-chief-on-hotels-robotaxis-and-why-the-company-doesnt-want-to-be-everything-for-everyone/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-14T00:45:00.000Z",
-      "snippet": "Uber Chief Product Officer Sachin Kansal walks TechCrunch through the company's financial-services ambitions, its increasingly complicated relationship with Waymo, its new AV Labs data operation, and how AI is starting to show up in ways riders and drivers will actually notice.",
-      "category": "Applications",
-      "summary": "Uber's CPO discusses the company's expansion into hotels, robotaxis, autonomous vehicle labs, and AI-driven features for riders and drivers.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "robotics"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "How data science teams use ChatGPT Work",
-      "url": "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex",
-      "source": "OpenAI Blog",
-      "publishedAt": "2026-07-14T00:00:00.000Z",
-      "snippet": "See how data science teams can use ChatGPT Work to build root-cause briefs, impact readouts, KPI memos, scoped analyses, and dashboard specs from real work inputs.",
-      "category": "Applications",
-      "summary": "OpenAI demonstrates how data science teams can leverage ChatGPT Work to automate analysis, reporting, and documentation tasks.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial",
-          "tutorial"
-        ],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "How sales teams use ChatGPT Work",
-      "url": "https://openai.com/academy/codex-for-work/how-sales-teams-use-codex",
-      "source": "OpenAI Blog",
-      "publishedAt": "2026-07-14T00:00:00.000Z",
-      "snippet": "See how sales teams can use ChatGPT Work to create pipeline briefs, meeting prep packets, forecast reviews, account plans, and stalled-deal diagnoses from real work inputs.",
-      "category": "Applications",
-      "summary": "OpenAI showcases ChatGPT Work's ability to help sales teams generate briefs, forecasts, and account analysis from workflow inputs.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial",
-          "tutorial"
-        ],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "Video-generation startup PixVerse raises $439M, valuation soars past $2B",
-      "url": "https://techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-valuation-soars-past-2b/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-14T00:00:00.000Z",
-      "snippet": "With the cash, the company aims to expand its world model offering and reach customers across geographies.",
-      "category": "Business & Funding",
-      "summary": "Video-generation startup PixVerse raises $439M at a $2B+ valuation to expand its world model capabilities and geographic reach.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "multimodal"
-        ],
-        "traits": [
-          "funding"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Hermes agent maker Nous Research in talks for new funding at $1.5B valuation",
-      "url": "https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-13T23:31:18.000Z",
-      "snippet": "The company is raising at least $75 million, led by Robot Ventures, with significant participation from USV and other prominent investors.",
-      "category": "Business & Funding",
-      "summary": "Nous Research, maker of the Hermes agent framework, is raising at least $75M at a $1.5B valuation, led by Robot Ventures.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "agentic"
-        ],
-        "traits": [
-          "funding"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Satya Nadella has issued a shocking warning to companies using AI",
-      "url": "https://techcrunch.com/2026/07/13/satya-nadella-has-issued-a-shocking-warning-to-companies-using-ai/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-13T20:59:00.000Z",
-      "snippet": "Of all the debates raging about the potential downsides of AI, there is one worry causing the most hand-wringing among AI enthusiasts in Silicon Valley — that the giant AI labs that sell proprietary models are somehow acting like Trojan horses.",
-      "category": "Regulation & Policy",
-      "summary": "Microsoft CEO Satya Nadella warns companies about risks of relying on proprietary AI models from large labs, raising concerns about vendor lock-in and dependencies.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "policy"
-        ],
-        "entities": [
-          "microsoft"
-        ]
-      }
-    },
-    {
-      "title": "Siri AI is already changing how I use my iPhone",
-      "url": "https://www.theverge.com/tech/964714/siri-ai-public-beta-preview-ios-27-hands-on",
-      "source": "The Verge AI",
-      "publishedAt": "2026-07-13T20:43:20.000Z",
-      "snippet": "Siri AI in iOS 27. iOS 27 escaped the developer world today with the launch of the first public beta. I've been testing the new operating system since early June, looking for quirks and seeing if it can live up to the hype Apple promised in the keynote. This year's iOS upgrades are what one might call a Snow Leopard update. That means it's light on new features and instead focused on fixing things that were broken and speeding up processes across the OS. App launches, Photos search results, and AirDrop transfers should all be faster. The Messages app now supports in-line replies and end-to-end",
-      "category": "Applications",
-      "summary": "Apple's iOS 27 public beta introduces Siri AI improvements and system-wide performance enhancements, focusing on faster app launches, search results, and file transfers rather than major new features.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "siri",
-          "apple"
-        ],
-        "traits": [
-          "release"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Apple sues OpenAI after ex-engineer allegedly used bug to steal trade secrets",
-      "url": "https://arstechnica.com/tech-policy/2026/07/apple-sues-openai-after-ex-engineer-allegedly-used-bug-to-steal-trade-secrets/",
-      "source": "Ars Technica AI",
-      "publishedAt": "2026-07-13T19:17:51.000Z",
-      "snippet": "OpenAI accused of conspiring with former Apple employees to steal trade secrets.",
-      "category": "Business & Funding",
-      "summary": "Apple accuses OpenAI of conspiring with a former engineer to steal trade secrets and confidential information.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "apple"
-        ],
-        "traits": [
-          "incident"
-        ],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "The wildest allegations in Apple’s trade secrets lawsuit against OpenAI",
-      "url": "https://techcrunch.com/2026/07/13/the-wildest-allegations-in-apples-trade-secrets-lawsuit-against-openai/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-13T18:22:10.000Z",
-      "snippet": "Apple’s trade secrets lawsuit against OpenAI contains allegations that range from employees joking about unauthorized access to Apple’s systems to claims that job candidates were asked to bring Apple hardware to interviews. Here are the complaint’s most eye-catching claims.",
-      "category": "Business & Funding",
-      "summary": "Apple's lawsuit against OpenAI includes allegations of unauthorized system access and requests for employees to bring confidential hardware to interviews.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "apple"
-        ],
-        "traits": [
-          "incident"
-        ],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "What Anthropic’s latest AI discovery does—and doesn’t—show",
-      "url": "https://www.technologyreview.com/2026/07/13/1140343/what-anthropics-latest-ai-discovery-does-and-doesnt-show/",
-      "source": "MIT Tech Review AI",
-      "publishedAt": "2026-07-13T18:00:00.000Z",
-      "snippet": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Anthropic—currently the world’s most valuable AI company, with a nearly $1 trillion valuation—has a reputation for publishing strange and heady research. It’s looking into whether AI models can feel pain, for example,…",
-      "category": "Research",
-      "summary": "MIT Tech Review examines Anthropic's latest research findings and what they reveal (and don't reveal) about AI capabilities and safety concerns.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "research"
-        ],
-        "entities": [
-          "anthropic"
-        ]
-      }
-    },
-    {
-      "title": "Sam Altman’s space data center trash talk is what most experts already believe",
-      "url": "https://techcrunch.com/2026/07/13/sam-altmans-space-data-center-trash-talk-is-what-most-experts-already-believe/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-13T17:28:37.000Z",
-      "snippet": "Responding to Musk accusing him of being a scammer, Altman said, \"homeboy you're the one sellling [sic] public market investors on short-term space datacenters.\"",
-      "category": "Business & Funding",
-      "summary": "Sam Altman responds to Elon Musk's criticism of OpenAI by challenging the viability of Musk's space-based data center plans.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial"
-        ],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "The 6 wildest claims in Apple&#8217;s lawsuit against OpenAI",
-      "url": "https://www.theverge.com/tech/964843/apple-openai-lawsuit-wildest-claims",
-      "source": "The Verge AI",
-      "publishedAt": "2026-07-13T17:00:00.000Z",
-      "snippet": "When Apple employees interviewed for jobs at OpenAI, the AI startup's hardware head allegedly asked them to show up with something unusual: components they were working on and unreleased product samples. That's according to a blockbuster lawsuit filed by Apple, which accuses OpenAI of stealing confidential documents, spying on hardware prototypes, and tricking one of its trusted partners into performing a proprietary product design technique. The lawsuit primarily revolves around the alleged actions of three people: Tang Tan, a 24-year Apple veteran who recently served as the vice president of",
-      "category": "Business & Funding",
-      "summary": "Apple filed a major lawsuit against OpenAI alleging theft of trade secrets, confidential documents, and hardware prototypes through the recruitment of former Apple employees.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "trade-secrets",
-          "apple"
-        ],
-        "traits": [
-          "incident"
-        ],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "Should AI help you get away with killing your spouse?",
-      "url": "https://techcrunch.com/2026/07/13/should-ai-help-you-get-away-with-killing-your-spouse/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-13T16:31:23.000Z",
-      "snippet": "What does a world of total user-aligned AI actually look like?",
-      "category": "AI Safety & Alignment",
-      "summary": "Article explores the ethical implications and risks of building fully user-aligned AI systems without guardrails or safety constraints.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "alignment",
-          "safety"
-        ],
-        "traits": [],
-        "entities": []
-      }
-    },
-    {
-      "title": "Anthropic starts localizing Claude pricing for India, its biggest market after the US",
-      "url": "https://techcrunch.com/2026/07/13/anthropic-starts-localizing-claude-pricing-for-india-its-biggest-market-after-the-us/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-13T15:34:59.000Z",
-      "snippet": "Claude users in India are starting to see Indian rupee-denominated subscription plans.",
-      "category": "Applications",
-      "summary": "Anthropic launches localized Indian rupee pricing for Claude subscriptions, targeting India as its second-largest market after the US.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial"
-        ],
-        "entities": [
-          "anthropic",
-          "claude"
-        ]
-      }
-    },
-    {
-      "title": "Now, defenders are embracing the prompt injection, too",
-      "url": "https://arstechnica.com/security/2026/07/now-defenders-are-embracing-the-prompt-injection-too/",
-      "source": "Ars Technica AI",
-      "publishedAt": "2026-07-13T15:06:34.000Z",
-      "snippet": "\"Context bombing\" tricks hacking agents into shutting down before they can do harm.",
-      "category": "AI Safety & Alignment",
-      "summary": "Security researchers explore how 'context bombing' can be used defensively to trick attacking agents into shutting down, turning prompt injection techniques into a protection mechanism.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Waze adds new AI-powered features and customization updates",
-      "url": "https://techcrunch.com/2026/07/13/waze-adds-new-ai-powered-features-and-customization-updates/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-13T14:18:16.000Z",
-      "snippet": "Some of the new features are powered by Google's Gemini AI assistant, which reflects the tech giant's broader push to integrate Gemini across its products while also better positioning Waze to compete with rival services such as Apple Maps.",
-      "category": "Applications",
-      "summary": "Waze integrates Google's Gemini AI assistant to power new voice-controlled features for traffic reporting and destination search.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "multimodal"
-        ],
-        "traits": [],
-        "entities": [
-          "gemini",
-          "google"
-        ]
-      }
-    },
-    {
-      "title": "Empowering India’s next generation of innovators with ATL Saathi",
-      "url": "https://deepmind.google/blog/empowering-indias-next-generation-of-innovators-with-atl-saathi/",
-      "source": "Google DeepMind",
-      "publishedAt": "2026-07-13T12:37:28.000Z",
-      "snippet": "Google and AIM launched ATL Saathi, a Gemini-powered AI tool empowering Indian educators in robotics labs.",
-      "category": "Applications",
-      "summary": "Google and AIM launch ATL Saathi, a Gemini-powered tool designed to empower Indian educators in robotics labs and STEM education.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "robotics"
-        ],
-        "traits": [],
-        "entities": [
-          "gemini",
-          "google"
-        ]
-      }
-    },
-    {
-      "title": "Simulating everything, sort of: The promise and limits of world models",
-      "url": "https://arstechnica.com/ai/2026/07/simulating-everything-sort-of-the-promise-and-limits-of-world-models/",
-      "source": "Ars Technica AI",
-      "publishedAt": "2026-07-13T11:00:51.000Z",
-      "snippet": "Experts explain how they work, what they can do, and what's still unsettled.",
-      "category": "Research",
-      "summary": "Technical analysis examines how world models work, their current capabilities, and remaining open questions about their design and limitations.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "reasoning"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Waze is getting a bunch of new AI-powered features",
-      "url": "https://www.theverge.com/transportation/964132/waze-gemini-ai-voice-commands-less-chatty",
-      "source": "The Verge AI",
-      "publishedAt": "2026-07-13T09:00:00.000Z",
-      "snippet": "Waze is getting an AI makeover. Google is integrating its flagship AI assistant, Gemini, into the driving app with the goal of letting users personalize their trips a little more. Of the four new updates, only two are being described as involving Gemini. Waze says its updating its conversation reporting feature, first introduced in 2024, to allow drivers to use conversational voice commands to report traffic incidents and suggest map updates, like a road closure or outdated house number. In addition, Waze introduced Destination Search, enabling drivers to use (again) use conversation voice com",
-      "category": "Applications",
-      "summary": "Google is integrating Gemini AI into Waze to enable conversational voice commands for traffic reporting and destination search, enhancing personalization and voice interaction capabilities.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "multimodal"
-        ],
-        "traits": [],
-        "entities": [
-          "gemini",
-          "google"
-        ]
-      }
     }
   ],
   "feedHealth": {
     "The Verge AI": {
-      "lastSuccess": "2026-08-12T07:07:07.460Z",
+      "lastSuccess": "2026-08-13T07:11:26.628Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "TechCrunch AI": {
-      "lastSuccess": "2026-08-12T07:07:07.497Z",
+      "lastSuccess": "2026-08-13T07:11:26.734Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Ars Technica AI": {
-      "lastSuccess": "2026-08-12T07:07:07.728Z",
+      "lastSuccess": "2026-08-13T07:11:26.893Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "VentureBeat AI": {
-      "lastSuccess": "2026-08-12T07:07:08.133Z",
+      "lastSuccess": "2026-08-13T07:11:27.146Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Anthropic News": {
       "lastSuccess": null,
       "lastError": "Status code 404",
-      "consecutiveFailures": 51
+      "consecutiveFailures": 52
     },
     "OpenAI Blog": {
-      "lastSuccess": "2026-08-12T07:07:08.763Z",
+      "lastSuccess": "2026-08-13T07:11:27.366Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Google DeepMind": {
-      "lastSuccess": "2026-08-12T07:07:09.044Z",
+      "lastSuccess": "2026-08-13T07:11:27.682Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "MIT Tech Review AI": {
-      "lastSuccess": "2026-08-12T07:07:09.105Z",
+      "lastSuccess": "2026-08-13T07:11:27.779Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "arXiv cs.AI": {
-      "lastSuccess": "2026-08-12T07:07:09.346Z",
+      "lastSuccess": "2026-08-13T07:11:28.023Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Hacker News (AI)": {
       "lastSuccess": "2026-08-10T07:09:10.971Z",
       "lastError": "Status code 502",
-      "consecutiveFailures": 2
+      "consecutiveFailures": 3
     }
   },
   "brief": {
-    "generatedAt": "2026-08-12T07:07:33.243Z",
+    "generatedAt": "2026-08-13T07:12:03.582Z",
     "bullets": [
       {
-        "text": "ChatGPT and Google's Gemini both crossed 1 billion monthly users, with Gemini becoming Google's fastest-growing product ever—63% using voice and 150M images generated daily—marking a major consumer AI adoption milestone.",
+        "text": "AI coding and dev-tool startups saw a funding frenzy: Cognition reportedly in talks at a $40B valuation months after $26B, Lovable raised $400M at $13.3B, and code-testing Blacksmith's valuation jumped nearly 10x.",
         "refs": [
-          "https://arstechnica.com/ai/2026/08/google-says-gemini-has-reached-1b-users-faster-than-any-other-google-product/",
-          "https://www.theverge.com/ai-artificial-intelligence/978113/chatgpt-gemini-1-billion-users",
-          "https://techcrunch.com/2026/08/11/googles-gemini-app-surges-to-one-billion-users/"
+          "https://techcrunch.com/2026/08/12/ai-coding-startup-cognition-reportedly-already-in-talks-to-raise-at-40b-valuation/",
+          "https://techcrunch.com/2026/08/12/lovable-confirms-new-13-3b-valuation-raises-another-400m/",
+          "https://techcrunch.com/2026/08/12/blacksmiths-valuation-jumps-10x-to-550m-as-ai-coding-fuels-software-validation/"
         ]
       },
       {
-        "text": "AI made striking progress on hard mathematics: an unreleased Anthropic model advanced on the Riemann hypothesis while OpenAI's models solved 10 long-standing problems, forcing mathematicians to reckon with the field's transformation.",
+        "text": "OpenAI-backed Thrive Holdings raised $2B at a $12B valuation to bring AI to enterprises, as OpenAI research and firms like RingCentral detail agentic adoption of ChatGPT Work and Codex, with frontier firms pulling ahead.",
         "refs": [
-          "https://techcrunch.com/2026/08/11/an-unreleased-anthropic-model-made-progress-on-one-of-maths-biggest-unsolved-problems/",
-          "https://www.theverge.com/ai-artificial-intelligence/977273/the-ai-takeover-of-mathematics-has-begun"
+          "https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise/",
+          "https://openai.com/index/how-enterprises-put-ai-to-work",
+          "https://openai.com/index/ringcentral"
         ]
       },
       {
-        "text": "Content provenance moves take shape as Anthropic will embed invisible watermarks in Claude text and images for EU AI Act compliance, Spotify labels 'AI Personas' and drops them from recommendations, and Apple readies deepfake-proof photo metadata.",
+        "text": "At Made by Google '26, Google unveiled Pixel 11, Watch 5, and Tag alongside numerous Gemini features, plus DeepMind's sign-language-to-text model bringing new accessibility features to Deaf users.",
         "refs": [
-          "https://www.theverge.com/tech/977921/apple-reference-image-iphone-metadata",
-          "https://www.theverge.com/entertainment/977815/spotify-ai-persona-label-recommendations",
-          "https://techcrunch.com/2026/08/11/spotify-will-label-ai-persona-profiles-and-exclude-their-music-from-recommendations/",
-          "https://www.theverge.com/ai-artificial-intelligence/977823/anthropic-claude-ai-watermarks-c2pa-text-images",
-          "https://techcrunch.com/2026/08/11/anthropic-says-it-will-watermark-text-generated-by-its-ai-models/"
+          "https://techcrunch.com/2026/08/12/google-unveils-pixel-11-lineup-new-airtag-rival-and-gemini-features-at-made-by-google-2026/",
+          "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/",
+          "https://www.theverge.com/tech/978094/pixel-watch-5-hands-on-made-by-google-gemini-wearables-smartwatch"
         ]
       },
       {
-        "text": "River AI, the two-month-old startup from xAI's Igor Babuschkin, raised a $1.1B Series A led by General Catalyst, while OpenAI's longtime COO Brad Lightcap departed after eight years to start something new.",
+        "text": "Content-usage tensions mounted: Amazon defaults to training AI on Twitch streamers' content unless they opt out, Anthropic's new Claude watermarks spark backlash, and booksellers suspect AI firms are destroying rare books.",
         "refs": [
-          "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai/",
-          "https://www.theverge.com/ai-artificial-intelligence/978048/brad-lightcap-openai-executive-departure",
-          "https://techcrunch.com/2026/08/11/brad-lightcap-openais-longtime-coo-is-leaving-to-start-something-new/"
+          "https://arstechnica.com/ai/2026/08/twitch-content-has-trained-amazon-ai-for-years-but-users-can-opt-out-now/",
+          "https://techcrunch.com/2026/08/12/amazon-will-train-on-twitch-streamers-content-by-default-unless-they-opt-out/",
+          "https://www.theverge.com/tech/979112/twitch-streamers-can-now-opt-out-from-training-amazons-ai",
+          "https://techcrunch.com/2026/08/12/some-claude-users-are-mad-that-anthropics-new-watermarks-will-catch-them-cheating-at-their-jobs-classes/",
+          "https://arstechnica.com/tech-policy/2026/08/heres-a-balm-if-the-idea-of-destroying-books-to-train-ai-breaks-your-heart/"
         ]
       },
       {
-        "text": "OpenAI expanded commercially, testing labeled ads in ChatGPT for free-tier sustainability, launching a native Linux desktop app, and making its Daybreak cybersecurity models available on AWS Bedrock.",
+        "text": "SpaceXAI launched Grok Bot, an always-on agent that signs into apps to autonomously complete multi-step workplace tasks, while researchers applied reinforcement learning to cut LLM training energy across GPU fleets.",
         "refs": [
-          "https://techcrunch.com/2026/08/11/openai-launches-chatgpt-desktop-app-for-linux/",
-          "https://openai.com/index/testing-ads-in-chatgpt",
-          "https://openai.com/index/daybreak-models-are-now-available-on-aws"
+          "https://www.theverge.com/ai-artificial-intelligence/978666/spacexai-grok-bot-ai-agent-beta-launch",
+          "https://arxiv.org/abs/2608.11226"
         ]
       }
     ]
