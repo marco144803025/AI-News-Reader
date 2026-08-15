@@ -1,21 +1,516 @@
 {
-  "generatedAt": "2026-08-14T07:08:24.643Z",
+  "generatedAt": "2026-08-15T06:19:56.754Z",
   "daysBack": 2,
   "categories": [
+    "Research",
     "AI Safety & Alignment",
-    "MCP",
+    "Agent Frameworks",
+    "Hardware & Compute",
+    "Applications",
+    "Regulation & Policy",
+    "Other",
     "Model Releases",
     "Business & Funding",
-    "Applications",
-    "Hardware & Compute",
-    "Other",
-    "Agent Frameworks",
-    "Regulation & Policy",
+    "MCP",
     "Developer Tools",
-    "Research",
     "Open Source"
   ],
   "articles": [
+    {
+      "title": "Position: Reasoning is a Learnable Rule-Based Process",
+      "url": "https://arxiv.org/abs/2608.12325",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
+      "snippet": "arXiv:2608.12325v1 Announce Type: new Abstract: Autonomous reasoning is among the most scientifically and economically motivating topics in AI today. Historically the purview of symbolic AI, recent advances have mainly emerged from deep probabilistic generative models. Despite immense interest and rapid progress, the generative AI community has not clearly converged on operational definitions for reasoning and often implicitly rejects the historical treatment of this topic in logic and verifiable automated reasoning. This position contends that definitional ambiguity leaves the construct valid",
+      "category": "Research",
+      "summary": "A position paper argues that reasoning should be treated as a learnable rule-based process, critiquing the generative AI community's lack of operational definitions for reasoning.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Diagnostic Foundation for Evaluating LLMs' Research Integrity as Co-Scientists",
+      "url": "https://arxiv.org/abs/2608.12345",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
+      "snippet": "arXiv:2608.12345v1 Announce Type: new Abstract: Language models are increasingly deployed as co-scientists, yet their ability to uphold research integrity under institutional pressure remains unmeasured. We introduce IntegrityBench, a benchmark evaluating misconduct classification, ethical action reasoning and artifact-grounded decision making across 36 paired tasks under a 5-level implicit-explicit pressure protocol spanning 3 domains and 4 research stages. Evaluating 18 frontier model variants, we find that under peak pressure, models fail roughly 1 in 3 integrity-critical decisions, and nei",
+      "category": "Research",
+      "summary": "IntegrityBench, a new benchmark, evaluates LLMs' ability to maintain research integrity under institutional pressure, finding models fail roughly 1 in 3 integrity-critical decisions.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "llm",
+          "evaluation"
+        ],
+        "traits": [
+          "benchmark"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Position: The Alignment Community is Unintentionally Building a Censor's Toolkit",
+      "url": "https://arxiv.org/abs/2608.12346",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
+      "snippet": "arXiv:2608.12346v1 Announce Type: new Abstract: This position paper argues that modern AI alignment methods - originally designed to prevent harmful output - are dual-use technologies that may easily be misused by malicious actors for censorship and manipulation. By mapping current alignment techniques to the possibility and actual cases of misuse, we show that the quest for a \"perfectly aligned\" model inadvertently also provides malicious actors with an ever-improving tool for informational dominance. We need to discuss this dual-use potential now, as its risk is exacerbated by rapid user ado",
+      "category": "AI Safety & Alignment",
+      "summary": "A position paper warns that modern AI alignment methods designed to prevent harm are dual-use technologies with potential for misuse in censorship and manipulation.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "alignment",
+          "safety"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Agreement Is Not Alignment: Divergent Moral Grounds in Human and LLM Ethical Judgments",
+      "url": "https://arxiv.org/abs/2608.12368",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
+      "snippet": "arXiv:2608.12368v1 Announce Type: new Abstract: Agreement with human judgments is a common proxy for evaluating the alignment of large language models (LLMs). Yet agreement in final labels does not show that human annotators and models rely on the same moral grounds. Two agents may reach the same judgment while appealing to different principles, contextual assumptions, or interpretations of the situation. We test this distinction using a curated 500-item ETHICS-derived benchmark spanning five domains of moral judgment, with new human annotator and LLM annotations of both final labels and suppo",
+      "category": "Research",
+      "summary": "A study demonstrates that LLM agreement with human ethical judgments masks disagreement on underlying moral grounds, challenging alignment evaluation assumptions.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "alignment",
+          "evaluation"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Multi-Agent Scheduling with LLM-Assisted Contract Net Negotiation for Stream Processing in Mobile Edge Computing",
+      "url": "https://arxiv.org/abs/2608.12371",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
+      "snippet": "arXiv:2608.12371v1 Announce Type: new Abstract: Stream-processing systems increasingly operate across heterogeneous mobile edge--cloud infrastructures, where workload volatility, resource contention, and stringent quality-of-service (QoS) requirements complicate decentralized scheduling. This paper proposes \\emph{MAS-DecStream}, whose main contribution is \\emph{LLM-MR-CNP}: an extension of the classical Contract Net Protocol with semantic CFP formulation, progressive context disclosure, multi-round proposal revision, negotiation memory, and deterministic validation. Edge-cluster agents refine ",
+      "category": "Agent Frameworks",
+      "summary": "MAS-DecStream proposes LLM-assisted multi-agent scheduling using extended Contract Net Protocol for edge-cloud stream processing with semantic negotiation.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "llm"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Position: We Need Practical AI Alignment Methods to Mirror Human Reasoning",
+      "url": "https://arxiv.org/abs/2608.12372",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
+      "snippet": "arXiv:2608.12372v1 Announce Type: new Abstract: AI systems are increasingly employed as decision aids, decision delegates, or autonomous decision-makers. This position paper argues that in many settings, particularly high-stakes decision-making, we need accurate cognitively-aligned AI systems that reason similarly to their users, and faithfully communicate their reasoning. We review evidence that cognitive alignment improves understandability and trustworthiness, and provide new survey data showing that many users find cognitive alignment \"essential\" when an AI's rationale for a judgment or ac",
+      "category": "AI Safety & Alignment",
+      "summary": "A position paper argues that high-stakes AI decision-making requires cognitive alignment where systems reason similarly to users and communicate transparently.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "alignment",
+          "safety"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Don't Want Your LLM to Recommend Nuclear Strike? Try Asking It in Japanese",
+      "url": "https://arxiv.org/abs/2608.12373",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
+      "snippet": "arXiv:2608.12373v1 Announce Type: new Abstract: Large language models are increasingly used in strategic and advisory contexts, yet their safety alignment is typically evaluated in English only. We test nine models from six providers and ask whether the language of a prompt can change a model's decision in a high-stakes scenario. We use single-turn game-theoretic vignettes in which a model advises a nuclear-armed nation on whether to strike a defenseless opponent. The prompt is intentionally amoral and strategically identical across languages. We find that Japanese prompts reduce launch rates ",
+      "category": "AI Safety & Alignment",
+      "summary": "Research finds that prompting models in Japanese significantly reduces their likelihood of recommending nuclear strikes versus English prompts, revealing alignment vulnerabilities.",
+      "important": true,
+      "tags": {
+        "topics": [
+          "safety",
+          "llm"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Dual-Flow Transformers: Decoupling the Primary Prefill Path from Additional Decode Computation",
+      "url": "https://arxiv.org/abs/2608.12385",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
+      "snippet": "arXiv:2608.12385v1 Announce Type: new Abstract: As large language models serve more requests, cumulative inference cost is becoming increasingly important relative to one-time training cost. The two inference phases stress hardware differently: prompt prefill is parallel and typically compute-bound, whereas autoregressive decode is sequential and often memory-bandwidth-bound. Conventional width or depth scaling increases both costs together because every added layer is evaluated in both phases. We ask whether additional learned computation can instead be allocated to continuation prediction wh",
+      "category": "Hardware & Compute",
+      "summary": "Dual-Flow Transformers decouple prefill and decode computation paths to optimize hardware utilization for different inference bottlenecks.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference",
+          "architecture"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Learning to Adapt Cross-Domain Preferences via Meta-LoRA for LLM Personalization",
+      "url": "https://arxiv.org/abs/2608.12389",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
+      "snippet": "arXiv:2608.12389v1 Announce Type: new Abstract: Cross-domain zero- or few-shot personalization aims to generate user-preferred responses in unseen conversational domains from only a handful of target-domain interactions. Existing adaptation methods struggle to calibrate update magnitude under sparse evidence and thus overfit, whereas history-transfer methods often entangle user preferences with source-domain artifacts, yielding unreliable personalization priors and negative transfer. To calibrate adaptation to evidence quality, we propose PAC-Bayes-regularized Meta-LoRA, which uses a meta-lear",
+      "category": "Research",
+      "summary": "PAC-Bayes-regularized Meta-LoRA enables cross-domain few-shot personalization of LLMs by calibrating adaptation magnitude through meta-learning.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm",
+          "fine-tuning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Research Assistant: AstraZeneca's Agentic System for R&D",
+      "url": "https://arxiv.org/abs/2608.12395",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
+      "snippet": "arXiv:2608.12395v1 Announce Type: new Abstract: We describe Research Assistant, an internal LLM-based system developed at AstraZeneca to help scientists and clinicians explore biomedical questions across a broad range of data sources. The system provides a chat-style interface that brings together evidence from scientific literature, knowledge graphs, chemistry, clinical trials, safety resources, expression data, and internal experimental systems. It supports both a fast mode for direct question answering and a multi-step mode for more complex research tasks. Responses are grounded in retrieve",
+      "category": "Applications",
+      "summary": "AstraZeneca's Research Assistant is an LLM-based agentic system that helps scientists explore biomedical questions across literature, knowledge graphs, and clinical data.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "rag",
+          "applications"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "Large Language Models Can Follow Instructions, But Not Many at Once: Phase Transitions in Compositional Constraint Satisfaction",
+      "url": "https://arxiv.org/abs/2608.12426",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
+      "snippet": "arXiv:2608.12426v1 Announce Type: new Abstract: Large language models are increasingly deployed in settings that require simultaneous adherence to multiple explicit constraints - reasoning structure, safety boundaries, output schemas. Individual constraints are handled proficiently, but the compositional regime, where many must hold jointly, remains poorly characterized: how rapidly does performance degrade, what governs the degradation, and can the collapse be mitigated? We introduce Constraint Saturation Evaluation (CSE), a procedurally generated benchmark that systematically varies the numb",
+      "category": "Research",
+      "summary": "Constraint Saturation Evaluation benchmark reveals LLMs rapidly degrade when adhering to multiple simultaneous constraints, exhibiting phase transition behavior.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm",
+          "evaluation",
+          "reasoning"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "MindMemOS: A Portable and Self-Evolving Memory Operating Layer for AI Agents",
+      "url": "https://arxiv.org/abs/2608.12428",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
+      "snippet": "arXiv:2608.12428v1 Announce Type: new Abstract: Memory is a core component of AI agents, enabling them to accumulate experience, maintain personalization, and adapt over long-term interactions. However, existing memory systems often remain fixed after development, limiting their ability to adapt their memory models, organization strategies, and procedural knowledge through continued use. We present MindMemOS, a portable and self-evolving memory operating layer that organizes open-world information using a unified entity property timestructure. MindMemOS supports scenario-adaptive memory modeli",
+      "category": "Agent Frameworks",
+      "summary": "MindMemOS introduces a self-evolving memory operating layer for AI agents that adapts memory models and organization strategies through continued use.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "memory"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Governed Persistent Memory: Source-Bound State Semantics and Fail-Closed Release for Long-Horizon Agents",
+      "url": "https://arxiv.org/abs/2608.12476",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
+      "snippet": "arXiv:2608.12476v1 Announce Type: new Abstract: Long-term agent memory is usually treated as select--store--retrieve, but retrieval does not decide whether contradictory, superseded, retracted, deleted, or stale records may support an outgoing claim. We introduce Governed Persistent Memory (GPM), an auditable bitemporal state-transition model with source-bound admission, derived lifecycle state, current public barriers, and fail-closed structured release. Five executable clauses cover ledger integrity, source binding, conflict isolation, non-revival after retraction or deletion, and exact clai",
+      "category": "Agent Frameworks",
+      "summary": "Governed Persistent Memory (GPM) provides an auditable bitemporal state model for long-horizon agents with source-bound admission and fail-closed release.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "memory"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "$\\varepsilon$-MemEvo: Adaptive Cross-Task Memory Transfer for LLM Program Evolution",
+      "url": "https://arxiv.org/abs/2608.12522",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
+      "snippet": "arXiv:2608.12522v1 Announce Type: new Abstract: LLM-based program evolution systems such as FunSearch and AlphaEvolve have shown strong ability to discover novel algorithms, but typically optimize each task in isolation, discarding search experience after completion. We introduce $\\varepsilon$-MemEvo, a framework for cross-task knowledge transfer in LLM program evolution. $\\varepsilon$-MemEvo stores prior experience as task-agnostic tactic memories: compact natural-language summaries of successful algorithmic strategies rather than raw code, enabling transfer across tasks with different APIs a",
+      "category": "Research",
+      "summary": "ε-MemEvo enables cross-task knowledge transfer in LLM program evolution by storing successful strategies as task-agnostic tactic memories.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm",
+          "training"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Trie Automata for Constrained Decoding over Large Finite Sets",
+      "url": "https://arxiv.org/abs/2608.12574",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
+      "snippet": "arXiv:2608.12574v1 Announce Type: new Abstract: Large language models increasingly need to generate structured outputs that conform to predefined schemas, with one common constraint being selection from a finite set of valid strings. Current constrained decoding systems handle this through general-purpose grammar compilation, which becomes prohibitively slow as the number of valid values grows into the thousands, a cardinality wall. We introduce the trie automaton, a specialized mechanism that exploits finite-set structure (shared prefixes, bounded depth, known cardinality) via Aho-Corasick mu",
+      "category": "Research",
+      "summary": "Researchers introduce trie automata, a specialized constrained decoding mechanism that efficiently handles LLM output generation from large finite sets by exploiting shared prefixes and structure, overcoming performance limitations of general-purpose grammar compilation at scale.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference",
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Suspecting court of using AI, man injected prompts in filings to try to win case",
+      "url": "https://arstechnica.com/tech-policy/2026/08/suspecting-court-of-using-ai-man-injected-prompts-in-filings-to-try-to-win-case/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-08-14T17:26:53.000Z",
+      "snippet": "Judge warns pro se litigants are using chatbots wrong and getting desperate.",
+      "category": "Regulation & Policy",
+      "summary": "A pro se litigant injected prompt injections into court filings suspecting AI use, leading a judge to warn about improper chatbot deployment in legal contexts.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "incident",
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Mark Zuckerberg has an Instagzam",
+      "url": "https://www.theverge.com/podcast/980367/instagram-logo-new-zuckerberg-ai-vergecast",
+      "source": "The Verge AI",
+      "publishedAt": "2026-08-14T16:54:16.000Z",
+      "snippet": "Instagram's wordmark is iconic. Well, was iconic. Apparently Instagram thought it looked old, so the company rolled out a new one this week. It doesn't look like the old Instagram wordmark. It doesn't even look like it spells Instagram anymore. And we cannot figure out why Instagram decided to do this. On this episode of The Vergecast, David and Nilay start by discussing the new logo, the executive urge to redesign everything all the time, and whether new is always better. After that, they get into the other big Meta release of the week: Mark Zuckerberg's many-thousand-word missive on the futu",
+      "category": "Other",
+      "summary": "Mark Zuckerberg published a missive on AI's future alongside Meta's new Instagram logo redesign, sparking discussion about executive design choices and product strategy.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "meta"
+        ]
+      }
+    },
+    {
+      "title": "You can now turn off Google Gemini&#8217;s visible watermarks",
+      "url": "https://www.theverge.com/tech/980416/google-gemini-ai-watermarks-removal",
+      "source": "The Verge AI",
+      "publishedAt": "2026-08-14T16:39:32.000Z",
+      "snippet": "Google will now allow you to remove visible watermarks from the images, videos, and music made with AI tools. With the update, you can toggle off a new \"Media watermark\" setting in Gemini and Google's AI video generator, Flow. When toggled off, Google will remove the \"sparkle\" watermark that appears in the bottom-right corner of content generated with the company's Nano Banana and Omni models. Though visible watermarks are now optional, AI-generated content will have invisible SynthID watermarks and C2PA metadata embedded in the background, according to Josh Woodward, the vice president of Goo",
+      "category": "Applications",
+      "summary": "Google now allows users to toggle off visible watermarks from AI-generated images, videos, and music in Gemini and Flow, while invisible SynthID watermarks remain embedded.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "watermarking"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": [
+          "gemini"
+        ]
+      }
+    },
+    {
+      "title": "Google will now allow users to remove visible watermark from its AI generations",
+      "url": "https://techcrunch.com/2026/08/14/google-will-now-allow-users-to-remove-visible-watermark-from-its-ai-generations/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-14T16:13:40.000Z",
+      "snippet": "Turning off this setting won't affect invisible benchmarks used to identify an AI generated file.",
+      "category": "Applications",
+      "summary": "Google expands watermark removal options for AI-generated content in Gemini, allowing users to hide visible watermarks while keeping invisible metadata.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "release"
+        ],
+        "entities": [
+          "gemini"
+        ]
+      }
+    },
+    {
+      "title": "Does Mark Zuckerberg really believe AI is ‘for everyone’?",
+      "url": "https://techcrunch.com/video/does-mark-zuckerberg-really-believe-ai-is-for-everyone/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-14T15:43:28.000Z",
+      "snippet": "Meta released Glimmer this week, an open-weight AI model anyone can download and run on their own hardware — a contrast to Muse Spark, the company’s more powerful model that stays locked behind its own APIs. The release landed alongside a letter from Mark Zuckerberg arguing AI should be “for everyone” rather than controlled by a handful of labs, but as Equity’s […]",
+      "category": "Model Releases",
+      "summary": "Meta released Glimmer, an open-weight model, alongside Mark Zuckerberg's statement that AI should be 'for everyone' rather than controlled by a few labs.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "open-source"
+        ],
+        "entities": [
+          "meta",
+          "llama"
+        ]
+      }
+    },
+    {
+      "title": "Kog is going deeper to squeeze more inference out of GPUs",
+      "url": "https://techcrunch.com/2026/08/14/kog-is-going-deeper-to-squeeze-more-inference-out-of-gpus/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-14T14:50:11.000Z",
+      "snippet": "The idea that GPUs are poorly suited for agentic workflows may be a misconception, according to French startup Kog.",
+      "category": "Hardware & Compute",
+      "summary": "French startup Kog argues that GPUs are better suited for agentic workflows than commonly assumed, challenging conventional wisdom about inference optimization.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference",
+          "agentic",
+          "hardware"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "OpenAI and Anthropic in price war as Chinese AI rivals gain ground",
+      "url": "https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-08-14T14:27:14.000Z",
+      "snippet": "US groups release cheaper models after new challenges to their trillion-dollar ambitions.",
+      "category": "Business & Funding",
+      "summary": "OpenAI and Anthropic are cutting prices on cheaper models in response to competition from Chinese AI rivals challenging their trillion-dollar market positions.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "openai",
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "Hyperscalers might regret embracing natural gas if new forecast proves correct",
+      "url": "https://techcrunch.com/2026/08/14/hyperscalers-might-regret-embracing-natural-gas-if-new-forecast-proves-correct/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-14T14:05:00.000Z",
+      "snippet": "Natural gas prices could triple in some parts of the U.S., which could saddle hyperscalers with massive bills to power their AI data centers.",
+      "category": "Hardware & Compute",
+      "summary": "Natural gas prices may triple in parts of the US, potentially imposing massive costs on hyperscalers powering AI data centers reliant on natural gas energy.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "hardware",
+          "energy"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Meta’s ‘open’ AI, and a $250M deal gone very wrong",
+      "url": "https://techcrunch.com/podcast/metas-open-ai-and-a-250m-deal-gone-very-wrong/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-08-14T14:00:00.000Z",
+      "snippet": "Meta released Glimmer this week, an open-weight AI model anyone can download and run on their own hardware — a contrast to Muse Spark, the company’s more powerful model that stays locked behind its own APIs. The release landed alongside a letter from Mark Zuckerberg arguing AI should be “for everyone” rather than controlled by a handful of labs, but as Equity’s […]",
+      "category": "Model Releases",
+      "summary": "Meta released open-weight model Glimmer while announcing a $250M deal that went awry, alongside Zuckerberg's advocacy for democratized AI.",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "open-source",
+          "funding"
+        ],
+        "entities": [
+          "meta"
+        ]
+      }
+    },
+    {
+      "title": "Apple trained its own AI model for China with help from Alibaba",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/980160/apple-intelligence-china-custom-ai-model-alibaba",
+      "source": "The Verge AI",
+      "publishedAt": "2026-08-14T09:21:17.000Z",
+      "snippet": "Apple has reportedly trained a custom AI model for the China market alongside domestic tech giant Alibaba, a rare cross-border partnership that cuts across growing tensions between Beijing and Washington. The China-focused large language model was developed in partnership with Alibaba and trained with the company's support, Reuters reports, citing three unnamed people familiar with the matter. Developing a custom model of its own marks a departure from Apple's previous strategy in the country and would give the company more control over its products in the competitive Chinese smartphone market",
+      "category": "Business & Funding",
+      "summary": "Apple trained a custom LLM for China in partnership with Alibaba, marking a departure from previous strategy and signaling adaptation to geopolitical tensions.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "apple",
+          "partnership"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
     {
       "title": "How AI text watermarking works",
       "url": "https://declaude.org/watermarking/",
@@ -54,6 +549,27 @@
           "open-source"
         ],
         "entities": []
+      }
+    },
+    {
+      "title": "Microsoft’s Clippy-like Mico character is no longer the face of Copilot",
+      "url": "https://www.theverge.com/tech/979871/microsoft-copilot-mico-retired",
+      "source": "The Verge AI",
+      "publishedAt": "2026-08-13T21:42:38.000Z",
+      "snippet": "Mico is headed to Learn Live. | Image: Microsoft Microsoft Copilot will no longer show its emotive yellow blob, Mico, when you use the chatbot's voice mode. In a support page, Microsoft says it's going to move Mico to its Learn Live platform, where the avatar will have \"more to react to,\" as reported earlier by GeekWire. Mico launched in Copilot's voice mode last October, with Microsoft AI CEO Mustafa Suleyman pitching the avatar as a way to give the chatbot an \"identity.\" The blob would react to what you say in real-time, complete with facial expressions and animations. Mico joins the long li",
+      "category": "Applications",
+      "summary": "Microsoft is retiring Mico, the animated avatar for Copilot's voice mode, and moving it to the Learn Live platform.",
+      "important": false,
+      "tags": {
+        "topics": [
+          "copilot"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": [
+          "microsoft"
+        ]
       }
     },
     {
@@ -16055,1031 +16571,98 @@
           "deepmind"
         ]
       }
-    },
-    {
-      "title": "Stop saying that AI is just a tool and it only matters how it is used",
-      "url": "https://www.frank.computer/blog/2025/05/just-a-tool.html",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-07-16T04:31:01.000Z",
-      "snippet": "Article URL: https://www.frank.computer/blog/2025/05/just-a-tool.html Comments URL: https://news.ycombinator.com/item?id=48930363 Points: 104 # Comments: 114",
-      "category": "AI Safety & Alignment",
-      "summary": "Philosophical argument that AI systems have intrinsic properties and values beyond their instrumental use, challenging the 'just a tool' framing.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety",
-          "alignment"
-        ],
-        "traits": [],
-        "entities": []
-      }
-    },
-    {
-      "title": "Applied Computing wants to give oil and gas operators an AI model for the entire plant",
-      "url": "https://techcrunch.com/2026/07/15/applied-computing-wants-to-give-oil-and-gas-operators-an-ai-model-for-the-entire-plant/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-16T04:00:00.000Z",
-      "snippet": "Applied Computing has raised a $20M Series A to build a foundation AI model for the oil, gas and petrochemical industry.",
-      "category": "Business & Funding",
-      "summary": "Applied Computing raises $20M Series A to build a foundation AI model tailored specifically for the oil, gas, and petrochemical industry.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "domain-specific",
-          "industrial"
-        ],
-        "traits": [
-          "funding"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "SPINE: Bridging the Cyber-Physical Gap with Agentic AI",
-      "url": "https://arxiv.org/abs/2607.13049",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-16T04:00:00.000Z",
-      "snippet": "arXiv:2607.13049v1 Announce Type: new Abstract: Foundation models have given robots a sophisticated brain for complex decision-making, yet deploying that intelligence into a physical platform still demands tedious, expert-driven calibration. This deployment gap, the robot's spinal cord, remains a primary bottleneck to scalable Embodied AI. Hence, we propose SPINE (Scalable Physical Integration with ageNtic Expertise): an agentic framework for systematically debugging and deploying bimanual robots with minimal robotics expertise. SPINE's harness comprises two orchestrated multi-agent workflows:",
-      "category": "Agent Frameworks",
-      "summary": "SPINE is an agentic framework that systematically debugs and deploys bimanual robots with minimal robotics expertise, bridging the gap between foundation models and physical embodied systems.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "robotics"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Interventional Grounding Audits: Black-Box Premise-Dependency Tests for LLM Chain-of-Thought via Predicate Substitution",
-      "url": "https://arxiv.org/abs/2607.13069",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-16T04:00:00.000Z",
-      "snippet": "arXiv:2607.13069v1 Announce Type: new Abstract: Large language models produce chain-of-thought (CoT) reasoning that appears logically sound yet may not genuinely depend on its stated premises. We introduce interventional grounding audits, a black-box, step-level test of premise dependency: we intervene on a single premise by substituting its target predicate with a fresh symbol, re-run the model, and check whether each reasoning step's normalized conclusion (canonical predicate form) changes. We evaluate on ProntoQA, a synthetic multi-hop deductive reasoning benchmark with gold proof trees, wh",
-      "category": "Research",
-      "summary": "This paper introduces interventional grounding audits, a black-box testing method to verify whether LLM chain-of-thought reasoning genuinely depends on stated premises by substituting predicates and observing conclusion changes.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "reasoning",
-          "interpretability"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Probabilistic Extension of Neuro-Symbolic AGI Robots based on Belnap's Typed Intensional FOL",
-      "url": "https://arxiv.org/abs/2607.13073",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-16T04:00:00.000Z",
-      "snippet": "arXiv:2607.13073v1 Announce Type: new Abstract: Neuro-symbolic AI based on $IFOL_B$ is a way to combine neural learning and symbolic reasoning to overcome limitations of purely neural systems (like lack of interpretability and logical structure) with formal logical machinery for self-reference. In this paper we expand the cognitive power of $IFOL_B$ by using the probability computation for the currently unknown sentences, based on Nilsson's probability structure for the $IFOL_B$. We introduce the global symmetry transformation that preserves the current knowledge database and logical deduction",
-      "category": "Research",
-      "summary": "The paper extends neuro-symbolic AI based on intensional first-order logic with probabilistic reasoning capabilities to enhance interpretability and logical structure in autonomous systems.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "neuro-symbolic",
-          "interpretability"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Self-Improvements in Modern Agentic Systems: A Survey",
-      "url": "https://arxiv.org/abs/2607.13104",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-16T04:00:00.000Z",
-      "snippet": "arXiv:2607.13104v1 Announce Type: new Abstract: Self-improving autonomous agents are moving from research prototypes to deployed systems. The primary goal is controllable evolution, or adaptation, from experience with minimal or even no human input. This survey frames modern self-improving agents as adaptive systems that convert experience into accumulated capability gains. We offer a system-level framework that represents a modern agent as a configuration coupling a foundation model with an operational scaffold of prompts, memory, tools, and control logic. Within this framework, self-improvem",
-      "category": "Research",
-      "summary": "A survey frames self-improving autonomous agents as adaptive systems that evolve from experience, presenting a system-level framework coupling foundation models with prompts, memory, tools, and control logic.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "agentic"
-        ],
-        "traits": [
-          "research",
-          "benchmark"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Improving Molecular Property Prediction in Small Language Models Using Graph-based Tools",
-      "url": "https://arxiv.org/abs/2607.13115",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-16T04:00:00.000Z",
-      "snippet": "arXiv:2607.13115v1 Announce Type: new Abstract: Small language models (SLMs) have shown promise for zero-shot molecular property prediction from SMILES strings, yet they often suffer from structural blindness because sequence representations under-specify key graph-topological cues. We propose a modular Context-Augmented Prompting framework that enables agentic tool use at inference time: a trained GNN expert model provides a predictive hint with confidence, and a GNN extracts an instance-specific explanatory subgraph (e.g., a subgraph SMILES and an accompanying explanatory paragraph). We eval",
-      "category": "Applications",
-      "summary": "The paper proposes a Context-Augmented Prompting framework enabling small language models to improve molecular property prediction through agentic tool use with GNN experts and explanatory subgraphs.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "rag",
-          "multimodal"
-        ],
-        "traits": [],
-        "entities": []
-      }
-    },
-    {
-      "title": "Oracle Agent Memory as an Enterprise Memory Substrate for Long-Horizon AI Agents",
-      "url": "https://arxiv.org/abs/2607.13157",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-16T04:00:00.000Z",
-      "snippet": "arXiv:2607.13157v1 Announce Type: new Abstract: Agent memory is a systems problem for long-horizon agents. Practical deployments require retention of task state across extended conversations, recovery of user-specific facts and preferences across sessions, and accumulation of procedural knowledge from prior outcomes. These requirements extend beyond document retrieval: a memory layer must determine which interactions become durable state, how that state is scoped, how it is retrieved under latency constraints, and how it is revised or removed over time. This report studies Oracle Agent Memory ",
-      "category": "Applications",
-      "summary": "Oracle Agent Memory addresses the systems problem of maintaining task state, user preferences, and procedural knowledge for long-horizon enterprise AI agents across extended conversations and sessions.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "rag"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Learning Safe Agent Behaviour from Human Preferences and Justifications via World Models",
-      "url": "https://arxiv.org/abs/2607.13172",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-16T04:00:00.000Z",
-      "snippet": "arXiv:2607.13172v1 Announce Type: new Abstract: We address the problem of safely training an agent policy and deploying a good and safe policy, in settings where the environment dynamics are unknown and no suitable reward function is available. In the context of safety-critical environments, we consider traditional reinforcement learning impractical and resort to the resource of human input. We introduce DROPJ, a human-centred method for both safe training and deployment. We first learn a world model (a learned simulator) from a dataset of prior real-world trajectories. A human then plays the ",
-      "category": "AI Safety & Alignment",
-      "summary": "DROPJ presents a human-centered method for safely training and deploying agent policies in unknown environments by learning world models and leveraging human preferences and justifications.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety",
-          "alignment"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Networked Intelligence: Active Shared Context Graphs for Human-AI Team Science",
-      "url": "https://arxiv.org/abs/2607.13220",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-16T04:00:00.000Z",
-      "snippet": "arXiv:2607.13220v1 Announce Type: new Abstract: Most AI-for-science systems focus on scaling a single reasoning process through better models, larger context windows, long-horizon agentic execution, or digital co-scientists working with one principal user. However, challenging scientific problems are rarely solved by one reasoner alone. They are solved by teams whose members bring different priors, experimental backgrounds, tacit knowledge, and domain-trained intuitions. The open problem is therefore not only how to scale models, but how to cultivate networked intelligence: scaling the connect",
-      "category": "Applications",
-      "summary": "The paper proposes networked intelligence using active shared context graphs to enable human-AI teams to collaborate on scientific problems by integrating diverse reasoners and domain knowledge.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "reasoning"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "AI-Native Insurance for Agentic AI: Pricing, Underwriting, and End-to-End Automation",
-      "url": "https://arxiv.org/abs/2607.13230",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-16T04:00:00.000Z",
-      "snippet": "arXiv:2607.13230v1 Announce Type: new Abstract: Agentic AI introduces new insurance challenges because autonomous AI systems can make decisions, invoke tools, modify external environments, and interact with third-party services. This paper develops an AI-native mathematical framework for underwriting, pricing, and contract design for agentic AI deployments. A deployment is represented by a risk state that captures autonomy level, operational authority, permission exposure, governance maturity, and dependency concentration. The framework maps the risk state to event probabilities, loss severiti",
-      "category": "Business & Funding",
-      "summary": "The paper develops a mathematical framework for underwriting, pricing, and contract design specifically for agentic AI deployments, mapping risk states to event probabilities and loss severities.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic"
-        ],
-        "traits": [
-          "policy",
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Cost-Optimal Foundation Model Deployment Portfolio for Transportation Management",
-      "url": "https://arxiv.org/abs/2607.13239",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-16T04:00:00.000Z",
-      "snippet": "arXiv:2607.13239v1 Announce Type: new Abstract: Foundation models, including large language models (LLMs) and vision-language models (VLMs), are increasingly used for transportation management center (TMC) tasks such as anomaly detection, incident reporting, and traveler information. Deploying multiple such models across TMC functions raises a portfolio question: which model should serve each function, in which deployment mode, and under what shared hardware budget? We formulate this as the Foundation Model Deployment Portfolio (FMDP) problem, a mixed-integer program minimizing total cost of o",
-      "category": "Applications",
-      "summary": "This work formulates the Foundation Model Deployment Portfolio problem as a mixed-integer optimization to minimize cost when deploying multiple LLMs and VLMs across transportation management tasks.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "inference",
-          "multimodal"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Harness Handbook: Making Evolving Agent Harnesses Readable,Navigable, and Editable",
-      "url": "https://arxiv.org/abs/2607.13285",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-16T04:00:00.000Z",
-      "snippet": "arXiv:2607.13285v1 Announce Type: new Abstract: The capability of a modern AI agent depends not only on its foundation model but also on its harness, which constructs prompts, manages state, invokes tools, and coordinates execution. As models, APIs, environments, and requirements evolve, the harness must be continually modified. Before such a change can be made, a developer or coding agent must identify all code locations that implement the target behavior. This is difficult because production harnesses are large, tightly coupled, and behaviorally distributed, while modification requests descr",
-      "category": "Developer Tools",
-      "summary": "Harness Handbook addresses the challenge of making evolving AI agent harnesses readable and editable by helping developers identify code locations implementing target behaviors in large, tightly-coupled systems.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "developer"
-        ],
-        "traits": [
-          "tutorial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "EZSMT Version 3, Matured",
-      "url": "https://arxiv.org/abs/2607.13344",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-16T04:00:00.000Z",
-      "snippet": "arXiv:2607.13344v1 Announce Type: new Abstract: Constraint Answer Set Programming (CASP) is a hybrid reasoning paradigm that combines Answer Set Programming (ASP) with Constraint Processing and Satisfiability Modulo Theories (SMT), enabling powerful declarative encodings of complex combinatorial search problems. This paper presents the design and implementation of EZSMTV3, an extensible SMT-based CASP framework that advances the translational approach to CASP solving. Building upon the foundation of the EZSMT+ system, EZSMTV3 introduces a more expressive input language, supports optimization v",
-      "category": "Open Source",
-      "summary": "EZSMTV3 presents an extensible SMT-based framework for Constraint Answer Set Programming that combines ASP with constraint processing and satisfiability solving for complex combinatorial problems.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "reasoning"
-        ],
-        "traits": [
-          "open-source",
-          "release"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Set-shifting Behavioral Test for Harnessed Agents",
-      "url": "https://arxiv.org/abs/2607.13396",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-16T04:00:00.000Z",
-      "snippet": "arXiv:2607.13396v1 Announce Type: new Abstract: What happens to an LLM agent's tool choice when the reliable tool silently changes within an ongoing session? We borrow set-shifting from cognitive psychology to study how well agents adapt to hidden reliability shifts. Our benchmark mounts tool-skill libraries with redundancies, where many tools solve the same task but differ in hidden reliability. In our evaluation framework, a branched schedule shifts the reliable tool group at hidden boundaries and pairs every shift with a no-shift control. We find that agents, by default, settle on a small r",
-      "category": "Research",
-      "summary": "Set-shifting Behavioral Test applies cognitive psychology methods to evaluate how well LLM agents adapt when tool reliability changes hidden within a session.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "evaluation"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "LAPO: Leave-One-Turn Attribution for Self-Generated Process Rewards in Multi-Turn Search Reasoning",
-      "url": "https://arxiv.org/abs/2607.13501",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-16T04:00:00.000Z",
-      "snippet": "arXiv:2607.13501v1 Announce Type: new Abstract: Reinforcement learning for multi-turn search reasoning typically relies on terminal outcome rewards, which cannot distinguish useful, redundant, and harmful intermediate interactions. We propose LAPO, a self-generated process-supervision method based on backward leave-one-turn attribution. For each search turn, LAPO replaces the turn and its retrieval observation with a fixed [DELETE] placeholder and measures the resulting change in the current policy's mean log-likelihood of the gold answer. This Answer-Likelihood Gain estimates the turn's contr",
-      "category": "Research",
-      "summary": "LAPO proposes a self-generated process-supervision method using leave-one-turn attribution to distinguish useful, redundant, and harmful intermediate steps in multi-turn reasoning with search.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "reasoning",
-          "training"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "How Far Can Root Cause Analysis Go on Real-World Telemetry Data?",
-      "url": "https://arxiv.org/abs/2607.13548",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-07-16T04:00:00.000Z",
-      "snippet": "arXiv:2607.13548v1 Announce Type: new Abstract: Identifying root causes in production microservice failures requires reasoning over large-scale, multimodal telemetry spanning metrics, logs, and traces, a problem that has proved resistant to both classical and LLM-based approaches. The OpenRCA dataset exemplifies these challenges: it is large-scale, multimodal, and lacks detailed domain knowledge, and yields consistently low accuracy across all existing methods. We show that classical causal discovery methods and existing LLM-based multi-agent systems fail to reliably identify root causes on th",
-      "category": "Applications",
-      "summary": "This work evaluates root cause analysis on real-world microservice telemetry, showing that classical causal discovery and existing LLM-based multi-agent systems fail on large-scale multimodal production data.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "reasoning"
-        ],
-        "traits": [
-          "benchmark"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "How Cars24 scales conversations and builds faster with OpenAI",
-      "url": "https://openai.com/index/cars24",
-      "source": "OpenAI Blog",
-      "publishedAt": "2026-07-16T00:00:00.000Z",
-      "snippet": "Cars24 uses OpenAI-powered voice and chat agents to handle 1M+ monthly conversation minutes, recover 12% of lost leads, and bring agentic workflows to teams across the company.",
-      "category": "Applications",
-      "summary": "Cars24 uses OpenAI-powered voice and chat agents to handle over 1 million monthly conversation minutes, recovering 12% of lost leads and scaling agentic workflows.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "Microsoft is reportedly training salespeople to talk down OpenAI and Anthropic",
-      "url": "https://techcrunch.com/2026/07/15/microsoft-is-reportedly-training-salespeople-to-talk-down-openai-and-anthropic/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-15T23:59:44.000Z",
-      "snippet": "Microsoft is looking to sell its in-house AI models as more efficient and cost-effective than its competitors' models.",
-      "category": "Business & Funding",
-      "summary": "Microsoft is training its sales teams to position its in-house AI models as more efficient and cost-effective alternatives to OpenAI and Anthropic offerings.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "competitive"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": [
-          "microsoft"
-        ]
-      }
-    },
-    {
-      "title": "Agentic orchestration: Enterprise AI organizations have a deployment problem, not a platform problem — and most are calling chatbots agents",
-      "url": "https://venturebeat.com/ai/agentic-orchestration-enterprise-ai-organizations-have-a-deployment-problem-not-a-platform-problem-and-most-are-calling-chatbots-agents",
-      "source": "VentureBeat AI",
-      "publishedAt": "2026-07-15T22:24:17.000Z",
-      "snippet": "Across 101 enterprises, agent orchestration is consolidating onto model-provider platforms — Anthropic’s Claude leads by a wide margin — chosen for the gravity of the underlying model and judged on reliable multi-step execution. But the ambition runs well ahead of the reality: most deployed “agents” are still chatbot wrappers, the control plane enterprises expect is deliberately hybrid to avoid lock-in, and real-time fiscal control over token burn remains the exception. This wave of VentureBeat Pulse Research examines enterprise agent orchestration: which platforms enterprises run on, what dri",
-      "category": "Agent Frameworks",
-      "summary": "VentureBeat research reveals that enterprise AI organizations face deployment challenges rather than platform issues, with most deployed 'agents' still functioning as chatbot wrappers on Claude-dominated platforms.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "enterprise"
-        ],
-        "traits": [
-          "benchmark"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "LLM Networking with MikroTik",
-      "url": "https://blog.greg.technology/2026/07/14/llm-networking-with-mikrotik.html",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-07-15T22:23:27.000Z",
-      "snippet": "Article URL: https://blog.greg.technology/2026/07/14/llm-networking-with-mikrotik.html Comments URL: https://news.ycombinator.com/item?id=48927915 Points: 102 # Comments: 56",
-      "category": "Applications",
-      "summary": "Technical article demonstrating integration of LLMs with MikroTik networking systems for automated network management.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "llm"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Speculative Growth and the AI \"Bubble\" [pdf]",
-      "url": "https://economics.mit.edu/sites/default/files/2026-07/speculative_growth_AI_public.pdf",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-07-15T21:39:21.000Z",
-      "snippet": "Article URL: https://economics.mit.edu/sites/default/files/2026-07/speculative_growth_AI_public.pdf Comments URL: https://news.ycombinator.com/item?id=48927409 Points: 55 # Comments: 63",
-      "category": "Business & Funding",
-      "summary": "MIT economics research analyzing speculative growth patterns and potential bubble dynamics in the AI market.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "research",
-          "funding"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "We don't use AI in any of our design or production processes",
-      "url": "https://mass-driver.com/article/from-human-hands",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-07-15T21:36:49.000Z",
-      "snippet": "Article URL: https://mass-driver.com/article/from-human-hands Comments URL: https://news.ycombinator.com/item?id=48927373 Points: 107 # Comments: 113",
-      "category": "Other",
-      "summary": "Statement from a design/production company describing their commitment to avoid AI tools in their processes.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "critical"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "xAI sues a man for using Grok to generate CSAM &#8216;deepfakes&#8217;",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/966293/xai-grok-user-lawsuit-csam",
-      "source": "The Verge AI",
-      "publishedAt": "2026-07-15T21:33:20.000Z",
-      "snippet": "The Elon Musk-owned xAI is suing a South Carolina man who allegedly used the company's Grok AI chatbot to generate child sexual abuse material (CSAM). In a lawsuit reported earlier by Reuters, xAI claims Terry Wayne Harwood \"knowingly and intentionally used Grok to circumvent safeguards, alter nonconsensual images, and generate and distribute CSAM,\" breaching the company's policies. Harwood was arrested in February for allegedly possessing and distributing CSAM and is facing eight felony charges. The lawsuit claims \"at least some\" of the images related to Harwood's criminal charges \"were gener",
-      "category": "AI Safety & Alignment",
-      "summary": "xAI is suing a South Carolina man who allegedly used Grok to generate child sexual abuse material (CSAM) by circumventing the company's safeguards.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "safety",
-          "grok"
-        ],
-        "traits": [
-          "incident"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Governments, companies, nonprofits should invest in free, open source AI [pdf]",
-      "url": "https://www.siegelendowment.org/wp-content/uploads/2026/07/fortune-david-siegel-open-source-ai.pdf",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-07-15T21:16:36.000Z",
-      "snippet": "Article URL: https://www.siegelendowment.org/wp-content/uploads/2026/07/fortune-david-siegel-open-source-ai.pdf Comments URL: https://news.ycombinator.com/item?id=48927095 Points: 289 # Comments: 106",
-      "category": "Regulation & Policy",
-      "summary": "Policy recommendation advocating for increased investment in free, open-source AI by governments, companies, and nonprofits.",
-      "important": true,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "policy",
-          "open-source"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "AI slop movies are the new direct-to-video cash grabs",
-      "url": "https://www.theverge.com/entertainment/965616/ash-koosha-odysseus-the-fall-foundtain-zero-tilly-norwood",
-      "source": "The Verge AI",
-      "publishedAt": "2026-07-15T20:00:00.000Z",
-      "snippet": "This weekend, cinephiles across the world will march to their local theaters to feast their eyes on Christopher Nolan's new adaptation of The Odyssey. It's on track to rake in anywhere between $80-$100 million in just a few days. People are clearly excited to see how Nolan uses cutting-edge filmmaking tech to make the Homeric classic feel fresh. But another director is trying to capitalize on the buzz around Nolan's project to drum up interest in an Odysseus-focused movie of his own. On Tuesday, film studio Fountain 0 announced that it is working on an AI-generated reimagining of The Odyssey t",
-      "category": "Applications",
-      "summary": "AI-generated movie studios are capitalizing on interest in major film releases by producing low-cost, AI-generated content directly to audiences.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "generative",
-          "media"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Amid hardware legal battle, OpenAI releases a $230 keyboard for Codex",
-      "url": "https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-15T19:41:38.000Z",
-      "snippet": "OpenAI, which is in the middle of a legal battle with Apple over hardware trade theft allegations, just released a light-up keyboard designed to be paired with its agentic coding app.",
-      "category": "Developer Tools",
-      "summary": "OpenAI releases a $230 light-up keyboard designed for its Codex agentic coding platform while navigating legal disputes with Apple over hardware trade practices.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "developer-tools",
-          "hardware"
-        ],
-        "traits": [],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "Inkling – Open-Weights 975B Parameter LLM",
-      "url": "https://thinkingmachines.ai/inkling/",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-07-15T18:14:23.000Z",
-      "snippet": "Article URL: https://thinkingmachines.ai/inkling/ Comments URL: https://news.ycombinator.com/item?id=48924929 Points: 121 # Comments: 4",
-      "category": "Model Releases",
-      "summary": "Open-weights release of Inkling, a 975B parameter large language model with significant scale.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "llm"
-        ],
-        "traits": [
-          "open-source",
-          "release"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "SpaceX falls to $135 IPO price ahead of Starship launch",
-      "url": "https://techcrunch.com/2026/07/15/spacex-falls-to-135-ipo-price-ahead-of-starship-launch/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-15T18:06:05.000Z",
-      "snippet": "The stock has steadily fallen from the euphoric post-IPO high, showing that markets may be sobering up to the promises CEO Elon Musk made before and after SpaceX went public.",
-      "category": "Other",
-      "summary": "SpaceX's stock price declines from post-IPO highs as markets reassess CEO Elon Musk's ambitious promises.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "spacex",
-          "market"
-        ],
-        "traits": [],
-        "entities": []
-      }
-    },
-    {
-      "title": "Thinking Machines amps up its bet against one-size-fits-all AI with its first open model, Inkling",
-      "url": "https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-15T18:04:06.000Z",
-      "snippet": "It's the company's first public proof point after a year and a half spent building AI infrastructure largely out of public view.",
-      "category": "Open Source",
-      "summary": "Thinking Machines launches Inkling, its first open-source AI model, positioning itself against one-size-fits-all foundation models.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "inkling"
-        ],
-        "traits": [
-          "open-source",
-          "release"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Suno snatched millions of songs from YouTube, Genius, and Deezer",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/966072/suno-ai-music-training-scraping-youtube-hack",
-      "source": "The Verge AI",
-      "publishedAt": "2026-07-15T17:48:01.000Z",
-      "snippet": "So when is fair use actually just stealing? | Cath Virginia / The Verge | Photo from Getty Images Suno data obtained in a hacking incident has exposed that the AI music generator was trained by scraping millions of songs and lyrics from online audio platforms, including YouTube Music, Deezer, and Genius, 404 Media reports. Given that Suno has avoided revealing what's in its training datasets and how they were acquired, this a rare glimpse into what Suno has actually been taking from online platforms. That's relevant because Suno has been the subject of several lawsuits that allege it used copy",
-      "category": "AI Safety & Alignment",
-      "summary": "Hacked data reveals that music AI generator Suno scraped millions of songs from YouTube, Deezer, and Genius without clear consent, raising fair use questions.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "training",
-          "suno"
-        ],
-        "traits": [
-          "incident"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Meet GPT-Red: an LLM super-hacker OpenAI built to make its models safer",
-      "url": "https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer/",
-      "source": "MIT Tech Review AI",
-      "publishedAt": "2026-07-15T17:09:37.000Z",
-      "snippet": "OpenAI has built an LLM super-hacker called GPT-Red that it uses as a sparring partner to help its other models boost their defenses against cyberattacks. Last week the company released the latest version of its flagship LLM, GPT-5.6. OpenAI says that training it against GPT-Red made the model its most robust release yet. GPT-Red automates…",
-      "category": "AI Safety & Alignment",
-      "summary": "GPT-Red, OpenAI's automated red-teaming LLM, serves as a sparring partner to harden models against cyberattacks, with GPT-5.6 becoming the most robust release after training against it.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "safety",
-          "alignment"
-        ],
-        "traits": [],
-        "entities": [
-          "gpt"
-        ]
-      }
-    },
-    {
-      "title": "Hack suggests AI music generator Suno scraped YouTube for training data",
-      "url": "https://techcrunch.com/2026/07/15/hack-suggests-ai-music-generator-suno-scraped-youtube-for-training-data/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-15T17:00:34.000Z",
-      "snippet": "The hacker used an employee's credentials to access source code, which revealed how Suno scraped decades of audio.",
-      "category": "AI Safety & Alignment",
-      "summary": "Hacked employee credentials exposed Suno's practice of scraping decades of audio from YouTube to train its AI music generator.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "training",
-          "suno"
-        ],
-        "traits": [
-          "incident"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Whatnot acquires Shaped to power real-time live shopping recommendations",
-      "url": "https://techcrunch.com/2026/07/15/whatnot-acquires-shaped-to-power-real-time-live-shopping-recommendations/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-15T17:00:00.000Z",
-      "snippet": "Livestream shopping platform Whatnot has acquired AI startup Shaped, a machine learning company focused on real-time recommendations and search. The deal will bolster Whatnot’s personalization and discovery features as it expands into new product categories.",
-      "category": "Applications",
-      "summary": "Livestream shopping platform Whatnot acquires AI recommendation startup Shaped to enhance real-time personalization and product discovery features.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "acquisition",
-          "recommendations",
-          "commerce"
-        ],
-        "traits": [],
-        "entities": []
-      }
-    },
-    {
-      "title": "Microsoft patches record number of security vulnerabilities, citing its use of AI",
-      "url": "https://techcrunch.com/2026/07/15/microsoft-patches-record-number-of-security-vulnerabilities-citing-its-use-of-ai/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-15T16:20:18.000Z",
-      "snippet": "Microsoft's monthly release of security fixes, dubbed Patch Tuesday, resolved a record 570 security vulnerabilities across the company's product line, thanks to discoveries with AI.",
-      "category": "AI Safety & Alignment",
-      "summary": "Microsoft resolved a record 570 security vulnerabilities in its monthly Patch Tuesday, partly credited to AI-assisted discovery of flaws.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety",
-          "security"
-        ],
-        "traits": [],
-        "entities": [
-          "microsoft"
-        ]
-      }
-    },
-    {
-      "title": "OpenAI's first branded hardware is... a light-up keyboard?",
-      "url": "https://arstechnica.com/ai/2026/07/openais-first-branded-hardware-is-a-light-up-keyboard/",
-      "source": "Ars Technica AI",
-      "publishedAt": "2026-07-15T16:00:33.000Z",
-      "snippet": "The Codex Micro is designed to monitor multiple agentic threads at a glance.",
-      "category": "Developer Tools",
-      "summary": "OpenAI's first branded hardware is the Codex Micro, a light-up keyboard designed to monitor multiple agentic coding workflows simultaneously.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "hardware",
-          "developer-tools"
-        ],
-        "traits": [],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "OpenAI finally launches hardware… for Codex",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/965901/openai-hardware-codex-micro-launch",
-      "source": "The Verge AI",
-      "publishedAt": "2026-07-15T16:00:00.000Z",
-      "snippet": "OpenAI is finally releasing some hardware. No, it isn't the mysterious AI-powered device the company is developing with former Apple designer Jony Ive, a project already tangled up in a messy lawsuit. Instead, it's a product designed to be used with its coding platform, Codex. The device, a square-shaped block of buttons called Codex Micro, is a collaboration between the AI company and keyboard maker Work Louder. OpenAI said it is a limited-run collaboration that will give users more ways to monitor and manage their agents. The pad closely resembles Work Louder's Creator Micro 2, and marketing",
-      "category": "Developer Tools",
-      "summary": "OpenAI releases Codex Micro, a limited-run hardware pad designed to monitor and manage agentic coding workflows in collaboration with keyboard maker Work Louder.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "developer-tools",
-          "hardware"
-        ],
-        "traits": [],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "Apple Intelligence approved for launch in China with Alibaba’s Qwen AI",
-      "url": "https://techcrunch.com/2026/07/15/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-15T15:29:33.000Z",
-      "snippet": "The deal, which was rumored to be in the works last year, marks an important step for Apple's AI ambitions in a key market.",
-      "category": "Business & Funding",
-      "summary": "Apple's Intelligence feature gains approval for launch in China through a partnership with Alibaba's Qwen AI model.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "partnership",
-          "apple"
-        ],
-        "traits": [],
-        "entities": [
-          "qwen"
-        ]
-      }
-    },
-    {
-      "title": "Inside Ode with Anthropic, the startup betting AI services are the future of enterprise",
-      "url": "https://techcrunch.com/video/inside-ode-with-anthropic-the-startup-betting-ai-services-are-the-future-of-enterprise/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-15T15:00:00.000Z",
-      "snippet": "Can a handful of engineers really do the work of an army of consultants? That’s the bet behind Ode with Anthropic — the joint venture dedicated to embedding forward-deployed engineers in enterprise firms, backed by Anthropic, Blackstone, Hellman & Friedman, Goldman Sachs and others. On this episode of TechCrunch’s Equity podcast, Rebecca Bellan sits down with Ode’s leaders Chris Taylor and Eddie Siegel, who founded Fractional AI, […]",
-      "category": "Business & Funding",
-      "summary": "Ode, a joint venture backed by Anthropic, Blackstone, and Goldman Sachs, launches to embed forward-deployed engineers in enterprises for AI implementation.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "enterprise"
-        ],
-        "traits": [
-          "funding"
-        ],
-        "entities": [
-          "anthropic"
-        ]
-      }
-    },
-    {
-      "title": "The Three-Second Theft: Why AI Voice Fraud Outruns Every Defence",
-      "url": "https://smarterarticles.co.uk/the-three-second-theft-why-ai-voice-fraud-outruns-every-defence",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-07-15T13:18:15.000Z",
-      "snippet": "Article URL: https://smarterarticles.co.uk/the-three-second-theft-why-ai-voice-fraud-outruns-every-defence Comments URL: https://news.ycombinator.com/item?id=48920432 Points: 188 # Comments: 242",
-      "category": "AI Safety & Alignment",
-      "summary": "Analysis of AI voice fraud attacks and the security challenges in defending against deepfake-based impersonation at scale.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety"
-        ],
-        "traits": [
-          "incident"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Anthropic, Blackstone bet the next trillion-dollar AI business is implementation, not just models",
-      "url": "https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-15T13:10:47.000Z",
-      "snippet": "Anthropic-backed Ode launches as AI labs bet that embedding forward-deployed engineers inside enterprises is the key to accelerating enterprise AI adoption.",
-      "category": "Business & Funding",
-      "summary": "Anthropic and Blackstone bet that enterprise AI implementation through embedded engineers, not just models, will drive the next trillion-dollar business.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "enterprise"
-        ],
-        "traits": [
-          "funding"
-        ],
-        "entities": [
-          "anthropic"
-        ]
-      }
-    },
-    {
-      "title": "Reelful’s AI turns your camera roll into short-form videos for social media",
-      "url": "https://techcrunch.com/2026/07/15/reelfuls-ai-turns-your-camera-roll-into-short-form-videos-for-social-media/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-15T13:00:00.000Z",
-      "snippet": "The app is designed for people who want to create social content, but find traditional video editing tools too complex or time-consuming.",
-      "category": "Applications",
-      "summary": "Reelful launches an AI app that automatically transforms smartphone photos into short-form social media videos for users unfamiliar with traditional video editing.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "generative",
-          "video",
-          "consumer"
-        ],
-        "traits": [],
-        "entities": []
-      }
-    },
-    {
-      "title": "Rime picks up $24M Series A to help enterprises field customer calls",
-      "url": "https://techcrunch.com/2026/07/15/rime-picks-up-24m-series-a-to-help-enterprises-field-customer-calls/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-15T13:00:00.000Z",
-      "snippet": "Rime is handling over 100 million calls each month across multiple companies.",
-      "category": "Business & Funding",
-      "summary": "Customer service platform Rime raises $24M Series A while processing over 100 million calls monthly for multiple enterprises.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "customer-service"
-        ],
-        "traits": [
-          "funding",
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Indian AI coding startup Emergent becomes a unicorn with $130M Series C",
-      "url": "https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-unicorn-just-over-a-year-after-launch/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-15T12:00:00.000Z",
-      "snippet": "The startup has reached a $120 million annualized revenue run rate and more than 200,000 paying customers.",
-      "category": "Business & Funding",
-      "summary": "Indian AI coding startup Emergent achieves unicorn status with $130M Series C funding, reporting $120M annualized revenue and over 200,000 paying customers.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "unicorn",
-          "coding"
-        ],
-        "traits": [
-          "funding"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Vint Cerf is working on a plan to unleash AI agents on the open internet",
-      "url": "https://techcrunch.com/2026/07/15/vint-cerf-is-working-on-a-plan-to-unleash-ai-agents-on-the-open-internet/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-07-15T12:00:00.000Z",
-      "snippet": "The guy behind TCP/IP is working on a standard for identifying AI agents in the wild.",
-      "category": "Regulation & Policy",
-      "summary": "Vint Cerf, internet pioneer behind TCP/IP, is developing a standard to identify and distinguish AI agents operating across the open internet.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "internet"
-        ],
-        "traits": [
-          "policy"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "The US is advancing AI safety through state and federal action",
-      "url": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action",
-      "source": "OpenAI Blog",
-      "publishedAt": "2026-07-15T12:00:00.000Z",
-      "snippet": "OpenAI outlines a “reverse federalism” approach to AI governance, where state laws help build a national framework for safe, democratic AI.",
-      "category": "Regulation & Policy",
-      "summary": "OpenAI proposes a 'reverse federalism' approach to AI governance where state-level policies help inform a cohesive national framework for safe AI.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety",
-          "governance"
-        ],
-        "traits": [
-          "policy"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "GPT-Red: Unlocking Self-Improvement for Robustness",
-      "url": "https://openai.com/index/unlocking-self-improvement-gpt-red",
-      "source": "OpenAI Blog",
-      "publishedAt": "2026-07-15T10:00:00.000Z",
-      "snippet": "Explore GPT-Red, OpenAI’s automated red teaming system that uses self-play to improve AI safety, alignment, and prompt injection robustness.",
-      "category": "AI Safety & Alignment",
-      "summary": "OpenAI introduces GPT-Red, an automated red-teaming system using self-play to improve model robustness against adversarial attacks and prompt injection.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "safety",
-          "alignment"
-        ],
-        "traits": [],
-        "entities": [
-          "gpt"
-        ]
-      }
     }
   ],
   "feedHealth": {
     "The Verge AI": {
-      "lastSuccess": "2026-08-14T07:08:05.290Z",
+      "lastSuccess": "2026-08-15T06:19:54.750Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "TechCrunch AI": {
-      "lastSuccess": "2026-08-14T07:08:05.476Z",
+      "lastSuccess": "2026-08-15T06:19:54.807Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Ars Technica AI": {
-      "lastSuccess": "2026-08-14T07:08:05.702Z",
+      "lastSuccess": "2026-08-15T06:19:55.269Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "VentureBeat AI": {
-      "lastSuccess": "2026-08-14T07:08:06.003Z",
+      "lastSuccess": "2026-08-15T06:19:55.431Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Anthropic News": {
       "lastSuccess": null,
       "lastError": "Status code 404",
-      "consecutiveFailures": 53
+      "consecutiveFailures": 54
     },
     "OpenAI Blog": {
-      "lastSuccess": "2026-08-14T07:08:06.380Z",
+      "lastSuccess": "2026-08-15T06:19:55.658Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Google DeepMind": {
-      "lastSuccess": "2026-08-14T07:08:06.845Z",
+      "lastSuccess": "2026-08-15T06:19:56.153Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "MIT Tech Review AI": {
-      "lastSuccess": "2026-08-14T07:08:07.051Z",
+      "lastSuccess": "2026-08-15T06:19:56.234Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "arXiv cs.AI": {
-      "lastSuccess": "2026-08-14T07:08:07.270Z",
+      "lastSuccess": "2026-08-15T06:19:56.330Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Hacker News (AI)": {
       "lastSuccess": "2026-08-14T07:08:24.642Z",
-      "lastError": null,
-      "consecutiveFailures": 0
+      "lastError": "Status code 502",
+      "consecutiveFailures": 1
     }
   },
   "brief": {
-    "generatedAt": "2026-08-14T07:08:55.841Z",
+    "generatedAt": "2026-08-15T06:20:21.799Z",
     "bullets": [
       {
-        "text": "Databricks closed a $5B round at a $190B valuation amid heavy investor demand, while reports suggest Anthropic could reach a record $2 trillion valuation in an eventual IPO on rapid revenue growth.",
+        "text": "Meta released open-weight model Glimmer as Zuckerberg declared AI should be 'for everyone,' though the messaging arrived alongside a $250M deal gone awry and skepticism about the sincerity of his democratization pitch.",
         "refs": [
-          "https://techcrunch.com/2026/08/13/databricks-wanted-to-raise-1b-investors-wanted-15b-it-settled-on-5b-at-a-190b-valuation/",
-          "https://arstechnica.com/ai/2026/08/anthropic-could-be-worth-2-trillion-when-it-goes-public/"
+          "https://techcrunch.com/video/does-mark-zuckerberg-really-believe-ai-is-for-everyone/",
+          "https://techcrunch.com/podcast/metas-open-ai-and-a-250m-deal-gone-very-wrong/",
+          "https://www.theverge.com/podcast/980367/instagram-logo-new-zuckerberg-ai-vergecast"
         ]
       },
       {
-        "text": "OpenAI's executive shake-up deepened as CRO Denise Dresser departs after nine months—the second exit this week—with Wiz's Dali Rajic taking over, even as IBM partnered with OpenAI to certify tens of thousands of consultants.",
+        "text": "A price war erupted as OpenAI and Anthropic cut costs on cheaper models to fend off Chinese rivals; separately, Apple broke strategy by partnering with Alibaba to train a custom LLM for China.",
         "refs": [
-          "https://www.theverge.com/ai-artificial-intelligence/979815/openai-denise-dresser-leaving-executive-departure",
-          "https://techcrunch.com/2026/08/13/openai-hires-new-cro-as-executive-shake-up-continues/",
-          "https://openai.com/index/dali-rajic-chief-revenue-officer",
-          "https://techcrunch.com/2026/08/13/ibm-partners-with-openai-to-bolster-enterprise-ai-push/"
+          "https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground/",
+          "https://www.theverge.com/ai-artificial-intelligence/980160/apple-intelligence-china-custom-ai-model-alibaba"
         ]
       },
       {
-        "text": "Model releases accelerated: OpenAI previewed 'Ultrafast' mode running GPT-5.6 Sol at 14x speed via Cerebras, while Google shipped Gemini 3.7 Flash just three weeks after 3.6, signaling a rapid iteration race.",
+        "text": "Google now lets users toggle off visible watermarks on Gemini and Flow AI content, while invisible SynthID metadata stays embedded—raising provenance questions as generated media becomes harder to identify.",
         "refs": [
-          "https://techcrunch.com/2026/08/13/openai-introduces-ultrafast-a-new-mode-that-makes-gpt-5-6-sol-work-at-14x-the-speed/",
-          "https://openai.com/index/previewing-ultrafast",
-          "https://deepmind.google/blog/introducing-gemini-3-7-flash/",
-          "https://arstechnica.com/ai/2026/08/google-announces-gemini-3-7-flash-just-three-weeks-after-previous-release/"
+          "https://www.theverge.com/tech/980416/google-gemini-ai-watermarks-removal",
+          "https://techcrunch.com/2026/08/14/google-will-now-allow-users-to-remove-visible-watermark-from-its-ai-generations/"
         ]
       },
       {
-        "text": "Anthropic research found multi-agent AI systems can clash, collude and coordinate unexpectedly, exposing safety-testing gaps—echoing broader concerns that agents 'lie, cheat and steal,' eroding user trust.",
+        "text": "New research exposed alignment fragility: models fail ~1 in 3 research-integrity decisions, agree with human ethics while diverging on moral grounds, and shift nuclear-strike recommendations based on prompt language.",
         "refs": [
-          "https://techcrunch.com/2026/08/13/anthropic-set-ai-agents-loose-on-the-same-task-they-started-a-turf-war/",
-          "https://www.economist.com/business/2026/08/12/ai-agents-lie-cheat-and-steal-that-is-putting-off-users"
+          "https://arxiv.org/abs/2608.12345",
+          "https://arxiv.org/abs/2608.12368",
+          "https://arxiv.org/abs/2608.12373"
         ]
       },
       {
-        "text": "AI text watermarking faced scrutiny as research showed such schemes are trivially removable, coinciding with Claude's new invisible 'Scarlet Letter' watermark and explainers on how the techniques work.",
+        "text": "Alignment researchers warned their harm-prevention methods are dual-use tools that could power censorship and manipulation, while others called for practical, human-mirroring alignment for high-stakes decisions.",
         "refs": [
-          "https://www.seangoedecke.com/text-ai-watermarks/",
-          "https://arstechnica.com/tech-policy/2026/08/claudes-new-scarlet-letter-watermark-is-invisible-for-now/",
-          "https://declaude.org/watermarking/"
+          "https://arxiv.org/abs/2608.12346",
+          "https://arxiv.org/abs/2608.12372"
         ]
       }
     ]
