@@ -73,6 +73,24 @@
   --stamp-tilt: -5deg;
 }
 
+/* Latin-only webfonts leave Chinese to a light system fallback. Give the Extra
+   edition explicit Traditional Chinese sans faces and a stronger print weight. */
+.theme-extra [lang="zh-HK"] {
+  font-family: "Archivo", "PingFang HK", "Noto Sans CJK HK", "Noto Sans HK",
+    "Microsoft JhengHei", sans-serif;
+  font-weight: 600;
+}
+
+.theme-extra [lang="zh-HK"].font-press {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.theme-extra [lang="zh-HK"].font-poster {
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .theme-extra *,
   .theme-extra *::before,
