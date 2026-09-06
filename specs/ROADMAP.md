@@ -16,14 +16,14 @@ feature must reach **Done** before the next starts, unless explicitly paralleliz
 | F8  | [AI Daily Brief](./F8-daily-brief/)                              | Done        | Content    |
 | F9  | [Trends & pipeline transparency](./F9-trends-dashboard/)         | Done        | Content    |
 | F10 | [DeepSeek API migration](./F10-deepseek-migration/)               | Done        | Backend    |
-| F11 | [Personal Telegram morning brief](./F11-telegram-brief/)         | Build       | Delivery   |
+| F11 | [Personal Telegram morning brief](./F11-telegram-brief/)         | Done        | Delivery   |
 
 Current requested sequence (2026-09-06): F10 followed by F11, authorized as a
 separate workstream from the existing F6/F5 queue. Marco approved proceeding
 with implementation after the F11 technical walkthrough. F10 is implemented
 and verified locally against both live DeepSeek models. F11 code is implemented
-and published with offline tests passing; the bot and repository secrets are
-configured, but F11 stays in Build until a hosted run delivers a live message.
+and published with offline tests passing. Hosted run #117 delivered the committed
+brief through Telegram in 29 seconds, completing F11.
 
 ## Phase 0 — Foundation
 

@@ -1,7 +1,7 @@
 # Personal Telegram Morning Brief — Plan
 
 **Spec:** ./spec.md
-**Status:** Build
+**Status:** Done
 **Authorization:** Marco approved the technical walkthrough and explicitly
 requested implementation on 2026-09-06. This plan records the implementation
 choices under that authorization before production edits.
@@ -110,8 +110,7 @@ send and hosted workflow await credentials and publication when unavailable.
 - No configured keys/tokens found in built assets; `.env` remains ignored.
 - Added a freshness recheck before each rate-limit retry and after reservation
   so crossing London midnight cannot cause another stale send attempt.
-- Pending external checks: credentials, remote publication, real Telegram send,
-  and an observed hosted workflow run. F11 remains Build until these complete.
+- Hosted verification was completed by run #117 after the repair described below.
 
 Sources: https://docs.github.com/en/rest/repos/contents and
 https://core.telegram.org/bots/api (checked 2026-09-06).
@@ -133,4 +132,5 @@ configuration check catches this before paid ingestion. The setup guide now
 explains separate secret values and retry-only delivery.
 
 Repair verification: 100 tests passed, 0 failed; production build succeeded.
-Hosted repair and real Telegram receipt remain pending verification.
+Hosted run #117 completed successfully in 29 seconds and logged `Telegram: sent`.
+The repository delivery state records the attempt as sent. F11 is Done.
