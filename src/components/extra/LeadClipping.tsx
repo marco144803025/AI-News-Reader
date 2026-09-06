@@ -4,6 +4,8 @@ import { decodeEntities } from "../../lib/text";
 import OffsetPanel from "./OffsetPanel";
 import Stamp from "./Stamp";
 import { formatAge, LABELS } from "./copy";
+import { useLanguage } from "../../hooks/useLanguage";
+import { CHINESE_FALLBACK, selectSummary } from "../../lib/language";
 
 // One key word of the lead headline gets the reversed red block — Anton at
 // display size, so white-on-bright-red clears the AA large-text threshold.
@@ -38,6 +40,8 @@ export default function LeadClipping({
   article: Article;
   now: number;
 }) {
+  const { language } = useLanguage();
+  const summary = selectSummary(article, language);
   const tags = article.tags
     ? [...article.tags.topics, ...article.tags.traits, ...article.tags.entities]
     : [];
@@ -71,10 +75,13 @@ export default function LeadClipping({
         >
           <RansomTitle title={decodeEntities(article.title)} />
         </a>
-        {article.summary && (
-          <p className="mt-3 max-w-[540px] font-press text-[13px] leading-relaxed text-ink-dim">
-            {decodeEntities(article.summary)}
-          </p>
+        {summary.text && (
+          <>
+            {summary.fallback && <p lang="zh-HK" className="mt-3 text-xs text-ink-dim">{CHINESE_FALLBACK}</p>}
+            <p lang={summary.language} className="mt-3 max-w-[540px] font-press text-[13px] leading-relaxed text-ink-dim">
+              {decodeEntities(summary.text)}
+            </p>
+          </>
         )}
         {tags.length > 0 && (
           <div className="mt-3 font-wire text-[11px] tracking-wide text-ink-dim">

@@ -19,8 +19,11 @@ default; both run on identical data and logic behind an A/B theme flag.*
 
 - **Autonomous daily pipeline** — a GitHub Actions cron (06:00 UTC) pulls ~10
   RSS wires, dedupes against a rolling 30-day archive, and has DeepSeek
-  classify, summarize and tag only the new articles. A typical run costs a
-  few cents.
+  classify, summarize and tag only the new articles. Model API usage is paid.
+- **English / 繁體中文 summaries** — a Summary language switch in both layouts
+  changes article summaries and the daily brief, remembering your choice.
+  Traditional Chinese uses Hong Kong written vocabulary; headlines, technical
+  names and original links remain unchanged. Search matches both languages.
 - **12-category taxonomy + 3-dimensional tags** (topics / traits / entities),
   with notable-story detection for significant releases, papers, funding
   rounds and policy moves.
@@ -32,7 +35,8 @@ default; both run on identical data and logic behind an A/B theme flag.*
 - **Per-feed health tracking** — failing wires are recorded across runs and
   surfaced in the UI.
 - **Personal Telegram brief** — optional delivery of the cited morning summary
-  after deployment, with an offline preview and durable duplicate protection.
+  after deployment, defaulting to Traditional Chinese, with an offline preview
+  and durable duplicate protection. Set `TELEGRAM_LANGUAGE=en` to use English.
   [Set up your personal bot](docs/telegram-setup.md).
 - **Zero runtime cost** — no server, no database; the whole product is a
   static build on GitHub Pages.
@@ -56,6 +60,19 @@ flowchart LR
 The ingest is idempotent and incremental: already-classified articles are
 never re-sent to the model, transient API errors retry with backoff, and a
 run with zero new articles still prunes the archive and records feed health.
+
+New ingestion requests English and HK Traditional Chinese summaries together
+in each existing classification/brief call, storing optional `summaryZhHK` and
+`textZhHK` alongside the English fields. Both versions share source citations.
+Bilingual output increases model tokens and may increase generation time; the
+same call count does not imply the same bill. Switching language and sending
+Telegram do not make translation calls.
+
+The website starts in English and remembers your explicit choice in localStorage.
+The switch changes summaries, not navigation labels or source articles. Compact
+headline-only rows remain headline-only. Old articles without Chinese show
+English with a visible fallback notice. A partially translated daily brief
+falls back entirely to English. There is no automatic paid archive translation.
 
 ## Stack
 

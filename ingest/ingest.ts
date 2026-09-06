@@ -6,6 +6,7 @@ import type OpenAI from "openai";
 import { BRIEF_MODEL, CLASSIFY_MODEL, completeText, createDeepSeekClient, isMainModule, isTransientError, PipelineError, safePipelineError } from "./deepseek.ts";
 import "dotenv/config";
 import type { Brief, NewsData, FeedHealth } from "../src/types.ts";
+import { validTranslation } from "../src/lib/language.ts";
 import {
   BRIEF_MIN_BULLETS,
   buildBriefPrompt,
@@ -172,9 +173,10 @@ function dedupeIncoming(
   return out;
 }
 
-type ClassifyResult = {
+export type ClassifyResult = {
   category: string;
   summary: string;
+  summaryZhHK?: string;
   important: boolean;
   tags: Tags;
 };
@@ -210,15 +212,18 @@ export async function classifyBatch(
           "- Open Source: Open-weight model releases, community projects, open-source tooling\n" +
           "- Hardware & Compute: AI chips, GPUs, data centers, inference infrastructure, energy\n" +
           "- Other: Only if nothing above fits\n\n" +
-          "Write a concise 1-2 sentence summary for each article. " +
+          "Write a concise 1-2 sentence English summary for each article in summary, " +
+          "and an equivalent summaryZhHK in Hong Kong written Traditional Chinese (zh-HK). " +
+          "Use natural HK vocabulary, not Simplified Chinese or colloquial Cantonese. " +
+          "Preserve all claims, qualifications, numbers, proper names, model identifiers and English technical terms in both versions. " +
           "Set important: true only for a significant research finding, major new model/capability, funding round $100M+, or landmark policy decision. Default to false.\n\n" +
           "Also emit up to 6 short tags across three dimensions — topics (subject matter), traits (nature of the article), and entities (orgs, products, models). " +
           "Prefer these seed tags when they fit; you may emit additional tags only when nothing in the seed list applies. " +
           "Tags must be short (1-3 words). Aim for at most 3 topic tags, 2 trait tags, and 2 entity tags; the total across all dimensions must not exceed 6.\n" +
           `${seedTagList}\n\n` +
-          'Respond ONLY with a JSON array: [{"index": number, "category": string, "summary": string, "important": boolean, "tags": string[]}]';
+          'Respond ONLY with a JSON array: [{"index": number, "category": string, "summary": string, "summaryZhHK": string, "important": boolean, "tags": string[]}]';
   const text = await completeText(client, CLASSIFY_MODEL, system,
-    `Categorize, summarize, and tag these ${batch.length} articles:\n\n${list}`, 4096);
+    `Categorize, summarize, and tag these ${batch.length} articles:\n\n${list}`, 8192);
 
   const jsonMatch = text.match(/\[[\s\S]*\]/);
   if (!jsonMatch) throw new PipelineError("No JSON array in model response");
@@ -226,6 +231,7 @@ export async function classifyBatch(
     index: number;
     category: string;
     summary: string;
+    summaryZhHK?: unknown;
     important: boolean;
     tags?: string[];
   }[];
@@ -243,14 +249,18 @@ export async function classifyBatch(
       if (typeof r.category !== "string" || typeof r.summary !== "string") {
         throw new PipelineError("Classification category and summary must be strings.");
       }
+      const summaryZhHK = validTranslation(r.summaryZhHK);
       result[r.index] = {
         category: r.category?.trim() || "Other",
         summary: r.summary?.trim() || "",
+        ...(summaryZhHK ? { summaryZhHK } : {}),
         important: r.important === true,
         tags: normalizeTags(Array.isArray(r.tags) ? r.tags : []),
       };
     }
   }
+  const missingChinese = result.filter(item => item.summary && !item.summaryZhHK).length;
+  if (missingChinese) console.warn(`Classification: ${missingChinese} Chinese summaries unavailable; retaining English.`);
   return result;
 }
 
@@ -263,7 +273,7 @@ export async function generateBrief(
   const input = selectBriefInput(articles);
   const { system, user } = buildBriefPrompt(input);
 
-  const text = await completeText(client, BRIEF_MODEL, system, user, 2000);
+  const text = await completeText(client, BRIEF_MODEL, system, user, 4000);
 
   return {
     generatedAt: new Date().toISOString(),

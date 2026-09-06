@@ -1,4 +1,5 @@
 import type { NewsData } from "../../types";
+import LanguageSwitch from "../LanguageSwitch";
 import { formatDateline, LABELS } from "./copy";
 
 export default function Masthead({
@@ -23,7 +24,8 @@ export default function Masthead({
         >
           {LABELS.extraStrip}
         </span>
-        <div className="flex items-center gap-4">
+        <div className="flex flex-wrap items-center gap-4">
+          <LanguageSwitch />
           {feedNames.length > 0 && (
             <span className="font-wire text-[11px] tracking-wider text-ink-dim">
               {LABELS.wiresRunning(okFeeds, feedNames.length)}

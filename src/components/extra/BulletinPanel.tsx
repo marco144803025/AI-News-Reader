@@ -1,23 +1,29 @@
 import type { Brief } from "../../types";
 import OffsetPanel from "./OffsetPanel";
 import { LABELS } from "./copy";
+import { useLanguage } from "../../hooks/useLanguage";
+import { CHINESE_FALLBACK, selectBrief } from "../../lib/language";
 
 export default function BulletinPanel({ brief }: { brief: Brief }) {
+  const { language } = useLanguage();
+  const selected = selectBrief(brief, language);
   if (brief.bullets.length === 0) return null;
   return (
     <div className="mt-6">
       <OffsetPanel slab="red" surface="ink" className="p-4 sm:p-5">
         <div className="flex items-baseline justify-between gap-3">
-          <span className="font-poster text-sm tracking-[0.16em] text-press-red-bright">
-            {LABELS.bulletinKicker}
+          <span lang={language} className="font-poster text-sm tracking-[0.16em] text-press-red-bright">
+            {language === "zh-HK" ? "今日摘要" : LABELS.bulletinKicker}
           </span>
           <span className="font-wire text-[11px] text-paper/50">
             TL;DR · {formatTime(brief.generatedAt)}
           </span>
         </div>
-        {brief.bullets.map((bullet, i) => (
+        {selected.fallback && <p lang="zh-HK" className="mt-2.5 text-xs text-paper/70">{CHINESE_FALLBACK}</p>}
+        {selected.bullets.map((bullet, i) => (
           <p
             key={i}
+            lang={selected.language}
             className="mt-2.5 font-press text-[13px] leading-relaxed text-paper"
           >
             {bullet.text}

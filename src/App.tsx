@@ -4,6 +4,7 @@ import ClassicApp from "./ClassicApp";
 import ExtraApp from "./components/extra/ExtraApp";
 import { useTheme } from "./hooks/useTheme";
 import { useUrlState } from "./hooks/useUrlState";
+import { LanguageProvider } from "./hooks/useLanguage";
 
 // Shell: owns the shared state (data, filters, pagination, theme) and picks a
 // lineage. Both lineages are presentation-only over these props.
@@ -39,5 +40,9 @@ export default function App() {
     setTheme,
   };
 
-  return theme === "extra" ? <ExtraApp {...lineage} /> : <ClassicApp {...lineage} />;
+  return (
+    <LanguageProvider>
+      {theme === "extra" ? <ExtraApp {...lineage} /> : <ClassicApp {...lineage} />}
+    </LanguageProvider>
+  );
 }

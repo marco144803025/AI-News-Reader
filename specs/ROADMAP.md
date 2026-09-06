@@ -17,6 +17,17 @@ feature must reach **Done** before the next starts, unless explicitly paralleliz
 | F9  | [Trends & pipeline transparency](./F9-trends-dashboard/)         | Done        | Content    |
 | F10 | [DeepSeek API migration](./F10-deepseek-migration/)               | Done        | Backend    |
 | F11 | [Personal Telegram morning brief](./F11-telegram-brief/)         | Done        | Delivery   |
+| F12 | [English / HK Traditional Chinese summaries](./F12-bilingual-summaries/) | Build | Content |
+
+F12 requested 2026-09-06 as the next task after Telegram. A spec and draft
+implementation plan are documented together at Marco's request for review.
+Both were approved with "approved, proceed" on 2026-09-06. Scope: bilingual article summaries and
+daily brief, summary-language switch in both website layouts, and Chinese-default
+Telegram delivery. Original article headlines and source links remain unchanged.
+Implementation is complete locally: 111 tests passed, production build passed,
+and both layouts were checked on desktop/mobile with bilingual and legacy
+fixtures. Chinese-default Telegram preview passed. Publication, live bilingual
+generation quality review, and Chinese delivery verification remain pending.
 
 Current requested sequence (2026-09-06): F10 followed by F11, authorized as a
 separate workstream from the existing F6/F5 queue. Marco approved proceeding

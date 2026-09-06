@@ -79,6 +79,21 @@ describe("parseBriefResponse", () => {
     assert.deepEqual(bullets[2].refs, []);
   });
 
+  it("retains valid paired Chinese and degrades partial translations without losing English refs", (t) => {
+    const warnings: string[] = [];
+    t.mock.method(console, "warn", (message: string) => warnings.push(message));
+    const raw = ["  首則消息。  ", 42, " \n"].map((textZhHK, i) => ({
+      text: `English ${i}`, textZhHK, refs: [i, i, 99],
+    }));
+    const bullets = parseBriefResponse(JSON.stringify(raw), inputs);
+    assert.equal(bullets[0].textZhHK, "首則消息。");
+    assert(!Object.hasOwn(bullets[1], "textZhHK"));
+    assert(!Object.hasOwn(bullets[2], "textZhHK"));
+    assert.deepEqual(bullets.map(b => b.text), ["English 0", "English 1", "English 2"]);
+    assert.deepEqual(bullets.map(b => b.refs), inputs.map(a => [a.url]));
+    assert.equal(warnings.length, 1);
+  });
+
   it("drops out-of-range, duplicate, and non-integer refs", () => {
     const text =
       '[{"text":"One","refs":[0,0,7,-1,1.5]},{"text":"Two","refs":[1]},{"text":"Three","refs":[2]}]';

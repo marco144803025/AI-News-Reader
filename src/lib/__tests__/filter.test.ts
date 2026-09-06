@@ -1,6 +1,6 @@
 import { describe, it } from "node:test";
 import assert from "node:assert/strict";
-import { EMPTY_FILTER, filterArticles, type FilterState } from "../filter.ts";
+import { categoryCounts, EMPTY_FILTER, filterArticles, type FilterState } from "../filter.ts";
 import type { Article } from "../../types.ts";
 
 function makeArticle(
@@ -61,6 +61,17 @@ function withState(patch: Partial<FilterState>): FilterState {
 }
 
 describe("filterArticles", () => {
+  it("searches both summary languages and preserves category counts and tag constraints", () => {
+    const bilingual = { ...ARTICLES[0], summary: "API compatibility", summaryZhHK: "API 相容性改善。" };
+    const articles = [bilingual, ...ARTICLES.slice(1)];
+    for (const query of ["compatibility", "相容性"]) {
+      const state = withState({ query, topics: ["llm"] });
+      assert.deepEqual(filterArticles(articles, state), [bilingual]);
+      assert.equal(categoryCounts(articles, state).get("All"), 1);
+      assert.equal(categoryCounts(articles, state).get("Model Releases"), 1);
+      assert.deepEqual(filterArticles(articles, { ...state, category: "Research" }), []);
+    }
+  });
   it("returns all articles when state is empty", () => {
     assert.equal(filterArticles(ARTICLES, EMPTY_FILTER).length, ARTICLES.length);
   });

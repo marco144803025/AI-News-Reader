@@ -1,5 +1,6 @@
 import { createHash, randomUUID } from "node:crypto";
 import type { Brief } from "../src/types.ts";
+import { CHINESE_FALLBACK, isSummaryLanguage, selectBrief, validTranslation, type SummaryLanguage } from "../src/lib/language.ts";
 import { DeliveryError, isRecord, isUtcTimestamp, type Attempt, type AttemptStatus, type StateSnapshot, type StateStore } from "./telegram-state.ts";
 
 export const SITE_URL = "https://marco144803025.github.io/AI-News-Reader/";
@@ -28,7 +29,8 @@ export function checkBrief(data: unknown, now: number): BriefCheck {
         !Array.isArray(item.refs) || item.refs.some(url => typeof url !== "string")) {
       throw new DeliveryError("Invalid brief bullet: expected text and source URLs.");
     }
-    return { text: item.text.trim(), refs: item.refs as string[] };
+    const textZhHK = validTranslation(item.textZhHK);
+    return { text: item.text.trim(), ...(textZhHK ? { textZhHK } : {}), refs: item.refs as string[] };
   });
   const brief: Brief = { generatedAt: value.generatedAt, bullets };
   const generated = Date.parse(brief.generatedAt);
@@ -49,8 +51,23 @@ function safeUrl(raw: string): string | null {
   } catch { return null; }
 }
 
+export function telegramLanguage(value: unknown = undefined): SummaryLanguage {
+  const language = typeof value === "string" ? value.trim() : value;
+  if (language === undefined || language === "") return "zh-HK";
+  if (!isSummaryLanguage(language)) throw new DeliveryError("TELEGRAM_LANGUAGE must be zh-HK or en.");
+  return language;
+}
+
 /** Conservatively cap raw HTML too, so parsed text always fits Telegram's limit. */
-export function formatBrief(brief: Brief): { html: string; plain: string; shortened: boolean } {
+export function formatBrief(brief: Brief, language: SummaryLanguage = "zh-HK"): { html: string; plain: string; shortened: boolean } {
+  const selected = selectBrief(brief, telegramLanguage(language));
+  const copy = language === "zh-HK" ? {
+    title: "AI 新聞早報", generated: "更新時間", full: "閱讀完整摘要",
+    shortened: "內容已節錄 — 完整摘要請瀏覽網站。",
+  } : {
+    title: "AI Morning Brief", generated: "Generated", full: "Read the full brief",
+    shortened: "Shortened preview — full brief on the website.",
+  };
   const time = new Intl.DateTimeFormat("en-GB", {
     timeZone: "Europe/London", hour: "2-digit", minute: "2-digit", timeZoneName: "short",
   }).format(Date.parse(brief.generatedAt));
@@ -59,9 +76,10 @@ export function formatBrief(brief: Brief): { html: string; plain: string; shorte
   for (;;) {
     let shortened = false;
     let citation = 0;
-    const plain: string[] = [`AI Morning Brief — ${londonDate(Date.parse(brief.generatedAt))}`, `Generated ${time}`, ""];
+    const plain: string[] = [`${copy.title} — ${londonDate(Date.parse(brief.generatedAt))}`, `${copy.generated} ${time}`, ""];
     const html: string[] = [`<b>${plain[0]}</b>`, escapeHtml(plain[1]), ""];
-    for (const bullet of brief.bullets) {
+    if (selected.fallback) { html.push(CHINESE_FALLBACK, ""); plain.push(CHINESE_FALLBACK, ""); }
+    for (const bullet of selected.bullets) {
       const points = Array.from(bullet.text);
       const text = points.length > maxText ? points.slice(0, maxText).join("") + "…" : bullet.text;
       if (text !== bullet.text) shortened = true;
@@ -72,9 +90,9 @@ export function formatBrief(brief: Brief): { html: string; plain: string; shorte
       html.push(`• ${escapeHtml(text)}${links.map(link => ` <a href="${escapeHtml(link.url)}">[${link.index}]</a>`).join("")}`);
       plain.push(`• ${text}${links.map(link => ` [${link.index}] ${link.url}`).join("")}`);
     }
-    if (shortened) { html.push("", "Shortened preview — full brief on the website."); plain.push("", "Shortened preview — full brief on the website."); }
-    html.push("", `<a href="${SITE_URL}">Read the full brief</a>`);
-    plain.push("", `Read the full brief: ${SITE_URL}`);
+    if (shortened) { html.push("", copy.shortened); plain.push("", copy.shortened); }
+    html.push("", `<a href="${SITE_URL}">${copy.full}</a>`);
+    plain.push("", `${copy.full}: ${SITE_URL}`);
     if (html.join("\n").length <= 4096) return { html: html.join("\n"), plain: plain.join("\n"), shortened };
     if (maxRefs > 0) maxRefs--;
     else maxText = Math.floor(maxText / 2);
@@ -142,16 +160,18 @@ function updatedAttempt(snapshot: StateSnapshot, id: string, status: AttemptStat
 
 export type DeliverOptions = {
   enabled: boolean; data: unknown; config: TelegramConfig; store: StateStore;
+  language?: SummaryLanguage;
   now?: () => number; send?: (html: string) => Promise<void>;
 };
 
 export async function deliverBrief(options: DeliverOptions): Promise<string> {
   if (!options.enabled) return "Telegram: skipped (disabled)";
+  const language = telegramLanguage(options.language);
   const now = options.now ?? Date.now;
   const check = checkBrief(options.data, now());
   if (check.reason || !check.brief) return `Telegram: skipped (${check.reason})`;
   const brief = check.brief;
-  const html = formatBrief(brief).html;
+  const html = formatBrief(brief, language).html;
   const briefId = createHash("sha256").update(JSON.stringify(brief)).digest("hex");
   const snapshot = await options.store.read();
   const date = londonDate(now());

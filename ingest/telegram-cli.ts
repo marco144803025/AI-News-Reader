@@ -2,7 +2,7 @@ import { readFile } from "node:fs/promises";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { resolve } from "node:path";
 import "dotenv/config";
-import { checkBrief, deliverBrief, formatBrief, recoverAttempt, telegramConfig } from "./telegram.ts";
+import { checkBrief, deliverBrief, formatBrief, recoverAttempt, telegramConfig, telegramLanguage } from "./telegram.ts";
 import { DeliveryError, GitHubStateStore, isRecord } from "./telegram-state.ts";
 
 const NEWS_PATH = fileURLToPath(new URL("../public/news.json", import.meta.url));
@@ -45,14 +45,16 @@ async function main(): Promise<void> {
   switch (command) {
     case "check": {
       if (process.env.TELEGRAM_ENABLED !== "true") { console.log("Telegram: skipped (disabled)"); return; }
+      telegramLanguage(process.env.TELEGRAM_LANGUAGE);
       telegramConfig(process.env);
       console.log("Telegram configuration: valid format. No network, state writes, or messages sent.");
       return;
     }
     case "preview": {
+      const language = telegramLanguage(process.env.TELEGRAM_LANGUAGE);
       const checked = checkBrief(await readNews(), Date.now());
       console.log(`Telegram preview: ${checked.reason ?? "fresh brief"}`);
-      if (checked.brief) console.log(formatBrief(checked.brief).plain);
+      if (checked.brief) console.log(formatBrief(checked.brief, language).plain);
       console.log("Preview only: no network or state writes. Remote duplicate status: unknown.");
       return;
     }
@@ -65,11 +67,12 @@ async function main(): Promise<void> {
     }
     case "send": {
       if (process.env.TELEGRAM_ENABLED !== "true") { console.log("Telegram: skipped (disabled)"); return; }
+      const language = telegramLanguage(process.env.TELEGRAM_LANGUAGE);
       const config = telegramConfig(process.env);
       const data = await readNews();
       const check = checkBrief(data, Date.now());
       if (check.reason) { console.log(`Telegram: skipped (${check.reason})`); return; }
-      console.log(await deliverBrief({ enabled: true, data, config, store: stateStore() }));
+      console.log(await deliverBrief({ enabled: true, data, config, store: stateStore(), language }));
       return;
     }
     case "status": {

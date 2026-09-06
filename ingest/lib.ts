@@ -1,5 +1,6 @@
 import OpenAI from "openai";
 import { isTransientError } from "./deepseek.ts";
+import { validTranslation } from "../src/lib/language.ts";
 import type {
   Article,
   Brief,
@@ -292,12 +293,17 @@ export function buildBriefPrompt(articles: Article[]): {
   const system =
     "You are the editor of a daily AI-industry briefing. From today's newly " +
     "ingested articles you write the executive brief: 3 to 5 bullets, each at " +
-    "most 40 words, synthesizing the day's most significant developments. " +
+    "most 40 English words in text, synthesizing the day's most significant developments. " +
+    "Include equivalent textZhHK in Hong Kong written Traditional Chinese (zh-HK), " +
+    "at most 120 Chinese characters per bullet. Use natural HK vocabulary, " +
+    "not Simplified Chinese or colloquial Cantonese. Preserve the same claims, " +
+    "qualifications, numbers, proper names, model identifiers and English technical terms. " +
+    "Both versions share the same refs. " +
     "Connect related articles into one bullet where they tell a single story. " +
     "Weight NOTABLE articles toward inclusion, but lead with whatever is " +
     "genuinely the day's biggest story. Each bullet cites the indices of the " +
     "articles it draws from.\n\n" +
-    'Respond ONLY with a JSON array: [{"text": string, "refs": number[]}]';
+    'Respond ONLY with a JSON array: [{"text": string, "textZhHK": string, "refs": number[]}]';
 
   const user = `Today's ${articles.length} new articles:\n\n${list}`;
 
@@ -324,8 +330,9 @@ export function parseBriefResponse(
   const bullets: BriefBullet[] = [];
   for (const item of parsed) {
     if (typeof item !== "object" || item === null) continue;
-    const { text: bulletText, refs } = item as {
+    const { text: bulletText, textZhHK: rawChinese, refs } = item as {
       text?: unknown;
+      textZhHK?: unknown;
       refs?: unknown;
     };
     if (typeof bulletText !== "string" || bulletText.trim() === "") continue;
@@ -343,13 +350,17 @@ export function parseBriefResponse(
         }
       }
     }
-    bullets.push({ text: bulletText.trim(), refs: urls });
+    const textZhHK = validTranslation(rawChinese);
+    bullets.push({ text: bulletText.trim(), ...(textZhHK ? { textZhHK } : {}), refs: urls });
   }
 
   if (bullets.length < BRIEF_MIN_BULLETS || bullets.length > BRIEF_MAX_BULLETS) {
     throw new Error(
       `Brief has ${bullets.length} valid bullets (need ${BRIEF_MIN_BULLETS}-${BRIEF_MAX_BULLETS})`
     );
+  }
+  if (bullets.some(bullet => !bullet.textZhHK)) {
+    console.warn("Brief: Chinese translation incomplete; English fallback will be shown.");
   }
   return bullets;
 }

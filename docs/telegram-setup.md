@@ -25,6 +25,7 @@ Add these entries, preserving other values:
 
 ```dotenv
 TELEGRAM_ENABLED=false
+TELEGRAM_LANGUAGE=zh-HK
 TELEGRAM_BOT_TOKEN=<token-from-BotFather>
 TELEGRAM_CHAT_ID=
 GITHUB_REPOSITORY=marco144803025/AI-News-Reader
@@ -61,8 +62,8 @@ brief's date, text, source URLs and site link, plus freshness. For example:
 
 ```text
 Telegram preview: fresh brief
-AI Morning Brief — 2026-09-06
-Generated 07:05 BST
+AI 新聞早報 — 2026-09-06
+更新時間 07:05 BST
 ...
 Preview only: no network or state writes. Remote duplicate status: unknown.
 ```
@@ -71,6 +72,32 @@ An older archive prints `Telegram preview: stale brief`; it is still useful for
 checking appearance, but sending skips it. No brief prints `no brief`.
 To generate fresh content, configure DeepSeek as described in the README and
 run `npm run ingest` (paid API calls; updates the local news archive).
+
+### Summary language
+
+Telegram defaults to Hong Kong written Traditional Chinese (`zh-HK`) when
+`TELEGRAM_LANGUAGE` is unset or blank. Set it to `en` for English. Both versions
+use the same source links and timestamp; the website's saved preference does
+not change the bot's language. Other values cause a configuration error.
+
+If any Chinese brief bullet is unavailable, the whole brief appears in English
+with `繁體中文摘要暫未提供，以下顯示英文。`. The existing archive remains readable;
+new ingestion generates both versions. Delivery and preview never translate
+content themselves or make an extra model call. Changing language does not
+bypass the one-delivery-per-London-day or uncertain-delivery protections.
+
+Preview English temporarily in Windows cmd:
+
+```cmd
+cd /d F:\project\AI-news
+set TELEGRAM_LANGUAGE=en
+npm run telegram:preview
+set TELEGRAM_LANGUAGE=
+```
+
+The final command clears the temporary override, so subsequent commands use
+the value in `.env` or the Chinese default. For a permanent local preference,
+edit only the `TELEGRAM_LANGUAGE` line in your existing `.env`.
 
 ## 3. Enable scheduled delivery on GitHub
 
@@ -86,6 +113,9 @@ Under **Secrets → New repository secret**, add:
 
 Under **Variables → New repository variable**, add `TELEGRAM_ENABLED` with
 value `true`. If unset or anything other than `true`, delivery is skipped.
+Optionally add repository variable `TELEGRAM_LANGUAGE` with value `en` for
+English or `zh-HK` for Chinese. No new variable is needed for Chinese by default.
+The workflow passes the same language to configuration validation and sending.
 GitHub supplies `GITHUB_TOKEN` and `GITHUB_REPOSITORY` automatically; do not add
 your personal GitHub token to the workflow. The job requests `contents: write`.
 

@@ -29,6 +29,8 @@ function matchesQuery(article: Article, q: string): boolean {
     " " +
     article.summary +
     " " +
+    (typeof article.summaryZhHK === "string" ? article.summaryZhHK : "") +
+    " " +
     flattenTags(article.tags).join(" ")
   ).toLowerCase();
   return haystack.includes(q);

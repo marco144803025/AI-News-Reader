@@ -1,5 +1,7 @@
 import type { Article } from "../types";
 import TagChips from "./TagChips";
+import { useLanguage } from "../hooks/useLanguage";
+import { CHINESE_FALLBACK, selectSummary } from "../lib/language";
 
 function formatDate(iso: string): string {
   return new Date(iso).toLocaleDateString(undefined, {
@@ -15,6 +17,8 @@ export default function ArticleCard({
   article: Article;
   featured?: boolean;
 }) {
+  const { language } = useLanguage();
+  const summary = selectSummary(article, language);
   const notableBorder = article.important
     ? "border border-[rgba(240,246,252,0.07)] border-l-2 border-l-ember hover:border-[rgba(240,246,252,0.15)] hover:border-l-ember"
     : "border border-[rgba(240,246,252,0.07)] hover:border-[rgba(240,246,252,0.15)]";
@@ -52,14 +56,18 @@ export default function ArticleCard({
       </a>
 
       {/* Summary */}
-      {article.summary && (
-        <p
-          className={`mt-2 flex-1 leading-relaxed text-ink-secondary ${
-            featured ? "text-sm" : "text-xs"
-          }`}
-        >
-          {article.summary}
-        </p>
+      {summary.text && (
+        <>
+          {summary.fallback && <p lang="zh-HK" className="mt-2 text-xs text-ink-secondary">{CHINESE_FALLBACK}</p>}
+          <p
+            lang={summary.language}
+            className={`mt-2 flex-1 leading-relaxed text-ink-secondary ${
+              featured ? "text-sm" : "text-xs"
+            }`}
+          >
+            {summary.text}
+          </p>
+        </>
       )}
 
       {article.tags && <TagChips tags={article.tags} />}

@@ -5,7 +5,17 @@ import { createDeepSeekClient, isMainModule, safePipelineError } from "./deepsee
 import "dotenv/config";
 import type { NewsData } from "../src/types.ts";
 import { withRetry } from "./lib.ts";
-import { classifyBatch } from "./ingest.ts";
+import { classifyBatch, type ClassifyResult } from "./ingest.ts";
+
+/** Replace the pair together: old Chinese must not describe a new English summary. */
+export function applyClassification(article: NewsData["articles"][number], result: ClassifyResult): void {
+  article.category = result.category;
+  article.summary = result.summary;
+  if (result.summaryZhHK) article.summaryZhHK = result.summaryZhHK;
+  else delete article.summaryZhHK;
+  article.important = result.important;
+  article.tags = result.tags;
+}
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
@@ -57,10 +67,7 @@ async function main() {
         const m = meta[j];
         const existing = byUrl.get(a.url);
         if (!existing) return;
-        existing.category = m.category;
-        existing.summary = m.summary;
-        existing.important = m.important;
-        existing.tags = m.tags;
+        applyClassification(existing, m);
       });
       // Persist progress after every batch so a crash doesn't lose work.
       await writeFile(outputPath, JSON.stringify(data, null, 2), "utf-8");

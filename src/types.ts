@@ -12,6 +12,7 @@ export type Article = {
   snippet: string;
   category: string;
   summary: string;
+  summaryZhHK?: string;
   important?: boolean;
   tags?: Tags;
 };
@@ -24,6 +25,7 @@ export type FeedHealth = {
 
 export type BriefBullet = {
   text: string; // ≤ ~40 words, prompt-enforced
+  textZhHK?: string; // HK written Traditional Chinese, paired with English text
   refs: string[]; // URLs of cited articles — validated subset of the run's new articles
 };
 

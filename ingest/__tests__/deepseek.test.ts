@@ -6,6 +6,7 @@ import OpenAI from "openai";
 import { completeText, createDeepSeekClient, safePipelineError, CLASSIFY_MODEL, BRIEF_MODEL } from "../deepseek.ts";
 import { classifyBatch, generateBrief } from "../ingest.ts";
 import { withRetry } from "../lib.ts";
+import { applyClassification } from "../backfill.ts";
 
 function completion(content: unknown, finish = "stop"): Response {
   return Response.json({ choices: [{ finish_reason: finish, message: { content } }] });
@@ -24,19 +25,46 @@ describe("DeepSeek provider", () => {
       assert.equal(body.stream, false);
       assert.equal(body.response_format, undefined);
       return completion(body.model === CLASSIFY_MODEL
-        ? JSON.stringify([{ index: 0, category: "Model Releases", summary: "New capability.", important: true, tags: ["open-source", "llm"] }])
-        : JSON.stringify([0, 1, 2].map(index => ({ text: `Development ${index}`, refs: [index] }))));
+        ? JSON.stringify([{ index: 0, category: "Model Releases", summary: "New capability.", summaryZhHK: "  新功能。  ", important: true, tags: ["open-source", "llm"] }])
+        : JSON.stringify([0, 1, 2].map(index => ({ text: `Development ${index}`, textZhHK: `新消息 ${index}`, refs: [index] }))));
     });
     assert.equal(client.maxRetries, 0);
     const classified = await classifyBatch(client, [article]);
     assert.equal(classified[0].summary, "New capability.");
+    assert.equal(classified[0].summaryZhHK, "新功能。");
     assert.deepEqual(classified[0].tags, { topics: ["llm"], traits: ["open-source"], entities: [] });
     const articles = [0, 1, 2].map(index => ({ ...article, url: `https://example.org/${index}` }));
     const brief = await generateBrief(client, articles);
     assert.deepEqual(brief.bullets.map(bullet => bullet.refs), articles.map(item => [item.url]));
-    assert.equal(bodies[0].max_tokens, 4096);
+    assert.deepEqual(brief.bullets.map(b => b.textZhHK), ["新消息 0", "新消息 1", "新消息 2"]);
+    assert.equal(bodies.length, 2, "both languages use the existing two stages");
+    assert.equal(bodies[0].max_tokens, 8192);
     assert.equal(bodies[1].model, BRIEF_MODEL);
-    assert.equal(bodies[1].max_tokens, 2000);
+    assert.equal(bodies[1].max_tokens, 4000);
+  });
+
+  it("keeps valid English without retrying invalid Chinese and clears stale backfill translations", async (t) => {
+    const warnings: string[] = [];
+    t.mock.method(console, "warn", (message: string) => warnings.push(message));
+    let calls = 0;
+    for (const summaryZhHK of [undefined, null, "  ", 42, {}]) {
+      const client = createDeepSeekClient("fake-test-key", async () => {
+        calls++;
+        return completion(JSON.stringify([{ index: 0, category: "Research", summary: "Updated English.", summaryZhHK }]));
+      });
+      const [result] = await classifyBatch(client, [article]);
+      assert.equal(result.summary, "Updated English.");
+      assert(!Object.hasOwn(result, "summaryZhHK"));
+      const existing = { ...article, summaryZhHK: "舊摘要。" };
+      applyClassification(existing, result);
+      assert.equal(existing.summary, "Updated English.");
+      assert(!Object.hasOwn(existing, "summaryZhHK"));
+      applyClassification(existing, { ...result, summaryZhHK: "更新摘要。" });
+      assert.equal(existing.summaryZhHK, "更新摘要。");
+    }
+    assert.equal(calls, 5);
+    assert.equal(warnings.length, 5);
+    assert(warnings.every(message => message.includes("retaining English")));
   });
 
   it("rejects empty, truncated and malformed model outputs", async () => {

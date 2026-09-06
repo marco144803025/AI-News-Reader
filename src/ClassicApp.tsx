@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import BriefPanel from "./components/BriefPanel";
+import LanguageSwitch from "./components/LanguageSwitch";
 import CategorySection from "./components/CategorySection";
 import FilterBar from "./components/FilterBar";
 import TrendsView from "./components/TrendsView";
@@ -100,11 +101,12 @@ export default function ClassicApp({
   return (
     <div className="flex h-screen flex-col overflow-hidden bg-canvas text-ink">
       {/* Top Bar */}
-      <header className="flex shrink-0 items-center gap-4 border-b border-[rgba(240,246,252,0.08)] bg-surface-1 px-5 py-3">
+      <header className="flex shrink-0 flex-wrap items-center gap-4 border-b border-[rgba(240,246,252,0.08)] bg-surface-1 px-5 py-3">
         <div className="flex flex-1 items-baseline gap-2.5">
           <span className="font-mono text-sm font-bold tracking-widest text-ink">AI BRIEFING</span>
           <span className="hidden font-mono text-xs text-ink-muted sm:inline">// daily digest</span>
         </div>
+        <LanguageSwitch />
         <input
           type="search"
           placeholder="search articles..."

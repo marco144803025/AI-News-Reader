@@ -1,7 +1,8 @@
 import { describe, it } from "node:test";
 import assert from "node:assert/strict";
 import { spawnSync } from "node:child_process";
-import { checkBrief, deliverBrief, formatBrief, londonDate, recoverAttempt, sendTelegram, telegramConfig, TelegramRejected, TelegramUncertain } from "../telegram.ts";
+import { checkBrief, deliverBrief, formatBrief, londonDate, recoverAttempt, sendTelegram, telegramConfig, telegramLanguage, TelegramRejected, TelegramUncertain } from "../telegram.ts";
+import { CHINESE_FALLBACK, type SummaryLanguage } from "../../src/lib/language.ts";
 import { discoverPrivateChats } from "../telegram-cli.ts";
 import { StateConflict, type DeliveryState, type StateSnapshot, type StateStore } from "../telegram-state.ts";
 
@@ -9,6 +10,7 @@ const NOW = Date.parse("2026-09-06T07:00:00Z");
 const config = { token: "123456:abcdefghijklmnopqrstuvwxyz", chatId: "12345" };
 const brief = { generatedAt: "2026-09-06T06:00:00Z", bullets: [0, 1, 2].map(i => ({ text: `Development ${i}`, refs: [`https://example.org/${i}`] })) };
 const data = { articles: [], brief };
+const bilingualBrief = { ...brief, bullets: brief.bullets.map((bullet, i) => ({ ...bullet, textZhHK: `新消息 ${i}。` })) };
 
 class MemoryStore implements StateStore {
   state: DeliveryState = { version: 1, attempts: [] };
@@ -25,9 +27,51 @@ class MemoryStore implements StateStore {
 const options = (store: MemoryStore) => ({ enabled: true, config, data, store, now: () => NOW });
 
 describe("Telegram content", () => {
+  it("defaults to HK Chinese, validates overrides, and preserves Chinese at the archive boundary", () => {
+    for (const value of [undefined, "", " "]) assert.equal(telegramLanguage(value), "zh-HK");
+    assert.equal(telegramLanguage(" en "), "en");
+    for (const value of [null, 123, "zh-CN", "zh", "EN"]) assert.throws(() => telegramLanguage(value), /TELEGRAM_LANGUAGE/);
+    const validated = checkBrief({ ...data, brief: bilingualBrief }, NOW).brief!;
+    assert.deepEqual(validated, bilingualBrief);
+    const chinese = formatBrief(validated).plain;
+    assert.match(chinese, /AI 新聞早報/);
+    assert.match(chinese, /新消息 0。/);
+    assert.doesNotMatch(chinese, /Development|暫未提供/);
+    const english = formatBrief(validated, "en").plain;
+    assert.match(english, /AI Morning Brief/);
+    assert.match(english, /Development 0/);
+    assert.doesNotMatch(english, /新消息/);
+    for (const bullet of brief.bullets) {
+      assert(chinese.includes(bullet.refs[0]));
+      assert(english.includes(bullet.refs[0]));
+    }
+  });
+
+  it("falls back as a whole on old, partial and malformed Chinese briefs", () => {
+    for (const textZhHK of [undefined, " ", 42]) {
+      const partial = { ...bilingualBrief, bullets: bilingualBrief.bullets.map((b, i) => i === 1 ? { ...b, textZhHK } : b) };
+      const validated = checkBrief({ ...data, brief: partial }, NOW).brief!;
+      const result = formatBrief(validated).plain;
+      assert(result.includes(CHINESE_FALLBACK));
+      for (const bullet of brief.bullets) assert(result.includes(bullet.text));
+      assert.doesNotMatch(result, /新消息/);
+    }
+    assert(formatBrief(brief).plain.includes(CHINESE_FALLBACK));
+  });
+
+  it("escapes and caps long Chinese with translated shortening and fallback notices", () => {
+    const long = { ...bilingualBrief, bullets: bilingualBrief.bullets.map(b => ({ ...b, textZhHK: '新功能🚀<&"'.repeat(2000) })) };
+    const result = formatBrief(long);
+    assert(result.html.length <= 4096);
+    assert(result.shortened);
+    assert.match(result.html, /內容已節錄/);
+    assert.match(result.html, /&lt;&amp;&quot;/);
+    assert.match(result.html, /閱讀完整摘要/);
+    assert(!/[\uD800-\uDBFF](?![\uDC00-\uDFFF])/.test(result.html));
+  });
   it("checks configuration before any network or archive work, and detects the missing repository token", () => {
     const env = { ...process.env, DOTENV_CONFIG_PATH: "missing-test-env", TELEGRAM_ENABLED: "true",
-      TELEGRAM_BOT_TOKEN: config.token, TELEGRAM_CHAT_ID: config.chatId, GITHUB_TOKEN: "" };
+      TELEGRAM_BOT_TOKEN: config.token, TELEGRAM_CHAT_ID: config.chatId, GITHUB_TOKEN: "", TELEGRAM_LANGUAGE: "" };
     const args = ["--import", "tsx", "ingest/telegram-cli.ts", "check"];
     const valid = spawnSync(process.execPath, args, { env, encoding: "utf8", timeout: 5_000 });
     assert.equal(valid.status, 0, valid.stderr);
@@ -67,14 +111,14 @@ describe("Telegram content", () => {
     assert(result.html.includes("&lt;b&gt;Safe &amp; &quot;"));
     assert.doesNotMatch(result.html, /javascript:|password/);
     assert(result.html.includes("a=1&amp;b=2"));
-    const huge = formatBrief({ ...brief, bullets: Array.from({ length: 5 }, () => ({ text: "🚀<&".repeat(8000), refs: ["https://example.org/" + "x".repeat(1000)] })) });
+    const huge = formatBrief({ ...brief, bullets: Array.from({ length: 5 }, () => ({ text: "🚀<&".repeat(8000), refs: ["https://example.org/" + "x".repeat(1000)] })) }, "en");
     assert(huge.html.length <= 4096); assert(huge.shortened);
     assert(huge.html.includes("Shortened preview"));
     assert(!/[\uD800-\uDBFF](?![\uDC00-\uDFFF])/.test(huge.html));
   });
 
   it("preview is offline without credentials, and disabled send performs no work", () => {
-    const env = { ...process.env, DOTENV_CONFIG_PATH: "missing-test-env", TELEGRAM_ENABLED: "false", TELEGRAM_BOT_TOKEN: "", TELEGRAM_CHAT_ID: "", GITHUB_TOKEN: "" };
+    const env = { ...process.env, DOTENV_CONFIG_PATH: "missing-test-env", TELEGRAM_ENABLED: "false", TELEGRAM_BOT_TOKEN: "", TELEGRAM_CHAT_ID: "", GITHUB_TOKEN: "", TELEGRAM_LANGUAGE: "" };
     const preview = spawnSync(process.execPath, ["--import", "tsx", "ingest/telegram-cli.ts", "preview"], { env, encoding: "utf8" });
     assert.equal(preview.status, 0, preview.stderr);
     assert.match(preview.stdout, /no network or state writes/);
@@ -83,6 +127,26 @@ describe("Telegram content", () => {
     assert.match(disabled.stdout, /skipped \(disabled\)/);
     assert.throws(() => telegramConfig({}), /BOT_TOKEN/);
     assert.throws(() => telegramConfig({ TELEGRAM_BOT_TOKEN: config.token, TELEGRAM_CHAT_ID: "-123" }), /private-chat/);
+  });
+
+  it("CLI preview honors both locales offline and rejects invalid locale before credential checks", () => {
+    const env = { ...process.env, DOTENV_CONFIG_PATH: "missing-test-env", TELEGRAM_ENABLED: "true",
+      TELEGRAM_BOT_TOKEN: "", TELEGRAM_CHAT_ID: "", GITHUB_TOKEN: "" };
+    for (const [language, heading] of [["", "AI 新聞早報"], ["en", "AI Morning Brief"]]) {
+      const preview = spawnSync(process.execPath, ["--import", "tsx", "--input-type=module", "-e",
+        "globalThis.fetch=()=>{throw new Error('NETWORK FORBIDDEN')}; process.argv=[process.execPath,'ingest/telegram-cli.ts','preview']; await import('./ingest/telegram-cli.ts');"],
+        { env: { ...env, TELEGRAM_LANGUAGE: language }, encoding: "utf8", timeout: 10_000 });
+      assert.equal(preview.status, 0, preview.stderr);
+      assert.match(preview.stdout, /Preview only: no network or state writes/);
+      if (!preview.stdout.includes("Telegram preview: no brief")) assert(preview.stdout.includes(heading));
+    }
+    for (const command of ["check", "preview", "send"]) {
+      const invalid = spawnSync(process.execPath, ["--import", "tsx", "ingest/telegram-cli.ts", command],
+        { env: { ...env, TELEGRAM_LANGUAGE: "zh-CN" }, encoding: "utf8", timeout: 10_000 });
+      assert.equal(invalid.status, 1, invalid.stderr);
+      assert.match(invalid.stderr, /TELEGRAM_LANGUAGE must be zh-HK or en/);
+      assert.doesNotMatch(invalid.stderr, /BOT_TOKEN/);
+    }
   });
 });
 
@@ -138,6 +202,25 @@ describe("Telegram transport", () => {
 });
 
 describe("Telegram durable delivery", () => {
+  it("language changes cannot bypass sent or unresolved state; identity is canonical", async () => {
+    const identities: string[] = [];
+    for (const language of ["en", "zh-HK"] as const) {
+      const store = new MemoryStore();
+      const settings = { ...options(store), data: { ...data, brief: bilingualBrief }, language };
+      await deliverBrief({ ...settings, send: async html => assert.equal(html, formatBrief(bilingualBrief, language).html) });
+      identities.push(store.state.attempts[0].briefId);
+      const changed = language === "en" ? "zh-HK" : "en";
+      assert.match(await deliverBrief({ ...settings, language: changed, send: async () => assert.fail("duplicate") }), /already sent/);
+      for (const status of ["pending", "uncertain"] as const) {
+        store.state.attempts[0].status = status;
+        await assert.rejects(deliverBrief({ ...settings, language: changed, send: async () => assert.fail("duplicate") }), /pending or uncertain/);
+      }
+    }
+    assert.equal(identities[0], identities[1]);
+    const store = new MemoryStore();
+    await assert.rejects(deliverBrief({ ...options(store), language: "zh-CN" as SummaryLanguage }), /TELEGRAM_LANGUAGE/);
+    assert.equal(store.revision, 0);
+  });
   it("records pending before sending, then prevents repeat brief and same-day sends", async () => {
     const store = new MemoryStore(); let sends = 0;
     const send = async () => { sends++; assert.equal(store.state.attempts.at(-1)?.status, "pending"); };
