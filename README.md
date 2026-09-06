@@ -31,6 +31,9 @@ default; both run on identical data and logic behind an A/B theme flag.*
   a ranked front page (lead clipping, fresh markers, tilted wire rows).
 - **Per-feed health tracking** — failing wires are recorded across runs and
   surfaced in the UI.
+- **Personal Telegram brief** — optional delivery of the cited morning summary
+  after deployment, with an offline preview and durable duplicate protection.
+  [Set up your personal bot](docs/telegram-setup.md).
 - **Zero runtime cost** — no server, no database; the whole product is a
   static build on GitHub Pages.
 
@@ -46,6 +49,8 @@ flowchart LR
     I --> J[public/news.json<br/>rolling 30-day archive]
     J --> B[Vite build]
     B --> P[GitHub Pages<br/>React SPA]
+    P -->|after successful deployment| T[Telegram delivery]
+    J --> T
 ```
 
 The ingest is idempotent and incremental: already-classified articles are
@@ -91,6 +96,10 @@ variables → Actions → Secrets → New repository secret**. Set the name to
 the offline ingest step. It no longer uses `ANTHROPIC_API_KEY`; any old secret
 can remain unused until you choose to remove it. Never use a `VITE_` prefix
 for API keys. `.env` is ignored by Git and secrets never belong in browser code.
+
+Preview the existing brief without network requests using
+`npm run telegram:preview`. Follow the [Telegram setup guide](docs/telegram-setup.md)
+for BotFather, chat ID discovery, GitHub secrets, sending, and recovery.
 
 Feeds live in [feeds.json](feeds.json) — each entry is
 `{ "name": "...", "url": "..." }`; broken feeds are skipped and tracked.

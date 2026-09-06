@@ -9,6 +9,11 @@
     "preview": "vite preview",
     "ingest": "tsx ingest/ingest.ts",
     "backfill": "tsx ingest/backfill.ts",
+    "telegram:preview": "tsx ingest/telegram-cli.ts preview",
+    "telegram:setup": "tsx ingest/telegram-cli.ts setup",
+    "telegram:send": "tsx ingest/telegram-cli.ts send",
+    "telegram:status": "tsx ingest/telegram-cli.ts status",
+    "telegram:recover": "tsx ingest/telegram-cli.ts recover",
     "test": "tsx --test ingest/__tests__/*.test.ts src/lib/__tests__/*.test.ts"
   },
   "dependencies": {

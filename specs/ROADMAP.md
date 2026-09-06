@@ -16,10 +16,14 @@ feature must reach **Done** before the next starts, unless explicitly paralleliz
 | F8  | [AI Daily Brief](./F8-daily-brief/)                              | Done        | Content    |
 | F9  | [Trends & pipeline transparency](./F9-trends-dashboard/)         | Done        | Content    |
 | F10 | [DeepSeek API migration](./F10-deepseek-migration/)               | Done        | Backend    |
+| F11 | [Personal Telegram morning brief](./F11-telegram-brief/)         | Build       | Delivery   |
 
-Current requested sequence (2026-09-06): F10 authorized as a separate
-workstream from the existing F6/F5 queue. F10 is implemented and verified
-locally against both live DeepSeek models.
+Current requested sequence (2026-09-06): F10 followed by F11, authorized as a
+separate workstream from the existing F6/F5 queue. Marco approved proceeding
+with implementation after the F11 technical walkthrough. F10 is implemented
+and verified locally against both live DeepSeek models. F11 code is implemented
+and published with offline tests passing; the bot and repository secrets are
+configured, but F11 stays in Build until a hosted run delivers a live message.
 
 ## Phase 0 — Foundation
 
@@ -115,6 +119,12 @@ the offline ingestion and backfill commands with DeepSeek while preserving the
 static site, generated `news.json` contract, retry behavior, and daily GitHub
 Actions workflow. Document exactly where the local and GitHub-hosted API key
 must be stored without exposing it to the browser or repository.
+
+**F11: Personal Telegram morning brief.** Deliver the existing cited daily brief
+to Marco's private Telegram chat after the scheduled site update. Reuse F10's
+generated output without another model call. Include a preview command, safe
+credential setup, freshness checks, persistent duplicate protection, and visible
+delivery failures while retaining the static website architecture.
 
 ## Cross-cutting (planned later)
 
