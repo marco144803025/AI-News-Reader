@@ -43,6 +43,12 @@ async function main(): Promise<void> {
   const [command, ...args] = process.argv.slice(2);
   if (command !== "recover" && args.length) throw new DeliveryError("Unexpected arguments. See docs/telegram-setup.md.");
   switch (command) {
+    case "check": {
+      if (process.env.TELEGRAM_ENABLED !== "true") { console.log("Telegram: skipped (disabled)"); return; }
+      telegramConfig(process.env);
+      console.log("Telegram configuration: valid format. No network, state writes, or messages sent.");
+      return;
+    }
     case "preview": {
       const checked = checkBrief(await readNews(), Date.now());
       console.log(`Telegram preview: ${checked.reason ?? "fresh brief"}`);
@@ -81,7 +87,7 @@ async function main(): Promise<void> {
       console.log(await recoverAttempt(stateStore(), id, outcome as "sent" | "retry"));
       return;
     }
-    default: throw new DeliveryError("Use telegram:preview, telegram:setup, telegram:send, telegram:status, or telegram:recover.");
+    default: throw new DeliveryError("Use telegram:check, telegram:preview, telegram:setup, telegram:send, telegram:status, or telegram:recover.");
   }
 }
 

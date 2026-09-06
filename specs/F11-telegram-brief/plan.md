@@ -115,3 +115,22 @@ send and hosted workflow await credentials and publication when unavailable.
 
 Sources: https://docs.github.com/en/rest/repos/contents and
 https://core.telegram.org/bots/api (checked 2026-09-06).
+
+## Hosted failure repair — 2026-09-06
+
+Marco reported run #114 timing out after six hours and missing Telegram delivery.
+The log shows ingestion wrote its output but the process did not exit. A local
+HTTP/subprocess regression reproduced rss-parser's unclosed sockets after error,
+redirect, and timeout responses: three failures before the fix, all pass after.
+Feed transport now uses abortable native fetch and explicitly cancels error bodies;
+rss-parser only parses the completed XML. The daily workflow also caps the job at
+20 minutes and ingestion at 15 minutes.
+
+Run #115 waited behind #114 and executed for only 24 seconds. Both #115 and #116
+failed Telegram token validation. Repository settings inspection found no
+TELEGRAM_BOT_TOKEN secret; the other required secrets were present. A new offline
+configuration check catches this before paid ingestion. The setup guide now
+explains separate secret values and retry-only delivery.
+
+Repair verification: 100 tests passed, 0 failed; production build succeeded.
+Hosted repair and real Telegram receipt remain pending verification.

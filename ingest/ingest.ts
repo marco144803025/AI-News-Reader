@@ -1,7 +1,7 @@
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
-import Parser from "rss-parser";
+import { fetchFeed } from "./feeds.ts";
 import type OpenAI from "openai";
 import { BRIEF_MODEL, CLASSIFY_MODEL, completeText, createDeepSeekClient, isMainModule, isTransientError, PipelineError, safePipelineError } from "./deepseek.ts";
 import "dotenv/config";
@@ -107,7 +107,6 @@ async function fetchFeeds(
   daysBack: number,
   prevHealth: Record<string, FeedHealth> | undefined
 ): Promise<{ articles: RawArticle[]; health: Record<string, FeedHealth> }> {
-  const parser = new Parser({ timeout: 20000 });
   const cutoff = Date.now() - daysBack * 24 * 60 * 60 * 1000;
   const articles: RawArticle[] = [];
   const successAt: Record<string, string> = {};
@@ -115,7 +114,7 @@ async function fetchFeeds(
 
   for (const feed of feeds) {
     try {
-      const parsed = await parser.parseURL(feed.url);
+      const parsed = await fetchFeed(feed.url);
       const fetchedAt = new Date().toISOString();
       const isArxiv = feed.name.toLowerCase().includes("arxiv");
       const feedArticles: RawArticle[] = [];

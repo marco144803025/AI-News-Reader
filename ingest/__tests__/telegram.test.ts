@@ -25,6 +25,26 @@ class MemoryStore implements StateStore {
 const options = (store: MemoryStore) => ({ enabled: true, config, data, store, now: () => NOW });
 
 describe("Telegram content", () => {
+  it("checks configuration before any network or archive work, and detects the missing repository token", () => {
+    const env = { ...process.env, DOTENV_CONFIG_PATH: "missing-test-env", TELEGRAM_ENABLED: "true",
+      TELEGRAM_BOT_TOKEN: config.token, TELEGRAM_CHAT_ID: config.chatId, GITHUB_TOKEN: "" };
+    const args = ["--import", "tsx", "ingest/telegram-cli.ts", "check"];
+    const valid = spawnSync(process.execPath, args, { env, encoding: "utf8", timeout: 5_000 });
+    assert.equal(valid.status, 0, valid.stderr);
+    assert.match(valid.stdout, /valid format. No network, state writes, or messages sent/);
+    for (const overrides of [{ TELEGRAM_BOT_TOKEN: "" }, { TELEGRAM_CHAT_ID: "-123" }]) {
+      const invalid = spawnSync(process.execPath, args, { env: { ...env, ...overrides }, encoding: "utf8", timeout: 5_000 });
+      assert.equal(invalid.status, 1, invalid.stderr);
+      assert.match(invalid.stderr, /TELEGRAM_BOT_TOKEN|private-chat/);
+      assert.doesNotMatch(invalid.stderr, /abcdefghijklmnopqrstuvwxyz/);
+    }
+    const disabled = spawnSync(process.execPath, args, {
+      env: { ...env, TELEGRAM_ENABLED: "false", TELEGRAM_BOT_TOKEN: "" }, encoding: "utf8", timeout: 5_000,
+    });
+    assert.equal(disabled.status, 0, disabled.stderr);
+    assert.match(disabled.stdout, /skipped \(disabled\)/);
+  });
+
   it("checks the brief timestamp, not the archive's; rejects invalid shapes", () => {
     assert.equal(checkBrief(data, NOW).reason, undefined);
     for (const [generatedAt, reason] of [["2026-09-05T06:00:00Z", "stale brief"], ["2026-09-07T06:00:00Z", "future brief"], ["bad", "invalid brief timestamp"], ["2026-02-30T00:00:00Z", "invalid brief timestamp"]]) {

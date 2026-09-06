@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "ingest": "tsx ingest/ingest.ts",
     "backfill": "tsx ingest/backfill.ts",
+    "telegram:check": "tsx ingest/telegram-cli.ts check",
     "telegram:preview": "tsx ingest/telegram-cli.ts preview",
     "telegram:setup": "tsx ingest/telegram-cli.ts setup",
     "telegram:send": "tsx ingest/telegram-cli.ts send",

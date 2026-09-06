@@ -177,3 +177,24 @@ your Telegram/GitHub credentials or establish that the hosted schedule is live.
 
 References: [Telegram Bot API](https://core.telegram.org/bots/api),
 [GitHub Contents API](https://docs.github.com/en/rest/repos/contents).
+
+## Troubleshooting a failed workflow
+
+- A green **pages build and deployment** means the site was published. Check
+  **Daily Ingest & Deploy → Send personal Telegram brief** for delivery results.
+- `TELEGRAM_BOT_TOKEN is missing or invalid`: under **Settings → Secrets and
+  variables → Actions → Secrets**, create a **repository secret** named exactly
+  `TELEGRAM_BOT_TOKEN`. Its value is only the token from BotFather, without quotes
+  or `TELEGRAM_BOT_TOKEN=`. A value in local `.env` is not copied to GitHub.
+  Keep `TELEGRAM_CHAT_ID` and `DEEPSEEK_API_KEY` as separate repository secrets.
+- Under **Variables**, use name `TELEGRAM_ENABLED` and value `true` separately.
+- The workflow checks Telegram configuration before paid ingestion. Locally,
+  `npm run telegram:check` validates formatting without sending or connecting;
+  it does not verify that Telegram accepts the token.
+- After fixing a secret, run **Daily Ingest & Deploy → Run workflow** with
+  **telegram_only** checked to deliver today's committed brief without another
+  paid ingestion. A stale brief is skipped; use a full run if today's is missing.
+- A run showing many hours may have been queued behind another run. Open the
+  job to see its actual execution time. The daily job now has a 20-minute limit,
+  with a 15-minute ingestion limit, so a stalled process cannot block it for six
+  hours. Feed HTTP requests have a 20-second deadline and close failed bodies.
