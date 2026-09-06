@@ -1,7 +1,7 @@
 # English / Hong Kong Traditional Chinese summaries — Plan
 
 **Spec:** [spec.md](./spec.md)
-**Status:** Build — implementation and offline verification complete; live rollout pending
+**Status:** Build — published; actual Chinese delivery and wording review pending
 **Approval:** "approved, proceed" on 2026-09-06
 **Requested:** 2026-09-06; document the plan before coding.
 
@@ -150,9 +150,11 @@ successful same-day records already prevent resends across deployment.
 - [x] Extend workflow/environment/setup docs for optional language override.
 - [x] Run offline checks and manual UI/preview review against spec AC1–10.
 - [x] Record implementation evidence in the spec.
-- [ ] Separately authorized rollout: publish, review a live Chinese generation
-  sample with Marco, and confirm scheduled Chinese delivery. No live model calls
-  or Telegram sends were performed as part of this implementation.
+- [x] Publish and run the full workflow at Marco's request; verified three new
+  bilingual articles and a complete bilingual brief on the hosted site.
+- [ ] Review live wording with Marco: current output uses some colloquial
+  Cantonese despite the written-HK prompt. Confirm a future eligible Chinese
+  Telegram delivery; the rollout run correctly skipped today's duplicate.
 
 ## Verification mapping
 

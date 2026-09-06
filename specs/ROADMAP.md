@@ -26,8 +26,11 @@ daily brief, summary-language switch in both website layouts, and Chinese-defaul
 Telegram delivery. Original article headlines and source links remain unchanged.
 Implementation is complete locally: 111 tests passed, production build passed,
 and both layouts were checked on desktop/mobile with bilingual and legacy
-fixtures. Chinese-default Telegram preview passed. Publication, live bilingual
-generation quality review, and Chinese delivery verification remain pending.
+fixtures. Published as `6d67eca`; full workflow run `34051731622` succeeded with
+3 new bilingual articles and a 3-bullet bilingual brief, verified on the hosted
+site. Telegram skipped today's already-sent delivery. Actual Chinese delivery
+and wording review remain pending: the live sample uses some colloquial Cantonese
+despite the written-HK prompt. See the F12 spec's publication evidence.
 
 Current requested sequence (2026-09-06): F10 followed by F11, authorized as a
 separate workstream from the existing F6/F5 queue. Marco approved proceeding

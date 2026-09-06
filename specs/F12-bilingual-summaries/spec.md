@@ -1,7 +1,7 @@
 # SPEC: English / Hong Kong Traditional Chinese summaries
 
 **ID:** F12-bilingual-summaries
-**Status:** Build — implementation verified locally; live rollout pending
+**Status:** Build — published; live Chinese delivery and wording review pending
 **Owner:** Marco
 **Sequence:** After F11, as explicitly requested on 2026-09-06.
 
@@ -237,3 +237,32 @@ HK wording with Marco, and confirm an eligible Chinese Telegram delivery.
 No deployment, paid model requests, credentials changes, archive backfill, or
 Telegram messages were made during implementation. F12 remains Build until
 live rollout is verified; the local implementation and offline checks are complete.
+
+## Publication evidence — 2026-09-06
+
+At Marco's request, pushed implementation commit `6d67eca` and dispatched the
+full Daily Ingest & Deploy workflow. Run
+[34051731622](https://github.com/marco144803025/AI-News-Reader/actions/runs/34051731622)
+completed successfully. Pre-push tests again passed: 111 tests, zero failures.
+
+Run output:
+```text
+3 new articles after dedup.
+brief ok (3 bullets).
+Wrote public/news.json — 270 articles total (3 new), 11 categories.
+Telegram: skipped (already sent)
+```
+
+Verified the hosted website displays the new Chinese article summaries and all
+three Chinese brief bullets, with original English titles and source links.
+The workflow generated archive commit `e039642`; it was fast-forwarded into the
+local workspace so refreshing the local preview also loads the new archive.
+Existing retention logic pruned expired articles; 267 retained older articles
+remain English-only. No historical translation/backfill was run.
+
+Today's earlier Telegram delivery prevented a duplicate, as required. Actual
+Chinese delivery remains to be verified on a future eligible run. The live model
+sample contains colloquial Cantonese (e.g. 嘅 and 佢) despite the written-Chinese
+prompt: Traditional Chinese output is verified, but the specified written-HK
+style is not fully met. Record this for wording review; do not claim that quality
+criterion passed. No extra generation or manual rewriting was performed.
