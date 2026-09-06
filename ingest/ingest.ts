@@ -2,7 +2,8 @@ import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import Parser from "rss-parser";
-import Anthropic from "@anthropic-ai/sdk";
+import type OpenAI from "openai";
+import { BRIEF_MODEL, CLASSIFY_MODEL, completeText, createDeepSeekClient, isMainModule, isTransientError, PipelineError, safePipelineError } from "./deepseek.ts";
 import "dotenv/config";
 import type { Brief, NewsData, FeedHealth } from "../src/types.ts";
 import {
@@ -26,14 +27,9 @@ import type { Tags } from "../src/types.ts";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
 
-const MODEL = "claude-haiku-4-5-20251001";
-// The brief is one small synthesis call per run — quality is the feature, so
-// it runs on the current most capable default model.
-const BRIEF_MODEL = "claude-opus-4-8";
 const BATCH_SIZE = 25;
 const ARXIV_CAP = 15;
 
-const RETENTION_DAYS = parseRetentionDays();
 
 const SEED_CATEGORIES = [
   "MCP",
@@ -185,7 +181,7 @@ type ClassifyResult = {
 };
 
 export async function classifyBatch(
-  client: Anthropic,
+  client: OpenAI,
   batch: RawArticle[]
 ): Promise<ClassifyResult[]> {
   const list = batch
@@ -200,13 +196,7 @@ export async function classifyBatch(
     `Traits: ${SEED_TAGS.traits.join(", ")}\n` +
     `Entities: ${SEED_TAGS.entities.join(", ")}`;
 
-  const message = await client.messages.create({
-    model: MODEL,
-    max_tokens: 4096,
-    system: [
-      {
-        type: "text",
-        text:
+  const system =
           "You categorize, summarize, and tag AI-related news articles.\n\n" +
           "Use exactly these categories — do not invent new ones:\n" +
           "- MCP: Model Context Protocol specs, integrations, server/client implementations\n" +
@@ -227,25 +217,12 @@ export async function classifyBatch(
           "Prefer these seed tags when they fit; you may emit additional tags only when nothing in the seed list applies. " +
           "Tags must be short (1-3 words). Aim for at most 3 topic tags, 2 trait tags, and 2 entity tags; the total across all dimensions must not exceed 6.\n" +
           `${seedTagList}\n\n` +
-          'Respond ONLY with a JSON array: [{"index": number, "category": string, "summary": string, "important": boolean, "tags": string[]}]',
-        cache_control: { type: "ephemeral" },
-      },
-    ],
-    messages: [
-      {
-        role: "user",
-        content: `Categorize, summarize, and tag these ${batch.length} articles:\n\n${list}`,
-      },
-    ],
-  });
-
-  const text = message.content
-    .filter((b): b is Anthropic.TextBlock => b.type === "text")
-    .map((b) => b.text)
-    .join("");
+          'Respond ONLY with a JSON array: [{"index": number, "category": string, "summary": string, "important": boolean, "tags": string[]}]';
+  const text = await completeText(client, CLASSIFY_MODEL, system,
+    `Categorize, summarize, and tag these ${batch.length} articles:\n\n${list}`, 4096);
 
   const jsonMatch = text.match(/\[[\s\S]*\]/);
-  if (!jsonMatch) throw new Error("No JSON array in model response");
+  if (!jsonMatch) throw new PipelineError("No JSON array in model response");
   const parsed = JSON.parse(jsonMatch[0]) as {
     index: number;
     category: string;
@@ -260,8 +237,13 @@ export async function classifyBatch(
     important: false,
     tags: { topics: [], traits: [], entities: [] },
   }));
+  if (!Array.isArray(parsed)) throw new PipelineError("Classification response must be an array.");
   for (const r of parsed) {
-    if (r.index >= 0 && r.index < batch.length) {
+    if (!r || typeof r !== "object") throw new PipelineError("Invalid classification record.");
+    if (Number.isInteger(r.index) && r.index >= 0 && r.index < batch.length) {
+      if (typeof r.category !== "string" || typeof r.summary !== "string") {
+        throw new PipelineError("Classification category and summary must be strings.");
+      }
       result[r.index] = {
         category: r.category?.trim() || "Other",
         summary: r.summary?.trim() || "",
@@ -276,23 +258,13 @@ export async function classifyBatch(
 // One synthesis call over the run's new articles → 3-5 cited bullets.
 // Throws on invalid output; the caller decides what to do (carry forward).
 export async function generateBrief(
-  client: Anthropic,
+  client: OpenAI,
   articles: Article[]
 ): Promise<Brief> {
   const input = selectBriefInput(articles);
   const { system, user } = buildBriefPrompt(input);
 
-  const message = await client.messages.create({
-    model: BRIEF_MODEL,
-    max_tokens: 2000,
-    system,
-    messages: [{ role: "user", content: user }],
-  });
-
-  const text = message.content
-    .filter((b): b is Anthropic.TextBlock => b.type === "text")
-    .map((b) => b.text)
-    .join("");
+  const text = await completeText(client, BRIEF_MODEL, system, user, 2000);
 
   return {
     generatedAt: new Date().toISOString(),
@@ -301,11 +273,8 @@ export async function generateBrief(
 }
 
 async function main() {
-  const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) {
-    console.error("ERROR: ANTHROPIC_API_KEY not set. Copy .env.example to .env.");
-    process.exit(1);
-  }
+  const client = createDeepSeekClient();
+  const retentionDays = parseRetentionDays();
 
   const outputPath = join(ROOT, "public", "news.json");
 
@@ -341,7 +310,7 @@ async function main() {
   const newCount = raw.length;
   console.log(`${newCount} new articles after dedup.`);
 
-  const retentionCutoff = Date.now() - RETENTION_DAYS * 24 * 60 * 60 * 1000;
+  const retentionCutoff = Date.now() - retentionDays * 24 * 60 * 60 * 1000;
   const generatedAt = computeGeneratedAt(newCount, existing, () =>
     new Date().toISOString()
   );
@@ -367,7 +336,6 @@ async function main() {
     return;
   }
 
-  const client = new Anthropic({ apiKey });
   const classified: Article[] = [];
   for (let i = 0; i < raw.length; i += BATCH_SIZE) {
     const batch = raw.slice(i, i + BATCH_SIZE);
@@ -377,13 +345,10 @@ async function main() {
       const meta = await withRetry(() => classifyBatch(client, batch));
       batch.forEach((a, j) => classified.push({ ...a, ...meta[j] }));
     } catch (err) {
-      const transient =
-        err instanceof Anthropic.RateLimitError ||
-        err instanceof Anthropic.InternalServerError ||
-        err instanceof Anthropic.APIConnectionError;
+      const transient = isTransientError(err);
       if (transient) {
         console.error(
-          `  skip batch ${batchNum}: retries exhausted — ${(err as Error).message}`
+          `  skip batch ${batchNum}: retries exhausted — ${safePipelineError(err)}`
         );
       } else {
         throw err;
@@ -403,7 +368,7 @@ async function main() {
       console.log(`  brief ok (${brief.bullets.length} bullets).`);
     } catch (err) {
       console.error(
-        `  brief skipped, carrying previous forward — ${(err as Error).message}`
+        `  brief skipped, carrying previous forward — ${safePipelineError(err)}`
       );
     }
   } else if (classified.length > 0) {
@@ -434,7 +399,9 @@ async function main() {
   );
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+if (isMainModule(import.meta.url)) {
+  main().catch((err) => {
+    console.error(`ERROR: ${safePipelineError(err)}`);
+    process.exitCode = 1;
+  });
+}

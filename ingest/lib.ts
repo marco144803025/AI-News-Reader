@@ -1,4 +1,5 @@
-import Anthropic from "@anthropic-ai/sdk";
+import OpenAI from "openai";
+import { isTransientError } from "./deepseek.ts";
 import type {
   Article,
   Brief,
@@ -198,16 +199,18 @@ export async function withRetry<T>(
     try {
       return await fn();
     } catch (err) {
-      const isTransient =
-        err instanceof Anthropic.RateLimitError ||
-        err instanceof Anthropic.InternalServerError ||
-        err instanceof Anthropic.APIConnectionError;
+      const isTransient = isTransientError(err);
       if (!isTransient || attempt >= maxRetries) throw err;
       const baseDelay = delays[Math.min(attempt, delays.length - 1)];
       let delay = baseDelay;
-      if (err instanceof Anthropic.RateLimitError) {
+      if (err instanceof OpenAI.RateLimitError) {
         const retryAfter = err.headers?.get?.("retry-after");
-        delay = Math.max(baseDelay, parseFloat(retryAfter ?? "0") * 1000);
+        const seconds = Number(retryAfter ?? "0");
+        if (Number.isFinite(seconds) && seconds > 0) {
+          // A delay beyond our budget ends this attempt rather than retrying early.
+          if (seconds > 60) throw err;
+          delay = Math.max(baseDelay, seconds * 1000);
+        }
       }
       opts.onDelay?.(delay);
       await sleep(delay);

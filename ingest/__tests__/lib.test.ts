@@ -1,6 +1,6 @@
 import { describe, it, mock } from "node:test";
 import assert from "node:assert/strict";
-import Anthropic from "@anthropic-ai/sdk";
+import OpenAI from "openai";
 import type { NewsData } from "../../src/types.ts";
 import {
   buildFeedHealth,
@@ -62,7 +62,7 @@ describe("withRetry", () => {
       async () => {
         calls++;
         if (calls < 3) {
-          throw new Anthropic.InternalServerError(
+          throw new OpenAI.InternalServerError(
             500,
             { error: { message: "boom" } },
             "boom",
@@ -83,7 +83,7 @@ describe("withRetry", () => {
       withRetry(
         async () => {
           calls++;
-          throw new Anthropic.AuthenticationError(
+          throw new OpenAI.AuthenticationError(
             401,
             { error: { message: "bad key" } },
             "bad key",
@@ -92,7 +92,7 @@ describe("withRetry", () => {
         },
         { sleep: fakeSleep }
       ),
-      Anthropic.AuthenticationError
+      OpenAI.AuthenticationError
     );
     assert.equal(calls, 1);
   });
@@ -104,7 +104,7 @@ describe("withRetry", () => {
       async () => {
         calls++;
         if (calls === 1) {
-          throw new Anthropic.RateLimitError(
+          throw new OpenAI.RateLimitError(
             429,
             { error: { message: "slow down" } },
             "slow down",
@@ -128,7 +128,7 @@ describe("withRetry", () => {
       withRetry(
         async () => {
           calls++;
-          throw new Anthropic.InternalServerError(
+          throw new OpenAI.InternalServerError(
             500,
             { error: { message: "down" } },
             "down",
@@ -137,7 +137,7 @@ describe("withRetry", () => {
         },
         { sleep: fakeSleep, maxRetries: 3 }
       ),
-      Anthropic.InternalServerError
+      OpenAI.InternalServerError
     );
     assert.equal(calls, 4); // initial + 3 retries
   });

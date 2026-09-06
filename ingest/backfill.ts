@@ -1,7 +1,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
-import Anthropic from "@anthropic-ai/sdk";
+import { createDeepSeekClient, isMainModule, safePipelineError } from "./deepseek.ts";
 import "dotenv/config";
 import type { NewsData } from "../src/types.ts";
 import { withRetry } from "./lib.ts";
@@ -24,11 +24,7 @@ function hasTags(a: NewsData["articles"][number]): boolean {
 
 async function main() {
   const force = process.argv.includes("--force");
-  const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) {
-    console.error("ERROR: ANTHROPIC_API_KEY not set.");
-    process.exit(1);
-  }
+  const client = createDeepSeekClient();
 
   const outputPath = join(ROOT, "public", "news.json");
   const raw = await readFile(outputPath, "utf-8");
@@ -46,7 +42,6 @@ async function main() {
     return;
   }
 
-  const client = new Anthropic({ apiKey });
   const byUrl = new Map(data.articles.map((a) => [a.url, a]));
 
   for (let i = 0; i < targets.length; i += BATCH_SIZE) {
@@ -70,7 +65,8 @@ async function main() {
       // Persist progress after every batch so a crash doesn't lose work.
       await writeFile(outputPath, JSON.stringify(data, null, 2), "utf-8");
     } catch (err) {
-      console.error(`  skip batch ${batchNum}: ${(err as Error).message}`);
+      console.error(`  skip batch ${batchNum}: ${safePipelineError(err)}`);
+      process.exitCode = 1;
     }
   }
 
@@ -80,7 +76,9 @@ async function main() {
   );
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+if (isMainModule(import.meta.url)) {
+  main().catch((err) => {
+    console.error(`ERROR: ${safePipelineError(err)}`);
+    process.exitCode = 1;
+  });
+}

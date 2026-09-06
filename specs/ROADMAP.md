@@ -15,6 +15,11 @@ feature must reach **Done** before the next starts, unless explicitly paralleliz
 | F7  | [Portfolio presentation & shareability](./F7-portfolio-presentation/) | Done   | Portfolio  |
 | F8  | [AI Daily Brief](./F8-daily-brief/)                              | Done        | Content    |
 | F9  | [Trends & pipeline transparency](./F9-trends-dashboard/)         | Done        | Content    |
+| F10 | [DeepSeek API migration](./F10-deepseek-migration/)               | Done        | Backend    |
+
+Current requested sequence (2026-09-06): F10 authorized as a separate
+workstream from the existing F6/F5 queue. F10 is implemented and verified
+locally against both live DeepSeek models.
 
 ## Phase 0 — Foundation
 
@@ -104,6 +109,12 @@ flagship AI-engineering feature; stays static, costs cents.
 30-day archive: rising/falling tags (7d vs prior 7d), volume-per-day chart,
 category mix — plus finally surfacing the `feedHealth` data F1 added to
 `news.json` but never rendered ("2/10 feeds failing"). No new infrastructure.
+
+**F10: DeepSeek API migration.** Replace the Anthropic/Claude provider used by
+the offline ingestion and backfill commands with DeepSeek while preserving the
+static site, generated `news.json` contract, retry behavior, and daily GitHub
+Actions workflow. Document exactly where the local and GitHub-hosted API key
+must be stored without exposing it to the browser or repository.
 
 ## Cross-cutting (planned later)
 

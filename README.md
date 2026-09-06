@@ -1,7 +1,7 @@
 # AI Briefing
 
 > A self-updating front page for the AI industry — RSS feeds ingested daily,
-> classified, tagged and summarized by Claude, published as a zero-cost static
+> classified, tagged and summarized by DeepSeek, published as a zero-cost static
 > site.
 
 **[Read today's briefing →](https://marco144803025.github.io/AI-News-Reader/)**
@@ -18,7 +18,7 @@ default; both run on identical data and logic behind an A/B theme flag.*
 ## Features
 
 - **Autonomous daily pipeline** — a GitHub Actions cron (06:00 UTC) pulls ~10
-  RSS wires, dedupes against a rolling 30-day archive, and has Claude
+  RSS wires, dedupes against a rolling 30-day archive, and has DeepSeek
   classify, summarize and tag only the new articles. A typical run costs a
   few cents.
 - **12-category taxonomy + 3-dimensional tags** (topics / traits / entities),
@@ -39,8 +39,10 @@ default; both run on identical data and logic behind an A/B theme flag.*
 ```mermaid
 flowchart LR
     F[feeds.json<br/>~10 RSS wires] -->|cron 06:00 UTC| I[ingest pipeline<br/>Node 20 · TypeScript]
-    I -->|classify · summarize · tag<br/>new articles only| C[Claude Haiku]
+    I -->|classify · summarize · tag<br/>new articles only| C[DeepSeek V4 Flash]
     C --> I
+    I -->|daily synthesis| D[DeepSeek V4 Pro]
+    D --> I
     I --> J[public/news.json<br/>rolling 30-day archive]
     J --> B[Vite build]
     B --> P[GitHub Pages<br/>React SPA]
@@ -54,8 +56,9 @@ run with zero new articles still prunes the archive and records feed health.
 
 - **UI:** React 19, TypeScript, Vite 7, Tailwind 4 — static SPA, no client
   data fetching beyond one `news.json`.
-- **Pipeline:** Node 20 ESM, `@anthropic-ai/sdk` (Claude Haiku for batch
-  classification), `rss-parser`.
+- **Pipeline:** Node 20 ESM, `openai` SDK configured for DeepSeek (V4 Flash for
+  classification, V4 Pro for the brief), `rss-parser`. Model thinking is disabled
+  for these bounded structured-output requests; the application owns retries.
 - **Tests:** `node:test` over the ingest library and UI logic (filtering,
   ranking, pagination, theming) — gated in CI on every PR and before every
   scheduled ingest.
@@ -64,16 +67,30 @@ run with zero new articles still prunes the archive and records feed health.
 
 ## Run it yourself
 
-```bash
+```cmd
 git clone https://github.com/marco144803025/AI-News-Reader.git
 cd AI-News-Reader
 npm install
-cp .env.example .env   # set ANTHROPIC_API_KEY
+if not exist .env copy .env.example .env
+notepad .env
 
-npm run ingest         # fetch + classify (costs a few cents)
-npm run dev            # http://localhost:5173/AI-News-Reader/
+npm run ingest
+npm run dev
 npm test
 ```
+
+Set `DEEPSEEK_API_KEY` in `.env` before ingestion. Obtain it from the
+[DeepSeek platform](https://platform.deepseek.com/api_keys); the key needs a
+funded API account. Ingestion makes paid API requests and updates the local
+archive. The dev server opens at `http://localhost:5173/AI-News-Reader/`.
+Existing archives remain compatible; no backfill is required for the migration.
+
+For scheduled ingestion, open the repository's **Settings → Secrets and
+variables → Actions → Secrets → New repository secret**. Set the name to
+`DEEPSEEK_API_KEY` and paste its value. The workflow reads that secret only in
+the offline ingest step. It no longer uses `ANTHROPIC_API_KEY`; any old secret
+can remain unused until you choose to remove it. Never use a `VITE_` prefix
+for API keys. `.env` is ignored by Git and secrets never belong in browser code.
 
 Feeds live in [feeds.json](feeds.json) — each entry is
 `{ "name": "...", "url": "..." }`; broken feeds are skipped and tracked.
