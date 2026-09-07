@@ -213,8 +213,9 @@ export async function classifyBatch(
           "- Hardware & Compute: AI chips, GPUs, data centers, inference infrastructure, energy\n" +
           "- Other: Only if nothing above fits\n\n" +
           "Write a concise 1-2 sentence English summary for each article in summary, " +
-          "and an equivalent summaryZhHK in Hong Kong written Traditional Chinese (zh-HK). " +
-          "Use natural HK vocabulary, not Simplified Chinese or colloquial Cantonese. " +
+          "and an equivalent summaryZhHK in Hong Kong Traditional Chinese (zh-HK). " +
+          "Use authentic Hong Kong vocabulary and a natural Cantonese-influenced written tone; " +
+          "particles and pronouns such as 嘅 and 佢 are welcome. Do not use Simplified Chinese. " +
           "Preserve all claims, qualifications, numbers, proper names, model identifiers and English technical terms in both versions. " +
           "Set important: true only for a significant research finding, major new model/capability, funding round $100M+, or landmark policy decision. Default to false.\n\n" +
           "Also emit up to 6 short tags across three dimensions — topics (subject matter), traits (nature of the article), and entities (orgs, products, models). " +

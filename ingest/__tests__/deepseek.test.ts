@@ -38,6 +38,13 @@ describe("DeepSeek provider", () => {
     assert.deepEqual(brief.bullets.map(bullet => bullet.refs), articles.map(item => [item.url]));
     assert.deepEqual(brief.bullets.map(b => b.textZhHK), ["新消息 0", "新消息 1", "新消息 2"]);
     assert.equal(bodies.length, 2, "both languages use the existing two stages");
+    for (const body of bodies) {
+      const prompt = JSON.stringify(body);
+      assert.match(prompt, /authentic Hong Kong vocabulary/);
+      assert.match(prompt, /嘅/);
+      assert.match(prompt, /佢/);
+      assert.match(prompt, /Do not use Simplified Chinese/);
+    }
     assert.equal(bodies[0].max_tokens, 8192);
     assert.equal(bodies[1].model, BRIEF_MODEL);
     assert.equal(bodies[1].max_tokens, 4000);

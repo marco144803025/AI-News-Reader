@@ -294,9 +294,10 @@ export function buildBriefPrompt(articles: Article[]): {
     "You are the editor of a daily AI-industry briefing. From today's newly " +
     "ingested articles you write the executive brief: 3 to 5 bullets, each at " +
     "most 40 English words in text, synthesizing the day's most significant developments. " +
-    "Include equivalent textZhHK in Hong Kong written Traditional Chinese (zh-HK), " +
-    "at most 120 Chinese characters per bullet. Use natural HK vocabulary, " +
-    "not Simplified Chinese or colloquial Cantonese. Preserve the same claims, " +
+    "Include equivalent textZhHK in Hong Kong Traditional Chinese (zh-HK), " +
+    "at most 120 Chinese characters per bullet. Use authentic Hong Kong vocabulary " +
+    "and a natural Cantonese-influenced written tone; particles and pronouns such as " +
+    "嘅 and 佢 are welcome. Do not use Simplified Chinese. Preserve the same claims, " +
     "qualifications, numbers, proper names, model identifiers and English technical terms. " +
     "Both versions share the same refs. " +
     "Connect related articles into one bullet where they tell a single story. " +
