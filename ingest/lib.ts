@@ -268,6 +268,10 @@ export function computeGeneratedAt(
 export const BRIEF_INPUT_CAP = 50;
 export const BRIEF_MIN_BULLETS = 3;
 export const BRIEF_MAX_BULLETS = 5;
+// Matches the classification budget. Every bullet now carries English and zh-HK
+// text, and completeText rejects a truncated response outright, so a tight cap
+// turns one long brief into a whole missed delivery.
+export const BRIEF_MAX_TOKENS = 8192;
 
 // Important articles first (they must be visible to the model even on huge
 // runs), then everything else newest-first, capped so the prompt stays small.
@@ -355,15 +359,23 @@ export function parseBriefResponse(
     bullets.push({ text: bulletText.trim(), ...(textZhHK ? { textZhHK } : {}), refs: urls });
   }
 
-  if (bullets.length < BRIEF_MIN_BULLETS || bullets.length > BRIEF_MAX_BULLETS) {
+  if (bullets.length < BRIEF_MIN_BULLETS) {
     throw new Error(
       `Brief has ${bullets.length} valid bullets (need ${BRIEF_MIN_BULLETS}-${BRIEF_MAX_BULLETS})`
     );
   }
-  if (bullets.some(bullet => !bullet.textZhHK)) {
+  // An over-long response is still usable. Discarding it would carry yesterday's
+  // brief forward, which strands Telegram on a stale brief for the whole day.
+  const kept = bullets.slice(0, BRIEF_MAX_BULLETS);
+  if (kept.length < bullets.length) {
+    console.warn(
+      `Brief: model returned ${bullets.length} bullets; keeping the first ${BRIEF_MAX_BULLETS}.`
+    );
+  }
+  if (kept.some(bullet => !bullet.textZhHK)) {
     console.warn("Brief: Chinese translation incomplete; English fallback will be shown.");
   }
-  return bullets;
+  return kept;
 }
 
 export function carryForwardBrief(existing: NewsData | null): Brief | undefined {

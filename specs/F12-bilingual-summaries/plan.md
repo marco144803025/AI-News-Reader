@@ -156,7 +156,9 @@ successful same-day records already prevent resends across deployment.
 - [x] Review live wording with Marco: on 2026-09-07 he approved the authentic
   Hong Kong tone, including natural use of `嘅` and `佢`; prompts were aligned.
 - [ ] Confirm a future eligible Chinese Telegram delivery; the rollout run
-  correctly skipped today's duplicate.
+  correctly skipped today's duplicate. The 2026-09-07 run could not satisfy
+  this: its brief failed to regenerate and delivery skipped the stale copy.
+  See F11's post-release fix.
 
 ## Verification mapping
 

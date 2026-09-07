@@ -47,7 +47,7 @@ describe("DeepSeek provider", () => {
     }
     assert.equal(bodies[0].max_tokens, 8192);
     assert.equal(bodies[1].model, BRIEF_MODEL);
-    assert.equal(bodies[1].max_tokens, 4000);
+    assert.equal(bodies[1].max_tokens, 8192, "bilingual briefs need the classification budget");
   });
 
   it("keeps valid English without retrying invalid Chinese and clears stale backfill translations", async (t) => {

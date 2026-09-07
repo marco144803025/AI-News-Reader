@@ -81,8 +81,13 @@ become an explicitly shortened preview with the full-brief site link; never
 silently split one delivery into several notifications.
 
 Delivery results are concise, e.g. `Telegram: sent`, `Telegram: skipped (disabled)`,
-`Telegram: skipped (stale brief)`, `Telegram: skipped (already sent)`, or
+`Telegram: not sent (stale brief)`, `Telegram: skipped (already sent)`, or
 `Telegram: delivery uncertain; check your chat before retrying`.
+
+Only `sent`, `already sent` and `disabled` exit 0. Every other outcome exits
+non-zero and emits a GitHub Actions error annotation, because an undelivered
+brief is a pipeline failure rather than a routine skip. The step runs after the
+Pages deploy, so failing it never blocks the site update.
 
 Durable delivery state is separate from published news/site files. It records a
 brief identity and pending/sent/uncertain outcome, without storing bot tokens,
@@ -197,3 +202,25 @@ absent locally, so no bot message or GitHub state write was performed. Hosted
 setup and delivery were subsequently completed: workflow run #117 logged
 `Telegram: sent` and delivered the committed brief in 29 seconds, satisfying the
 remaining live acceptance check.
+
+## Post-release fix — 2026-09-08
+
+The 2026-09-07 scheduled run delivered nothing while reporting success. Ingestion
+refreshed the archive but `generateBrief` threw, so the 2026-09-06 brief was
+carried forward; `checkBrief` then correctly reported `stale brief` and the CLI
+exited 0. The failure was therefore invisible until Marco noticed the missing
+message a day later.
+
+Two defects were fixed. Delivery no longer exits 0 on an undelivered brief
+(above). Brief generation was hardened against its two code-level failure modes:
+the output budget now matches classification at 8192 tokens, since every bullet
+carries English and zh-HK text and `completeText` rejects any truncated response
+outright, and `parseBriefResponse` now keeps the first five bullets of an
+over-long response instead of discarding the whole brief.
+
+`npm test`: 113 passed, 0 failed. `npm run build`: succeeded. Replaying the
+2026-09-07 archive at the CI timestamp reproduced `stale brief`, and the
+rewritten command exits 1 with an `::error` annotation on that same input.
+The underlying DeepSeek error from that run was not recovered from the Actions
+log, so the generation fix is hardening against the likely causes, not a
+confirmed root-cause repair.

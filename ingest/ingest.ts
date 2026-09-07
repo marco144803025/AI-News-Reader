@@ -8,6 +8,7 @@ import "dotenv/config";
 import type { Brief, NewsData, FeedHealth } from "../src/types.ts";
 import { validTranslation } from "../src/lib/language.ts";
 import {
+  BRIEF_MAX_TOKENS,
   BRIEF_MIN_BULLETS,
   buildBriefPrompt,
   buildFeedHealth,
@@ -274,7 +275,7 @@ export async function generateBrief(
   const input = selectBriefInput(articles);
   const { system, user } = buildBriefPrompt(input);
 
-  const text = await completeText(client, BRIEF_MODEL, system, user, 4000);
+  const text = await completeText(client, BRIEF_MODEL, system, user, BRIEF_MAX_TOKENS);
 
   return {
     generatedAt: new Date().toISOString(),

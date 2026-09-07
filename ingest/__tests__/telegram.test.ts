@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import { spawnSync } from "node:child_process";
 import { checkBrief, deliverBrief, formatBrief, londonDate, recoverAttempt, sendTelegram, telegramConfig, telegramLanguage, TelegramRejected, TelegramUncertain } from "../telegram.ts";
 import { CHINESE_FALLBACK, type SummaryLanguage } from "../../src/lib/language.ts";
-import { discoverPrivateChats } from "../telegram-cli.ts";
+import { delivered, discoverPrivateChats } from "../telegram-cli.ts";
 import { StateConflict, type DeliveryState, type StateSnapshot, type StateStore } from "../telegram-state.ts";
 
 const NOW = Date.parse("2026-09-06T07:00:00Z");
@@ -236,6 +236,20 @@ describe("Telegram durable delivery", () => {
     assert.match(await deliverBrief({ ...options(store), enabled: false, send }), /disabled/);
     assert.match(await deliverBrief({ ...options(store), now: () => NOW + 86400000, send }), /stale/);
     assert.equal(store.revision, 0);
+  });
+  it("treats a stale skip as a failed run, but a real or unnecessary send as success", async () => {
+    const store = new MemoryStore();
+    const send = async () => {};
+    assert.equal(delivered(await deliverBrief({ ...options(store), send })), true);
+    assert.equal(delivered(await deliverBrief({ ...options(store), send })), true, "already sent");
+    assert.equal(delivered(await deliverBrief({ ...options(store), enabled: false, send })), true, "disabled");
+    // The Sep 2026 silent failure: ingestion carried yesterday's brief forward,
+    // delivery skipped it, and the run still exited 0.
+    const stale = await deliverBrief({ ...options(new MemoryStore()), now: () => NOW + 86400000, send });
+    assert.equal(delivered(stale), false, stale);
+    for (const reason of ["no brief", "invalid brief timestamp", "stale brief", "future brief"]) {
+      assert.equal(delivered(`Telegram: not sent (${reason})`), false);
+    }
   });
   it("only one overlapping reservation can send", async () => {
     const store = new MemoryStore(); let calls = 0;

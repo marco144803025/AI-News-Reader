@@ -108,10 +108,13 @@ describe("parseBriefResponse", () => {
 
     const tooFew = '[{"text":"One"},{"text":""},{"text":"Two"}]';
     assert.throws(() => parseBriefResponse(tooFew, inputs), /valid bullets/);
+  });
 
+  it("keeps the first five of an over-long brief instead of losing the day", () => {
     const tooMany =
       '[{"text":"1"},{"text":"2"},{"text":"3"},{"text":"4"},{"text":"5"},{"text":"6"}]';
-    assert.throws(() => parseBriefResponse(tooMany, inputs), /valid bullets/);
+    const bullets = parseBriefResponse(tooMany, inputs);
+    assert.deepEqual(bullets.map(bullet => bullet.text), ["1", "2", "3", "4", "5"]);
   });
 
   it("throws on responses without a JSON array", () => {

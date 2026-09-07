@@ -16,6 +16,28 @@ function stateStore(): GitHubStateStore {
   return new GitHubStateStore(process.env.GITHUB_REPOSITORY ?? "", process.env.GITHUB_TOKEN ?? "");
 }
 
+/** Surfaced on the GitHub Actions run summary; a no-op anywhere else. */
+function annotate(kind: "error" | "warning", message: string): void {
+  if (process.env.GITHUB_ACTIONS === "true") console.log(`::${kind} title=Telegram brief::${message}`);
+}
+
+const BENIGN_OUTCOMES = new Set([
+  "Telegram: sent",
+  "Telegram: skipped (already sent)",
+  "Telegram: skipped (disabled)",
+]);
+
+/** True when the brief reached the chat, or deliberately did not need to. */
+export function delivered(outcome: string): boolean {
+  return BENIGN_OUTCOMES.has(outcome);
+}
+
+/** Every other outcome means today's brief is missing, so fail the run loudly. */
+function failSend(outcome: string): never {
+  annotate("error", `${outcome}. Check the ingest step for "brief skipped, carrying previous forward".`);
+  throw new DeliveryError(`${outcome}. No brief was delivered today.`);
+}
+
 /** A one-off lookup, not a listener; never print token-bearing URLs or messages. */
 export async function discoverPrivateChats(token: string, transport: typeof fetch = fetch): Promise<string[]> {
   if (!/^\d+:[A-Za-z0-9_-]{20,}$/.test(token)) throw new DeliveryError("Set TELEGRAM_BOT_TOKEN from BotFather in .env first.");
@@ -44,7 +66,11 @@ async function main(): Promise<void> {
   if (command !== "recover" && args.length) throw new DeliveryError("Unexpected arguments. See docs/telegram-setup.md.");
   switch (command) {
     case "check": {
-      if (process.env.TELEGRAM_ENABLED !== "true") { console.log("Telegram: skipped (disabled)"); return; }
+      if (process.env.TELEGRAM_ENABLED !== "true") {
+        console.log("Telegram: skipped (disabled)");
+        annotate("warning", "TELEGRAM_ENABLED is not \"true\", so this run will not send a brief.");
+        return;
+      }
       telegramLanguage(process.env.TELEGRAM_LANGUAGE);
       telegramConfig(process.env);
       console.log("Telegram configuration: valid format. No network, state writes, or messages sent.");
@@ -70,9 +96,15 @@ async function main(): Promise<void> {
       const language = telegramLanguage(process.env.TELEGRAM_LANGUAGE);
       const config = telegramConfig(process.env);
       const data = await readNews();
+      // A missing, stale or misdated brief means ingestion failed to regenerate
+      // it. Exiting 0 here is what let the pipeline stay green while the brief
+      // silently stopped arriving, so these outcomes now fail the run. This step
+      // runs after the deploy, so failing it never blocks the site update.
       const check = checkBrief(data, Date.now());
-      if (check.reason) { console.log(`Telegram: skipped (${check.reason})`); return; }
-      console.log(await deliverBrief({ enabled: true, data, config, store: stateStore(), language }));
+      if (check.reason) failSend(`Telegram: not sent (${check.reason})`);
+      const outcome = await deliverBrief({ enabled: true, data, config, store: stateStore(), language });
+      console.log(outcome);
+      if (!delivered(outcome)) failSend(outcome);
       return;
     }
     case "status": {
