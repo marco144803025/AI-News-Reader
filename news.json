@@ -1,20 +1,391 @@
 {
-  "generatedAt": "2026-09-06T18:27:05.018Z",
+  "generatedAt": "2026-09-07T11:01:00.706Z",
   "daysBack": 2,
   "categories": [
-    "Business & Funding",
-    "AI Safety & Alignment",
+    "Model Releases",
     "Research",
+    "Business & Funding",
     "Regulation & Policy",
+    "AI Safety & Alignment",
     "Applications",
     "Hardware & Compute",
     "Other",
     "Developer Tools",
-    "Model Releases",
     "Agent Frameworks",
     "MCP"
   ],
   "articles": [
+    {
+      "title": "EXAONE Forecast for Finance",
+      "url": "https://arxiv.org/abs/2609.04239",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-07T04:00:00.000Z",
+      "snippet": "arXiv:2609.04239v1 Announce Type: new Abstract: This technical report presents EXAONE Forecast for Finance (EXAONE Finance), a financial time series (TS) foundation model (TSFM) tailored to financial forecasting. Recent TSFMs achieve strong zero-shot performance through large-scale pretraining. However, they are primarily developed for general-domain TS and largely rely on self-attention backbones whose computational cost grows quadratically with sequence length and variate count. Moreover, they assume fully observed inputs and are pretrained on corpora that fail to capture the unique dynamics",
+      "category": "Model Releases",
+      "summary": "The paper introduces EXAONE Finance, a financial time series foundation model tailored for financial forecasting, addressing limitations of general-domain models with quadratic complexity and fully observed input assumptions.",
+      "summaryZhHK": "論文介紹EXAONE Finance，一個專為金融預測而設嘅金融時間序列基礎模型，解決一般領域模型嘅二次方複雜度同完全觀測輸入假設嘅限制。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "finance",
+          "foundation-model"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "From Matching Models to Recruiting Agents: A Systematized Narrative Review of AI Recruitment Systems, Evaluation, and Governance",
+      "url": "https://arxiv.org/abs/2609.04286",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-07T04:00:00.000Z",
+      "snippet": "arXiv:2609.04286v1 Announce Type: new Abstract: Artificial intelligence in recruitment has shifted the object being automated from profile pairs and ranked lists to multi-stage workflows that retrieve evidence, compare candidates, and support or execute actions. This systematized narrative review traces that development from bilateral retrieval and behavioral ranking through neural person--job matching, large language model (LLM) components, and tool-using recruiting agents. Using a purposive search and coding protocol updated through 23 July 2026, plus targeted updates through 2 September 202",
+      "category": "Research",
+      "summary": "A systematized narrative review traces AI recruitment systems from matching models to multi-stage recruiting agents, evaluating their development and governance.",
+      "summaryZhHK": "一篇系統化敍述性回顧追溯人工智能招聘系統由配對模型到多階段招聘代理嘅發展，評估其演進同治理。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "recruitment",
+          "review"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "Harbor Adapters and Harbor-Index: Infrastructure and a Curated Meta-Dataset for Large-Scale Agentic Evaluation",
+      "url": "https://arxiv.org/abs/2609.04298",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-07T04:00:00.000Z",
+      "snippet": "arXiv:2609.04298v1 Announce Type: new Abstract: Evaluating agents on the growing number of agentic benchmarks is challenging because they often require complex environments and agent integrations. We introduce Harbor Adapters, a unified evaluation infrastructure for agentic benchmarks. Our work makes three contributions. First, we develop benchmark adapters that port more than 80 benchmarks to evaluate arbitrary agents, and validate them through rigorous code review and parity experiments. Second, we conduct a large-scale evaluation of 8 models spanning capability tiers across 54 benchmarks; e",
+      "category": "Research",
+      "summary": "Harbor Adapters provides unified evaluation infrastructure for over 80 agentic benchmarks and conducts large-scale evaluation of 8 models across 54 benchmarks.",
+      "summaryZhHK": "Harbor Adapters為超過80個代理基準提供統一評估基礎設施，並對8個模型進行橫跨54個基準嘅大規模評估。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "evaluation"
+        ],
+        "traits": [
+          "benchmark"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Iris: Climbing to the Search Frontier",
+      "url": "https://arxiv.org/abs/2609.04304",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-07T04:00:00.000Z",
+      "snippet": "arXiv:2609.04304v1 Announce Type: new Abstract: We present Iris-mini and Iris-pro, two search agents trained at the 35B-A3B and 397B-A17B scales, together with the data pipeline and training recipe behind them. Tasks are reverse-constructed from the hyperlink structure of a web corpus: we author multi-hop chains over an entity graph distilled from a seed page and its out-links, rewrite every non-answer entity into a descriptive reference so that no clue can be resolved by string matching, and admit only questions that a reference model fails closed-book yet solves once the supporting evidence ",
+      "category": "Model Releases",
+      "summary": "Iris-mini and Iris-pro are two search agents trained at 35B-A3B and 397B-A17B scales, with tasks reverse-constructed from web corpus hyperlink structures to author multi-hop chains.",
+      "summaryZhHK": "Iris-mini同Iris-pro係兩個分別以35B-A3B同397B-A17B規模訓練嘅搜尋代理，任務由網頁語料庫超連結結構逆向構建，以撰寫多跳鏈。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "search",
+          "agentic"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "A Removal Based Approach to Improve LLM Faithfulness at Test-Time",
+      "url": "https://arxiv.org/abs/2609.04343",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-07T04:00:00.000Z",
+      "snippet": "arXiv:2609.04343v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly used for consequential decisions, making their explanations an important tool for auditing model behavior. Unfortunately, these explanations can be unfaithful, failing to reflect the actual reasoning underlying the model's decisions. We consider a setting in which an LLM provides both an answer and an explanation in response to a question. We identify two distinct dimensions of unfaithful explanations: incompleteness, meaning that the explanation omits factors that influence the answer, and unsoundnes",
+      "category": "Research",
+      "summary": "This paper proposes a removal-based approach to improve LLM faithfulness at test-time by addressing incompleteness and unsoundness in model explanations.",
+      "summaryZhHK": "論文提出一種基於移除嘅方法，喺測試時間改善大型語言模型嘅忠實度，處理解釋嘅不完整性同非健全性。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm",
+          "faithfulness",
+          "interpretability"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "Why Better Models Can Create Riskier Systems: Evidence from LLM Agents in Financial Markets",
+      "url": "https://arxiv.org/abs/2609.04373",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-07T04:00:00.000Z",
+      "snippet": "arXiv:2609.04373v1 Announce Type: new Abstract: Large language models (LLMs) are being deployed at scale in consequential real-world systems, from financial markets to content moderation to hiring. We show that improving individual model capability can degrade rather than improve system-level outcomes. We hypothesize that shared training and architectures can lead more capable LLMs to behave more similarly, creating correlated actions that do not diversify away. We develop a general framework showing how this correlation creates a non-diversifiable risk floor and test its predictions in financ",
+      "category": "Research",
+      "summary": "The study demonstrates that improving individual model capability can degrade system-level outcomes, as shared training creates correlated actions and a non-diversifiable risk floor in financial markets.",
+      "summaryZhHK": "研究顯示提升個別模型能力可能降低系統層面表現，因為共享訓練導致相關行為同不可分散嘅風險底線喺金融市場出現。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "llm",
+          "risk",
+          "financial"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "Corporate Language Model (CLM): Transforming Tacit and Fragmented Enterprise Knowledge into a Sovereign, Auditable, and Executable Corporate Intelligence Layer",
+      "url": "https://arxiv.org/abs/2609.04377",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-07T04:00:00.000Z",
+      "snippet": "arXiv:2609.04377v1 Announce Type: new Abstract: Enterprise AI deployments fail not from model inadequacy, but because organizations lack a structured substrate encoding how they decide, negotiate, and execute. Generic LLMs carry no firm-specific ontological priors; RAG remains brittle, with no path to executable action; static playbooks encode logic but cannot reason or adapt. This demands an architecture treating tacit-knowledge capture, ontological grounding, sovereign deployment, and auditable actuation as co-designed from the start. This paper introduces the Corporate Language Model (CLM),",
+      "category": "Research",
+      "summary": "The Corporate Language Model (CLM) architecture treats tacit-knowledge capture, ontological grounding, sovereign deployment, and auditable actuation as co-designed for enterprise intelligence.",
+      "summaryZhHK": "企業語言模型（CLM）架構將隱性知識捕獲、本體論基礎、主權部署同可審計執行視為共同設計，以實現企業智能。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "enterprise",
+          "llm",
+          "architecture"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "HarvestBench: Measuring Whether LLM Agents Will Pay to Avoid Killing Animals",
+      "url": "https://arxiv.org/abs/2609.04444",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-07T04:00:00.000Z",
+      "snippet": "arXiv:2609.04444v1 Announce Type: new Abstract: Benchmarks for the side effects an agent causes on the way to a goal already exist, but HarvestBench is the first to put a price on avoiding the side effect and to name that side effect as a living creature. It is a farm simulation: LLM sub-agents drive a crew of two tractors through a cooperative corn harvest, with animals in the field. The environment is a reinforcement learning gridworld, every decision is made without memory, and the harm is never named in the goal. When an animal blocks a tractor's route the autopilot stops and asks the mode",
+      "category": "Research",
+      "summary": "HarvestBench is the first benchmark placing a price on avoiding side effects on living creatures, using a farm simulation where LLM sub-agents drive tractors through a corn harvest with animals present.",
+      "summaryZhHK": "HarvestBench係首個為避免對生物造成附帶影響而訂立價格嘅基準，使用農場模擬場景，讓大型語言模型子代理駕駛拖拉機喺有動物嘅玉米田收割。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "evaluation"
+        ],
+        "traits": [
+          "benchmark"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "PerfReasoning: How Well Do LLMs Reason on Hardware Performance?",
+      "url": "https://arxiv.org/abs/2609.04476",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-07T04:00:00.000Z",
+      "snippet": "arXiv:2609.04476v1 Announce Type: new Abstract: Performance modeling is central to hardware design and software optimization, yet constructing these models requires structured reasoning about computation, data reuse, storage, and movement. We introduce PerfReasoning, a benchmark that evaluates LLMs both as direct performance reasoners and as generators of analytical performance-model code. Given workload, architecture, and mapping specifications, models compare mappings and predict off-chip traffic and buffer requirements. The strongest closed-source models exceed 90% on reasoning-based Q&A, a",
+      "category": "Research",
+      "summary": "PerfReasoning is a benchmark evaluating LLMs as direct performance reasoners and generators of analytical performance-model code for hardware design, with strongest closed-source models exceeding 90% on reasoning Q&A.",
+      "summaryZhHK": "PerfReasoning係一個基準，評估大型語言模型作為直接效能推理器同分析效能模型代碼生成器，最強封閉源模型喺推理問答中超過90%。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "hardware",
+          "reasoning"
+        ],
+        "traits": [
+          "benchmark"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Rethinking Indirect Prompt Injection as a Test-Time Search Problem",
+      "url": "https://arxiv.org/abs/2609.04495",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-07T04:00:00.000Z",
+      "snippet": "arXiv:2609.04495v1 Announce Type: new Abstract: We formulate indirect prompt injection as a test-time search over a task-dependent attack surface induced by the environment, user task, and injection task. To operationalize this formulation, we introduce an agentic attacker with a dedicated search harness that performs environment reconnaissance, structured reasoning over attack strategies, and adaptive evaluation using victim-agent feedback. Across heterogeneous tasks, we find that increasing attacker test-time compute improves vulnerability discovery and exploitation, while ablations show tha",
+      "category": "Research",
+      "summary": "The paper formulates indirect prompt injection as a test-time search problem and introduces an agentic attacker showing that increasing test-time compute improves vulnerability discovery.",
+      "summaryZhHK": "論文將間接提示注入表述為測試時間搜尋問題，並引入代理攻擊者，顯示增加測試時間計算可改善漏洞發現。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "agentic",
+          "security"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "BioSync: Transformer-Based Cross-Modal Fusion for a Multimodal Physiological Digital Biomarker",
+      "url": "https://arxiv.org/abs/2609.04504",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-07T04:00:00.000Z",
+      "snippet": "arXiv:2609.04504v1 Announce Type: new Abstract: Cardiac, neural, behavioral, and speech measurements from wearable and mobile devices provide partial, noise-sensitive views of physiological state. BioSync combines these measurements into the \\textbf{BioSync Index (BSI)}, a continuous composite digital biomarker defined under the BEST framework. The model applies multi-head self-attention to modality tokens and adds a linear branch whose hypothesis class includes standard feature concatenation. This architecture is motivated by latent-variable measurement theory and by the possibility that join",
+      "category": "Research",
+      "summary": "BioSync is a transformer-based cross-modal fusion model producing the BioSync Index, a continuous composite digital biomarker combining cardiac, neural, behavioral, and speech measurements.",
+      "summaryZhHK": "BioSync係一個基於Transformer嘅跨模態融合模型，產生BioSync指數，一個結合心臟、神經、行為同語音測量嘅連續複合數碼生物標記。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal",
+          "health"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "What Does Multi-Harness RL Learn? Credit Assignment and Portability in Coding Agents",
+      "url": "https://arxiv.org/abs/2609.04518",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-07T04:00:00.000Z",
+      "snippet": "arXiv:2609.04518v1 Announce Type: new Abstract: Agent reinforcement learning (RL) increasingly runs through full execution harnesses, and a multi-harness recipe mixes two choices: exposing the policy to several harnesses, and comparing their rewards inside one relative-advantage group. We isolate the second choice in repository-level coding. From one Qwen3-8B supervised warm start we replay the same frozen task-harness records from Aider, OpenHands, Qwen Code, and SWE-agent, with the same number of updates, under two rules for group-relative policy optimization (GRPO), Within (one group per ta",
+      "category": "Research",
+      "summary": "The paper isolates credit assignment in multi-harness RL for coding agents, replaying frozen task-harness records from Aider, OpenHands, Qwen Code, and SWE-agent under different GRPO rules.",
+      "summaryZhHK": "論文隔離編碼代理中多框架強化學習嘅信用分配，喺唔同GRPO規則下重播Aider、OpenHands、Qwen Code同SWE-agent嘅凍結任務框架記錄。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reinforcement-learning",
+          "coding"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "MaxKernel: Agentic Kernel Generation for TPUs",
+      "url": "https://arxiv.org/abs/2609.04523",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-07T04:00:00.000Z",
+      "snippet": "arXiv:2609.04523v1 Announce Type: new Abstract: Designing and authoring high-performance custom kernels for accelerators is a complex task that requires deep hardware-level expertise. Large Language Models (LLM) can be leveraged together with real-time compiler feedback to build agentic systems for kernel generation. In this work, we present MaxKernel, a multi-agent system that implements three distinct paradigms for TPU kernel development: (1) a Human-in-the-Loop (HITL) agent for collaborative, step-by-step design; (2) an Autonomous (Auto) agent that executes a fully automated, metric/trace-d",
+      "category": "Research",
+      "summary": "MaxKernel is a multi-agent system implementing paradigms for TPU kernel generation, including Human-in-the-Loop, Autonomous, and agentic approaches with compiler feedback.",
+      "summaryZhHK": "MaxKernel係一個多代理系統，實現TPU內核生成嘅範式，包括人機協作、全自動同代理方法，並配合編譯器反饋。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "hardware",
+          "kernel"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "From Answers to Interpretations: Rethinking Ambiguity-Induced Aleatoric Uncertainty Estimation in LLMs",
+      "url": "https://arxiv.org/abs/2609.04543",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-07T04:00:00.000Z",
+      "snippet": "arXiv:2609.04543v1 Announce Type: new Abstract: A key challenge in reliable LLM deployment is recognizing when uncertainty reflects irreducible variability in the task rather than limitations in the model's knowledge. In language tasks, a central source of such aleatoric uncertainty is input ambiguity or underspecification, where multiple interpretations remain plausible. Existing decomposition methods estimate aleatoric uncertainty by generating multiple clarifications of the input, querying the model for an answer under each clarification, and comparing the resulting answers. We argue that a",
+      "category": "Research",
+      "summary": "The paper rethinks aleatoric uncertainty estimation in LLMs, arguing that input ambiguity and multiple plausible interpretations require a shift from answers to interpretations.",
+      "summaryZhHK": "論文重新思考大型語言模型中嘅隨機不確定性估計，主張輸入歧義同多重合理詮釋要求由答案轉向詮釋。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm",
+          "uncertainty"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "IPGeoAI: Transformer-Based Geolocation with LLM Semantic Fusion",
+      "url": "https://arxiv.org/abs/2609.04559",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-07T04:00:00.000Z",
+      "snippet": "arXiv:2609.04559v1 Announce Type: new Abstract: Accurate city-level IP Geolocation is an important enabler for the modern digital ecosystem, underpinning services ranging from local content delivery and targeting to digital rights enforcement. However, traditional heuristic and database-driven methods often struggle to resolve the complex, non-linear allocation patterns of modern network infrastructures, particularly within the exploding IPv6 address space and transient mobile networks. In this paper, we introduce IPGeoAI, a novel deep learning model architecture that reframes geolocation from",
+      "category": "Research",
+      "summary": "IPGeoAI is a transformer-based deep learning model with LLM semantic fusion for accurate city-level IP geolocation, addressing complex allocation patterns in IPv6 and mobile networks.",
+      "summaryZhHK": "IPGeoAI係一個基於Transformer嘅深度學習模型，結合大型語言模型語義融合，實現準確嘅城市級IP地理定位，應對IPv6同流動網絡嘅複雜分配模式。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "geolocation",
+          "multimodal"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Supporting independent journalism in Ukraine",
+      "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-09-07T00:00:00.000Z",
+      "snippet": "OpenAI, AIRPPU and WAN-IFRA launch an AI program to help Ukrainian news organizations strengthen innovation, resilience, and independent journalism.",
+      "category": "Business & Funding",
+      "summary": "OpenAI, AIRPPU and WAN-IFRA have launched an AI program to support Ukrainian news organizations in strengthening innovation, resilience, and independent journalism.",
+      "summaryZhHK": "OpenAI、AIRPPU同WAN-IFRA推出一個人工智能計劃，協助烏克蘭新聞機構加強創新、韌性同獨立新聞業。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "partnership"
+        ],
+        "traits": [],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Seattle Times and Newsday sue OpenAI and Microsoft for infringement",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/990932/seattle-times-newsday-lawsuit-openai-microsoft",
+      "source": "The Verge AI",
+      "publishedAt": "2026-09-06T23:36:04.000Z",
+      "snippet": "The OpenAI logo is displayed on a smartphone screen placed on a reflective surface on which the company's logo is projected in Creteil, France, on September 4, 2026, as OpenAI began rolling out GPT-6 Astra, its most advanced model to date. (Photo by Samuel Boivin/NurPhoto via Getty Images) | NurPhoto via Getty Images The Seattle Times and Newsday are just the latest plaintiffs to take OpenAI to court, alleging copyright infringement. The two outlets say the company used their journalism as training data for its AI models without permission and often reproduces passages from their reporting in ",
+      "category": "Regulation & Policy",
+      "summary": "The Seattle Times and Newsday have filed copyright infringement lawsuits against OpenAI and Microsoft, alleging unauthorized use of their journalism as training data and reproduction of their reporting.",
+      "summaryZhHK": "《西雅圖時報》及《Newsday》對OpenAI同微軟提出版權侵權訴訟，指控對方未經授權將其新聞報道用作人工智能模型嘅訓練數據，並複製其報道內容。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "copyright"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "openai",
+          "microsoft"
+        ]
+      }
+    },
+    {
+      "title": "Authors push back as publishers and agents make claims on Anthropic settlement",
+      "url": "https://techcrunch.com/2026/09/06/authors-push-back-as-publishers-and-agents-seek-share-of-anthropic-settlement/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-06T20:47:37.000Z",
+      "snippet": "Authors say publishers seem to be claiming more than their fair share of settlement payments.",
+      "category": "Business & Funding",
+      "summary": "Authors are pushing back against publishers and agents who appear to be claiming more than their fair share of the Anthropic settlement payments.",
+      "summaryZhHK": "作者們反對出版商同經理人似乎索取超出佢哋應得份額嘅Anthropic和解款項。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "dispute"
+        ],
+        "traits": [],
+        "entities": [
+          "anthropic"
+        ]
+      }
+    },
     {
       "title": "Travis Kalanick’s Atoms might be getting into the robotaxi business",
       "url": "https://techcrunch.com/2026/09/06/travis-kalanicks-atoms-might-be-getting-into-the-robotaxi-business/",
@@ -5307,197 +5678,58 @@
           "deepmind"
         ]
       }
-    },
-    {
-      "title": "Making an AI bid writer refuse to lie",
-      "url": "https://ailucius.com/blog/making-an-ai-bid-writer-refuse-to-lie",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-08-08T10:13:31.000Z",
-      "snippet": "Article URL: https://ailucius.com/blog/making-an-ai-bid-writer-refuse-to-lie Comments URL: https://news.ycombinator.com/item?id=49220378 Points: 50 # Comments: 0",
-      "category": "AI Safety & Alignment",
-      "summary": "Technical exploration of methods to prevent AI bid-writing systems from generating false or misleading claims in proposals.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety",
-          "alignment"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Should AI labs be treated like the owners of dangerous animals?",
-      "url": "https://www.economist.com/science-and-technology/2026/08/06/should-ai-labs-be-treated-like-the-owners-of-dangerous-animals",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-08-08T00:03:31.000Z",
-      "snippet": "Article URL: https://www.economist.com/science-and-technology/2026/08/06/should-ai-labs-be-treated-like-the-owners-of-dangerous-animals Comments URL: https://news.ycombinator.com/item?id=49217629 Points: 51 # Comments: 58",
-      "category": "Regulation & Policy",
-      "summary": "Examines whether AI labs should face liability frameworks similar to owners of dangerous animals, raising questions about AI governance and responsibility.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety"
-        ],
-        "traits": [
-          "policy"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "OpenAI says it slowed Astra model development over security concerns",
-      "url": "https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-08-07T22:48:24.000Z",
-      "snippet": "OpenAI said this model, which is still in development, reached its \"critical cybersecurity threshold,\" meaning it could independently identify and carry out cyberattacks against traditionally well-protected real-world systems.",
-      "category": "AI Safety & Alignment",
-      "summary": "OpenAI disclosed that its Astra model reached a critical cybersecurity threshold where it could independently identify and execute cyberattacks on protected systems.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "agentic",
-          "safety"
-        ],
-        "traits": [],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "After Rippling blew millions on AI in months, it built an employee ROI tool",
-      "url": "https://techcrunch.com/2026/08/07/after-rippling-blew-millions-on-ai-in-months-it-built-an-employee-roi-tool/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-08-07T21:30:11.000Z",
-      "snippet": "After its own AI usage wake-up call, Rippling this week unveiled AI Spend Console, a product that tracks individual and team employee AI spending.",
-      "category": "Applications",
-      "summary": "Rippling launched AI Spend Console to track and manage employee AI spending after realizing significant costs from AI tool usage.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "enterprise",
-          "cost-management"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Fenix Flexin isn’t even denying using AI to make ‘Rubberz’ anymore",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/976801/fenix-flexin-rubberz-ai-song-treblo",
-      "source": "The Verge AI",
-      "publishedAt": "2026-08-07T20:01:51.000Z",
-      "snippet": "That cover art is almost certainly AI too. | Image: Fenix Flexin It took long enough, but now LA rapper Fenix Flexin appears to have admitted using AI for the 80s synth pop-themed song \"Rubberz.\" His comments follow the producer Medasin's videos claiming that an AI tool called Treblo (formerly Sonauto) was used to make the song, and the company releasing an AI detector that identifies it as Treblo AI-created. In a reply to a comment pointing out that Tyga admitted to relying on AI for his own controversial '80s-influenced album $tarface, on one of his Instagram posts, Fenix said: never said I ",
-      "category": "Applications",
-      "summary": "LA rapper Fenix Flexin has admitted to using AI tool Treblo to create his song 'Rubberz,' following producer claims and AI detection confirmation.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "ai-generated-content",
-          "music"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Watching Roku’s AI channel is like eating from a trough",
-      "url": "https://www.theverge.com/entertainment/976939/roku-fairground-ai-fast-channel",
-      "source": "The Verge AI",
-      "publishedAt": "2026-08-07T18:59:46.000Z",
-      "snippet": "The appeal of free ad-supported streaming television (FAST) channels has always been the way they make it easier to (re)discover classic films and series. But Roku's latest experiment in the FAST space has less to do with traditionally produced entertainment and is entirely focused on giving viewers access to a constant source of AI-generated content. This week, Roku added four new channels to its library of streamable programming. Along with dedicated feeds for old episodes of Mad TV, Whose Line Is It Anyway?, and a variety of Black sitcoms, the platform also debuted a 24/7 stream filled with",
-      "category": "Applications",
-      "summary": "Roku launched a 24/7 channel streaming entirely AI-generated content as part of its free ad-supported streaming service expansion.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "ai-generated-content",
-          "streaming"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "OpenAI puts the brakes on a new model because it&#8217;s supposedly too powerful",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities",
-      "source": "The Verge AI",
-      "publishedAt": "2026-08-07T18:40:34.000Z",
-      "snippet": "OpenAI says it is pausing \"internal activities\" around an in-development AI model, Astra, because it doesn't yet meet new security standards the company is putting in place. The announcement follows its recent disclosure that OpenAI models accidentally hacked Hugging Face. Anthropic and Meta have also since admitted that they had AI models that went rogue and breached other organizations. Recent internal evaluations of an OpenAI model called Astra indicate that it offers \"significant advancements in agentic coding and cybersecurity,\" according to the company. \"These results, in addition to exp",
-      "category": "AI Safety & Alignment",
-      "summary": "OpenAI paused development of its Astra model due to security concerns, citing advances in agentic coding and cybersecurity capabilities that exceed current safety standards.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "agentic",
-          "safety"
-        ],
-        "traits": [],
-        "entities": [
-          "openai"
-        ]
-      }
     }
   ],
   "feedHealth": {
     "The Verge AI": {
-      "lastSuccess": "2026-09-06T18:27:02.883Z",
+      "lastSuccess": "2026-09-07T11:00:56.235Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "TechCrunch AI": {
-      "lastSuccess": "2026-09-06T18:27:02.990Z",
+      "lastSuccess": "2026-09-07T11:00:56.297Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Ars Technica AI": {
-      "lastSuccess": "2026-09-06T18:27:03.161Z",
+      "lastSuccess": "2026-09-07T11:00:56.479Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "VentureBeat AI": {
       "lastSuccess": "2026-08-15T06:19:55.431Z",
       "lastError": "Status code 429",
-      "consecutiveFailures": 2
+      "consecutiveFailures": 3
     },
     "Anthropic News": {
       "lastSuccess": null,
       "lastError": "Status code 404",
-      "consecutiveFailures": 56
+      "consecutiveFailures": 57
     },
     "OpenAI Blog": {
-      "lastSuccess": "2026-09-06T18:27:03.504Z",
+      "lastSuccess": "2026-09-07T11:00:56.928Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Google DeepMind": {
-      "lastSuccess": "2026-09-06T18:27:03.684Z",
+      "lastSuccess": "2026-09-07T11:00:57.206Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "MIT Tech Review AI": {
-      "lastSuccess": "2026-09-06T18:27:03.743Z",
+      "lastSuccess": "2026-09-07T11:00:57.309Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "arXiv cs.AI": {
-      "lastSuccess": "2026-09-06T18:27:03.889Z",
+      "lastSuccess": "2026-09-07T11:00:57.422Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Hacker News (AI)": {
       "lastSuccess": "2026-08-14T07:08:24.642Z",
       "lastError": "Status code 502",
-      "consecutiveFailures": 3
+      "consecutiveFailures": 4
     }
   },
   "brief": {
