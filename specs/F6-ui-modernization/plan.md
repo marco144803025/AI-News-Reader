@@ -1,7 +1,7 @@
 # UI Redesign — "Stop the Presses" — Plan
 
 **Spec:** ./spec.md
-**Status:** Plan
+**Status:** Build
 
 ## Approach
 
@@ -110,6 +110,10 @@ font, built CSS carries the `/AI-News-Reader/` base on font URLs).
 **Still pending manual runs:** Lighthouse accessibility baseline comparison
 (AC10) and `prefers-reduced-motion` emulation (AC8 — the CSS guard is in
 place); font-blocked fallback rendering (AC6) not yet exercised.
+
+- [ ] Compare the classic and extra layouts with a Lighthouse accessibility audit (AC10).
+- [ ] Emulate `prefers-reduced-motion` and verify transitions become instant (AC8).
+- [ ] Block `public/fonts/` and verify the fallback layout remains intact (AC6).
 
 Maps to acceptance criteria in `spec.md`:
 

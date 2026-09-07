@@ -1,7 +1,7 @@
 # Portfolio Presentation & Shareability
 
 **ID:** F7-portfolio-presentation
-**Status:** Build (spec & plan approved 2026-07-02)
+**Status:** Done (spec & plan approved 2026-07-02)
 **Owner:** Marco
 
 ## Intent

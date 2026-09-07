@@ -1,7 +1,7 @@
 # Search & tag filtering
 
 **ID:** F4-search-and-tags
-**Status:** Done (UI shipped; backfill pending — see notes)
+**Status:** Done
 **Owner:** marco14480
 
 ## Completion notes
@@ -29,12 +29,9 @@ Both stages implemented. 33 unit tests pass (`npm test`), typecheck clean
 - **AC8 forward-compat:** verified — pre-backfill articles render
   without chips and don't throw. Untagged articles are excluded from
   results once any group filter is active (documented test).
-- **Pending operator step:** run `npm run backfill` against live
-  `public/news.json` to populate tags for the existing ~185 archived
-  articles (AC7). Estimated cost ≈ $1–2. Not done automatically —
-  requires API key + spend authorization.
-- **Roll-out window:** between this commit and the backfill commit, new
-  articles get tags and older ones don't. UI degrades gracefully.
+- **Backfill complete:** the live `public/news.json` archive now has tags on
+  all 270 retained articles, satisfying AC7. The temporary mixed tagged/untagged
+  rollout window is closed.
 
 ## Bundled work: ingest verification harness (formerly F1a)
 

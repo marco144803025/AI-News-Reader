@@ -1,7 +1,7 @@
 # SPEC: Personal Telegram Morning Brief
 
 **ID:** F11-telegram-brief
-**Status:** Build — implementation complete; live account setup pending
+**Status:** Done — hosted Telegram delivery verified
 **Owner:** Marco
 **Delivery sequence:** Implement after F10. Marco explicitly requested F10 and
 F11 in this task; existing F6/F5 work remains outside this delivery sequence.
@@ -192,9 +192,8 @@ workflow integration, and `docs/telegram-setup.md` are implemented.
 preview correctly printed `Telegram preview: stale brief` for the retained
 2026-07-03 brief and made no network requests or state writes.
 
-Pending: TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID were absent locally at the
-configuration check. Local state access additionally needs GITHUB_TOKEN and
-GITHUB_REPOSITORY, or use the hosted workflow's automatically supplied GitHub
-credentials. GitHub secret/variable setup, publication, and one confirmed live
-Telegram delivery are required before marking F11 fully Done. No bot messages
-or GitHub state writes were performed during this implementation task.
+At this implementation checkpoint, TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID were
+absent locally, so no bot message or GitHub state write was performed. Hosted
+setup and delivery were subsequently completed: workflow run #117 logged
+`Telegram: sent` and delivered the committed brief in 29 seconds, satisfying the
+remaining live acceptance check.

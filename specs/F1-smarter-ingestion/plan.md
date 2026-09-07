@@ -1,7 +1,7 @@
 # Smarter ingestion — Plan
 
 **Spec:** ./spec.md
-**Status:** Plan
+**Status:** Done
 
 ## Approach
 
@@ -103,19 +103,19 @@ import type { NewsData, FeedHealth } from '../src/types.ts';
 
 ## Tasks
 
-- [ ] Add `FeedHealth` type and `feedHealth?: Record<string, FeedHealth>` to `NewsData` in `src/types.ts`; add comment to `daysBack`: "fetch window used in this run"
-- [ ] Parse `RETENTION_DAYS` from env; validate `Number.isFinite && >= 1`; else `console.error` + `process.exit(1)` before any file I/O
-- [ ] Add `withRetry<T>` helper: `delays = [1000, 2000, 4000]`; 0-based attempt index clamped via `Math.min(attempt, delays.length - 1)`; SDK class hierarchy for transient; `Retry-After` header on `RateLimitError` using `Math.max(delay, parseFloat(retryAfter ?? "0") * 1000)`; rethrow all non-transient immediately
-- [ ] Wrap each batch's `classifyBatch` call in `withRetry`; exhausted retries → log + skip; rethrown permanent errors → propagate to `main()` which exits 1
-- [ ] Catch-up: if `existing !== null`, compute `parsedAt = Date.parse(existing.generatedAt)`; if `Number.isFinite(parsedAt)`, compute `effectiveDaysBack = Math.min(7, Math.max(DAYS_BACK, Math.ceil((Date.now() - parsedAt) / 86400000) + 1))`; else `effectiveDaysBack = DAYS_BACK`; if `existing === null`, use `DAYS_BACK`
-- [ ] Pass `effectiveDaysBack` as a parameter to `fetchFeeds`; replace the `DAYS_BACK` constant inside the function with this parameter for the cutoff calculation
-- [ ] Delete local `NewsData` declaration at `ingest/ingest.ts:68-73`; add `import type { NewsData, FeedHealth } from '../src/types.ts'`
-- [ ] Update `fetchFeeds` to return `{ articles: RawArticle[], health: Record<string, FeedHealth> }`; inside fetch loop capture `fetchedAt` at success time; build health with explicit three-way branch (succeeded / failed / not-attempted carry-forward)
-- [ ] Determine `generatedAt`: count `newCount` as items passing dedup (before classification); if `newCount > 0` → `new Date().toISOString()`; else → `existing?.generatedAt ?? new Date().toISOString()`
-- [ ] Write merged `feedHealth`, computed `generatedAt`, and `effectiveDaysBack` as `daysBack` in both paths (typed via the imported `NewsData`)
-- [ ] Add `RETENTION_DAYS=30` to `.env.example` with a comment
-- [ ] Run `npx tsc --noEmit` — confirm zero errors
-- [ ] Update `specs/ROADMAP.md` F1 row to `Done` and add completion notes to `spec.md`
+- [x] Add `FeedHealth` type and `feedHealth?: Record<string, FeedHealth>` to `NewsData` in `src/types.ts`; add comment to `daysBack`: "fetch window used in this run"
+- [x] Parse `RETENTION_DAYS` from env; validate `Number.isFinite && >= 1`; else `console.error` + `process.exit(1)` before any file I/O
+- [x] Add `withRetry<T>` helper: `delays = [1000, 2000, 4000]`; 0-based attempt index clamped via `Math.min(attempt, delays.length - 1)`; SDK class hierarchy for transient; `Retry-After` header on `RateLimitError` using `Math.max(delay, parseFloat(retryAfter ?? "0") * 1000)`; rethrow all non-transient immediately
+- [x] Wrap each batch's `classifyBatch` call in `withRetry`; exhausted retries → log + skip; rethrown permanent errors → propagate to `main()` which exits 1
+- [x] Catch-up: if `existing !== null`, compute `parsedAt = Date.parse(existing.generatedAt)`; if `Number.isFinite(parsedAt)`, compute `effectiveDaysBack = Math.min(7, Math.max(DAYS_BACK, Math.ceil((Date.now() - parsedAt) / 86400000) + 1))`; else `effectiveDaysBack = DAYS_BACK`; if `existing === null`, use `DAYS_BACK`
+- [x] Pass `effectiveDaysBack` as a parameter to `fetchFeeds`; replace the `DAYS_BACK` constant inside the function with this parameter for the cutoff calculation
+- [x] Delete local `NewsData` declaration at `ingest/ingest.ts:68-73`; add `import type { NewsData, FeedHealth } from '../src/types.ts'`
+- [x] Update `fetchFeeds` to return `{ articles: RawArticle[], health: Record<string, FeedHealth> }`; inside fetch loop capture `fetchedAt` at success time; build health with explicit three-way branch (succeeded / failed / not-attempted carry-forward)
+- [x] Determine `generatedAt`: count `newCount` as items passing dedup (before classification); if `newCount > 0` → `new Date().toISOString()`; else → `existing?.generatedAt ?? new Date().toISOString()`
+- [x] Write merged `feedHealth`, computed `generatedAt`, and `effectiveDaysBack` as `daysBack` in both paths (typed via the imported `NewsData`)
+- [x] Add `RETENTION_DAYS=30` to `.env.example` with a comment
+- [x] Run `npx tsc --noEmit` — confirm zero errors
+- [x] Update `specs/ROADMAP.md` F1 row to `Done` and add completion notes to `spec.md`
 
 ## Verification
 

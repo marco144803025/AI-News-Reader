@@ -1,7 +1,7 @@
 # UI Redesign — "Stop the Presses" (A/B Feature Flag)
 
 **ID:** F6-ui-modernization
-**Status:** Plan (spec approved 2026-07-02)
+**Status:** Build (spec approved 2026-07-02)
 **Owner:** Marco
 
 ## Intent

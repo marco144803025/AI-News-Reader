@@ -1,7 +1,7 @@
 # DeepSeek API Migration
 
 **ID:** F10-deepseek-migration
-**Status:** Done — local implementation verified; hosted rollout pending
+**Status:** Done — local and hosted rollout verified
 **Owner:** Marco
 
 ## Intent

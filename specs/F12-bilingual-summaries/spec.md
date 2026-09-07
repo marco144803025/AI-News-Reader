@@ -1,7 +1,7 @@
 # SPEC: English / Hong Kong Traditional Chinese summaries
 
 **ID:** F12-bilingual-summaries
-**Status:** Build — published; live Chinese delivery and wording review pending
+**Status:** Build — published; live Chinese Telegram delivery pending
 **Owner:** Marco
 **Sequence:** After F11, as explicitly requested on 2026-09-06.
 
@@ -26,8 +26,9 @@ User stories:
   existing DeepSeek integration, and scheduled delivery architecture.
 - Generate paired English and Chinese text in the existing classification and
   brief calls. No translation calls on page views, toggles, or Telegram sends.
-- Use `en` and `zh-HK`; Traditional Chinese with Hong Kong vocabulary and
-  natural written prose, not Simplified Chinese or colloquial Cantonese by default.
+- Use `en` and `zh-HK`; Traditional Chinese with authentic Hong Kong vocabulary
+  and a natural Cantonese-influenced written tone. Particles and pronouns such as
+  `嘅` and `佢` are welcome; do not use Simplified Chinese.
 - Preserve proper names, product/model identifiers, code terms, numbers, and
   factual qualifications. Both versions express the same claims and citations.
 - No new dependencies, secrets, server, or paid services.
@@ -165,7 +166,8 @@ translation quality.
 No blocking questions for this draft. Assumptions for review:
 - "Summary" includes article summaries and the daily brief, not just Telegram.
 - Website first-visit default stays English; Telegram defaults to Chinese.
-- Standard HK written Traditional Chinese is preferred over spoken Cantonese.
+- Authentic Hong Kong Traditional Chinese may use natural Cantonese vocabulary,
+  particles, and pronouns; it should still be concise and easy to scan.
 - Explicit English fallback is preferable to skipping a useful morning brief.
 - New content becomes bilingual; historical content uses fallback until it ages
   out or a separate archive translation task is approved.
@@ -261,8 +263,8 @@ Existing retention logic pruned expired articles; 267 retained older articles
 remain English-only. No historical translation/backfill was run.
 
 Today's earlier Telegram delivery prevented a duplicate, as required. Actual
-Chinese delivery remains to be verified on a future eligible run. The live model
-sample contains colloquial Cantonese (e.g. 嘅 and 佢) despite the written-Chinese
-prompt: Traditional Chinese output is verified, but the specified written-HK
-style is not fully met. Record this for wording review; do not claim that quality
-criterion passed. No extra generation or manual rewriting was performed.
+Chinese delivery remains to be verified on a future eligible run. Marco reviewed
+the live model sample on 2026-09-07 and approved its authentic Hong Kong tone,
+including natural use of `嘅` and `佢`. The prompts now explicitly request that
+style while continuing to reject Simplified Chinese and preserve English
+technical terms. No extra generation or manual rewriting was performed.

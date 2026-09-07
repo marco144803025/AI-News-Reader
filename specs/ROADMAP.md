@@ -18,6 +18,7 @@ feature must reach **Done** before the next starts, unless explicitly paralleliz
 | F10 | [DeepSeek API migration](./F10-deepseek-migration/)               | Done        | Backend    |
 | F11 | [Personal Telegram morning brief](./F11-telegram-brief/)         | Done        | Delivery   |
 | F12 | [English / HK Traditional Chinese summaries](./F12-bilingual-summaries/) | Build | Content |
+| F13 | [Source expansion & dedupe](./F13-source-expansion/)             | Not started | Backend    |
 
 F12 requested 2026-09-06 as the next task after Telegram. A spec and draft
 implementation plan are documented together at Marco's request for review.
@@ -28,9 +29,10 @@ Implementation is complete locally: 111 tests passed, production build passed,
 and both layouts were checked on desktop/mobile with bilingual and legacy
 fixtures. Published as `6d67eca`; full workflow run `34051731622` succeeded with
 3 new bilingual articles and a 3-bullet bilingual brief, verified on the hosted
-site. Telegram skipped today's already-sent delivery. Actual Chinese delivery
-and wording review remain pending: the live sample uses some colloquial Cantonese
-despite the written-HK prompt. See the F12 spec's publication evidence.
+site. Telegram skipped today's already-sent delivery. Marco approved the live
+sample's authentic Hong Kong Cantonese tone on 2026-09-07, including `嘅` and
+`佢`; only an actual eligible Chinese Telegram delivery remains pending. See the
+F12 spec's publication evidence.
 
 Current requested sequence (2026-09-06): F10 followed by F11, authorized as a
 separate workstream from the existing F6/F5 queue. Marco approved proceeding
@@ -139,6 +141,18 @@ to Marco's private Telegram chat after the scheduled site update. Reuse F10's
 generated output without another model call. Include a preview command, safe
 credential setup, freshness checks, persistent duplicate protection, and visible
 delivery failures while retaining the static website architecture.
+
+**F13: Source expansion & dedupe.** `feeds.json` still holds the original 10
+sources from F0 — Anglophone, vendor-heavy, thin on policy and applied AI, and
+with no Chinese-language input now that F12 produces Traditional Chinese
+summaries. Widen the source list *and* add the controls that make a wider list
+safe: cross-source deduplication so one story is one card, and a per-run
+classified-article ceiling so extra feeds cannot silently multiply the daily
+DeepSeek spend. Adding a source must stay a `feeds.json` edit with no code
+change; failures keep flowing through the existing `feedHealth` contract that F9
+renders. RSS/Atom only — no scraping, per Constitution rules #1 and #2. Spec is
+a stub with open questions on the source shortlist, the dedupe signal, and the
+per-run cap; Gate 1 pending.
 
 ## Cross-cutting (planned later)
 

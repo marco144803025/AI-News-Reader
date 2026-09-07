@@ -1,7 +1,7 @@
 # Trends & Pipeline Transparency
 
 **ID:** F9-trends-dashboard
-**Status:** Build (spec & plan approved 2026-07-02)
+**Status:** Done (spec & plan approved 2026-07-02)
 **Owner:** Marco
 
 ## Intent

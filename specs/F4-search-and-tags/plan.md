@@ -1,7 +1,7 @@
 # Search & tag filtering — Plan
 
 **Spec:** ./spec.md
-**Status:** Plan
+**Status:** Done
 
 ## Approach
 
@@ -138,66 +138,66 @@ export function useUrlState(): [FilterState, (next: FilterState) => void];
 
 ### Stage 1 — Ingest
 
-- [ ] Add `Tags` type + optional `tags` field to `src/types.ts`.
-- [ ] Add `SEED_TAGS` constant in `ingest/lib.ts` with curated seed lists
+- [x] Add `Tags` type + optional `tags` field to `src/types.ts`.
+- [x] Add `SEED_TAGS` constant in `ingest/lib.ts` with curated seed lists
       per group (Topics, Traits, Entities).
-- [ ] Add `TAG_ALIASES` map in `ingest/lib.ts` covering known variants
+- [x] Add `TAG_ALIASES` map in `ingest/lib.ts` covering known variants
       (`gpt-4`/`gpt-5`/`gpt-4o`→`gpt`, `large-language-model`→`llm`,
       `claude-3`/`claude-4`→`claude`, etc.).
-- [ ] Implement `normalizeTags(raw)` in `ingest/lib.ts`: lowercase →
+- [x] Implement `normalizeTags(raw)` in `ingest/lib.ts`: lowercase →
       kebab-case → alias-resolve → dedupe → group-assign (seed lookup,
       unknown → `topics`) → cap at 6 total (preserve emission order,
       balance groups where possible).
-- [ ] Extend classifier prompt in `ingest/ingest.ts` to instruct: "also
+- [x] Extend classifier prompt in `ingest/ingest.ts` to instruct: "also
       emit up to 6 tags across Topics/Traits/Entities; prefer these seed
       tags when they fit: …". Update response JSON shape to include
       `"tags": string[]` per item.
-- [ ] Update `classifyBatch` return type and the parse loop to surface the
+- [x] Update `classifyBatch` return type and the parse loop to surface the
       `tags` array; merge into article via `normalizeTags`.
-- [ ] Add tag-normalization tests in `ingest/__tests__/lib.test.ts`
+- [x] Add tag-normalization tests in `ingest/__tests__/lib.test.ts`
       covering AC2 (cap), AC3 (forced canonical), AC4 (alias), AC5
       (kebab-case), AC6 (group placement / unknown→topics).
-- [ ] Create `ingest/backfill.ts` — load `news.json`, batch through
+- [x] Create `ingest/backfill.ts` — load `news.json`, batch through
       `classifyBatch` with `withRetry`, write back. Idempotent: skip
       articles that already have `tags` populated unless `--force` is
       passed.
-- [ ] Add `"backfill"` script to `package.json`; broaden `"test"` glob to
+- [x] Add `"backfill"` script to `package.json`; broaden `"test"` glob to
       `**/*.test.ts`.
-- [ ] Run `npm test` (existing F1a tests + new tag tests pass) and
+- [x] Run `npm test` (existing F1a tests + new tag tests pass) and
       `npx tsc --noEmit`.
-- [ ] **Manual launch step** (not in CI): run `npm run backfill` against
+- [x] **Manual launch step** (not in CI): run `npm run backfill` against
       live `news.json`; verify every article has `tags`; commit the
       regenerated `news.json` (AC7).
 
 ### Stage 2 — UI
 
-- [ ] Create `src/lib/filter.ts` with `filterArticles` implementing
+- [x] Create `src/lib/filter.ts` with `filterArticles` implementing
       AND-across / OR-within + substring match across title + summary +
       flattened tags.
-- [ ] Create `src/lib/__tests__/filter.test.ts` covering AC10–AC13
+- [x] Create `src/lib/__tests__/filter.test.ts` covering AC10–AC13
       semantics (within-group OR, across-group AND, category scoping,
       search substring).
-- [ ] Create `src/hooks/useUrlState.ts` — initialize from
+- [x] Create `src/hooks/useUrlState.ts` — initialize from
       `URLSearchParams`, expose `[state, setState]`, write via
       `history.pushState`, listen for `popstate` to update.
-- [ ] Create `src/components/TagChips.tsx` — render three small grouped
+- [x] Create `src/components/TagChips.tsx` — render three small grouped
       chip rows or inline pills (visual choice during impl); honor
       dark-academic tokens.
-- [ ] Render `<TagChips article={article} />` from `ArticleCard.tsx`
+- [x] Render `<TagChips article={article} />` from `ArticleCard.tsx`
       below the summary block, guarded by `article.tags &&
       (topics+traits+entities).length > 0` (AC8/AC9).
-- [ ] Create `src/components/FilterBar.tsx` — compute available tag
+- [x] Create `src/components/FilterBar.tsx` — compute available tag
       universe from the current category-scoped article set; render three
       groups of multi-select chips; "clear filters" button.
-- [ ] Wire `App.tsx`: replace search/category `useMemo`s with one call to
+- [x] Wire `App.tsx`: replace search/category `useMemo`s with one call to
       `filterArticles`; use `useUrlState` as source of truth for `query`
       / `activeCategory` / `topics` / `traits` / `entities`; mount
       `<FilterBar />` under the tab rail; render empty state (AC16) when
       filtered list is empty.
-- [ ] Verify in the browser via Vite dev server: chips render, filters
+- [x] Verify in the browser via Vite dev server: chips render, filters
       narrow the list correctly, URL updates on each change, reload
       restores state, browser back/forward works (AC9–AC16).
-- [ ] Update `specs/ROADMAP.md` F4 row to `Done`; append completion notes
+- [x] Update `specs/ROADMAP.md` F4 row to `Done`; append completion notes
       to `specs/F4-search-and-tags/spec.md`.
 
 ## Verification

@@ -1,7 +1,7 @@
 # Portfolio Presentation & Shareability — Plan
 
 **Spec:** ./spec.md
-**Status:** Build (plan approved 2026-07-02)
+**Status:** Done (plan approved 2026-07-02)
 
 ## Approach
 
@@ -45,7 +45,7 @@ None — no code paths or JSON shapes change.
 - [x] Add OG/Twitter meta tags to `index.html` with absolute URLs.
 - [x] Rewrite `README.md` per the spec's acceptance criteria (badges reference `test.yml` and `ingest.yml` workflows).
 - [x] Amend `CONSTITUTION.md` rule #4 with the text proposed above.
-- [ ] (Stretch) Record an animated GIF of search/tag filtering for the README.
+- Optional follow-up: record an animated GIF of search/tag filtering for the README.
 
 ### Deviations (recorded during Build)
 

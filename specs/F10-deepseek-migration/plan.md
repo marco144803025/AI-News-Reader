@@ -1,7 +1,7 @@
 # DeepSeek API Migration — Plan
 
 **Spec:** ./spec.md
-**Status:** Done — implementation approved and locally verified
+**Status:** Done — local and hosted rollout verified
 **Spec approval:** Marco requested implementation of the existing migration in
 the daily-summary task on 2026-09-06. This advances F10 to planning; production
 implementation was approved in the subsequent implementation request.
@@ -86,7 +86,8 @@ npm run build
 Expected: test summary has zero failures; TypeScript/Vite build exits 0.
 Executed 2026-09-06: 95 tests passed, zero failed; TypeScript/Vite build succeeded.
 Live DeepSeek check: three classifications, three cited brief bullets; no files
-modified by the live check. Hosted rollout remains pending.
+modified by the live check. The hosted rollout subsequently completed and the
+scheduled pipeline now uses DeepSeek successfully.
 
 - AC1/AC4: mock the provider and assert official endpoint, chosen model,
   classification/tag outputs, cited brief outputs, and unchanged public schema.

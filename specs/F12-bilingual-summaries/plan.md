@@ -1,7 +1,7 @@
 # English / Hong Kong Traditional Chinese summaries — Plan
 
 **Spec:** [spec.md](./spec.md)
-**Status:** Build — published; actual Chinese delivery and wording review pending
+**Status:** Build — published; actual Chinese Telegram delivery pending
 **Approval:** "approved, proceed" on 2026-09-06
 **Requested:** 2026-09-06; document the plan before coding.
 
@@ -79,7 +79,8 @@ paired-update regression can be tested without running paid backfill.
 **Assumptions I'm making:**
 - The toggle covers both article summaries and daily brief, with English headlines.
 - Website defaults to English; persisted explicit choice wins on return visits.
-- Telegram uses HK written Traditional Chinese, with disclosed English fallback.
+- Telegram uses authentic HK Traditional Chinese with a natural Cantonese tone,
+  including vocabulary such as `嘅` and `佢`, with disclosed English fallback.
 - Navigation/category/tag translation and historical translation are separate work.
 
 **What I will NOT do:**
@@ -152,9 +153,10 @@ successful same-day records already prevent resends across deployment.
 - [x] Record implementation evidence in the spec.
 - [x] Publish and run the full workflow at Marco's request; verified three new
   bilingual articles and a complete bilingual brief on the hosted site.
-- [ ] Review live wording with Marco: current output uses some colloquial
-  Cantonese despite the written-HK prompt. Confirm a future eligible Chinese
-  Telegram delivery; the rollout run correctly skipped today's duplicate.
+- [x] Review live wording with Marco: on 2026-09-07 he approved the authentic
+  Hong Kong tone, including natural use of `嘅` and `佢`; prompts were aligned.
+- [ ] Confirm a future eligible Chinese Telegram delivery; the rollout run
+  correctly skipped today's duplicate.
 
 ## Verification mapping
 

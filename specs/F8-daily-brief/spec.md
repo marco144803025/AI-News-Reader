@@ -1,7 +1,7 @@
 # AI Daily Brief
 
 **ID:** F8-daily-brief
-**Status:** Build (spec & plan approved 2026-07-02)
+**Status:** Done (spec & plan approved 2026-07-02)
 **Owner:** Marco
 
 ## Intent

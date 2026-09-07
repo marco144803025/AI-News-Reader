@@ -89,7 +89,8 @@ and recovery against stale attempt IDs. AC5: subprocess preview without secrets
 or network, no file writes. AC6/8: both London DST transitions, malformed input,
 future/stale timestamps, HTML characters, emoji, URLs and payload limits.
 AC7: document account setup and verify CLI error messages offline. Actual live
-send and hosted workflow await credentials and publication when unavailable.
+send and hosted workflow required credentials and publication at this checkpoint;
+hosted run #117 subsequently verified successful delivery.
 
 ## Risks / tradeoffs
 

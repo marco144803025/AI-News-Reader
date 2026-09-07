@@ -1,7 +1,7 @@
 # Trends & Pipeline Transparency — Plan
 
 **Spec:** ./spec.md
-**Status:** Build (plan approved 2026-07-02)
+**Status:** Done (plan approved 2026-07-02)
 
 ## Approach
 
