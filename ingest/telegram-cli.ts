@@ -2,7 +2,7 @@ import { readFile } from "node:fs/promises";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { resolve } from "node:path";
 import "dotenv/config";
-import { checkBrief, deliverBrief, formatBrief, recoverAttempt, telegramConfig, telegramLanguage } from "./telegram.ts";
+import { archiveBriefStatus, checkBrief, deliverBrief, formatBrief, recoverAttempt, telegramConfig, telegramLanguage } from "./telegram.ts";
 import { DeliveryError, GitHubStateStore, isRecord } from "./telegram-state.ts";
 
 const NEWS_PATH = fileURLToPath(new URL("../public/news.json", import.meta.url));
@@ -23,6 +23,7 @@ function annotate(kind: "error" | "warning", message: string): void {
 
 const BENIGN_OUTCOMES = new Set([
   "Telegram: sent",
+  "Telegram: sent (no new brief)",
   "Telegram: skipped (already sent)",
   "Telegram: skipped (disabled)",
 ]);
@@ -100,8 +101,11 @@ async function main(): Promise<void> {
       // it. Exiting 0 here is what let the pipeline stay green while the brief
       // silently stopped arriving, so these outcomes now fail the run. This step
       // runs after the deploy, so failing it never blocks the site update.
+      // A quiet day still has a message to send, so it goes through to delivery.
       const check = checkBrief(data, Date.now());
-      if (check.reason) failSend(`Telegram: not sent (${check.reason})`);
+      if (check.reason && archiveBriefStatus(data) !== "no-new-material") {
+        failSend(`Telegram: not sent (${check.reason})`);
+      }
       const outcome = await deliverBrief({ enabled: true, data, config, store: stateStore(), language });
       console.log(outcome);
       if (!delivered(outcome)) failSend(outcome);

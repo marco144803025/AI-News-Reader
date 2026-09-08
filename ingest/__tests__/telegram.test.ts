@@ -251,6 +251,33 @@ describe("Telegram durable delivery", () => {
       assert.equal(delivered(`Telegram: not sent (${reason})`), false);
     }
   });
+  it("reports a quiet day instead of going silent, without restating old bullets", async () => {
+    const store = new MemoryStore();
+    const quiet = { ...data, briefStatus: "no-new-material" };
+    const tomorrow = NOW + 86400000;
+    let sent = "";
+    const send = async (html: string) => { sent = html; };
+    const outcome = await deliverBrief({ ...options(store), data: quiet, now: () => tomorrow, send });
+    assert.equal(outcome, "Telegram: sent (no new brief)");
+    assert.equal(delivered(outcome), true);
+    assert.match(sent, /2026-09-07/, "dated today, not the carried brief's day");
+    assert.doesNotMatch(sent, /Development 0/, "never restates yesterday's bullets as today's");
+    assert.match(sent, /上一份摘要: 2026-09-06/);
+    assert.equal(store.state.attempts.at(-1)?.status, "sent");
+    assert.equal(
+      await deliverBrief({ ...options(store), data: quiet, now: () => tomorrow, send }),
+      "Telegram: skipped (already sent)",
+    );
+  });
+  it("stays silent and fails when the brief call itself broke", async () => {
+    const store = new MemoryStore();
+    const broken = { ...data, briefStatus: "generation-failed" };
+    const send = async () => assert.fail("must not send");
+    const outcome = await deliverBrief({ ...options(store), data: broken, now: () => NOW + 86400000, send });
+    assert.equal(outcome, "Telegram: skipped (stale brief)");
+    assert.equal(delivered(outcome), false);
+    assert.equal(store.revision, 0, "no state written for a failed run");
+  });
   it("only one overlapping reservation can send", async () => {
     const store = new MemoryStore(); let calls = 0;
     const send = async () => { calls++; };

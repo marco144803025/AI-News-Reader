@@ -5,7 +5,7 @@ import { fetchFeed } from "./feeds.ts";
 import type OpenAI from "openai";
 import { BRIEF_MODEL, CLASSIFY_MODEL, completeText, createDeepSeekClient, isMainModule, isTransientError, PipelineError, safePipelineError } from "./deepseek.ts";
 import "dotenv/config";
-import type { Brief, NewsData, FeedHealth } from "../src/types.ts";
+import type { Brief, BriefStatus, NewsData, FeedHealth } from "../src/types.ts";
 import { validTranslation } from "../src/lib/language.ts";
 import {
   BRIEF_MAX_TOKENS,
@@ -266,13 +266,14 @@ export async function classifyBatch(
   return result;
 }
 
-// One synthesis call over the run's new articles → 3-5 cited bullets.
+// One synthesis call over an already-selected set of articles → 3-5 cited
+// bullets. The caller picks the window (see selectBriefInput) so one selection
+// decides both whether a brief is possible and what it is written from.
 // Throws on invalid output; the caller decides what to do (carry forward).
 export async function generateBrief(
   client: OpenAI,
-  articles: Article[]
+  input: Article[]
 ): Promise<Brief> {
-  const input = selectBriefInput(articles);
   const { system, user } = buildBriefPrompt(input);
 
   const text = await completeText(client, BRIEF_MODEL, system, user, BRIEF_MAX_TOKENS);
@@ -326,26 +327,7 @@ async function main() {
     new Date().toISOString()
   );
 
-  if (newCount === 0) {
-    console.log("No new articles — pruning and writing.");
-    const pruned = existingArticles.filter(
-      (a) => Date.parse(a.publishedAt) > retentionCutoff
-    );
-    const categories = [...new Set(pruned.map((a) => a.category))];
-    await mkdir(join(ROOT, "public"), { recursive: true });
-    const carried = carryForwardBrief(existing);
-    const output: NewsData = {
-      generatedAt,
-      daysBack: effectiveDaysBack,
-      categories,
-      articles: pruned,
-      feedHealth,
-      ...(carried ? { brief: carried } : {}),
-    };
-    await writeFile(outputPath, JSON.stringify(output, null, 2), "utf-8");
-    console.log(`Done. ${pruned.length} articles retained.`);
-    return;
-  }
+  if (newCount === 0) console.log("No new articles — refreshing the brief and pruning.");
 
   const classified: Article[] = [];
   for (let i = 0; i < raw.length; i += BATCH_SIZE) {
@@ -367,33 +349,38 @@ async function main() {
     }
   }
 
-  // Daily brief: one synthesis call over this run's new articles. A brief
-  // failure must never fail the run — carry the previous brief forward.
-  // Runs with fewer new articles than the bullet minimum can't produce a
-  // valid brief, so skip the call instead of predictably failing validation.
-  let brief = carryForwardBrief(existing);
-  if (classified.length >= BRIEF_MIN_BULLETS) {
-    console.log("Generating daily brief...");
-    try {
-      brief = await withRetry(() => generateBrief(client, classified));
-      console.log(`  brief ok (${brief.bullets.length} bullets).`);
-    } catch (err) {
-      console.error(
-        `  brief skipped, carrying previous forward — ${safePipelineError(err)}`
-      );
-    }
-  } else if (classified.length > 0) {
-    console.log(
-      `Too few new articles for a brief (${classified.length} < ${BRIEF_MIN_BULLETS}) — carrying previous forward.`
-    );
-  }
-
   const merged = [...classified, ...existingArticles];
   const pruned = merged.filter(
     (a) => Date.parse(a.publishedAt) > retentionCutoff
   );
   pruned.sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
   const categories = [...new Set(pruned.map((a) => a.category))];
+
+  // Daily brief: one synthesis call over the last 24 hours of the archive, not
+  // over this run's arrivals, so a late or closely spaced run still writes one.
+  // A brief failure must never fail the run — carry the previous brief forward
+  // and record why, so delivery can tell a quiet day from a broken pipeline.
+  const briefInput = selectBriefInput(pruned);
+  let brief = carryForwardBrief(existing);
+  let briefStatus: BriefStatus;
+  if (briefInput.length >= BRIEF_MIN_BULLETS) {
+    console.log(`Generating daily brief from ${briefInput.length} recent articles...`);
+    try {
+      brief = await withRetry(() => generateBrief(client, briefInput));
+      briefStatus = "generated";
+      console.log(`  brief ok (${brief.bullets.length} bullets).`);
+    } catch (err) {
+      briefStatus = "generation-failed";
+      console.error(
+        `  brief skipped, carrying previous forward — ${safePipelineError(err)}`
+      );
+    }
+  } else {
+    briefStatus = "no-new-material";
+    console.log(
+      `Too few articles in the last 24h for a brief (${briefInput.length} < ${BRIEF_MIN_BULLETS}) — carrying previous forward.`
+    );
+  }
 
   await mkdir(join(ROOT, "public"), { recursive: true });
   const output: NewsData = {
@@ -402,6 +389,7 @@ async function main() {
     categories,
     articles: pruned,
     feedHealth,
+    briefStatus,
     ...(brief ? { brief } : {}),
   };
   await writeFile(outputPath, JSON.stringify(output, null, 2), "utf-8");

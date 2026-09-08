@@ -100,6 +100,34 @@ export function formatBrief(brief: Brief, language: SummaryLanguage = "zh-HK"): 
   }
 }
 
+/** The ingest run's own account of the brief; absent in archives from before it. */
+export function archiveBriefStatus(data: unknown): string | undefined {
+  return isRecord(data) && typeof data.briefStatus === "string" ? data.briefStatus : undefined;
+}
+
+/** A quiet day still gets one message, so silence in the chat always means
+ *  something broke. Never restates yesterday's bullets as today's brief. */
+export function formatStatus(previous: Brief | undefined, language: SummaryLanguage, now: number): { html: string; plain: string } {
+  const copy = language === "zh-HK" ? {
+    title: "AI 新聞早報", none: "今日新內容太少，未夠寫一份摘要。管道運作正常。",
+    previous: "上一份摘要", full: "瀏覽網站",
+  } : {
+    title: "AI Morning Brief", none: "Too little new material for a brief today. The pipeline ran normally.",
+    previous: "Previous brief", full: "Visit the site",
+  };
+  const heading = `${copy.title} — ${londonDate(now)}`;
+  const plain = [heading, "", copy.none];
+  const html = [`<b>${escapeHtml(heading)}</b>`, "", escapeHtml(copy.none)];
+  if (previous) {
+    const line = `${copy.previous}: ${londonDate(Date.parse(previous.generatedAt))}`;
+    plain.push(line);
+    html.push(escapeHtml(line));
+  }
+  plain.push("", `${copy.full}: ${SITE_URL}`);
+  html.push("", `<a href="${SITE_URL}">${copy.full}</a>`);
+  return { html: html.join("\n"), plain: plain.join("\n") };
+}
+
 export type TelegramConfig = { token: string; chatId: string };
 export function telegramConfig(env: NodeJS.ProcessEnv): TelegramConfig {
   const token = env.TELEGRAM_BOT_TOKEN?.trim() ?? "";
@@ -169,10 +197,17 @@ export async function deliverBrief(options: DeliverOptions): Promise<string> {
   const language = telegramLanguage(options.language);
   const now = options.now ?? Date.now;
   const check = checkBrief(options.data, now());
-  if (check.reason || !check.brief) return `Telegram: skipped (${check.reason})`;
+  // A run that simply found too little new material still reports in; only a
+  // genuinely broken brief is worth staying silent about and failing on.
+  const quiet = check.reason !== undefined && archiveBriefStatus(options.data) === "no-new-material";
+  if (check.reason && !quiet) return `Telegram: skipped (${check.reason})`;
   const brief = check.brief;
-  const html = formatBrief(brief, language).html;
-  const briefId = createHash("sha256").update(JSON.stringify(brief)).digest("hex");
+  if (!quiet && !brief) return `Telegram: skipped (${check.reason ?? "no brief"})`;
+  const message = !quiet && brief ? formatBrief(brief, language) : formatStatus(brief, language, now());
+  const html = message.html;
+  const briefId = createHash("sha256")
+    .update(quiet ? `status:${londonDate(now())}:${language}` : JSON.stringify(brief))
+    .digest("hex");
   const snapshot = await options.store.read();
   const date = londonDate(now());
   if (snapshot.state.attempts.some(item => item.status === "sent" && (item.date === date || item.briefId === briefId))) {
@@ -185,16 +220,17 @@ export async function deliverBrief(options: DeliverOptions): Promise<string> {
   // NOTE: The conditional durable write is the lock. Only its successful owner
   // may send; a conflicting or ambiguous write must exit before Telegram.
   const reserved = await options.store.save(snapshot, { version: 1, attempts: [...snapshot.state.attempts, attempt] });
+  const stillValid = () =>
+    (quiet || !checkBrief(options.data, now()).reason) && londonDate(now()) === date;
   const send = options.send ?? (text => sendTelegram(options.config, text, fetch, sleep, () => {
-    if (checkBrief(options.data, now()).reason || londonDate(now()) !== date) {
+    if (!stillValid()) {
       throw new TelegramRejected("Telegram: brief became stale while waiting; no further send attempted.");
     }
   }));
   try {
     // Recheck after storage/network waits so a run cannot send yesterday's brief
     // across midnight. A reserved but unsent attempt is explicitly released.
-    const latest = checkBrief(options.data, now());
-    if (latest.reason || londonDate(now()) !== date) {
+    if (!stillValid()) {
       await options.store.save(reserved, updatedAttempt(reserved, attempt.id, "released", now()));
       return "Telegram: skipped (stale brief)";
     }
@@ -208,7 +244,7 @@ export async function deliverBrief(options: DeliverOptions): Promise<string> {
   }
   try { await options.store.save(reserved, updatedAttempt(reserved, attempt.id, "sent", now())); }
   catch { throw new DeliveryError("Telegram confirmed delivery, but saving sent state failed. Check telegram:status; do not resend."); }
-  return "Telegram: sent";
+  return quiet ? "Telegram: sent (no new brief)" : "Telegram: sent";
 }
 
 /** Human-only recovery uses the exact attempt ID and a conditional write. */

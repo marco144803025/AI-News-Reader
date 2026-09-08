@@ -272,14 +272,26 @@ export const BRIEF_MAX_BULLETS = 5;
 // text, and completeText rejects a truncated response outright, so a tight cap
 // turns one long brief into a whole missed delivery.
 export const BRIEF_MAX_TOKENS = 8192;
+export const BRIEF_WINDOW_MS = 24 * 60 * 60 * 1000;
 
 // Important articles first (they must be visible to the model even on huge
 // runs), then everything else newest-first, capped so the prompt stays small.
-export function selectBriefInput(articles: Article[]): Article[] {
+// NOTE: The window is the last 24 hours of published articles, not the articles
+// this particular run happened to ingest. A brief describes the day, so a late,
+// repeated or off-cycle run must still be able to write one.
+export function selectBriefInput(
+  articles: Article[],
+  now: number = Date.now()
+): Article[] {
+  const cutoff = now - BRIEF_WINDOW_MS;
+  const recent = articles.filter((a) => {
+    const published = Date.parse(a.publishedAt);
+    return Number.isFinite(published) && published > cutoff;
+  });
   const byRecency = (a: Article, b: Article) =>
     b.publishedAt.localeCompare(a.publishedAt);
-  const important = articles.filter((a) => a.important).sort(byRecency);
-  const rest = articles.filter((a) => !a.important).sort(byRecency);
+  const important = recent.filter((a) => a.important).sort(byRecency);
+  const rest = recent.filter((a) => !a.important).sort(byRecency);
   return [...important, ...rest].slice(0, BRIEF_INPUT_CAP);
 }
 
@@ -295,8 +307,8 @@ export function buildBriefPrompt(articles: Article[]): {
     .join("\n");
 
   const system =
-    "You are the editor of a daily AI-industry briefing. From today's newly " +
-    "ingested articles you write the executive brief: 3 to 5 bullets, each at " +
+    "You are the editor of a daily AI-industry briefing. From the past day's " +
+    "articles you write the executive brief: 3 to 5 bullets, each at " +
     "most 40 English words in text, synthesizing the day's most significant developments. " +
     "Include equivalent textZhHK in Hong Kong Traditional Chinese (zh-HK), " +
     "at most 120 Chinese characters per bullet. Use authentic Hong Kong vocabulary " +
@@ -310,7 +322,7 @@ export function buildBriefPrompt(articles: Article[]): {
     "articles it draws from.\n\n" +
     'Respond ONLY with a JSON array: [{"text": string, "textZhHK": string, "refs": number[]}]';
 
-  const user = `Today's ${articles.length} new articles:\n\n${list}`;
+  const user = `${articles.length} articles from the last 24 hours:\n\n${list}`;
 
   return { system, user };
 }

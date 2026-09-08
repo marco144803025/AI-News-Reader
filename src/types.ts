@@ -34,6 +34,9 @@ export type Brief = {
   bullets: BriefBullet[]; // 3–5 entries
 };
 
+/** Lets delivery tell a quiet day apart from a broken brief call. */
+export type BriefStatus = "generated" | "no-new-material" | "generation-failed";
+
 export type NewsData = {
   generatedAt: string;
   daysBack: number; // fetch window used in this run
@@ -41,4 +44,5 @@ export type NewsData = {
   articles: Article[];
   feedHealth?: Record<string, FeedHealth>;
   brief?: Brief;
+  briefStatus?: BriefStatus;
 };

@@ -28,13 +28,15 @@ function makeArticle(
 }
 
 describe("selectBriefInput", () => {
+  const NOW = Date.parse("2026-07-02T12:00:00Z");
+
   it("puts important articles first, each group newest-first", () => {
     const a = makeArticle("a", "2026-07-02T09:00:00Z");
     const b = makeArticle("b", "2026-07-02T08:00:00Z", true);
     const c = makeArticle("c", "2026-07-02T10:00:00Z", true);
     const d = makeArticle("d", "2026-07-02T11:00:00Z");
     assert.deepEqual(
-      selectBriefInput([a, b, c, d]).map((x) => x.url),
+      selectBriefInput([a, b, c, d], NOW).map((x) => x.url),
       ["c", "b", "d", "a"]
     );
   });
@@ -43,10 +45,22 @@ describe("selectBriefInput", () => {
     const many = Array.from({ length: 60 }, (_, i) =>
       makeArticle(`u${i}`, `2026-07-02T00:${String(i).padStart(2, "0")}:00Z`, i >= 58)
     );
-    const selected = selectBriefInput(many);
+    const selected = selectBriefInput(many, NOW);
     assert.equal(selected.length, BRIEF_INPUT_CAP);
     assert.equal(selected[0].important, true);
     assert.equal(selected[1].important, true);
+  });
+
+  it("takes the last 24h of the archive, not just this run's arrivals", () => {
+    const yesterday = makeArticle("old", "2026-06-30T12:00:00Z", true);
+    const edge = makeArticle("edge", "2026-07-01T11:59:00Z");
+    const inside = makeArticle("new", "2026-07-02T09:00:00Z");
+    assert.deepEqual(
+      selectBriefInput([yesterday, edge, inside], NOW).map((x) => x.url),
+      ["new"]
+    );
+    // Unparseable dates are dropped rather than silently treated as recent.
+    assert.deepEqual(selectBriefInput([makeArticle("bad", "not-a-date")], NOW), []);
   });
 });
 
@@ -58,7 +72,7 @@ describe("buildBriefPrompt", () => {
     ]);
     assert.ok(user.includes("[0] (Research, NOTABLE) Title a"));
     assert.ok(user.includes("[1] (Research) Title b"));
-    assert.ok(user.includes("2 new articles"));
+    assert.ok(user.includes("2 articles from the last 24 hours"));
     assert.ok(system.includes("JSON array"));
   });
 });
