@@ -1,7 +1,7 @@
 # English / Hong Kong Traditional Chinese summaries — Plan
 
 **Spec:** [spec.md](./spec.md)
-**Status:** Build — published; actual Chinese Telegram delivery pending
+**Status:** Done — published and delivered 2026-09-08
 **Approval:** "approved, proceed" on 2026-09-06
 **Requested:** 2026-09-06; document the plan before coding.
 
@@ -155,10 +155,12 @@ successful same-day records already prevent resends across deployment.
   bilingual articles and a complete bilingual brief on the hosted site.
 - [x] Review live wording with Marco: on 2026-09-07 he approved the authentic
   Hong Kong tone, including natural use of `嘅` and `佢`; prompts were aligned.
-- [ ] Confirm a future eligible Chinese Telegram delivery; the rollout run
-  correctly skipped today's duplicate. The 2026-09-07 run could not satisfy
-  this: its brief failed to regenerate and delivery skipped the stale copy.
-  See F11's post-release fix.
+- [x] Confirm a future eligible Telegram delivery. The 2026-09-07 run could not
+  satisfy this — its brief failed to regenerate and delivery skipped the stale
+  copy — and the fixes are recorded in F11's post-release section. On 2026-09-08
+  a run delivered successfully and Marco confirmed receipt. Delivery language
+  follows `TELEGRAM_LANGUAGE`, which defaults to `zh-HK`; the received message
+  was not re-inspected in that session.
 
 ## Verification mapping
 

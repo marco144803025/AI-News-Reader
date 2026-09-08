@@ -1,7 +1,9 @@
 # Personal Telegram Morning Brief — Plan
 
 **Spec:** ./spec.md
-**Status:** Done
+**Status:** Done — see the spec's 2026-09-08 post-release fix for the delivery
+outcome rules (`briefStatus`, the quiet-day status message, and exit codes),
+which post-date this plan.
 **Authorization:** Marco approved the technical walkthrough and explicitly
 requested implementation on 2026-09-06. This plan records the implementation
 choices under that authorization before production edits.

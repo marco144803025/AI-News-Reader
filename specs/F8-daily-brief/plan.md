@@ -2,6 +2,10 @@
 
 **Spec:** ./spec.md
 **Status:** Done (plan approved 2026-07-02)
+**Superseded since:** the synthesis call moved from Claude to DeepSeek
+(`BRIEF_MODEL`) in F10, and its input window widened from the run's new
+articles to the last 24 hours of the archive on 2026-09-08. The approach below
+is the record of what was planned in July, not current behaviour.
 
 ## Approach
 
@@ -47,7 +51,7 @@ accent mono opening the cited articles.
 // src/types.ts
 export type BriefBullet = {
   text: string;   // ≤ ~40 words
-  refs: string[]; // URLs of cited articles — validated subset of the run's new articles
+  refs: string[]; // URLs of cited articles — validated subset of the brief's input window
 };
 
 export type Brief = {

@@ -1,7 +1,7 @@
 # SPEC: Personal Telegram Morning Brief
 
 **ID:** F11-telegram-brief
-**Status:** Done — hosted Telegram delivery verified
+**Status:** Done — hosted delivery verified; reliability fix shipped 2026-09-08
 **Owner:** Marco
 **Delivery sequence:** Implement after F10. Marco explicitly requested F10 and
 F11 in this task; existing F6/F5 work remains outside this delivery sequence.
@@ -224,3 +224,30 @@ rewritten command exits 1 with an `::error` annotation on that same input.
 The underlying DeepSeek error from that run was not recovered from the Actions
 log, so the generation fix is hardening against the likely causes, not a
 confirmed root-cause repair.
+
+### Second round — the rule was too broad
+
+The first fix failed a run the same night for a case that was not a failure: an
+off-cycle run found 2 new articles, below the 3-bullet minimum, so no brief call
+was attempted at all. That exposed the real defect. The brief was synthesised
+only from articles a given run happened to ingest, so run timing — not the news
+— decided whether a brief existed. F8's input window is now the last 24 hours of
+the archive, and ingestion generates the brief after merging instead of
+short-circuiting when nothing new arrived.
+
+`news.json` now carries `briefStatus` (`generated` / `no-new-material` /
+`generation-failed`) so delivery can distinguish a quiet day from a broken
+pipeline:
+
+- `no-new-material` — send a short dated status message saying the pipeline ran
+  and there was too little new material, name the previous brief's date, link
+  the site, and exit 0. It never restates carried-forward bullets as today's
+  brief, per the edge-case rule above.
+- `generation-failed`, missing or misdated brief — stay silent, annotate, exit 1.
+
+Marco asked for this explicitly: an undelivered brief must never be
+indistinguishable from a working quiet day.
+
+`npm test`: 116 passed, 0 failed. `npm run build`: succeeded. All three delivery
+paths were replayed against the live archive with a memory store and fake sender,
+and Marco confirmed receiving the delivered brief in Telegram on 2026-09-08.

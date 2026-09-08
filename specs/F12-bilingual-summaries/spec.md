@@ -1,7 +1,7 @@
 # SPEC: English / Hong Kong Traditional Chinese summaries
 
 **ID:** F12-bilingual-summaries
-**Status:** Build — published; live Chinese Telegram delivery pending
+**Status:** Done — published and delivered 2026-09-08
 **Owner:** Marco
 **Sequence:** After F11, as explicitly requested on 2026-09-06.
 
