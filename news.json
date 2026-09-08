@@ -5626,78 +5626,88 @@
   ],
   "feedHealth": {
     "The Verge AI": {
-      "lastSuccess": "2026-09-08T00:06:07.048Z",
+      "lastSuccess": "2026-09-08T00:38:22.838Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "TechCrunch AI": {
-      "lastSuccess": "2026-09-08T00:06:07.177Z",
+      "lastSuccess": "2026-09-08T00:38:22.954Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Ars Technica AI": {
-      "lastSuccess": "2026-09-08T00:06:07.393Z",
+      "lastSuccess": "2026-09-08T00:38:23.346Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "VentureBeat AI": {
       "lastSuccess": "2026-08-15T06:19:55.431Z",
       "lastError": "Status code 429",
-      "consecutiveFailures": 4
+      "consecutiveFailures": 5
     },
     "Anthropic News": {
       "lastSuccess": null,
       "lastError": "Status code 404",
-      "consecutiveFailures": 58
+      "consecutiveFailures": 59
     },
     "OpenAI Blog": {
-      "lastSuccess": "2026-09-08T00:06:07.769Z",
+      "lastSuccess": "2026-09-08T00:38:23.948Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Google DeepMind": {
-      "lastSuccess": "2026-09-08T00:06:08.131Z",
+      "lastSuccess": "2026-09-08T00:38:24.334Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "MIT Tech Review AI": {
-      "lastSuccess": "2026-09-08T00:06:08.189Z",
+      "lastSuccess": "2026-09-08T00:38:24.475Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "arXiv cs.AI": {
-      "lastSuccess": "2026-09-08T00:06:08.351Z",
+      "lastSuccess": "2026-09-08T00:38:24.763Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Hacker News (AI)": {
       "lastSuccess": "2026-08-14T07:08:24.642Z",
       "lastError": "fetch failed",
-      "consecutiveFailures": 5
+      "consecutiveFailures": 6
     }
   },
+  "briefStatus": "generated",
   "brief": {
-    "generatedAt": "2026-09-06T18:27:13.182Z",
+    "generatedAt": "2026-09-08T00:38:46.104Z",
     "bullets": [
       {
-        "text": "OpenAI chief scientist Jakub Pachocki warns that increasingly capable AI systems resemble an 'alien mind', urging stronger safeguards and international coordination to maintain alignment.",
-        "textZhHK": "OpenAI 首席科學家 Jakub Pachocki 警告，能力愈趨強大嘅 AI 系統猶如「外星思維」，呼籲加強安全防護同國際協調，以維持對齊。",
+        "text": "A notable study shows better individual LLM capability can degrade system outcomes: shared training creates correlated actions and a non-diversifiable risk floor in financial markets, making improved models riskier at the system level.",
+        "textZhHK": "一項值得留意嘅研究指出，單一模型能力提升反而可能令系統層面嘅表現變差：共同訓練會令行動互相關聯，喺金融市場形成一個冇得分散嘅風險底，令更強嘅模型喺系統層面風險反而更高。",
         "refs": [
-          "https://openai.com/index/an-alien-mind"
+          "https://arxiv.org/abs/2609.04373"
         ]
       },
       {
-        "text": "OpenAI shares early internal data showing coding agents are accelerating AI research: experiment velocity and task complexity have both increased as agents reshape research workflows.",
-        "textZhHK": "OpenAI 公布早期內部數據，顯示編程代理正加速 AI 研究：實驗速度同任務複雜度均有所提升，代理正重塑研究工作流程。",
+        "text": "Agentic search and evaluation advanced: Iris-mini (35B-A3B) and Iris-pro (397B-A17B) reverse-construct multi-hop chains from web hyperlinks, while Harbor Adapters unify 80+ agentic benchmarks and evaluate 8 models across 54 benchmarks.",
+        "textZhHK": "Agentic 搜尋同評測都有進展：Iris-mini（35B-A3B）同 Iris-pro（397B-A17B）喺網頁超連結結構反推多跳鏈；而 Harbor Adapters 就統一咗 80 幾個 agentic 基準，仲喺 54 個基準上評測咗 8 個模型。",
         "refs": [
-          "https://openai.com/index/research-acceleration-view-inside-openai"
+          "https://arxiv.org/abs/2609.04298",
+          "https://arxiv.org/abs/2609.04304"
         ]
       },
       {
-        "text": "Travis Kalanick's startup Atoms may be entering the robotaxi business, reportedly aligning with his stated goal of completing 'unfinished business' from his Uber days.",
-        "textZhHK": "Travis Kalanick 嘅初創 Atoms 或將進軍機械人的士業務，據稱符合佢完成 Uber 時代「未竟之業」嘅目標。",
+        "text": "EXAONE Finance is a financial time-series foundation model addressing general-domain limitations like quadratic complexity and fully observed input assumptions, aimed at better financial forecasting.",
+        "textZhHK": "EXAONE Finance 係一個專為金融時序預測而設嘅基礎模型，專門針對一般領域模型嘅二次複雜度同完全觀測輸入假設呢啲限制，希望做到更好嘅金融預測。",
         "refs": [
-          "https://techcrunch.com/2026/09/06/travis-kalanicks-atoms-might-be-getting-into-the-robotaxi-business/"
+          "https://arxiv.org/abs/2609.04239"
+        ]
+      },
+      {
+        "text": "Prompt injection security and agentic ethics gained new angles: an agentic attacker treats indirect prompt injection as test-time search with more compute improving vulnerability discovery, while HarvestBench places a price on LLM agents avoiding harm to animals in a farm simulation.",
+        "textZhHK": "提示注入安全同 agent 倫理有咗新角度：有 agentic 攻擊者將間接提示注入當成測試時搜尋問題，提升測試時計算就可以搵到更多漏洞；而 HarvestBench 就係喺農場模擬入面為 LLM agent 避開傷害動物定咗個價。",
+        "refs": [
+          "https://arxiv.org/abs/2609.04444",
+          "https://arxiv.org/abs/2609.04495"
         ]
       }
     ]
