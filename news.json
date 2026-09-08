@@ -1,20 +1,63 @@
 {
-  "generatedAt": "2026-09-07T11:01:00.706Z",
+  "generatedAt": "2026-09-08T00:06:18.619Z",
   "daysBack": 2,
   "categories": [
+    "Other",
+    "Hardware & Compute",
     "Model Releases",
     "Research",
     "Business & Funding",
     "Regulation & Policy",
     "AI Safety & Alignment",
     "Applications",
-    "Hardware & Compute",
-    "Other",
     "Developer Tools",
     "Agent Frameworks",
     "MCP"
   ],
   "articles": [
+    {
+      "title": "Opaque recurrence, and other AI terms that you should probably know",
+      "url": "https://techcrunch.com/2026/09/07/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-07T19:24:00.000Z",
+      "snippet": "The rise of AI has brought an avalanche of new terms and slang. Here is a glossary with definitions of some of the most important words and phrases you might encounter.",
+      "category": "Other",
+      "summary": "A glossary defining key AI terms and slang that have emerged with the rise of AI, intended to help readers navigate the field's expanding vocabulary.",
+      "summaryZhHK": "呢個係一份詞彙表，解釋咗隨住AI興起而出現嘅重要術語同俚語，幫讀者理解呢個領域不斷擴張嘅詞彙。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm",
+          "other"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "The complex corporate web behind a $3.2 billion AI data center",
+      "url": "https://arstechnica.com/features/2026/09/the-ai-data-center-boom-is-causing-new-accountability-problems/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-09-07T11:00:03.000Z",
+      "snippet": "When multiple companies are behind one project, who bears responsibility for problems?",
+      "category": "Hardware & Compute",
+      "summary": "Examines the complex corporate structure behind a $3.2 billion AI data center project, raising questions about accountability when multiple companies share responsibility.",
+      "summaryZhHK": "呢篇文章探討咗一個耗資32億美元嘅AI數據中心背後複雜嘅企業架構，提出當多間公司共同承擔責任時，邊個要為問題負責嘅問題。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference",
+          "infrastructure"
+        ],
+        "traits": [],
+        "entities": [
+          "microsoft",
+          "nvidia"
+        ]
+      }
+    },
     {
       "title": "EXAONE Forecast for Finance",
       "url": "https://arxiv.org/abs/2609.04239",
@@ -5579,157 +5622,58 @@
         ],
         "entities": []
       }
-    },
-    {
-      "title": "Planned Amazon data center could become the biggest climate polluter in the U.S.",
-      "url": "https://techcrunch.com/2026/08/08/planned-amazon-data-center-could-become-the-biggest-climate-polluter-in-the-u-s/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-08-08T21:24:02.000Z",
-      "snippet": "As part of a planned Texas data center, Amazon is investing in an on-site power plant that could reportedly become the largest source of climate pollution in the United States.",
-      "category": "Hardware & Compute",
-      "summary": "Amazon's planned Texas data center with on-site power plant could become the largest climate polluter in the United States.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "data-center",
-          "energy",
-          "amazon"
-        ],
-        "traits": [],
-        "entities": []
-      }
-    },
-    {
-      "title": "OpenAI acquires presentation startup NextSlide",
-      "url": "https://techcrunch.com/2026/08/08/openai-acquires-presentation-startup-nextslide/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-08-08T19:41:13.000Z",
-      "snippet": "NextSlide says its team members are now working on ChatGPT.",
-      "category": "Business & Funding",
-      "summary": "OpenAI acquires presentation startup NextSlide, with the team now working on ChatGPT improvements.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "acquisition"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "An Amazon data center could have the worst polluting power plant in the country",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/977124/amazon-data-center-worst-polluting-power-plant",
-      "source": "The Verge AI",
-      "publishedAt": "2026-08-08T17:53:34.000Z",
-      "snippet": "To power its new West Texas data center, Amazon is investing in the construction of a new power plant that could be one of the largest single producers of greenhouse gases in the US, according to the New York Times. The new gas-burning plant in Pecos County, Texas has received significant investment from Amazon and, at least initially, would not be connected to the state's power grid. Instead, its 35 natural-gas turbines would primarily deliver its 7.65 gigawatts of electricity to the new data center. According to Cleanview, which tracks data centers and their associated power projects, GW Ran",
-      "category": "Hardware & Compute",
-      "summary": "Amazon is investing in a new natural gas power plant in West Texas to support its data center, which could become one of the largest greenhouse gas producers in the US.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "data-center",
-          "energy",
-          "amazon"
-        ],
-        "traits": [],
-        "entities": []
-      }
-    },
-    {
-      "title": "Gentoo bugzilla closed due AI bot scraper overload",
-      "url": "https://social.treehouse.systems/@mgorny/117058483039362779",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-08-08T13:55:42.000Z",
-      "snippet": "Article URL: https://social.treehouse.systems/@mgorny/117058483039362779 Comments URL: https://news.ycombinator.com/item?id=49221864 Points: 159 # Comments: 106",
-      "category": "Other",
-      "summary": "Gentoo's bug tracking system was forced offline due to AI bot scraper overload, highlighting infrastructure challenges from automated AI crawling.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "scraping"
-        ],
-        "traits": [
-          "incident"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "DeepMind’s hurricane breakthrough has surprised weather scientists",
-      "url": "https://arstechnica.com/science/2026/08/deepminds-hurricane-model-bought-forecasters-an-extra-day/",
-      "source": "Ars Technica AI",
-      "publishedAt": "2026-08-08T11:05:50.000Z",
-      "snippet": "Open source WeatherNext model can make accurate predictions with lower-resolution weather data.",
-      "category": "Applications",
-      "summary": "DeepMind's open-source WeatherNext model demonstrates breakthrough hurricane prediction accuracy using lower-resolution weather data.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "weather"
-        ],
-        "traits": [
-          "open-source"
-        ],
-        "entities": [
-          "deepmind"
-        ]
-      }
     }
   ],
   "feedHealth": {
     "The Verge AI": {
-      "lastSuccess": "2026-09-07T11:00:56.235Z",
+      "lastSuccess": "2026-09-08T00:06:07.048Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "TechCrunch AI": {
-      "lastSuccess": "2026-09-07T11:00:56.297Z",
+      "lastSuccess": "2026-09-08T00:06:07.177Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Ars Technica AI": {
-      "lastSuccess": "2026-09-07T11:00:56.479Z",
+      "lastSuccess": "2026-09-08T00:06:07.393Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "VentureBeat AI": {
       "lastSuccess": "2026-08-15T06:19:55.431Z",
       "lastError": "Status code 429",
-      "consecutiveFailures": 3
+      "consecutiveFailures": 4
     },
     "Anthropic News": {
       "lastSuccess": null,
       "lastError": "Status code 404",
-      "consecutiveFailures": 57
+      "consecutiveFailures": 58
     },
     "OpenAI Blog": {
-      "lastSuccess": "2026-09-07T11:00:56.928Z",
+      "lastSuccess": "2026-09-08T00:06:07.769Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Google DeepMind": {
-      "lastSuccess": "2026-09-07T11:00:57.206Z",
+      "lastSuccess": "2026-09-08T00:06:08.131Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "MIT Tech Review AI": {
-      "lastSuccess": "2026-09-07T11:00:57.309Z",
+      "lastSuccess": "2026-09-08T00:06:08.189Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "arXiv cs.AI": {
-      "lastSuccess": "2026-09-07T11:00:57.422Z",
+      "lastSuccess": "2026-09-08T00:06:08.351Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Hacker News (AI)": {
       "lastSuccess": "2026-08-14T07:08:24.642Z",
-      "lastError": "Status code 502",
-      "consecutiveFailures": 4
+      "lastError": "fetch failed",
+      "consecutiveFailures": 5
     }
   },
   "brief": {
