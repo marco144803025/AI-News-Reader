@@ -4,6 +4,13 @@
 **Status:** Build (spec approved 2026-07-02)
 **Owner:** Marco
 
+**F16 integration, 2026-09-08:** The approved cinematic standard edition
+supersedes the original classic rollback presentation. Extra is retained
+behind `VITE_ENABLE_EXTRA`, disabled by default, including for saved preferences
+and `?theme=extra`. When enabled, the existing edition toggle remains available.
+See [F16](../F16-cinematic-standard/spec.md). This does not mark F6's outstanding
+Lighthouse comparison or other historical verification complete.
+
 ## Intent
 
 Full visual redesign — same content, data, and interaction logic — with the

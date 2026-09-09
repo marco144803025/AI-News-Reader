@@ -1,306 +1,113 @@
-import { useEffect, useMemo, useState } from "react";
-import BriefPanel from "./components/BriefPanel";
-import LanguageSwitch from "./components/LanguageSwitch";
-import CategorySection from "./components/CategorySection";
-import FilterBar from "./components/FilterBar";
-import TrendsView from "./components/TrendsView";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { LineageProps } from "./lib/lineage";
-import { categoryCounts, EMPTY_FILTER, filterArticles, hasActiveFilters } from "./lib/filter";
-import { paginate } from "./lib/paginate";
+import { categoryCounts, EMPTY_FILTER, filterArticles, hasActiveFilters, type FilterState } from "./lib/filter";
 import { feedIssues } from "./lib/trends";
+import { newsDate } from "./lib/news";
+import { useLanguage } from "./hooks/useLanguage";
+import { uiCopy } from "./lib/ui";
+import { useMotion } from "./hooks/useMotion";
+import StandardHeader, { type StandardSection } from "./components/standard/StandardHeader";
+import DailyCover from "./components/standard/DailyCover";
+import NewsFeed from "./components/standard/NewsFeed";
+import TrendsView from "./components/TrendsView";
+import "./components/standard/standard.css";
 
-const PAGE_SIZE = 8;
-const PREVIEW_SIZE = 4;
-
-function daysAgo(iso: string): number {
-  return Math.floor((Date.now() - new Date(iso).getTime()) / 86_400_000);
-}
-
-export default function ClassicApp({
-  data,
-  error,
-  filterState,
-  setFilterState,
-  page,
-  setPage,
-  setTheme,
-}: LineageProps) {
-  const [showNotableOnly, setShowNotableOnly] = useState(false);
-
+export default function ClassicApp({ data, error, onRetry, extraEnabled, filterState, setFilterState, page, setPage, setTheme }: LineageProps) {
+  const { language } = useLanguage();
+  const t = uiCopy(language);
   useEffect(() => {
-    setPage(0);
-  }, [showNotableOnly, setPage]);
-
-  const activeCategory = filterState.category;
-
-  // Category-scoped slice (drives FilterBar universe + per-tab counts), without tag/search filtering applied.
-  const categoryScoped = useMemo(() => {
-    if (!data) return [];
-    if (activeCategory === "All") return data.articles;
-    return data.articles.filter((a) => a.category === activeCategory);
-  }, [data, activeCategory]);
-
-  const filtered = useMemo(() => {
-    if (!data) return [];
-    const base = filterArticles(data.articles, filterState);
-    if (showNotableOnly && activeCategory === "Research") {
-      return base.filter((a) => a.important);
-    }
-    return base;
-  }, [data, filterState, showNotableOnly, activeCategory]);
-
-  // Counts reflect the search + tag filter (minus the category constraint) so users see how each tab would populate.
-  const counts = useMemo(
-    () => categoryCounts(data?.articles ?? [], filterState),
-    [data, filterState]
-  );
-
-  const inSingleView = activeCategory !== "All";
-  const paged = useMemo(
-    () => paginate(filtered, page, PAGE_SIZE),
-    [filtered, page]
-  );
-  const totalPages = inSingleView ? paged.totalPages : 0;
-  const visibleFiltered = inSingleView ? paged.pageItems : filtered;
-
-  const grouped = useMemo(() => {
-    const map = new Map<string, typeof visibleFiltered>();
-    for (const a of visibleFiltered) {
-      const arr = map.get(a.category) ?? [];
-      arr.push(a);
-      map.set(a.category, arr);
-    }
-    return [...map.entries()];
-  }, [visibleFiltered]);
-
-  if (error) {
-    return (
-      <div className="min-h-screen bg-canvas p-8">
-        <span className="font-mono text-sm font-bold tracking-widest text-ink">AI BRIEFING</span>
-        <p className="mt-6 rounded border border-[rgba(227,179,65,0.25)] bg-[rgba(227,179,65,0.07)] p-4 font-mono text-xs text-ember">
-          {error}
-        </p>
-      </div>
-    );
-  }
-
-  if (!data) {
-    return (
-      <div className="flex min-h-screen items-center justify-center bg-canvas">
-        <span className="font-mono text-xs text-ink-muted">loading briefing...</span>
-      </div>
-    );
-  }
-
-  const staleness = daysAgo(data.generatedAt);
-  const tabs = ["All", ...data.categories];
-  const activeFiltersOn = hasActiveFilters(filterState);
+    const originalTitle = document.title;
+    document.title = t.pageTitle;
+    return () => { document.title = originalTitle; };
+  }, [t.pageTitle]);
+  const motion = useMotion();
+  const [notableOnly, setNotableOnly] = useState(false);
+  const [section, setSection] = useState<StandardSection>("brief");
+  const [navigation, setNavigation] = useState(0);
+  const pendingSection = useRef<StandardSection | null>(null);
+  const initialNavigation = useRef(false);
   const isTrends = filterState.view === "trends";
-  const failingFeeds = feedIssues(data.feedHealth).length;
+  const counts = useMemo(() => categoryCounts(data?.articles ?? [], filterState), [data, filterState]);
+  const scopedArticles = useMemo(() => (data?.articles ?? []).filter(article => filterState.category === "All" || article.category === filterState.category), [data, filterState.category]);
+  const filtered = useMemo(() => filterArticles(data?.articles ?? [], filterState)
+    .filter(article => !notableOnly || filterState.category !== "Research" || article.important), [data, filterState, notableOnly]);
+  const safePage = Math.min(page, Math.max(0, Math.ceil(filtered.length / 8) - 1));
+  useEffect(() => { setNotableOnly(false); }, [filterState.category]);
+  useEffect(() => { if (page !== safePage) setPage(safePage); }, [page, safePage, setPage]);
 
-  return (
-    <div className="flex h-screen flex-col overflow-hidden bg-canvas text-ink">
-      {/* Top Bar */}
-      <header className="flex shrink-0 flex-wrap items-center gap-4 border-b border-[rgba(240,246,252,0.08)] bg-surface-1 px-5 py-3">
-        <div className="flex flex-1 items-baseline gap-2.5">
-          <span className="font-mono text-sm font-bold tracking-widest text-ink">AI BRIEFING</span>
-          <span className="hidden font-mono text-xs text-ink-muted sm:inline">// daily digest</span>
-        </div>
-        <LanguageSwitch />
-        <input
-          type="search"
-          placeholder="search articles..."
-          value={filterState.query}
-          onChange={(e) =>
-            setFilterState({ ...filterState, query: e.target.value })
-          }
-          className="w-full max-w-[200px] rounded border border-[rgba(240,246,252,0.1)] bg-surface-2 px-3 py-1.5 font-mono text-xs text-ink placeholder:text-ink-muted focus:border-accent focus:outline-none"
-        />
-        <div className="hidden font-mono text-xs text-ink-muted sm:flex sm:items-center sm:gap-1.5">
-          <span>{staleness === 0 ? "today" : `${staleness}d ago`}</span>
-          <span className="opacity-30">·</span>
-          <span>{data.articles.length} articles</span>
-        </div>
-        {failingFeeds > 0 && (
-          <button
-            type="button"
-            onClick={() => setFilterState({ ...filterState, view: "trends" })}
-            title="Open wire health in trends"
-            className="shrink-0 rounded border border-[rgba(227,179,65,0.25)] bg-[rgba(227,179,65,0.07)] px-2 py-1 font-mono text-[10px] text-ember transition-colors hover:border-ember"
-          >
-            ▲ {failingFeeds} feed{failingFeeds > 1 ? "s" : ""} down
-          </button>
-        )}
-        <button
-          type="button"
-          onClick={() => setTheme("extra")}
-          title="Switch to the Extra edition"
-          className="shrink-0 rounded border border-[rgba(227,179,65,0.25)] bg-[rgba(227,179,65,0.07)] px-2 py-1 font-mono text-[10px] uppercase tracking-widest text-ember transition-colors hover:border-ember"
-        >
-          extra!
-        </button>
-      </header>
+  const requestNavigation = useCallback((next: StandardSection) => {
+    pendingSection.current = next;
+    setNavigation(value => value + 1);
+  }, []);
+  const navigate = (next: StandardSection) => {
+    setFilterState({ ...filterState, view: next === "trends" ? "trends" : undefined });
+    requestNavigation(next);
+  };
+  const updateFilters = (next: FilterState, move = false) => {
+    setFilterState({ ...next, view: undefined });
+    if (move) requestNavigation("news");
+  };
+  useEffect(() => {
+    const onHistory = () => {
+      const params = new URLSearchParams(window.location.search);
+      requestNavigation(params.get("view") === "trends" ? "trends" :
+        ["q", "category", "topics", "traits", "entities"].some(key => params.has(key)) ? "news" : "brief");
+    };
+    window.addEventListener("popstate", onHistory);
+    return () => window.removeEventListener("popstate", onHistory);
+  }, [requestNavigation]);
+  useEffect(() => {
+    if (!data) return;
+    if (!initialNavigation.current) {
+      initialNavigation.current = true;
+      if (!pendingSection.current) pendingSection.current = isTrends ? "trends" :
+        hasActiveFilters(filterState) || filterState.category !== "All" ? "news" : null;
+    }
+    const next = pendingSection.current;
+    if (!next) return;
+    const frame = requestAnimationFrame(() => {
+      const heading = document.getElementById(next === "trends" ? "trends-heading" : next === "brief" ? "brief-heading" : "news-heading");
+      if (!heading) return;
+      heading.scrollIntoView({ behavior: motion.enabled ? "smooth" : "instant", block: "start" });
+      const target = next === "search" ? document.getElementById("news-search") : heading;
+      target?.focus({ preventScroll: true });
+      setSection(next === "search" ? "news" : next);
+      pendingSection.current = null;
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [data, isTrends, navigation, motion.enabled, filterState]);
+  useEffect(() => {
+    if (!data || isTrends || typeof IntersectionObserver === "undefined") return;
+    const observer = new IntersectionObserver(entries => {
+      for (const entry of entries) if (entry.isIntersecting) setSection(entry.target.id === "news" ? "news" : "brief");
+    }, { rootMargin: "-65px 0px -55% 0px", threshold: 0 });
+    for (const id of ["daily-brief", "news"]) { const node = document.getElementById(id); if (node) observer.observe(node); }
+    return () => observer.disconnect();
+  }, [data, isTrends]);
 
-      {/* Tab Rail */}
-      <div className="shrink-0 border-b border-[rgba(240,246,252,0.08)] bg-canvas">
-        <div className="mx-auto flex max-w-5xl items-stretch overflow-x-auto px-5">
-          {tabs.map((cat) => {
-            const count = counts.get(cat) ?? 0;
-            const isActive = activeCategory === cat;
-            return (
-              <button
-                key={cat}
-                onClick={() => {
-                  setFilterState({ ...filterState, category: cat, view: undefined });
-                  setShowNotableOnly(false);
-                }}
-                className={`relative flex shrink-0 items-center gap-1.5 px-3 py-3 font-mono text-xs font-medium transition-colors ${
-                  isActive && !isTrends
-                    ? "text-ink after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-accent after:content-['']"
-                    : "text-ink-secondary hover:text-ink"
-                }`}
-              >
-                {cat.toUpperCase()}
-                <span
-                  className={`rounded px-1.5 py-0.5 text-[10px] tabular-nums ${
-                    isActive
-                      ? "bg-[rgba(88,166,255,0.12)] text-accent"
-                      : "bg-surface-2 text-ink-muted"
-                  }`}
-                >
-                  {count}
-                </span>
-              </button>
-            );
-          })}
-          <div className="ml-auto flex shrink-0 items-stretch">
-            {activeCategory === "Research" && !isTrends && (
-              <button
-                onClick={() => setShowNotableOnly((v) => !v)}
-                className={`flex shrink-0 items-center gap-1.5 px-3 py-3 font-mono text-xs transition-colors ${
-                  showNotableOnly ? "text-ember" : "text-ink-secondary hover:text-ink"
-                }`}
-              >
-                <span>{showNotableOnly ? "★" : "☆"}</span>
-                <span>{showNotableOnly ? "notable only" : "show all"}</span>
-              </button>
-            )}
-            <button
-              onClick={() =>
-                setFilterState({
-                  ...filterState,
-                  view: isTrends ? undefined : "trends",
-                })
-              }
-              className={`relative flex shrink-0 items-center gap-1.5 px-3 py-3 font-mono text-xs font-medium transition-colors ${
-                isTrends
-                  ? "text-ink after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-accent after:content-['']"
-                  : "text-ink-secondary hover:text-ink"
-              }`}
-            >
-              ◮ TRENDS
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {/* Filter Bar */}
-      {!isTrends && (
-        <FilterBar
-          scopedArticles={categoryScoped}
-          state={filterState}
-          onChange={setFilterState}
-        />
-      )}
-
-      {/* Scrollable Content */}
-      <main className="flex-1 overflow-y-auto">
-        <div className="mx-auto max-w-5xl px-5 py-6">
-          {isTrends ? (
-            <TrendsView
-              data={data}
-              now={Date.now()}
-              onOpenTopic={(tag) =>
-                setFilterState({
-                  query: "",
-                  category: "All",
-                  topics: [tag],
-                  traits: [],
-                  entities: [],
-                })
-              }
-              onOpenEntity={(tag) =>
-                setFilterState({
-                  query: "",
-                  category: "All",
-                  topics: [],
-                  traits: [],
-                  entities: [tag],
-                })
-              }
-            />
-          ) : (
-            <>
-          {!inSingleView && data.brief && <BriefPanel brief={data.brief} />}
-          {grouped.length === 0 ? (
-            <div className="flex flex-col items-start gap-3">
-              <p className="font-mono text-xs text-ink-muted">// no articles match</p>
-              {activeFiltersOn && (
-                <button
-                  type="button"
-                  onClick={() =>
-                    setFilterState({
-                      ...EMPTY_FILTER,
-                      category: filterState.category,
-                    })
-                  }
-                  className="rounded border border-[rgba(240,246,252,0.16)] px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-ink-secondary transition-colors hover:border-accent hover:text-accent"
-                >
-                  clear filters
-                </button>
-              )}
-            </div>
-          ) : (
-            <>
-              {grouped.map(([category, articles]) => (
-                <CategorySection
-                  key={category}
-                  category={category}
-                  articles={articles}
-                  showHeader={!inSingleView}
-                  featuredFirst={inSingleView}
-                  limit={!inSingleView ? PREVIEW_SIZE : undefined}
-                  onSeeAll={!inSingleView ? () => setFilterState({ ...filterState, category }) : undefined}
-                />
-              ))}
-
-              {inSingleView && totalPages > 1 && (
-                <div className="mt-10 flex items-center justify-center gap-8 border-t border-[rgba(240,246,252,0.06)] pt-8">
-                  <button
-                    onClick={() => setPage((p) => Math.max(0, p - 1))}
-                    disabled={page === 0}
-                    className="font-mono text-xs text-ink-secondary transition-colors hover:text-ink disabled:cursor-not-allowed disabled:opacity-25"
-                  >
-                    ← prev
-                  </button>
-                  <span className="font-mono text-xs tabular-nums text-ink-muted">
-                    {String(page + 1).padStart(2, "0")} / {String(totalPages).padStart(2, "0")}
-                  </span>
-                  <button
-                    onClick={() => setPage((p) => Math.min(totalPages - 1, p + 1))}
-                    disabled={page >= totalPages - 1}
-                    className="font-mono text-xs text-ink-secondary transition-colors hover:text-ink disabled:cursor-not-allowed disabled:opacity-25"
-                  >
-                    next →
-                  </button>
-                </div>
-              )}
-            </>
-          )}
-            </>
-          )}
-        </div>
-      </main>
-    </div>
-  );
+  const issues = feedIssues(data?.feedHealth);
+  return <div className="theme-standard" lang={language} data-motion={motion.enabled ? "on" : "off"}>
+    <StandardHeader generatedAt={data?.generatedAt} categories={data?.categories ?? []} category={filterState.category}
+      counts={counts} section={isTrends ? "trends" : section} onNavigate={navigate}
+      onCategory={category => updateFilters({ ...filterState, category }, true)} extraEnabled={extraEnabled}
+      onExtra={() => setTheme("extra")} motion={motion} />
+    <main className="standard-main" id="standard-content" tabIndex={-1}>
+      {error ? <div className="standard-state" role="alert"><p className="standard-kicker">{t.interruption}</p><h1>{t.backSoon}</h1><p>{t.loadError}</p><button className="standard-action" onClick={onRetry}>{t.retry} ↗</button></div>
+        : !data ? <div className="standard-state" role="status"><p className="standard-kicker">AI Briefing</p><h1>{t.opening}<span>…</span></h1><p>{t.gathering}</p></div>
+        : <>{isTrends ? <section className="standard-trends"><p className="standard-kicker">{t.biggerPicture}</p><h1 id="trends-heading" tabIndex={-1}>{t.signals}<span>.</span></h1>
+            <TrendsView data={data} now={Date.now()} onOpenTopic={tag => updateFilters({ ...EMPTY_FILTER, topics: [tag] }, true)}
+              onOpenEntity={tag => updateFilters({ ...EMPTY_FILTER, entities: [tag] }, true)} />
+          </section> : <>
+            <DailyCover data={data} motion={motion.enabled} onNews={() => navigate("news")} />
+            <NewsFeed articles={filtered} scopedArticles={scopedArticles} categories={data.categories} counts={counts} state={filterState}
+              onChange={updateFilters} page={safePage} onPage={next => { setPage(next); requestNavigation("news"); }}
+              notableOnly={notableOnly} onNotable={() => { setNotableOnly(value => !value); setPage(0); }} motion={motion.enabled} />
+          </>}
+          <footer className="standard-footer"><div><span className="standard-footer-brand">AI Briefing<span aria-hidden="true">●</span></span><p>{t.footer}</p></div>
+            <div className="standard-footer-status"><span>{t.archiveUpdated} <time dateTime={data.generatedAt}>{newsDate(data.generatedAt, language)}</time></span>
+              <button onClick={() => navigate("trends")}>{issues.length ? t.sourcesAttention(issues.length) : t.exploreHealth} ↗</button></div>
+          </footer>
+        </>}
+    </main>
+  </div>;
 }

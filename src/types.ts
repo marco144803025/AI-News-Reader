@@ -26,11 +26,13 @@ export type FeedHealth = {
 export type BriefBullet = {
   text: string; // ≤ ~40 words, prompt-enforced
   textZhHK?: string; // HK written Traditional Chinese, paired with English text
-  refs: string[]; // URLs of cited articles — validated subset of the run's new articles
+  refs: string[]; // URLs validated against the selected brief input
 };
 
 export type Brief = {
   generatedAt: string; // timestamp of the ingest run that produced it
+  headline?: string;
+  headlineZhHK?: string;
   bullets: BriefBullet[]; // 3–5 entries
 };
 

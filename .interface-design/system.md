@@ -1,5 +1,48 @@
 # AI Briefing — Interface Design System
 
+## Current standard — Cinematic editorial (F16)
+
+The standard edition now follows the approved F16 design: a warm dark
+publication with the Daily Brief as its cover, up to two notable stories, and
+a detailed news feed reached by native document scrolling. The old standard
+notes below are historical; Extra's distinct print system remains applicable
+when its default-off build flag is enabled.
+
+**Current implementation:** `ClassicApp.tsx` composes the presentation in
+`components/standard/`. `standard.css` scopes its palette under `.theme-standard`.
+The compatibility name `classic` means this edition, including in old URLs.
+
+| Role | Value / rule |
+| --- | --- |
+| Background / panel / feed | `#0c0f12` / `#15191d` / `#11161a` |
+| Primary / secondary / metadata | `#f5f0e8` / `#afb3b4` / `#98a1a6` |
+| Accent / dividing rule | Copper `#e6ad7d` / `#30363b` |
+| English display type | Georgia, Times New Roman, serif; normal weight, balanced wrapping |
+| Body and Chinese fallback | Arial, PingFang HK, Microsoft JhengHei, system sans |
+| Brief/feed reading text | 14px, generous 1.8–1.9 line height; full summaries without clamping |
+| Main cover heading | Responsive 44–78px English; Chinese uses a less compressed line height |
+| Navigation | Sticky compact header, 76px desktop rail, native modal index; phone rail collapses |
+| News discovery | Category select and search, expandable tag controls, visible active filters |
+| Pagination | Eight detailed stories per page in All and category views |
+| Keyboard | Copper focus outline; menu traps focus, Escape dismisses and returns focus |
+
+Motion is decorative and optional. The canvas sphere uses deterministic
+geometry and fewer particles on phones. It stops offscreen, in hidden tabs,
+and on unmount. `ai-briefing-motion=off` requests a static view; live
+`prefers-reduced-motion` overrides an enabled preference. Content remains
+visible if canvas/observers/storage are unavailable. No scroll hijacking,
+fixed-height article pane, or mandatory introduction.
+
+Use the brief's generation date separately from the archive update. Show a
+quiet/failure notice when an older brief is carried forward. The headline
+must come from the stored optional fields or a neutral localized fallback;
+do not manufacture a daily theme in presentation code.
+
+Extra code/fonts are loaded only when the enabled edition is selected.
+Changing the standard palette must not change `.theme-extra`.
+
+## Historical standard reference (superseded by F16)
+
 ## Direction & Feel
 
 **Product:** AI news reader for technical users (developers, researchers) staying current with the AI industry.

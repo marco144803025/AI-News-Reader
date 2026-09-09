@@ -9,29 +9,37 @@
 [![Test](https://github.com/marco144803025/AI-News-Reader/actions/workflows/test.yml/badge.svg)](https://github.com/marco144803025/AI-News-Reader/actions/workflows/test.yml)
 [![Daily Ingest](https://github.com/marco144803025/AI-News-Reader/actions/workflows/ingest.yml/badge.svg)](https://github.com/marco144803025/AI-News-Reader/actions/workflows/ingest.yml)
 
-![The Stop the Presses edition](docs/screenshot.png)
+![The cinematic standard edition](docs/screenshot.png)
 
-*Shown: the "Stop the Presses" edition (`?theme=extra`) — a punk-newsprint
-redesign with a ranked front page. A quieter dark terminal edition is the
-default; both run on identical data and logic behind an A/B theme flag.*
+*The standard edition: a dark editorial Daily Brief, notable stories, and a
+full news feed below the cover. The optional Stop the Presses edition is
+retained behind a build-time flag that is disabled by default.*
 
 ## Features
 
 - **Autonomous daily pipeline** — a GitHub Actions cron (06:00 UTC) pulls ~10
   RSS wires, dedupes against a rolling 30-day archive, and has DeepSeek
   classify, summarize and tag only the new articles. Model API usage is paid.
-- **English / 繁體中文 summaries** — a Summary language switch in both layouts
-  changes article summaries and the daily brief, remembering your choice.
-  Traditional Chinese uses Hong Kong written vocabulary; headlines, technical
-  names and original links remain unchanged. Search matches both languages.
+- **English / 繁體中文** — the standard edition switches its entire interface,
+  article summaries and Daily Brief together, remembering your choice after reload.
+  Navigation, filters, dates, Trends and source-health labels use Hong Kong
+  Traditional Chinese even when content falls back to English. Original article
+  titles, proper names, source links and stored filter values remain unchanged;
+  unknown dynamic labels retain their original spelling. Extra retains its
+  summary-language switch. Search matches both content languages; interface
+  translations are local and require no AI calls.
 - **12-category taxonomy + 3-dimensional tags** (topics / traits / entities),
   with notable-story detection for significant releases, papers, funding
   rounds and policy moves.
 - **Client-side search and multi-select tag filters** with URL-shareable
   state — every filtered view is a link.
-- **Two complete design lineages** behind a theme flag: the dark
-  intelligence-terminal classic, and the newsprint-collage extra edition with
-  a ranked front page (lead clipping, fresh markers, tilted wire rows).
+- **Brief-first editorial design** — an animated particle cover, up to two
+  notable stories, full summaries, eight-item pages, and a compact category
+  index on desktop and phone. Motion respects your device preference and
+  can be turned off in the index; the art pauses outside the visible cover.
+- **Optional Extra edition** — the preserved newsprint-collage design can be
+  enabled with `VITE_ENABLE_EXTRA=true`. Old Extra URLs/preferences cannot
+  bypass a disabled flag.
 - **Per-feed health tracking** — failing wires are recorded across runs and
   surfaced in the UI.
 - **Personal Telegram brief** — optional delivery of the cited morning summary
@@ -69,10 +77,17 @@ same call count does not imply the same bill. Switching language and sending
 Telegram do not make translation calls.
 
 The website starts in English and remembers your explicit choice in localStorage.
-The switch changes summaries, not navigation labels or source articles. Compact
-headline-only rows remain headline-only. Old articles without Chinese show
+In the standard edition, the switch changes the entire interface, summaries and
+Daily Brief together. Extra changes summary content only; its compact rows remain headline-only.
+Old articles without Chinese show
 English with a visible fallback notice. A partially translated daily brief
 falls back entirely to English. There is no automatic paid archive translation.
+
+The Daily Brief headline and its Chinese equivalent are generated in the same
+synthesis call as the bullets. Older briefs show “The latest in AI.” / “AI 每日摘要”
+until a normal ingestion produces the new optional fields; no backfill is needed.
+A missing headline translation does not discard already-translated bullets.
+The brief's date stays visible when a quiet or failed update carries it forward.
 
 ## Stack
 
@@ -120,6 +135,37 @@ for BotFather, chat ID discovery, GitHub secrets, sending, and recovery.
 
 Feeds live in [feeds.json](feeds.json) — each entry is
 `{ "name": "...", "url": "..." }`; broken feeds are skipped and tracked.
+
+## Optional Extra edition
+
+The standard edition is always the default for a new visitor. Only the exact
+value `true` enables Extra; unset, `false`, and unrecognized values disable it.
+This is a public presentation flag, not a secret. API keys still belong only
+in offline ingestion settings.
+
+For a local session (Windows cmd), restart Vite after changing the flag:
+
+```cmd
+set VITE_ENABLE_EXTRA=true
+npm run dev
+```
+
+Choose **Index → Extra edition**, or open `?theme=extra`. With the flag enabled,
+a recognized URL theme wins over the saved choice. `?theme=classic` refers to
+the cinematic standard. To return to the default configuration:
+
+```cmd
+set VITE_ENABLE_EXTRA=false
+npm run build
+npm run dev
+```
+
+For hosted builds, set the repository's **Settings → Secrets and variables →
+Actions → Variables → New repository variable** named `VITE_ENABLE_EXTRA` to
+`true`. Both `deploy.yml` and `ingest.yml` read the same variable at build time.
+Set it to `false` or remove it to disable Extra. A subsequent build/deployment
+is required; changing a URL cannot enable a disabled build. No hosted setting
+is changed by a local build.
 
 ## Process
 

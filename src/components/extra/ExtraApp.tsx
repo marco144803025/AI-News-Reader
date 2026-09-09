@@ -1,4 +1,5 @@
 import { useMemo } from "react";
+import "./extra.css";
 import type { LineageProps } from "../../lib/lineage";
 import {
   categoryCounts,

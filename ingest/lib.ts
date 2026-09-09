@@ -1,6 +1,6 @@
 import OpenAI from "openai";
 import { isTransientError } from "./deepseek.ts";
-import { validTranslation } from "../src/lib/language.ts";
+import { validBriefHeadline, validTranslation } from "../src/lib/language.ts";
 import type {
   Article,
   Brief,
@@ -320,7 +320,11 @@ export function buildBriefPrompt(articles: Article[]): {
     "Weight NOTABLE articles toward inclusion, but lead with whatever is " +
     "genuinely the day's biggest story. Each bullet cites the indices of the " +
     "articles it draws from.\n\n" +
-    'Respond ONLY with a JSON array: [{"text": string, "textZhHK": string, "refs": number[]}]';
+    "Also write a content-led headline grounded in these bullets, with no unsupported " +
+    "claims or sensationalism. headline: at most 14 English words and 100 characters. " +
+    "headlineZhHK: equivalent Hong Kong Traditional Chinese, at most 50 characters.\n\n" +
+    'Respond ONLY with a JSON object: {"headline": string, "headlineZhHK": string, ' +
+    '"bullets": [{"text": string, "textZhHK": string, "refs": number[]}]}';
 
   const user = `${articles.length} articles from the last 24 hours:\n\n${list}`;
 
@@ -332,20 +336,41 @@ export function buildBriefPrompt(articles: Article[]): {
 export function parseBriefResponse(
   text: string,
   inputs: Article[]
-): BriefBullet[] {
-  const jsonMatch = text.match(/\[[\s\S]*\]/);
-  if (!jsonMatch) throw new Error("No JSON array in brief response");
-
+): Omit<Brief, "generatedAt"> {
+  // Read one balanced root value, not a greedy match that can swallow prose or
+  // accidentally interpret a nested refs array as a complete brief.
+  const start = text.search(/[\[{]/);
+  if (start < 0) throw new Error("No JSON in brief response");
+  let depth = 0;
+  let quoted = false;
+  let escaped = false;
+  let end = text.length;
+  for (let i = start; i < text.length; i++) {
+    const char = text[i];
+    if (quoted) {
+      if (escaped) escaped = false;
+      else if (char === "\\") escaped = true;
+      else if (char === '"') quoted = false;
+    } else if (char === '"') quoted = true;
+    else if (char === "[" || char === "{") depth++;
+    else if (char === "]" || char === "}") {
+      depth--;
+      if (depth === 0) { end = i + 1; break; }
+    }
+  }
   let parsed: unknown;
   try {
-    parsed = JSON.parse(jsonMatch[0]);
+    parsed = JSON.parse(text.slice(start, end));
   } catch {
     throw new Error("Brief response is not valid JSON");
   }
-  if (!Array.isArray(parsed)) throw new Error("Brief response is not an array");
+  const envelope = typeof parsed === "object" && parsed !== null && !Array.isArray(parsed)
+    ? parsed as Record<string, unknown> : undefined;
+  const items = Array.isArray(parsed) ? parsed : envelope?.bullets;
+  if (!Array.isArray(items)) throw new Error("Brief response has no bullets array");
 
   const bullets: BriefBullet[] = [];
-  for (const item of parsed) {
+  for (const item of items) {
     if (typeof item !== "object" || item === null) continue;
     const { text: bulletText, textZhHK: rawChinese, refs } = item as {
       text?: unknown;
@@ -387,7 +412,9 @@ export function parseBriefResponse(
   if (kept.some(bullet => !bullet.textZhHK)) {
     console.warn("Brief: Chinese translation incomplete; English fallback will be shown.");
   }
-  return kept;
+  const headline = validBriefHeadline(envelope?.headline, "en");
+  const headlineZhHK = validBriefHeadline(envelope?.headlineZhHK, "zh-HK");
+  return { bullets: kept, ...(headline ? { headline } : {}), ...(headlineZhHK ? { headlineZhHK } : {}) };
 }
 
 export function carryForwardBrief(existing: NewsData | null): Brief | undefined {

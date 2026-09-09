@@ -1,4 +1,6 @@
 import { useMemo, type ReactElement } from "react";
+import { useLanguage } from "../hooks/useLanguage";
+import { tagLabel, uiCopy } from "../lib/ui";
 import type { Article, Tags } from "../types";
 import {
   collectTagUniverse,
@@ -7,12 +9,6 @@ import {
 } from "../lib/filter";
 
 type GroupKey = keyof Tags;
-
-const GROUP_LABELS: Record<GroupKey, string> = {
-  topics: "Topics",
-  traits: "Traits",
-  entities: "Entities",
-};
 
 const GROUP_STYLES: Record<
   GroupKey,
@@ -59,6 +55,8 @@ export default function FilterBar({
   state: FilterState;
   onChange: (next: FilterState) => void;
 }) {
+  const { language } = useLanguage();
+  const t = uiCopy(language);
   const universes = useMemo(
     () => ({
       topics: collectTagUniverse(scopedArticles, "topics"),
@@ -82,7 +80,7 @@ export default function FilterBar({
     return (
       <div key={group} className="flex items-baseline gap-2">
         <span className="shrink-0 font-mono text-[10px] uppercase tracking-widest text-ink-muted">
-          {GROUP_LABELS[group]}
+          {t[group]}
         </span>
         <div className="flex flex-wrap gap-1">
           {displayed.map((tag) => {
@@ -96,13 +94,14 @@ export default function FilterBar({
             return (
               <button
                 key={tag}
+                aria-pressed={isSelected}
                 type="button"
                 onClick={() =>
                   onChange({ ...state, [group]: toggle(selected, tag) })
                 }
                 className={`rounded border px-1.5 py-0.5 font-mono text-[10px] tracking-wide transition-colors ${cls}`}
               >
-                {tag}
+                {tagLabel(group, tag, language)}
               </button>
             );
           })}
@@ -137,7 +136,7 @@ export default function FilterBar({
             }
             className="self-start font-mono text-[10px] uppercase tracking-widest text-ink-muted transition-colors hover:text-ink"
           >
-            clear filters
+            {t.clearFilters}
           </button>
         )}
       </div>

@@ -19,6 +19,7 @@ feature must reach **Done** before the next starts, unless explicitly paralleliz
 | F11 | [Personal Telegram morning brief](./F11-telegram-brief/)         | Done        | Delivery   |
 | F12 | [English / HK Traditional Chinese summaries](./F12-bilingual-summaries/) | Build | Content |
 | F13 | [Source expansion & dedupe](./F13-source-expansion/)             | Not started | Backend    |
+| F16 | [Cinematic standard edition](./F16-cinematic-standard/)          | Build       | UX         |
 
 F12 requested 2026-09-06 as the next task after Telegram. A spec and draft
 implementation plan are documented together at Marco's request for review.
@@ -154,6 +155,24 @@ renders. RSS/Atom only — no scraping, per Constitution rules #1 and #2. Spec i
 a stub with open questions on the source shortlist, the dedupe signal, and the
 per-run cap; Gate 1 pending.
 
+**F16: Cinematic standard edition.** Marco approved the dark editorial Daily
+Brief prototype and requested full adoption on 2026-09-08: a content-led cover,
+subtle particle animation, up to two notable stories, then detailed news on
+scroll. The new layout becomes standard; Extra is retained behind a build-time
+flag that is off by default, including for saved preferences and old links.
+Preserve search, categories/tags, Trends, bilingual fallback, and current brief
+freshness/delivery behavior. Proposed optional bilingual headlines use the
+existing brief generation call. This separately requested UI workstream is
+documented alongside F13–F15; their source, licensing, and balance scope remains
+separate. Visual direction and Gate 1 technical spec approved; Marco replied
+"approved" on 2026-09-08. Gate 2 implementation plan was approved with "approve"
+on the same day. Implementation is complete locally as of 2026-09-09: 124 tests
+pass, both flag builds pass, and desktop/phone, bilingual, keyboard, navigation,
+and motion/fallback checks are recorded in its plan. Retain Build until the
+native 200% browser-zoom check is recorded; the available preview tool could not
+perform that check. Local preview is ready for visual review. No publication or
+live ingestion was requested or performed; F6's older open checks are unchanged.
+
 ## Cross-cutting (planned later)
 
 These don't have a phase yet — they get specced when one of the above forces them:
@@ -164,6 +183,23 @@ These don't have a phase yet — they get specced when one of the above forces t
   archive growing beyond ~5 MB).
 
 ## SDD process note
+
+F16 localization extension requested 2026-09-09: translate the entire standard
+interface using the existing EN / 繁體中文 preference, independently of content
+fallback, while preserving the cinematic design and default-off Extra flag.
+Inspection reproduced English controls with Chinese selected in the running local
+preview. Marco approved the focused spec with “approve” on 2026-09-09. The
+localization implementation plan was approved with “approved” on 2026-09-09;
+implementation and offline verification completed locally on 2026-09-09: 130 tests
+passed, both Extra flag builds passed, and browser interactions, fallback states,
+reload persistence and 320–1440 widths were checked in both languages. Chinese
+desktop/mobile screenshots and detailed results are recorded in the F16 plan.
+F16 stays Build solely for its open native 200% browser-zoom check. F12 remains Done; its original
+summary-only scope is extended by F16 rather than retroactively redefined.
+
+Publication approved 2026-09-09: Marco requested “deploy it, its ok”.
+The isolated release preserves current remote archive/delivery state; hosted
+verification will be recorded in the F16 plan. Native 200% zoom remains open.
 
 All features **must** follow the spec → plan → implement workflow documented in
 `specs/README.md`. F2c and F2d were implemented without prior specs (retroactively

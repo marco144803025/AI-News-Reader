@@ -280,7 +280,7 @@ export async function generateBrief(
 
   return {
     generatedAt: new Date().toISOString(),
-    bullets: parseBriefResponse(text, input),
+    ...parseBriefResponse(text, input),
   };
 }
 

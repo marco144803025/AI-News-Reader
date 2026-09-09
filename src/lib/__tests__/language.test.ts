@@ -1,9 +1,24 @@
 import { describe, it } from "node:test";
 import assert from "node:assert/strict";
-import { isSummaryLanguage, selectBrief, selectSummary, validTranslation } from "../language.ts";
+import { isSummaryLanguage, selectBrief, selectBriefHeadline, selectSummary, validBriefHeadline, validTranslation } from "../language.ts";
 import type { Brief } from "../../types.ts";
 
 describe("summary languages", () => {
+  it("selects headlines independently without changing the complete brief's language", () => {
+    const brief: Brief = { generatedAt: "2026-09-08T06:00:00Z", headline: "New models arrive",
+      bullets: [0, 1, 2].map(i => ({ text: `English ${i}`, textZhHK: `消息 ${i}`, refs: [] })) };
+    assert.equal(selectBriefHeadline(brief, selectBrief(brief, "zh-HK").language), "AI 每日摘要");
+    assert.equal(selectBriefHeadline(brief, "en"), brief.headline);
+    brief.headlineZhHK = "新模型登場";
+    assert.equal(selectBriefHeadline(brief, "zh-HK"), brief.headlineZhHK);
+    delete brief.bullets[1].textZhHK;
+    assert.equal(selectBriefHeadline(brief, selectBrief(brief, "zh-HK").language), brief.headline);
+    assert.equal(selectBriefHeadline({ ...brief, headline: "" }, "en"), "The latest in AI.");
+    assert.equal(validBriefHeadline("word ".repeat(15), "en"), undefined);
+    assert.equal(validBriefHeadline("x".repeat(101), "en"), undefined);
+    assert.equal(validBriefHeadline("字".repeat(51), "zh-HK"), undefined);
+    assert.equal(validBriefHeadline("🚀".repeat(50), "zh-HK"), "🚀".repeat(50));
+  });
   it("accepts only supported locales and nonempty translation strings", () => {
     assert(isSummaryLanguage("en"));
     assert(isSummaryLanguage("zh-HK"));

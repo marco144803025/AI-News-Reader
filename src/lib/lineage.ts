@@ -8,6 +8,8 @@ import type { Theme } from "./theme";
 export type LineageProps = {
   data: NewsData | null;
   error: string | null;
+  onRetry: () => void;
+  extraEnabled: boolean;
   filterState: FilterState;
   setFilterState: (next: FilterState) => void;
   page: number;

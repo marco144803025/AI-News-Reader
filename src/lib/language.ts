@@ -13,6 +13,20 @@ export function validTranslation(value: unknown): string | undefined {
   return typeof value === "string" && value.trim() ? value.trim() : undefined;
 }
 
+/** Headline quality failures must not discard an otherwise usable brief. */
+export function validBriefHeadline(value: unknown, language: SummaryLanguage): string | undefined {
+  const text = validTranslation(value)?.replace(/\s+/gu, " ");
+  if (!text || [...text].length > (language === "en" ? 100 : 50)) return undefined;
+  if (language === "en" && text.split(" ").length > 14) return undefined;
+  return text;
+}
+
+/** Pass the selected bullet language, so a missing heading never changes it. */
+export function selectBriefHeadline(brief: Brief, language: SummaryLanguage): string {
+  return validBriefHeadline(language === "zh-HK" ? brief.headlineZhHK : brief.headline, language)
+    ?? (language === "zh-HK" ? "AI 每日摘要" : "The latest in AI.");
+}
+
 export type SelectedText = {
   text: string;
   language: SummaryLanguage;

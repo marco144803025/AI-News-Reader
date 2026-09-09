@@ -26,7 +26,8 @@ describe("DeepSeek provider", () => {
       assert.equal(body.response_format, undefined);
       return completion(body.model === CLASSIFY_MODEL
         ? JSON.stringify([{ index: 0, category: "Model Releases", summary: "New capability.", summaryZhHK: "  新功能。  ", important: true, tags: ["open-source", "llm"] }])
-        : JSON.stringify([0, 1, 2].map(index => ({ text: `Development ${index}`, textZhHK: `新消息 ${index}`, refs: [index] }))));
+        : JSON.stringify({ headline: "New capabilities come into focus", headlineZhHK: "新功能成為焦點",
+          bullets: [0, 1, 2].map(index => ({ text: `Development ${index}`, textZhHK: `新消息 ${index}`, refs: [index] })) }));
     });
     assert.equal(client.maxRetries, 0);
     const classified = await classifyBatch(client, [article]);
@@ -35,6 +36,8 @@ describe("DeepSeek provider", () => {
     assert.deepEqual(classified[0].tags, { topics: ["llm"], traits: ["open-source"], entities: [] });
     const articles = [0, 1, 2].map(index => ({ ...article, url: `https://example.org/${index}` }));
     const brief = await generateBrief(client, articles);
+    assert.equal(brief.headline, "New capabilities come into focus");
+    assert.equal(brief.headlineZhHK, "新功能成為焦點");
     assert.deepEqual(brief.bullets.map(bullet => bullet.refs), articles.map(item => [item.url]));
     assert.deepEqual(brief.bullets.map(b => b.textZhHK), ["新消息 0", "新消息 1", "新消息 2"]);
     assert.equal(bodies.length, 2, "both languages use the existing two stages");

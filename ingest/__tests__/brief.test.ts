@@ -73,7 +73,7 @@ describe("buildBriefPrompt", () => {
     assert.ok(user.includes("[0] (Research, NOTABLE) Title a"));
     assert.ok(user.includes("[1] (Research) Title b"));
     assert.ok(user.includes("2 articles from the last 24 hours"));
-    assert.ok(system.includes("JSON array"));
+    assert.ok(system.includes("JSON object"));
   });
 });
 
@@ -84,10 +84,28 @@ describe("parseBriefResponse", () => {
     makeArticle("https://x/c", "2026-07-02T07:00:00Z"),
   ];
 
+  it("accepts a fenced envelope and independently discards invalid headlines", () => {
+    const bullets = [0, 1, 2].map(i => ({ text: `Item ${i} with [brackets]`, textZhHK: `消息 ${i}`, refs: [i] }));
+    const response = { headline: "  Reliability takes centre stage  ", headlineZhHK: "可靠性成為焦點", bullets };
+    const result = parseBriefResponse("```json\n" + JSON.stringify(response) + "\n```", inputs);
+    assert.equal(result.headline, "Reliability takes centre stage");
+    assert.equal(result.headlineZhHK, response.headlineZhHK);
+    assert.deepEqual(result.bullets.map(b => b.refs), inputs.map(a => [a.url]));
+    for (const headline of [null, 42, {}, "", "x".repeat(101), "word ".repeat(15)]) {
+      const invalid = parseBriefResponse(JSON.stringify({ ...response, headline }), inputs);
+      assert.equal(invalid.headline, undefined);
+      assert.equal(invalid.headlineZhHK, response.headlineZhHK);
+      assert.equal(invalid.bullets.length, 3);
+    }
+    assert.equal(parseBriefResponse(JSON.stringify({ ...response, headlineZhHK: "字".repeat(51) }), inputs).headlineZhHK, undefined);
+    assert.throws(() => parseBriefResponse('{"headline":"Bad", "refs":[0,1,2]}', inputs), /bullets array/);
+    assert.throws(() => parseBriefResponse('{"headline":"Bad", "bullets":[}', inputs), /not valid JSON/);
+  });
+
   it("parses bullets and resolves refs to URLs", () => {
     const text =
       'Here is the brief:\n[{"text":"One","refs":[0,2]},{"text":"Two","refs":[1]},{"text":"Three","refs":[]}]';
-    const bullets = parseBriefResponse(text, inputs);
+    const { bullets } = parseBriefResponse(text, inputs);
     assert.equal(bullets.length, 3);
     assert.deepEqual(bullets[0].refs, ["https://x/a", "https://x/c"]);
     assert.deepEqual(bullets[2].refs, []);
@@ -99,7 +117,7 @@ describe("parseBriefResponse", () => {
     const raw = ["  首則消息。  ", 42, " \n"].map((textZhHK, i) => ({
       text: `English ${i}`, textZhHK, refs: [i, i, 99],
     }));
-    const bullets = parseBriefResponse(JSON.stringify(raw), inputs);
+    const { bullets } = parseBriefResponse(JSON.stringify(raw), inputs);
     assert.equal(bullets[0].textZhHK, "首則消息。");
     assert(!Object.hasOwn(bullets[1], "textZhHK"));
     assert(!Object.hasOwn(bullets[2], "textZhHK"));
@@ -111,14 +129,14 @@ describe("parseBriefResponse", () => {
   it("drops out-of-range, duplicate, and non-integer refs", () => {
     const text =
       '[{"text":"One","refs":[0,0,7,-1,1.5]},{"text":"Two","refs":[1]},{"text":"Three","refs":[2]}]';
-    const bullets = parseBriefResponse(text, inputs);
+    const { bullets } = parseBriefResponse(text, inputs);
     assert.deepEqual(bullets[0].refs, ["https://x/a"]);
   });
 
   it("skips bullets with empty text, then enforces the 3-5 bound", () => {
     const ok =
       '[{"text":""},{"text":"One","refs":[0]},{"text":"Two"},{"text":"Three"},{"text":"Four"}]';
-    assert.equal(parseBriefResponse(ok, inputs).length, 4);
+    assert.equal(parseBriefResponse(ok, inputs).bullets.length, 4);
 
     const tooFew = '[{"text":"One"},{"text":""},{"text":"Two"}]';
     assert.throws(() => parseBriefResponse(tooFew, inputs), /valid bullets/);
@@ -127,7 +145,7 @@ describe("parseBriefResponse", () => {
   it("keeps the first five of an over-long brief instead of losing the day", () => {
     const tooMany =
       '[{"text":"1"},{"text":"2"},{"text":"3"},{"text":"4"},{"text":"5"},{"text":"6"}]';
-    const bullets = parseBriefResponse(tooMany, inputs);
+    const { bullets } = parseBriefResponse(tooMany, inputs);
     assert.deepEqual(bullets.map(bullet => bullet.text), ["1", "2", "3", "4", "5"]);
   });
 
@@ -141,8 +159,10 @@ describe("carryForwardBrief", () => {
   it("returns the existing brief or undefined", () => {
     assert.equal(carryForwardBrief(null), undefined);
     const data = {
-      brief: { generatedAt: "2026-07-01T06:00:00Z", bullets: [] },
+      brief: { generatedAt: "2026-07-01T06:00:00Z", headline: "Previous edition", headlineZhHK: "上一期摘要", bullets: [] },
     } as unknown as NewsData;
     assert.equal(carryForwardBrief(data), data.brief);
+    assert.equal(carryForwardBrief(data)?.headline, "Previous edition");
+    assert.equal(carryForwardBrief(data)?.generatedAt, "2026-07-01T06:00:00Z");
   });
 });

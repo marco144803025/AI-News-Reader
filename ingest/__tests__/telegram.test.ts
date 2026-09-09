@@ -202,6 +202,24 @@ describe("Telegram transport", () => {
 });
 
 describe("Telegram durable delivery", () => {
+  it("headline metadata does not change messages, identity, or repeat-delivery guards", async () => {
+    const identities: string[] = [];
+    for (const metadata of [{}, { headline: "New cover", headlineZhHK: "新封面" }]) {
+      const store = new MemoryStore();
+      const enriched = { ...bilingualBrief, ...metadata };
+      const settings = { ...options(store), data: { ...data, brief: enriched } };
+      assert.deepEqual(checkBrief(settings.data, NOW).brief, checkBrief({ ...data, brief: bilingualBrief }, NOW).brief);
+      assert.deepEqual(formatBrief(enriched), formatBrief(bilingualBrief));
+      await deliverBrief({ ...settings, send: async () => {} });
+      identities.push(store.state.attempts[0].briefId);
+      assert.match(await deliverBrief({ ...settings, send: async () => assert.fail("duplicate") }), /already sent/);
+      for (const status of ["pending", "uncertain"] as const) {
+        store.state.attempts[0].status = status;
+        await assert.rejects(deliverBrief({ ...settings, send: async () => assert.fail("duplicate") }), /pending or uncertain/);
+      }
+    }
+    assert.equal(identities[0], identities[1]);
+  });
   it("language changes cannot bypass sent or unresolved state; identity is canonical", async () => {
     const identities: string[] = [];
     for (const language of ["en", "zh-HK"] as const) {
