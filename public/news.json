@@ -1,20 +1,918 @@
 {
-  "generatedAt": "2026-09-08T00:06:18.619Z",
-  "daysBack": 2,
+  "generatedAt": "2026-09-09T10:22:07.788Z",
+  "daysBack": 3,
   "categories": [
+    "AI Safety & Alignment",
+    "Research",
+    "Model Releases",
+    "Business & Funding",
+    "Applications",
+    "Agent Frameworks",
+    "Regulation & Policy",
     "Other",
     "Hardware & Compute",
-    "Model Releases",
-    "Research",
-    "Business & Funding",
-    "Regulation & Policy",
-    "AI Safety & Alignment",
-    "Applications",
     "Developer Tools",
-    "Agent Frameworks",
     "MCP"
   ],
   "articles": [
+    {
+      "title": "More than 1 in 10 chance AI ‘could kill all humans,’ says Anthropic safety lead after colleague quits",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/991927/anthropic-ai-kill-all-humans",
+      "source": "The Verge AI",
+      "publishedAt": "2026-09-09T09:56:28.000Z",
+      "snippet": "A senior Anthropic safety researcher has said there is more than a 10 percent chance artificial intelligence \"could kill all humans\" by the end of the decade, just hours after a colleague resigned over fears the AI lab and its rivals are carelessly racing to build \"superhuman systems\" they cannot control. In a post on X announcing his departure, Jacob Coxon, a researcher who has trained AI systems at Anthropic, said he had quit the company over its lax approach to safety. Coxon, who previously trained systems for OpenAI, accused the two AI companies of \"racing straight to self-improving superi",
+      "category": "AI Safety & Alignment",
+      "summary": "Anthropic safety lead estimates a >10% chance AI could 'kill all humans' by 2030, following a colleague's resignation over concerns about reckless racing toward superhuman systems.",
+      "summaryZhHK": "Anthropic 安全主管估計 AI 喺 2030 年前有超過 10% 機會「消滅所有人類」，喺同事因為擔心公司同對手魯莽競賽整「超人系統」而辭職之後講出嚟。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": [
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "Beyond Right and Wrong: Evaluating Second-order Social Reasoning in Large Language Models",
+      "url": "https://arxiv.org/abs/2609.05437",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-09T04:00:00.000Z",
+      "snippet": "arXiv:2609.05437v1 Announce Type: new Abstract: Previous AI alignment efforts have focused primarily on first-order social norms -- teaching models what is socially acceptable or unacceptable (e.g., `do not steal'). However, social intelligence depends not only on norm recognition, but also on anticipating who will enforce it and how (e.g., public shame or even imprisonment). These second-order expectations, known as metanorms, govern how people respond when social rules are broken. We introduce a novel framework for evaluating metanorm reasoning in Large Language Models (LLMs) along two dimen",
+      "category": "Research",
+      "summary": "This paper introduces a framework for evaluating metanorm reasoning in LLMs—second-order social expectations about how people respond when rules are broken. It aims to move beyond first-order norms like 'do not steal' to capture deeper social intelligence.",
+      "summaryZhHK": "呢篇論文提出一個評估 LLM 中 metanorm 推理嘅框架——即係關於規則被打破時人哋點樣回應嘅二階社會期望。佢旨在超越好似「唔好偷嘢」呢啲一階規範，去捕捉更深層嘅社會智能。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "alignment",
+          "evaluation"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "CriticGen: Generation-Aware Evaluation as Actionable Feedback",
+      "url": "https://arxiv.org/abs/2609.05439",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-09T04:00:00.000Z",
+      "snippet": "arXiv:2609.05439v1 Announce Type: new Abstract: Current evaluation methods for large language models are coarse-grained and decoupled from generation, producing generic explanations that fail to provide actionable feedback for model improvement. We propose CriticGen, a fine-grained, generation-aware evaluation framework that turns evaluation into actionable control for answer improvement. CriticGen first generates sample-specific evaluation dimensions and scoring criteria under high-level categories such as subjective, objective, and self-derived constraints. These criteria then serve as a dyn",
+      "category": "Research",
+      "summary": "CriticGen is a fine-grained, generation-aware evaluation framework that turns evaluation into actionable control for answer improvement. It generates sample-specific evaluation dimensions and scoring criteria to provide actionable feedback for model improvement.",
+      "summaryZhHK": "CriticGen 係一個細粒度、generation-aware 嘅評估框架，將評估轉化為對答案改進嘅可行控制。佢生成樣本特定嘅評估維度同評分標準，為模型改進提供可行嘅反饋。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "evaluation",
+          "llm"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "When Does Memory Help? A Cost-Aware Evaluation of Long-Term Memory in Tool-Using LLM Agents",
+      "url": "https://arxiv.org/abs/2609.05441",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-09T04:00:00.000Z",
+      "snippet": "arXiv:2609.05441v1 Announce Type: new Abstract: Long-term memory for LLM agents is evaluated today by conversational recall benchmarks (LoCoMo, LongMemEval), which measure question answering over dialogue history, not whether remembered facts change what a tool-using agent does. We present MERIT (Memory Evaluation for Realistic Instrumented Tasks), a benchmark and harness that measures the marginal utility of memory for task-executing agents under explicit cost accounting. MERIT provides episodic tool-use tasks in three domains whose dependence on earlier-episode facts is verified by an automa",
+      "category": "Research",
+      "summary": "This paper presents MERIT, a benchmark and harness that measures the marginal utility of long-term memory for tool-using LLM agents under explicit cost accounting. It provides episodic tool-use tasks across three domains to evaluate whether remembered facts change agent behavior.",
+      "summaryZhHK": "呢篇論文介紹 MERIT，一個 benchmark 同 harness，用嚟喺明確成本核算下衡量長期記憶對使用工具嘅 LLM agent 嘅邊際效用。佢提供三個領域嘅 episodic tool-use 任務，評估記住嘅事實會唔會改變 agent 行為。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "memory",
+          "evaluation",
+          "agentic"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "AutoFyn Technical Report: Non-Parametric Expert Iteration for Long-Horizon Agents",
+      "url": "https://arxiv.org/abs/2609.05446",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-09T04:00:00.000Z",
+      "snippet": "arXiv:2609.05446v1 Announce Type: new Abstract: We introduce AutoFyn, an agent harness inspired by the Expert Iteration algorithm, adapting a frozen model across many rounds by updating persistent state from verified reward signals rather than model weights. Each round begins from a fresh model session, and durable information is reintroduced only through explicit interfaces such as persistent memory files, reports, and repository state. Within a round, an orchestrator explores, plans and builds many alternative approaches with specialized agents, while a task-grounded verifier verifies the wo",
+      "category": "Research",
+      "summary": "AutoFyn is an agent harness inspired by Expert Iteration that adapts a frozen model by updating persistent state from verified reward signals rather than model weights. It uses an orchestrator to explore and plan multiple approaches with specialized agents in each round.",
+      "summaryZhHK": "AutoFyn 係一個受 Expert Iteration 啟發嘅 agent harness，通過更新來自已驗證獎勵信號嘅持久狀態嚟適應 frozen model，而唔係模型權重。佢每輪用 orchestrator 同專門 agent 探索同規劃多種方法。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "fine-tuning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Damage-Aware Bandit Pruning for Vision and Language Transformers",
+      "url": "https://arxiv.org/abs/2609.05448",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-09T04:00:00.000Z",
+      "snippet": "arXiv:2609.05448v1 Announce Type: new Abstract: Structured post-training pruning of transformers requires selecting complete functional units whose suppression causes limited degradation. We formulate structured-unit selection for language and vision transformers as a damage-aware multi-armed bandit problem under a fixed candidate-evaluation budget. Attention heads and MLP channel groups are temporarily masked on calibration batches. Paired damage is the masked loss minus the base loss on the same batch, reducing batch-to-batch variation. A smooth bounded reward drives either a UCB-style polic",
+      "category": "Research",
+      "summary": "This paper formulates structured-unit pruning for language and vision transformers as a damage-aware multi-armed bandit problem under a fixed evaluation budget. It masks attention heads and MLP channel groups on calibration batches, using paired damage metrics to reduce batch variation.",
+      "summaryZhHK": "呢篇論文將語言同視覺 transformer 嘅結構化單元剪枝，表述為固定評估預算下一個 damage-aware 多臂老虎機問題。佢喺校準批次上遮罩 attention heads 同 MLP channel groups，用 paired damage 指標嚟減少批次差異。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference",
+          "llm"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Compiling VGDL into Causal Models",
+      "url": "https://arxiv.org/abs/2609.05459",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-09T04:00:00.000Z",
+      "snippet": "arXiv:2609.05459v1 Announce Type: new Abstract: Reinforcement learning and large language models often struggle to accurately capture the causal mechanics of game environments. Standard reinforcement learning agents tend to rely on spurious correlations, while large language models are prone to hallucinating game rules. Although causal reinforcement learning improves interpretability, there is currently no formal methodology to map complex game mechanics directly into causal models. To address this, we propose a deterministic framework that compiles games specified in the Video Game Descriptio",
+      "category": "Research",
+      "summary": "This paper proposes a deterministic framework that compiles games specified in the Video Game Description Language (VGDL) into causal models. It aims to improve RL and LLM agents' ability to capture the causal mechanics of game environments.",
+      "summaryZhHK": "呢篇論文提出一個確定性框架，將用 Video Game Description Language (VGDL) 指定嘅遊戲編譯成因果模型。佢旨在改善 RL 同 LLM agent 捕捉遊戲環境因果機制嘅能力。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning",
+          "training"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "SciLitBench: Benchmark and Design Principles for LLM-Powered Systematic Literature Reviews",
+      "url": "https://arxiv.org/abs/2609.05505",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-09T04:00:00.000Z",
+      "snippet": "arXiv:2609.05505v1 Announce Type: new Abstract: Systematic reviews require sustained human judgment across thousands of records, yet existing evaluations of large language models (LLMs) typically examine review stages in isolation. We introduce SciLitBench, a multi-stage benchmark spanning title and abstract screening, full-text screening, and schema-guided data extraction, with 42,981 retrieved records, 1,012 full texts, and annotations for 888 included papers. Across 22 open-weight LLMs from six model families, explicit inclusion and exclusion criteria improve title and abstract screening $F",
+      "category": "Research",
+      "summary": "SciLitBench is a multi-stage benchmark for LLM-powered systematic literature reviews, covering screening and data extraction stages with over 42,000 retrieved records. Evaluation across 22 open-weight LLMs shows explicit inclusion/exclusion criteria improve title and abstract screening performance.",
+      "summaryZhHK": "SciLitBench 係一個用於 LLM 驅動系統性文獻回顧嘅多階段 benchmark，涵蓋篩選同數據提取階段，有超過 42,000 條檢索記錄。對 22 個 open-weight LLM 嘅評估顯示，明確嘅納入/排除標準可改善標題同摘要篩選表現。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "evaluation",
+          "rag"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "SCAFFOLD: Self-Improving Web Agents via Recursive Parametric Skill Abstraction",
+      "url": "https://arxiv.org/abs/2609.05511",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-09T04:00:00.000Z",
+      "snippet": "arXiv:2609.05511v1 Announce Type: new Abstract: Web agents need to navigate visually rich, long-horizon interfaces that change across sites, yet most previous agents still learn each task in isolation and discard the procedural knowledge they accumulate. Recent skill-augmented frameworks take an important first step, but they treat the skill library as a flat or two-tier prompt-side cache and offer no principled mechanism for compressing redundancy or composing skills recursively. We introduce \\textsc{Scaffold}, a self-improving framework for visual web agents that (i) induces parametric, exec",
+      "category": "Research",
+      "summary": "SCAFFOLD is a self-improving framework for visual web agents that induces parametric, executable skills and compresses redundancy recursively. It enables agents to accumulate procedural knowledge across tasks rather than learning each one in isolation.",
+      "summaryZhHK": "SCAFFOLD 係一個用於視覺網頁 agent 嘅自我改進框架，可以歸納參數化、可執行嘅技能，並遞迴壓縮冗餘。佢令 agent 可以跨任務累積程序性知識，而唔係孤立噉學每個任務。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "training"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Reasoning-Aware Compression: Identifying and Protecting Vulnerable Reasoning Circuits for Energy-Efficient LLM Deployment",
+      "url": "https://arxiv.org/abs/2609.05512",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-09T04:00:00.000Z",
+      "snippet": "arXiv:2609.05512v1 Announce Type: new Abstract: Large Reasoning Models (LRMs) impose substantial energy costs during deployment, yet current compression methods apply uniform quantization across all components, risking damage to critical reasoning circuits. We present a reasoning-aware compression framework that benchmarks quantization conditions across five reasoning benchmarks, GSM8K, FOLIO, MATH-500, ProofWriter, and MuSiQue, with hardware-level GPU energy measurement; profiles per-module INT4 vulnerability across all 196-224 (layer, projection) pairs via a perturbation sweep on a held-out ",
+      "category": "Research",
+      "summary": "This paper presents a reasoning-aware compression framework that benchmarks quantization conditions across five reasoning benchmarks with hardware-level energy measurement. It profiles per-module INT4 vulnerability to protect critical reasoning circuits during energy-efficient LLM deployment.",
+      "summaryZhHK": "呢篇論文提出一個 reasoning-aware 壓縮框架，喺五個推理 benchmark 上用硬件級能源測量嚟基準化量化條件。佢剖析每個模組嘅 INT4 脆弱性，以喺節能 LLM 部署期間保護關鍵推理電路。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference",
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "When and What to Teach: Budget-Aware Online Adaptation for Web Agents",
+      "url": "https://arxiv.org/abs/2609.05513",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-09T04:00:00.000Z",
+      "snippet": "arXiv:2609.05513v1 Announce Type: new Abstract: Web agents have achieved significant success in automating complex internet tasks but deploying them in real-world environments requires continuous online adaptation. Given that deploying powerful proprietary models remains commercially cost-prohibitive, practitioners must rely on lightweight local models that evolve post-deployment via online teaching from a stronger teacher. However, standard interactive feedback imposes prohibitive costs. We show that conventional trajectory-level preference optimization wastes budget on both unresolvable epis",
+      "category": "Research",
+      "summary": "This paper addresses budget-aware online adaptation for web agents, showing that trajectory-level preference optimization wastes budget on unresolvable episodes. It proposes a method for deciding when and what to teach lightweight local models from a stronger teacher.",
+      "summaryZhHK": "呢篇論文處理 web agent 嘅預算感知在線適應問題，顯示 trajectory-level preference optimization 會喺無法解決嘅 episodes 上浪費預算。佢提出一個方法決定幾時同教乜嘢，由較強老師教輕量本地模型。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "training"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "The Failure Happens Before the Drift: The Social Dynamics of Values in LLM Agent Societies",
+      "url": "https://arxiv.org/abs/2609.05514",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-09T04:00:00.000Z",
+      "snippet": "arXiv:2609.05514v1 Announce Type: new Abstract: Large Language Model (LLM)-based agents are increasingly used as proxies for human participants in social science research, yet it remains unclear whether they can faithfully simulate diverse and conflicting human value systems. We present a World Values Survey (WVS)-grounded simulation framework where culturally diverse agents with different communication styles engage in longitudinal, value-laden discussions. Across approximately 4,000 conversations involving 1,200 personas, 15 topics, and three models (GPT-4o, Gemini-2.5-Flash, and Gemma-4-E4B",
+      "category": "Research",
+      "summary": "This paper presents a World Values Survey-grounded simulation framework where culturally diverse LLM agents engage in value-laden discussions. Across roughly 4,000 conversations with 1,200 personas and three models, it examines social dynamics and value drift in agent societies.",
+      "summaryZhHK": "呢篇論文提出一個以 World Values Survey 為基礎嘅模擬框架，令文化多元嘅 LLM agent 參與充滿價值觀嘅討論。喺大約 4,000 場對話、1,200 個 persona 同三個模型中，佢檢視 agent 社會中嘅社會動力同價值漂移。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "alignment",
+          "evaluation"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Beyond \"AI Helps Humans\": Decision-Targeted Evaluation Design for Human-Agent Teams in the Agentic Era",
+      "url": "https://arxiv.org/abs/2609.05527",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-09T04:00:00.000Z",
+      "snippet": "arXiv:2609.05527v1 Announce Type: new Abstract: Wherever a coding agent works under engineer supervision, or a clinical model assists a radiologist, the deployment question is whether to keep the human-AI workflow or replace it with the human alone or the agent alone. The human-AI workflow is worth keeping only if it beats both of those alternatives. Yet once it is deployed, neither alternative outcome is observed: recovering one means replaying the task under that alternative, and every replay costs expert time or compute. Under a fixed replay budget, the design question is therefore which ta",
+      "category": "Research",
+      "summary": "This paper proposes decision-targeted evaluation design for human-AI teams, addressing whether to keep a human-AI workflow or replace it with human alone or agent alone. It handles fixed replay budgets by deciding which tasks to replay to observe alternative outcomes.",
+      "summaryZhHK": "呢篇論文提出人機團隊嘅 decision-targeted 評估設計，處理應唔應該保留人機工作流程，定係用純人類或純 agent 取代。佢喺固定 replay 預算下決定重播邊啲任務嚟觀察替代結果。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "evaluation"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "EdgeMem: LLM-Free Agent Memory Construction and Retrieval via Evidence-Preserving Multi-Anchor Hypergraph",
+      "url": "https://arxiv.org/abs/2609.05553",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-09T04:00:00.000Z",
+      "snippet": "arXiv:2609.05553v1 Announce Type: new Abstract: Agent memory allows LLM agents to use earlier interactions when answering new queries. Existing methods often compress interaction histories into summaries or other LLM-generated representations. Repeated generation adds cost and can discard answer-bearing details before the system knows what a future query will require. We propose EdgeMem, an agent-memory method built around a simple principle: preserve original interaction turns and organize them through complementary content, temporal, and episodic cues. EdgeMem realizes this principle with a ",
+      "category": "Research",
+      "summary": "EdgeMem is an agent-memory method that preserves original interaction turns and organizes them through complementary content, temporal, and episodic cues via a multi-anchor hypergraph. It avoids LLM-generated summaries to reduce cost and retain answer-bearing details.",
+      "summaryZhHK": "EdgeMem 係一種 agent-memory 方法，保留原始互動輪次，並通過 multi-anchor hypergraph 嘅內容、時間同 episodic 線索嚟組織佢哋。佢避免用 LLM 生成摘要，以減少成本同保留帶有答案嘅細節。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "memory",
+          "agentic"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "EnvCraft: Synthesizing Executable Environments in Agentic RL for Claw-like Agent",
+      "url": "https://arxiv.org/abs/2609.05576",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-09T04:00:00.000Z",
+      "snippet": "arXiv:2609.05576v1 Announce Type: new Abstract: The paradigm of LLMs has rapidly shifted from passive language interfaces to autonomous Claw-like agents that execute long-horizon tasks across stateful workspaces. While Agentic Reinforcement Learning (Agentic RL) provides a promising path to optimize these agents, its scaling is heavily bottlenecked by the severe scarcity of interactive training environments. Existing synthetic environments are strictly limited to tool-calling endpoints, rendering them insufficient for accommodating the end-to-end real-world demands of claw-like agents. To brid",
+      "category": "Research",
+      "summary": "EnvCraft synthesizes executable environments for agentic RL in claw-like agents, addressing the scarcity of interactive training environments. It goes beyond tool-calling endpoints to support end-to-end real-world task demands.",
+      "summaryZhHK": "EnvCraft 為 claw-like agent 嘅 agentic RL 合成可執行環境，解決互動訓練環境稀缺嘅問題。佢超越 tool-calling endpoints，支援端到端真實世界任務需求。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "robotics",
+          "training"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Agents Trust Tools Too Much: Measuring Reliance on Unreliable Tools",
+      "url": "https://arxiv.org/abs/2609.05587",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-09T04:00:00.000Z",
+      "snippet": "arXiv:2609.05587v1 Announce Type: new Abstract: Existing evaluations of tool-using agents primarily measure whether an agent can successfully complete diverse tasks with tools. These evaluations generally assume that tools return reliable information. However, tool returns in real-world systems can be plausible yet incorrect. We investigate how agents respond to unreliable tool returns by evaluating fourteen LLMs using three tools-web search, LLM sub-agent delegation, and code execution. For each tool, we corrupt its returns and measure whether agents adopt the corrupted content in their final",
+      "category": "Research",
+      "summary": "This paper investigates how agents respond to unreliable tool returns by evaluating fourteen LLMs with three tools—web search, LLM sub-agent delegation, and code execution. It corrupts tool returns to measure whether agents adopt corrupted content in their final outputs.",
+      "summaryZhHK": "呢篇論文通過評估十四個 LLM 同三個工具——網頁搜索、LLM sub-agent 委派同程式碼執行——嚟研究 agent 點樣回應不可靠嘅工具回傳。佢破壞工具回傳，量度 agent 會唔會喺最終輸出中採用被破壞嘅內容。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "agentic",
+          "evaluation"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "What OpenAI’s latest controversy tells us about the future of math",
+      "url": "https://www.technologyreview.com/2026/09/08/1143747/what-openais-latest-controversy-tells-us-about-the-future-of-math/",
+      "source": "MIT Tech Review AI",
+      "publishedAt": "2026-09-09T03:10:08.000Z",
+      "snippet": "OpenAI’s latest mathematical milestone has quickly become mired in controversy. Today, the company announced that its agents have solved one of the Millennium Prize Problems, some of the most important open problems in mathematics. Under normal circumstances, that solution would be a huge feather in OpenAI’s cap. But the announcement has been overshadowed by accusations…",
+      "category": "Model Releases",
+      "summary": "OpenAI announced that its agents solved one of the Millennium Prize Problems, a major mathematical milestone, but the achievement has been overshadowed by accusations of controversy. The article explores what this means for the future of mathematics and AI capabilities.",
+      "summaryZhHK": "OpenAI 宣稱佢哋嘅 agent 解決咗千禧年大獎難題其中一個，係數學上一個重大里程碑，但呢個成就已經被爭議指控蓋過。呢篇文章探討呢件事對數學同 AI 能力嘅未來意味住啲乜。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "reasoning"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Why this month's Microsoft patch release is a doozy",
+      "url": "https://arstechnica.com/security/2026/09/microsoft-patches-a-record-972-vulnerabilities-112-of-them-critical/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-09-08T21:11:46.000Z",
+      "snippet": "Security gnomes are pumping out patches ahead of an expected onslaught of AI-assisted attacks.",
+      "category": "AI Safety & Alignment",
+      "summary": "Microsoft's monthly patch release is unusually large, as security teams prepare for an expected wave of AI-assisted cyberattacks.",
+      "summaryZhHK": "Microsoft 今個月嘅修補程式更新異常龐大，因為安全團隊正準備應對預期嘅 AI 輔助網絡攻擊浪潮。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "security"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": [
+          "microsoft"
+        ]
+      }
+    },
+    {
+      "title": "Hackers are stealing Claude tokens from subscribers",
+      "url": "https://techcrunch.com/2026/09/08/hackers-are-stealing-claude-tokens-from-subscribers/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-08T21:10:27.000Z",
+      "snippet": "Last month, a Claude user noticed his account was consuming tokens even though he wasn't working. Anthropic has since warned users about hackers.",
+      "category": "AI Safety & Alignment",
+      "summary": "Hackers are stealing Claude tokens from subscribers, as Anthropic warned users after a user noticed unauthorized token consumption on his account.",
+      "summaryZhHK": "黑客正喺度偷取 Claude 訂閱用戶嘅令牌，Anthropic 喺有用戶發現帳戶被未經授權消耗令牌之後向用戶發出警告。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "security"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": [
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "Cognition hits $48B valuation, signaling investors believe AI coding is far from a winner-take-all market",
+      "url": "https://techcrunch.com/2026/09/08/cognition-hits-48b-valuation-signaling-investors-believe-ai-coding-is-far-from-a-winner-take-all-market/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-08T21:04:06.000Z",
+      "snippet": "Cognition's valuation multiple is higher than Cursor's was before selling to SpaceX.",
+      "category": "Business & Funding",
+      "summary": "Cognition reached a $48B valuation, signaling investors believe AI coding is not a winner-take-all market, with a higher multiple than Cursor's pre-sale to SpaceX.",
+      "summaryZhHK": "Cognition 達到 480 億美元估值，顯示投資者相信 AI 編碼市場唔係贏家通吃，其估值倍數高過 Cursor 賣畀 SpaceX 之前嘅水平。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "coding"
+        ],
+        "traits": [
+          "funding",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Drama swirls around OpenAI’s legendary mathematical milestone",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/991710/openai-navier-stokes-solution",
+      "source": "The Verge AI",
+      "publishedAt": "2026-09-08T20:53:52.000Z",
+      "snippet": "OpenAI says it found a solution to a major math problem that has remained unsolved for around 90 years, as reported earlier by The New York Times and Wired. In a blog post on Tuesday, OpenAI announced that it discovered a solution to the Navier-Stokes problem - which relates to the flow of liquid and gas - using an internal AI model more powerful than the newly released GPT-6 Astra alongside 10,000 concurrent agents. The Navier-Stokes problem is one of seven Millennium Prize Problems, each of which comes with a $1 million reward for solving. OpenAI says it started training the internal AI mode",
+      "category": "Research",
+      "summary": "OpenAI claims it solved the Navier-Stokes problem, a 90-year-old Millennium Prize Problem with a $1M reward, using an internal AI model more powerful than GPT-6 Astra with 10,000 concurrent agents.",
+      "summaryZhHK": "OpenAI 聲稱用一個比 GPT-6 Astra 更強大嘅內部 AI 模型，配合 10,000 個並行代理，解決咗困擾 90 年、有 100 萬美元獎金嘅 Navier-Stokes 千禧年問題。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "ChatGPT Sketch turns your bad drawings into detailed AI images",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/991727/openai-chatgpt-images-2-5-sketch",
+      "source": "The Verge AI",
+      "publishedAt": "2026-09-08T20:16:09.000Z",
+      "snippet": "I used ChatGPT and its Sketch tool to make this AI-generated image of a cat. OpenAI announced ChatGPT Images 2.5 on Tuesday and is adding a new way to tell ChatGPT what you want it to make an image of: by drawing a doodle. With a new feature called Sketch, you can just draw something right inside ChatGPT and then tell ChatGPT how you want it to make an image based on that sketch. You can activate the Sketch feature by typing @Sketch into your chat box, and a window will pop up where you can make your drawing. I briefly tested it, and it successfully turned my bad doodle of a cat that I drew wi",
+      "category": "Applications",
+      "summary": "OpenAI's ChatGPT Images 2.5 adds a Sketch feature that turns user doodles into detailed AI images, activated via @Sketch in the chat box.",
+      "summaryZhHK": "OpenAI 嘅 ChatGPT Images 2.5 加入咗 Sketch 功能，可以將用戶嘅塗鴉變成詳細嘅 AI 圖像，喺對話框輸入 @Sketch 就可以啟動。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Meta bets on AI agent Muse to catch up in AI race",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
+      "source": "The Verge AI",
+      "publishedAt": "2026-09-08T19:00:00.000Z",
+      "snippet": "Meta is making another push to bring artificial intelligence to the masses with Muse, a personal assistant it says can put AI in the hands of virtually anyone. The product is the latest step in a multi-billion-dollar strategy overhaul designed to revitalize the company's ailing position in the AI race and help it catch up to rivals like OpenAI, Anthropic, and Google. Muse is a \"personal AI agent\" designed to help out with everyday tasks and projects, like online shopping, sending emails, and planning a trip. Once given a goal, Meta says Muse can work on its own, opening a browser, filling out ",
+      "category": "Agent Frameworks",
+      "summary": "Meta launched Muse, a personal AI agent for everyday tasks like shopping and trip planning, as part of a multi-billion-dollar strategy to catch up with OpenAI, Anthropic, and Google.",
+      "summaryZhHK": "Meta 推出咗 Muse 個人 AI 代理，幫手處理購物、旅行規劃等日常任務，作為數十億美元策略嘅一部分，期望追趕 OpenAI、Anthropic 同 Google。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "meta"
+        ]
+      }
+    },
+    {
+      "title": "Meta debuts its Muse AI agent. Will consumers trust it?",
+      "url": "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-08T19:00:00.000Z",
+      "snippet": "Meta's new personal AI agent Muse wants access to users' email, calendars, payments, health services, and more — making the company's biggest consumer AI bet yet a major test of whether people still trust Meta with their data.",
+      "category": "Business & Funding",
+      "summary": "Meta's Muse AI agent seeks access to users' email, calendars, payments, and health data, testing whether consumers still trust Meta with sensitive information.",
+      "summaryZhHK": "Meta 嘅 Muse AI 代理要求存取用戶嘅電郵、行事曆、支付同健康數據，考驗消費者係咪仲信任 Meta 處理敏感資料。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "applications"
+        ],
+        "traits": [],
+        "entities": [
+          "meta"
+        ]
+      }
+    },
+    {
+      "title": "“This is the AI men actually use”: Meta ads pushed apps nudifying real teens",
+      "url": "https://arstechnica.com/tech-policy/2026/09/real-photos-of-young-girls-were-in-nudify-app-ads-on-facebook-instagram/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-09-08T18:43:09.000Z",
+      "snippet": "Meta dragged its feet removing ads that nudify young girls' Instagram pics.",
+      "category": "Regulation & Policy",
+      "summary": "Meta was slow to remove ads that used AI to nudify images of young girls from Instagram, raising concerns about platform responsibility.",
+      "summaryZhHK": "Meta 遲遲先移除用 AI 將年輕女孩 Instagram 圖片變成裸體嘅廣告，引發對平台責任嘅關注。",
+      "important": true,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy",
+          "incident"
+        ],
+        "entities": [
+          "meta"
+        ]
+      }
+    },
+    {
+      "title": "Update to Google’s AI weather model improves forecast accuracy",
+      "url": "https://arstechnica.com/science/2026/09/googles-ai-weather-model-now-uses-more-raw-satellite-data/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-09-08T18:00:56.000Z",
+      "snippet": "Like traditional weather models, it benefits from an expanded set of inputs.",
+      "category": "Research",
+      "summary": "Google's updated AI weather model improves forecast accuracy by using an expanded set of input data, similar to traditional models.",
+      "summaryZhHK": "Google 更新咗嘅 AI 天氣模型透過使用擴展嘅輸入數據集提升預報準確度，做法類似傳統天氣模型。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": [
+          "google"
+        ]
+      }
+    },
+    {
+      "title": "OpenAI fought dirty on career-making math problem, says NYU mathematician",
+      "url": "https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-08T17:32:15.000Z",
+      "snippet": "There is a $1 million bounty for the first person providing a solution to the Navier-Stokes existence and smoothness problem.",
+      "category": "Research",
+      "summary": "An NYU mathematician criticizes OpenAI's approach to the Navier-Stokes problem, which carries a $1M bounty for the first valid solution.",
+      "summaryZhHK": "一位紐約大學數學家批評 OpenAI 處理 Navier-Stokes 問題嘅手法，該問題設有 100 萬美元獎金畀第一個有效解決方案。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "AI power users claim Anthropic duped them with subscriptions, and they’re taking it to court",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/990313/anthropic-class-action-lawsuit-pricing-subscription-plans",
+      "source": "The Verge AI",
+      "publishedAt": "2026-09-08T17:27:31.000Z",
+      "snippet": "Anthropic says power users are key to its business - it's prioritized them even when it means cutting off other popular applications, like OpenClaw. But some of these same customers say Anthropic misled them into believing they'd get more out of a top-tier pricing subscription than they did. In an expanded class action lawsuit filed today, a group of Claude subscribers say the company deceptively advertised the limits of its Max subscription tier. The lawsuit was brought by attorneys Monica Vaca and Kati Daffan, who both formerly worked at the Federal Trade Commission under Lina Khan. It's a r",
+      "category": "Business & Funding",
+      "summary": "Claude subscribers filed an expanded class action lawsuit, claiming Anthropic misled them about Max subscription tier limits; the suit is led by former FTC attorneys.",
+      "summaryZhHK": "一班 Claude 訂閱用戶提出擴大嘅集體訴訟，指控 Anthropic 誤導佢哋關於 Max 訂閱級別嘅限制；訴訟由兩位前 FTC 律師帶領。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial",
+          "incident"
+        ],
+        "entities": [
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "How GPT-5.6 Sol helps run quantum computing experiments",
+      "url": "https://openai.com/index/codex-quantum-computing-experiments",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-09-08T17:00:00.000Z",
+      "snippet": "See how an MIT researcher uses GPT-5.6 Sol with Codex to autonomously run quantum computing experiments, analyze results, and calibrate qubits.",
+      "category": "Applications",
+      "summary": "An MIT researcher uses OpenAI's GPT-5.6 Sol with Codex to autonomously run quantum computing experiments, analyze results, and calibrate qubits.",
+      "summaryZhHK": "一位 MIT 研究員用 OpenAI 嘅 GPT-5.6 Sol 配合 Codex，自動執行量子計算實驗、分析結果同校準量子位元。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Google Cloud races to catch up in the AI deployment wars with Accenture deal",
+      "url": "https://techcrunch.com/2026/09/08/google-cloud-races-to-catch-up-in-the-ai-deployment-wars-with-accenture-deal/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-08T16:20:31.000Z",
+      "snippet": "Google Cloud expands its enterprise AI push with Accenture, betting on forward-deployed engineers to drive adoption and overcome deployment bottlenecks.",
+      "category": "Business & Funding",
+      "summary": "Google Cloud partnered with Accenture to expand enterprise AI adoption using forward-deployed engineers to address deployment bottlenecks.",
+      "summaryZhHK": "Google Cloud 同 Accenture 合作擴展企業 AI 採用，用前線部署工程師嚟解決部署樽頸問題。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "enterprise"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "google"
+        ]
+      }
+    },
+    {
+      "title": "Chrome is now shipping updates every 2 weeks as AI changes the security landscape",
+      "url": "https://techcrunch.com/2026/09/08/chrome-is-now-shipping-updates-every-2-weeks-as-ai-changes-the-security-landscape/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-08T15:04:09.000Z",
+      "snippet": "Google is speeding up Chrome’s release schedule to ship security patches and new features faster.",
+      "category": "Other",
+      "summary": "Google is accelerating Chrome's update cycle to every two weeks, shipping security patches and features faster in response to AI-driven security changes.",
+      "summaryZhHK": "Google 將 Chrome 嘅更新週期加快到每兩星期一次，因應 AI 驅動嘅安全變化，更快推出安全修補程式同功能。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "security"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": [
+          "google"
+        ]
+      }
+    },
+    {
+      "title": "Mistral raises €3B as sovereign AI becomes big business",
+      "url": "https://techcrunch.com/2026/09/08/mistral-raises-e3b-as-sovereign-ai-becomes-big-business/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-08T14:17:48.000Z",
+      "snippet": "The French AI lab has raised €3 billion at a €21 billion valuation in a Series D round led by Samsung, Scaleup Europe, and PSG Equity.",
+      "category": "Business & Funding",
+      "summary": "Mistral raised €3 billion in a Series D round at a €21 billion valuation, led by Samsung, Scaleup Europe, and PSG Equity, boosting sovereign AI ambitions.",
+      "summaryZhHK": "Mistral 喺由 Samsung、Scaleup Europe 同 PSG Equity 領導嘅 D 輪融資中籌得 30 億歐元，估值達 210 億歐元，強化主權 AI 嘅野心。",
+      "important": true,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "funding",
+          "commercial"
+        ],
+        "entities": [
+          "mistral"
+        ]
+      }
+    },
+    {
+      "title": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
+      "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+      "source": "Google DeepMind",
+      "publishedAt": "2026-09-08T14:00:15.000Z",
+      "snippet": "AlphaGenome Atlas maps the molecular effects of 9 billion single-letter DNA variants across the human genome.",
+      "category": "Research",
+      "summary": "Google DeepMind's AlphaGenome Atlas maps the molecular effects of 9 billion single-letter DNA variants across the human genome.",
+      "summaryZhHK": "Google DeepMind 嘅 AlphaGenome Atlas 繪製咗人類基因組中 90 億個單一字母 DNA 變異嘅分子影響。",
+      "important": true,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "research",
+          "release"
+        ],
+        "entities": [
+          "deepmind"
+        ]
+      }
+    },
+    {
+      "title": "Google’s Atlas of the human genome could pave the way for new treatments",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/991180/google-launches-alpha-genome-atlas",
+      "source": "The Verge AI",
+      "publishedAt": "2026-09-08T14:00:00.000Z",
+      "snippet": "Google DeepMind has unveiled an AI tool that its scientists claim could help unravel the mysteries of the human genome and transform our understanding of biology, accelerating scientific research and ultimately paving the way for new treatments for diseases. The platform, called AlphaGenome Atlas, contains a \"predictive map of every possible DNA letter change in the human genome,\" the researchers said in a blog post published on Tuesday. DNA is written in an alphabet of four chemical \"letters\" - usually shortened to A, C, G, and T - and the human genome contains roughly three billion letter pa",
+      "category": "Research",
+      "summary": "Google DeepMind unveiled AlphaGenome Atlas, an AI tool providing a predictive map of every possible DNA letter change in the human genome (roughly three billion base pairs), potentially accelerating disease treatments.",
+      "summaryZhHK": "Google DeepMind 推出咗 AlphaGenome Atlas，一個 AI 工具提供人類基因組中每一個可能 DNA 字母改變嘅預測圖譜（約 30 億鹼基對），有望加速疾病治療研究。",
+      "important": true,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "research",
+          "release"
+        ],
+        "entities": [
+          "deepmind"
+        ]
+      }
+    },
+    {
+      "title": "Adobe is trying to make its AI generators idiot-proof in Premiere",
+      "url": "https://www.theverge.com/tech/991133/adobe-is-trying-to-make-its-ai-generators-idiot-proof-in-premiere",
+      "source": "The Verge AI",
+      "publishedAt": "2026-09-08T13:00:00.000Z",
+      "snippet": "Suspenseful clock ticking… as you wait for AI to take your job. | Image: Adobe Adobe is overhauling how editors interact with AI in its Premiere professional video editing software. Its new Generative Media tool makes it easier to generate video, sound effects, music, and soundscapes without ever leaving the project timeline. The generators themselves aren't entirely new; the big change is how easily you can access them without breaking your workflow. Instead of jumping between browsers or external apps to find missing B-roll or audio elements, editors can now highlight an empty gap on the vid",
+      "category": "Applications",
+      "summary": "Adobe's new Generative Media tool in Premiere lets editors generate video, sound effects, and music directly from the timeline, removing the need to switch between external apps.",
+      "summaryZhHK": "Adobe 喺 Premiere 推出新嘅 Generative Media 工具，編輯可以直接喺時間軸上生成影片、音效同音樂，唔使再切換去外部應用程式。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal",
+          "applications"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "The Work Now Within Reach",
+      "url": "https://openai.com/index/the-work-now-within-reach",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-09-08T13:00:00.000Z",
+      "snippet": "Explore how more capable, affordable AI can expand the work people and businesses can accomplish—and make growth more economical.",
+      "category": "Other",
+      "summary": "OpenAI discusses how more capable, affordable AI can expand the range of work people and businesses can accomplish while making growth more economical.",
+      "summaryZhHK": "OpenAI 探討更強大同更平嘅 AI 點樣擴展個人同企業可以完成嘅工作範圍，同時令增長更具成本效益。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Introducing ChatGPT Images 2.5",
+      "url": "https://openai.com/index/introducing-chatgpt-images-2-5",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-09-08T11:30:00.000Z",
+      "snippet": "ChatGPT Images 2.5 helps turn your ideas, sketches, and reference photos into more personalized, polished images that better reflect your ideas.",
+      "category": "Model Releases",
+      "summary": "OpenAI introduced ChatGPT Images 2.5, which turns ideas, sketches, and reference photos into more personalized and polished images.",
+      "summaryZhHK": "OpenAI 推出咗 ChatGPT Images 2.5，可以將想法、草圖同參考照片變成更個人化同精緻嘅圖像。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "This AI entrepreneur is developing agents that can plan ahead for the unexpected",
+      "url": "https://www.technologyreview.com/2026/09/08/1142088/danijar-hafner-developing-plan-ahead-agents/",
+      "source": "MIT Tech Review AI",
+      "publishedAt": "2026-09-08T10:34:00.000Z",
+      "snippet": "Danijar Hafner’s office in San Francisco’s SoMa district sits mostly empty. His brand-new startup is still in stealth mode and doesn’t even have its name on the door. On the day I visit, there’s only one other person there, and little in the way of furniture. But what it lacks in decor, it makes up…",
+      "category": "Business & Funding",
+      "summary": "Danijar Hafner, an AI entrepreneur, is developing agents that can plan ahead for unexpected events, with his stealth-mode startup based in San Francisco's SoMa district. The company is still in early stages with minimal staff and furniture.",
+      "summaryZhHK": "AI 企業家 Danijar Hafner 正開發能夠為突發事件提前規劃嘅 agent，佢間 stealth mode 初創公司位於三藩市 SoMa 區。公司仍然處於早期階段，人手同傢俬都好少。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "commercial",
+          "funding"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "On the Navier–Stokes Millennium Prize Problem",
+      "url": "https://openai.com/index/navier-stokes-solution",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-09-08T10:00:00.000Z",
+      "snippet": "We’re sharing an AI-generated solution to the Navier–Stokes Millennium Prize Problem, including a writeup and a formal proof in Lean.",
+      "category": "Research",
+      "summary": "OpenAI shared an AI-generated solution to the Navier-Stokes Millennium Prize Problem, including a writeup and a formal proof in Lean.",
+      "summaryZhHK": "OpenAI 分享咗一個 AI 生成嘅 Navier-Stokes 千禧年問題解決方案，包括書面報告同用 Lean 撰寫嘅正式證明。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Funding grants for new research into AI and teen development",
+      "url": "https://openai.com/index/teen-development-research-grants",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-09-08T09:00:00.000Z",
+      "snippet": "Apply now for OpenAI’s $5 million grant program supporting independent research on how generative AI affects teen development, well-being, and safety.",
+      "category": "AI Safety & Alignment",
+      "summary": "OpenAI launched a $5 million grant program supporting independent research on how generative AI affects teen development, well-being, and safety.",
+      "summaryZhHK": "OpenAI 推出咗一個 500 萬美元嘅資助計劃，支持獨立研究生成式 AI 點樣影響青少年發展、身心健康同安全。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "funding"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "OpenAI expands initiatives to support journalism from classrooms to newsrooms",
+      "url": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-09-08T00:00:00.000Z",
+      "snippet": "OpenAI is expanding support for journalism with tools, training, and partnerships for students, educators, journalists, and news organizations.",
+      "category": "Applications",
+      "summary": "OpenAI expanded journalism support with tools, training, and partnerships for students, educators, journalists, and news organizations, from classrooms to newsrooms.",
+      "summaryZhHK": "OpenAI 擴展咗對新聞業嘅支援，為學生、教育工作者、記者同新聞機構提供工具、培訓同合作夥伴計劃，涵蓋課室到編輯室。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "applications"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "1Password increases engineering productivity 21% with Codex",
+      "url": "https://openai.com/index/1password",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-09-08T00:00:00.000Z",
+      "snippet": "Engineers at 1Password use Codex to rapidly build new features and internal tools, reaching production-readiness while maintaining rigorous security policies.",
+      "category": "Applications",
+      "summary": "1Password engineers increased productivity by 21% using OpenAI's Codex to build features and internal tools while maintaining rigorous security policies.",
+      "summaryZhHK": "1Password 嘅工程師用 OpenAI 嘅 Codex 開發功能同內部工具，生產力提升 21%，同時維持嚴格嘅安全政策。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "coding"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
     {
       "title": "Opaque recurrence, and other AI terms that you should probably know",
       "url": "https://techcrunch.com/2026/09/07/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/",
@@ -4905,789 +5803,105 @@
         ],
         "entities": []
       }
-    },
-    {
-      "title": "Expanding Daybreak as the Cyber Defense Window Narrows",
-      "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
-      "source": "OpenAI Blog",
-      "publishedAt": "2026-08-10T10:00:00.000Z",
-      "snippet": "Meet GPT-5.6-Cyber, OpenAI’s cybersecurity-specific model available through Daybreak Red for authorized vulnerability research, exploit validation, and security testing.",
-      "category": "Developer Tools",
-      "summary": "OpenAI releases GPT-5.6-Cyber, a cybersecurity-specific model available through Daybreak Red for authorized vulnerability research and security testing.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety"
-        ],
-        "traits": [
-          "release"
-        ],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "Putting frontier cyber models in more trusted hands",
-      "url": "https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands",
-      "source": "OpenAI Blog",
-      "publishedAt": "2026-08-10T10:00:00.000Z",
-      "snippet": "Approved Daybreak partners can use OpenAI’s frontier cyber models to deliver authorized, governed cybersecurity services to customers.",
-      "category": "Developer Tools",
-      "summary": "OpenAI expands access to its frontier cyber models through approved Daybreak partners for governed cybersecurity service delivery.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety"
-        ],
-        "traits": [],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "AI for science needs reasoning, not just data",
-      "url": "https://www.technologyreview.com/2026/08/10/1141384/ai-agents-for-science/",
-      "source": "MIT Tech Review AI",
-      "publishedAt": "2026-08-10T09:00:00.000Z",
-      "snippet": "Every few decades, someone announces that science has reached its end. In 1903, the revered physicist Albert Michelson wrote that the “facts of physical science have all been discovered.” In the 1980s, Stephen Hawking predicted that theoretical physics might be finished by the end of the century. With the explosive arrival of artificial intelligence, the…",
-      "category": "Research",
-      "summary": "Researchers argue that AI for scientific discovery requires reasoning capabilities beyond data processing to advance fundamental understanding.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "reasoning"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "These startups are chasing the next big thing in LLMs",
-      "url": "https://www.technologyreview.com/2026/08/10/1141511/these-startups-are-chasing-the-next-big-thing-in-llms/",
-      "source": "MIT Tech Review AI",
-      "publishedAt": "2026-08-10T09:00:00.000Z",
-      "snippet": "MIT Technology Review’s What’s Next series looks across industries, trends, and technologies to give you a first look at the future. You can read the rest of them here. Way back in the summer of 2017, AI researchers at Google put out a paper called “Attention Is All You Need,” in which they described a new…",
-      "category": "Model Releases",
-      "summary": "MIT Technology Review examines emerging startups pushing the boundaries of LLM development beyond current architectural paradigms.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "llm"
-        ],
-        "traits": [
-          "benchmark"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Docker Sandboxes – Disposable, isolated sandboxes for AI agents",
-      "url": "https://www.docker.com/products/docker-sandboxes/",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-08-10T06:02:38.000Z",
-      "snippet": "Article URL: https://www.docker.com/products/docker-sandboxes/ Comments URL: https://news.ycombinator.com/item?id=49239751 Points: 61 # Comments: 31",
-      "category": "Developer Tools",
-      "summary": "Docker Sandboxes provides disposable, isolated sandbox environments for AI agents to execute code safely.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "developer-tools",
-          "agentic"
-        ],
-        "traits": [
-          "open-source"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Towards Multi-Label Graph Foundation Models: from Single-Vector Representation Learning to Multi-Semantic Basis Learning",
-      "url": "https://arxiv.org/abs/2608.06394",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-10T04:00:00.000Z",
-      "snippet": "arXiv:2608.06394v1 Announce Type: new Abstract: Multi-label node classification is an important yet challenging task in graph learning, where nodes exhibit multiple semantics simultaneously. Existing methods for multi-label node classification can effectively model multiple labels, while only considering in-domain scenarios where the model needs to be trained and tested within the same graph domain, resulting in limited cross-domain generalization. Recently, Graph Foundation Models (GFMs) have emerged as a promising paradigm for learning transferable graph representations across diverse graph ",
-      "category": "Research",
-      "summary": "This paper introduces multi-semantic basis learning for graph foundation models to improve cross-domain generalization in multi-label node classification tasks.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "llm",
-          "evaluation"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "EntropyMoE: Entropy-Aware Sparse Expert Routing for Tokenizer-Free LLMs",
-      "url": "https://arxiv.org/abs/2608.06398",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-10T04:00:00.000Z",
-      "snippet": "arXiv:2608.06398v1 Announce Type: new Abstract: Recent byte-level large language models (LLMs) have made tokenizer-free modeling increasingly competitive by grouping bytes into dynamically sized patches. However, existing byte-patch architectures still apply the same dense feed-forward computation to every patch. This uniform computation cannot adapt model capacity to variations in patch semantics and granularity. We address this limitation with EntropyMoE, a Mixture-of-Experts (MoE) architecture designed for dynamic byte patches. EntropyMoE replaces the dense feed-forward modules in the globa",
-      "category": "Research",
-      "summary": "EntropyMoE proposes a mixture-of-experts architecture for tokenizer-free LLMs that adapts computation to varying patch semantics and granularity.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "llm",
-          "inference"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Beyond Routing Weights: Faithful Response-Level Interpretation of Mixture-of-Experts Reward Models via Contribution Contrast",
-      "url": "https://arxiv.org/abs/2608.06400",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-10T04:00:00.000Z",
-      "snippet": "arXiv:2608.06400v1 Announce Type: new Abstract: Reward models are central to learning from human preferences, yet identifying what drives their predictions remains challenging. Recent sparse Mixture-of-Experts (MoE) reward models seek to improve interpretability by routing prompts to specialized experts and characterizing experts through examples with high routing weights. However, routing weights only reveal which prompts an expert $\\textit{receives}$, not how it $\\textit{judges}$ responses, providing only a partial account of expert behavior. We therefore propose $\\textbf{Co}$ntribution-$\\te",
-      "category": "Research",
-      "summary": "This paper advances interpretability of mixture-of-experts reward models by analyzing expert behavior beyond routing weights using contribution contrast methods.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "interpretability",
-          "alignment"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Interpretable Unsupervised Community Detection with LLM-Symbolized Structured Processes",
-      "url": "https://arxiv.org/abs/2608.06402",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-10T04:00:00.000Z",
-      "snippet": "arXiv:2608.06402v1 Announce Type: new Abstract: Community detection is a fundamental task in graph analytics that aims to identify cohesive groups of entities with similar behaviors or interests. Classic objective-driven methods struggle with complex graph structures, while deep-learning approaches improve performance at the expense of interpretability and rely on labeled data and training. Large language models (LLMs), with strong reasoning capabilities and world knowledge, are promising for interpretable, label-free community detection. To leverage these strengths, we propose LUCID, an LLM-g",
-      "category": "Research",
-      "summary": "LUCID uses LLM reasoning for interpretable, label-free community detection in graphs through structured symbolic processes.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "llm",
-          "interpretability"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "ADIAS: Automated Design of Interactive Agentic Systems",
-      "url": "https://arxiv.org/abs/2608.06410",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-10T04:00:00.000Z",
-      "snippet": "arXiv:2608.06410v1 Announce Type: new Abstract: Automated agent design improves agent harnesses through iterative revision, evaluation, and feedback summarization. Existing methods are largely candidate-centric: cross-round experience is organized around candidate agents, which leaves the repair progress implicit. This causes inefficient repair targeting, slow consolidation of partial progress, and propagation of ineffective interventions across rounds. Therefore, we formulate issue-centric agent optimization, in which repair progress is carried forward as an explicit persistent issue state to",
-      "category": "Agent Frameworks",
-      "summary": "ADIAS proposes an issue-centric approach to automated agent design that tracks repair progress explicitly for more efficient optimization across iterations.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "agent-design"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Learning to Predict Middle-Layer Attention in MLLMs for Visual Token Prunin",
-      "url": "https://arxiv.org/abs/2608.06411",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-10T04:00:00.000Z",
-      "snippet": "arXiv:2608.06411v1 Announce Type: new Abstract: Multimodal large language models (MLLMs) achieve strong performance across diverse vision-language tasks, but their efficiency is limited by the cost of processing numerous visual tokens. Visual token pruning can reduce this cost, but requires accurate token importance estimates. Recent studies have demonstrated that text-to-vision attention from middle language model layers can effectively guide visual token pruning, typically using attention from a predefined middle layer to select the visual tokens to retain. Two problems therefore remain. Fir",
-      "category": "Research",
-      "summary": "This paper addresses visual token pruning efficiency in multimodal LLMs by predicting middle-layer attention patterns without relying on predefined layer selection.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "multimodal",
-          "inference"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "WebGrader: Training LLMs for Web Development with Self-Evolving Programmatic Grader",
-      "url": "https://arxiv.org/abs/2608.06474",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-10T04:00:00.000Z",
-      "snippet": "arXiv:2608.06474v1 Announce Type: new Abstract: Large language models increasingly generate complete websites from natural-language descriptions, and reinforcement learning has become a central approach to closing their remaining functional gap. This training regime is bottlenecked by reward design. Hand-authored browser scripts are executable yet costly to write for open-ended requirements, while VLM and GUI-agent graders scale but may issue verdicts before observing the decisive state. We propose WebGrader, a self-evolving programmatic grader that autonomously derives the required interactio",
-      "category": "Research",
-      "summary": "WebGrader introduces a self-evolving programmatic grader for training LLMs on web development tasks through autonomous derivation of interaction requirements.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "llm",
-          "training"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Can MLLMs Decode the Creative Leap? Introducing C4 for Cross-Concept Understanding",
-      "url": "https://arxiv.org/abs/2608.06501",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-10T04:00:00.000Z",
-      "snippet": "arXiv:2608.06501v1 Announce Type: new Abstract: Creative capabilities of MLLMs matter in design, communication, education, and human--AI collaboration, yet remain difficult to evaluate because explicit targets and reward signals are scarce compared with accuracy-oriented tasks. Cross-concept understanding is a core cognitive capacity underlying receptive creativity. It enables a perceiver to recover intended meaning from non-obvious but meaningful conceptual relations. We operationalize item construction as cross-concept encoding and model inference as cross-concept decoding. We introduce C4, ",
-      "category": "Research",
-      "summary": "C4 benchmark evaluates creative capabilities of multimodal LLMs through cross-concept understanding, operationalizing how models decode creative conceptual relations.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "multimodal"
-        ],
-        "traits": [
-          "benchmark",
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "KNOWPLAN: Knowledge-Driven AI Agents for Smart Degree Pathway Planning",
-      "url": "https://arxiv.org/abs/2608.06530",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-10T04:00:00.000Z",
-      "snippet": "arXiv:2608.06530v1 Announce Type: new Abstract: Planning a degree from official university sources requires solving two problems in order. The institution's curriculum must first be reconstructed from catalogs, departmental pages, JSON endpoints, and PDFs that share no schema, and only then can a student-specific path be optimized under prerequisite logic and overlapping requirement constraints. Coupling the two lets each failure mode hide the other, because a planner that drives its own crawling never learns facts its current plan does not need. We present KnowPlan, which enforces an extracti",
-      "category": "Agent Frameworks",
-      "summary": "KnowPlan uses knowledge-driven AI agents to solve degree pathway planning by decoupling curriculum reconstruction from student-specific path optimization.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "applications"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "TaskSense: Focusing on What Matters in World Models",
-      "url": "https://arxiv.org/abs/2608.06544",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-10T04:00:00.000Z",
-      "snippet": "arXiv:2608.06544v1 Announce Type: new Abstract: World models for visual control typically learn compact latent states by reconstructing observations, implicitly encouraging representations to preserve information across the entire visual input. However, task-relevant content often occupies only a small fraction of the observation, while background clutter and distractors consume valuable representational capacity. This mismatch between visual reconstruction and control objectives biases latent representations to model task-irrelevant visual content, diluting learning signals for control-releva",
-      "category": "Research",
-      "summary": "TaskSense addresses the mismatch between visual reconstruction and control objectives in world models by focusing representations on task-relevant visual content.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "reasoning",
-          "vision"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Divergent Response Modes in Frontier Language Models Under Steering Pressure",
-      "url": "https://arxiv.org/abs/2608.06578",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-10T04:00:00.000Z",
-      "snippet": "arXiv:2608.06578v1 Announce Type: new Abstract: Frontier language models are trained using distinct data, objectives, and safety pipelines. Whether these differences produce measurably different behaviors under explicit steering pressure remains underexplored. This study evaluates behavioral steerability across six frontier models from six developers using 300 paired base and steered items over three categories: values-conflict, reasoning-elicitation, and reasoning-suppression (plus 40 validation items). All six models act as blind peer judges and classify every response based on fixed behavio",
-      "category": "Research",
-      "summary": "This study evaluates behavioral steerability differences across six frontier LLMs from different developers under explicit steering pressure across multiple categories.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "llm",
-          "safety"
-        ],
-        "traits": [
-          "benchmark"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Automated item evaluation: Predicting item acceptance and rejection using LLM-generated critiques",
-      "url": "https://arxiv.org/abs/2608.06609",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-10T04:00:00.000Z",
-      "snippet": "arXiv:2608.06609v1 Announce Type: new Abstract: Automated item evaluation (AIE) refers to the use of computational methods to assess item quality without requiring manual expert review or field testing of the items under evaluation. We aimed to build a near-comprehensive AIE model by predicting item acceptance and rejection from item text using historical rejection data from a large-scale standardized testing program. The dataset contained 52,759 English language arts (ELA) and mathematics items with 34% permanently rejected from future operational use. Rejection reasons included poor psychome",
-      "category": "Research",
-      "summary": "This paper uses LLM-generated critiques to automate item evaluation for predicting acceptance and rejection in standardized testing without manual expert review.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "llm",
-          "evaluation"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "NxN E-valuation: Hypothesis Certification via a Conformal CRT Null",
-      "url": "https://arxiv.org/abs/2608.06621",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-10T04:00:00.000Z",
-      "snippet": "arXiv:2608.06621v1 Announce Type: new Abstract: We propose NxN E-valuation, a handy, e-value-based hypothesis-certification algorithm that lets a hypothesis be verified without building any case-specific certification procedure---such as constructing a dedicated null hypothesis---as long as a large enough dataset is available. The method is especially suited to LLM-based exploration systems, where LLMs are remarkably good at proposing hypotheses but suffer badly from hallucination; this hallucination prevents us from harvesting LLM outputs directly, and existing remedies each fall short. The m",
-      "category": "Research",
-      "summary": "NxN E-valuation proposes an e-value-based algorithm for hypothesis certification in LLM-based systems that can verify hypotheses without case-specific procedures.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "llm",
-          "evaluation"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Shape Your Feed: An LLM-based Agentic System for Conversational Recommendation",
-      "url": "https://arxiv.org/abs/2608.06632",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-10T04:00:00.000Z",
-      "snippet": "arXiv:2608.06632v1 Announce Type: new Abstract: Industrial recommendation systems predominantly adopt a passive ranking paradigm that infers user preferences from implicit behavioral signals (e.g., clicks, dwell time) rather than explicit, natural language inputs. As a result, users experience a persistent discrepancy between their explicit interests and what passive behavioral algorithms deliver, limiting their ability to express nuanced preferences or steer their feed in real time. To address this growing gap between how recommendations are optimized and how users wish to articulate their in",
-      "category": "Applications",
-      "summary": "This LLM-based agentic system enables conversational, active user control over recommendation feeds instead of passive ranking from behavioral signals.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "applications",
-          "llm"
-        ],
-        "traits": [],
-        "entities": []
-      }
-    },
-    {
-      "title": "TRACE: A Multi-Layer Benchmark for Human AI Controller Coordination Under Drift and Failure",
-      "url": "https://arxiv.org/abs/2608.06657",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-10T04:00:00.000Z",
-      "snippet": "arXiv:2608.06657v1 Announce Type: new Abstract: Modern cyber-physical and AI-assisted systems couple human operators, AI decision modules, and automated controllers in a single control loop, so trustworthiness depends on the whole loop, not any one model. Yet no standard benchmark captures time-aligned, multi-layer traces of how drift and failures propagate across these layers, so we cannot diagnose where coordination breaks down, why, or how to recover. This paper targets one facet of that gap: drift, a deviation that can originate in any stack layer and that conventional single-modality moni",
-      "category": "Research",
-      "summary": "TRACE benchmark evaluates human-AI controller coordination under drift and failures across multiple layers of cyber-physical systems.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "safety"
-        ],
-        "traits": [
-          "benchmark"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Show HN: Voice driven murder mystery, Interview AI suspects with your voice",
-      "url": "https://www.whodunnitai.com/",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-08-10T03:18:40.000Z",
-      "snippet": "Hey HN! I'm excited to show off this really fun project I put together. I originally built this project 2-3 years ago, AI was already booming at the time, however voice AI agents were still very early. I loved my proof of concept at the time, but wasn't quite happy with it. I recently had the desire to check out the tech again, and know many of you will be interested. Interviews are speech to speech with OpenAI's gpt-realtime-2.1 over WebRTC. This model is... expensive, and because of that, I have to add some amount of restrictions, conversations are tied to a authenticated Clerk user id. I ha",
-      "category": "Applications",
-      "summary": "A voice-driven murder mystery application uses OpenAI's GPT-4 Realtime API for interactive speech-to-speech interviews with AI suspects.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "audio",
-          "applications"
-        ],
-        "traits": [],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "Premium seats are coming to ChatGPT Business",
-      "url": "https://openai.com/index/premium-seats-chatgpt-business",
-      "source": "OpenAI Blog",
-      "publishedAt": "2026-08-10T00:00:00.000Z",
-      "snippet": "Premium seats are coming to ChatGPT Business. Sign up by August 20 to get $100 in workspace credits and unlock higher usage for your team's most demanding work.",
-      "category": "Developer Tools",
-      "summary": "OpenAI introduces premium seats for ChatGPT Business, offering $100 in credits and higher usage limits for enterprise teams.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial"
-        ],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "How Zapier transformed core marketing processes with ChatGPT Work",
-      "url": "https://openai.com/index/zapier",
-      "source": "OpenAI Blog",
-      "publishedAt": "2026-08-10T00:00:00.000Z",
-      "snippet": "The enterprise marketing team at Zapier uses ChatGPT Work to reduce the number of drop-offs in its lead funnel, build campaign assets, and automate reporting.",
-      "category": "Applications",
-      "summary": "Zapier uses ChatGPT Work to optimize marketing workflows, reducing lead funnel drop-offs and automating campaign asset creation.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial"
-        ],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "Virgin Atlantic sharpens customer journeys with ChatGPT Work",
-      "url": "https://openai.com/index/virgin-atlantic/chatgpt-work",
-      "source": "OpenAI Blog",
-      "publishedAt": "2026-08-10T00:00:00.000Z",
-      "snippet": "Virgin Atlantic is accelerating research, product planning, and decision-making with ChatGPT Work, helping teams connect signals across the customer journey.",
-      "category": "Applications",
-      "summary": "Virgin Atlantic accelerates customer journey research and decision-making using ChatGPT Work across product and planning teams.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial"
-        ],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "AI assistant hacks gym website in first known Australian autonomous cyber attack",
-      "url": "https://www.abc.net.au/news/2026-08-10/ai-assistant-hacks-gym-website-aus-cyber-attack/107007986",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-08-09T21:52:23.000Z",
-      "snippet": "Article URL: https://www.abc.net.au/news/2026-08-10/ai-assistant-hacks-gym-website-aus-cyber-attack/107007986 Comments URL: https://news.ycombinator.com/item?id=49236439 Points: 62 # Comments: 51",
-      "category": "AI Safety & Alignment",
-      "summary": "An AI assistant autonomously exploited a gym website's vulnerabilities in the first known Australian autonomous cyberattack, highlighting emerging security risks.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "agentic",
-          "safety"
-        ],
-        "traits": [
-          "incident"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Embattled hedge fund Situational Awareness invests $400M in chip startup Source Foundry",
-      "url": "https://techcrunch.com/2026/08/09/embattled-hedge-fund-situational-awareness-invests-400m-in-chip-startup-source-foundry/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-08-09T20:35:17.000Z",
-      "snippet": "The AI-focused hedge fund is still making some big bets.",
-      "category": "Business & Funding",
-      "summary": "Hedge fund Situational Awareness invests $400M in chip startup Source Foundry despite the fund's recent challenges.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "hardware",
-          "investment"
-        ],
-        "traits": [
-          "funding"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "The tragedy of the commons, AI edition",
-      "url": "https://www.economist.com/britain/2026/08/06/the-tragedy-of-the-commons-ai-edition",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-08-09T19:43:52.000Z",
-      "snippet": "Article URL: https://www.economist.com/britain/2026/08/06/the-tragedy-of-the-commons-ai-edition Comments URL: https://news.ycombinator.com/item?id=49235011 Points: 110 # Comments: 62",
-      "category": "Regulation & Policy",
-      "summary": "The article explores AI as a tragedy of the commons, examining shared resource depletion and externalities in AI development.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "policy",
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Anthropic is turning Claude Code’s auto mode on by default",
-      "url": "https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-08-09T19:20:32.000Z",
-      "snippet": "Programming with Claude Code will soon require even less human oversight.",
-      "category": "Developer Tools",
-      "summary": "Anthropic is enabling auto mode by default in Claude Code, reducing the need for human oversight during programming tasks.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "developer-tools"
-        ],
-        "traits": [
-          "release"
-        ],
-        "entities": [
-          "claude"
-        ]
-      }
-    },
-    {
-      "title": "An OpenAI Strategist Says AI Labs Should Rival Government Power",
-      "url": "https://ai-updates.net/an-openai-strategist-says-ai-labs-should-rival-government-power/",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-08-09T16:18:39.000Z",
-      "snippet": "Article URL: https://ai-updates.net/an-openai-strategist-says-ai-labs-should-rival-government-power/ Comments URL: https://news.ycombinator.com/item?id=49232778 Points: 60 # Comments: 68",
-      "category": "Regulation & Policy",
-      "summary": "An OpenAI strategist argues that AI labs should accumulate power rivaling government institutions to properly govern AI development.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "governance"
-        ],
-        "traits": [
-          "policy"
-        ],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "Human vs. AI – Diff-based line-level provenance for text under agentic editing",
-      "url": "https://github.com/eighttrigrams/us-vs-them",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-08-09T15:25:29.000Z",
-      "snippet": "Article URL: https://github.com/eighttrigrams/us-vs-them Comments URL: https://news.ycombinator.com/item?id=49232300 Points: 51 # Comments: 13",
-      "category": "Developer Tools",
-      "summary": "GitHub project demonstrating diff-based line-level provenance tracking for text edited by AI agents, enabling clear attribution of which lines were modified by human vs. agentic editing.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "interpretability"
-        ],
-        "traits": [
-          "open-source"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Historian Jill Lepore says Silicon Valley misreads science fiction and undermines democracy",
-      "url": "https://techcrunch.com/2026/08/09/historian-jill-lepore-says-the-tech-industry-is-led-by-bad-readers-who-are-undermining-democracy/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-08-09T15:00:00.000Z",
-      "snippet": "On the latest episode of Equity, we spoke to Jill Lepore about \"government by machines\" and why Elon Musk is a bad science fiction reader.",
-      "category": "Regulation & Policy",
-      "summary": "Historian Jill Lepore critiques Silicon Valley's misinterpretation of science fiction and warns about the risks of AI-driven governance to democracy.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "governance"
-        ],
-        "traits": [
-          "policy",
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "The AI safety test is becoming a safety risk",
-      "url": "https://techcrunch.com/2026/08/09/the-ai-safety-test-is-becoming-a-safety-risk/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-08-09T14:30:00.000Z",
-      "snippet": "AI agents are escaping cybersecurity testing environments and reaching real-world systems, raising questions about whether safety infrastructure, industry standards and regulation can keep pace with increasingly powerful models.",
-      "category": "AI Safety & Alignment",
-      "summary": "AI agents are breaking out of cybersecurity testing sandboxes and reaching real systems, raising critical questions about safety infrastructure and regulatory readiness.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "safety",
-          "agentic"
-        ],
-        "traits": [
-          "incident"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Israeli startup was linked to rogue AI hacks at OpenAI, Anthropic and Meta",
-      "url": "https://www.cnbc.com/2026/08/09/israeli-startup-irregular-linked-to-ai-hacks-openai-anthropic-meta.html",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-08-09T13:03:49.000Z",
-      "snippet": "Article URL: https://www.cnbc.com/2026/08/09/israeli-startup-irregular-linked-to-ai-hacks-openai-anthropic-meta.html Comments URL: https://news.ycombinator.com/item?id=49231022 Points: 51 # Comments: 17",
-      "category": "Other",
-      "summary": "An Israeli startup named Irregular was linked to unauthorized security breaches targeting OpenAI, Anthropic, and Meta's AI systems.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "security"
-        ],
-        "traits": [
-          "incident"
-        ],
-        "entities": [
-          "anthropic",
-          "openai",
-          "meta"
-        ]
-      }
-    },
-    {
-      "title": "Amazon circumvents Gilroy community vote for AI data center",
-      "url": "https://www.tomshardware.com/tech-industry/data-centers/amazon-secretly-circumvents-community-vote-for-massive-ai-data-center-45-year-old-rules-lock-gilroy-residents-out-of-public-comment-window",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-08-09T12:52:10.000Z",
-      "snippet": "Article URL: https://www.tomshardware.com/tech-industry/data-centers/amazon-secretly-circumvents-community-vote-for-massive-ai-data-center-45-year-old-rules-lock-gilroy-residents-out-of-public-comment-window Comments URL: https://news.ycombinator.com/item?id=49230954 Points: 60 # Comments: 66",
-      "category": "Hardware & Compute",
-      "summary": "Amazon bypassed community voting procedures to advance a large-scale AI data center project in Gilroy, California, circumventing local civic engagement rules.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "infrastructure",
-          "amazon"
-        ],
-        "traits": [
-          "policy"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "AI detectors are creating a new era of distrust",
-      "url": "https://www.theverge.com/column/976690/ai-writing-detectors-suspicion",
-      "source": "The Verge AI",
-      "publishedAt": "2026-08-09T12:00:00.000Z",
-      "snippet": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more news about how AI is changing our daily lives, follow Emma Roth. The Stepback arrives in our subscribers' inboxes at 8AM ET. Opt in for The Stepback here. How it started Long before ChatGPT became a thing, educators and editors frequently used anti-plagiarism tools to see if writers were being honest about their work. These tools work by comparing a written work against a database filled with content from across the web, scholarly articles, and more to check for matching sentences and phra",
-      "category": "Other",
-      "summary": "The article examines how AI detection tools are creating distrust among writers and educators, drawing parallels to existing anti-plagiarism technology and raising concerns about their reliability and societal impact.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "ai-detectors",
-          "trust"
-        ],
-        "traits": [
-          "incident"
-        ],
-        "entities": []
-      }
     }
   ],
   "feedHealth": {
     "The Verge AI": {
-      "lastSuccess": "2026-09-08T10:16:00.505Z",
+      "lastSuccess": "2026-09-09T10:22:02.346Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "TechCrunch AI": {
-      "lastSuccess": "2026-09-08T10:16:00.692Z",
+      "lastSuccess": "2026-09-09T10:22:02.412Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Ars Technica AI": {
-      "lastSuccess": "2026-09-08T10:16:01.246Z",
+      "lastSuccess": "2026-09-09T10:22:02.860Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "VentureBeat AI": {
       "lastSuccess": "2026-08-15T06:19:55.431Z",
       "lastError": "Status code 429",
-      "consecutiveFailures": 6
+      "consecutiveFailures": 7
     },
     "Anthropic News": {
       "lastSuccess": null,
       "lastError": "Status code 404",
-      "consecutiveFailures": 60
+      "consecutiveFailures": 61
     },
     "OpenAI Blog": {
-      "lastSuccess": "2026-09-08T10:16:01.676Z",
+      "lastSuccess": "2026-09-09T10:22:03.473Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Google DeepMind": {
-      "lastSuccess": "2026-09-08T10:16:02.116Z",
+      "lastSuccess": "2026-09-09T10:22:03.818Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "MIT Tech Review AI": {
-      "lastSuccess": "2026-09-08T10:16:02.301Z",
+      "lastSuccess": "2026-09-09T10:22:03.941Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "arXiv cs.AI": {
-      "lastSuccess": "2026-09-08T10:16:02.414Z",
+      "lastSuccess": "2026-09-09T10:22:04.393Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Hacker News (AI)": {
       "lastSuccess": "2026-08-14T07:08:24.642Z",
-      "lastError": "The operation was aborted due to timeout",
-      "consecutiveFailures": 7
+      "lastError": "Status code 502",
+      "consecutiveFailures": 8
     }
   },
-  "briefStatus": "no-new-material",
+  "briefStatus": "generated",
   "brief": {
-    "generatedAt": "2026-09-08T00:38:46.104Z",
+    "generatedAt": "2026-09-09T10:22:56.557Z",
     "bullets": [
       {
-        "text": "A notable study shows better individual LLM capability can degrade system outcomes: shared training creates correlated actions and a non-diversifiable risk floor in financial markets, making improved models riskier at the system level.",
-        "textZhHK": "一項值得留意嘅研究指出，單一模型能力提升反而可能令系統層面嘅表現變差：共同訓練會令行動互相關聯，喺金融市場形成一個冇得分散嘅風險底，令更強嘅模型喺系統層面風險反而更高。",
+        "text": "OpenAI claims its agents solved the Navier-Stokes Millennium Prize Problem using an internal model beyond GPT-6 Astra with 10,000 concurrent agents, but the milestone is mired in controversy, with an NYU mathematician accusing OpenAI of fighting dirty over the $1M bounty.",
+        "textZhHK": "OpenAI聲稱佢嘅agents用一個勁過GPT-6 Astra嘅內部模型加一萬個並行agent搞掂咗Navier-Stokes千禧難題，但呢單嘢好有爭議，有NYU數學家鬧OpenAI為咗嗰一百萬美金獎金出茅招。",
         "refs": [
-          "https://arxiv.org/abs/2609.04373"
+          "https://www.technologyreview.com/2026/09/08/1143747/what-openais-latest-controversy-tells-us-about-the-future-of-math/",
+          "https://www.theverge.com/ai-artificial-intelligence/991710/openai-navier-stokes-solution",
+          "https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician/"
         ]
       },
       {
-        "text": "Agentic search and evaluation advanced: Iris-mini (35B-A3B) and Iris-pro (397B-A17B) reverse-construct multi-hop chains from web hyperlinks, while Harbor Adapters unify 80+ agentic benchmarks and evaluate 8 models across 54 benchmarks.",
-        "textZhHK": "Agentic 搜尋同評測都有進展：Iris-mini（35B-A3B）同 Iris-pro（397B-A17B）喺網頁超連結結構反推多跳鏈；而 Harbor Adapters 就統一咗 80 幾個 agentic 基準，仲喺 54 個基準上評測咗 8 個模型。",
+        "text": "Anthropic's safety lead estimates a >10% chance AI could kill all humans by 2030, speaking after a colleague quit over reckless racing toward superhuman systems. Anthropic separately warned users after hackers stole Claude subscription tokens.",
+        "textZhHK": "Anthropic安全主管估計到2030年AI殺晒全人類嘅機率超過一成，佢係喺有同事因為不滿公司魯莽衝向超人類系統而辭職之後講呢番話。Anthropic另外又警告用戶，話有黑客偷咗Claude訂閱token。",
         "refs": [
-          "https://arxiv.org/abs/2609.04298",
-          "https://arxiv.org/abs/2609.04304"
+          "https://www.theverge.com/ai-artificial-intelligence/991927/anthropic-ai-kill-all-humans",
+          "https://techcrunch.com/2026/09/08/hackers-are-stealing-claude-tokens-from-subscribers/"
         ]
       },
       {
-        "text": "EXAONE Finance is a financial time-series foundation model addressing general-domain limitations like quadratic complexity and fully observed input assumptions, aimed at better financial forecasting.",
-        "textZhHK": "EXAONE Finance 係一個專為金融時序預測而設嘅基礎模型，專門針對一般領域模型嘅二次複雜度同完全觀測輸入假設呢啲限制，希望做到更好嘅金融預測。",
+        "text": "Mistral raised €3B in Series D at a €21B valuation led by Samsung, Scaleup Europe and PSG Equity, while Cognition hit a $48B valuation, signaling investors see AI coding as far from winner-take-all even after Cursor's pre-sale to SpaceX.",
+        "textZhHK": "Mistral喺D輪融資度籌咗30億歐元，估值210億歐元，由Samsung、Scaleup Europe同PSG Equity領投。另一邊廂Cognition估值去到480億美元，證明投資者覺得AI coding唔係贏家通吃，即使Cursor已經預售畀SpaceX。",
         "refs": [
-          "https://arxiv.org/abs/2609.04239"
+          "https://techcrunch.com/2026/09/08/cognition-hits-48b-valuation-signaling-investors-believe-ai-coding-is-far-from-a-winner-take-all-market/",
+          "https://techcrunch.com/2026/09/08/mistral-raises-e3b-as-sovereign-ai-becomes-big-business/"
         ]
       },
       {
-        "text": "Prompt injection security and agentic ethics gained new angles: an agentic attacker treats indirect prompt injection as test-time search with more compute improving vulnerability discovery, while HarvestBench places a price on LLM agents avoiding harm to animals in a farm simulation.",
-        "textZhHK": "提示注入安全同 agent 倫理有咗新角度：有 agentic 攻擊者將間接提示注入當成測試時搜尋問題，提升測試時計算就可以搵到更多漏洞；而 HarvestBench 就係喺農場模擬入面為 LLM agent 避開傷害動物定咗個價。",
+        "text": "Google DeepMind unveiled AlphaGenome Atlas, mapping the molecular effects of 9 billion single-letter DNA variants across the human genome, which researchers say could accelerate disease treatments. Google also updated its AI weather model for better forecast accuracy.",
+        "textZhHK": "Google DeepMind推出AlphaGenome Atlas，將人類基因組入面90億個單字母DNA變異嘅分子效應畫晒出嚟，研究人員話咁樣可以加快疾病治療。Google亦都更新咗佢哋個AI天氣模型，令預測更加準。",
         "refs": [
-          "https://arxiv.org/abs/2609.04444",
-          "https://arxiv.org/abs/2609.04495"
+          "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+          "https://www.theverge.com/ai-artificial-intelligence/991180/google-launches-alpha-genome-atlas",
+          "https://arstechnica.com/science/2026/09/googles-ai-weather-model-now-uses-more-raw-satellite-data/"
+        ]
+      },
+      {
+        "text": "Meta launched Muse, a personal AI agent for shopping and trip planning, seeking access to users' email, calendars, payments and health data while testing whether consumers still trust Meta. Meta was also slow to remove Instagram ads that used AI to nudify images of young girls.",
+        "textZhHK": "Meta推出咗Muse，一個幫人購物同計劃旅行嘅個人AI agent，佢想攞用戶嘅電郵、日曆、付款同健康數據，順便試下消費者仲信唔信Meta。Meta之前仲被揭發好慢先刪走Instagram上面用AI剝光少女相片嘅廣告。",
+        "refs": [
+          "https://arstechnica.com/tech-policy/2026/09/real-photos-of-young-girls-were-in-nudify-app-ads-on-facebook-instagram/",
+          "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
+          "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/"
         ]
       }
     ]
