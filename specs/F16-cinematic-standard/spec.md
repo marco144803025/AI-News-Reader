@@ -463,3 +463,13 @@ earlier local-only boundary is superseded for publication; no manual ingestion,
 backfill, archive rewrite or Telegram send is requested. Native 200% zoom remains
 an acknowledged open check, not a claimed pass. Publish from the latest remote
 main while preserving newer news/delivery records and unrelated local F13–F15 work.
+
+### 11. Publication evidence — 2026-09-09
+
+The approved F16 design/localization is live at
+https://marco144803025.github.io/AI-News-Reader/ from source commit `e1dff25`.
+GitHub tests, Build & Deploy and Pages publication succeeded. The hosted interface
+passed both language directions and reload persistence, Chinese menus, Trends
+and search. Extra is disabled and the latest remote archive was preserved.
+The plan records exact run links, release asset and screenshot. Native 200% zoom
+remains acknowledged and unverified; publication approval does not count as a pass.

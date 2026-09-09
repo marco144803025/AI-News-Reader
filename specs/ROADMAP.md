@@ -201,6 +201,14 @@ Publication approved 2026-09-09: Marco requested “deploy it, its ok”.
 The isolated release preserves current remote archive/delivery state; hosted
 verification will be recorded in the F16 plan. Native 200% zoom remains open.
 
+
+F16 publication completed 2026-09-09 following Marco's “deploy it, its ok”:
+source `e1dff25`; hosted tests/build/Pages all succeeded. The public site now serves
+the cinematic standard and full shared EN/Chinese interface, with Extra disabled.
+Hosted switching/reload, index, Trends and search passed; evidence is in the F16
+plan. Native 200% zoom remains the open Build check. This publication did not
+include unrelated F13–F15 or older F11/F12 Roadmap edits.
+
 All features **must** follow the spec → plan → implement workflow documented in
 `specs/README.md`. F2c and F2d were implemented without prior specs (retroactively
 documented). Starting from F1, specs must be approved before any code is written.

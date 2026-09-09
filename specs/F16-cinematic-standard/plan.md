@@ -689,3 +689,33 @@ config; rerunning under the normal host account passed without a user-info shim.
 GitHub Pages uses `gh-pages` at `/`; repository `VITE_ENABLE_EXTRA` is absent,
 therefore both build workflows default to false. Release stages 42 approved paths;
 no F13–F15 docs, generated cache, archive, delivery state or package changes.
+
+### Hosted publication result — 2026-09-09
+
+Published source commit `e1dff259223b27fa8bb5211a355c6c7efb747ced` through a normal
+fast-forward push to main. All 42 approved paths were reviewed; staged whitespace
+checks passed after tidying existing untracked Markdown/CSS trailing whitespace.
+No archive, delivery records, dependencies or unrelated F13–F15 changes were staged.
+
+- [Test run 34363633205](https://github.com/marco144803025/AI-News-Reader/actions/runs/34363633205): success.
+- [Build & Deploy 34363633232](https://github.com/marco144803025/AI-News-Reader/actions/runs/34363633232): success.
+- [Pages publication 34363675433](https://github.com/marco144803025/AI-News-Reader/actions/runs/34363675433): success; published gh-pages commit `a1eeba40366d684e470e5c97c09a1d0890b3cdf3`.
+- Live site: https://marco144803025.github.io/AI-News-Reader/
+
+Hosted browser verified the expected `index-C6zPsbqY.js` release asset, the new
+standard design, 284 retained articles, no Extra menu item, Chinese/English
+switching and reload persistence in both directions. Chinese index/categories,
+Trends navigation and `Iris` search (1 result; canonical `q=Iris`) worked.
+The initial tab retained old HTML loaded before publication; ordinary reload
+updated the unparameterized public URL to the correct release. Final public tab
+is Chinese at 1440 px. Screenshot:
+`C:/Users/Marco/.codex/visualizations/2026/09/09/01a083ae-013c-7580-ad04-e54d88e0b32d/chinese-live-deployed.png`.
+
+Publication evidence is committed separately with CI skipped because it changes
+documentation only; the tested/deployed application source remains e1dff25.
+The original F:/project/AI-news checkout is intentionally left on its prior local
+main with the existing uncommitted work. The release branch/worktree contains the
+published commits; do not recommit those duplicate F16 changes from the original
+checkout without first reconciling with origin/main. F13–F15 remain untouched.
+No ingestion or Telegram workflow was dispatched. F16 remains Build solely for
+the acknowledged native 200% browser-zoom check, not a publication failure.
