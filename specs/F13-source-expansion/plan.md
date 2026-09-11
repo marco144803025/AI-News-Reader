@@ -702,8 +702,9 @@ sub-agent's claim of success is **not** evidence (AGENTS.md).
   rollout groups, recording sample date, relevant and excluded examples, and any
   unresolved source issue. See §15; Hacker News (AI) is the unresolved issue.
 - [x] Run every check in §11 and record the actual output. See §15.
-- [ ] Sol/high reviews the combined diff and evidence; main resolves findings and
-  re-runs only the affected checks.
+- [x] Sol/high reviews the combined diff and evidence; main resolves findings and
+  re-runs only the affected checks. Five defects and three test gaps found and
+  fixed; see §16. Suite 234 -> 245 passing.
 - [ ] Record readiness. **Done stays pending publication and hosted verification**,
   which is a separate authorization.
 
@@ -860,3 +861,132 @@ consecutive failures, while the Trends view reads "N/M WIRES HEALTHY" counting
 feeds at or above the failure threshold, so one page can show 7/12 and 8/12 at
 once. This was checked against `git diff`: **pre-existing, not introduced by
 F13**, and left alone rather than widened into unrequested scope.
+
+---
+
+## 16. Integration review and fixes — 2026-09-11
+
+A reviewer agent read the combined diff against the Constitution, the spec and
+this plan, standing in for the Sol/high role. It confirmed the architecture, the
+archive carry-forward, the health mapping, the retry classification, the
+concurrency model and the capacity arithmetic as correct, and found **five
+defects and three test gaps**. All are fixed below; the suite went from 234 to
+**245 passing tests**, and every fix carries a regression test.
+
+### D1 — feed item URLs were never validated *(blocking, fixed)*
+
+`selectItems` admitted any truthy `<link>`, and both the spec ("skip items with
+invalid links or unsupported URL schemes") and `canonicalUrlKey`'s own docstring
+assumed collection had already done this. Nobody had. Two confirmed failure modes:
+
+- A **relative** link (`/2026/09/story`) made `canonicalUrlKey` throw inside
+  `clusterCandidates`, aborting the whole run and discarding nineteen healthy
+  feeds' work over one bad item.
+- A **parseable non-HTTP** link (`mailto:`, `javascript:`, `tag:`) passed every
+  stage, was classified at cost, written into `news.json` as the article's
+  primary URL, and committed. `parseNewsData` then rejects the **entire payload**,
+  so every reader sees the error state while the ingest run reports success.
+  That was the one genuinely silent failure in the change.
+
+Fixed by `isUsableArticleUrl` in `ingest/feed-collection.ts`, applying the same
+bar as `validateFeeds`: absolute http(s), no credentials. Skipped items are
+counted as `malformed` and logged. Covered by a test with all five bad shapes.
+
+### D2 — attribution grew on every re-run *(blocking, fixed)*
+
+Constitution rule 2 and the spec both require re-runs to be harmless. Canonical
+keys are not stable across runs, because only the documented tracking allowlist
+is stripped and several publishers append their own varying parameters — SCMP's
+RSS links carry `module=` and `pgtype=`. The same article re-seen under a changed
+link was credited again each run: an "Also reported by" list growing by one entry
+a day, **crediting SCMP Tech on SCMP Tech's own article**.
+
+A worse variant: a 12-character Chinese headline fails the 20-character
+exact-title floor, and CJK forbids fuzzy matching, so the same Unwire article
+under a changed parameter became a **second article and a second paid
+classification**. This was a regression against the pre-F13 code, which compared
+on `url.split("?")[0]` and was immune.
+
+Three fixes, all in `ingest/source-selection.ts`:
+
+1. `isRedundantAttribution` — a source never "also reports" its own story.
+2. The same outlet is not credited twice for the same normalized headline,
+   whatever its link looks like today.
+3. `MIN_EXACT_CJK_TITLE_LENGTH = 8`. Twenty characters of Chinese carries roughly
+   the information of a forty-character English headline, so the Latin floor
+   rejected ordinary Unwire and SCMP headlines. CJK titles are only ever matched
+   exactly and only inside the 72-hour window, so a shorter floor is safe. This
+   also answers the "20 is long for Chinese" concern raised during implementation.
+
+### D3 — a stale or zero `Retry-After` collapsed the backoff to nothing *(fixed)*
+
+`Retry-After: 0`, or an HTTP date already in the past, produced a delay of `0`,
+and `??` does not treat `0` as absent. A 429 therefore produced three
+back-to-back requests — the behaviour that got VentureBeat WAF-blocked in the
+first place. Fixed in both layers: `parseRetryAfter` reports a non-positive delay
+as absent, as its own comment always claimed, and `feed-collection` only lets a
+strictly positive value override its own 1s/2s schedule.
+
+### D4 — a total collection failure looked like a quiet day *(fixed)*
+
+A cancelled feed correctly keeps its previous health, but nothing recorded that a
+feed was never attempted. If the deadline cut off *every* feed — two hard-failing
+feeds on one worker already cost 126 s of a 120 s budget — the run produced zero
+new articles, frozen health, "20/20 wires healthy" on Trends, and a brief
+regenerated from the archive with `briefStatus: "generated"`. Telegram would
+deliver a normal-looking brief. That is rule 15's silent failure in disguise, and
+it is the same class of bug as the 2026-09-07 F11 incident.
+
+`runIngest` now **fails the run** when every feed stalled, and warns naming the
+feeds when only some did. A payload field exposing stalled feeds to the UI is a
+reasonable follow-up but was not added here.
+
+### D5 — a silent catch in the archive index *(fixed)*
+
+`archiveKey` swallowed a parse failure with a bare `catch`, silently dropping a
+stored link from the dedupe index. It now warns, matching the UI-side behaviour.
+
+### Test gaps found and closed
+
+- **T1:** `pipeline.test.ts` P-6's attribution assertion was **vacuous**. Its
+  fixture titles each carry a unique numeric token, so no two candidates could
+  ever match and every article had `additionalSources === undefined` — the
+  assertion compared an empty set to an empty array. The property the feature
+  cares most about was untested at pipeline level. **P-6b** now drives a real
+  cross-source merge through `runIngest` twice and asserts attribution does not
+  grow, no duplicate card appears and no second classification is made.
+- **T2:** P-3 ran with an empty archive, so "existing attribution survives a
+  failed batch" was unasserted. **P-3b** covers it.
+- **T3:** P-2 was named "constructs no model client and writes nothing" but
+  asserted neither. It now snapshots size and mtime of `public/news.json`,
+  `feeds.json` and `.delivery/telegram.json` around the call.
+
+### Accepted without change, confirmed by the reviewer
+
+- The **0.9 Jaccard gate** arithmetic was independently re-derived and matches:
+  one substitution needs 19 distinct tokens, one addition needs 9. Dedupe is
+  effectively canonical-URL plus exact-title. Left at the spec's value — but D2
+  showed the conservatism has an **idempotence** cost as well as a missed-merge
+  cost, which is new input for Marco's decision on lowering it to 0.8.
+- The **footer vs Trends wire counts** were re-checked: at the default threshold
+  of 3, `feedWarnings` returns exactly the same set as `feedIssues`, so F13 does
+  not change those numbers at all. Pre-existing, correctly left alone.
+
+### Known minor items, not acted on
+
+- `runIngest` never reads `collection.counters`; only the preview command does.
+- `preview-sources.ts` reads `feeds.json` without `validateFeeds`, so the preview
+  would accept a config the real run rejects.
+- Two cosmetic false positives in the topical filter: "Ai Weiwei opens
+  exhibition" matches `\bai\b`, and "Mail: a. I. think so" matches the punctuated
+  form. Neither is worth a narrower rule.
+- README says the "first" feed becomes the article; it is the earliest *published*.
+
+### Final verification after the fixes
+
+| Check | Result |
+| --- | --- |
+| `npm test` | **245 pass, 0 fail** |
+| `npx tsc -b` | exit 0 |
+| Both `VITE_ENABLE_EXTRA` builds | exit 0, final state Extra off |
+| `git diff --check` | clean |

@@ -19,10 +19,48 @@ parallelized. Existing F10–F12 and F16 workstream exceptions remain recorded b
 | F10 | [DeepSeek API migration](./F10-deepseek-migration/)               | Done        | Backend    |
 | F11 | [Personal Telegram morning brief](./F11-telegram-brief/)         | Done        | Delivery   |
 | F12 | [English / HK Traditional Chinese summaries](./F12-bilingual-summaries/) | Done  | Content |
-| F13 | [Source expansion & dedupe](./F13-source-expansion/)             | Plan        | Backend    |
+| F13 | [Source expansion & dedupe](./F13-source-expansion/)             | Build       | Backend    |
 | F14 | [Licensing, attribution & excerpt hygiene](./F14-licensing-and-attribution/) | Spec | Portfolio |
 | F15 | [Daily brief category balance](./F15-brief-balance/)             | Spec        | Content    |
 | F16 | [Cinematic standard edition](./F16-cinematic-standard/)          | Done        | UX         |
+
+## F13 implemented — 2026-09-11
+
+**Gate 2 approved and F13 is built.** Marco approved with "ok now that you
+created the plan, proceed and implement it", after raising the per-run ceiling to
+100. Implementation was delegated as planned — feed collection, pure selection
+and UI in disjoint file sets, with `general-purpose` sub-agents substituting for
+Luna and Sol (substitution recorded in the plan). F13 moves to **Build**: the code
+is complete and verified offline, and stays Build until it is published and
+verified on the hosted site.
+
+**Verified:** 245 tests pass (130 before F13), `tsc -b` clean, both
+`VITE_ENABLE_EXTRA` builds pass with Extra off in the final state, whitespace
+clean. A browser pass against a temporary fixture confirmed attribution on all
+four article surfaces in both editions and both languages, zero nested anchors,
+malformed entries dropped with a visible warning, and no overflow at 320–1440.
+`public/news.json` was never used as a test fixture; its hash is unchanged.
+
+**Integration review found five defects, all fixed.** Two were blocking: feed
+item URLs were never validated, so a `mailto:` link would have been classified,
+published, and then rejected by the browser parser — blanking the site while the
+run reported success; and attribution grew on every re-run because publishers
+vary their own query parameters, which also turned short Chinese headlines into
+duplicate articles. Both are regression-tested. The full record is in the plan's
+§16.
+
+**Two decisions still open for Marco:**
+
+1. **`Hacker News (AI)` returned HTTP 429 on all three attempts** during live
+   source sampling — a retained feed, already at 9 consecutive failures, with the
+   same rate-limit failure mode that retired VentureBeat. Retire it, change the
+   hnrss endpoint, or accept it as intermittent.
+2. **The 0.9 title-similarity gate is far stricter than the spec's prose
+   implies.** One substituted word needs a 19-distinct-token headline to pass, so
+   dedupe is effectively canonical-URL plus exact-title matching. 0.8 would make
+   fuzzy matching actually work. Left at the spec's value pending his decision.
+
+Nothing has been pushed or published, and no live paid ingest has run.
 
 ## Latest work — 2026-09-11, later session
 
@@ -44,10 +82,11 @@ the merged tree passed **130 of 130** offline tests. `backup/pre-origin-merge-20
 preserves the pre-merge branch state. Nothing was pushed; publication remains a
 separate, separately authorized action.
 
-**F13 remains at Gate 2.** Marco asked for an explanation of the plan before
-deciding, so no approval is recorded and no F13 implementation has begun. With
-F16 closed, the F16 → F13 → F15 order now genuinely reaches F13; no parallel-
-workstream exception is needed or granted.
+**F13 reached Gate 2.** Marco asked for an explanation of the plan before
+deciding, so no approval was recorded at this point. With F16 closed, the
+F16 → F13 → F15 order genuinely reached F13; no parallel-workstream exception was
+needed or granted. **Superseded later the same day** by the Gate 2 approval and
+implementation recorded at the top of this file.
 
 **F13 per-run ceiling raised, plan completed.** After the explanation Marco said
 the plan looks good and raised the per-run ceiling from 50 to 100 new articles,
@@ -60,8 +99,9 @@ He then asked for the implementation plan to be filled in completely **with no
 code changes**, which is done: [plan.md](./F13-source-expansion/plan.md) now
 carries frozen type contracts, the exact 20-entry `feeds.json`, module signatures
 and algorithms, configuration wiring, ~40 enumerated test cases, per-agent
-delegation briefs and a Constitution-compliance section. Gate 2 is still pending
-and no production file has been touched.
+delegation briefs and a Constitution-compliance section. Gate 2 was still pending
+at that point and no production file had been touched; **superseded** by the
+approval and implementation recorded at the top of this file.
 
 ## Latest work — 2026-09-11, earlier session
 
@@ -136,7 +176,7 @@ recommendations.
 
 | Priority | Work | Concrete next action / completion condition |
 | --- | --- | --- |
-| 1 | F13 Gate 2 | Marco asked for the plan to be explained before deciding. Once he approves [plan.md](./F13-source-expansion/plan.md), record the approval there and start the delegated build; the spec's direction is already approved. No feed or code change before that. |
+| 1 | Publish F13 | Decide the two open questions in the F13 section above (Hacker News, similarity threshold), then push and run the hosted workflow. Record hosted evidence in the plan and only then mark F13 Done. |
 | 2 | F15 brief balance | Agree source/category balancing, the cap and single-category fallback; approve spec and plan. Verify research-flooded, balanced and single-category days without changing citation/bilingual/delivery contracts. |
 | 3 | F14 attribution and excerpt hygiene | Decide data terms, takedown contact and colophon detail; approve spec and revised draft plan. Implement the colophon and a `dist/news.json`-only snippet strip while retaining stored snippets. Resolve before any commercialization work. |
 | 4 | F6 remaining Extra checks | In an Extra-enabled build, complete Lighthouse comparison, reduced-motion and blocked-font checks; keep the production flag off unless a separate change is requested. |
@@ -291,7 +331,8 @@ consecutive failures and never one success), VentureBeat is **blocking us**
 (WAF 429 to every User-Agent, on the hosted runner too), and Hacker News is
 **our bug** (hnrss is intermittently unreachable and `fetchFeed` has no retry,
 unlike the model calls). Spec carries a 71-source verified pick-list in Appendix
-A and the triage evidence in Appendix B; Gate 1 pending.
+A and the triage evidence in Appendix B. **Implemented 2026-09-11** at a 20-feed
+list and a 100-article per-run ceiling; see the section at the top of this file.
 
 **F14: Licensing, attribution & excerpt hygiene.** Spec review pending. The
 2026-09-08 review proposed separate data terms, a source-attribution colophon and

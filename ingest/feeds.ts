@@ -112,10 +112,18 @@ function transportFailure(err: unknown, parentSignal: AbortSignal | undefined): 
 function parseRetryAfter(header: string | null): number | undefined {
   const value = header?.trim();
   if (!value) return undefined;
-  if (/^\d+$/.test(value)) return Number(value) * 1000;
+  // A zero or already-elapsed value is not a usable instruction: honouring it
+  // literally collapses the backoff to nothing and fires three requests
+  // back-to-back at a server that just rate-limited us. Report it as absent so
+  // the collector uses its own 1s/2s schedule, exactly as the comment promises.
+  if (/^\d+$/.test(value)) {
+    const ms = Number(value) * 1000;
+    return ms > 0 ? ms : undefined;
+  }
   const at = Date.parse(value);
   if (!Number.isFinite(at)) return undefined;
-  return Math.max(0, at - Date.now());
+  const ms = at - Date.now();
+  return ms > 0 ? ms : undefined;
 }
 
 function errorMessage(err: unknown): string {

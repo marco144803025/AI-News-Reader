@@ -320,6 +320,28 @@ export async function runIngest(deps: IngestDeps): Promise<NewsData> {
     outcome.status === "ok" ? outcome.items : []
   );
 
+  // A cancelled feed keeps its previous health, which is right — but it also
+  // means a collection that ran out of time leaves no trace in news.json. If
+  // EVERY feed was cut short, the run would otherwise produce zero new articles,
+  // frozen health and a brief regenerated from the archive: a total failure
+  // wearing a quiet day's clothes, which rule 15 calls a silent failure in
+  // disguise. Fail the run instead, so the workflow annotates it.
+  const stalled = collection.outcomes.filter(
+    (o) => o.status === "cancelled" || o.status === "not-attempted"
+  );
+  if (stalled.length === collection.outcomes.length && collection.outcomes.length > 0) {
+    throw new PipelineError(
+      `Feed collection reached its deadline before any feed completed (${stalled.length} feeds). ` +
+        `No article data was gathered. Check network access from the runner and feed reachability.`
+    );
+  }
+  if (stalled.length > 0) {
+    log.warn(
+      `${stalled.length} of ${collection.outcomes.length} feeds were cut short by the collection ` +
+        `deadline and kept their previous health: ${stalled.map((o) => o.feed.name).join(", ")}`
+    );
+  }
+
   const { newClusters, existingUpdates, matchedExistingCount, duplicateReportCount } =
     clusterCandidates({ candidates, existing: existingArticles });
 

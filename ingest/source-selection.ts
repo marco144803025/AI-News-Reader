@@ -14,6 +14,18 @@ const HOUR_MS = 60 * 60 * 1000;
 
 /** Titles this short are too generic to trust as an exact-match signal. */
 const MIN_EXACT_TITLE_LENGTH = 20;
+/**
+ * The same floor, for titles written in CJK script.
+ *
+ * NOTE: 20 characters of Chinese carries roughly the information of a
+ * 40-character English headline, so the Latin floor rejected ordinary Unwire
+ * and SCMP headlines outright. Since CJK titles are only ever matched exactly,
+ * and only inside the 72-hour window, a shorter floor costs little: two
+ * byte-identical 8-character Chinese headlines published within three days are
+ * the same story. Without this, a short Chinese article re-seen under a changed
+ * query parameter became a second article and a second paid classification.
+ */
+const MIN_EXACT_CJK_TITLE_LENGTH = 8;
 /** Both gates must pass before two differently-worded titles are merged. */
 const MIN_SHARED_TOKENS = 6;
 const TITLE_JACCARD_THRESHOLD = 0.9;
@@ -182,6 +194,12 @@ function archiveKey(rawUrl: string): string | null {
   try {
     return canonicalUrlKey(rawUrl);
   } catch {
+    // Disclosed, not swallowed (Constitution rule 14). Dropping a stored link
+    // from the dedupe index silently would let that article be re-ingested as
+    // a duplicate with no trace of why.
+    console.warn(
+      `source-selection: archived link could not be indexed for deduplication: ${rawUrl}`,
+    );
     return null;
   }
 }
@@ -265,7 +283,10 @@ export function titlesMatch(a: string, b: string): boolean {
   if (!normalizedA || !normalizedB) return false;
 
   if (normalizedA === normalizedB) {
-    return normalizedA.length >= MIN_EXACT_TITLE_LENGTH;
+    const floor = CJK_PATTERN.test(normalizedA)
+      ? MIN_EXACT_CJK_TITLE_LENGTH
+      : MIN_EXACT_TITLE_LENGTH;
+    return normalizedA.length >= floor;
   }
   if (CJK_PATTERN.test(normalizedA) || CJK_PATTERN.test(normalizedB)) {
     return false;
@@ -324,6 +345,34 @@ function timestamp(value: string): number {
 function withinWindow(a: number, b: number, windowMs: number): boolean {
   if (Number.isNaN(a) || Number.isNaN(b)) return false;
   return Math.abs(a - b) <= windowMs;
+}
+
+/**
+ * Whether crediting this candidate would add nothing, or repeat what is already
+ * credited.
+ *
+ * NOTE: this exists because canonical keys are not stable across runs. Several
+ * publishers append their own varying parameters to their RSS links (SCMP sends
+ * `module=` and `pgtype=`), and only the documented tracking allowlist is
+ * stripped. Without these two guards the same article, re-seen on consecutive
+ * days under a slightly different link, was credited again every run:
+ *
+ *   1. A source never "also reports" its own story. If the candidate comes from
+ *      the same feed as the article itself, there is nothing to credit.
+ *   2. Otherwise the same outlet is not credited twice for the same headline,
+ *      whatever the link looks like today.
+ *
+ * The ingest is required to be safe to re-run (Constitution rule 2), and an
+ * "Also reported by" list that grows by one entry a day is not.
+ */
+function isRedundantAttribution(entry: ArchiveEntry, candidate: RawArticle): boolean {
+  if (candidate.source === entry.article.source) return true;
+  const title = normalizeTitle(candidate.title);
+  const credited = [...(entry.article.additionalSources ?? []), ...entry.added];
+  return credited.some(
+    (source) =>
+      source.source === candidate.source && normalizeTitle(source.title) === title,
+  );
 }
 
 function toAdditionalSource(candidate: RawArticle): AdditionalSource {
@@ -429,9 +478,13 @@ export function clusterCandidates(input: {
       windowMs,
     );
     if (archiveMatch) {
-      archiveMatch.added.push(toAdditionalSource(candidate));
+      // Always claim the key, so this exact link is recognised next run even
+      // when the entry below is rejected as a duplicate.
       claim(key, archiveMatch, false);
       matchedExistingCount += 1;
+      if (!isRedundantAttribution(archiveMatch, candidate)) {
+        archiveMatch.added.push(toAdditionalSource(candidate));
+      }
       continue;
     }
 

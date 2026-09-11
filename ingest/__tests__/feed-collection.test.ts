@@ -547,3 +547,72 @@ async function moduleGraph(entry: string): Promise<Map<string, string>> {
   }
   return seen;
 }
+
+// ---------------------------------------------------------------------------
+// Integration-review fixes.
+// ---------------------------------------------------------------------------
+
+describe("D1 article link validation", () => {
+  const feed: Feed = { name: "Wire", url: "https://wire.example/feed" };
+
+  it("skips relative, scheme-less and non-HTTP links instead of admitting them", async () => {
+    const state = harness({
+      [feed.url]: [
+        {
+          ok: output([
+            feedItem("Relative link", "/2026/09/story"),
+            feedItem("Protocol relative", "//host.example/path"),
+            feedItem("Mailto", "mailto:newsdesk@example.com"),
+            feedItem("Javascript", "javascript:alert(1)"),
+            feedItem("Credentials", "https://user:pass@host.example/x"),
+            feedItem("Good", "https://wire.example/2026/09/good"),
+          ]),
+        },
+      ],
+    });
+
+    const result = await collect([feed], state);
+    const outcome = result.outcomes[0];
+    assert.equal(outcome.status, "ok");
+    assert.deepEqual(
+      outcome.status === "ok" ? outcome.items.map((i) => i.url) : [],
+      ["https://wire.example/2026/09/good"],
+      "only the usable link survives",
+    );
+    assert.ok(
+      state.logs.some((l) => l.includes("malformed=5")),
+      `the five skipped items must be counted and logged; got ${state.logs.join(" | ")}`,
+    );
+  });
+});
+
+describe("D3 Retry-After must not collapse the backoff", () => {
+  const feed: Feed = { name: "Limited", url: "https://limited.example/feed" };
+
+  it("falls back to 1s/2s when the server sends Retry-After: 0", async () => {
+    const state = harness({ [feed.url]: [{ throws: httpError(429, 0) }] });
+    await collect([feed], state);
+    assert.deepEqual(state.sleeps, [1000, 2000], "three back-to-back requests would re-trip the rate limiter");
+  });
+
+  it("falls back to 1s/2s when the Retry-After date has already passed", async () => {
+    const past = new Date(Date.now() - 60_000).toUTCString();
+    // parseRetryAfter is internal; exercise it through a real Response header.
+    const { fetchFeed: realFetch } = await import("../feeds.ts");
+    let captured: unknown;
+    try {
+      await realFetch("https://x.example/f", 20_000, {
+        fetchImpl: async () =>
+          new Response("nope", { status: 429, headers: { "Retry-After": past } }),
+      });
+    } catch (err) {
+      captured = err;
+    }
+    assert.ok(captured instanceof FeedFetchError);
+    assert.equal(
+      (captured as FeedFetchError).retryAfterMs,
+      undefined,
+      "an elapsed date is reported as absent, as the function's own comment promises",
+    );
+  });
+});

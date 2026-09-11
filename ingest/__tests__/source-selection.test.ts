@@ -957,3 +957,79 @@ describe("integration corrections", () => {
     assert.equal(canonicalUrlKey("https://example.com/"), "https://example.com/");
   });
 });
+
+// ---------------------------------------------------------------------------
+// Integration-review fixes (D2): attribution must not grow on a re-run when a
+// publisher varies its own query parameters.
+// ---------------------------------------------------------------------------
+
+describe("attribution is stable across runs", () => {
+  const archived = (over: Partial<Article> = {}): Article => ({
+    title: "Hong Kong expands its artificial intelligence funding programme",
+    url: "https://www.scmp.com/tech/a/3325",
+    source: "SCMP Tech",
+    publishedAt: "2026-09-10T06:00:00.000Z",
+    snippet: "",
+    category: "Applications",
+    summary: "Summary.",
+    ...over,
+  });
+
+  it("never credits a source for its own story", () => {
+    const existing = [archived()];
+    const candidate: RawArticle = {
+      title: archived().title,
+      url: "https://www.scmp.com/tech/a/3325?module=perpetual_scroll&pgtype=article",
+      source: "SCMP Tech",
+      publishedAt: "2026-09-10T06:00:00.000Z",
+      snippet: "",
+    };
+    const first = clusterCandidates({ candidates: [candidate], existing });
+    assert.equal(first.newClusters.length, 0, "not a new article");
+    assert.equal(first.existingUpdates.length, 0, "and not credited to itself");
+  });
+
+  it("does not credit the same outlet twice for one headline under a changed link", () => {
+    let existing = [archived()];
+    const other = (param: string): RawArticle => ({
+      title: archived().title,
+      url: `https://example.org/story/3325?${param}`,
+      source: "The Register AI/ML",
+      publishedAt: "2026-09-10T07:00:00.000Z",
+      snippet: "",
+    });
+
+    const day1 = clusterCandidates({ candidates: [other("ref=home")], existing });
+    assert.equal(day1.existingUpdates.length, 1);
+    existing = [day1.existingUpdates[0]];
+    assert.equal(existing[0].additionalSources?.length, 1);
+
+    // Same story, same outlet, a link that differs only by a session parameter.
+    const day2 = clusterCandidates({ candidates: [other("ref=newsletter")], existing });
+    const after = day2.existingUpdates[0] ?? existing[0];
+    assert.equal(
+      after.additionalSources?.length,
+      1,
+      "a re-run must not multiply attribution (Constitution rule 2)",
+    );
+  });
+
+  it("matches a short Chinese headline exactly, so it does not become a second article", () => {
+    const zh = "蘋果推出全新 AI 功能";
+    assert.equal(zh.length >= 8 && zh.length < 20, true, "a realistic short CJK headline");
+    const existing = [archived({ title: zh, url: "https://unwire.hk/2026/09/apple-ai/", source: "Unwire.hk" })];
+    const candidate: RawArticle = {
+      title: zh,
+      url: "https://unwire.hk/2026/09/apple-ai/?ref=homepage",
+      source: "Unwire.hk",
+      publishedAt: "2026-09-10T06:30:00.000Z",
+      snippet: "",
+    };
+    const result = clusterCandidates({ candidates: [candidate], existing });
+    assert.equal(result.newClusters.length, 0, "no duplicate card, no second paid classification");
+  });
+
+  it("still refuses a CJK title too short to identify a story", () => {
+    assert.equal(titlesMatch("AI 新聞", "AI 新聞"), false);
+  });
+});

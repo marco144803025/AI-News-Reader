@@ -212,7 +212,15 @@ async function collectOne(
       }
 
       const sleep = deps.sleep ?? abortableSleep;
-      const waitMs = failure.retryAfterMs ?? BACKOFF_MS[attempt - 1];
+      // `??` is not enough here: a server can answer `Retry-After: 0`, and zero
+      // is not nullish. Honouring it literally fires three requests back to
+      // back at something that just rate-limited us — the behaviour that got a
+      // previous source WAF-blocked. Only a positive delay overrides our own.
+      const retryAfterMs = failure.retryAfterMs;
+      const waitMs =
+        retryAfterMs !== undefined && retryAfterMs > 0
+          ? retryAfterMs
+          : BACKOFF_MS[attempt - 1];
       if (waitMs > MAX_RETRY_AFTER_MS || waitMs > remainingMs()) {
         // The publisher answered with a real error; we simply have no budget to
         // ask again. That is still a failure, not a cancellation.
@@ -286,6 +294,28 @@ type Selection = {
   arxivTrimmed: number;
 };
 
+/**
+ * Whether a feed's `<link>` can be used as an article URL.
+ *
+ * NOTE: this guard is load-bearing, and its absence was a real defect. A feed
+ * may publish a relative link, or a `mailto:` / `javascript:` / `tag:` one.
+ * A relative link makes canonicalUrlKey throw and aborts the entire run, losing
+ * the other nineteen feeds' work; a parseable non-HTTP one survives all the way
+ * into news.json, where the browser parser rejects the WHOLE payload and every
+ * reader sees an error page while the ingest run still reports success. Same
+ * bar as validateFeeds applies to feed URLs: absolute http(s), no credentials.
+ */
+function isUsableArticleUrl(rawUrl: string): boolean {
+  let parsed: URL;
+  try {
+    parsed = new URL(rawUrl);
+  } catch {
+    return false;
+  }
+  if (parsed.protocol !== "http:" && parsed.protocol !== "https:") return false;
+  return !parsed.username && !parsed.password;
+}
+
 function selectItems(
   feed: Feed,
   parsed: Parser.Output<Parser.Item>,
@@ -306,7 +336,7 @@ function selectItems(
   for (const item of parsed.items) {
     const url = item.link;
     const title = item.title?.trim();
-    if (!url || !title) {
+    if (!url || !title || !isUsableArticleUrl(url)) {
       malformed++;
       continue;
     }

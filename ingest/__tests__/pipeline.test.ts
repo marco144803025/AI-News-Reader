@@ -1,8 +1,9 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { mkdtemp, writeFile, rm } from "node:fs/promises";
+import { mkdtemp, writeFile, rm, stat } from "node:fs/promises";
 import { tmpdir } from "node:os";
-import { join } from "node:path";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 import OpenAI from "openai";
 import {
   loadExisting,
@@ -21,6 +22,7 @@ import type { Feed } from "../lib.ts";
 // this exercises the real selection, capacity, batching, merge and brief logic
 // without an API key, a network call or a filesystem write.
 
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const NOW = new Date("2026-09-11T06:00:00.000Z");
 
 function makeFeeds(count: number): Feed[] {
@@ -141,14 +143,33 @@ test("P-1b round-robin spans every source when the cap permits", async () => {
 test("P-2 the runner constructs no model client and writes nothing", async () => {
   const feeds = makeFeeds(2);
   const { deps } = harness({ feeds, candidates: makeCandidates(feeds, 2) });
+
+  // Snapshot every file the pipeline could plausibly touch, so "writes nothing"
+  // is asserted rather than merely claimed.
+  const watched = ["public/news.json", "feeds.json", ".delivery/telegram.json"];
+  const snapshot = async () =>
+    Promise.all(
+      watched.map(async (rel) => {
+        try {
+          const s = await stat(join(ROOT, rel));
+          return `${rel}:${s.size}:${s.mtimeMs}`;
+        } catch {
+          return `${rel}:absent`;
+        }
+      })
+    );
+  const before = await snapshot();
+
   const key = process.env.DEEPSEEK_API_KEY;
   delete process.env.DEEPSEEK_API_KEY;
   try {
     const out = await runIngest(deps);
-    assert.equal(out.articles.length, 4);
+    assert.equal(out.articles.length, 4, "the run completes with no key present");
   } finally {
     if (key !== undefined) process.env.DEEPSEEK_API_KEY = key;
   }
+
+  assert.deepEqual(await snapshot(), before, "runIngest must not touch any file");
 });
 
 test("P-3 a batch that exhausts retries persists nothing from that batch", async () => {
@@ -206,7 +227,9 @@ test("P-4 every feed failing leaves the archive intact and does not crash", asyn
 });
 
 test("P-4b a deadline-cancelled feed keeps its previous health", async () => {
-  const feeds = makeFeeds(2);
+  // Three feeds, one of which completes: a run where EVERY feed stalls is a
+  // total collection failure and is asserted separately in P-4c.
+  const feeds = makeFeeds(3);
   const existing: NewsData = {
     generatedAt: "2026-09-10T06:00:00.000Z",
     daysBack: 1,
@@ -222,6 +245,7 @@ test("P-4b a deadline-cancelled feed keeps its previous health", async () => {
     outcomes: [
       { feed: feeds[0], status: "cancelled" as const, attempts: 1 },
       { feed: feeds[1], status: "not-attempted" as const },
+      { feed: feeds[2], status: "ok" as const, items: [], attempts: 1, fetchedAt: NOW.toISOString() },
     ],
     counters: {},
   });
@@ -318,4 +342,144 @@ test("P-7b a quiet day carries the previous brief forward", async () => {
   assert.equal(out.briefStatus, "no-new-material");
   assert.equal(out.brief?.bullets[0].text, "Yesterday.", "the previous brief is carried, not fabricated");
   assert.equal(out.generatedAt, existing.generatedAt, "a run with no new material keeps its timestamp");
+});
+
+// ---------------------------------------------------------------------------
+// Integration-review follow-ups. The reviewer showed that P-6's attribution
+// assertion was vacuous: its fixture titles each carry a unique numeric token,
+// so no two candidates can ever match and every article had no attribution at
+// all. These exercise the merge path P-6 was meant to cover.
+// ---------------------------------------------------------------------------
+
+test("P-6b an archived article that gains attribution does not gain it twice", async () => {
+  const feeds: Feed[] = [
+    { name: "Source A", url: "https://a.example/feed" },
+    { name: "Source B", url: "https://b.example/feed" },
+  ];
+  const shared = "Regulators open a formal consultation into frontier model evaluation duties";
+  const archived: Article = {
+    title: shared,
+    url: "https://a.example/story/1",
+    source: "Source A",
+    publishedAt: "2026-09-11T05:00:00.000Z",
+    snippet: "",
+    category: "Regulation & Policy",
+    summary: "Summary.",
+    summaryZhHK: "摘要。",
+  };
+  const existing: NewsData = {
+    generatedAt: "2026-09-11T05:30:00.000Z",
+    daysBack: 1,
+    categories: ["Regulation & Policy"],
+    articles: [archived],
+    briefStatus: "generated",
+  };
+  // Source B reports the same story, under a link that varies between runs.
+  const candidate = (param: string): RawArticle => ({
+    title: shared,
+    url: `https://b.example/story/1?${param}`,
+    source: "Source B",
+    publishedAt: "2026-09-11T05:15:00.000Z",
+    snippet: "",
+  });
+
+  const run1 = harness({ feeds, candidates: [candidate("ref=home")], existing });
+  const out1 = await runIngest(run1.deps);
+  const merged1 = out1.articles.find((a) => a.url === archived.url);
+  assert.ok(merged1, "the archived article survives the merge");
+  assert.equal(merged1!.additionalSources?.length, 1, "Source B is credited once");
+  assert.equal(merged1!.summaryZhHK, "摘要。", "its Chinese summary is untouched");
+
+  const run2 = harness({ feeds, candidates: [candidate("ref=newsletter")], existing: out1 });
+  const out2 = await runIngest(run2.deps);
+  const merged2 = out2.articles.find((a) => a.url === archived.url);
+  assert.equal(out2.articles.length, 1, "no duplicate card on the second run");
+  assert.equal(run2.classifyCalls.length, 0, "and no second paid classification");
+  assert.equal(
+    merged2!.additionalSources?.length,
+    1,
+    "attribution must not grow on a re-run (Constitution rule 2)"
+  );
+});
+
+test("P-3b a failed batch does not discard attribution added to existing articles", async () => {
+  const feeds: Feed[] = [
+    { name: "Source A", url: "https://a.example/feed" },
+    { name: "Source B", url: "https://b.example/feed" },
+  ];
+  const shared = "Regulators open a formal consultation into frontier model evaluation duties";
+  const existing: NewsData = {
+    generatedAt: "2026-09-11T05:30:00.000Z",
+    daysBack: 1,
+    categories: ["Regulation & Policy"],
+    articles: [
+      {
+        title: shared,
+        url: "https://a.example/story/1",
+        source: "Source A",
+        publishedAt: "2026-09-11T05:00:00.000Z",
+        snippet: "",
+        category: "Regulation & Policy",
+        summary: "Summary.",
+      },
+    ],
+    briefStatus: "generated",
+  };
+  const candidates: RawArticle[] = [
+    { title: shared, url: "https://b.example/story/1", source: "Source B", publishedAt: "2026-09-11T05:15:00.000Z", snippet: "" },
+    { title: "Zeta900 bulletin", url: "https://b.example/story/2", source: "Source B", publishedAt: "2026-09-11T05:20:00.000Z", snippet: "" },
+  ];
+  const { deps } = harness({ feeds, candidates, existing });
+  deps.classify = async () => {
+    throw new OpenAI.APIConnectionError({ message: "upstream down" });
+  };
+
+  const out = await runIngest(deps);
+
+  assert.equal(out.articles.length, 1, "the unclassified new article is not persisted");
+  assert.equal(
+    out.articles[0].additionalSources?.length,
+    1,
+    "but attribution earned by an existing article survives the failed batch"
+  );
+});
+
+test("P-4c a collection that stalls entirely fails the run instead of looking quiet", async () => {
+  const feeds = makeFeeds(3);
+  const { deps } = harness({ feeds });
+  deps.collect = async () => ({
+    outcomes: [
+      { feed: feeds[0], status: "cancelled" as const, attempts: 1 },
+      { feed: feeds[1], status: "not-attempted" as const },
+      { feed: feeds[2], status: "not-attempted" as const },
+    ],
+    counters: {},
+  });
+
+  await assert.rejects(
+    () => runIngest(deps),
+    /deadline before any feed completed/,
+    "a total collection failure must be visible, not a quiet day"
+  );
+});
+
+test("P-4d a partial stall is warned about but does not fail the run", async () => {
+  const feeds = makeFeeds(2);
+  const candidates = makeCandidates(feeds, 2);
+  const { deps, logs } = harness({ feeds, candidates });
+  deps.collect = async () => ({
+    outcomes: [
+      { feed: feeds[0], status: "ok" as const, items: candidates.filter((c) => c.source === feeds[0].name), attempts: 1, fetchedAt: NOW.toISOString() },
+      { feed: feeds[1], status: "cancelled" as const, attempts: 1 },
+    ],
+    counters: {},
+  });
+
+  const out = await runIngest(deps);
+
+  assert.equal(out.articles.length, 2, "the feed that did complete still contributes");
+  assert.ok(
+    logs.some((l) => l.includes("cut short by the collection")),
+    "the stalled feed is disclosed, not silently frozen"
+  );
 });
