@@ -1,7 +1,7 @@
 # SPEC: Cinematic standard edition
 
 **ID:** F16-cinematic-standard
-**Status:** Build — cinematic implementation and approved localization complete locally; native 200% zoom pending
+**Status:** Done — cinematic standard and full interface localization published 2026-09-09; native 200% zoom checked and approved by Marco 2026-09-11
 **Owner:** Marco
 **Created:** 2026-09-08
 
@@ -305,8 +305,9 @@ No blocking design questions. Assumptions for approval:
 - **Implementation refinements:** system-font typography needs no font downloads;
   the optional page/share metadata cleanup removes stale Claude branding. No
   change to source data, provider selection, token budget, or Telegram behavior.
-- **Publication:** not requested or performed. Existing archive data has no
-  brief headline, so its neutral fallback remains until normal future ingestion.
+- **Publication at initial implementation checkpoint:** not yet requested or
+  performed. Superseded by the 2026-09-09 publication approval and evidence in
+  sections 10–11 below. Missing brief headlines retain the neutral fallback.
 
 ## Scope extension — Full standard-interface localization (2026-09-09)
 
@@ -473,3 +474,33 @@ passed both language directions and reload persistence, Chinese menus, Trends
 and search. Extra is disabled and the latest remote archive was preserved.
 The plan records exact run links, release asset and screenshot. Native 200% zoom
 remains acknowledged and unverified; publication approval does not count as a pass.
+
+### 12. Status audit — 2026-09-09
+
+Marco requested a spec/status refresh and a list of next work. Local Git objects
+confirm source `e1dff25` and publication-evidence commit `b04bd5f` on the release
+branch/cached `origin/main`; this original checkout remains on `6b3eb39` with
+preserved working changes. The publication and 130-test results above are prior
+recorded evidence, not newly repeated browser or test runs. A fresh remote/site
+check was unavailable during this audit. No new scope or approval is inferred.
+The only unchecked F16 plan task remains native 200% browser zoom. Record that
+result before marking Done; a failure requires follow-up rather than a checked box.
+
+### 13. Acceptance and closure — 2026-09-11
+
+The single outstanding acceptance criterion, native 200% browser zoom in English
+and Traditional Chinese, was checked by Marco and approved on 2026-09-11 with
+"I tested it, approve it". **F16 is Done.**
+
+That record is an owner acceptance rather than a captured measurement: no agent
+ran the check, and no browser, viewport or screenshot accompanied the approval,
+because the documented tool limitation still stands — the in-app browser and the
+Chrome connector both provide viewport resizing, not native page zoom. The
+closure record in [plan.md](./plan.md) states this limitation explicitly so a
+later agent neither re-opens the check expecting a tool to perform it nor
+restates the pass as machine-verified.
+
+No code, build, ingestion, model call, Telegram delivery or deployment was
+performed to close F16. Separately on the same day, this checkout was reconciled
+with the published `origin/main`, after which the offline suite passed 130 of
+130 tests. The remaining F6 checks are unaffected and stay open.

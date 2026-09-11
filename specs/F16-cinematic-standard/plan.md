@@ -1,12 +1,13 @@
 ## Plan: Cinematic standard edition
 
 **Spec:** [spec.md](./spec.md) — approved by Marco on 2026-09-08.
-**Status:** Build — implementation complete locally on 2026-09-09; final native
-200% browser-zoom check remains open. Approved by Marco with “approve” on 2026-09-08.
+**Status:** Done — cinematic standard and localization published on 2026-09-09; the final
+native 200% browser-zoom check was run by Marco and approved on 2026-09-11.
+Approved by Marco with “approve” on 2026-09-08.
 
 **Localization extension (2026-09-09):** focused spec approved by Marco with
 “approve”. Gate 2 approved with “approved”; implementation and offline verification
-completed locally on 2026-09-09. Native 200% browser zoom remains open for F16.
+completed and published on 2026-09-09. Native 200% browser zoom was closed on 2026-09-11.
 The original approval still applies to the cinematic work.
 
 **Goal:** Make the approved cinematic Daily Brief design the standard website,
@@ -253,9 +254,12 @@ The development address normally uses port 5173 and the same base path.
 - [x] Run tests and both build states, then perform the available browser matrix below.
 - [x] Update README, design system, screenshot, F6 integration note, and F16
   completion evidence; leave the final default-off preview available to Marco.
-- [ ] Verify native browser zoom at 200%. The in-app browser exposes viewport
-  sizing but no zoom control; its keyboard shortcut did not change measured
-  scaling. Responsive-width checks are not claimed as a native zoom test.
+- [x] Verify native browser zoom at 200%. No agent tool could perform this: the
+  in-app browser exposes viewport sizing but no zoom control, its keyboard
+  shortcut did not change measured scaling, and responsive-width checks were
+  never claimed as a native zoom test. Marco ran the check himself and approved
+  the result on 2026-09-11. See "Native zoom closure" at the end of this plan
+  for exactly what that record does and does not contain.
 
 ## Verification matrix
 
@@ -359,7 +363,10 @@ prevents a specific check; an unperformed check stays unchecked.
   above come from the completed earlier checks. Reopening the preview was queued
   in this task's app panel; the direct local URL remains usable.
 
-### Remaining review and boundaries
+### Remaining review and boundaries — initial implementation checkpoint
+
+Historical checkpoint: the no-publication boundary below was superseded by the
+approved publication and hosted result later in this plan. Native zoom remains open.
 
 - Native 200% browser zoom remains unchecked for the tool limitation above;
   retain F16 at Build until that final check is recorded. The implementation
@@ -719,3 +726,59 @@ published commits; do not recommit those duplicate F16 changes from the original
 checkout without first reconciling with origin/main. F13–F15 remain untouched.
 No ingestion or Telegram workflow was dispatched. F16 remains Build solely for
 the acknowledged native 200% browser-zoom check, not a publication failure.
+
+### Documentation audit — 2026-09-09
+
+- Requested scope: synchronize spec status and document next work; no production
+  edits, publication, ingestion or delivery action is part of this audit.
+- Verified local Git objects for `e1dff25` and `b04bd5f`, the release branch and
+  cached `origin/main`; local `main` remains six commits behind that cached ref.
+  Remote refresh failed due to network access, so this is not a new hosted check.
+- Checked all feature folders, spec/plan statuses and plan checkboxes. F16 has
+  24 checked tasks and one unchecked task: native 200% browser zoom. The prior
+  130-test/build/browser evidence is retained; application tests were not rerun
+  for this documentation-only change.
+- Next: test the published standard at native 200% browser zoom in English and
+  Chinese, including menu, search, news and Trends. Record browser, viewport,
+  screenshots and any clipping/overlap or inaccessible controls. Mark Done only
+  after the remaining acceptance check passes and its evidence is recorded.
+- Before future commits from this original checkout, reconcile with current
+  remote main while preserving local work; do not duplicate the already-published
+  F16 implementation. See the prioritized queue in `specs/ROADMAP.md`.
+
+### Native zoom verification recovery — 2026-09-09
+
+- Marco requested F16 → F13 → F15 and repeatedly requested resumption of the
+  remaining F16 check. Earlier Windows Computer Use attempts stopped because the
+  helper could not determine Chrome's current URL; no zoom pass resulted.
+- The Chrome browser connector successfully opened the hosted reader and read
+  its current Chinese interface, navigation, search and 284-article count.
+- Its available capability is viewport sizing, not native browser zoom. Sending
+  `ctrl+plus` produced no change: CSS viewport 1548×712, device pixel ratio
+  1.649999976158142 and visual viewport scale 1 both before and after. These
+  measurements do not establish the browser's zoom percentage.
+- Asked Marco to set Chrome's menu zoom to 200% in the dedicated verification
+  tab. The agent can then inspect layout and exercise controls through the
+  functioning browser connector. Native zoom and acceptance remain pending until
+  the setting is confirmed and those checks are completed.
+
+### Native zoom closure — 2026-09-11
+
+- Marco performed the outstanding native 200% browser-zoom check himself and
+  approved the result on 2026-09-11, answering "I tested it, approve it" to a
+  direct question about how this check should be handled. F16 moves to **Done**.
+- **Evidence level, stated plainly:** this is Marco's own reported pass. No agent
+  executed the check, and no browser name, viewport size or screenshot was
+  supplied with the approval, so the browser/viewport/screenshot detail that the
+  earlier ROADMAP entry asked for is not present in this record. It is recorded
+  as an owner acceptance, not as a captured measurement.
+- The tool limitation documented in the 2026-09-09 recovery note above is
+  unchanged and remains the reason no agent could produce that detail: the
+  in-app browser and the Chrome connector both offer viewport sizing rather than
+  native page zoom. A future agent must not re-open this check on the assumption
+  that a tool can now perform it, and must not claim a machine-verified pass.
+- If layout problems at 200% zoom are reported later, raise them as a new defect
+  against the published standard edition rather than reverting this closure.
+- Nothing else changed with this closure: no code, no build, no publication and
+  no ingestion or delivery was run to record it. The merged tree's offline suite
+  was run on the same day and passed 130 of 130 tests.
