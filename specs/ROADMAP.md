@@ -49,6 +49,20 @@ deciding, so no approval is recorded and no F13 implementation has begun. With
 F16 closed, the F16 → F13 → F15 order now genuinely reaches F13; no parallel-
 workstream exception is needed or granted.
 
+**F13 per-run ceiling raised, plan completed.** After the explanation Marco said
+the plan looks good and raised the per-run ceiling from 50 to 100 new articles,
+because the F10 DeepSeek migration cut his cost. That scope change is recorded in
+the F13 spec, which now carries the consequences: four classification batches at
+the ceiling instead of two, at most sixteen request attempts, and a capacity
+fixture of 140 candidates → 100 admitted / 40 skipped. `ARXIV_CAP = 15` is
+deliberately unchanged — he raised the per-run ceiling, not the arXiv sub-cap.
+He then asked for the implementation plan to be filled in completely **with no
+code changes**, which is done: [plan.md](./F13-source-expansion/plan.md) now
+carries frozen type contracts, the exact 20-entry `feeds.json`, module signatures
+and algorithms, configuration wiring, ~40 enumerated test cases, per-agent
+delegation briefs and a Constitution-compliance section. Gate 2 is still pending
+and no production file has been touched.
+
 ## Latest work — 2026-09-11, earlier session
 
 F13 source-expansion direction approved by Marco with “Approved, remember to
