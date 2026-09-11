@@ -31,3 +31,54 @@ Updates require a discussion, not a quick edit.
 
 6. **No production code without an approved plan.** Exceptions: typo fixes,
    dependency bumps, ROADMAP updates.
+
+## Engineering principles
+
+7. **No backward compatibility.** Remove obsolete paths outright instead of
+   adding compatibility layers, fallbacks, or migrations. Reason: this is a
+   single-deployment static site with no external consumers — there is nobody
+   to stay compatible with, and dead paths only obscure which code is live.
+
+8. **The simplest implementation that fully meets the current requirements.**
+   No speculative abstraction, configuration or indirection for needs that have
+   not arrived.
+
+9. **Grow the system in layers.** Start from the smallest version that works
+   end to end, and add each new capability on top of a product that already
+   works. Never trade a working product for unfinished complexity.
+
+10. **Modular components, clearly separated concerns.**
+
+11. **Prefer established libraries; lean on what is already installed.** Reach
+    for a well-maintained library when it reduces overall complexity or
+    improves reliability, and use the project's existing dependencies before
+    writing your own implementation or adding a package. Do not assume a
+    library lacks a capability without checking its documentation and types.
+
+12. **Architectural decisions are made for the long term.** Do not accept a
+    stopgap that only works for now and is meant to be replaced later.
+
+## Failure behaviour
+
+13. **Prefer a visible failure over a silent fallback.** This is the soul of
+    the product. In priority order:
+
+    1. Works correctly with real data.
+    2. Falls back visibly and clearly signals degraded mode.
+    3. Fails with a clear error message.
+    4. Silently degrades to look fine — never do this.
+
+    Design for debuggability, not cosmetic stability.
+
+14. **Never swallow an error to keep things "working."** Surface it, and do not
+    substitute placeholder data in its place. No catch that continues as though
+    nothing happened.
+
+15. **Fallbacks are acceptable only when disclosed.** Show a banner in the UI,
+    log a warning in the pipeline, or annotate the output. An undisclosed
+    fallback is a silent failure wearing a disguise.
+
+16. **An unconfigured service means the feature says it is unavailable.** If a
+    key, feed or model is missing, the affected surface states that plainly. It
+    must never present a fabricated headline, summary, translation, source URL,
+    publish date or trend count as though it were real ingested data.
