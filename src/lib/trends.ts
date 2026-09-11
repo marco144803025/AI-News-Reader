@@ -127,3 +127,56 @@ export function feedIssues(
     }))
     .sort((a, b) => b.consecutiveFailures - a.consecutiveFailures);
 }
+
+// Ingest writes the configured threshold into news.json because the browser
+// cannot read the ingest environment. This default only applies when a payload
+// carries no valid value, and parseNewsData warns when it does — the fallback is
+// disclosed rather than silently invented (Constitution rule 15).
+export const DEFAULT_FAILURE_WARNING_THRESHOLD = 3;
+
+export type FeedWarning = FeedIssue & {
+  persistent: boolean; // failing for at least the configured number of runs
+};
+
+/**
+ * Pure predicate: has this feed failed for enough consecutive runs to be called
+ * persistently failing? Both numbers are arguments — no clock, no data source.
+ */
+export function isPersistentFailure(
+  consecutiveFailures: number,
+  threshold: number
+): boolean {
+  return (
+    Number.isFinite(consecutiveFailures) &&
+    Number.isFinite(threshold) &&
+    consecutiveFailures > 0 &&
+    consecutiveFailures >= threshold
+  );
+}
+
+/**
+ * Everything `feedIssues` already reports, plus any feed the configured
+ * threshold catches below the legacy bar. The threshold only ADDS a label: it
+ * never filters out a failure the existing list would have shown, and a feed it
+ * catches is never left looking healthy.
+ */
+export function feedWarnings(
+  feedHealth: Record<string, FeedHealth> | undefined,
+  threshold: number
+): FeedWarning[] {
+  if (!feedHealth) return [];
+  return Object.entries(feedHealth)
+    .filter(
+      ([, h]) =>
+        h.consecutiveFailures >= FAILING_THRESHOLD ||
+        isPersistentFailure(h.consecutiveFailures, threshold)
+    )
+    .map(([name, h]) => ({
+      name,
+      lastError: h.lastError,
+      lastSuccess: h.lastSuccess,
+      consecutiveFailures: h.consecutiveFailures,
+      persistent: isPersistentFailure(h.consecutiveFailures, threshold),
+    }))
+    .sort((a, b) => b.consecutiveFailures - a.consecutiveFailures);
+}

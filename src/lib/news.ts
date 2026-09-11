@@ -1,4 +1,5 @@
-import type { Article, Brief, BriefStatus, FeedHealth, NewsData, Tags } from "../types.ts";
+import type { AdditionalSource, Article, Brief, BriefStatus, FeedHealth, NewsData, Tags } from "../types.ts";
+import { DEFAULT_FAILURE_WARNING_THRESHOLD } from "./trends.ts";
 import { uiCopy } from "./ui.ts";
 import type { SummaryLanguage } from "./language.ts";
 import { validBriefHeadline, validTranslation } from "./language.ts";
@@ -19,6 +20,43 @@ export function sourceUrl(value: unknown): string | undefined {
   } catch {
     return undefined;
   }
+}
+
+/**
+ * Attribution added by F13 deduplication. It is optional metadata about OTHER
+ * outlets, so a malformed entry is dropped with a warning and never takes an
+ * otherwise valid article down with it. The URL guard is the shared sourceUrl
+ * one — attribution links must clear exactly the same bar as a primary link.
+ */
+function readAdditionalSources(value: unknown, articleUrl: string): AdditionalSource[] | undefined {
+  if (value === undefined) return undefined;
+  if (!Array.isArray(value)) {
+    console.warn(`news.json: additionalSources on ${articleUrl} is not a list; ignoring it.`);
+    return undefined;
+  }
+  const sources: AdditionalSource[] = [];
+  for (const entry of value) {
+    const url = isRecord(entry) ? sourceUrl(entry.url) : undefined;
+    // The other outlet's own words are stored verbatim; only emptiness is rejected.
+    if (!isRecord(entry) || !url || typeof entry.title !== "string" || !entry.title.trim() ||
+        typeof entry.source !== "string" || !entry.source.trim()) {
+      console.warn(`news.json: dropped a malformed additional source on ${articleUrl}.`);
+      continue;
+    }
+    sources.push({ title: entry.title, url, source: entry.source });
+  }
+  return sources.length > 0 ? sources : undefined;
+}
+
+/**
+ * Absence means "this run did not configure a threshold", not a valid value, so
+ * the fallback is announced instead of quietly invented (Constitution rule 15).
+ */
+function readFailureThreshold(value: unknown): number {
+  if (typeof value === "number" && Number.isSafeInteger(value) && value > 0) return value;
+  console.warn(`news.json: feedFailureWarningThreshold is missing or invalid (${JSON.stringify(value) ?? "undefined"}); ` +
+    `labelling persistent feed failures at ${DEFAULT_FAILURE_WARNING_THRESHOLD} consecutive runs instead.`);
+  return DEFAULT_FAILURE_WARNING_THRESHOLD;
 }
 
 function readBrief(value: unknown): Brief | undefined {
@@ -47,10 +85,11 @@ export function parseNewsData(value: unknown): NewsData {
         !sourceUrl(item.url)) throw invalid();
     const rawTags = isRecord(item.tags) ? item.tags : {};
     const tags: Tags = { topics: strings(rawTags.topics), traits: strings(rawTags.traits), entities: strings(rawTags.entities) };
+    const additionalSources = readAdditionalSources(item.additionalSources, item.url as string);
     return { title: item.title as string, source: item.source as string, url: item.url as string,
       publishedAt: item.publishedAt as string, category: item.category as string, summary: item.summary as string,
       snippet: typeof item.snippet === "string" ? item.snippet : "", summaryZhHK: validTranslation(item.summaryZhHK),
-      important: item.important === true, tags };
+      important: item.important === true, tags, ...(additionalSources ? { additionalSources } : {}) };
   });
   const feedHealth: Record<string, FeedHealth> = {};
   if (isRecord(value.feedHealth)) {
@@ -64,7 +103,8 @@ export function parseNewsData(value: unknown): NewsData {
   const status = value.briefStatus;
   const briefStatus: BriefStatus | undefined = status === "generated" || status === "no-new-material" || status === "generation-failed" ? status : undefined;
   return { generatedAt: value.generatedAt, daysBack: typeof value.daysBack === "number" ? value.daysBack : 0,
-    categories: [...new Set(value.categories as string[])], articles, feedHealth, brief: readBrief(value.brief), briefStatus };
+    categories: [...new Set(value.categories as string[])], articles, feedHealth, brief: readBrief(value.brief), briefStatus,
+    feedFailureWarningThreshold: readFailureThreshold(value.feedFailureWarningThreshold) };
 }
 
 /** An edition is deterministic even when opened on a later day or in another timezone. */

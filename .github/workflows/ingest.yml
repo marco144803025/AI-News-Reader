@@ -50,6 +50,10 @@ jobs:
         run: npm run ingest
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          # Non-secret run limits. Repository variables, not secrets: they are
+          # ordinary tuning values and the run must be able to show them in logs.
+          MAX_NEW_ARTICLES_PER_RUN: ${{ vars.MAX_NEW_ARTICLES_PER_RUN || '100' }}
+          FEED_FAILURE_WARNING_THRESHOLD: ${{ vars.FEED_FAILURE_WARNING_THRESHOLD || '3' }}
 
       - name: Commit updated news.json
         if: inputs.telegram_only != true

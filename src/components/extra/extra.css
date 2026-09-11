@@ -66,6 +66,59 @@
   letter-spacing: 0.08em;
 }
 
+/* F13 attribution under a clipping, always a sibling of the row link rather
+   than a child of it. Titles and outlet names are another publisher's own
+   words, so nothing here transforms their case — only the lead-in label and
+   the wire warning take the press voice. */
+.extra-attribution {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 3px 10px;
+  margin-top: 4px;
+  padding-left: 14px;
+  font-family: var(--font-wire);
+  font-size: 11px;
+  color: var(--color-ink-dim);
+  overflow-wrap: anywhere;
+}
+
+.extra-attribution-label {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-press-red-deep);
+}
+
+.theme-extra .extra-attribution-link {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px;
+  max-width: 100%;
+  color: var(--color-ink-press);
+  border-bottom: 1px solid var(--color-ink-dim);
+}
+
+.theme-extra .extra-attribution-link:hover {
+  color: var(--color-press-red-deep);
+  border-bottom-color: var(--color-press-red-deep);
+}
+
+.theme-extra .extra-attribution-link:focus-visible {
+  outline: 2px solid var(--color-press-red-deep);
+  outline-offset: 2px;
+}
+
+.extra-attribution-outlet {
+  color: var(--color-ink-dim);
+}
+
+.extra-health-warning {
+  color: var(--color-press-red-deep);
+  letter-spacing: 0.08em;
+  overflow-wrap: anywhere;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .theme-extra *,
   .theme-extra *::before,

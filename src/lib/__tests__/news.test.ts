@@ -7,7 +7,21 @@ const date = "2026-09-08T06:00:00Z";
 const article: Article = { title: "A model", source: "Source", url: "https://example.org/a", publishedAt: date,
   category: "Model Releases", summary: "A useful summary.", snippet: "" };
 const brief = { generatedAt: "2026-09-07T06:00:00Z", bullets: [0, 1, 2].map(i => ({ text: `Item ${i}`, refs: [article.url] })) };
-const data = { generatedAt: date, categories: [article.category], articles: [article], brief };
+const data = { generatedAt: date, categories: [article.category], articles: [article], brief, feedFailureWarningThreshold: 3 };
+
+const extra = { title: "The same launch, elsewhere", url: "https://other.example/story?id=42", source: "Other Publisher" };
+
+/** parseNewsData discloses every drop, so the tests read the warnings it logs. */
+function captureWarnings<T>(run: () => T): { result: T; warnings: string[] } {
+  const original = console.warn;
+  const warnings: string[] = [];
+  console.warn = (...args: unknown[]) => { warnings.push(args.map(String).join(" ")); };
+  try {
+    return { result: run(), warnings };
+  } finally {
+    console.warn = original;
+  }
+}
 
 describe("browser news data", () => {
   it("accepts old and stripped archives, normalizing optional collections without mutation", () => {
@@ -57,6 +71,75 @@ describe("browser news data", () => {
     assert.doesNotMatch(briefNotice({ briefStatus: "no-new-material" }, "zh-HK")!, /上一期/);
     assert.equal(briefNotice({ briefStatus: "generated" }, "zh-HK"), undefined);
     assert.deepEqual(brief, before);
+  });
+});
+
+describe("additional source attribution", () => {
+  it("keeps valid entries verbatim and leaves untouched archives without the field", () => {
+    const input = { ...data, articles: [{ ...article, additionalSources: [extra, { ...extra, url: "http://third.example/x" }] }] };
+    const before = structuredClone(input);
+    const { result, warnings } = captureWarnings(() => parseNewsData(input));
+    assert.deepEqual(warnings, []);
+    assert.deepEqual(result.articles[0].additionalSources, [extra, { ...extra, url: "http://third.example/x" }]);
+    assert.deepEqual(input, before);
+    assert.equal(parseNewsData(data).articles[0].additionalSources, undefined);
+    assert.equal(parseNewsData({ ...data, articles: [{ ...article, additionalSources: [] }] }).articles[0].additionalSources, undefined);
+  });
+
+  it("drops a malformed entry with a warning without losing the article", () => {
+    const broken = [
+      { ...extra, url: "javascript:alert(1)" },
+      { ...extra, url: "data:text/html,<b>x</b>" },
+      { ...extra, url: "https://user:pass@other.example/story" },
+      { ...extra, url: "not a url" },
+      { ...extra, url: 42 },
+      { ...extra, title: "   " },
+      { ...extra, title: 7 },
+      { ...extra, source: "" },
+      { title: "No link", source: "Nowhere" },
+      null,
+      "https://other.example/story",
+    ];
+    for (const entry of broken) {
+      const { result, warnings } = captureWarnings(() =>
+        parseNewsData({ ...data, articles: [{ ...article, additionalSources: [entry, extra] }] }));
+      assert.equal(result.articles.length, 1, JSON.stringify(entry));
+      assert.equal(result.articles[0].url, article.url);
+      assert.deepEqual(result.articles[0].additionalSources, [extra], JSON.stringify(entry));
+      assert.equal(warnings.length, 1, JSON.stringify(entry));
+      assert.match(warnings[0], /malformed additional source/);
+    }
+  });
+
+  it("ignores a non-list attribution field, saying so, and keeps the article", () => {
+    const { result, warnings } = captureWarnings(() =>
+      parseNewsData({ ...data, articles: [{ ...article, additionalSources: { title: "x" } }] }));
+    assert.equal(result.articles.length, 1);
+    assert.equal(result.articles[0].additionalSources, undefined);
+    assert.equal(warnings.length, 1);
+    assert.match(warnings[0], /is not a list/);
+  });
+});
+
+describe("feed failure warning threshold", () => {
+  it("carries a configured positive whole number through untouched", () => {
+    for (const threshold of [1, 3, 7]) {
+      const { result, warnings } = captureWarnings(() => parseNewsData({ ...data, feedFailureWarningThreshold: threshold }));
+      assert.equal(result.feedFailureWarningThreshold, threshold);
+      assert.deepEqual(warnings, []);
+    }
+  });
+
+  it("announces an unconfigured or unusable threshold instead of inventing one", () => {
+    for (const bad of [undefined, null, 0, -2, 2.5, Number.NaN, Number.POSITIVE_INFINITY, "3", Number.MAX_SAFE_INTEGER + 2]) {
+      const { generatedAt, categories, articles } = data;
+      const payload: Record<string, unknown> = { generatedAt, categories, articles, brief };
+      if (bad !== undefined) payload.feedFailureWarningThreshold = bad;
+      const { result, warnings } = captureWarnings(() => parseNewsData(payload));
+      assert.equal(result.feedFailureWarningThreshold, 3, String(bad));
+      assert.equal(warnings.length, 1, String(bad));
+      assert.match(warnings[0], /feedFailureWarningThreshold is missing or invalid/);
+    }
   });
 });
 

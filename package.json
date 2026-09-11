@@ -8,6 +8,7 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "ingest": "tsx ingest/ingest.ts",
+    "sources:preview": "tsx ingest/preview-sources.ts",
     "backfill": "tsx ingest/backfill.ts",
     "telegram:check": "tsx ingest/telegram-cli.ts check",
     "telegram:preview": "tsx ingest/telegram-cli.ts preview",

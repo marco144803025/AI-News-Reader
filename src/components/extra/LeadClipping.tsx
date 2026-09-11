@@ -1,6 +1,7 @@
 import type { Article } from "../../types";
 import { ransomWordIndex } from "../../lib/rank";
 import { decodeEntities } from "../../lib/text";
+import AdditionalSources from "../AdditionalSources";
 import OffsetPanel from "./OffsetPanel";
 import Stamp from "./Stamp";
 import { formatAge, LABELS } from "./copy";
@@ -88,6 +89,11 @@ export default function LeadClipping({
             TAGS — {tags.join(" / ")}
           </div>
         )}
+        <AdditionalSources
+          sources={article.additionalSources}
+          language={language}
+          edition="extra"
+        />
       </OffsetPanel>
     </div>
   );

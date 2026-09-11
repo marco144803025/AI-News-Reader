@@ -70,6 +70,17 @@ body { margin: 0; background: #0c0f12; }
 .standard-spot-summary { font-size: 14px; line-height: 1.8; color: var(--color-ink-secondary); }
 .standard-source { display: flex; flex-wrap: wrap; gap: 8px 12px; font-size: 11px; color: var(--color-ink-muted); margin-top: 17px; }
 .standard-source time::before { content: "·"; padding-right: 12px; }
+/* F13 attribution — the other outlets that carried the same story. It sits
+   outside the article's own link on every surface, wraps instead of widening
+   the row, and keeps its own focus ring because it lives in dense text. */
+.standard-attribution { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin-top: 15px; font-size: 11px; color: var(--color-ink-secondary); overflow-wrap: anywhere; }
+.standard-attribution-label { text-transform: uppercase; font-size: 9px; letter-spacing: 1.5px; color: var(--color-accent); }
+.theme-standard .standard-attribution-link { display: inline-flex; flex-wrap: wrap; align-items: baseline; gap: 8px; max-width: 100%; min-height: 24px; padding: 2px 0; border-bottom: 1px solid #e6ad7d25; }
+.theme-standard .standard-attribution-link:hover { color: var(--color-accent); border-bottom-color: var(--color-accent); }
+.theme-standard .standard-attribution-link:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 3px; }
+.standard-attribution-outlet { font-size: 10px; color: var(--color-ink-muted); }
+/* A long feed name must not push the persistent-failure label out of its card. */
+.theme-standard .trends-persistent { max-width: 100%; overflow-wrap: anywhere; }
 .standard-read-link { display: inline-flex; align-items: center; justify-content: space-between; gap: 30px; padding: 10px 0; border-bottom: 1px solid var(--color-accent); margin-top: 16px; font-size: 12px; }
 .standard-read-link span { color: var(--color-accent); font-size: 21px; }
 .standard-spotlight-secondary { margin-top: 30px; border-top: 1px solid var(--standard-line); padding-top: 20px; }

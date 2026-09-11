@@ -10,7 +10,21 @@ import type {
   Tags,
 } from "../src/types.ts";
 
-export type Feed = { name: string; url: string };
+/**
+ * A configured source. `scope` defaults to "ai": feeds dedicated to AI coverage,
+ * which bypass topical filtering. "general" feeds carry unrelated news too, so
+ * every item must show an explicit AI signal before it is admitted.
+ */
+export type Feed = { name: string; url: string; scope?: "ai" | "general" };
+
+/** Run limits, validated before any network call or output write. */
+export type IngestConfig = {
+  maxNewArticlesPerRun: number; // default 100
+  feedFailureWarningThreshold: number; // default 3
+};
+
+export const DEFAULT_MAX_NEW_ARTICLES_PER_RUN = 100;
+export const DEFAULT_FEED_FAILURE_WARNING_THRESHOLD = 3;
 
 export const DAYS_BACK = 1;
 const CATCH_UP_CAP_DAYS = 7;

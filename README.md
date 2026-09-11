@@ -53,7 +53,8 @@ retained behind a build-time flag that is disabled by default.*
 
 ```mermaid
 flowchart LR
-    F[feeds.json<br/>~10 RSS wires] -->|cron 06:00 UTC| I[ingest pipeline<br/>Node 20 · TypeScript]
+    F[feeds.json<br/>20 RSS wires] -->|cron 06:00 UTC| I[ingest pipeline<br/>Node 20 · TypeScript]
+    I -->|dedupe · topical filter<br/>cap 100/run| I
     I -->|classify · summarize · tag<br/>new articles only| C[DeepSeek V4 Flash]
     C --> I
     I -->|daily synthesis| D[DeepSeek V4 Pro]
@@ -133,8 +134,41 @@ Preview the existing brief without network requests using
 `npm run telegram:preview`. Follow the [Telegram setup guide](docs/telegram-setup.md)
 for BotFather, chat ID discovery, GitHub secrets, sending, and recovery.
 
+### Sources
+
 Feeds live in [feeds.json](feeds.json) — each entry is
-`{ "name": "...", "url": "..." }`; broken feeds are skipped and tracked.
+`{ "name": "...", "url": "...", "scope": "ai" | "general" }`. Adding a source is
+a config edit; no code change is needed. `scope` defaults to `ai`, meaning the
+feed is dedicated to AI coverage and every item is admitted. A `general` feed
+carries unrelated news too, so each item must show an explicit AI signal in its
+title or excerpt before it is admitted — a keyword test, not semantic
+understanding, so it will miss implicit references and occasionally admit
+something tangential.
+
+Inspect what the current list actually returns, without an API key and without
+writing anything:
+
+```
+npm run sources:preview
+```
+
+Broken feeds are skipped and tracked: consecutive failures are recorded per feed
+and surfaced on the Trends page, and a feed that fails
+`FEED_FAILURE_WARNING_THRESHOLD` runs in a row (default 3) is labelled
+persistently failing. A feed cut short by the collection deadline keeps its
+previous health instead of being recorded as a failure — it was never asked.
+
+Where several feeds carry the same story, the first one becomes the article and
+the others appear beneath it as extra source links. Matching is deliberately
+conservative — canonical URL first, then high-similarity titles within 72 hours,
+with version numbers and negations required to agree and Chinese titles matched
+exactly only — so paraphrased coverage will sometimes remain as separate cards.
+
+Each run classifies at most `MAX_NEW_ARTICLES_PER_RUN` new articles (default
+100), chosen round-robin across sources so one prolific feed cannot fill the
+whole allowance. This is the single lever bounding a run's model spend. It is a
+per-run ceiling, not a daily budget: anything over it is counted, logged and
+skipped for that run rather than queued, so a skipped item can age out.
 
 ## Optional Extra edition
 

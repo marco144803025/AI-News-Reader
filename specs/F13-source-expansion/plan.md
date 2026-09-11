@@ -4,11 +4,15 @@
 on 2026-09-11 and explicitly requested delegation. He raised the per-run ceiling
 from 50 to 100 on the same day; that scope change is recorded in the spec.
 
-**Status:** Plan — **Gate 2 pending**. This document is complete and
-implementation-ready: it carries exact interfaces, algorithms, configuration,
-test cases, delegation briefs and an ordered task list. **No implementation has
-started and none is authorized by this document.** Marco's instruction on
-2026-09-11 was to fill the plan in fully and make no code changes.
+**Status:** Build — **Gate 2 approved by Marco on 2026-09-11** ("ok now that you
+created the plan, proceed and implement it"). Implementation is complete and
+verified offline; see the implementation record in §15 for what was actually run,
+what was corrected during integration, and what remains open. Publication,
+pushing and any live paid ingest are **not** covered by that approval.
+
+Sections 0–14 are the plan as approved. They are kept as written so a later
+reader can see what was agreed before the code existed; §15 records where the
+implementation departed from it and why.
 
 **Goal:** Introduce the approved 20-feed mix with useful coverage, bounded
 fetching and classification, conservative deduplication and visible attribution.
@@ -680,17 +684,24 @@ sub-agent's claim of success is **not** evidence (AGENTS.md).
   integration worktree is no longer needed for a current base.**
 - [x] Record the raised ceiling and fill this plan in completely (2026-09-11), on
   Marco's instruction to detail the plan and make no code changes.
-- [ ] **Gate 2 — Marco approves this plan.** Nothing below may start first.
-- [ ] Main freezes the §4 shared contracts and removes the shadowed `Article`.
-- [ ] Feed agent implements §5 with its tests.
-- [ ] Selection agent implements §6 with its tests.
-- [ ] UI agent implements §9 with its tests.
-- [ ] Main integrates `runIngest`, adds `pipeline.test.ts`, wires configuration
-  through the CLI, workflow and `.env.example`.
-- [ ] Main reviews source samples with `sources:preview` and stages the three
+- [x] **Gate 2 — approved by Marco on 2026-09-11**: "ok now that you created the
+  plan, proceed and implement it." Implementation is authorized. Publication,
+  pushing and any live paid ingest remain **outside** this approval, per §12.
+  **Model substitution (AGENTS.md):** Luna, Sol and Astra are not available in
+  this Claude Code environment. Implementation is delegated to `general-purpose`
+  sub-agents with the briefs in §12, and the integration review is performed by a
+  further `general-purpose` reviewer agent against the Sol/high brief. Stated
+  here rather than silently substituted.
+- [x] Main freezes the §4 shared contracts and removes the shadowed `Article`.
+- [x] Feed agent implements §5 with its tests. 28 tests pass.
+- [x] Selection agent implements §6 with its tests. 50 tests pass.
+- [x] UI agent implements §9 with its tests. 37 tests pass.
+- [x] Main integrates `runIngest`, adds `pipeline.test.ts`, wires configuration
+  through the CLI, workflow and `.env.example`. 10 integrated tests pass.
+- [x] Main reviews source samples with `sources:preview` and stages the three
   rollout groups, recording sample date, relevant and excluded examples, and any
-  unresolved source issue.
-- [ ] Run every check in §11 and record the actual output.
+  unresolved source issue. See §15; Hacker News (AI) is the unresolved issue.
+- [x] Run every check in §11 and record the actual output. See §15.
 - [ ] Sol/high reviews the combined diff and evidence; main resolves findings and
   re-runs only the affected checks.
 - [ ] Record readiness. **Done stays pending publication and hosted verification**,
@@ -719,3 +730,133 @@ sub-agent's claim of success is **not** evidence (AGENTS.md).
   is the single lever, and lowering it needs no code change.
 - No live reliability claim follows from mocked tests or a single successful
   public probe.
+
+---
+
+## 15. Implementation record — 2026-09-11
+
+Gate 2 was approved with "ok now that you created the plan, proceed and implement
+it." Implementation followed the delegated split in §12, with `general-purpose`
+sub-agents standing in for Luna and Sol (substitution recorded in §13).
+
+### Source samples, `npm run sources:preview -- --days=3`
+
+Run read-only against the live feeds on 2026-09-11. No API key, no model call, no
+write. Columns are attempts / eligible / topically excluded / excluded by date.
+
+**All twelve additions parse and return on-topic material.** Highlights:
+
+- **The Chinese-language gap is closed.** Unwire.hk returned Traditional Chinese
+  AI coverage ("Anthropic警告 知識工作失業率近兩成…"), and SCMP Tech returned
+  China/HK AI stories (Enflame's Shanghai debut, Huawei optical modules).
+- **The topical filter is doing real work on general feeds**, and the ratios look
+  sane rather than indiscriminate: Computer Weekly 12 eligible / 8 excluded,
+  Unwire.hk 2 / 8, Personnel Today 1 / 14, GitHub blog 1 / 1, Simon Willison 5 / 2.
+- **The arXiv controls still hold:** 15 eligible (the cap) against 73 excluded by
+  the existing relevance filter.
+- **Indeed Hiring Lab returned 0 eligible items** in a three-day window. It is a
+  weekly publisher, not a broken feed; this is why the preview command takes a
+  `--days` flag. Watch it over a fortnight before judging it.
+
+**Two findings for Marco, neither fixed by this implementation:**
+
+1. **`Hacker News (AI)` failed with HTTP 429 on all three attempts** — one of the
+   eight *retained* feeds, and the same rate-limit failure mode that got
+   VentureBeat retired. The F13 retry work is what makes this visible and honest
+   rather than a silent gap; it does not make hnrss serve us. The archive shows
+   it already at 9 consecutive failures. **Decision needed:** retire it, replace
+   the hnrss endpoint, or accept it as intermittently failing.
+2. **`Guardian AI` carries non-AI items** — a Bayeux tapestry cartoon appeared in
+   its AI-tagged feed. It is configured `scope: "ai"` and so bypasses the topical
+   filter by design. If this recurs, switching it to `scope: "general"` is a
+   one-line `feeds.json` change and needs no code.
+
+### Verification actually run
+
+| Check | Result |
+| --- | --- |
+| `npm test` | **234 pass, 0 fail** (was 130 before F13) |
+| `npx tsc -b` | exit 0, no output |
+| `VITE_ENABLE_EXTRA=false` build | exit 0 |
+| `VITE_ENABLE_EXTRA=true` build | exit 0 |
+| Final build state | Extra disabled, as required |
+| `git diff --check` | clean |
+| `npm run sources:preview` | 19 of 20 feeds parsed; Hacker News 429 |
+
+Per-workstream: feed collection 28 tests, selection 50, integrated pipeline 10,
+UI 37. The integrated cap case asserts the headline arithmetic directly —
+140 candidates produce `admitted=100 capacitySkipped=40`, exactly four classifier
+calls of 25, and no fifth.
+
+### Browser pass
+
+Run against a temporary fixture served from a scratchpad `publicDir`. **The real
+`public/news.json` was never used to seed a test**: its hash was recorded before
+and after and is unchanged at `a617c49b`. The fixture carried a 145-character
+headline, articles with 5 / 3 / 1 attribution entries, and one article whose
+attribution included a `javascript:` URL and an empty title.
+
+- Attribution renders on all four surfaces, in both editions, in both languages
+  (`Also reported by` / `其他來源報道`, with `lang="zh-HK"` set).
+- **0 nested anchors** across 47 links; the Extra row's credits are siblings of
+  the row link, as required. The only non-http href on the page is the existing
+  `#standard-content` skip link.
+- The two malformed entries were dropped and **both drops were logged as console
+  warnings**, while the article and its one valid entry rendered — Constitution
+  rule 15, disclosed rather than silent.
+- No horizontal page overflow and no clipped attribution block at 320, 375, 768,
+  1280 or 1440 CSS pixels.
+- Both Trends views show the persistent-failure summary and per-feed labels
+  ("4 個來源持續更新失敗（連續 3 次或以上）").
+
+**Limitation, stated rather than glossed:** the browser pane was hidden for most
+of the pass, and the standard edition's scroll-reveal animation does not run in a
+hidden pane, so the visual screenshots of the standard edition came back blank.
+The evidence above is DOM- and console-derived, which proves structure, safety and
+overflow but **not** visual polish. A human look at the standard edition with real
+attribution data is still worth doing before publication.
+
+### Integration corrections made by the main agent
+
+1. **Archive-loss bug caught before it shipped.** `clusterCandidates` returns
+   `existingUpdates` containing only the archived articles that gained
+   attribution. The orchestrator had assumed the full archive and concatenated
+   the two lists, which would have **deleted every article not mentioned again
+   that day**. It now carries the archive forward and swaps updated clones in by
+   URL. Covered by pipeline case P-4.
+2. **Unconfigured-service regression caught by an existing test.** Reordering
+   `main()` meant the run printed "Loading existing data..." and read files before
+   noticing a missing `DEEPSEEK_API_KEY`. The client is constructed first again,
+   so an unconfigured run still fails with empty stdout (Constitution rule 16).
+3. **`dotenv` moved out of module scope** into a dynamic import inside `main()`.
+   As written, importing the orchestrator from a test read the developer's real
+   `.env` and could silently change the run limits under the tests.
+4. **One health rule, not two.** The inline health mapping in `runIngest` was
+   replaced by `feedHealthFromOutcomes`, which the collection module already owns.
+5. **Trailing-slash normalization** in `canonicalUrlKey`, and **`A.I.`** accepted
+   as an AI signal. Both were reported by the selection agent as real-world gaps.
+
+### Open product decisions — not changed, because they are Marco's
+
+- **The 0.9 Jaccard gate is far stricter than it reads.** On set sizes, one
+  substituted word scores `(n-1)/(n+1)`, which needs a **19-distinct-token**
+  headline to reach 0.9; one added word needs 9. So "OpenAI launches new reasoning
+  model" and "OpenAI unveils new reasoning model" will **not** merge, and in
+  practice dedupe reduces to canonical-URL plus exact-title matching. That is
+  consistent with the spec's "avoiding false merges takes priority", but it is far
+  more conservative than the spec's prose implies. **0.8 is the value that
+  tolerates one substitution on a ~9-token headline.** Left at the spec's 0.9.
+- **The 20-character exact-match floor is long for Chinese**, roughly a
+  40-character English headline, so short SCMP/Unwire cross-posts will not merge
+  and the HK feeds get little dedupe in practice.
+- **The numeric/version gate is nearly unreachable** for the same reason: `4o` vs
+  `4.1` is already rejected by Jaccard. It is correct defence-in-depth, not the
+  active rule.
+
+### Out of scope, observed in passing
+
+The Extra footer reads "N/M WIRES RUNNING" counting only feeds with zero
+consecutive failures, while the Trends view reads "N/M WIRES HEALTHY" counting
+feeds at or above the failure threshold, so one page can show 7/12 and 8/12 at
+once. This was checked against `git diff`: **pre-existing, not introduced by
+F13**, and left alone rather than widened into unrequested scope.

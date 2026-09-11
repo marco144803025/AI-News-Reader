@@ -50,6 +50,9 @@ const en = {
   dateUnavailable: "Date unavailable", failedBrief: "The latest brief couldn’t be generated.",
   previousEdition: "The previous edition is shown below.", stillNews: "You can still explore the news below.",
   quietBrief: "A quieter update. There isn’t enough new material for a fresh brief.",
+  alsoReported: "Also reported by", persistentFailure: "Persistently failing",
+  persistentCount: (n: number, threshold: number) =>
+    `${uiNumber(n, "en")} source${n === 1 ? "" : "s"} persistently failing (${uiNumber(threshold, "en")}+ consecutive failed runs)`,
 };
 
 const zh: typeof en = {
@@ -96,6 +99,9 @@ const zh: typeof en = {
   dateUnavailable: "日期不詳", failedBrief: "最新一期摘要未能生成。",
   previousEdition: "以下顯示上一期摘要。", stillNews: "你仍可瀏覽下方的新聞。",
   quietBrief: "今次更新較平靜，暫未有足夠新內容製作新一期摘要。",
+  alsoReported: "其他來源報道", persistentFailure: "持續更新失敗",
+  persistentCount: (n: number, threshold: number) =>
+    `${uiNumber(n, "zh-HK")} 個來源持續更新失敗（連續 ${uiNumber(threshold, "zh-HK")} 次或以上）`,
 };
 
 export function uiCopy(language: SummaryLanguage): typeof en {

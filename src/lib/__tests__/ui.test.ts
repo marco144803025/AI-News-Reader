@@ -22,6 +22,17 @@ describe("standard interface languages", () => {
     assert.equal(zh.citation(2, 3), "摘要第 3 項的來源 2");
   });
 
+  it("carries the attribution and persistent-failure copy in both languages", () => {
+    const en = uiCopy("en"), zh = uiCopy("zh-HK");
+    assert.equal(en.alsoReported, "Also reported by");
+    assert.equal(zh.alsoReported, "其他來源報道");
+    assert.equal(en.persistentFailure, "Persistently failing");
+    assert.equal(zh.persistentFailure, "持續更新失敗");
+    assert.equal(en.persistentCount(1, 3), "1 source persistently failing (3+ consecutive failed runs)");
+    assert.equal(en.persistentCount(2, 1), "2 sources persistently failing (1+ consecutive failed runs)");
+    assert.equal(zh.persistentCount(2, 3), "2 個來源持續更新失敗（連續 3 次或以上）");
+  });
+
   it("keeps category and tag filter identities canonical and unfamiliar labels intact", () => {
     const article: Article = { title: "Original title", source: "OpenAI", url: "https://example.org/original",
       publishedAt: "2026-09-09T00:00:00Z", category: "Research", summary: "English only", snippet: "",

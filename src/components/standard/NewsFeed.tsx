@@ -8,6 +8,7 @@ import { useLanguage } from "../../hooks/useLanguage";
 import { CHINESE_FALLBACK, selectSummary } from "../../lib/language";
 import { categoryLabel, tagLabel, uiCopy, uiNumber } from "../../lib/ui";
 import FilterBar from "../FilterBar";
+import AdditionalSources from "../AdditionalSources";
 
 type Props = {
   articles: Article[];
@@ -74,6 +75,7 @@ export default function NewsFeed({ articles, scopedArticles, categories, counts,
             {summary.fallback && <p className="standard-fallback" lang="zh-HK">{CHINESE_FALLBACK}</p>}
             {article.tags && <div className="standard-article-tags" aria-label={t.storyTopics}>{groups.flatMap(group => article.tags![group].map(value =>
               <button key={`${group}-${value}`} aria-pressed={state[group].includes(value)} onClick={() => selectTag(group, value)}>{tagLabel(group, value, language)}</button>))}</div>}
+            <AdditionalSources sources={article.additionalSources} language={language} edition="standard" />
           </div>
           <div className="standard-row-source"><span>{article.source}</span><time dateTime={article.publishedAt}>{newsDate(article.publishedAt, language)}</time>
             <a href={article.url} target="_blank" rel="noreferrer" aria-label={t.originalLabel(article.title)}>{t.readOriginal} <span aria-hidden="true">↗</span></a></div>

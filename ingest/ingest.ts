@@ -2,20 +2,22 @@ import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { fetchFeed } from "./feeds.ts";
+import { collectFeeds, feedHealthFromOutcomes, type CollectionResult } from "./feed-collection.ts";
+import { applyCapacity, clusterCandidates } from "./source-selection.ts";
 import type OpenAI from "openai";
 import { BRIEF_MODEL, CLASSIFY_MODEL, completeText, createDeepSeekClient, isMainModule, isTransientError, PipelineError, safePipelineError } from "./deepseek.ts";
-import "dotenv/config";
-import type { Brief, BriefStatus, NewsData, FeedHealth } from "../src/types.ts";
+import type { Article, Brief, BriefStatus, NewsData, RawArticle } from "../src/types.ts";
 import { validTranslation } from "../src/lib/language.ts";
 import {
   BRIEF_MAX_TOKENS,
   BRIEF_MIN_BULLETS,
   buildBriefPrompt,
-  buildFeedHealth,
   carryForwardBrief,
   computeEffectiveDaysBack,
   computeGeneratedAt,
   DAYS_BACK,
+  DEFAULT_FEED_FAILURE_WARNING_THRESHOLD,
+  DEFAULT_MAX_NEW_ARTICLES_PER_RUN,
   normalizeTags,
   parseBriefResponse,
   parseRetentionDays,
@@ -23,6 +25,8 @@ import {
   selectBriefInput,
   withRetry,
   type Feed,
+  type IngestConfig,
+  type RetryOptions,
 } from "./lib.ts";
 import type { Tags } from "../src/types.ts";
 
@@ -30,8 +34,6 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
 
 const BATCH_SIZE = 25;
-const ARXIV_CAP = 15;
-
 
 const SEED_CATEGORIES = [
   "MCP",
@@ -48,131 +50,111 @@ const SEED_CATEGORIES = [
   "Other",
 ];
 
-const ARXIV_KEYWORDS = [
-  "llm",
-  "agent",
-  "reasoning",
-  "multimodal",
-  "benchmark",
-  "fine-tun",
-  "mcp",
-  "alignment",
-  "rlhf",
-  "transformer",
-  "language model",
-  "diffusion",
-  "foundation model",
-  "instruction",
-  "prompt",
-  "rag",
-  "retrieval",
-];
+// ---------------------------------------------------------------------------
+// Configuration and input validation (F13)
+//
+// Everything here runs BEFORE the first network call or output write. A bad
+// config or a corrupt archive must stop the run outright: deduplication is
+// decided against the archive, so treating an unreadable one as empty would
+// silently republish the entire backlog. Constitution rules 13-14.
 
-type RawArticle = {
-  title: string;
-  url: string;
-  source: string;
-  publishedAt: string;
-  snippet: string;
-};
-
-type Article = RawArticle & {
-  category: string;
-  summary: string;
-  important?: boolean;
-  tags?: Tags;
-};
-
-function stripHtml(s: string): string {
-  return s
-    .replace(/<[^>]*>/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
-}
-
-function isArxivRelevant(title: string, snippet: string): boolean {
-  const text = (title + " " + snippet).toLowerCase();
-  return ARXIV_KEYWORDS.some((k) => text.includes(k));
-}
-
-async function loadExisting(path: string): Promise<NewsData | null> {
-  try {
-    const raw = await readFile(path, "utf-8");
-    return JSON.parse(raw) as NewsData;
-  } catch {
-    return null;
+/** Read a positive-integer setting, or fail with a message naming the fix. */
+export function parsePositiveIntEnv(name: string, fallback: number): number {
+  const raw = process.env[name];
+  if (raw === undefined || raw.trim() === "") return fallback;
+  const value = Number(raw);
+  if (!Number.isSafeInteger(value) || value <= 0) {
+    throw new PipelineError(
+      `${name} must be a positive whole number; got "${raw}". Fix it in .env or the repository variable.`
+    );
   }
+  return value;
 }
 
-async function fetchFeeds(
-  feeds: Feed[],
-  daysBack: number,
-  prevHealth: Record<string, FeedHealth> | undefined
-): Promise<{ articles: RawArticle[]; health: Record<string, FeedHealth> }> {
-  const cutoff = Date.now() - daysBack * 24 * 60 * 60 * 1000;
-  const articles: RawArticle[] = [];
-  const successAt: Record<string, string> = {};
-  const errors: Record<string, string> = {};
+export function loadIngestConfig(): IngestConfig {
+  return {
+    maxNewArticlesPerRun: parsePositiveIntEnv(
+      "MAX_NEW_ARTICLES_PER_RUN",
+      DEFAULT_MAX_NEW_ARTICLES_PER_RUN
+    ),
+    feedFailureWarningThreshold: parsePositiveIntEnv(
+      "FEED_FAILURE_WARNING_THRESHOLD",
+      DEFAULT_FEED_FAILURE_WARNING_THRESHOLD
+    ),
+  };
+}
 
-  for (const feed of feeds) {
-    try {
-      const parsed = await fetchFeed(feed.url);
-      const fetchedAt = new Date().toISOString();
-      const isArxiv = feed.name.toLowerCase().includes("arxiv");
-      const feedArticles: RawArticle[] = [];
-
-      for (const item of parsed.items) {
-        const url = item.link;
-        const title = item.title?.trim();
-        if (!url || !title) continue;
-        const dateStr = item.isoDate ?? item.pubDate;
-        const ts = dateStr ? Date.parse(dateStr) : NaN;
-        if (Number.isFinite(ts) && ts < cutoff) continue;
-        const snippet = stripHtml(
-          item.contentSnippet ?? item.content ?? item.summary ?? ""
-        ).slice(0, 600);
-
-        if (isArxiv && !isArxivRelevant(title, snippet)) continue;
-
-        feedArticles.push({
-          title,
-          url,
-          source: feed.name,
-          publishedAt: Number.isFinite(ts)
-            ? new Date(ts).toISOString()
-            : new Date().toISOString(),
-          snippet,
-        });
-      }
-
-      const capped = isArxiv ? feedArticles.slice(0, ARXIV_CAP) : feedArticles;
-      articles.push(...capped);
-      successAt[feed.name] = fetchedAt;
-      console.log(`  ok   ${feed.name} (${capped.length} articles)`);
-    } catch (err) {
-      errors[feed.name] = (err as Error).message;
-      console.warn(`  skip ${feed.name}: ${(err as Error).message}`);
+/** Validate feeds.json before any fetch: names unique, scope known, URL safe. */
+export function validateFeeds(value: unknown): Feed[] {
+  if (!Array.isArray(value) || value.length === 0) {
+    throw new PipelineError("feeds.json must be a non-empty array of feeds.");
+  }
+  const seen = new Set<string>();
+  return value.map((entry, i) => {
+    if (!entry || typeof entry !== "object") {
+      throw new PipelineError(`feeds.json entry ${i} is not an object.`);
     }
-  }
-
-  const health = buildFeedHealth(feeds, successAt, errors, prevHealth);
-  return { articles, health };
+    const { name, url, scope } = entry as Record<string, unknown>;
+    if (typeof name !== "string" || name.trim() === "") {
+      throw new PipelineError(`feeds.json entry ${i} needs a non-empty name.`);
+    }
+    if (seen.has(name)) {
+      throw new PipelineError(`feeds.json has duplicate feed name "${name}"; names key feed health.`);
+    }
+    seen.add(name);
+    if (typeof url !== "string") {
+      throw new PipelineError(`Feed "${name}" needs a url string.`);
+    }
+    let parsed: URL;
+    try {
+      parsed = new URL(url);
+    } catch {
+      throw new PipelineError(`Feed "${name}" has an unparseable url: ${url}`);
+    }
+    if (parsed.protocol !== "http:" && parsed.protocol !== "https:") {
+      throw new PipelineError(`Feed "${name}" must use http or https; got ${parsed.protocol}`);
+    }
+    if (parsed.username || parsed.password) {
+      throw new PipelineError(`Feed "${name}" must not embed credentials in its url.`);
+    }
+    if (scope !== undefined && scope !== "ai" && scope !== "general") {
+      throw new PipelineError(`Feed "${name}" has scope "${String(scope)}"; expected "ai" or "general".`);
+    }
+    return scope === undefined ? { name, url } : { name, url, scope };
+  });
 }
 
-function dedupeIncoming(
-  incoming: RawArticle[],
-  existingUrls: Set<string>
-): RawArticle[] {
-  const seenThisRun = new Set<string>();
-  const out: RawArticle[] = [];
-  for (const a of incoming) {
-    const key = a.url.split("?")[0].toLowerCase();
-    if (existingUrls.has(key) || seenThisRun.has(key)) continue;
-    seenThisRun.add(key);
-    out.push(a);
+/**
+ * Load the archive. A missing file is a legitimate first run; a present but
+ * unreadable or invalid one is a hard failure, never an empty archive.
+ */
+export async function loadExisting(path: string): Promise<NewsData | null> {
+  let raw: string;
+  try {
+    raw = await readFile(path, "utf-8");
+  } catch (err) {
+    if ((err as NodeJS.ErrnoException).code === "ENOENT") return null;
+    throw new PipelineError(
+      `Could not read ${path}: ${(err as Error).message}. Check file permissions.`
+    );
   }
-  return out;
+  let parsed: unknown;
+  try {
+    parsed = JSON.parse(raw);
+  } catch (err) {
+    throw new PipelineError(
+      `${path} is not valid JSON (${(err as Error).message}). Refusing to run: ` +
+        `deduplication needs the archive, and treating it as empty would republish everything.`
+    );
+  }
+  if (!parsed || typeof parsed !== "object" || !Array.isArray((parsed as NewsData).articles)) {
+    throw new PipelineError(`${path} has no articles array; refusing to overwrite it.`);
+  }
+  return parsed as NewsData;
 }
+
+// ---------------------------------------------------------------------------
+// Classification (unchanged contract — ingest/backfill.ts imports both of these)
 
 export type ClassifyResult = {
   category: string;
@@ -272,87 +254,136 @@ export async function classifyBatch(
 // Throws on invalid output; the caller decides what to do (carry forward).
 export async function generateBrief(
   client: OpenAI,
-  input: Article[]
+  input: Article[],
+  now: Date = new Date()
 ): Promise<Brief> {
   const { system, user } = buildBriefPrompt(input);
 
   const text = await completeText(client, BRIEF_MODEL, system, user, BRIEF_MAX_TOKENS);
 
   return {
-    generatedAt: new Date().toISOString(),
+    generatedAt: now.toISOString(),
     ...parseBriefResponse(text, input),
   };
 }
 
-async function main() {
-  const client = createDeepSeekClient();
-  const retentionDays = parseRetentionDays();
+// ---------------------------------------------------------------------------
+// The run itself (F13)
+//
+// NOTE: dependency injection. runIngest receives every effect as an argument —
+// no filesystem, no model client, no wall clock of its own. That is what lets
+// the whole pipeline be exercised offline in ingest/__tests__/pipeline.test.ts
+// with RSS fixtures and fake model responses, instead of only testing helpers.
+// main() below is the single place that touches the outside world.
 
-  const outputPath = join(ROOT, "public", "news.json");
+export type RunLogger = {
+  info: (line: string) => void;
+  warn: (line: string) => void;
+  error: (line: string) => void;
+};
 
-  console.log("Loading existing data...");
-  const existing = await loadExisting(outputPath);
+export type IngestDeps = {
+  feeds: Feed[];
+  config: IngestConfig;
+  retentionDays: number;
+  existing: NewsData | null;
+  now: Date;
+  collect: (feeds: Feed[], daysBack: number, now: Date) => Promise<CollectionResult>;
+  classify: (batch: RawArticle[]) => Promise<ClassifyResult[]>;
+  generateBrief: (input: Article[]) => Promise<Brief>;
+  log: RunLogger;
+  /** Injected so offline tests exercise retry behaviour without real delays. */
+  retry?: RetryOptions;
+};
+
+export async function runIngest(deps: IngestDeps): Promise<NewsData> {
+  const { feeds, config, retentionDays, existing, now, collect, classify, log } = deps;
+
   const existingArticles: Article[] = existing?.articles ?? [];
-  const existingUrls = new Set(
-    existingArticles.map((a) => a.url.split("?")[0].toLowerCase())
-  );
   const existingCategories =
     existing?.categories?.length ? existing.categories : SEED_CATEGORIES;
-
-  console.log(
+  log.info(
     `Existing: ${existingArticles.length} articles, categories: ${existingCategories.join(", ")}`
   );
 
-  const effectiveDaysBack = computeEffectiveDaysBack(
-    existing,
-    DAYS_BACK,
-    Date.now()
-  );
-  console.log(`Fetching feeds (last ${effectiveDaysBack}d)...`);
+  const effectiveDaysBack = computeEffectiveDaysBack(existing, DAYS_BACK, now.getTime());
+  log.info(`Fetching ${feeds.length} feeds (last ${effectiveDaysBack}d)...`);
 
-  const feeds: Feed[] = JSON.parse(
-    await readFile(join(ROOT, "feeds.json"), "utf-8")
-  );
-  const { articles: fetched, health: feedHealth } = await fetchFeeds(
-    feeds,
-    effectiveDaysBack,
-    existing?.feedHealth
-  );
-  const raw = dedupeIncoming(fetched, existingUrls);
-  const newCount = raw.length;
-  console.log(`${newCount} new articles after dedup.`);
+  const collection = await collect(feeds, effectiveDaysBack, now);
 
-  const retentionCutoff = Date.now() - retentionDays * 24 * 60 * 60 * 1000;
-  const generatedAt = computeGeneratedAt(newCount, existing, () =>
-    new Date().toISOString()
+  // The health rule lives in feed-collection, which owns the outcome states:
+  // only `ok` and `failed` move a feed's record, while a feed the deadline
+  // cancelled or never reached keeps its previous one. It has not failed, so
+  // it must not be counted as failing on the Trends page the reader sees.
+  const feedHealth = feedHealthFromOutcomes(collection.outcomes, existing?.feedHealth);
+  const candidates: RawArticle[] = collection.outcomes.flatMap((outcome) =>
+    outcome.status === "ok" ? outcome.items : []
   );
 
-  if (newCount === 0) console.log("No new articles — refreshing the brief and pruning.");
+  const { newClusters, existingUpdates, matchedExistingCount, duplicateReportCount } =
+    clusterCandidates({ candidates, existing: existingArticles });
+
+  // generatedAt still keys off the pre-cap candidate count: a run that found
+  // new material has run, whether or not capacity admitted all of it.
+  const preCapNewCount = newClusters.length;
+
+  const { admitted, skipped } = applyCapacity({
+    clusters: newClusters,
+    feedOrder: feeds.map((f) => f.name),
+    limit: config.maxNewArticlesPerRun,
+  });
+  log.info(
+    `selection: candidates=${candidates.length} matchedExisting=${matchedExistingCount} ` +
+      `duplicateReports=${duplicateReportCount} admitted=${admitted.length} capacitySkipped=${skipped}`
+  );
+  if (skipped > 0) {
+    log.warn(
+      `${skipped} eligible articles exceeded MAX_NEW_ARTICLES_PER_RUN=${config.maxNewArticlesPerRun} ` +
+        `and were skipped for this run. They are not queued; they may age out.`
+    );
+  }
+
+  const generatedAt = computeGeneratedAt(preCapNewCount, existing, () => now.toISOString());
+  if (preCapNewCount === 0) log.info("No new articles — refreshing the brief and pruning.");
 
   const classified: Article[] = [];
-  for (let i = 0; i < raw.length; i += BATCH_SIZE) {
-    const batch = raw.slice(i, i + BATCH_SIZE);
+  for (let i = 0; i < admitted.length; i += BATCH_SIZE) {
+    const slice = admitted.slice(i, i + BATCH_SIZE);
+    const batch = slice.map((cluster) => cluster.representative);
     const batchNum = Math.floor(i / BATCH_SIZE) + 1;
-    console.log(`Classifying batch ${batchNum} (${batch.length} articles)...`);
+    log.info(`Classifying batch ${batchNum} (${batch.length} articles)...`);
     try {
-      const meta = await withRetry(() => classifyBatch(client, batch));
-      batch.forEach((a, j) => classified.push({ ...a, ...meta[j] }));
+      const meta = await withRetry(() => classify(batch), deps.retry);
+      slice.forEach((cluster, j) => {
+        classified.push({
+          ...cluster.representative,
+          ...(cluster.additional.length > 0
+            ? { additionalSources: cluster.additional }
+            : {}),
+          ...meta[j],
+        });
+      });
     } catch (err) {
-      const transient = isTransientError(err);
-      if (transient) {
-        console.error(
-          `  skip batch ${batchNum}: retries exhausted — ${safePipelineError(err)}`
-        );
+      // A batch that exhausted its retries persists nothing: an unclassified
+      // representative would surface as an article with no summary. Other
+      // batches and the attribution added to existing articles still stand.
+      if (isTransientError(err)) {
+        log.error(`  skip batch ${batchNum}: retries exhausted — ${safePipelineError(err)}`);
       } else {
         throw err;
       }
     }
   }
 
-  const merged = [...classified, ...existingArticles];
-  const pruned = merged.filter(
-    (a) => Date.parse(a.publishedAt) > retentionCutoff
-  );
+  const retentionCutoff = now.getTime() - retentionDays * 24 * 60 * 60 * 1000;
+  // existingUpdates holds ONLY the archived articles that gained attribution
+  // this run, so the archive is carried forward here and those clones are
+  // swapped in by URL. Concatenating the two lists instead would drop every
+  // article that happened not to be mentioned again today.
+  const updatedByUrl = new Map(existingUpdates.map((a) => [a.url, a]));
+  const carried = existingArticles.map((a) => updatedByUrl.get(a.url) ?? a);
+  const merged = [...classified, ...carried];
+  const pruned = merged.filter((a) => Date.parse(a.publishedAt) > retentionCutoff);
   pruned.sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
   const categories = [...new Set(pruned.map((a) => a.category))];
 
@@ -364,37 +395,84 @@ async function main() {
   let brief = carryForwardBrief(existing);
   let briefStatus: BriefStatus;
   if (briefInput.length >= BRIEF_MIN_BULLETS) {
-    console.log(`Generating daily brief from ${briefInput.length} recent articles...`);
+    log.info(`Generating daily brief from ${briefInput.length} recent articles...`);
     try {
-      brief = await withRetry(() => generateBrief(client, briefInput));
+      brief = await withRetry(() => deps.generateBrief(briefInput), deps.retry);
       briefStatus = "generated";
-      console.log(`  brief ok (${brief.bullets.length} bullets).`);
+      log.info(`  brief ok (${brief.bullets.length} bullets).`);
     } catch (err) {
       briefStatus = "generation-failed";
-      console.error(
-        `  brief skipped, carrying previous forward — ${safePipelineError(err)}`
-      );
+      log.error(`  brief skipped, carrying previous forward — ${safePipelineError(err)}`);
     }
   } else {
     briefStatus = "no-new-material";
-    console.log(
+    log.info(
       `Too few articles in the last 24h for a brief (${briefInput.length} < ${BRIEF_MIN_BULLETS}) — carrying previous forward.`
     );
   }
 
-  await mkdir(join(ROOT, "public"), { recursive: true });
-  const output: NewsData = {
+  return {
     generatedAt,
     daysBack: effectiveDaysBack,
     categories,
     articles: pruned,
     feedHealth,
     briefStatus,
+    feedFailureWarningThreshold: config.feedFailureWarningThreshold,
     ...(brief ? { brief } : {}),
   };
+}
+
+async function main() {
+  // NOTE: loaded here, not at module scope. Importing this file from a test
+  // must not read the developer's real .env and silently change run limits.
+  await import("dotenv/config");
+
+  // Validate everything before the first network call, write or log line.
+  // The client comes first: an unconfigured service must say so and stop
+  // without having appeared to start work (Constitution rule 16), which
+  // ingest/__tests__/deepseek.test.ts asserts by requiring empty stdout.
+  const config = loadIngestConfig();
+  const retentionDays = parseRetentionDays();
+  const client = createDeepSeekClient();
+
+  const outputPath = join(ROOT, "public", "news.json");
+  const feeds = validateFeeds(
+    JSON.parse(await readFile(join(ROOT, "feeds.json"), "utf-8"))
+  );
+
+  console.log("Loading existing data...");
+  const existing = await loadExisting(outputPath);
+  const now = new Date();
+
+  const output = await runIngest({
+    feeds,
+    config,
+    retentionDays,
+    existing,
+    now,
+    collect: (configuredFeeds, daysBack, runNow) =>
+      collectFeeds({
+        feeds: configuredFeeds,
+        daysBack,
+        now: runNow,
+        fetchFeed,
+        log: (line) => console.log(line),
+      }),
+    classify: (batch) => classifyBatch(client, batch),
+    generateBrief: (input) => generateBrief(client, input, now),
+    log: {
+      info: (line) => console.log(line),
+      warn: (line) => console.warn(line),
+      error: (line) => console.error(line),
+    },
+  });
+
+  await mkdir(join(ROOT, "public"), { recursive: true });
   await writeFile(outputPath, JSON.stringify(output, null, 2), "utf-8");
+  const newCount = output.articles.filter((a) => !existing?.articles?.some((e) => e.url === a.url)).length;
   console.log(
-    `Wrote public/news.json — ${pruned.length} articles total (${classified.length} new), ${categories.length} categories.`
+    `Wrote public/news.json — ${output.articles.length} articles total (${newCount} new), ${output.categories.length} categories.`
   );
 }
 

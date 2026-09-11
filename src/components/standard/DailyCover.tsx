@@ -4,6 +4,7 @@ import { CHINESE_FALLBACK, selectBrief, selectBriefHeadline, selectSummary } fro
 import { briefNotice, newsDate, selectNotableStories } from "../../lib/news";
 import { categoryLabel, uiCopy } from "../../lib/ui";
 import ParticleSphere from "./ParticleSphere";
+import AdditionalSources from "../AdditionalSources";
 
 export default function DailyCover({ data, motion, onNews }: { data: NewsData; motion: boolean; onNews: () => void }) {
   const { language } = useLanguage();
@@ -42,6 +43,7 @@ export default function DailyCover({ data, motion, onNews }: { data: NewsData; m
               {summary.fallback && <p className="standard-fallback" lang="zh-HK">{CHINESE_FALLBACK}</p>}</>}
             <div className="standard-source"><span>{article.source}</span><time dateTime={article.publishedAt}>{newsDate(article.publishedAt, language)}</time></div>
             {i === 0 && <a className="standard-read-link" href={article.url} target="_blank" rel="noreferrer">{t.readStory} <span aria-hidden="true">↗</span></a>}
+            <AdditionalSources sources={article.additionalSources} language={language} edition="standard" />
           </article>;
         })}
       </aside>}

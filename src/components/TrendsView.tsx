@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import type { NewsData } from "../types";
-import { computeTrends, feedIssues, type TagTrend } from "../lib/trends";
+import { computeTrends, DEFAULT_FAILURE_WARNING_THRESHOLD, feedWarnings, type TagTrend } from "../lib/trends";
 import { useLanguage } from "../hooks/useLanguage";
 import { categoryLabel, tagLabel, sourceError, uiCopy, uiDay, uiNumber } from "../lib/ui";
 import Sparkline from "./Sparkline";
@@ -60,7 +60,11 @@ export default function TrendsView({
   const { language } = useLanguage();
   const t = uiCopy(language);
   const trends = useMemo(() => computeTrends(data.articles, now), [data, now]);
-  const issues = feedIssues(data.feedHealth);
+  // parseNewsData always supplies this; the fallback only covers the type's
+  // optionality, and it warned there if the payload carried nothing usable.
+  const threshold = data.feedFailureWarningThreshold ?? DEFAULT_FAILURE_WARNING_THRESHOLD;
+  const warnings = feedWarnings(data.feedHealth, threshold);
+  const persistent = warnings.filter((w) => w.persistent).length;
   const feedTotal = Object.keys(data.feedHealth ?? {}).length;
   const totalArticles = trends.volume.reduce((s, d) => s + d.count, 0);
   const maxShare = trends.categoryShare[0]?.count ?? 1;
@@ -161,16 +165,21 @@ export default function TrendsView({
 
       <section className="mb-8">
         <SectionHeader title={t.wireHealth} />
-        {issues.length === 0 ? (
+        {warnings.length === 0 ? (
           <p className="font-mono text-xs text-ink-muted">
             {feedTotal ? t.allHealthy(feedTotal) : t.noHealth}
           </p>
         ) : (
           <div className="flex flex-col gap-1.5">
             <p className="font-mono text-xs text-ink-secondary">
-              {t.healthy(feedTotal - issues.length, feedTotal)}
+              {t.healthy(feedTotal - warnings.length, feedTotal)}
             </p>
-            {issues.map((i) => (
+            {persistent > 0 && (
+              <p className="trends-persistent font-mono text-xs text-ember">
+                {t.persistentCount(persistent, threshold)}
+              </p>
+            )}
+            {warnings.map((i) => (
               <div
                 key={i.name}
                 className="rounded border border-[rgba(227,179,65,0.25)] bg-[rgba(227,179,65,0.05)] p-3"
@@ -181,6 +190,11 @@ export default function TrendsView({
                     {t.failures(i.consecutiveFailures)}
                   </span>
                 </div>
+                {i.persistent && (
+                  <p className="trends-persistent mt-1 font-mono text-[10px] uppercase tracking-wide text-ember">
+                    {t.persistentFailure}
+                  </p>
+                )}
                 <p className="mt-1 font-mono text-[10px] text-ink-secondary">
                   {sourceError(i.lastError, language)}
                   {i.lastSuccess

@@ -1,6 +1,8 @@
 import { useMemo } from "react";
 import type { NewsData } from "../../types";
-import { computeTrends, feedIssues, type TagTrend } from "../../lib/trends";
+import { computeTrends, DEFAULT_FAILURE_WARNING_THRESHOLD, feedWarnings, type TagTrend } from "../../lib/trends";
+import { useLanguage } from "../../hooks/useLanguage";
+import { uiCopy } from "../../lib/ui";
 import Sparkline from "../Sparkline";
 import OffsetPanel from "./OffsetPanel";
 import Stamp from "./Stamp";
@@ -60,8 +62,14 @@ export default function PressTrends({
   onOpenTopic: (tag: string) => void;
   onOpenEntity: (tag: string) => void;
 }) {
+  // The press chrome stays in its own voice, but a failure warning is new copy
+  // rather than existing chrome, so it follows the reader's chosen language.
+  const { language } = useLanguage();
+  const t = uiCopy(language);
   const trends = useMemo(() => computeTrends(data.articles, now), [data, now]);
-  const issues = feedIssues(data.feedHealth);
+  const threshold = data.feedFailureWarningThreshold ?? DEFAULT_FAILURE_WARNING_THRESHOLD;
+  const warnings = feedWarnings(data.feedHealth, threshold);
+  const persistent = warnings.filter((w) => w.persistent).length;
   const feedTotal = Object.keys(data.feedHealth ?? {}).length;
   const totalArticles = trends.volume.reduce((s, d) => s + d.count, 0);
   const maxShare = trends.categoryShare[0]?.count ?? 1;
@@ -163,16 +171,21 @@ export default function PressTrends({
 
       <Band label="WIRE HEALTH" />
       <div className="mt-2.5">
-        {issues.length === 0 ? (
+        {warnings.length === 0 ? (
           <p className="font-wire text-[11px] text-ink-dim">
             ALL {feedTotal} WIRES RUNNING CLEAN
           </p>
         ) : (
           <div className="flex flex-col gap-3">
             <p className="font-wire text-[11px] text-ink-dim">
-              {feedTotal - issues.length}/{feedTotal} WIRES HEALTHY
+              {feedTotal - warnings.length}/{feedTotal} WIRES HEALTHY
             </p>
-            {issues.map((i) => (
+            {persistent > 0 && (
+              <p lang={language} className="extra-health-warning font-wire text-[11px] uppercase">
+                {t.persistentCount(persistent, threshold)}
+              </p>
+            )}
+            {warnings.map((i) => (
               <OffsetPanel key={i.name} slab="red" className="p-3.5">
                 <div className="flex flex-wrap items-center justify-between gap-2">
                   <span className="flex items-center gap-3">
@@ -185,6 +198,11 @@ export default function PressTrends({
                     {i.consecutiveFailures}× FAILED
                   </span>
                 </div>
+                {i.persistent && (
+                  <p lang={language} className="extra-health-warning mt-1.5 font-wire text-[11px] uppercase">
+                    {t.persistentFailure}
+                  </p>
+                )}
                 <p className="mt-1.5 font-wire text-[11px] text-ink-dim">
                   {i.lastError ?? "UNKNOWN ERROR"}
                   {i.lastSuccess
