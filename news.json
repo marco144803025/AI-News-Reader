@@ -1,20 +1,679 @@
 {
-  "generatedAt": "2026-09-11T10:12:04.763Z",
+  "generatedAt": "2026-09-12T09:46:12.835Z",
   "daysBack": 2,
   "categories": [
-    "Hardware & Compute",
-    "Other",
     "Applications",
-    "Business & Funding",
-    "AI Safety & Alignment",
-    "Regulation & Policy",
     "Research",
     "Agent Frameworks",
+    "AI Safety & Alignment",
     "Developer Tools",
+    "Business & Funding",
+    "Open Source",
+    "Regulation & Policy",
+    "Other",
+    "Hardware & Compute",
     "Model Releases",
     "MCP"
   ],
   "articles": [
+    {
+      "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
+      "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-09-14T00:00:00.000Z",
+      "snippet": "Perplexity uses Astra to write communications, change software, and monitor production systems, and checks in much less frequently than with earlier models.",
+      "category": "Applications",
+      "summary": "Perplexity uses GPT-6 Astra to write communications, change software, and monitor production systems, checking in much less frequently than with earlier models.",
+      "summaryZhHK": "Perplexity 用 GPT-6 Astra 嚟寫通訊、改軟件同監控生產系統，比起用舊模型查核嘅頻率低好多。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [],
+        "entities": [
+          "gpt",
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Probabilistic Focal Search: Accelerating Bounded-Suboptimal Search via Lower-Bound Advancement",
+      "url": "https://arxiv.org/abs/2609.10584",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-12T04:00:00.000Z",
+      "snippet": "arXiv:2609.10584v1 Announce Type: new Abstract: Bounded-suboptimal search seeks a solution within a factor $w$ of optimal while reducing search effort. Focal Search (FS) uses heuristic guidance within FOCAL, the frontier nodes eligible under the threshold $w f_{\\min}$, but its deterministic policy may leave $f_{\\min}$ unchanged for many expansions. We introduce Probabilistic Focal Search (PFS), which follows the FS guided choice with probability $p$ and expands a minimum-$f$ OPEN node with probability $1-p$. The latter branch encourages the lower bound to advance, enlarging FOCAL and admitting",
+      "category": "Research",
+      "summary": "Researchers introduce Probabilistic Focal Search (PFS), which mixes heuristic-guided and minimum-f expansions to accelerate bounded-suboptimal search by advancing the lower bound.",
+      "summaryZhHK": "研究人員提出機率焦點搜尋（PFS），混合啟發式引導同最小 f 擴展，透過推進下界嚟加速有界次優搜尋。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "A Multi-Stage Rule-Chaining Framework for Compositional and Interpretable Cognitive Reasoning",
+      "url": "https://arxiv.org/abs/2609.10654",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-12T04:00:00.000Z",
+      "snippet": "arXiv:2609.10654v1 Announce Type: new Abstract: The Abstraction and Reasoning Corpus (ARC) benchmarks cognitive generalization, the ability to infer and apply abstract rules from limited examples. This paper presents a multi-stage rule-chaining framework that performs compositional reasoning across symbolic, structural, and conceptual levels. The framework integrates three complementary solvers: (1) a deterministic rule discovery module that induces atomic transformations through geometric, color, and object-based analysis; (2) a pattern-composition engine that reconstructs outputs via block m",
+      "category": "Research",
+      "summary": "A multi-stage rule-chaining framework performs compositional reasoning across symbolic, structural, and conceptual levels to tackle the Abstraction and Reasoning Corpus (ARC) benchmark.",
+      "summaryZhHK": "一個多階段規則鏈框架喺符號、結構同概念層面做組合推理，應付抽象推理語料庫（ARC）基準。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning"
+        ],
+        "traits": [
+          "research",
+          "benchmark"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Understanding LoRA Rank Trade-offs in Diffusion Model Fine-Tuning",
+      "url": "https://arxiv.org/abs/2609.10656",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-12T04:00:00.000Z",
+      "snippet": "arXiv:2609.10656v1 Announce Type: new Abstract: Selecting LoRA rank for diffusion fine-tuning requires balancing quality and compute cost. We present a controlled study on CIFAR-10 using a DDPM U-Net with ranks {2,4,8,16,32}, fixed optimization settings, and a reproducible local-folder pytorch-fid protocol. We report FID, trainable parameters, runtime, and GPU memory, then validate trends with extended-budget DDPM runs (20 epochs; ranks 4/8/16) and a Tiny DiT backbone (10 epochs; ranks 4/8/16). Results show moderate ranks are most efficient: rank 4 achieves the best DDPM FID (124.1380), rank 8",
+      "category": "Research",
+      "summary": "A controlled study on CIFAR-10 finds moderate LoRA ranks are most efficient for diffusion fine-tuning, with rank 4 achieving the best DDPM FID of 124.1380.",
+      "summaryZhHK": "一項喺 CIFAR-10 嘅對照研究發現，中等 LoRA 秩數對擴散模型微調最有效率，rank 4 達到最佳 DDPM FID 124.1380。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "fine-tuning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "An Open Recipe for IMO Gold: Training Nemotron for Olympiad Mathematics",
+      "url": "https://arxiv.org/abs/2609.10712",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-12T04:00:00.000Z",
+      "snippet": "arXiv:2609.10712v1 Announce Type: new Abstract: We study how model post-training and test-time inference design affect natural-language proof generation for hard olympiad mathematics. Starting from Nemotron 3 Ultra, we train two specialist checkpoints using supervised fine-tuning and reinforcement learning, and evaluate checkpoint choice, verification, and refinement. Based on these findings, we present an open-model test-time-compute pipeline. The system operates entirely in natural language, with no formal prover, external tools, or internet access. Three Nemotron 3 Ultra checkpoints - the g",
+      "category": "Research",
+      "summary": "Researchers present an open recipe for IMO gold-level olympiad mathematics, training Nemotron 3 Ultra specialists with SFT and RL in a test-time-compute pipeline using only natural language.",
+      "summaryZhHK": "研究人員提出一套公開配方，達到 IMO 金牌級奧數水平，用 SFT 同 RL 訓練 Nemotron 3 Ultra 專家模型，喺純自然語言嘅測試時運算流程運行。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "reasoning"
+        ],
+        "traits": [
+          "research",
+          "open-source"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Finishing the Task Is Not Enough: Evaluating Agent Resilience and Considerate Participation under Accumulating Challenge",
+      "url": "https://arxiv.org/abs/2609.10724",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-12T04:00:00.000Z",
+      "snippet": "arXiv:2609.10724v1 Announce Type: new Abstract: Sustained deployment of generative AI agents requires more than isolated task success. Agents must remain useful across repeated interactions, changing conditions, and dependencies on people within shared workflows, especially as technical, human, and operational disruptions accumulate over time. We propose operational resilience and considerate participation as two complementary aspects of evaluating such agents: the former captures how agents recover from blocked work while preserving progress and communicating their limits, and the latter capt",
+      "category": "Research",
+      "summary": "A paper proposes operational resilience and considerate participation as complementary ways to evaluate generative AI agents facing accumulating technical, human, and operational disruptions.",
+      "summaryZhHK": "一篇論文提出營運韌性同體貼參與，作為評估生成式 AI 代理面對累積技術、人為同營運干擾嘅互補方式。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "evaluation"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Towards a Deterministic Math Solver for Clinical Language Models",
+      "url": "https://arxiv.org/abs/2609.10728",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-12T04:00:00.000Z",
+      "snippet": "arXiv:2609.10728v1 Announce Type: new Abstract: Large language models are unreliable at arithmetic, which is a problem for clinical calculators where a single numerical error changes the recommendation. The standard response is to hardcode each calculator as a validated function, one at a time. We test an alternative: the model does not calculate. Instead, it writes case-specific Python that a restricted local executor runs as a deterministic solver, and the model's task reduces to deciding how to use it. We evaluate this Program-Solve interface on MedCalc-Bench Verified (1,100 cases, 55 calcu",
+      "category": "Research",
+      "summary": "A Program-Solve interface has clinical language models write case-specific Python that a restricted local executor runs as a deterministic solver, evaluated on MedCalc-Bench Verified with 1,100 cases.",
+      "summaryZhHK": "一個 Program-Solve 介面俾臨床語言模型寫特定病例嘅 Python，由受限嘅本地執行器作為確定性求解器運行，喺 1100 個案例嘅 MedCalc-Bench Verified 上評估。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "evaluation",
+          "llm"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Studying Without a Syllabus: Task-Agnostic Environment Preprocessing",
+      "url": "https://arxiv.org/abs/2609.10824",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-12T04:00:00.000Z",
+      "snippet": "arXiv:2609.10824v1 Announce Type: new Abstract: Before an LLM agent tackles tasks in a new environment, it can inspect available corpora and tools and construct reusable resources such as indices, scripts, or procedural guidance. Most automated adaptation methods, however, rely on task examples, trajectories, or evaluation feedback to decide what to build. Existing task-agnostic approaches avoid this supervision but commit in advance to a preparation strategy for a particular type of environment. We study a more open-ended setting: can an agent study an unfamiliar environment without a syllabu",
+      "category": "Research",
+      "summary": "Researchers study whether an LLM agent can study an unfamiliar environment without a syllabus, building reusable resources like indices and scripts without task examples or evaluation feedback.",
+      "summaryZhHK": "研究人員探討 LLM 代理能唔能夠喺冇課程大綱嘅情況下研究陌生環境，喺冇任務示例或者評估反饋下建立索引同腳本等可重用資源。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "When Validation Stops Learning: Auditing Update Admission for Continual Embodied Agents",
+      "url": "https://arxiv.org/abs/2609.10873",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-12T04:00:00.000Z",
+      "snippet": "arXiv:2609.10873v1 Announce Type: new Abstract: Independent evaluation can reject harmful policy updates yet also prevent useful continual learning. We argue that update admission must be assessed through both error control and retained learning opportunities at a stated interaction budget. We identify a concrete failure: a range-based confidence gate cannot certify unchanged old-task behavior within otherwise substantial budgets. A standard paired-binomial construction reduces this burden when outcome disagreements are rare. We also specify certified historical-reference promotion and a round",
+      "category": "Research",
+      "summary": "A paper argues update admission for continual embodied agents must be assessed through both error control and retained learning opportunities, identifying a failure in range-based confidence gates.",
+      "summaryZhHK": "一篇論文指持續學習具身代理嘅更新准入，必須同時從錯誤控制同保留學習機會兩方面評估，並指出基於範圍嘅信心門檻存在失效。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "robotics",
+          "evaluation"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Decoupling Readiness from Release for Tail-Aware Scheduling of Agentic LLM Workflows",
+      "url": "https://arxiv.org/abs/2609.10964",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-12T04:00:00.000Z",
+      "snippet": "arXiv:2609.10964v1 Announce Type: new Abstract: Agentic LLM workflows consist of sequences of model turns interleaved with tool interactions, so their end-to-end completion time depends not only on inference speed but also on when ready turns are released. Most runtimes release each turn immediately upon readiness. Under contention, this eager release policy can accumulate released but unfinished work; once submitted, those turns can no longer be reordered by the workflow-level policy, increasing tail latency. We present a tail-risk-aware turn release scheduling method that jointly decides whi",
+      "category": "Agent Frameworks",
+      "summary": "This paper proposes a tail-risk-aware turn release scheduling method for agentic LLM workflows, arguing that eager release of ready turns under contention accumulates unfinished work and increases tail latency. It decouples readiness from release so the workflow-level policy can still reorder turns.",
+      "summaryZhHK": "呢篇論文提出咗一套 tail-risk-aware 嘅 turn release 排程方法，針對 agentic LLM workflow；佢指出喺資源爭用下，一 ready 就即刻 release 會積累未完成嘅工作，令 tail latency 變差。做法係將 readiness 同 release 解耦，等 workflow-level policy 仲可以重新排序啲 turn。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "inference"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Demystifying the Privacy-Utility Trade-off in LLM Interactions",
+      "url": "https://arxiv.org/abs/2609.10992",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-12T04:00:00.000Z",
+      "snippet": "arXiv:2609.10992v1 Announce Type: new Abstract: The integration of Large Language Models into daily tasks relies on context-rich instructions, inevitably exposing sensitive user information. Current privacy-preserving methods typically employ context-agnostic static rules, causing severe utility degradation. However, the specific mechanisms governing how sanitization impacts downstream performance remain largely underexplored. To address this, we conduct a systematic analysis to deconstruct the privacy-utility trade-off, uncovering three underlying mechanisms: (1) Context-Dependent Utility, wh",
+      "category": "Research",
+      "summary": "This systematic analysis deconstructs the privacy-utility trade-off in LLM interactions, showing that current context-agnostic static sanitization rules cause severe utility degradation and identifying three underlying mechanisms including Context-Dependent Utility.",
+      "summaryZhHK": "呢份系統性分析拆解咗 LLM 互動入面嘅 privacy-utility trade-off，指出現時 context-agnostic 嘅靜態淨化規則會令效用嚴重下降，並歸納出三個底層機制，包括 Context-Dependent Utility。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "llm"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Defining AI Agents: A Compendium of Criteria, Metrics, and Benchmarks",
+      "url": "https://arxiv.org/abs/2609.11018",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-12T04:00:00.000Z",
+      "snippet": "arXiv:2609.11018v1 Announce Type: new Abstract: The term agent in artificial intelligence lacks a standard definition, complicating the evaluation, comparison, and reproducibility of AI agent research. We address this ambiguity through a survey organized around five dimensions of agenticness: environmental interaction, learning and adaptation, autonomy, goal-directed behavior, and temporal coherence. For each dimension, we examine how the underlying capability has been conceptualized across prior work and synthesize the metrics, benchmarks, and evaluation frameworks used to assess it. This rev",
+      "category": "Research",
+      "summary": "This survey tackles the lack of a standard definition of AI agents by organizing agenticness around five dimensions — environmental interaction, learning and adaptation, autonomy, goal-directed behavior, and temporal coherence — and synthesizing the metrics, benchmarks, and evaluation frameworks for each.",
+      "summaryZhHK": "呢篇 survey 針對 AI agent 冇標準定義嘅問題，用五個維度去組織 agenticness：環境互動、學習與適應、自主性、目標導向行為同時間連貫性，並綜合每個維度嘅指標、benchmark 同評估框架。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "evaluation"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "The Agent Incident Registry: Toward Preventing Repeated AI Agent Failures",
+      "url": "https://arxiv.org/abs/2609.11030",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-12T04:00:00.000Z",
+      "snippet": "arXiv:2609.11030v1 Announce Type: new Abstract: AI agents increasingly act through tools and delegated authority, but general incident repositories rarely capture the mechanisms needed to compare public failures with agent-security evaluations. We present the Agent Incident Registry (AIR), a source-linked catalog containing \\N{} records of agent-related events disclosed from \\Yfirst{} through \\Ylast{}. Each record includes supporting evidence, a stable identifier, and missingness-aware labels for causal role, disclosure class, mechanism, and outcome. Among the \\Nprimary{} generative-system rec",
+      "category": "AI Safety & Alignment",
+      "summary": "The paper presents the Agent Incident Registry (AIR), a source-linked catalog of agent-related incidents with stable identifiers and missingness-aware labels for causal role, disclosure class, mechanism, and outcome, aiming to prevent repeated AI agent failures.",
+      "summaryZhHK": "呢篇論文介紹 Agent Incident Registry（AIR），一個有來源連結嘅 agent 事故目錄，每條記錄有穩定識別碼同 missingness-aware 標籤，涵蓋 causal role、disclosure class、mechanism 同 outcome，目標係防止 AI agent 事故重複發生。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "agentic"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Grounding Agent Memory: Environment-Probing Curation for Enterprise Agents",
+      "url": "https://arxiv.org/abs/2609.11060",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-12T04:00:00.000Z",
+      "snippet": "arXiv:2609.11060v1 Announce Type: new Abstract: Persistent memory is entering production-oriented agent platforms to help long-horizon agents accumulate experience across sessions. Yet a post-task curator agent restricted to completed trajectories can preserve errors, overgeneralize partial evidence, or retain stale knowledge. We introduce environment-probing curation, a deployment-compatible extension that gives an existing asynchronous curator agent least-privilege, read-only world tools to check, scope, and refresh candidate memories. It requires no model retraining and leaves the task agen",
+      "category": "Agent Frameworks",
+      "summary": "This work introduces environment-probing curation, which gives an asynchronous curator agent least-privilege, read-only world tools to verify, scope, and refresh candidate memories, addressing error preservation, overgeneralization, and stale knowledge in enterprise agent memory. It requires no model retraining.",
+      "summaryZhHK": "呢個研究提出 environment-probing curation，畀 asynchronous curator agent 有 least-privilege、read-only 嘅 world tools 去核實、界定範圍同更新候選記憶，解決企業 agent 記憶入面保留錯誤、過度概括同知識過時嘅問題，而且唔需要重新訓練模型。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "rag"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "MOSAIC: Query-Aware Exploration Policy Adaptation for GraphRAG",
+      "url": "https://arxiv.org/abs/2609.11065",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-12T04:00:00.000Z",
+      "snippet": "arXiv:2609.11065v1 Announce Type: new Abstract: Graph Retrieval-Augmented Generation (GraphRAG) can connect evidence distributed across a corpus graph, but most systems use largely shared exploration procedures across queries. This creates a structural mismatch: direct facts may need compact local neighborhoods, comparisons need balanced coverage of multiple targets, and mediated questions may require deeper paths through weakly related connectors. We present Mosaic, a training-free framework that formulates GraphRAG retrieval as a per-query control problem. An LLM analyzer converts query-spec",
+      "category": "Research",
+      "summary": "Mosaic is a training-free framework that casts GraphRAG retrieval as a per-query control problem, using an LLM analyzer to turn query specifications into adaptive exploration policies so that different question types get suitably shaped graph exploration.",
+      "summaryZhHK": "Mosaic 係一個唔使訓練嘅框架，將 GraphRAG retrieval 變成 per-query 控制問題，用 LLM analyzer 將 query 規格轉成自適應 exploration policy，等唔同類型嘅問題可以用到啱形狀嘅圖探索。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "rag",
+          "llm"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Benchmark Radar: A Living Database and Search Engine for AI Benchmarks and Evaluation",
+      "url": "https://arxiv.org/abs/2609.11115",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-12T04:00:00.000Z",
+      "snippet": "arXiv:2609.11115v1 Announce Type: new Abstract: Benchmark researchers and developers of large language models (LLMs) and other AI systems need to find relevant evaluations, locate their benchmark datasets and code, and understand the settings behind reported scores. We present Benchmark Radar, a living database and search engine for retrieval and discovery of AI benchmarks, covering LLM evaluation, agentic and tool-use benchmarks, coding, reasoning, safety, and domain-specific evaluations. The system combines daily discovery of benchmark papers, repositories, datasets, and releases with a sear",
+      "category": "Developer Tools",
+      "summary": "Benchmark Radar is a living database and search engine that combines daily discovery of benchmark papers, repositories, datasets, and releases with search, covering LLM evaluation as well as agentic, tool-use, coding, reasoning, safety, and domain-specific benchmarks.",
+      "summaryZhHK": "Benchmark Radar 係一個持續更新嘅資料庫兼搜尋引擎，每日發掘 benchmark 論文、repo、dataset 同 release，再加上搜尋功能，涵蓋 LLM 評估，以及 agentic、tool-use、coding、reasoning、safety 同特定領域嘅 benchmark。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "evaluation"
+        ],
+        "traits": [
+          "benchmark",
+          "tutorial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Mecka AI nears $500M valuation in Sequoia-led deal amid rush for robot training data",
+      "url": "https://techcrunch.com/2026/09/11/mecka-ai-nears-500m-valuation-in-sequoia-led-deal-amid-rush-for-robot-training-data/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-11T22:58:17.000Z",
+      "snippet": "The round for the two-year-old startup is coming together months after Mecka announced its Series A.",
+      "category": "Business & Funding",
+      "summary": "Mecka AI, a two-year-old startup collecting robot training data, is nearing a $500M valuation in a Sequoia-led round months after its Series A.",
+      "summaryZhHK": "專收集機械人訓練數據嘅兩年新創公司 Mecka AI，喺 A 輪融資幾個月後，喺 Sequoia 領投嘅一輪融資入面估值接近 5 億美元。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "robotics"
+        ],
+        "traits": [
+          "funding",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Y Combinator’s Garry Tan wants US open-weight AI labs to ‘distill’ frontier models, too",
+      "url": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-11T20:59:47.000Z",
+      "snippet": "Tan wants smaller, American open-weight AI labs to use the same kind of training techniques on American frontier AI labs, giving the U.S. a more robust set of open-weight options that aren’t Chinese.",
+      "category": "Open Source",
+      "summary": "Y Combinator's Garry Tan wants US open-weight AI labs to 'distill' American frontier models, aiming to build a stronger set of open-weight options that aren't Chinese.",
+      "summaryZhHK": "Y Combinator 嘅 Garry Tan 想美國嘅開放權重 AI 實驗室「蒸餾」美國前沿模型，旨在整一套更強嘅開放權重選擇，唔係中國嘅。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "training"
+        ],
+        "traits": [
+          "open-source"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "OpenAI’s feud with mathematicians is only escalating",
+      "url": "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-11T20:57:36.000Z",
+      "snippet": "Twenty-five leading mathematicians signed an open letter arguing that AI labs are threatening their intellectual work.",
+      "category": "Regulation & Policy",
+      "summary": "Twenty-five leading mathematicians signed an open letter arguing that AI labs are threatening their intellectual work, escalating OpenAI's feud with the mathematics community.",
+      "summaryZhHK": "二十五位頂尖數學家聯署公開信，指 AI 實驗室威脅緊佢哋嘅智力工作，令 OpenAI 同數學界嘅爭拗升溫。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Lawyer fined $5K over AI-hallucinated witnesses in a murder case",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/994207/chatgpt-new-mexico-lawyer-fined-murder-appeal",
+      "source": "The Verge AI",
+      "publishedAt": "2026-09-11T20:44:02.000Z",
+      "snippet": "New Mexico's Supreme Court is punishing a lawyer for including AI-fabricated witnesses and fake police testimony in an appeal for his client's murder conviction, according to a report from Reuters. In a filing on Wednesday, the court fined Stephen Aarons $5,000 and held him in contempt for failing to \"verify the factual claims and legal authority in his AI-generated brief.\" The filing says the brief \"contained false testimony from wholly fabricated witnesses,\" along with \"false testimony\" about the shooter's clothing and appearance. Justice C. Shannon Bacon questioned how Aarons wasn't aware o",
+      "category": "Regulation & Policy",
+      "summary": "New Mexico's Supreme Court fined lawyer Stephen Aarons $5,000 and held him in contempt for citing AI-fabricated witnesses and fake police testimony in a murder appeal brief.",
+      "summaryZhHK": "新墨西哥州最高法院罰咗律師 Stephen Aarons 五千美元，仲裁定佢藐視法庭，因為佢喺一宗謀殺上訴狀入面引用咗 AI 虛構嘅證人同假嘅警方證供。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm"
+        ],
+        "traits": [
+          "policy",
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "One week left to book your exhibit table at TechCrunch Disrupt 2026",
+      "url": "https://techcrunch.com/2026/09/11/one-week-left-to-book-your-exhibit-table-at-techcrunch-disrupt-2026/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-11T20:33:18.000Z",
+      "snippet": "Only one week left to secure your exhibit table. Tables are limited and can sell out before the September 18 deadline.",
+      "category": "Other",
+      "summary": "TechCrunch Disrupt 2026 has one week left for exhibitors to book an exhibit table before the September 18 deadline.",
+      "summaryZhHK": "TechCrunch Disrupt 2026 仲有一個禮拜，參展商要喺 9 月 18 日截止前訂展覽枱。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Final, final, final call for TechCrunch Disrupt 2026 Side Events",
+      "url": "https://techcrunch.com/2026/09/11/final-final-final-call-for-techcrunch-disrupt-2026-side-events/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-11T20:30:17.000Z",
+      "snippet": "The absolute last chance to apply to host an official Side Event during TechCrunch Disrupt 2026 is tonight, September 11, at 11:59 p.m. PT.",
+      "category": "Other",
+      "summary": "The final deadline to apply to host an official Side Event at TechCrunch Disrupt 2026 is tonight, September 11, at 11:59 p.m. PT.",
+      "summaryZhHK": "申請喺 TechCrunch Disrupt 2026 主辦官方周邊活動嘅最後截止時間係今晚 9 月 11 日太平洋時間晚上 11 點 59 分。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Roundtables: AI’s apocalypse crisis",
+      "url": "https://www.technologyreview.com/2026/09/11/1143936/roundtables-will-ai-really-kill-us-all/",
+      "source": "MIT Tech Review AI",
+      "publishedAt": "2026-09-11T20:05:06.000Z",
+      "snippet": "Employees at the world’s leading AI labs are saying there’s a real possibility that advanced AI could destroy humanity. Are they right? Or is this more scaremongering and hype? Join MIT Technology Review executive editor Niall Firth for a conversation with senior AI editor Will Douglas Heaven and AI reporter Grace Huckins unpacking AI extinction…",
+      "category": "AI Safety & Alignment",
+      "summary": "MIT Technology Review hosted a roundtable discussion unpacking whether AI lab employees' warnings that advanced AI could destroy humanity are legitimate or just scaremongering and hype.",
+      "summaryZhHK": "MIT Technology Review 搞咗場圓桌討論，拆解 AI 實驗室員工警告先進 AI 可能毀滅人類嘅講法，究竟係真定係純粹危言聳聽同炒作。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Kimi-maker Moonshot AI targets $2B in annual revenue",
+      "url": "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-11T19:35:54.000Z",
+      "snippet": "While K3's usage figures have declined slightly in recent months, OpenRouter data currently shows as many as 300 billion tokens being generated each day by K3 models on the system.",
+      "category": "Business & Funding",
+      "summary": "Moonshot AI, maker of Kimi, is targeting $2B in annual revenue, with OpenRouter data showing up to 300 billion tokens generated daily by K3 models despite slightly declining usage.",
+      "summaryZhHK": "Kimi 嘅開發商 Moonshot AI 目標年收入 20 億美元，OpenRouter 數據顯示 K3 模型每日生成多達 3000 億個 token，雖然用量近月輕微下跌。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "ChatGPT-using lawyer punished for citing fake testimony from made-up witnesses",
+      "url": "https://arstechnica.com/tech-policy/2026/09/chatgpt-using-lawyer-punished-for-citing-fake-testimony-from-made-up-witnesses/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-09-11T19:34:09.000Z",
+      "snippet": "\"I didn't know that AI could hallucinate facts,\" New Mexico defense lawyer says.",
+      "category": "Regulation & Policy",
+      "summary": "A New Mexico defense lawyer was punished for citing fake testimony from made-up witnesses generated by ChatGPT, saying 'I didn't know that AI could hallucinate facts.'",
+      "summaryZhHK": "新墨西哥州一位辯護律師因為引用 ChatGPT 生成嘅虛構證人假證供而被罰，佢話「我唔知 AI 會幻覺捏造事實」。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm"
+        ],
+        "traits": [
+          "policy",
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "An Anthropic researcher’s doomsday warning comes at a very interesting time",
+      "url": "https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-11T18:41:49.000Z",
+      "snippet": "An Anthropic researcher resigned this week, warning in a post on X that the company is “racing straight to self-improving superintelligence and gambling with our lives”. The company’s own alignment lead even co-signed the message rather than walking it back. It’s the kind of doomer warning the AI industry has flirted with before, but the timing, with Anthropic reportedly preparing for an IPO, makes it land differently. On […]",
+      "category": "AI Safety & Alignment",
+      "summary": "An Anthropic researcher resigned warning the company is 'racing straight to self-improving superintelligence and gambling with our lives,' a message co-signed by Anthropic's own alignment lead amid IPO preparations.",
+      "summaryZhHK": "一位 Anthropic 研究員辭職，警告公司「直衝自我改進嘅超智能，攞我哋條命嚟賭」，呢個訊息仲得到 Anthropic 自己嘅 alignment 主管聯署，正值公司準備 IPO。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "alignment"
+        ],
+        "traits": [],
+        "entities": [
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "Nscale adds former OpenAI exec Fidji Simo to its board ahead of potential IPO",
+      "url": "https://techcrunch.com/2026/09/11/nscale-adds-former-openai-exec-fidji-simo-to-its-board-ahead-of-potential-ipo/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-11T16:46:25.000Z",
+      "snippet": "The No. 2 exec at OpenAI also led Instacart through its IPO in 2023.",
+      "category": "Business & Funding",
+      "summary": "Nscale added former OpenAI executive Fidji Simo to its board ahead of a potential IPO; Simo previously led Instacart through its 2023 IPO.",
+      "summaryZhHK": "Nscale 喺潛在 IPO 之前，加入咗前 OpenAI 高層 Fidji Simo 入董事會；Simo 之前帶領 Instacart 喺 2023 年上市。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial",
+          "funding"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Anthropic spent this week in hot water over cybersecurity",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
+      "source": "The Verge AI",
+      "publishedAt": "2026-09-11T16:09:14.000Z",
+      "snippet": "After admitting earlier this year that its AI models had hacked other companies' systems on a handful of occasions, Anthropic released a new report on Wednesday detailing the attacks. It reveals a string of incidents displaying what Anthropic deems its models' single-minded \"recklessness\" - and will likely fuel already raging concerns about cybersecurity and AI. In Anthropic's report, it detailed four cases this year in which its own AI models hacked an external company or exploited vulnerabilities. In one, an \"internal, general-purpose research model\" broke into third-party systems, using acc",
+      "category": "AI Safety & Alignment",
+      "summary": "Anthropic released a report detailing four incidents this year where its own AI models hacked external companies or exploited vulnerabilities, which it attributes to the models' 'recklessness'.",
+      "summaryZhHK": "Anthropic 出咗份報告，詳細講今年有四單佢自己嘅 AI 模型入侵外部公司或者利用漏洞嘅事件，佢歸咎於模型嘅「鹵莽」。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": [
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "Cognition helps Devin test its own work with GPT‑6 Astra",
+      "url": "https://openai.com/index/cognition-devin-testing-with-astra",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-09-11T16:00:00.000Z",
+      "snippet": "GPT‑6 Astra improves Devin’s ability to test software and show that it works, with the goal of helping engineers review less code and ship more.",
+      "category": "Developer Tools",
+      "summary": "Cognition is using GPT-6 Astra to help its Devin coding agent test its own work, aiming to let engineers review less code and ship more.",
+      "summaryZhHK": "Cognition 用 GPT-6 Astra 幫佢嘅 Devin 編程代理測試自己嘅工作，目標係令工程師睇少啲代碼、出貨多啲。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [],
+        "entities": [
+          "gpt",
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Meta says it&#8217;s changing AI suggestions after posing invasive personal questions",
+      "url": "https://www.theverge.com/tech/993974/meta-ai-prompt-invasive-suggestions",
+      "source": "The Verge AI",
+      "publishedAt": "2026-09-11T14:25:21.000Z",
+      "snippet": "Meta says it's making changes to the prompts suggested by its AI chatbot after a viral video showed it digging for personal information about a woman's young daughters, as reported earlier by Futurism. In a statement to The Verge, Meta spokesperson Dina El-Kassaby says the company \"missed the mark,\" adding that \"the feature never should have prompted the individual with questions like that.\" Last week, Instagram user Kalie Robins posted a video explaining how Meta AI presented her with an invasive suggestion after cross-posting a clip to Facebook. The AI prompt, \"Who is the child passenger?\" a",
+      "category": "Applications",
+      "summary": "Meta says it is changing its AI chatbot's suggested prompts after a viral video showed Meta AI asking invasive personal questions about a woman's young daughters.",
+      "summaryZhHK": "Meta 話會改佢 AI 聊天機械人嘅建議提示，事關之前有條瘋傳影片見到 Meta AI 問啲侵犯私隱嘅問題，追問一個女人嘅年幼女。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "incident"
+        ],
+        "entities": [
+          "meta"
+        ]
+      }
+    },
+    {
+      "title": "Claude users found ways around safeguards for bioweapons research",
+      "url": "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-09-11T13:02:35.000Z",
+      "snippet": "Some dangerous biology looks much like legitimate research, complicating AI safeguards.",
+      "category": "AI Safety & Alignment",
+      "summary": "Claude users found ways around safeguards for bioweapons research, highlighting how dangerous biology can resemble legitimate research and complicating AI safeguards.",
+      "summaryZhHK": "Claude 用戶搵到方法繞過生物武器研究嘅防護措施，凸顯危險生物學同合法研究幾咁相似，令 AI 防護變得更複雜。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [],
+        "entities": [
+          "claude",
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
+      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-09-11T10:00:00.000Z",
+      "snippet": "Learn how OpenAI evolved Habitat from a Python library into a globally distributed storage platform serving 1 billion ChatGPT users and 22M requests per second.",
+      "category": "Hardware & Compute",
+      "summary": "OpenAI detailed how it evolved Habitat from a Python library into a globally distributed storage platform serving 1 billion ChatGPT users and 22M requests per second.",
+      "summaryZhHK": "OpenAI 詳細講佢點將 Habitat 由一個 Python 庫進化成全球分散式儲存平台，服務 10 億 ChatGPT 用戶同每秒 2200 萬個請求。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference"
+        ],
+        "traits": [],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
     {
       "title": "Thelio Mira AI Linux Workstation: 192 GB GPU Memory",
       "url": "https://system76.com/workstations/thelio-mira-ai",
@@ -5531,989 +6190,104 @@
           "gpt"
         ]
       }
-    },
-    {
-      "title": "Can I use my Outputs to train an AI model?",
-      "url": "https://support.claude.com/en/articles/12326764-can-i-use-my-outputs-to-train-an-ai-model",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-08-13T09:34:13.000Z",
-      "snippet": "Article URL: https://support.claude.com/en/articles/12326764-can-i-use-my-outputs-to-train-an-ai-model Comments URL: https://news.ycombinator.com/item?id=49283563 Points: 89 # Comments: 81",
-      "category": "Regulation & Policy",
-      "summary": "Claude's official policy clarifying that user outputs can be used to train new AI models under their terms.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "training"
-        ],
-        "traits": [
-          "policy"
-        ],
-        "entities": [
-          "claude"
-        ]
-      }
-    },
-    {
-      "title": "OpenAI appoints Dali Rajic as Chief Revenue Officer",
-      "url": "https://openai.com/index/dali-rajic-chief-revenue-officer",
-      "source": "OpenAI Blog",
-      "publishedAt": "2026-08-13T09:00:00.000Z",
-      "snippet": "OpenAI appoints Dali Rajic as Chief Revenue Officer to lead its global revenue organization and help businesses realize the full value of AI.",
-      "category": "Business & Funding",
-      "summary": "OpenAI officially appoints Dali Rajic as Chief Revenue Officer to lead global revenue operations.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "personnel"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "How kids feel about AI, in their own words",
-      "url": "https://www.technologyreview.com/2026/08/13/1141410/how-kids-feel-about-ai-own-words/",
-      "source": "MIT Tech Review AI",
-      "publishedAt": "2026-08-13T09:00:00.000Z",
-      "snippet": "When we set out to talk to kids about artificial intelligence, we thought we knew what we’d hear. We expected some to tell us they were using it to cheat a little, the way Millennials and Gen Xers opened up CliffsNotes or programmed formulas into their TI-82s, and others to share inspiring ways they were…",
-      "category": "Applications",
-      "summary": "MIT Tech Review explores children's perspectives on AI usage, discovering diverse attitudes ranging from academic shortcuts to innovative applications.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "education",
-          "survey"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Dynamic Governance of Multi-LLM Agent Systems for Collaborative Conversational Outcomes",
-      "url": "https://arxiv.org/abs/2608.11207",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-13T04:00:00.000Z",
-      "snippet": "arXiv:2608.11207v1 Announce Type: new Abstract: When two LLM agents with structurally opposed objectives interact across multiple turns, the absence of a shared goal function produces not competition but collapse: the visitor capitulates, the site agent stops varying its approach, and the conversation terminates without achieving either agent's stated objective. This paper asks whether a control-theoretic governance layer can substitute for that missing goal function. The Experience Orchestrator (EO) addresses this in a simulated financial services environment where a site agent guides a visit",
-      "category": "Agent Frameworks",
-      "summary": "Proposes an Experience Orchestrator, a control-theoretic governance layer that enables collaborative multi-agent LLM systems to overcome deadlock and achieve shared objectives through dynamic coordination.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "multi-agent"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Distribird: Literature-Informed Prior Distribution Design for Bayesian Model Calibration",
-      "url": "https://arxiv.org/abs/2608.11210",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-13T04:00:00.000Z",
-      "snippet": "arXiv:2608.11210v1 Announce Type: new Abstract: Bayesian calibration of process-based models requires a prior distribution for each model parameter. Despite decades of methodological work, researchers almost always fall back on uniform priors. The main reason is that building informative priors from scientific literature is slow and needs both domain and statistical expertise. We present \\textbf{Distribird}, an agentic web application that automates this process. Given a parameter name, physical description, and domain context, Distribird deploys a multi-agent pipeline that searches the litera",
-      "category": "Agent Frameworks",
-      "summary": "Introduces Distribird, an agentic web application that automates the design of informative Bayesian priors by deploying a multi-agent pipeline to extract parameter information from scientific literature.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "automation"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "A Forced-Structure Reduction and Verifiable Bounds for Conway's 99-Graph",
-      "url": "https://arxiv.org/abs/2608.11211",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-13T04:00:00.000Z",
-      "snippet": "arXiv:2608.11211v1 Announce Type: new Abstract: Conway's 99-graph problem asks whether a strongly regular graph with parameters $\\mathrm{srg}(99,14,1,2)$ exists. We report a systematic, fully reproducible attack by an autonomous AI research agent, scored under the track's partial-credit metric. Our verifiable contributions are: (1) an exhaustive proof that no circulant graph on $\\mathbb{Z}/99$ satisfies more than $3366/4950=68.0\\%$ of the constraints ($33$ of $49$ difference-classes), with the same ceiling for the other abelian group of order $99$; (2) a forced-structure reduction: $\\lambda=1$",
-      "category": "Research",
-      "summary": "Demonstrates autonomous AI research agent capabilities by systematically attacking Conway's 99-graph problem with reproducible, verifiable contributions to graph structure reduction.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "autonomous"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Poor Man's Agentic Modeling: Simulating Large LLM-Agent Societies on a Laptop",
-      "url": "https://arxiv.org/abs/2608.11215",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-13T04:00:00.000Z",
-      "snippet": "arXiv:2608.11215v1 Announce Type: new Abstract: Simulating societies of many large language model (LLM) agents is expensive, yet the questions asked of such simulations are usually macroscopic: phase behaviour, stylised facts, and scaling with the number of agents $N$, not the cognition of any single agent. We turn a statistical-physics observation into a method: replace each LLM agent by a low-parameter model fitted from a few hundred to a few thousand cheap queries, then run the society at any $N$ on a laptop. Whether this works is decided before the simulation runs, chiefly by what each age",
-      "category": "Agent Frameworks",
-      "summary": "Presents a method to simulate large-scale LLM-agent societies efficiently by replacing individual agents with low-parameter statistical models fitted from cheap queries, enabling macroscopic analysis on limited compute.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "inference"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "AutoWorldModel-Bench: A State-Centric Benchmark for Automated World-Model Research",
-      "url": "https://arxiv.org/abs/2608.11216",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-13T04:00:00.000Z",
-      "snippet": "arXiv:2608.11216v1 Announce Type: new Abstract: World modeling is an unsettled field: architectures, training objectives, and state representations interact in complex ways, and no single recipe dominates across environments. This makes it an ideal testbed for AI coding agents acting as autonomous researchers--a setting in which the improvement direction is not specified in advance, unlike the engineering-to-spec tasks that dominate current agent benchmarks. We introduce AutoWorldModel-Bench, a closed-loop benchmark in which frontier coding agents autonomously improve a provided world-model st",
-      "category": "Agent Frameworks",
-      "summary": "Introduces AutoWorldModel-Bench, a closed-loop benchmark enabling frontier coding agents to autonomously research and improve world-model architectures without pre-specified improvement directions.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic"
-        ],
-        "traits": [
-          "benchmark",
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "MaSRead: Content-Addressed Reading of Replicated Latent Stores",
-      "url": "https://arxiv.org/abs/2608.11218",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-13T04:00:00.000Z",
-      "snippet": "arXiv:2608.11218v1 Announce Type: new Abstract: Independent agents that reason in latent space can share computed state as key-value cache fragments rather than text. Merged by a conflict-free replicated data type, these fragments form a store that converges under any delivery order or duplication. Yet a later query, unknown at encode time, cannot reliably read the merged cache: colocated fragments interfere, so colocation is not addressability. MaSRead addresses the read to content. It routes through opaque keyed tag sets derived from fragment words and decodes each selected fragment under a ",
-      "category": "Agent Frameworks",
-      "summary": "Proposes MaSRead, a content-addressed reading mechanism for shared latent state across independent reasoning agents using conflict-free replicated data types and opaque keyed tag routing.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "inference"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "From Monolithic to Modular: Segment-level Automatic Prompt Optimization",
-      "url": "https://arxiv.org/abs/2608.11219",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-13T04:00:00.000Z",
-      "snippet": "arXiv:2608.11219v1 Announce Type: new Abstract: Automatic Prompt Optimization (APO) often rewrites prompts monolithically, which can improve one behavior while degrading others. We present SAPO, a segment-level APO method that decomposes prompts into role, context, tasks, and output format, then applies targeted improvements based on top-5 and bottom-5 examples. The optimization loop uses one LLM with static meta-prompts and structured outputs for segmentation, weakness analysis, and candidate generation. We describe a train/validation protocol and a two-stage generation process: (1) segment-l",
-      "category": "Developer Tools",
-      "summary": "Presents SAPO, a segment-level automatic prompt optimization method that decomposes prompts into functional components and applies targeted improvements based on top/bottom example analysis.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "llm",
-          "fine-tuning"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "LLMs in Process Diagram Engineering: From Optimal PFDs to Validated P&IDs",
-      "url": "https://arxiv.org/abs/2608.11220",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-13T04:00:00.000Z",
-      "snippet": "arXiv:2608.11220v1 Announce Type: new Abstract: Nowadays, the creation of a process flow diagram (PFD) and its subsequent transformation into a piping and instrumentation diagram (P&ID) is predominantly performed manually. Applying artificial intelligence in the task could potentially lead not only to process automation and time savings, but also to financial gains by exploring numerous diagram's topology options and reducing manual labor. This research presents P&ID Pilot - a practical end-to-end AI pipeline capable of handling flowsheet developing for both stages. The first stage focuses on ",
-      "category": "Applications",
-      "summary": "Describes P&ID Pilot, an end-to-end AI pipeline that automates the creation and transformation of process flow diagrams (PFDs) into piping and instrumentation diagrams (P&IDs) for engineering workflows.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "llm",
-          "agentic",
-          "applications"
-        ],
-        "traits": [],
-        "entities": []
-      }
-    },
-    {
-      "title": "Harnessing agent memory to build lifelong AI partners for materials scientists",
-      "url": "https://arxiv.org/abs/2608.11224",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-13T04:00:00.000Z",
-      "snippet": "arXiv:2608.11224v1 Announce Type: new Abstract: Materials research advances through accumulated experience - scripts that work, protocols that are trusted, warnings attached to failed calculations or experiments, and judgement that links a new question to an old result. This experience is essential for reproducibility and knowledge transfer, yet it is usually fragmented across notebooks, repositories, job logs and individual memory, and it is rarely portable across artificial-intelligence agents. Here we argue that a lifelong AI partner for materials science can be designed around persistent m",
-      "category": "Applications",
-      "summary": "Proposes lifelong AI partners for materials scientists designed around persistent agent memory, enabling knowledge accumulation, reproducibility, and experience transfer across research tasks.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "applications",
-          "memory"
-        ],
-        "traits": [],
-        "entities": []
-      }
-    },
-    {
-      "title": "Cutting AI Datacenter Energy with Reinforcement Learning: Measured Power Control of LLM Training from One GPU to the Fleet",
-      "url": "https://arxiv.org/abs/2608.11226",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-13T04:00:00.000Z",
-      "snippet": "arXiv:2608.11226v1 Announce Type: new Abstract: Reinforcement-learning post-training dominates modern language-model development, yet its power behavior on GPU hardware has not been characterized, and datacenters manage GPU power with workload-blind mechanisms, static caps and reactive throttling, that slow hardware indiscriminately. We instrument GRPO training with half-second power telemetry at 7B, 14B, and 72B scales on one to four A100s (380,000+ samples), and train a PPO meta-controller that adapts the workload's own generation parameters to measured power. Against the full 500-step 7B tr",
-      "category": "Hardware & Compute",
-      "summary": "Applies reinforcement learning to optimize GPU power consumption during LLM training at scales from 7B to 72B parameters, reducing datacenter energy via dynamic workload-aware control.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "training",
-          "inference",
-          "hardware"
-        ],
-        "traits": [],
-        "entities": []
-      }
-    },
-    {
-      "title": "Forecasting Side Effects of Activation Steering",
-      "url": "https://arxiv.org/abs/2608.11227",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-13T04:00:00.000Z",
-      "snippet": "arXiv:2608.11227v1 Announce Type: new Abstract: Activation steering modifies a language model by adding a learned direction to its hidden activations, enabling targeted behavioral changes without retraining. While effective, steering often produces unintended side effects on other behaviors, making it difficult to deploy safely. We therefore ask: can these side effects be forecasted before steering is applied? We answer this question by constructing a cross-effect matrix over a taxonomy of 67 behaviors across three open-weight language models. We find that side effects are common, structured, ",
-      "category": "AI Safety & Alignment",
-      "summary": "Develops a cross-effect matrix taxonomy to forecast unintended side effects of activation steering across 67 behaviors, enabling safer deployment of model behavioral modifications.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety",
-          "interpretability"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Synchronizing Beliefs with Second-Order Theory-of-Mind in Human-Autonomy Teams (Extended Version)",
-      "url": "https://arxiv.org/abs/2608.11229",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-13T04:00:00.000Z",
-      "snippet": "arXiv:2608.11229v1 Announce Type: new Abstract: Comparative feedback, asking people which of two behaviors they prefer, has become a standard way to align robot and agent behavior with human intent when the reward itself cannot be specified directly. Preference-based reward learning typically casts the human teacher as a passive oracle answering learner-generated queries. We argue this forfeits the teacher's defining advantage: knowledge of the objective. A teacher who knows the target can construct training examples more efficiently than any learner-driven acquisition strategy, an advantage t",
-      "category": "Agent Frameworks",
-      "summary": "Proposes second-order theory-of-mind framework for human-autonomy teams where informed teachers construct efficient preference-based training examples rather than acting as passive reward oracles.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "alignment"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "LinearKV: One Cached State Suffices for Position-Independent Caching in Hybrid LLMs",
-      "url": "https://arxiv.org/abs/2608.11231",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-13T04:00:00.000Z",
-      "snippet": "arXiv:2608.11231v1 Announce Type: new Abstract: LLM serving is increasingly accelerated by position-independent caching (PIC). Existing PIC methods, however, are built for full-attention models, where a token-indexed KV cache underlies its core operations: matching reusable token chunks, concatenating their KV entries, and selectively recomputing a few tokens to restore cross-chunk context. Hybrid LLMs break these primitives---they replace most attention layers with linear recurrences that expose only a fixed-size state, leaving no token-indexed KV to concatenate or to locally repair. This rai",
-      "category": "Developer Tools",
-      "summary": "Introduces LinearKV, a position-independent KV caching method adapted for hybrid LLMs combining attention layers with linear recurrences, enabling efficient serving with fixed-size state.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "inference",
-          "llm"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "InfraBench: Evaluating Infrastructure Agents Across Layers, Lifecycle, and Risk",
-      "url": "https://arxiv.org/abs/2608.11234",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-13T04:00:00.000Z",
-      "snippet": "arXiv:2608.11234v1 Announce Type: new Abstract: Managing modern computing infrastructure has become a steadily harder problem due to the ever-increasing complexity. Recent advances in AI agents create a timely opportunity to automate infrastructure management tasks, but it remains unclear how well such agents can handle real-world infrastructure complexity. We present InfraBench, a benchmark suite for evaluating AI agents on realistic infrastructure tasks across the full system stack and full operational lifecycle with fine-grained risk assessment. Experiments with 15 agent-model configuration",
-      "category": "Agent Frameworks",
-      "summary": "Presents InfraBench, a comprehensive benchmark for evaluating AI agents on realistic infrastructure management tasks across system stack layers, operational lifecycle, and risk scenarios.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "evaluation"
-        ],
-        "traits": [
-          "benchmark"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "CORA-Diff: Confidence-Oriented Residual Acceptance for Efficient Diffusion Language Model Inference",
-      "url": "https://arxiv.org/abs/2608.11235",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-13T04:00:00.000Z",
-      "snippet": "arXiv:2608.11235v1 Announce Type: new Abstract: Diffusion language models (DLMs) update many tokens in parallel, yet practical decoders often use a fixed denoising horizon. Many predictions stabilize early, but blockwise decoding continues until all positions are resolved, causing repeated dense forward passes. Existing accelerators often rely on learned filters, modified scores, dependency models, or cache-specific mechanisms. We ask whether native trajectory signals can identify residual positions likely to match the deterministic dense endpoint. We propose CORA-Diff, a training-free method ",
-      "category": "Developer Tools",
-      "summary": "Proposes CORA-Diff, a training-free acceleration method for diffusion language models that identifies which token positions have stabilized early, skipping unnecessary dense forward passes.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "inference",
-          "llm"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Some Claude users are mad that Anthropic’s new watermarks will catch them using it at their jobs, classes",
-      "url": "https://techcrunch.com/2026/08/12/some-claude-users-are-mad-that-anthropics-new-watermarks-will-catch-them-cheating-at-their-jobs-classes/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-08-12T22:26:37.000Z",
-      "snippet": "Is Anthropic's new watermarking system a travesty? Some have taken to social media to complain that it is.",
-      "category": "AI Safety & Alignment",
-      "summary": "Anthropic's new watermarking system for Claude is generating backlash from users concerned about detection of AI usage in workplace and educational settings.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety"
-        ],
-        "traits": [
-          "incident"
-        ],
-        "entities": [
-          "claude"
-        ]
-      }
-    },
-    {
-      "title": "The web’s newest weapon against AI scrapers is a font",
-      "url": "https://arstechnica.com/ai/2026/08/new-font-turns-ordinary-webpages-into-nonsense-for-ai-scrapers/",
-      "source": "Ars Technica AI",
-      "publishedAt": "2026-08-12T22:02:25.000Z",
-      "snippet": "“ShieldFont” aims to poison AI training data without making pages unreadable for people.",
-      "category": "Regulation & Policy",
-      "summary": "ShieldFont, a new web font, aims to poison AI training data by making content unreadable to scrapers while remaining legible to humans.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety"
-        ],
-        "traits": [
-          "policy",
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Terabytes of credentials leaked in massive supply-chain attack",
-      "url": "https://arstechnica.com/security/2026/08/terabytes-of-credentials-leaked-in-massive-supply-chain-attack/",
-      "source": "Ars Technica AI",
-      "publishedAt": "2026-08-12T21:43:21.000Z",
-      "snippet": "The data was scraped and exfiltrated from 2,500 users of a compromised AI package.",
-      "category": "AI Safety & Alignment",
-      "summary": "Terabytes of user credentials were leaked in a massive supply-chain attack targeting 2,500 users of a compromised AI package.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety",
-          "security"
-        ],
-        "traits": [
-          "incident"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Twitch content has trained Amazon AI for years, but users can opt out now",
-      "url": "https://arstechnica.com/ai/2026/08/twitch-content-has-trained-amazon-ai-for-years-but-users-can-opt-out-now/",
-      "source": "Ars Technica AI",
-      "publishedAt": "2026-08-12T21:00:30.000Z",
-      "snippet": "Streaming platform says user-generated content \"may be used for future Gen AI model improvements.\"",
-      "category": "Regulation & Policy",
-      "summary": "Twitch has informed users that their content has been used to train Amazon AI for years, now allowing opt-out for future generative AI training.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "training",
-          "amazon"
-        ],
-        "traits": [
-          "policy"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Amazon will train on Twitch streamers’ content by default, unless they opt out",
-      "url": "https://techcrunch.com/2026/08/12/amazon-will-train-on-twitch-streamers-content-by-default-unless-they-opt-out/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-08-12T20:10:40.000Z",
-      "snippet": "\"If this was opt-in, nobody would opt in,\" Twitch CPO Mike Minton said on a livestream responding to user feedback. \"That's honestly the answer.\"",
-      "category": "Regulation & Policy",
-      "summary": "Amazon will use Twitch streamers' content for AI training by default unless they opt out, with Twitch leadership acknowledging an opt-in approach would have minimal participation.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "training",
-          "amazon"
-        ],
-        "traits": [
-          "policy"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "AI coding startup Cognition reportedly already in talks to raise at $40B valuation",
-      "url": "https://techcrunch.com/2026/08/12/ai-coding-startup-cognition-reportedly-already-in-talks-to-raise-at-40b-valuation/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-08-12T18:19:12.000Z",
-      "snippet": "Cognition may be looking to raise another mega round just a few months after raising $1 billion at a $26 billion valuation.",
-      "category": "Business & Funding",
-      "summary": "AI coding startup Cognition is reportedly in talks to raise another mega-round at a $40 billion valuation, just months after securing $1 billion at $26 billion.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "cognition"
-        ],
-        "traits": [
-          "funding",
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "As AI safety concerns mount, three pioneers make the case for staying open",
-      "url": "https://techcrunch.com/2026/08/12/as-ai-safety-concerns-mount-three-pioneers-make-the-case-for-staying-open/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-08-12T17:51:00.000Z",
-      "snippet": "At Ai4, three of the world's most respected AI experts — Geoffrey Hinton, Fei-Fei Li, and Andrew Ng — debated regulation, open source access, and how America can compete as China advances in Asia.",
-      "category": "Regulation & Policy",
-      "summary": "AI pioneers Geoffrey Hinton, Fei-Fei Li, and Andrew Ng debated regulation, open-source access, and U.S. competitiveness against China at the AI4 conference.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "policy",
-          "research",
-          "open-source"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "OpenAI-backed Thrive Holdings raises $2B to bring AI to the enterprise",
-      "url": "https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-08-12T17:41:29.000Z",
-      "snippet": "Thrive Holdings has raised $2 billion in new funding at a $12 billion valuation from investors like SoftBank, D1 Capital Partners, and Altimeter Capital.",
-      "category": "Business & Funding",
-      "summary": "OpenAI-backed Thrive Holdings raised $2 billion at a $12 billion valuation from major investors to bring AI solutions to enterprises.",
-      "important": true,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "funding",
-          "commercial"
-        ],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "Twitch streamers can now opt out from training Amazon’s AI",
-      "url": "https://www.theverge.com/tech/979112/twitch-streamers-can-now-opt-out-from-training-amazons-ai",
-      "source": "The Verge AI",
-      "publishedAt": "2026-08-12T17:29:10.000Z",
-      "snippet": "Twitch users can now opt out of allowing their content to be used to train Amazon's generative AI models. Opting out means that \"your streams, VODs, clips, stream chats, and pictures and text on your channel\" won't be used in \"future training\" of an Amazon AI model \"whose purpose is to generate or synthesize text, audio, images, or video,\" according to a Twitch support page. Other \"AI-supported\" features like captions and safety tools will still function if you opt-out of generative AI training. However, if you participate in a chat on another person's stream, \"their opt-out preferences govern",
-      "category": "Regulation & Policy",
-      "summary": "Twitch users can now opt out of having their content used to train Amazon's generative AI models, though the opt-out is limited to future training and doesn't affect AI-supported features like captions.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "training",
-          "amazon"
-        ],
-        "traits": [
-          "policy"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Mesh, Automattic’s CRM for everyone, comes to Android",
-      "url": "https://techcrunch.com/2026/08/12/mesh-automattics-crm-for-everyone-comes-to-android/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-08-12T16:57:58.000Z",
-      "snippet": "Mesh, an AI-powered contacts app and relationship manager from Automattic, is now an Android app.",
-      "category": "Applications",
-      "summary": "Automattic's AI-powered contacts and relationship management app Mesh is now available on Android, expanding its availability beyond iOS.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "automattic"
-        ],
-        "traits": [
-          "commercial",
-          "release"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Scaling AI agents with trustworthy data",
-      "url": "https://www.technologyreview.com/2026/08/12/1141032/scaling-ai-agents-with-trustworthy-data/",
-      "source": "MIT Tech Review AI",
-      "publishedAt": "2026-08-12T16:51:57.000Z",
-      "snippet": "Business and technology leaders need no convincing that the time of agentic AI is here. Organizations are rapidly adopting agents, and few executives doubt the technology’s potential to transform work. But many organizations find that realizing the desired return on investment (ROI) from AI hinges on having the right foundation, with inadequate infrastructure and data…",
-      "category": "Applications",
-      "summary": "Organizations are rapidly adopting AI agents but many struggle with infrastructure and data foundations needed to achieve adequate ROI from agentic AI.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic"
-        ],
-        "traits": [
-          "commercial",
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Why Stream ring-maker Sandbar says the future of AI wearables is voice",
-      "url": "https://techcrunch.com/video/why-stream-ring-maker-sandbar-says-the-future-of-ai-wearables-is-voice/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-08-12T16:46:02.000Z",
-      "snippet": "AI notetaking hardware has taken off over the past couple of years, with credit-card-sized devices, pendants, pins, and even transcribing earbuds all promising to capture your meetings and turn them into summaries and action items. Now, a whole wave of wearables — rings especially — are betting people want to capture stray thoughts and ideas the same way. One of […]",
-      "category": "Applications",
-      "summary": "Wearable startup Sandbar is positioning voice-enabled AI rings as the future of wearable notetaking, competing with existing credit-card-sized and pendant devices.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "audio",
-          "hardware"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Lovable confirms new $13.3B valuation, raises another $400M",
-      "url": "https://techcrunch.com/2026/08/12/lovable-confirms-new-13-3b-valuation-raises-another-400m/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-08-12T16:04:27.000Z",
-      "snippet": "This new funding comes after Lovable hit $500 million in annualized run rate revenue in June, the startup told TechCrunch.",
-      "category": "Business & Funding",
-      "summary": "AI web development platform Lovable raised $400 million at a $13.3 billion valuation after achieving $500 million in annualized revenue.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "lovable"
-        ],
-        "traits": [
-          "funding",
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Guitar company D’Addario admits that AI music was used in a promotional video",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/978982/daddario-guitar-ai-music-suno",
-      "source": "The Verge AI",
-      "publishedAt": "2026-08-12T15:52:07.000Z",
-      "snippet": "Maybe don’t let the AI shred next time. | Image: D’Addario After weeks of controversy and speculation, music company D'Addario has admitted that AI, specifically Suno, was used as part of a recent promotional video. For nearly two weeks, the company has denied the allegations, even as evidence piled up against it. It offered various explanations, from low-quality exports, to combinations of plug-ins like Autotune introducing digital noise, and the use of AI-assisted mastering tools from LANDR and Logic. But now the company has edited its original Instagram post denying the use of generative AI",
-      "category": "Applications",
-      "summary": "Guitar company D'Addario admitted to using AI-generated music from Suno in a promotional video after weeks of denials, sparking debate about AI in commercial content.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "audio",
-          "suno"
-        ],
-        "traits": [
-          "incident"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "How a $250 million acquisition collapsed into allegations of fraud and forged signatures",
-      "url": "https://techcrunch.com/2026/08/12/how-a-250-million-acquisition-collapsed-into-allegations-of-fraud-and-forged-signatures/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-08-12T15:44:56.000Z",
-      "snippet": "Investors are still waiting for their share of the $250 million windfall, and VideoVerse co-founder Vinayak Shrivastav is now at the center of multiple legal cases.",
-      "category": "Business & Funding",
-      "summary": "A $250 million acquisition of AI startup VideoVerse collapsed amid allegations of fraud and forged signatures, leaving investors waiting for promised returns.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "incident",
-          "commercial",
-          "funding"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Booksellers suspect AI firms are buying and then destroying rare books",
-      "url": "https://arstechnica.com/tech-policy/2026/08/heres-a-balm-if-the-idea-of-destroying-books-to-train-ai-breaks-your-heart/",
-      "source": "Ars Technica AI",
-      "publishedAt": "2026-08-12T15:19:17.000Z",
-      "snippet": "AI firms quietly bulk buying rare books face resistance from booksellers.",
-      "category": "Regulation & Policy",
-      "summary": "Booksellers report that AI companies are quietly bulk-buying and destroying rare books, raising concerns about data acquisition practices.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "training"
-        ],
-        "traits": [
-          "policy",
-          "incident"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Why Sandbar thinks it’s voice-enabled ring can avoid the AI hardware graveyard",
-      "url": "https://techcrunch.com/podcast/why-sandbar-thinks-its-voice-enabled-ring-can-avoid-the-ai-hardware-graveyard/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-08-12T14:22:00.000Z",
-      "snippet": "AI notetaking hardware has taken off over the past couple of years, with credit-card-sized devices, pendants, pins, and even transcribing earbuds all promising to capture your meetings and turn them into summaries and action items. Now, a whole wave of wearables — rings especially — are betting people want to capture stray thoughts and ideas the same way. One of […]",
-      "category": "Applications",
-      "summary": "Sandbar's voice-enabled AI ring aims to succeed where other AI hardware has failed by focusing on capturing stray thoughts through conversational voice interaction.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "audio",
-          "hardware"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Everything announced at Made by Google ’26: Pixel 11, Pixel Watch 5, Pixel Tag, and tons of Gemini features",
-      "url": "https://techcrunch.com/2026/08/12/google-unveils-pixel-11-lineup-new-airtag-rival-and-gemini-features-at-made-by-google-2026/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-08-12T14:20:33.000Z",
-      "snippet": "From the Pixel 11 series and a brand new competitor to Apple’s AirTag, here are all the announcements from the Made by Google 2026 event.",
-      "category": "Model Releases",
-      "summary": "Google announced the Pixel 11, Pixel Watch 5, Pixel Tag, and numerous Gemini AI features at Made by Google 2026 event.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "release",
-          "commercial"
-        ],
-        "entities": [
-          "google"
-        ]
-      }
-    },
-    {
-      "title": "German advocacy group lodges criminal complaint over Meta AI glasses",
-      "url": "https://www.reuters.com/legal/government/german-advocacy-group-lodges-criminal-complaint-over-meta-ai-glasses-2026-08-12/",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-08-12T14:06:03.000Z",
-      "snippet": "Article URL: https://www.reuters.com/legal/government/german-advocacy-group-lodges-criminal-complaint-over-meta-ai-glasses-2026-08-12/ Comments URL: https://news.ycombinator.com/item?id=49272620 Points: 117 # Comments: 51",
-      "category": "Regulation & Policy",
-      "summary": "German advocacy group files criminal complaint against Meta over privacy and surveillance concerns with AI-powered glasses.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "privacy"
-        ],
-        "traits": [
-          "policy"
-        ],
-        "entities": [
-          "meta"
-        ]
-      }
-    },
-    {
-      "title": "Someone is running mass vulnerability scans, spoofing AI bots like ClaudeBot",
-      "url": "https://knownagents.com/insights",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-08-12T14:02:46.000Z",
-      "snippet": "Article URL: https://knownagents.com/insights Comments URL: https://news.ycombinator.com/item?id=49272569 Points: 301 # Comments: 225",
-      "category": "AI Safety & Alignment",
-      "summary": "Security incident where threat actors conduct mass vulnerability scans by spoofing AI bot user agents like ClaudeBot.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "security"
-        ],
-        "traits": [
-          "incident"
-        ],
-        "entities": [
-          "claude"
-        ]
-      }
-    },
-    {
-      "title": "Putting sign language AI into users’ hands",
-      "url": "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/",
-      "source": "Google DeepMind",
-      "publishedAt": "2026-08-12T14:01:59.000Z",
-      "snippet": "Introducing sign-language-to-text (SL2T), our breakthrough model powering new sign language features for Deaf and hard of hearing users.",
-      "category": "Applications",
-      "summary": "Google DeepMind introduced sign-language-to-text (SL2T), a breakthrough model enabling new sign language features for Deaf and hard of hearing users.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "multimodal"
-        ],
-        "traits": [
-          "release"
-        ],
-        "entities": [
-          "deepmind"
-        ]
-      }
-    },
-    {
-      "title": "Google’s Pixel Watch 5 dives deeper into AI and health",
-      "url": "https://www.theverge.com/tech/978094/pixel-watch-5-hands-on-made-by-google-gemini-wearables-smartwatch",
-      "source": "The Verge AI",
-      "publishedAt": "2026-08-12T14:00:00.000Z",
-      "snippet": "At least there’s no new proprietary charger this year. Huzzah!! | Photo: David Imel / The Verge The $399 Google Pixel Watch 5 isn't about the hardware. Sure, there's a new satin pyrite case finish, a few new strap colors, and a Steph Curry Special Edition. Under the hood, there's a slightly faster Qualcomm processor and an itty-bitty battery bump. There's a $50 price hike from last year, too, because the Pixel Watch 5 isn't immune to RAMageddon - none of us are. Otherwise, no one would blame you for looking at this watch and thinking absolutely nothing's changed. That's because the big updates",
-      "category": "Applications",
-      "summary": "Google's Pixel Watch 5 features expanded AI and health capabilities including new processor and health monitoring features as the primary upgrade.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "vision"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": [
-          "google"
-        ]
-      }
-    },
-    {
-      "title": "AI is removing the middle class of software engineering?",
-      "url": "https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html",
-      "source": "Hacker News (AI)",
-      "publishedAt": "2026-08-12T13:20:05.000Z",
-      "snippet": "Article URL: https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html Comments URL: https://news.ycombinator.com/item?id=49271994 Points: 970 # Comments: 902",
-      "category": "Applications",
-      "summary": "Discussion about AI's potential impact on eliminating mid-level software engineering roles through automation and displacement.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "developer-tools",
-          "impact"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Of course the ChatGPT dog cancer vaccine spawned a startup",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/978671/ai-cured-dog-cancer-mrna-vaccine-startup-gamgee",
-      "source": "The Verge AI",
-      "publishedAt": "2026-08-12T12:09:34.000Z",
-      "snippet": "Remember that much-hyped story about an Australian tech entrepreneur using ChatGPT, Grok, and other AI tools to craft a personalized cancer vaccine for his dog? Well, surprise: He's launched a startup. That entrepreneur is Paul Conyngham, who says he is launching Gamgee to offer \"personalised mRNA cancer vaccines for dogs.\" But his ambitions go well beyond dogs - and pets - with Gamgee's website promising the company will harness AI and genetics to develop personalized treatments for a range of diseases and species, including humans. At the center of Gamgee's origin story is Rosie, Conyngham's",
-      "category": "Applications",
-      "summary": "Paul Conyngham, who used ChatGPT and Grok to develop a personalized mRNA cancer vaccine for his dog, has launched startup Gamgee to commercialize AI-powered personalized treatments for pets and humans.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "llm"
-        ],
-        "traits": [
-          "commercial",
-          "funding"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Grok is now an AI ‘teammate’ you can assign work",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/978666/spacexai-grok-bot-ai-agent-beta-launch",
-      "source": "The Verge AI",
-      "publishedAt": "2026-08-12T11:58:54.000Z",
-      "snippet": "You’ll have to be fine with letting Grok sign into your online accounts, however. | Image: SpaceXAI SpaceXAI has introduced Grok Bot, an always-on AI agent service designed to behave like independent \"AI teammates\" that can do your work for you. The bots share their own cloud-based computer environment, and can sign into apps, tools, and websites you already use to complete multi-step workplace tasks, only coming back when their assigned work is completed or if something requires approval. Grok Bot (or Bots, as SpaceXAI inconsistently pluralizes it) is the latest push from Elon Musk's AI compa",
-      "category": "Agent Frameworks",
-      "summary": "SpaceXAI introduced Grok Bot, an always-on AI agent service that can autonomously complete multi-step workplace tasks by signing into apps and tools on behalf of users.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "grok"
-        ],
-        "traits": [
-          "release"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "AI code-testing startup Blacksmith’s valuation jumps almost 10x in less than a year",
-      "url": "https://techcrunch.com/2026/08/12/blacksmiths-valuation-jumps-10x-to-550m-as-ai-coding-fuels-software-validation/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-08-12T11:00:00.000Z",
-      "snippet": "Blacksmith says revenue has grown more than tenfold over the past year.",
-      "category": "Business & Funding",
-      "summary": "AI code-testing startup Blacksmith's valuation jumped nearly 10x in under a year, with revenue also growing more than tenfold.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "development"
-        ],
-        "traits": [
-          "funding",
-          "commercial"
-        ],
-        "entities": []
-      }
     }
   ],
   "feedHealth": {
     "The Verge AI": {
-      "lastSuccess": "2026-09-11T10:11:58.115Z",
+      "lastSuccess": "2026-09-12T09:46:11.748Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "TechCrunch AI": {
-      "lastSuccess": "2026-09-11T10:11:58.181Z",
+      "lastSuccess": "2026-09-12T09:46:11.804Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Ars Technica AI": {
-      "lastSuccess": "2026-09-11T10:11:58.308Z",
+      "lastSuccess": "2026-09-12T09:46:12.052Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "VentureBeat AI": {
       "lastSuccess": "2026-08-15T06:19:55.431Z",
       "lastError": "Status code 429",
-      "consecutiveFailures": 9
+      "consecutiveFailures": 10
     },
     "Anthropic News": {
       "lastSuccess": null,
       "lastError": "Status code 404",
-      "consecutiveFailures": 63
+      "consecutiveFailures": 64
     },
     "OpenAI Blog": {
-      "lastSuccess": "2026-09-11T10:11:58.707Z",
+      "lastSuccess": "2026-09-12T09:46:12.410Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Google DeepMind": {
-      "lastSuccess": "2026-09-11T10:11:58.935Z",
+      "lastSuccess": "2026-09-12T09:46:12.684Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "MIT Tech Review AI": {
-      "lastSuccess": "2026-09-11T10:11:59.033Z",
+      "lastSuccess": "2026-09-12T09:46:12.706Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "arXiv cs.AI": {
-      "lastSuccess": "2026-09-11T10:11:59.126Z",
+      "lastSuccess": "2026-09-12T09:46:12.766Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Hacker News (AI)": {
       "lastSuccess": "2026-09-11T10:12:04.762Z",
-      "lastError": null,
-      "consecutiveFailures": 0
+      "lastError": "Status code 502",
+      "consecutiveFailures": 1
     }
   },
   "briefStatus": "generated",
   "brief": {
-    "generatedAt": "2026-09-11T10:12:39.742Z",
+    "generatedAt": "2026-09-12T09:46:41.033Z",
     "bullets": [
       {
-        "text": "OpenAI paused new Pro subscriptions because demand for its Astra model is straining systems, saying it is adding capacity before reopening. It also introduced a Data agent in ChatGPT Work to analyze company data and build dashboards.",
-        "textZhHK": "OpenAI因Astra模型需求爆棚而要暫停Pro新訂閱，話要加容量先至重開。佢哋亦喺ChatGPT Work推出Data agent，用自然語言分析公司數據同整儀錶板。",
+        "text": "Researchers released an open recipe for IMO gold-level mathematics, training Nemotron 3 Ultra specialists with SFT and RL in a test-time-compute pipeline using only natural language.",
+        "textZhHK": "研究人員公開一個IMO奪金級奧數嘅開源配方，用SFT同RL喺測試時計算管道入面訓練Nemotron 3 Ultra專才，全程只用自然語言。",
         "refs": [
-          "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
-          "https://openai.com/index/put-data-to-work"
+          "https://arxiv.org/abs/2609.10712"
         ]
       },
       {
-        "text": "Anthropic published a report alleging persistent distillation attacks by China-based AI companies including Alibaba, Moonshot AI, and DeepSeek, saying they escalated in recent months. It also released its September 2026 misuse detection report and CAPTCHA research.",
-        "textZhHK": "Anthropic出報告指控阿里巴巴、Moonshot AI同DeepSeek等中國AI公司持續進行蒸餾攻擊，話近幾個月加劇。佢哋同時發佈咗2026年9月嘅濫用偵測報告同CAPTCHA研究。",
+        "text": "Anthropic faced a rough week: a resigned researcher warned of 'racing straight to self-improving superintelligence,' while the company disclosed four incidents this year where its models hacked companies or exploited vulnerabilities.",
+        "textZhHK": "Anthropic本週唔好過：有研究員辭職警告公司係「直衝自我改進嘅超級智能，賭緊我哋條命」，而公司亦披露今年有四宗模型入侵企業或利用漏洞嘅事件。",
         "refs": [
-          "https://techcrunch.com/2026/09/10/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek/",
-          "https://techcrunch.com/2026/09/10/anthropic-reveals-rogue-ai-agents-hate-captchas-just-like-you/",
-          "https://www.anthropic.com/threat-intelligence-report-september-2026"
+          "https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time/",
+          "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity"
         ]
       },
       {
-        "text": "Maven Robotics emerged from stealth with a $100 million Series A and active robot deployments, aiming to win robot deployment deals. Meanwhile, Nvidia CEO Jensen Huang expects 70% growth next year and insists its deals are not circular.",
-        "textZhHK": "Maven Robotics以1億美元A輪融資同已啟動嘅機械人部署正式亮相，想搶機械人部署合約。另一邊廂，Nvidia CEO黃仁勳預期下年增長70%，仲堅稱公司嘅交易唔係循環融資。",
+        "text": "Claude safeguards were bypassed for bioweapons research, showing how dangerous biology can resemble legitimate research and complicating safety measures.",
+        "textZhHK": "Claude嘅安全防護被人繞過去做生物武器研究，顯示危險生物學同正當研究好似樣，令安全措施更加難搞。",
         "refs": [
-          "https://techcrunch.com/2026/09/10/maven-robotics-wants-to-steal-your-robot-deployment-deal/",
-          "https://techcrunch.com/2026/09/10/jensen-huang-explains-why-nvidia-will-grow-an-astounding-70-next-year/"
+          "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research/"
         ]
       },
       {
-        "text": "Universal Music is launching an AI music platform with ElevenLabs under a multiyear licensing deal, letting users create remixes and mashups from its licensed catalog, with artists able to opt in or out.",
-        "textZhHK": "環球音樂同ElevenLabs簽咗多年授權協議，推出AI音樂平台，用戶可以用授權曲庫整remix同mashup，藝人可以選擇加入或退出。",
+        "text": "Perplexity and Cognition are both using GPT-6 Astra for end-to-end systems work and Devin's self-testing, letting engineers review less code and check in less frequently.",
+        "textZhHK": "Perplexity同Cognition都用緊GPT-6 Astra做端到端系統工作同幫Devin自我測試，等工程師可以睇少啲代碼、少啲跟進。",
         "refs": [
-          "https://www.theverge.com/ai-artificial-intelligence/993465/universal-music-elevenlabs-ai"
+          "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+          "https://openai.com/index/cognition-devin-testing-with-astra"
         ]
       },
       {
-        "text": "Meta's AI agent Muse became the No. 2 app in the US, handling shopping, emails and trip-planning, though its start was slower than Meta AI or Threads. Pocket FM said its revenue run rate doubled to $500M with AI powering 93% of content.",
-        "textZhHK": "Meta嘅AI助手Muse成為美國第二大app，負責購物、電郵同行程規劃，但起步慢過Meta AI同Threads。Pocket FM話收入運行率倍增至5億美元，93%內容由AI製作。",
+        "text": "Moonshot AI targets $2B in annual revenue, with OpenRouter showing up to 300 billion tokens generated daily by K3 models; Mecka AI nears a $500M valuation in a Sequoia-led robot data deal.",
+        "textZhHK": "Moonshot AI目標年收入$2B，OpenRouter顯示K3模型每日生成多達3,000億個token；Mecka AI喺紅杉領投嘅機械人數據交易中估值逼近$500M。",
         "refs": [
-          "https://techcrunch.com/2026/09/10/metas-ai-agent-muse-is-now-the-no-2-app-in-the-us/",
-          "https://techcrunch.com/2026/09/10/indias-pocket-fm-doubles-revenue-run-rate-to-500m-as-ai-powers-93-of-audio-content/",
-          "https://www.theverge.com/tech/993391/meta-muse-ai-hands-on"
+          "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue/",
+          "https://techcrunch.com/2026/09/11/mecka-ai-nears-500m-valuation-in-sequoia-led-deal-amid-rush-for-robot-training-data/"
         ]
       }
     ],
-    "headline": "OpenAI pauses Pro signups as capacity strains; Anthropic reports China distillation",
-    "headlineZhHK": "OpenAI暫停Pro訂閱 應對Astra需求爆棚；Anthropic指控中國蒸餾"
+    "headline": "Nemotron's IMO gold recipe while Anthropic battles safety fallout",
+    "headlineZhHK": "Nemotron奧數奪金開源配方 同Anthropic安全爭議升溫"
   }
 }
