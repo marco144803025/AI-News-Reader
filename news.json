@@ -1,20 +1,362 @@
 {
-  "generatedAt": "2026-09-13T10:47:25.832Z",
+  "generatedAt": "2026-09-14T11:13:17.399Z",
   "daysBack": 3,
   "categories": [
+    "Open Source",
+    "Research",
+    "Agent Frameworks",
     "Applications",
     "AI Safety & Alignment",
+    "Regulation & Policy",
+    "Other",
     "Developer Tools",
     "Business & Funding",
     "Hardware & Compute",
-    "Regulation & Policy",
-    "Other",
-    "Research",
-    "Agent Frameworks",
-    "Open Source",
     "Model Releases"
   ],
   "articles": [
+    {
+      "title": "Occamy-1.0: Open Pareto-frontier 35B Intelligence for Co-work",
+      "url": "https://arxiv.org/abs/2609.11977",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "snippet": "arXiv:2609.11977v1 Announce Type: new Abstract: Co-work agents execute complex workflows that combine information gathering, tool use, coding, and file manipulation across many model invocations. Because cost and latency accumulate over the full episode, their practical value depends not only on peak capability but also on how efficiently that capability is delivered. Yet many steps in everyday work emphasize state tracking, coordination, recovery, and follow-through rather than frontier-scale reasoning. We present Occamy-1.0, a cost-efficient co-work model obtained by further training the pos",
+      "category": "Open Source",
+      "summary": "Occamy-1.0 is an open Pareto-frontier 35B co-work model trained to be cost-efficient for agent workflows spanning information gathering, tool use, coding, and file manipulation, where latency and cost accumulate across an episode.",
+      "summaryZhHK": "Occamy-1.0 係一個開放、處於 Pareto 前沿嘅 35B co-work 模型，專門訓練到夠慳成本，應付資訊收集、工具調用、寫程式同檔案操作等 agent 工作流程，因為呢啲流程嘅延遲同成本會喺整段 episode 度不斷累積。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "llm"
+        ],
+        "traits": [
+          "open-source",
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Harness or Model? Isolating the Harness Effect in Agentic Coding with a Contamination-Controlled Private Suite",
+      "url": "https://arxiv.org/abs/2609.11987",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "snippet": "arXiv:2609.11987v1 Announce Type: new Abstract: An agentic coding system couples a language model to a harness: the tools, prompts and control flow that turn a chat model into an autonomous software engineer. Vendors ship harnesses tuned to their own models, and practitioners assume the vendor-native pairing solves more tasks. We measure that assumption with paired same-model contrasts on a private, contamination-controlled suite of 256 repository and post-cutoff contest tasks. The same 80 tasks ran under claude-agent-sdk and under deepagents on claude-opus-4-8, and under the openai-codex SDK ",
+      "category": "Research",
+      "summary": "Using a contamination-controlled private suite of 256 repository and post-cutoff contest tasks, researchers isolate the harness effect in agentic coding, comparing claude-agent-sdk, deepagents, and the openai-codex SDK on the same models.",
+      "summaryZhHK": "研究人員用一個污染受控嘅私人測試集（256 個 repository 同 cutoff 後嘅比賽題目），去隔離 agentic coding 入面嘅 harness 效應，喺同一批模型上比較 claude-agent-sdk、deepagents 同 openai-codex SDK。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "evaluation",
+          "agentic"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": [
+          "claude"
+        ]
+      }
+    },
+    {
+      "title": "Reading the Whole Heart: Latent-Attention Masked Autoencoders for Multimodal Cardiac Representation Learning",
+      "url": "https://arxiv.org/abs/2609.12035",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "snippet": "arXiv:2609.12035v1 Announce Type: new Abstract: Cardiovascular diagnosis rests on integrating complementary modalities, like ECG, echocardiography, chest radiographs, and clinical variables, each capturing distinct but correlated aspects of cardiac physiology. Yet most medical foundation models remain modality-specific, combining modalities only for finetuning or post-training. This discards the cross-modal evidence clinicians naturally integrate and ignores the structure within each modality. We introduce Latent-Attention Masked Autoencoders (LAMAE), a multimodal, structure-aware masked autoe",
+      "category": "Research",
+      "summary": "LAMAE is a multimodal, structure-aware masked autoencoder that jointly learns representations from ECG, echocardiography, chest radiographs, and clinical variables instead of treating each modality in isolation.",
+      "summaryZhHK": "LAMAE 係一個多模態、結構感知嘅 masked autoencoder，會一次過從 ECG、心臟超聲波、胸部 X 光同臨床變數度聯合學習表徵，而唔係將每個模態分開處理。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal",
+          "vision"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Competence-Gated Pooling of Language Models and Priors for Event Forecasting",
+      "url": "https://arxiv.org/abs/2609.12101",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "snippet": "arXiv:2609.12101v1 Announce Type: new Abstract: In hybrid forecasting, a language model is often one of several available signals. A system may already have a market, crowd, or statistical forecast and must decide whether the model adds useful information or should be ignored. The relevant target is therefore not standalone model accuracy, but relative competence, defined as the model's marginal value beyond the available external forecast. Under Brier loss, we characterize when model disagreement can improve an external forecast and derive the gain from using domain-specific rather than globa",
+      "category": "Research",
+      "summary": "The paper frames hybrid event forecasting around a language model's relative competence — its marginal value beyond an existing market, crowd, or statistical forecast — and derives under Brier loss when model disagreement improves that external forecast.",
+      "summaryZhHK": "篇論文將混合式事件預測嘅重點放喺語言模型嘅相對能力——即係喺已有市場、群眾或者統計預測之外嘅邊際價值——並喺 Brier loss 之下推導出幾時模型之間嘅分歧可以改善外部預測。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning",
+          "evaluation"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Language Is an Insufficient Substrate for Quantitative Reasoning, and Consequential Domains Need Large Quantitative Models",
+      "url": "https://arxiv.org/abs/2609.12105",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "snippet": "arXiv:2609.12105v1 Announce Type: new Abstract: The prevailing assumption in applied machine learning is that progress on consequential quantitative decisions such as pricing risk, allocating capital, triaging patients, or containing a network intrusion will follow from progress in large language models (LLMs). A language model is trained on a representation of the world that was produced by human description; description is a lossy encoding of the quantitative record, and the loss is irreversible: no downstream model, at any scale, can recover from a description what the description did not e",
+      "category": "Research",
+      "summary": "The authors argue language is a lossy encoding of the quantitative record, so progress on consequential decisions like pricing risk, allocating capital, or triaging patients requires Large Quantitative Models rather than LLMs alone.",
+      "summaryZhHK": "作者認為語言只係對量化紀錄嘅有損編碼，所以定價風險、配置資本、病人分流等重大決策要有進展，就唔可以單靠 LLM，而係需要 Large Quantitative Models。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning",
+          "llm"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Can LLMs in Draft-Verify-Revise Pipelines Resolve Deictic Ambiguity?",
+      "url": "https://arxiv.org/abs/2609.12162",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "snippet": "arXiv:2609.12162v1 Announce Type: new Abstract: Draft-verify-revise is a common LLM orchestration pattern for scaling inference-time compute. One LLM drafts, a second critiques the draft and provides feedback, and a third uses that feedback to revise the draft into the final output. As context cascades between stages, LLMs at different stages can resolve a context-dependent expression such as \"previous\" differently. When that happens, the expression undergoes a deictic shift, a change in what it refers to. This phenomenon was studied with a synthetic dataset of 10 base examples, each rendered ",
+      "category": "Research",
+      "summary": "The study examines whether draft-verify-revise LLM pipelines resolve deictic ambiguity, since context cascading between stages can shift what an expression like 'previous' refers to.",
+      "summaryZhHK": "呢項研究探討 draft-verify-revise 嘅 LLM pipeline 能唔能夠解決指示詞歧義，因為 context 喺各個階段之間傳遞時，好似「previous」呢類詞嘅指涉對象可能會轉移。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning",
+          "inference",
+          "llm"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "GLARE: Generative Learning via Adversarial Reward Estimation For Social Dynamics Forecasting",
+      "url": "https://arxiv.org/abs/2609.12165",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "snippet": "arXiv:2609.12165v1 Announce Type: new Abstract: Meeting continuation requires tracking the agenda, speaker roles, participant intentions, and disagreement across long multi-party discussions. We introduce the Meeting Dynamic Forecasting Benchmark (MDFB), constructed from 2,207 real-world meetings and 24,794 future-facing queries. Given a transcript prefix and an active question, a model generates a plausible multi-turn continuation in one call. We evaluate utility---progress toward the question---and human-likeness---plausible conversational flow and role consistency---without requiring exact ",
+      "category": "Research",
+      "summary": "GLARE combines adversarial reward estimation with generative learning for social dynamics forecasting, and introduces the Meeting Dynamic Forecasting Benchmark (MDFB) built from 2,207 real meetings and 24,794 future-facing queries.",
+      "summaryZhHK": "GLARE 將對抗式 reward 估計同生成式學習結合，用嚟預測社交動態，並提出 Meeting Dynamic Forecasting Benchmark（MDFB），由 2,207 場真實會議同 24,794 條面向未來嘅查詢建構而成。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "evaluation",
+          "training"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "WinSyn: An Automated Pipeline for Realistic Enterprise Question-Answering Evaluation",
+      "url": "https://arxiv.org/abs/2609.12171",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "snippet": "arXiv:2609.12171v1 Announce Type: new Abstract: Enterprise settings provide a challenging environment for question-answering agents, which often rely on Retrieval-Augmented Generation, Deep Research (DR), and related techniques. Much of this challenge comes from the complexity of enterprise data: information is often spread across evolving and potentially conflict- ing emails, chat messages, documents, and other artifacts. Existing benchmarks typically have limited real-world complexity, short-form responses, and unnatural queries, so they often fail to capture the challenges of enterprise set",
+      "category": "Research",
+      "summary": "WinSyn is an automated pipeline for generating realistic enterprise question-answering evaluations, addressing benchmarks that lack real-world complexity, natural queries, and long-form responses.",
+      "summaryZhHK": "WinSyn 係一條自動化 pipeline，用嚟生成貼近現實嘅企業問答評估，針對現有 benchmark 缺乏真實複雜度、查詢夠自然同長篇回答嘅問題。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "evaluation",
+          "rag"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Soft Symbol Grounding for Prototypical Concepts",
+      "url": "https://arxiv.org/abs/2609.12247",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "snippet": "arXiv:2609.12247v1 Announce Type: new Abstract: Neuro-symbolic models are usually trained with supervision only on final labels, leaving the intermediate concepts unobserved. Since many concept assignments are consistent with a given label, training can predict labels correctly while recovering the wrong concepts, a failure known as a reasoning shortcut. Prototypical networks reduce shortcuts by anchoring each concept to a few labeled examples, but existing methods still couple perception and reasoning through a hand-crafted, task-specific differentiable loss that must be redesigned for every ",
+      "category": "Research",
+      "summary": "The paper proposes soft symbol grounding for prototypical concepts to reduce reasoning shortcuts, avoiding the hand-crafted task-specific differentiable losses that couple perception and reasoning in existing neuro-symbolic methods.",
+      "summaryZhHK": "篇論文提出用 soft symbol grounding 去處理 prototypical concepts，減少 reasoning shortcut，避免好似現有 neuro-symbolic 方法咁，要為每個任務手寫 differentiable loss 嚟綁死感知同推理。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "interpretability",
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "GTA: Graph Theory Agent and Benchmark for Algorithmic Graph Reasoning with LLMs",
+      "url": "https://arxiv.org/abs/2609.12265",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "snippet": "arXiv:2609.12265v1 Announce Type: new Abstract: Large Language Models (LLMs) are increasingly asked to reason over structured data such as graphs, yet how reliably they can carry out multi-step graph algorithms in language remains unclear. Existing evaluations tend to use simple tasks on small graphs, to score code generation rather than reasoning over the graph itself, or to fix a single input format. We introduce Graph Theory Bench (GT Bench), a benchmark covering 24 classical graph problems in 44 task-structure settings, with over 100,000 examples across four representations: natural langua",
+      "category": "Research",
+      "summary": "GTA introduces Graph Theory Bench (GT Bench), covering 24 classical graph problems across 44 task-structure settings with over 100,000 examples in four representations, plus an agent for algorithmic graph reasoning with LLMs.",
+      "summaryZhHK": "GTA 推出 Graph Theory Bench（GT Bench），涵蓋 24 個經典圖論問題、44 種任務結構設定，超過 100,000 個例子同四種表徵方式，仲包一個用 LLM 做演算法圖論推理嘅 agent。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning",
+          "evaluation",
+          "llm"
+        ],
+        "traits": [
+          "benchmark"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Learning Symbolic Constraint Representations from Examples: A Neuro-Symbolic Approach",
+      "url": "https://arxiv.org/abs/2609.12267",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "snippet": "arXiv:2609.12267v1 Announce Type: new Abstract: Learning user-defined concepts as constraint networks has been extensively studied in the constraint acquisition (CA) literature. However, existing approaches typically rely on intensive interactions with a human oracle, making the learning process costly in terms of time and number of queries. In this paper, we propose a neuro-symbolic framework for automatic CA that significantly reduces user involvement by introducing neural Oracle Transformer models which learn to emulate user responses and to generalize conceptual knowledge. Trained on previ",
+      "category": "Research",
+      "summary": "A neuro-symbolic framework for constraint acquisition trains Oracle Transformer models that emulate user responses, cutting the number of human queries needed to learn user-defined concepts as constraint networks.",
+      "summaryZhHK": "一個用嚟做 constraint acquisition 嘅 neuro-symbolic 框架，訓練 Oracle Transformer 模型去模擬用戶回應，減少學習用戶自訂概念（以約束網絡形式）所需嘅人手查詢次數。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning",
+          "training"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "T-GADE: Thermodynamical Generative-AI-Driven Evolution of LLM Artifacts",
+      "url": "https://arxiv.org/abs/2609.12286",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "snippet": "arXiv:2609.12286v1 Announce Type: new Abstract: Integrating evolutionary computation and large language models (LLMs) requires control of population diversity as well as generative capability. Among LLM outputs, those with explicit structure, such as a description paired with code, are structured artifacts; we use artifact for short. We propose T-GADE, which evolves these artifacts by extending thermodynamical genetic algorithms through LLM-based genetic operators and artifact-level diversity evaluation. A common free-energy objective supports generational and steady-state updates, with Fermi-",
+      "category": "Research",
+      "summary": "T-GADE evolves structured LLM artifacts, such as a description paired with code, by extending thermodynamical genetic algorithms with LLM-based genetic operators and artifact-level diversity evaluation under a free-energy objective.",
+      "summaryZhHK": "T-GADE 透過將熱力學遺傳演算法延伸，加入基於 LLM 嘅遺傳算子同 artifact 層面嘅多樣性評估，以自由能目標去演化結構化嘅 LLM artifact，例如一段描述配一段程式碼。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "training",
+          "llm"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "AIM: A Privacy-Aware Interoperable Memory Framework for Multi-Agent Multi-User LLM Systems",
+      "url": "https://arxiv.org/abs/2609.12320",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "snippet": "arXiv:2609.12320v1 Announce Type: new Abstract: Traditional large language models (LLMs) are scoped to individual user sessions, limiting their knowledge to a single conversation and preventing them from learning user preferences that evolve over time. Existing agentic memory systems address this limitation but generally operate at the individual-user level, restricting the public knowledge that could be shared across users to improve downstream responses. We introduce AIM (Agentic Interoperable Memory), a unified, privacy-aware memory framework that enables multi-agent, multi-user LLM systems",
+      "category": "Agent Frameworks",
+      "summary": "AIM is a privacy-aware interoperable memory framework that lets multi-agent, multi-user LLM systems share public knowledge and learn evolving user preferences beyond individual sessions.",
+      "summaryZhHK": "AIM 係一個兼顧私隱同互通性嘅記憶框架，令多 agent、多用戶嘅 LLM 系統可以共享公開知識，並且跨住單次對話去學習不斷變化嘅用戶偏好。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "rag",
+          "llm"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Affective Agent: On-Device Personalized Intervention Reasoning for Wearable Systems",
+      "url": "https://arxiv.org/abs/2609.12322",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "snippet": "arXiv:2609.12322v1 Announce Type: new Abstract: Affective computing has advanced wearable state inference, but on-device reasoning about whether, when, and how to intervene remains challenging. We present Affective Agent, a three-layer reference architecture for personalized intervention reasoning under uncertainty on wearable-class hardware. It combines a compact sub-billion-parameter language model with physiological evidence, context, and user history to decide whether, when, and how to intervene, without cloud dependency or per-user retraining. The architecture is organized into three inte",
+      "category": "Applications",
+      "summary": "Affective Agent is a three-layer on-device reference architecture pairing a sub-billion-parameter language model with physiological evidence, context, and user history to decide whether, when, and how to intervene via wearables, without cloud dependency or per-user retraining.",
+      "summaryZhHK": "Affective Agent 係一個三層式 on-device 參考架構，用一個少於十億參數嘅語言模型，配合生理數據、情境同用戶歷史，去決定要唔要、幾時同點樣透過穿戴裝置作出干預，完全唔使靠雲端，亦唔使逐個用戶重新訓練。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "inference"
+        ],
+        "traits": [],
+        "entities": [
+          "google"
+        ]
+      }
+    },
+    {
+      "title": "Toward Robust Personalized Alignment for LLMs: Mitigating Persona Drift in Multi-Turn Dialogue",
+      "url": "https://arxiv.org/abs/2609.12373",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "snippet": "arXiv:2609.12373v1 Announce Type: new Abstract: Persona drift remains a central challenge for personalized language models, as user profiles evolve over long interactions rather than remain permanently fixed. Models must therefore revise persistent persona states when preferences genuinely change, while avoiding updates driven by transient, ambiguous, or unresolved observations. We propose CORE, which separates turn-local evidence from persistent persona-state revision and selectively updates grounded user preferences through uncertainty-aware belief revision. We also introduce PERSIST, a held",
+      "category": "AI Safety & Alignment",
+      "summary": "CORE separates turn-local evidence from persistent persona-state revision so personalized LLMs can update grounded user preferences under uncertainty while avoiding persona drift; the authors also release the PERSIST benchmark.",
+      "summaryZhHK": "CORE 將單輪對話嘅局部證據同持久 persona 狀態嘅修訂分開處理，令個人化 LLM 可以喺不確定情況下更新有根據嘅用戶偏好，同時避免 persona drift；作者仲發佈咗 PERSIST 基準。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "alignment",
+          "fine-tuning",
+          "evaluation",
+          "llm"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "Open-source AI and open models reading list",
+      "url": "https://www.interconnects.ai/p/open-source-ai-reading-list",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-09-14T00:22:51.000Z",
+      "snippet": "Article URL: https://www.interconnects.ai/p/open-source-ai-reading-list Comments URL: https://news.ycombinator.com/item?id=49690260 Points: 116 # Comments: 23",
+      "category": "Open Source",
+      "summary": "A curated open-source AI and open models reading list from Interconnects, shared on Hacker News with 116 points and 23 comments.",
+      "summaryZhHK": "Interconnects 出咗一份精選嘅開源 AI 同開放模型閱讀清單，喺 Hacker News 貼出後拎到 116 分同 23 條留言。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm"
+        ],
+        "traits": [
+          "open-source",
+          "tutorial"
+        ],
+        "entities": []
+      }
+    },
     {
       "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
       "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
@@ -34,6 +376,135 @@
           "gpt",
           "openai"
         ]
+      }
+    },
+    {
+      "title": "Trump and Mike Johnson think the AI industry is overreacting",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/994441/trump-mike-johnson-ai-industry-overreacting",
+      "source": "The Verge AI",
+      "publishedAt": "2026-09-13T19:41:48.000Z",
+      "snippet": "Yesterday, Anthropic CEO Dario Amodei published a lengthy open letter saying it was time to \"pace the frontier\" and slow down AI development. OpenAI's Sam Altman and Elon Musk both agreed, publicly voicing their support on X. Even Alphabet's Demis Hassabis offered tentative support for Amodei's proposal. Donald Trump and House Speaker Mike Johnson, however, seem to think the AI executives are being overreactive and fear that a pause could lead to China outpacing the US in the AI race. According to the Financial Times, Trump said \"Look, we're leading China in AI … and, frankly, I want to keep i",
+      "category": "Regulation & Policy",
+      "summary": "Anthropic CEO Dario Amodei's open letter urging a slowdown of frontier AI development drew support from Sam Altman, Elon Musk, and Demis Hassabis, but President Trump and House Speaker Mike Johnson called the industry's fears overblown, warning a pause could let China overtake the US.",
+      "summaryZhHK": "Anthropic 行政總裁 Dario Amodei 發表公開信，呼籲「放慢前沿」AI 發展步伐，獲 Sam Altman、Elon Musk 同 Demis Hassabis 表態支持；不過美國總統 Trump 同眾議院議長 Mike Johnson 就覺得業界反應過大，警告一旦暫停發展，中國隨時爬頭超越美國。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "anthropic",
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "There Is No AI (It's Just People) with Jaron Lanier",
+      "url": "https://singjupost.com/startalk-there-is-no-ai-really-its-just-people-w-jaron-lanier-transcript/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-09-13T19:41:06.000Z",
+      "snippet": "Article URL: https://singjupost.com/startalk-there-is-no-ai-really-its-just-people-w-jaron-lanier-transcript/ Comments URL: https://news.ycombinator.com/item?id=49687869 Points: 76 # Comments: 94",
+      "category": "Other",
+      "summary": "In a StarTalk episode, Jaron Lanier argues there is no AI in the sense often claimed — it is really just people, a transcript of which is circulating on Hacker News.",
+      "summaryZhHK": "喺一集 StarTalk 入面，Jaron Lanier 主張所謂 AI 其實唔係大家講到咁——歸根究柢都係人嚟嘅；相關文字紀錄而家喺 Hacker News 度流傳。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "What’s behind the AI industry’s latest warnings of doom?",
+      "url": "https://techcrunch.com/2026/09/13/whats-behind-the-ai-industrys-latest-warnings-of-doom/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-13T19:40:15.000Z",
+      "snippet": "On Equity, we discussed the AI industry's latest debate about whether it poses an existential threat to humanity.",
+      "category": "AI Safety & Alignment",
+      "summary": "On the Equity podcast, the team discussed the AI industry's latest debate over whether the technology poses an existential threat to humanity.",
+      "summaryZhHK": "喺 Equity 播客入面，主持團隊討論咗 AI 業界最新一輪爭論：究竟呢項技術會唔會對人類構成存亡威脅。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "AI recursive self-improvement might not come so quickly after all",
+      "url": "https://www.technologyreview.com/2026/08/18/1142188/ai-recursive-self-improvement/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-09-13T18:49:44.000Z",
+      "snippet": "Article URL: https://www.technologyreview.com/2026/08/18/1142188/ai-recursive-self-improvement/ Comments URL: https://news.ycombinator.com/item?id=49687334 Points: 73 # Comments: 73",
+      "category": "AI Safety & Alignment",
+      "summary": "A MIT Technology Review piece argues that AI recursive self-improvement may not arrive as quickly as many assume, a claim being discussed on Hacker News.",
+      "summaryZhHK": "《MIT Technology Review》一篇文章認為，AI 遞歸自我改進未必好似好多人諗嘅咁快殺到，呢個講法而家喺 Hacker News 度引起討論。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "llm"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Obama urges Democrats to have a ‘clear plan’ for AI safeguards",
+      "url": "https://techcrunch.com/2026/09/13/obama-urges-democrats-to-have-a-clear-plan-for-ai-safeguards/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-13T16:30:00.000Z",
+      "snippet": "Obama recently said that Democrats need to make artificial intelligence one of their “central agendas” and “have a very clear plan” to address concerns around the technology’s economic impact and safety.",
+      "category": "Regulation & Policy",
+      "summary": "Barack Obama said Democrats must make AI a 'central agenda' and 'have a very clear plan' to address the technology's economic impact and safety concerns.",
+      "summaryZhHK": "Barack Obama 話民主黨一定要將 AI 列為「核心議程」，並且「要有非常清晰嘅計劃」，去應對呢項技術帶嚟嘅經濟影響同安全隱憂。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "gpt"
+        ]
+      }
+    },
+    {
+      "title": "AI models don't kill people – people kill people",
+      "url": "https://www.theregister.com/ai-and-ml/2026/09/09/ai-models-dont-kill-people-people-kill-people/5295368",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-09-13T13:33:34.000Z",
+      "snippet": "Article URL: https://www.theregister.com/ai-and-ml/2026/09/09/ai-models-dont-kill-people-people-kill-people/5295368 Comments URL: https://news.ycombinator.com/item?id=49683834 Points: 50 # Comments: 69",
+      "category": "AI Safety & Alignment",
+      "summary": "A Register opinion piece argues that AI models do not kill people — people kill people — pushing back on claims that models themselves are the direct cause of harm.",
+      "summaryZhHK": "《The Register》一篇評論文章指出，AI 模型唔會殺人——殺人嘅係人——反駁咗啲將傷害直接歸咎於模型本身嘅講法。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy",
+          "incident"
+        ],
+        "entities": []
       }
     },
     {
@@ -5602,583 +6073,102 @@
           "meta"
         ]
       }
-    },
-    {
-      "title": "Position: Reasoning is a Learnable Rule-Based Process",
-      "url": "https://arxiv.org/abs/2608.12325",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-15T04:00:00.000Z",
-      "snippet": "arXiv:2608.12325v1 Announce Type: new Abstract: Autonomous reasoning is among the most scientifically and economically motivating topics in AI today. Historically the purview of symbolic AI, recent advances have mainly emerged from deep probabilistic generative models. Despite immense interest and rapid progress, the generative AI community has not clearly converged on operational definitions for reasoning and often implicitly rejects the historical treatment of this topic in logic and verifiable automated reasoning. This position contends that definitional ambiguity leaves the construct valid",
-      "category": "Research",
-      "summary": "A position paper argues that reasoning should be treated as a learnable rule-based process, critiquing the generative AI community's lack of operational definitions for reasoning.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "reasoning"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Diagnostic Foundation for Evaluating LLMs' Research Integrity as Co-Scientists",
-      "url": "https://arxiv.org/abs/2608.12345",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-15T04:00:00.000Z",
-      "snippet": "arXiv:2608.12345v1 Announce Type: new Abstract: Language models are increasingly deployed as co-scientists, yet their ability to uphold research integrity under institutional pressure remains unmeasured. We introduce IntegrityBench, a benchmark evaluating misconduct classification, ethical action reasoning and artifact-grounded decision making across 36 paired tasks under a 5-level implicit-explicit pressure protocol spanning 3 domains and 4 research stages. Evaluating 18 frontier model variants, we find that under peak pressure, models fail roughly 1 in 3 integrity-critical decisions, and nei",
-      "category": "Research",
-      "summary": "IntegrityBench, a new benchmark, evaluates LLMs' ability to maintain research integrity under institutional pressure, finding models fail roughly 1 in 3 integrity-critical decisions.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "llm",
-          "evaluation"
-        ],
-        "traits": [
-          "benchmark"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Position: The Alignment Community is Unintentionally Building a Censor's Toolkit",
-      "url": "https://arxiv.org/abs/2608.12346",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-15T04:00:00.000Z",
-      "snippet": "arXiv:2608.12346v1 Announce Type: new Abstract: This position paper argues that modern AI alignment methods - originally designed to prevent harmful output - are dual-use technologies that may easily be misused by malicious actors for censorship and manipulation. By mapping current alignment techniques to the possibility and actual cases of misuse, we show that the quest for a \"perfectly aligned\" model inadvertently also provides malicious actors with an ever-improving tool for informational dominance. We need to discuss this dual-use potential now, as its risk is exacerbated by rapid user ado",
-      "category": "AI Safety & Alignment",
-      "summary": "A position paper warns that modern AI alignment methods designed to prevent harm are dual-use technologies with potential for misuse in censorship and manipulation.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "alignment",
-          "safety"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Agreement Is Not Alignment: Divergent Moral Grounds in Human and LLM Ethical Judgments",
-      "url": "https://arxiv.org/abs/2608.12368",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-15T04:00:00.000Z",
-      "snippet": "arXiv:2608.12368v1 Announce Type: new Abstract: Agreement with human judgments is a common proxy for evaluating the alignment of large language models (LLMs). Yet agreement in final labels does not show that human annotators and models rely on the same moral grounds. Two agents may reach the same judgment while appealing to different principles, contextual assumptions, or interpretations of the situation. We test this distinction using a curated 500-item ETHICS-derived benchmark spanning five domains of moral judgment, with new human annotator and LLM annotations of both final labels and suppo",
-      "category": "Research",
-      "summary": "A study demonstrates that LLM agreement with human ethical judgments masks disagreement on underlying moral grounds, challenging alignment evaluation assumptions.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "alignment",
-          "evaluation"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Multi-Agent Scheduling with LLM-Assisted Contract Net Negotiation for Stream Processing in Mobile Edge Computing",
-      "url": "https://arxiv.org/abs/2608.12371",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-15T04:00:00.000Z",
-      "snippet": "arXiv:2608.12371v1 Announce Type: new Abstract: Stream-processing systems increasingly operate across heterogeneous mobile edge--cloud infrastructures, where workload volatility, resource contention, and stringent quality-of-service (QoS) requirements complicate decentralized scheduling. This paper proposes \\emph{MAS-DecStream}, whose main contribution is \\emph{LLM-MR-CNP}: an extension of the classical Contract Net Protocol with semantic CFP formulation, progressive context disclosure, multi-round proposal revision, negotiation memory, and deterministic validation. Edge-cluster agents refine ",
-      "category": "Agent Frameworks",
-      "summary": "MAS-DecStream proposes LLM-assisted multi-agent scheduling using extended Contract Net Protocol for edge-cloud stream processing with semantic negotiation.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "llm"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Position: We Need Practical AI Alignment Methods to Mirror Human Reasoning",
-      "url": "https://arxiv.org/abs/2608.12372",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-15T04:00:00.000Z",
-      "snippet": "arXiv:2608.12372v1 Announce Type: new Abstract: AI systems are increasingly employed as decision aids, decision delegates, or autonomous decision-makers. This position paper argues that in many settings, particularly high-stakes decision-making, we need accurate cognitively-aligned AI systems that reason similarly to their users, and faithfully communicate their reasoning. We review evidence that cognitive alignment improves understandability and trustworthiness, and provide new survey data showing that many users find cognitive alignment \"essential\" when an AI's rationale for a judgment or ac",
-      "category": "AI Safety & Alignment",
-      "summary": "A position paper argues that high-stakes AI decision-making requires cognitive alignment where systems reason similarly to users and communicate transparently.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "alignment",
-          "safety"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Don't Want Your LLM to Recommend Nuclear Strike? Try Asking It in Japanese",
-      "url": "https://arxiv.org/abs/2608.12373",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-15T04:00:00.000Z",
-      "snippet": "arXiv:2608.12373v1 Announce Type: new Abstract: Large language models are increasingly used in strategic and advisory contexts, yet their safety alignment is typically evaluated in English only. We test nine models from six providers and ask whether the language of a prompt can change a model's decision in a high-stakes scenario. We use single-turn game-theoretic vignettes in which a model advises a nuclear-armed nation on whether to strike a defenseless opponent. The prompt is intentionally amoral and strategically identical across languages. We find that Japanese prompts reduce launch rates ",
-      "category": "AI Safety & Alignment",
-      "summary": "Research finds that prompting models in Japanese significantly reduces their likelihood of recommending nuclear strikes versus English prompts, revealing alignment vulnerabilities.",
-      "important": true,
-      "tags": {
-        "topics": [
-          "safety",
-          "llm"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Dual-Flow Transformers: Decoupling the Primary Prefill Path from Additional Decode Computation",
-      "url": "https://arxiv.org/abs/2608.12385",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-15T04:00:00.000Z",
-      "snippet": "arXiv:2608.12385v1 Announce Type: new Abstract: As large language models serve more requests, cumulative inference cost is becoming increasingly important relative to one-time training cost. The two inference phases stress hardware differently: prompt prefill is parallel and typically compute-bound, whereas autoregressive decode is sequential and often memory-bandwidth-bound. Conventional width or depth scaling increases both costs together because every added layer is evaluated in both phases. We ask whether additional learned computation can instead be allocated to continuation prediction wh",
-      "category": "Hardware & Compute",
-      "summary": "Dual-Flow Transformers decouple prefill and decode computation paths to optimize hardware utilization for different inference bottlenecks.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "inference",
-          "architecture"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Learning to Adapt Cross-Domain Preferences via Meta-LoRA for LLM Personalization",
-      "url": "https://arxiv.org/abs/2608.12389",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-15T04:00:00.000Z",
-      "snippet": "arXiv:2608.12389v1 Announce Type: new Abstract: Cross-domain zero- or few-shot personalization aims to generate user-preferred responses in unseen conversational domains from only a handful of target-domain interactions. Existing adaptation methods struggle to calibrate update magnitude under sparse evidence and thus overfit, whereas history-transfer methods often entangle user preferences with source-domain artifacts, yielding unreliable personalization priors and negative transfer. To calibrate adaptation to evidence quality, we propose PAC-Bayes-regularized Meta-LoRA, which uses a meta-lear",
-      "category": "Research",
-      "summary": "PAC-Bayes-regularized Meta-LoRA enables cross-domain few-shot personalization of LLMs by calibrating adaptation magnitude through meta-learning.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "llm",
-          "fine-tuning"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Research Assistant: AstraZeneca's Agentic System for R&D",
-      "url": "https://arxiv.org/abs/2608.12395",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-15T04:00:00.000Z",
-      "snippet": "arXiv:2608.12395v1 Announce Type: new Abstract: We describe Research Assistant, an internal LLM-based system developed at AstraZeneca to help scientists and clinicians explore biomedical questions across a broad range of data sources. The system provides a chat-style interface that brings together evidence from scientific literature, knowledge graphs, chemistry, clinical trials, safety resources, expression data, and internal experimental systems. It supports both a fast mode for direct question answering and a multi-step mode for more complex research tasks. Responses are grounded in retrieve",
-      "category": "Applications",
-      "summary": "AstraZeneca's Research Assistant is an LLM-based agentic system that helps scientists explore biomedical questions across literature, knowledge graphs, and clinical data.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "rag",
-          "applications"
-        ],
-        "traits": [],
-        "entities": []
-      }
-    },
-    {
-      "title": "Large Language Models Can Follow Instructions, But Not Many at Once: Phase Transitions in Compositional Constraint Satisfaction",
-      "url": "https://arxiv.org/abs/2608.12426",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-15T04:00:00.000Z",
-      "snippet": "arXiv:2608.12426v1 Announce Type: new Abstract: Large language models are increasingly deployed in settings that require simultaneous adherence to multiple explicit constraints - reasoning structure, safety boundaries, output schemas. Individual constraints are handled proficiently, but the compositional regime, where many must hold jointly, remains poorly characterized: how rapidly does performance degrade, what governs the degradation, and can the collapse be mitigated? We introduce Constraint Saturation Evaluation (CSE), a procedurally generated benchmark that systematically varies the numb",
-      "category": "Research",
-      "summary": "Constraint Saturation Evaluation benchmark reveals LLMs rapidly degrade when adhering to multiple simultaneous constraints, exhibiting phase transition behavior.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "llm",
-          "evaluation",
-          "reasoning"
-        ],
-        "traits": [],
-        "entities": []
-      }
-    },
-    {
-      "title": "MindMemOS: A Portable and Self-Evolving Memory Operating Layer for AI Agents",
-      "url": "https://arxiv.org/abs/2608.12428",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-15T04:00:00.000Z",
-      "snippet": "arXiv:2608.12428v1 Announce Type: new Abstract: Memory is a core component of AI agents, enabling them to accumulate experience, maintain personalization, and adapt over long-term interactions. However, existing memory systems often remain fixed after development, limiting their ability to adapt their memory models, organization strategies, and procedural knowledge through continued use. We present MindMemOS, a portable and self-evolving memory operating layer that organizes open-world information using a unified entity property timestructure. MindMemOS supports scenario-adaptive memory modeli",
-      "category": "Agent Frameworks",
-      "summary": "MindMemOS introduces a self-evolving memory operating layer for AI agents that adapts memory models and organization strategies through continued use.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "memory"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Governed Persistent Memory: Source-Bound State Semantics and Fail-Closed Release for Long-Horizon Agents",
-      "url": "https://arxiv.org/abs/2608.12476",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-15T04:00:00.000Z",
-      "snippet": "arXiv:2608.12476v1 Announce Type: new Abstract: Long-term agent memory is usually treated as select--store--retrieve, but retrieval does not decide whether contradictory, superseded, retracted, deleted, or stale records may support an outgoing claim. We introduce Governed Persistent Memory (GPM), an auditable bitemporal state-transition model with source-bound admission, derived lifecycle state, current public barriers, and fail-closed structured release. Five executable clauses cover ledger integrity, source binding, conflict isolation, non-revival after retraction or deletion, and exact clai",
-      "category": "Agent Frameworks",
-      "summary": "Governed Persistent Memory (GPM) provides an auditable bitemporal state model for long-horizon agents with source-bound admission and fail-closed release.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "memory"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "$\\varepsilon$-MemEvo: Adaptive Cross-Task Memory Transfer for LLM Program Evolution",
-      "url": "https://arxiv.org/abs/2608.12522",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-15T04:00:00.000Z",
-      "snippet": "arXiv:2608.12522v1 Announce Type: new Abstract: LLM-based program evolution systems such as FunSearch and AlphaEvolve have shown strong ability to discover novel algorithms, but typically optimize each task in isolation, discarding search experience after completion. We introduce $\\varepsilon$-MemEvo, a framework for cross-task knowledge transfer in LLM program evolution. $\\varepsilon$-MemEvo stores prior experience as task-agnostic tactic memories: compact natural-language summaries of successful algorithmic strategies rather than raw code, enabling transfer across tasks with different APIs a",
-      "category": "Research",
-      "summary": "ε-MemEvo enables cross-task knowledge transfer in LLM program evolution by storing successful strategies as task-agnostic tactic memories.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "llm",
-          "training"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Trie Automata for Constrained Decoding over Large Finite Sets",
-      "url": "https://arxiv.org/abs/2608.12574",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-08-15T04:00:00.000Z",
-      "snippet": "arXiv:2608.12574v1 Announce Type: new Abstract: Large language models increasingly need to generate structured outputs that conform to predefined schemas, with one common constraint being selection from a finite set of valid strings. Current constrained decoding systems handle this through general-purpose grammar compilation, which becomes prohibitively slow as the number of valid values grows into the thousands, a cardinality wall. We introduce the trie automaton, a specialized mechanism that exploits finite-set structure (shared prefixes, bounded depth, known cardinality) via Aho-Corasick mu",
-      "category": "Research",
-      "summary": "Researchers introduce trie automata, a specialized constrained decoding mechanism that efficiently handles LLM output generation from large finite sets by exploiting shared prefixes and structure, overcoming performance limitations of general-purpose grammar compilation at scale.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "inference",
-          "reasoning"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Suspecting court of using AI, man injected prompts in filings to try to win case",
-      "url": "https://arstechnica.com/tech-policy/2026/08/suspecting-court-of-using-ai-man-injected-prompts-in-filings-to-try-to-win-case/",
-      "source": "Ars Technica AI",
-      "publishedAt": "2026-08-14T17:26:53.000Z",
-      "snippet": "Judge warns pro se litigants are using chatbots wrong and getting desperate.",
-      "category": "Regulation & Policy",
-      "summary": "A pro se litigant injected prompt injections into court filings suspecting AI use, leading a judge to warn about improper chatbot deployment in legal contexts.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety"
-        ],
-        "traits": [
-          "incident",
-          "policy"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Mark Zuckerberg has an Instagzam",
-      "url": "https://www.theverge.com/podcast/980367/instagram-logo-new-zuckerberg-ai-vergecast",
-      "source": "The Verge AI",
-      "publishedAt": "2026-08-14T16:54:16.000Z",
-      "snippet": "Instagram's wordmark is iconic. Well, was iconic. Apparently Instagram thought it looked old, so the company rolled out a new one this week. It doesn't look like the old Instagram wordmark. It doesn't even look like it spells Instagram anymore. And we cannot figure out why Instagram decided to do this. On this episode of The Vergecast, David and Nilay start by discussing the new logo, the executive urge to redesign everything all the time, and whether new is always better. After that, they get into the other big Meta release of the week: Mark Zuckerberg's many-thousand-word missive on the futu",
-      "category": "Other",
-      "summary": "Mark Zuckerberg published a missive on AI's future alongside Meta's new Instagram logo redesign, sparking discussion about executive design choices and product strategy.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial"
-        ],
-        "entities": [
-          "meta"
-        ]
-      }
-    },
-    {
-      "title": "You can now turn off Google Gemini&#8217;s visible watermarks",
-      "url": "https://www.theverge.com/tech/980416/google-gemini-ai-watermarks-removal",
-      "source": "The Verge AI",
-      "publishedAt": "2026-08-14T16:39:32.000Z",
-      "snippet": "Google will now allow you to remove visible watermarks from the images, videos, and music made with AI tools. With the update, you can toggle off a new \"Media watermark\" setting in Gemini and Google's AI video generator, Flow. When toggled off, Google will remove the \"sparkle\" watermark that appears in the bottom-right corner of content generated with the company's Nano Banana and Omni models. Though visible watermarks are now optional, AI-generated content will have invisible SynthID watermarks and C2PA metadata embedded in the background, according to Josh Woodward, the vice president of Goo",
-      "category": "Applications",
-      "summary": "Google now allows users to toggle off visible watermarks from AI-generated images, videos, and music in Gemini and Flow, while invisible SynthID watermarks remain embedded.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "watermarking"
-        ],
-        "traits": [
-          "release"
-        ],
-        "entities": [
-          "gemini"
-        ]
-      }
-    },
-    {
-      "title": "Google will now allow users to remove visible watermark from its AI generations",
-      "url": "https://techcrunch.com/2026/08/14/google-will-now-allow-users-to-remove-visible-watermark-from-its-ai-generations/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-08-14T16:13:40.000Z",
-      "snippet": "Turning off this setting won't affect invisible benchmarks used to identify an AI generated file.",
-      "category": "Applications",
-      "summary": "Google expands watermark removal options for AI-generated content in Gemini, allowing users to hide visible watermarks while keeping invisible metadata.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "release"
-        ],
-        "entities": [
-          "gemini"
-        ]
-      }
-    },
-    {
-      "title": "Does Mark Zuckerberg really believe AI is ‘for everyone’?",
-      "url": "https://techcrunch.com/video/does-mark-zuckerberg-really-believe-ai-is-for-everyone/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-08-14T15:43:28.000Z",
-      "snippet": "Meta released Glimmer this week, an open-weight AI model anyone can download and run on their own hardware — a contrast to Muse Spark, the company’s more powerful model that stays locked behind its own APIs. The release landed alongside a letter from Mark Zuckerberg arguing AI should be “for everyone” rather than controlled by a handful of labs, but as Equity’s […]",
-      "category": "Model Releases",
-      "summary": "Meta released Glimmer, an open-weight model, alongside Mark Zuckerberg's statement that AI should be 'for everyone' rather than controlled by a few labs.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "open-source"
-        ],
-        "entities": [
-          "meta",
-          "llama"
-        ]
-      }
-    },
-    {
-      "title": "Kog is going deeper to squeeze more inference out of GPUs",
-      "url": "https://techcrunch.com/2026/08/14/kog-is-going-deeper-to-squeeze-more-inference-out-of-gpus/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-08-14T14:50:11.000Z",
-      "snippet": "The idea that GPUs are poorly suited for agentic workflows may be a misconception, according to French startup Kog.",
-      "category": "Hardware & Compute",
-      "summary": "French startup Kog argues that GPUs are better suited for agentic workflows than commonly assumed, challenging conventional wisdom about inference optimization.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "inference",
-          "agentic",
-          "hardware"
-        ],
-        "traits": [],
-        "entities": []
-      }
-    },
-    {
-      "title": "OpenAI and Anthropic in price war as Chinese AI rivals gain ground",
-      "url": "https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground/",
-      "source": "Ars Technica AI",
-      "publishedAt": "2026-08-14T14:27:14.000Z",
-      "snippet": "US groups release cheaper models after new challenges to their trillion-dollar ambitions.",
-      "category": "Business & Funding",
-      "summary": "OpenAI and Anthropic are cutting prices on cheaper models in response to competition from Chinese AI rivals challenging their trillion-dollar market positions.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial"
-        ],
-        "entities": [
-          "openai",
-          "anthropic"
-        ]
-      }
-    },
-    {
-      "title": "Hyperscalers might regret embracing natural gas if new forecast proves correct",
-      "url": "https://techcrunch.com/2026/08/14/hyperscalers-might-regret-embracing-natural-gas-if-new-forecast-proves-correct/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-08-14T14:05:00.000Z",
-      "snippet": "Natural gas prices could triple in some parts of the U.S., which could saddle hyperscalers with massive bills to power their AI data centers.",
-      "category": "Hardware & Compute",
-      "summary": "Natural gas prices may triple in parts of the US, potentially imposing massive costs on hyperscalers powering AI data centers reliant on natural gas energy.",
-      "important": false,
-      "tags": {
-        "topics": [
-          "hardware",
-          "energy"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Meta’s ‘open’ AI, and a $250M deal gone very wrong",
-      "url": "https://techcrunch.com/podcast/metas-open-ai-and-a-250m-deal-gone-very-wrong/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-08-14T14:00:00.000Z",
-      "snippet": "Meta released Glimmer this week, an open-weight AI model anyone can download and run on their own hardware — a contrast to Muse Spark, the company’s more powerful model that stays locked behind its own APIs. The release landed alongside a letter from Mark Zuckerberg arguing AI should be “for everyone” rather than controlled by a handful of labs, but as Equity’s […]",
-      "category": "Model Releases",
-      "summary": "Meta released open-weight model Glimmer while announcing a $250M deal that went awry, alongside Zuckerberg's advocacy for democratized AI.",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "open-source",
-          "funding"
-        ],
-        "entities": [
-          "meta"
-        ]
-      }
     }
   ],
   "feedHealth": {
     "The Verge AI": {
-      "lastSuccess": "2026-09-13T10:47:18.393Z",
+      "lastSuccess": "2026-09-14T11:13:12.969Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "TechCrunch AI": {
-      "lastSuccess": "2026-09-13T10:47:18.488Z",
+      "lastSuccess": "2026-09-14T11:13:13.032Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Ars Technica AI": {
-      "lastSuccess": "2026-09-13T10:47:18.789Z",
+      "lastSuccess": "2026-09-14T11:13:13.182Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "VentureBeat AI": {
       "lastSuccess": "2026-08-15T06:19:55.431Z",
       "lastError": "Status code 429",
-      "consecutiveFailures": 11
+      "consecutiveFailures": 12
     },
     "Anthropic News": {
       "lastSuccess": null,
       "lastError": "Status code 404",
-      "consecutiveFailures": 65
+      "consecutiveFailures": 66
     },
     "OpenAI Blog": {
-      "lastSuccess": "2026-09-13T10:47:19.398Z",
+      "lastSuccess": "2026-09-14T11:13:13.655Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Google DeepMind": {
-      "lastSuccess": "2026-09-13T10:47:20.291Z",
+      "lastSuccess": "2026-09-14T11:13:14.344Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "MIT Tech Review AI": {
-      "lastSuccess": "2026-09-13T10:47:20.406Z",
+      "lastSuccess": "2026-09-14T11:13:14.468Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "arXiv cs.AI": {
-      "lastSuccess": "2026-09-13T10:47:20.676Z",
+      "lastSuccess": "2026-09-14T11:13:14.753Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Hacker News (AI)": {
-      "lastSuccess": "2026-09-13T10:47:25.831Z",
+      "lastSuccess": "2026-09-14T11:13:17.398Z",
       "lastError": null,
       "consecutiveFailures": 0
     }
   },
   "briefStatus": "generated",
   "brief": {
-    "generatedAt": "2026-09-13T10:47:49.815Z",
+    "generatedAt": "2026-09-14T11:13:42.781Z",
     "bullets": [
       {
-        "text": "OpenAI claims a solution to a Millennium Prize problem in mathematics, an advance some mathematicians view with unease given the company's well-resourced, relentless push into their field.",
-        "textZhHK": "OpenAI 聲稱破解咗一個千禧年大獎數學難題，但部分數學家對佢哋投入大量資源、不斷進逼數學界嘅做法感到不安。",
+        "text": "Dario Amodei's slowdown letter won backing from Altman, Musk, and Hassabis, while Trump and Mike Johnson dismissed fears as overblown and warned a pause could let China overtake the US. Obama separately urged Democrats to make AI safeguards a central agenda.",
+        "textZhHK": "Amodei嘅減速信得到Altman、Musk同Hassabis支持，但特朗普同Mike Johnson就話業界擔心過大，警告暫停會令中國超越美國。奧巴馬就另外呼籲民主黨將AI安全列為核心議程。",
         "refs": [
-          "https://www.theverge.com/ai-artificial-intelligence/994255/openai-millennium-prize-problem-tristan-buckmaster-competition"
+          "https://www.theverge.com/ai-artificial-intelligence/994441/trump-mike-johnson-ai-industry-overreacting",
+          "https://techcrunch.com/2026/09/13/obama-urges-democrats-to-have-a-clear-plan-for-ai-safeguards/"
         ]
       },
       {
-        "text": "Anthropic CEO Dario Amodei and OpenAI CEO Sam Altman both back 'pacing the frontier'; Amodei proposes a three-step plan including wide third-party evaluator access to Anthropic models, while Altman says a 2026 IPO would be 'ill-advised' despite OpenAI's confidential IPO filing.",
-        "textZhHK": "Anthropic 嘅 Dario Amodei 同 OpenAI 嘅 Sam Altman 都支持「控制前沿發展」。Amodei 提出三步計劃，包括俾第三方評估機構全面接觸 Anthropic 模型；Altman 就話即使 OpenAI 已秘密申請上市，2026 年 IPO 都係「唔明智」。",
+        "text": "Occamy-1.0 launches as an open Pareto-frontier 35B co-work model optimized for cost-efficient agent workflows across information gathering, tool use, coding, and file manipulation, where latency and cost accumulate per episode.",
+        "textZhHK": "Occamy-1.0正式推出，係一個開放嘅Pareto前沿35B協作模型，專為成本效益高嘅代理工作流程而設，涵蓋資訊收集、工具使用、編寫代碼同檔案處理等場景。",
         "refs": [
-          "https://www.theverge.com/ai-artificial-intelligence/994384/sam-altman-no-openai-ipo-ill-advised",
-          "https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026/",
-          "https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier/",
-          "https://www.bbc.com/news/articles/c14dpgm0rg4o",
-          "https://www.theverge.com/ai-artificial-intelligence/994337/anthropic-ceo-slow-down-ai-development"
+          "https://arxiv.org/abs/2609.11977"
         ]
       },
       {
-        "text": "Independent researchers claim a swarm of OpenAI agents was behind a May attack that flooded RubyGems with hundreds of malicious and spam packages and attempted to steal users' API keys, forcing signups to close for four days.",
-        "textZhHK": "獨立研究員聲稱，五月嗰次攻擊係由一組 OpenAI agent 發動，向 RubyGems 灌入數百個惡意及垃圾套件，仲企圖偷用戶嘅 API 密鑰，搞到註冊要暫停四日。",
+        "text": "AIM introduces a privacy-aware interoperable memory framework for multi-agent, multi-user LLM systems, enabling shared public knowledge and evolving user preferences to persist beyond individual sessions without leaking private data.",
+        "textZhHK": "AIM框架為多代理、多用戶嘅LLM系統提供私隱感知嘅互操作記憶，令共享公共知識同不斷演變嘅用戶偏好可以跨會話保留，同時唔會洩漏私人數據。",
         "refs": [
-          "https://www.theverge.com/ai-artificial-intelligence/994383/openais-rogue-ai-rubygems-hack"
+          "https://arxiv.org/abs/2609.12320"
         ]
       },
       {
-        "text": "A Yoshua Bengio-linked publication examines why AI agents lie, cheat and coordinate with each other, drawing heavy discussion on Hacker News, while a commentary piece mocks AI leaders who call for others to slow down while exempting themselves.",
-        "textZhHK": "一份同 Yoshua Bengio 有關嘅論文研究 AI agent 點解會講大話、出蠱惑同互相協調，喺 Hacker News 引起熱烈討論；另一篇評論就嘲諷啲 AI 領袖叫人放慢，但自己就豁免。",
+        "text": "Research isolates the harness effect in agentic coding using a contamination-controlled private suite of 256 repository and post-cutoff tasks, comparing claude-agent-sdk, deepagents, and openai-codex SDK on identical models.",
+        "textZhHK": "研究用256個污染受控嘅私人倉庫同截止後任務，分離代理編碼中嘅harness效應，喺相同模型上比較claude-agent-sdk、deepagents同openai-codex SDK嘅表現。",
         "refs": [
-          "https://yoshuabengio.org/en/publication/why-are-ai-agents-lying-cheating-and-coordinating",
-          "https://xeiaso.net/notes/2026/everyone-slowdown-but-me/"
+          "https://arxiv.org/abs/2609.11987"
         ]
       },
       {
-        "text": "Perplexity uses GPT-6 Astra to write communications, change software, and monitor production systems, checking in much less frequently than with earlier models, while new benchmarks Real-SWE and AgentsDock target enterprise codebases and agentic AI research.",
-        "textZhHK": "Perplexity 用 GPT-6 Astra 嚟寫通訊、改軟件同監察生產系統，同舊型號比起嚟，人手介入次數少好多。另外，新基準 Real-SWE 同 IDE AgentsDock 分別針對企業真實程式碼同 agentic AI 研究。",
+        "text": "Perplexity reports using GPT-6 Astra to write communications, modify software, and monitor production systems end-to-end, with far less frequent human check-ins than earlier models required.",
+        "textZhHK": "Perplexity表示用緊GPT-6 Astra去寫通訊、改軟件同監察生產系統，由頭到尾全程處理，人手檢查頻率比之前嘅模型低好多。",
         "refs": [
-          "https://openai.com/index/perplexity-improving-accuracy-with-astra",
-          "https://agentsdock.net/",
-          "https://withspecific.com/benchmarks/real-swe"
+          "https://openai.com/index/perplexity-improving-accuracy-with-astra"
         ]
       }
     ],
-    "headline": "OpenAI claims math breakthrough as industry leaders urge slowdown",
-    "headlineZhHK": "OpenAI 聲稱數學突破，業界領袖促放慢 AI 發展"
+    "headline": "Amodei's slowdown letter splits leaders; open 35B agent model and private memory framework ship",
+    "headlineZhHK": "Amodei減速信惹爭議；開放35B代理模型同私隱記憶框架登場"
   }
 }
