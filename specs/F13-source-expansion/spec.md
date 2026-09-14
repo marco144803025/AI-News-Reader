@@ -1,7 +1,7 @@
 # SPEC: Source expansion — broader, deduplicated feed coverage
 
 **ID:** F13-source-expansion
-**Status:** Build — implementation complete and locally verified; publication decision recorded 2026-09-14; hosted verification remains
+**Status:** Build — implementation published 2026-09-14; hosted build/test and site checks recorded; normal paid ingest verification remains
 **Owner:** Marco
 
 ## Approval record — 2026-09-11
@@ -34,6 +34,17 @@ acceptance of the existing endpoint if the attempt failed. The replacement
 three consecutive read-only probes on 2026-09-14, so `feeds.json` now uses it in
 place of the `&points=50` URL. This is endpoint evidence only; hosted Actions
 reachability still requires publication and a normal workflow run.
+
+## Publication record — 2026-09-14
+
+Commit `3633042` was pushed to `main`. GitHub Actions `Build & Deploy #22`
+(`34858230250`) and `Test #18` (`34858230253`) both completed successfully.
+The public site and `news.json` each returned HTTP 200; the payload contained
+291 articles, a generated brief, and a Hacker News feed-health record.
+
+The normal `Daily Ingest & Deploy` workflow was not dispatched in this step
+because it can incur DeepSeek usage and send the personal Telegram brief. A
+hosted paid-ingest result is therefore still unverified.
 
 ## Scope change — per-run ceiling doubled, 2026-09-11
 

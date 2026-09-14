@@ -4,11 +4,9 @@
 on 2026-09-11 and explicitly requested delegation. He raised the per-run ceiling
 from 50 to 100 on the same day; that scope change is recorded in the spec.
 
-**Status:** Build — **Gate 2 approved by Marco on 2026-09-11** ("ok now that you
-created the plan, proceed and implement it"). Implementation is complete and
-verified offline; see the implementation record in §15 for what was actually run
-and what was corrected during integration. The two product decisions were closed
-on 2026-09-14; publication and hosted verification remain.
+**Status:** Build — implementation and publication are complete through the
+hosted build/test checks recorded in §18. The normal paid ingest verification
+remains separately gated because it can invoke DeepSeek and Telegram delivery.
 
 Sections 0–14 are the plan as approved. They are kept as written so a later
 reader can see what was agreed before the code existed; §15 records where the
@@ -1005,3 +1003,22 @@ three consecutive read-only probes, so it replaced the previous
 `&points=50` URL in `feeds.json`. Because the attempt succeeded, the fallback
 decision to accept the old endpoint was not used. Hosted Actions reachability
 remains a publication verification step.
+
+## 18. Publication evidence — 2026-09-14
+
+The rebased `main` branch was pushed as commit `3633042`. The exact GitHub
+Actions runs triggered by that push both completed successfully:
+
+| Run | Result |
+| --- | --- |
+| [Build & Deploy #22](https://github.com/marco144803025/AI-News-Reader/actions/runs/34858230250) | success |
+| [Test #18](https://github.com/marco144803025/AI-News-Reader/actions/runs/34858230253) | success |
+
+The deployed site was checked read-only at
+`https://marco144803025.github.io/AI-News-Reader/`: the page returned HTTP 200,
+`news.json` returned HTTP 200, and the payload parsed with 291 articles,
+`briefStatus: "generated"`, and a Hacker News health record. A normal
+`Daily Ingest & Deploy` dispatch was not performed in this publication step,
+because it can spend on DeepSeek and may send the personal Telegram brief; the
+hosted feed-collection and delivery path therefore remain unclaimed by this
+evidence.
