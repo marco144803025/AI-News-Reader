@@ -34,7 +34,7 @@ Luna and Sol (substitution recorded in the plan). F13 moves to **Build**: the co
 is complete and verified offline, and stays Build until it is published and
 verified on the hosted site.
 
-**Verified:** 245 tests pass (130 before F13), `tsc -b` clean, both
+**Verified:** 246 tests pass (130 before F13), `tsc -b` clean, both
 `VITE_ENABLE_EXTRA` builds pass with Extra off in the final state, whitespace
 clean. A browser pass against a temporary fixture confirmed attribution on all
 four article surfaces in both editions and both languages, zero nested anchors,
@@ -49,16 +49,11 @@ vary their own query parameters, which also turned short Chinese headlines into
 duplicate articles. Both are regression-tested. The full record is in the plan's
 §16.
 
-**Two decisions still open for Marco:**
-
-1. **`Hacker News (AI)` returned HTTP 429 on all three attempts** during live
-   source sampling — a retained feed, already at 9 consecutive failures, with the
-   same rate-limit failure mode that retired VentureBeat. Retire it, change the
-   hnrss endpoint, or accept it as intermittent.
-2. **The 0.9 title-similarity gate is far stricter than the spec's prose
-   implies.** One substituted word needs a 19-distinct-token headline to pass, so
-   dedupe is effectively canonical-URL plus exact-title matching. 0.8 would make
-   fuzzy matching actually work. Left at the spec's value pending his decision.
+**The two F13 decisions were closed on 2026-09-14.** Marco selected a 0.8
+Jaccard threshold. The replacement Hacker News URL
+`https://hnrss.org/newest?q=AI+OR+LLM+OR+MCP` returned HTTP 200 and valid XML on
+three consecutive read-only probes, so it replaced the prior `&points=50` URL.
+Hosted Actions reachability remains to be verified after publication.
 
 Nothing has been pushed or published, and no live paid ingest has run.
 
@@ -176,7 +171,7 @@ recommendations.
 
 | Priority | Work | Concrete next action / completion condition |
 | --- | --- | --- |
-| 1 | Publish F13 | Decide the two open questions in the F13 section above (Hacker News, similarity threshold), then push and run the hosted workflow. Record hosted evidence in the plan and only then mark F13 Done. |
+| 1 | Publish F13 | Decisions are closed: publish the 0.8 dedupe threshold and replacement HN endpoint, run the hosted workflow, record evidence in the plan, then mark F13 Done. |
 | 2 | F15 brief balance | Agree source/category balancing, the cap and single-category fallback; approve spec and plan. Verify research-flooded, balanced and single-category days without changing citation/bilingual/delivery contracts. |
 | 3 | F14 attribution and excerpt hygiene | Decide data terms, takedown contact and colophon detail; approve spec and revised draft plan. Implement the colophon and a `dist/news.json`-only snippet strip while retaining stored snippets. Resolve before any commercialization work. |
 | 4 | F6 remaining Extra checks | In an Extra-enabled build, complete Lighthouse comparison, reduced-motion and blocked-font checks; keep the production flag off unless a separate change is requested. |

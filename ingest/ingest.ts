@@ -413,7 +413,7 @@ export async function runIngest(deps: IngestDeps): Promise<NewsData> {
   // over this run's arrivals, so a late or closely spaced run still writes one.
   // A brief failure must never fail the run — carry the previous brief forward
   // and record why, so delivery can tell a quiet day from a broken pipeline.
-  const briefInput = selectBriefInput(pruned);
+  const briefInput = selectBriefInput(pruned, now.getTime());
   let brief = carryForwardBrief(existing);
   let briefStatus: BriefStatus;
   if (briefInput.length >= BRIEF_MIN_BULLETS) {

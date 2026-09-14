@@ -334,6 +334,16 @@ describe("S-5 titlesMatch", () => {
     );
   });
 
+  it("merges a one-word substitution at the selected 0.8 threshold", () => {
+    assert.equal(
+      titlesMatch(
+        "OpenAI launches new reasoning model for enterprise developers today",
+        "OpenAI unveils new reasoning model for enterprise developers today",
+      ),
+      true,
+    );
+  });
+
   it("merges identical normalized titles of at least 20 characters", () => {
     assert.equal(
       titlesMatch(
@@ -658,7 +668,7 @@ describe("clusterCandidates within a single run", () => {
     const a = "OpenAI launches a new reasoning model for enterprise developers";
     const b = "OpenAI launches a new reasoning model for enterprise developers today";
     const c =
-      "OpenAI launches a new reasoning model for enterprise developers today worldwide";
+      "OpenAI launches a new reasoning model for enterprise developers today worldwide across";
     assert.equal(titlesMatch(a, b), true);
     assert.equal(titlesMatch(b, c), true);
     assert.equal(titlesMatch(a, c), false, "precondition for the chaining test");

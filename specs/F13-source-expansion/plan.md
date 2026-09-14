@@ -6,9 +6,9 @@ from 50 to 100 on the same day; that scope change is recorded in the spec.
 
 **Status:** Build — **Gate 2 approved by Marco on 2026-09-11** ("ok now that you
 created the plan, proceed and implement it"). Implementation is complete and
-verified offline; see the implementation record in §15 for what was actually run,
-what was corrected during integration, and what remains open. Publication,
-pushing and any live paid ingest are **not** covered by that approval.
+verified offline; see the implementation record in §15 for what was actually run
+and what was corrected during integration. The two product decisions were closed
+on 2026-09-14; publication and hosted verification remain.
 
 Sections 0–14 are the plan as approved. They are kept as written so a later
 reader can see what was agreed before the code existed; §15 records where the
@@ -32,7 +32,8 @@ fetching and classification, conservative deduplication and visible attribution.
 | Per-attempt feed timeout | 20 s (existing) | `ingest/feeds.ts:4` |
 | Feed retries | 3 attempts, 1 s then 2 s, honour `Retry-After` ≤ 30 s | Spec §4 |
 | Persistent-failure threshold | 3 consecutive failures | Spec §4 |
-| Title similarity | Jaccard ≥ 0.9 and ≥ 6 shared tokens, 72 h window | Spec §4 |
+| Title similarity | Jaccard ≥ 0.8 and ≥ 6 shared tokens, 72 h window | Marco, 2026-09-14 |
+| Hacker News endpoint | `https://hnrss.org/newest?q=AI+OR+LLM+OR+MCP` | Marco, 2026-09-14; 3/3 live probes 200 + valid XML |
 | New dependencies | none | Constitution rule 11 |
 
 ---
@@ -149,7 +150,7 @@ Their already-stored articles stay in the archive untouched.
   { "name": "Google DeepMind",     "url": "https://deepmind.google/blog/rss.xml" },
   { "name": "MIT Tech Review AI",  "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed" },
   { "name": "arXiv cs.AI",         "url": "https://rss.arxiv.org/rss/cs.AI" },
-  { "name": "Hacker News (AI)",    "url": "https://hnrss.org/newest?q=AI+OR+LLM+OR+MCP&points=50" },
+  { "name": "Hacker News (AI)",    "url": "https://hnrss.org/newest?q=AI+OR+LLM+OR+MCP" },
 
   { "name": "AI Business",         "url": "https://aibusiness.com/rss.xml" },
   { "name": "The Decoder",         "url": "https://the-decoder.com/feed/" },
@@ -388,7 +389,7 @@ collapsed. Then, in order:
 1. Identical normalized titles of ≥ 20 characters → match.
 2. Any CJK character present in either title → **exact match only**, no fuzzy
    comparison, and never across languages.
-3. Otherwise English token-set comparison: Jaccard ≥ 0.9 **and** ≥ 6 shared
+3. Otherwise English token-set comparison: Jaccard ≥ 0.8 **and** ≥ 6 shared
    tokens. Numeric and version tokens (`4o`, `v2`, `3.5`, `70B`) must form equal
    sets. Negations (`no`, `not`, `never`, `without`) are retained as tokens and a
    negated title never matches a non-negated one. No stopword removal that could
@@ -986,7 +987,21 @@ stored link from the dedupe index. It now warns, matching the UI-side behaviour.
 
 | Check | Result |
 | --- | --- |
-| `npm test` | **245 pass, 0 fail** |
+| `npm test` | **246 pass, 0 fail** |
 | `npx tsc -b` | exit 0 |
 | Both `VITE_ENABLE_EXTRA` builds | exit 0, final state Extra off |
 | `git diff --check` | clean |
+
+## 17. Decision closure — 2026-09-14
+
+Marco selected **Jaccard ≥ 0.8** for English title matching. The source
+selection implementation now uses that threshold and the test suite includes a
+one-word substitution that passes exactly at 0.8 while retaining the existing
+shared-token, numeric/version and negation safeguards.
+
+The requested Hacker News endpoint change was attempted before publication.
+`https://hnrss.org/newest?q=AI+OR+LLM+OR+MCP` returned HTTP 200 and valid XML on
+three consecutive read-only probes, so it replaced the previous
+`&points=50` URL in `feeds.json`. Because the attempt succeeded, the fallback
+decision to accept the old endpoint was not used. Hosted Actions reachability
+remains a publication verification step.

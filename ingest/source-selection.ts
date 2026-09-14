@@ -28,7 +28,7 @@ const MIN_EXACT_TITLE_LENGTH = 20;
 const MIN_EXACT_CJK_TITLE_LENGTH = 8;
 /** Both gates must pass before two differently-worded titles are merged. */
 const MIN_SHARED_TOKENS = 6;
-const TITLE_JACCARD_THRESHOLD = 0.9;
+const TITLE_JACCARD_THRESHOLD = 0.8;
 /** Reports further apart than this are never compared by title. */
 const DEFAULT_WINDOW_HOURS = 72;
 
@@ -271,7 +271,7 @@ function setsEqual(a: Set<string>, b: Set<string>): boolean {
  *   2. if either title contains a CJK character, exact matching is the only
  *      rule — no fuzzy comparison, and never across languages;
  *   3. otherwise English token sets must share at least 6 tokens at a Jaccard
- *      similarity of at least 0.9, with equal numeric/version sets and the same
+ *      similarity of at least 0.8, with equal numeric/version sets and the same
  *      negation polarity.
  *
  * Deliberately conservative: a missed merge leaves two cards on the page, a

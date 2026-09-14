@@ -1,7 +1,7 @@
 # SPEC: Source expansion — broader, deduplicated feed coverage
 
 **ID:** F13-source-expansion
-**Status:** Plan — source-expansion direction approved 2026-09-11; per-run ceiling raised to 100 the same day; detailed implementation plan pending Gate 2 approval
+**Status:** Build — implementation complete and locally verified; publication decision recorded 2026-09-14; hosted verification remains
 **Owner:** Marco
 
 ## Approval record — 2026-09-11
@@ -21,6 +21,19 @@ Luna/max for implementation after Gate 2, and Sol/high for integration review.
 The main agent owns cross-cutting decisions and inspects every delegated result.
 F16's outstanding zoom verification remains open; preparing this F13 plan does
 not claim its completion or silently waive the recorded feature order.
+
+## Decision closure — 2026-09-14
+
+Marco chose the lower English title-token Jaccard threshold of **0.8**. The
+implementation and regression coverage now use that value, while retaining the
+six-shared-token, equal numeric/version-set and negation-polarity safeguards.
+
+Marco also asked for one endpoint change attempt for `Hacker News (AI)`, with
+acceptance of the existing endpoint if the attempt failed. The replacement
+`https://hnrss.org/newest?q=AI+OR+LLM+OR+MCP` returned HTTP 200 and valid XML on
+three consecutive read-only probes on 2026-09-14, so `feeds.json` now uses it in
+place of the `&points=50` URL. This is endpoint evidence only; hosted Actions
+reachability still requires publication and a normal workflow run.
 
 ## Scope change — per-run ceiling doubled, 2026-09-11
 
@@ -174,7 +187,7 @@ Do not follow article redirects or rewrite stored links.
 Match identical canonical URLs across the retained archive. For distinct URLs,
 only compare reports published within 72 hours of one another: normalized exact
 titles of at least 20 characters qualify, or English title token-set Jaccard
-similarity at least 0.9 with at least six tokens shared. Preserve numeric/model
+ similarity at least 0.8 with at least six tokens shared. Preserve numeric/model
 version tokens and require matching numeric-token sets; do not merge a title
 containing negation (`no`, `not`, `never`, `without`) with one that does not.
 Chinese titles use exact matching only. Compare every candidate to the selected
