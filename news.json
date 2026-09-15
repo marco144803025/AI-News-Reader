@@ -1,20 +1,1979 @@
 {
-  "generatedAt": "2026-09-14T11:13:17.399Z",
-  "daysBack": 3,
+  "generatedAt": "2026-09-15T10:40:14.427Z",
+  "daysBack": 2,
   "categories": [
-    "Open Source",
-    "Research",
-    "Agent Frameworks",
-    "Applications",
-    "AI Safety & Alignment",
+    "Model Releases",
+    "MCP",
     "Regulation & Policy",
+    "Applications",
     "Other",
-    "Developer Tools",
     "Business & Funding",
-    "Hardware & Compute",
-    "Model Releases"
+    "Agent Frameworks",
+    "Developer Tools",
+    "Open Source",
+    "AI Safety & Alignment",
+    "Research",
+    "Hardware & Compute"
   ],
   "articles": [
+    {
+      "title": "Apple brings a fully revamped Siri built on Google's Gemini, but not to the EU",
+      "url": "https://the-decoder.com/apple-brings-a-fully-revamped-siri-built-on-googles-gemini-but-not-to-the-eu/",
+      "source": "The Decoder",
+      "publishedAt": "2026-09-15T10:33:03.000Z",
+      "snippet": "Apple is shipping its rebuilt \"Siri AI\" after years of delay, built on Google's Gemini models and running partly on the device, partly through Private Cloud Compute. Early testers praise multi-step requests and screen context, but report hallucinations and gaps with personal context. In the EU, the assistant stays unavailable for now. The article Apple brings a fully revamped Siri built on Google's Gemini, but not to the EU appeared first on The Decoder.",
+      "category": "Model Releases",
+      "summary": "Apple is shipping a rebuilt 'Siri AI' powered by Google's Gemini models, running partly on-device and partly via Private Cloud Compute; early testers praise multi-step requests and screen context but report hallucinations and gaps in personal context, and it remains unavailable in the EU.",
+      "summaryZhHK": "Apple 終於推出重建版「Siri AI」，底層用 Google Gemini 模型，一部分喺裝置上運行，一部分經 Private Cloud Compute 處理。早期測試者讚佢處理 multi-step 請求同螢幕情境唔錯，但就投訴有 hallucination 同個人情境理解有缺口；歐盟地區暫時仲未用到。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "multimodal"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": [
+          "google",
+          "gemini"
+        ]
+      }
+    },
+    {
+      "title": "Should AI friendliness be a priority for your projects?",
+      "url": "https://news.ycombinator.com/item?id=49710339",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-09-15T10:32:07.000Z",
+      "snippet": "Recently I came up with an idea that if MCP server and AI focused readme is reasonable for your project than it must be done. Take for example my API mocking/prototyping server \"Apate\" (github.com/rustrum/apate). 1 year ago I never thought about AI as a main consumer of this tool. So it was focused mostly on smart human developers. But now I'm starting to think that developers should not be bothered with such stuff at all. It's up to AI to write mocking API DSL on fly while it's developing main app that should consume this API. Comments URL: https://news.ycombinator.com/item?id=49710339 Points",
+      "category": "MCP",
+      "summary": "A developer argues that MCP servers and AI-focused READMEs should now be a priority for projects, since AI rather than humans may become the main consumer of tools like API mocking and prototyping servers.",
+      "summaryZhHK": "有開發者提出，而家做 project 應該優先整 MCP server 同埋 AI 導向嘅 README，因為好似 API mocking／prototyping server 呢類工具，將來主要用家可能係 AI 而唔係人類開發者。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "mcp",
+          "developer-tools"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "TUC warns of danger of ‘out of control political spending’ but stops short of backing caps on donations –  UK politics live",
+      "url": "https://www.theguardian.com/politics/live/2026/sep/15/nigel-farage-reform-labour-party-funding-donations-unions-funding-72m-christopher-harborne-ai-louise-haigh-tuc-andy-burnham-uk-politics-latest-news-updates",
+      "source": "Guardian AI",
+      "publishedAt": "2026-09-15T10:21:55.000Z",
+      "snippet": "Union statement comes after Nigel Farage says a Reform UK government would stop unions funding Labour if they block £72m donations to his party The Liberal Democrats have said that they will try to introduce a cap on the amount people donate to political parties by amending the representation of the people bill as it goes through the Lords. Lisa Smart, the Lib Dem Cabinet Office spokesperson, said: We can’t keep playing whack-a-mole with each new attempt by Farage to sell out our democracy. Labour’s residency requirements aren’t good enough and the Conservatives simply sat on their hands whils",
+      "category": "Regulation & Policy",
+      "summary": "The TUC warned about the danger of 'out of control political spending' after Nigel Farage said a Reform UK government would stop unions funding Labour if they block £72m donations to his party, while the Lib Dems plan to amend the representation of the people bill to cap political donations.",
+      "summaryZhHK": "TUC 警告「失控嘅政治獻金」有危險，事關 Nigel Farage 話如果工會阻撓佢政黨收受 7200 萬英鎊捐款，Reform UK 政府就會禁止工會資助工黨；同時自由民主黨計劃修訂 representation of the people bill，為政治捐款設上限。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Democrats say supreme court rejection of Trump mail ballot restrictions will ensure ‘safe, secure and accurate elections’ – US politics live",
+      "url": "https://www.theguardian.com/us-news/live/2026/sep/15/supreme-court-mail-ballot-restrictions-midterm-elections-trump-ai-politics-latest-news-updates",
+      "source": "Guardian AI",
+      "publishedAt": "2026-09-15T10:20:28.000Z",
+      "snippet": "Comments come after court on Monday rejected the president’s mail ballot restrictions ahead of the November midterm elections Supreme court rejects Trump’s mail ballot restrictions for midterm elections Donald Trump is facing a rare backlash from the US Congress as Democrats and some Republicans push for guardrails on the world’s most powerful AI companies. Concerns over the dangerous potential of AI reached fever pitch this week after tech leaders sounded the alarm over the rapid advancement of the technology and its potential threat to humanity. Mitch McConnell, the 84-year-old former Senate",
+      "category": "Regulation & Policy",
+      "summary": "Democrats say the Supreme Court's rejection of Trump's mail ballot restrictions will ensure 'safe, secure and accurate elections,' while both parties in Congress push for guardrails on the world's most powerful AI companies amid rising alarm over AI's threat to humanity.",
+      "summaryZhHK": "民主黨話最高法院否決特朗普嘅郵寄選票限制，可確保「安全、穩妥同準確嘅選舉」；同時國會兩黨都推動為全球最強大嘅 AI 公司設護欄，因為各界對 AI 威脅人類嘅憂慮升溫。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Meta Kicks Muse Off Their Social Handles to Launch New AI Agent",
+      "url": "https://stereogum.com/2510793/meta-kicks-muse-off-their-social-handles-to-launch-new-ai-agent/news",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-09-15T10:16:45.000Z",
+      "snippet": "Article URL: https://stereogum.com/2510793/meta-kicks-muse-off-their-social-handles-to-launch-new-ai-agent/news Comments URL: https://news.ycombinator.com/item?id=49710219 Points: 2 # Comments: 0",
+      "category": "Applications",
+      "summary": "Meta kicked the band Muse off their social handles in order to launch a new AI agent under the name.",
+      "summaryZhHK": "Meta 為咗推出一個叫 Muse 嘅新 AI agent，將樂隊 Muse 由佢哋嘅社交媒體帳號名度踢走。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "applications"
+        ],
+        "traits": [],
+        "entities": [
+          "meta"
+        ]
+      }
+    },
+    {
+      "title": "AI hypervigilance is now an omnipresent cognitive load for your users",
+      "url": "https://productpicnic.beehiiv.com/p/ai-hypervigilance-is-now-an-omnipresent-cognitive-load-for-your-users",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-09-15T10:02:56.000Z",
+      "snippet": "Article URL: https://productpicnic.beehiiv.com/p/ai-hypervigilance-is-now-an-omnipresent-cognitive-load-for-your-users Comments URL: https://news.ycombinator.com/item?id=49710125 Points: 1 # Comments: 0",
+      "category": "Other",
+      "summary": "An article argues that 'AI hypervigilance' has become an omnipresent cognitive load for users, as people constantly monitor and second-guess AI systems around them.",
+      "summaryZhHK": "有文章指出「AI 過度警惕」已經成為用戶無處不在嘅認知負擔，因為人們要不斷監察同質疑身邊嘅 AI 系統。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "evaluation"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "They fought against datacenters. Now they are running for local offices",
+      "url": "https://www.theguardian.com/us-news/2026/sep/15/datacenters-local-elections",
+      "source": "Guardian AI",
+      "publishedAt": "2026-09-15T10:00:40.000Z",
+      "snippet": "Across the US, anti-datacenter organizers are harnessing community anger to win local elections After four months of teach-ins and canvassing, Steven Kung helped Monterey Park, just east of Los Angeles, become the first US city to ban datacenter construction. Now, the organizer is running for city council – and he’s taking on an incumbent who supported the development of the sprawling facility. “The datacenter coming to my neighborhood turned my life upside down,” said Kung. “I saw that there’s a dismantling of democracy at a local level.” Continue reading...",
+      "category": "Regulation & Policy",
+      "summary": "Across the US, anti-datacenter organizers are harnessing community anger to run for local office; Steven Kung helped Monterey Park become the first US city to ban datacenter construction and is now running for city council.",
+      "summaryZhHK": "美國各地反數據中心嘅組織者正借助社區怒火競選地方公職；Steven Kung 協助蒙特雷公園成為全美首個禁止興建數據中心嘅城市，佢現正競選市議員。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy",
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "What must happen for AI’s trillion-dollar gamble to pay off",
+      "url": "https://www.technologyreview.com/2026/09/15/1144028/ai-infrastructure-boom-investment-bubble-risk/",
+      "source": "MIT Tech Review AI",
+      "publishedAt": "2026-09-15T10:00:00.000Z",
+      "snippet": "When Jessica Wachter, a finance professor at the University of Pennsylvania’s Wharton School, wanted to assess AI’s impact on the economy over the next few years, she faced a long list of business and technical uncertainties. So she started with what she calls a “remarkable fact” that is not in question: A handful of so-called…",
+      "category": "Business & Funding",
+      "summary": "Wharton finance professor Jessica Wachter assesses AI's future economic impact, starting from a 'remarkable fact' that is not in dispute amid a long list of business and technical uncertainties over AI's trillion-dollar gamble.",
+      "summaryZhHK": "Wharton 商學院金融教授 Jessica Wachter 評估 AI 未來幾年對經濟嘅影響，佢由一個「remarkable fact」入手——喺一大堆商業同技術不確定性之中，呢點係無可爭議嘅。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial",
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Botcafe: Two AI agents share a curl board so they can talk",
+      "url": "https://botcafe.dev/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-09-15T09:56:56.000Z",
+      "snippet": "Article URL: https://botcafe.dev/ Comments URL: https://news.ycombinator.com/item?id=49710086 Points: 1 # Comments: 0",
+      "category": "Agent Frameworks",
+      "summary": "Botcafe is a project where two AI agents share a curl board so they can talk to each other.",
+      "summaryZhHK": "Botcafe 係一個項目，讓兩個 AI 代理共用一塊 curl 板，互相對話交流。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "open-source"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Show HN: LM-Kit One – private AI on your infrastructure",
+      "url": "https://lm-kit.com/products/lm-kit-one/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-09-15T09:53:46.000Z",
+      "snippet": "Article URL: https://lm-kit.com/products/lm-kit-one/ Comments URL: https://news.ycombinator.com/item?id=49710060 Points: 1 # Comments: 0",
+      "category": "Developer Tools",
+      "summary": "LM-Kit One is a product that lets teams run private AI on their own infrastructure, posted to Hacker News.",
+      "summaryZhHK": "LM-Kit One 係一個畀團隊喺自己基礎設施上面跑私有 AI 嘅產品，喺 Hacker News 上面貼出嚟。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference"
+        ],
+        "traits": [
+          "commercial",
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "I measured Apple's on-device LLM across an OS beta cycle",
+      "url": "https://www.deforget.app/blog/apple-on-device-model-measured",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-09-15T09:50:10.000Z",
+      "snippet": "Article URL: https://www.deforget.app/blog/apple-on-device-model-measured Comments URL: https://news.ycombinator.com/item?id=49710030 Points: 2 # Comments: 0",
+      "category": "Model Releases",
+      "summary": "A blog post measures Apple's on-device LLM across a full OS beta cycle, tracking its performance and behavior over time.",
+      "summaryZhHK": "一篇博客量度 Apple 裝置端 LLM 喺整個 OS beta 週期嘅表現，追蹤佢隨時間嘅效能同行為變化。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "evaluation",
+          "inference"
+        ],
+        "traits": [
+          "benchmark"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "I found an old video in my own AI workflow and decided to remake it",
+      "url": "https://nexus-hits.netlify.app/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-09-15T09:48:28.000Z",
+      "snippet": "Article URL: https://nexus-hits.netlify.app/ Comments URL: https://news.ycombinator.com/item?id=49710020 Points: 1 # Comments: 1",
+      "category": "Other",
+      "summary": "A Hacker News post shares a personal project that remade an old video found in the author's own AI workflow.",
+      "summaryZhHK": "一個 Hacker News 帖文分享個人項目，將作者喺自己 AI workflow 入面搵到嘅舊片重新製作。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "vision"
+        ],
+        "traits": [
+          "tutorial",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "How much of F-Droid is LLM generated?",
+      "url": "https://tintotint.eu/whacky-corner/f-droid_slop/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-09-15T09:47:48.000Z",
+      "snippet": "Article URL: https://tintotint.eu/whacky-corner/f-droid_slop/ Comments URL: https://news.ycombinator.com/item?id=49710015 Points: 29 # Comments: 5",
+      "category": "Open Source",
+      "summary": "A blog post investigates how much of the F-Droid open-source Android app repository is generated by LLMs, sparking Hacker News discussion.",
+      "summaryZhHK": "一篇博客探討 F-Droid 呢個開源 Android App 儲存庫有幾多內容係由 LLM 生成，喺 Hacker News 引起討論。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm",
+          "evaluation"
+        ],
+        "traits": [
+          "open-source"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Louise Haigh: UK must heed warnings from AI experts",
+      "url": "https://www.theguardian.com/technology/2026/sep/15/uk-must-heed-warnings-from-ai-experts-minister-louise-haigh",
+      "source": "Guardian AI",
+      "publishedAt": "2026-09-15T09:33:17.000Z",
+      "snippet": "First secretary to set out benefits of AI to union conference while vowing government will take safety seriously UK politics live – latest updates Ministers must “heed the warnings” from industry leaders about the threat posed by AI as the government looks to capitalise on the technology, the first secretary, Louise Haigh, will say on Tuesday. Labour MPs and peers have called for the government to further cooperate with international partners to build regulations for the technology after three Anthropic researchers warned that artificial intelligence could wipe out humanity within the decade. ",
+      "category": "Regulation & Policy",
+      "summary": "UK first secretary Louise Haigh will tell a union conference that ministers must 'heed the warnings' from AI experts, after three Anthropic researchers warned AI could wipe out humanity within the decade.",
+      "summaryZhHK": "英國第一國務大臣 Louise Haigh 將喺工會會議上表示，內閣大臣必須「聽取警告」；此前三名 Anthropic 研究人員警告 AI 可能喺十年內消滅人類。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "Forget AI KPIs: how China’s tech giants are rationing tokens for employees",
+      "url": "https://www.scmp.com/tech/big-tech/article/3367593/forget-ai-kpis-how-chinas-tech-giants-are-rationing-tokens-employees?utm_source=rss_feed",
+      "source": "SCMP Tech",
+      "publishedAt": "2026-09-15T09:30:05.000Z",
+      "snippet": "When generative artificial intelligence first swept through China’s technology sector, workers faced a clear directive from management: use AI and use it often. Consuming vast numbers of AI tokens – the basic unit of computing power needed to process text or write code – became a badge of honour, with companies often viewing a high token count as a sign that employees were productive and taking initiative. But those computing allowances are now being sharply rolled back as China’s leading...",
+      "category": "Business & Funding",
+      "summary": "China's tech giants are sharply rolling back employee AI token allowances, reversing an earlier culture where consuming vast token counts was seen as a badge of honour and a sign of productivity.",
+      "summaryZhHK": "中國科技巨頭開始大幅削減員工嘅 AI token 額度，扭轉之前嗰種將用得多 token 當成榮譽、當成生產力證明嘅風氣。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Pocket Bibles and AI",
+      "url": "https://www.amytis.io/blog/insights-on-ai-from-the-reformation",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-09-15T09:28:17.000Z",
+      "snippet": "Article URL: https://www.amytis.io/blog/insights-on-ai-from-the-reformation Comments URL: https://news.ycombinator.com/item?id=49709903 Points: 3 # Comments: 3",
+      "category": "Other",
+      "summary": "A blog post on amytis.io draws historical lessons for AI from the Reformation era, shared on Hacker News.",
+      "summaryZhHK": "amytis.io 一篇 blog 由宗教改革時期汲取歷史教訓去講 AI，喺 Hacker News 上面分享。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Creating word recordings with AI: learning where to cut",
+      "url": "https://freshteapot.net/writing/creating-word-audio-with-ai/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-09-15T09:17:29.000Z",
+      "snippet": "Article URL: https://freshteapot.net/writing/creating-word-audio-with-ai/ Comments URL: https://news.ycombinator.com/item?id=49709820 Points: 1 # Comments: 0",
+      "category": "Applications",
+      "summary": "A blog post on freshteapot.net explains techniques for creating word audio recordings with AI, focusing on learning where to cut the audio.",
+      "summaryZhHK": "freshteapot.net 一篇 blog 講解點樣用 AI 製作詞語錄音，重點係學識喺邊度剪接音頻。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "audio"
+        ],
+        "traits": [
+          "tutorial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Not everyone is convinced that Big AI's proposed development slowdown is really about safety",
+      "url": "https://the-decoder.com/not-everyone-is-convinced-that-big-ais-proposed-development-slowdown-is-really-about-safety/",
+      "source": "The Decoder",
+      "publishedAt": "2026-09-15T09:04:36.000Z",
+      "snippet": "OpenAI, Anthropic, and Google want to slow down frontier AI development, citing safety concerns. But critics from across the industry and politics are pushing back. Cohere CEO Aidan Gomez calls the initiative a \"cartel by another name\" designed to shut out competitors, and the White House and Trump himself are opposing the move. The article Not everyone is convinced that Big AI's proposed development slowdown is really about safety appeared first on The Decoder.",
+      "category": "Regulation & Policy",
+      "summary": "Critics including Cohere CEO Aidan Gomez call Big AI's proposed development slowdown a 'cartel by another name' designed to shut out competitors, with the White House and Trump himself opposing the move despite OpenAI, Anthropic, and Google citing safety.",
+      "summaryZhHK": "Cohere 行政總裁 Aidan Gomez 等批評者形容大型 AI 公司提出嘅減速方案係「掛羊頭賣狗肉嘅 cartel」，目的係排擠競爭對手；雖然 OpenAI、Anthropic 同 Google 以安全為由推動，但白宮同特朗普本人都反對。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "openai",
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "Challenging AI",
+      "url": "https://jensrantil.github.io/posts/challenging-ai/",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-09-15T09:01:45.000Z",
+      "snippet": "Article URL: https://jensrantil.github.io/posts/challenging-ai/ Comments URL: https://news.ycombinator.com/item?id=49709711 Points: 1 # Comments: 0",
+      "category": "Other",
+      "summary": "A blog post on jensrantil.github.io titled 'Challenging AI' explores critical perspectives on AI, shared on Hacker News.",
+      "summaryZhHK": "jensrantil.github.io 一篇叫「Challenging AI」嘅 blog 探討對 AI 嘅批判性觀點，喺 Hacker News 分享。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "AI safety requires more than just slowing our pace | Stuart Russell",
+      "url": "https://www.theguardian.com/commentisfree/2026/sep/15/ai-safety-requirements",
+      "source": "Guardian AI",
+      "publishedAt": "2026-09-15T08:00:31.000Z",
+      "snippet": "Safety requirements are non-negotiable. They depend on meeting concrete goals, not just adjusting a timeline It has been a week of high drama in AI, precipitated by the resignation of the AI safety researcher Jacob Coxon from Anthropic. This followed several weeks of increasingly lurid and disturbing revelations about the OpenAI/Hugging Face incident. My inbox yesterday included a message from Business Insider with the subject line: “AI doomsday debate reaches boiling point”. Continue reading...",
+      "category": "AI Safety & Alignment",
+      "summary": "Stuart Russell argues AI safety requirements are non-negotiable and depend on meeting concrete goals rather than just adjusting timelines, amid high drama following Jacob Coxon's resignation from Anthropic.",
+      "summaryZhHK": "Stuart Russell 認為 AI 安全要求冇得傾，要達到具體目標而唔係淨係調整時間表；呢番話係喺 Jacob Coxon 由 Anthropic 辭職引發嘅連串風波之中講出。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "alignment"
+        ],
+        "traits": [],
+        "entities": [
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "Why a decade of doomsday warnings failed to slow the AI race",
+      "url": "https://www.theguardian.com/technology/2026/sep/15/ai-doomsday-warnings",
+      "source": "Guardian AI",
+      "publishedAt": "2026-09-15T08:00:30.000Z",
+      "snippet": "From Stephen Hawking to Jacob Coxon’s viral Anthropic resignation, fears that AI could threaten humanity have shaken the industry without stopping its pursuit Before an Anthropic researcher resigned and declared human extinction imminent last week, tech leaders and scientists had sounded the alarm about a superintelligent AI ending humanity for over a decade. The development of artificial intelligence “could spell the end of the human race”, warned professor and astrophysicist Stephen Hawking in 2014 – a little less than a decade before the public got its hands on the generative AI features of",
+      "category": "AI Safety & Alignment",
+      "summary": "A Guardian piece traces a decade of AI doomsday warnings — from Stephen Hawking in 2014 to Jacob Coxon's viral Anthropic resignation — noting they shook the industry but failed to slow the AI race.",
+      "summaryZhHK": "《衛報》回顧十年嚟嘅 AI 末日警告，由 2014 年霍金講到 Jacob Coxon 喺 Anthropic 辭職嘅爆紅事件，指出呢啲警告震動業界，但始終拖唔慢 AI 競賽。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "alignment"
+        ],
+        "traits": [],
+        "entities": [
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "Google DeepMind Staffer Says AI May 'Kill Us All' in Exit Post",
+      "url": "https://finance.yahoo.com/technology/ai/articles/google-deepmind-staffer-says-ai-023902174.html",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-09-15T07:42:50.000Z",
+      "snippet": "Article URL: https://finance.yahoo.com/technology/ai/articles/google-deepmind-staffer-says-ai-023902174.html Comments URL: https://news.ycombinator.com/item?id=49709109 Points: 2 # Comments: 0",
+      "category": "AI Safety & Alignment",
+      "summary": "A Google DeepMind staffer's exit post warns that AI may 'kill us all', fueling ongoing debate over existential risk.",
+      "summaryZhHK": "一名 Google DeepMind 員工喺離職帖文警告 AI 可能「殺死我哋所有人」，令存亡風險嘅討論再度升溫。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": [
+          "deepmind"
+        ]
+      }
+    },
+    {
+      "title": "Javier Gomez-Serrano – New Math, AI Developments in Fluid Mechanics [video]",
+      "url": "https://www.youtube.com/watch?v=TcEefrWrddA",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-09-15T07:15:15.000Z",
+      "snippet": "Article URL: https://www.youtube.com/watch?v=TcEefrWrddA Comments URL: https://news.ycombinator.com/item?id=49708893 Points: 1 # Comments: 0",
+      "category": "Research",
+      "summary": "A video features Javier Gomez-Serrano discussing new mathematics and AI developments in fluid mechanics, shared on Hacker News.",
+      "summaryZhHK": "一段影片由 Javier Gomez-Serrano 講解流體力學入面嘅新數學同 AI 發展，喺 Hacker News 分享。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Trump says AI safety fears a 'hoax' as he rejects calls for greater safeguards",
+      "url": "https://www.bbc.co.uk/news/articles/cw980n0nd0qjo",
+      "source": "Hacker News (AI)",
+      "publishedAt": "2026-09-15T07:14:46.000Z",
+      "snippet": "Article URL: https://www.bbc.co.uk/news/articles/cw980n0nd0qjo Comments URL: https://news.ycombinator.com/item?id=49708891 Points: 2 # Comments: 0",
+      "category": "Regulation & Policy",
+      "summary": "Trump called AI safety fears a 'hoax' and rejected calls for greater safeguards, according to a BBC report shared on Hacker News.",
+      "summaryZhHK": "據 BBC 報道（喺 Hacker News 分享），特朗普話 AI 安全憂慮係「騙局」，並拒絕加強保障措施嘅呼聲。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "AI 巨頭籲立法強制設開關 英政府指禁都無用 難阻其他地方開發濫用",
+      "url": "https://unwire.hk/2026/09/15/anthropic-ai-kill-switch-law/fun-tech/?utm_source=rss&utm_medium=rss&utm_campaign=anthropic-ai-kill-switch-law",
+      "source": "Unwire.hk",
+      "publishedAt": "2026-09-15T06:41:33.000Z",
+      "snippet": "Anthropic 及 OpenAI 前研究員上週二辭職，警告 AI 業界正「拿人類生命做賭注」，科技界敲響警 […]",
+      "category": "Regulation & Policy",
+      "summary": "Former Anthropic and OpenAI researchers resigned with warnings that the AI industry is 'gambling with human lives,' while UK government officials argue an outright ban would be useless since development and misuse would simply move elsewhere.",
+      "summaryZhHK": "Anthropic 同 OpenAI 前研究員辭職，警告 AI 業界正「拿人類生命做賭注」；而英國政府官員就話，直接禁止都無用，因為開發同濫用只會轉移去其他地方繼續發生。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "openai",
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "Trump facing AI backlash in Congress as push for guardrails intensifies",
+      "url": "https://www.theguardian.com/technology/2026/sep/15/trump-ai-guardrails-democrats-republicans",
+      "source": "Guardian AI",
+      "publishedAt": "2026-09-15T06:39:40.000Z",
+      "snippet": "President has dismissed anxieties over AI’s dangerous potential even as Democrats and some Republicans acknowledge risks Donald Trump is facing a rare backlash from the US Congress as Democrats and some Republicans push for guardrails on the world’s most powerful AI companies. Concerns over the dangerous potential of AI reached fever pitch this week after tech leaders sounded the alarm over the rapid advancement of the technology and its potential threat to humanity. Continue reading...",
+      "category": "Regulation & Policy",
+      "summary": "Donald Trump faces a rare backlash from the US Congress as Democrats and some Republicans push for guardrails on the most powerful AI companies, amid heightened anxiety over the technology's risks.",
+      "summaryZhHK": "特朗普罕有咁畀美國國會反彈，民主黨同部分共和黨人齊齊推動要為最強大嘅 AI 公司加設護欄，背景係外界對科技風險嘅憂慮升溫。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "gpt"
+        ]
+      }
+    },
+    {
+      "title": "全港首套共融網安動畫《網安西遊記》登場　悟空、八戒教你防 AI 換臉騙案",
+      "url": "https://unwire.hk/2026/09/15/cybersafe-for-all-ai-animation-journey-to-the-west/tech-secure/?utm_source=rss&utm_medium=rss&utm_campaign=cybersafe-for-all-ai-animation-journey-to-the-west",
+      "source": "Unwire.hk",
+      "publishedAt": "2026-09-15T06:21:50.000Z",
+      "snippet": "香港互聯網協會等 6 大機構聯合主辦「網絡安全同行計劃」（CyberSafe for All），推出全港首套共 […]",
+      "category": "Applications",
+      "summary": "Six organisations including the Hong Kong Internet Society jointly launched the CyberSafe for All programme, releasing Hong Kong's first inclusive cybersecurity animation 'Cybersecurity Journey to the West' to teach the public about AI deepfake scams.",
+      "summaryZhHK": "香港互聯網協會等六間機構聯合主辦「網絡安全同行計劃」，推出全港首套共融網絡安全動畫《網安西遊記》，教市民防範 AI 換臉騙案。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Google 芬蘭起數據中心 特朗普公開炮轟 不滿千億 AI 項目離美",
+      "url": "https://unwire.hk/2026/09/15/trump-google-finland-ai-center/hottopic/spotlight/?utm_source=rss&utm_medium=rss&utm_campaign=trump-google-finland-ai-center",
+      "source": "Unwire.hk",
+      "publishedAt": "2026-09-15T05:31:31.000Z",
+      "snippet": "美國總統特朗普周一（14 日）在社交媒體炮轟 Google，不滿對方將大型 AI 資料中心項目設於芬蘭而非美國 […]",
+      "category": "Regulation & Policy",
+      "summary": "President Trump publicly criticised Google on social media for placing a large AI data center project in Finland instead of the US, objecting to a hundred-billion-dollar AI project leaving the country.",
+      "summaryZhHK": "特朗普總統喺社交媒體公開炮轟 Google，不滿對方將大型 AI 數據中心項目設喺芬蘭而非美國，反對千億美元 AI 項目離開美國。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy",
+          "incident"
+        ],
+        "entities": [
+          "google"
+        ]
+      }
+    },
+    {
+      "title": "Data dive: The revolving door between Whitehall and big tech",
+      "url": "https://www.computerweekly.com/news/366650387/Data-dive-The-revolving-door-between-Whitehall-and-big-tech",
+      "source": "Computer Weekly",
+      "publishedAt": "2026-09-15T05:30:00.000Z",
+      "snippet": "A Computer Weekly data analysis reveals a steady revolving door between Whitehall and major technology suppliers, mapping 63 moves by senior officials to AI and IT suppliers since 2010",
+      "category": "Regulation & Policy",
+      "summary": "A Computer Weekly data analysis maps 63 moves by senior Whitehall officials to AI and IT suppliers since 2010, revealing a steady revolving door between the UK government and big tech.",
+      "summaryZhHK": "Computer Weekly 嘅數據分析追蹤咗自 2010 年以嚟 63 宗英國政府高級官員轉去 AI 同 IT 供應商嘅個案，揭示 Whitehall 同大型科技公司之間一直存在穩定嘅「旋轉門」。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "黃仁勳大會突收特朗普電話 特朗普直斥AI接管是騙局 機械人不會接管世界",
+      "url": "https://unwire.hk/2026/09/15/trump-huang-ai-hoax-call/hottopic/spotlight/?utm_source=rss&utm_medium=rss&utm_campaign=trump-huang-ai-hoax-call",
+      "source": "Unwire.hk",
+      "publishedAt": "2026-09-15T04:54:43.000Z",
+      "snippet": "美國總統特朗普 9 月 14 日（周一）在洛杉磯 All-In Summit 活動現場，致電 NVIDIA 行 […]",
+      "category": "Regulation & Policy",
+      "summary": "At the All-In Summit in Los Angeles, President Trump phoned Nvidia CEO Jensen Huang onstage, dismissing AI takeover fears as a hoax and declaring that robots will not take over the world.",
+      "summaryZhHK": "喺洛杉磯 All-In Summit 活動現場，特朗普總統致電台上嘅 NVIDIA 行政總裁黃仁勳，直斥 AI 接管人類嘅恐慌係騙局，並宣稱機械人唔會接管世界。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy",
+          "incident"
+        ],
+        "entities": [
+          "nvidia"
+        ]
+      }
+    },
+    {
+      "title": "iOS 27 與 macOS 27 正式推出 Siri AI  全面升級 兒童安全防護加強",
+      "url": "https://unwire.hk/2026/09/15/ios27-macos27-siri-gemini/software/ios-app/?utm_source=rss&utm_medium=rss&utm_campaign=ios27-macos27-siri-gemini",
+      "source": "Unwire.hk",
+      "publishedAt": "2026-09-15T04:28:22.000Z",
+      "snippet": "Apple 於 2026 年 9 月 14 日向全球用戶正式推出 iOS 27、iPadOS 27、macOS […]",
+      "category": "Applications",
+      "summary": "Apple officially released iOS 27, iPadOS 27 and macOS 27 on September 14, 2026, featuring a fully upgraded Siri AI and strengthened child safety protections.",
+      "summaryZhHK": "Apple 喺 2026 年 9 月 14 日正式推出 iOS 27、iPadOS 27 同 macOS 27，Siri AI 全面升級，兒童安全防護亦加強咗。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "evaluation"
+        ],
+        "traits": [
+          "release",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Transformers: More than meets the eye in datacentre grid connection",
+      "url": "https://www.computerweekly.com/opinion/Transformers-More-than-meets-the-eye-in-datacentre-grid-connection",
+      "source": "Computer Weekly",
+      "publishedAt": "2026-09-15T04:26:00.000Z",
+      "snippet": "As hyperscale AI data centres scale up to handle intense workloads, advanced super-grid transformers are emerging as the hidden linchpin for resilient, sustainable capacity",
+      "category": "Hardware & Compute",
+      "summary": "As hyperscale AI data centres scale up to handle intense workloads, advanced super-grid transformers are emerging as the hidden linchpin for resilient, sustainable datacentre grid connection capacity.",
+      "summaryZhHK": "隨住超大規模 AI 數據中心不斷擴張去應付密集運算負載，先進嘅 super-grid 變壓器開始成為數據中心電網接駁韌性同可持續容量嘅隱形關鍵。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "AI isn’t going to end humanity ... right? - podcast",
+      "url": "https://www.theguardian.com/technology/audio/2026/sep/15/ai-isnt-going-to-end-humanity-right-full-story-podcast",
+      "source": "Guardian AI",
+      "publishedAt": "2026-09-15T04:00:25.000Z",
+      "snippet": "A series of figures in the tech world have been warning about – and even resigning over – the existential threat posed by artificial intelligence. How worried should we be? Today in Focus host Annie Kelly speaks with technology editor Robert Booth Continue reading...",
+      "category": "AI Safety & Alignment",
+      "summary": "A Guardian podcast episode discusses tech figures who have warned about or resigned over the existential threat posed by AI, asking how worried the public should be.",
+      "summaryZhHK": "Guardian 一集 podcast 探討科技界人士對 AI 構成嘅存亡威脅發出警告、甚至為此辭職，問公眾究竟應該有幾擔心。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "research",
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "ZGCM-1: A Fully Open and Extremely Efficient Foundation Model for Math and Agentic Search",
+      "url": "https://arxiv.org/abs/2609.13356",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-15T04:00:00.000Z",
+      "snippet": "arXiv:2609.13356v1 Announce Type: new Abstract: In this work, we present ZGCM-1, a fully open 7B dense foundation model trained from scratch with extreme data, system, and algorithmic efficiency. ZGCM-1 is founded on a core premise: compact models cannot passively memorize the open web, but can overcome parametric capacity limits by coupling deliberate internal thinking with active external tool use. To support this paradigm across a 256K context, we develop an end-to-end, high-efficiency open training recipe: Architecture & System Co-design: interleaved gated sliding-window and full attention",
+      "category": "Open Source",
+      "summary": "Researchers present ZGCM-1, a fully open 7B dense foundation model trained from scratch with extreme data, system, and algorithmic efficiency for math and agentic search, using a 256K context and interleaved gated sliding-window and full attention.",
+      "summaryZhHK": "研究團隊發表 ZGCM-1，一個完全開放嘅 7B dense foundation model，由零開始訓練，喺數據、系統同算法效率上都做到極致，主打數學同 agentic search，支援 256K context，採用 interleaved gated sliding-window 同 full attention。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning",
+          "agentic"
+        ],
+        "traits": [
+          "open-source"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Generalized Agent Iteration: One Formal Framework for Iterative Policy Improvement and Recursive Self-Improvement",
+      "url": "https://arxiv.org/abs/2609.13406",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-15T04:00:00.000Z",
+      "snippet": "arXiv:2609.13406v1 Announce Type: new Abstract: When we speak of recursive self-improvement (RSI), are we speaking of a phenomenon, a mechanism, or a prospect? Towards autonomous and evolving intelligence, RSI is being claimed at many scales, while no single framework that formally describes these emerging instances exists. Its counterpart in the classical realm, iterative policy improvement, is characterized by generalized policy iteration (GPI), a framework of broad applicability with well-understood theoretical properties, but only where the update principle and the evaluation base lie outs",
+      "category": "Research",
+      "summary": "A new arXiv paper proposes Generalized Agent Iteration (GAI), a formal framework for iterative policy improvement and recursive self-improvement, aiming to unify how emerging RSI instances are described at many scales.",
+      "summaryZhHK": "一篇新 arXiv 論文提出 Generalized Agent Iteration（GAI），係一個用嚟描述 iterative policy improvement 同 recursive self-improvement 嘅形式化框架，目標係統一喺唔同規模下出現嘅 RSI 個案嘅描述方式。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Vibe Patenting: Evaluating LLM Judges for Professional Patent-Drafting Agents",
+      "url": "https://arxiv.org/abs/2609.13422",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-15T04:00:00.000Z",
+      "snippet": "arXiv:2609.13422v1 Announce Type: new Abstract: LLM judges are increasingly used to evaluate and improve AI-generated outputs, yet their reliability for complex professional work remains unclear. We study this problem through Vibe Patenting, an end-to-end patent-drafting testbed for AI-agent evaluation. A separately-invoked LLM judge evaluates generated patent drafts and provides structured feedback for iterative revision. Across multiple inventions and drafting-agent configurations, judge-guided revision consistently improves judge-assessed quality, while unguided revision tends to saturate. ",
+      "category": "Research",
+      "summary": "A paper introduces Vibe Patenting, an end-to-end patent-drafting testbed for AI-agent evaluation, finding that judge-guided revision consistently improves judge-assessed quality while unguided revision tends to saturate.",
+      "summaryZhHK": "有論文提出 Vibe Patenting，一個用嚟評估 AI 代理嘅端到端專利起草測試平台，發現由評判引導嘅修訂能持續提升評判所評嘅質素，而無引導嘅修訂就會趨向飽和。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "evaluation",
+          "llm"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Toward Self-Adaptive Physical AI: Can LLM Agents Manage Long-Horizon Physical Tasks?",
+      "url": "https://arxiv.org/abs/2609.13436",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-15T04:00:00.000Z",
+      "snippet": "arXiv:2609.13436v1 Announce Type: new Abstract: Large Language Model (LLM) agents offer a promising path toward autonomously managing long-term physical tasks without human intervention. However, physical tasks require agents to continuously observe the environment, make consequential actions, and remain effective as the environment changes. Existing approaches either require substantial data and retraining, or primarily focus on agents operating in the virtual world. In this work, we explore the feasibility of building a self-adaptive physical AI agent that manages long-term physical tasks in",
+      "category": "Research",
+      "summary": "A paper explores the feasibility of a self-adaptive physical AI agent that manages long-horizon physical tasks, addressing the need for continuous environmental observation and consequential action without substantial data or retraining.",
+      "summaryZhHK": "有論文探討建立一個自適應物理 AI 代理、管理長遠期物理任務嘅可行性，針對代理需要持續觀察環境同作出有後果嘅行動，而又毋須大量數據或重新訓練。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "robotics"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "LabAgent: Customize Any Research Hubs for Scientific Discoveries Using AI Agents",
+      "url": "https://arxiv.org/abs/2609.13437",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-15T04:00:00.000Z",
+      "snippet": "arXiv:2609.13437v1 Announce Type: new Abstract: Scientific research is a continuous process that emphasizes inheritance. Methods developed by predecessors are often expanded upon by new researchers to explore more novel and in-depth scientific questions. However, the change of lab staff, such as student graduation, leads to a lack of personnel capable of replicating methods. Methods that have been developed with significant effort and resources cannot be continued. To address these limitations, we propose LabAgent, a reproduce and discovery harness tailored for a lab's continuous work. LabAgen",
+      "category": "Research",
+      "summary": "LabAgent is a proposed reproduce-and-discovery harness that helps research labs preserve and continue methods across staff turnover by using AI agents for scientific discovery.",
+      "summaryZhHK": "LabAgent 係一個提案嘅重現同探索框架，用 AI agent 幫實驗室喺人員流失嘅情況下保留同延續研究方法，繼續做科研發現。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "training"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "TimeThink: Eliciting Compositional Reasoning in Timeseries Large Language Models",
+      "url": "https://arxiv.org/abs/2609.13457",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-15T04:00:00.000Z",
+      "snippet": "arXiv:2609.13457v1 Announce Type: new Abstract: Timeseries multimodal large language models (TS-MLLMs) have recently begun leveraging the reasoning capabilities of large language models (LLMs) for question-answering tasks. However, these models often fail to capture dynamic temporal patterns, providing only implicit reasoning that lacks the underlying explanations critical for high-stakes applications like healthcare. While reinforcement learning (RL)-based timeseries language models aim to address this, they often fall short because they are trained on narrow, in-distribution data and struggl",
+      "category": "Research",
+      "summary": "TimeThink is proposed to elicit compositional reasoning in timeseries multimodal LLMs, addressing their failure to capture dynamic temporal patterns and provide explicit explanations for high-stakes uses like healthcare.",
+      "summaryZhHK": "TimeThink 用嚟激發時序多模態 LLM 嘅組合推理能力，解決佢哋捕捉唔到動態時間模式、又冇明確解釋嘅問題，對醫療等高風險應用尤其重要。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning",
+          "llm"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Root-Cause Attribution Is a Search Problem: Continual Search for Long-Horizon Agent Failures",
+      "url": "https://arxiv.org/abs/2609.13463",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-15T04:00:00.000Z",
+      "snippet": "arXiv:2609.13463v1 Announce Type: new Abstract: The increasing deployment of AI agents in long-horizon tasks yields massive execution logs. Diagnosing failures within these records is crucial for reliability, as it transforms outcome-level signals into actionable interventions. The sheer scale of the data renders human review impractical, driving the need for automated root-cause attribution (RCA). However, automated RCA methods using LLMs suffer from low diagnostic accuracy, especially as execution traces grow larger. They struggle because relevant information is often sparse, distributed acr",
+      "category": "Research",
+      "summary": "A paper frames root-cause attribution for long-horizon AI agent failures as a search problem, proposing continual search to handle large, sparse execution traces where LLM-based RCA has low accuracy.",
+      "summaryZhHK": "一篇論文將長時程 AI agent 失敗嘅根因歸因當成搜尋問題，提出持續搜尋方法，應付又大又稀疏嘅執行日誌，因為單靠 LLM 做 RCA 準確度好低。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Governing at Machine Speed: An Adaptive Intelligence Architecture for Real-Time AI Policy Enforcement",
+      "url": "https://arxiv.org/abs/2609.13466",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-15T04:00:00.000Z",
+      "snippet": "arXiv:2609.13466v1 Announce Type: new Abstract: Enterprise AI adoption has reached 78% of organizations globally, yet the infrastructure to govern that adoption has not kept pace. This paper identifies and characterizes the attestation deficit, a structural condition in which organizations maintain governance policies but cannot produce auditable, tamper-evident evidence of enforcement within regulatory timelines. Drawing on empirical data from the Stanford 2026 AI Index Report (362 documented incidents), the IBM/Ponemon 2026 Cost of a Data Breach study (USD 4.99M average cost, 92% lacking acc",
+      "category": "Regulation & Policy",
+      "summary": "A paper proposes an adaptive intelligence architecture for real-time AI policy enforcement, identifying an 'attestation deficit' where organizations have governance policies but cannot produce auditable, tamper-evident enforcement evidence within regulatory timelines.",
+      "summaryZhHK": "一篇論文提出用自適應智能架構做實時 AI 政策執行，指出存在「證明缺口」——企業有管治政策，但喺監管時限內攞唔到可審計、防篡改嘅執行證據。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "evaluation",
+          "safety"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "OrchSLM: Probing the Dynamics of Small Language Model Orchestration",
+      "url": "https://arxiv.org/abs/2609.13470",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-15T04:00:00.000Z",
+      "snippet": "arXiv:2609.13470v1 Announce Type: new Abstract: Although large language models (LLMs) have demonstrated remarkable capabilities, their reliance on cloud-scale infrastructure poses fundamental challenges for deployment in agentic pipelines, including latency, privacy, connectivity, and substantial computational cost. Small language models (SLMs) offer a compelling alternative: recent studies suggest that many repetitive and narrowly scoped subtasks in agentic workloads may be better served by specialized SLMs than by monolithic LLMs. However, the limited capacity and context windows of SLMs can",
+      "category": "Research",
+      "summary": "The arXiv paper OrchSLM studies small language model orchestration for agentic pipelines, arguing specialized SLMs may better serve repetitive subtasks than monolithic LLMs despite limited capacity and context windows.",
+      "summaryZhHK": "arXiv 論文 OrchSLM 研究 agentic pipeline 入面嘅小型語言模型編排，認為專門化 SLM 喺處理重複性 subtask 上可能比單一巨型 LLM 更有效，即使佢哋嘅容量同 context window 有限。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "inference"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Grounded Adjudication of Variations across Extracted TimeLines (GAVEL): Comparing Clinical Timelines Against Their Case Reports",
+      "url": "https://arxiv.org/abs/2609.13475",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-15T04:00:00.000Z",
+      "snippet": "arXiv:2609.13475v1 Announce Type: new Abstract: Existing pipelines for clinical timeline extraction from case reports are evaluated using an expert reference and are limited by imperfect reference annotations and imprecise event alignment. We developed GAVEL, an LLM judge protocol that compares two timelines with the case report and returns a discrepancy type, verdict, and report passage for each difference. We evaluated the event matcher, reviewed 2,738 findings from GPT5.6sol and DeepSeek V3.2, ranked six LLM extractors and two human annotators, and tested GAVEL guided merging. True match ra",
+      "category": "Research",
+      "summary": "The GAVEL paper introduces an LLM judge protocol that compares clinical timelines against case reports, evaluated on 2,738 findings from GPT5.6sol and DeepSeek V3.2, ranking six LLM extractors and two human annotators.",
+      "summaryZhHK": "GAVEL 論文提出一套 LLM judge 協議，將臨床 timeline 同 case report 作比對，用 GPT5.6sol 同 DeepSeek V3.2 嘅 2,738 項發現做評估，為六個 LLM extractor 同兩個真人 annotator 排名。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "evaluation"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Token Efficient Task Execution via Application Behavior Modeling for Web Agents",
+      "url": "https://arxiv.org/abs/2609.13491",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-15T04:00:00.000Z",
+      "snippet": "arXiv:2609.13491v1 Announce Type: new Abstract: The strong performance of AI Agents across an impressive variety of tasks is driving an unprecedented investment in agentic infrastructures, however the cost of processing tokens is fast increasing. Web agents automate the execution of web-application tasks described in natural language, by analyzing the web-application's user interface (UI) and interacting with it. This work introduces OdoBot, a novel web-agent architecture that completes tasks at a fraction of the cost when compared to conventional web agents. This is achieved by leveraging a b",
+      "category": "Research",
+      "summary": "The arXiv paper introduces OdoBot, a web-agent architecture that models application behavior to complete tasks at a fraction of the token cost of conventional web agents.",
+      "summaryZhHK": "arXiv 論文提出 OdoBot，一套 web agent 架構，透過為應用程式行為建模，以遠低於傳統 web agent 嘅 token 成本完成任務。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "inference"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Fraglingo: Molecular Design via Attachment-Aware Autoregressive Fragment Generation",
+      "url": "https://arxiv.org/abs/2609.13519",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-15T04:00:00.000Z",
+      "snippet": "arXiv:2609.13519v1 Announce Type: new Abstract: Molecular design is most effective when generation mirrors the edits chemists actually make: extending a scaffold, replacing a substituent, or decorating a scaffold at a specified attachment site while optimizing molecular properties. Fragment-based molecular design naturally supports this workflow, yet existing approaches often separate fragment selection from attachment prediction, first choosing a fragment from a fixed vocabulary and then predicting how it should be connected. This decoupling restricts generation to a closed fragment vocabular",
+      "category": "Research",
+      "summary": "Fraglingo is an attachment-aware autoregressive fragment generation method for molecular design that unifies fragment selection and attachment prediction, mirroring the edits chemists actually make.",
+      "summaryZhHK": "Fraglingo 係一套 attachment-aware 自迴歸片段生成方法，用於分子設計，將片段選擇同連接位置預測統一處理，貼近化學家實際做嘅編輯操作。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Asclepius: An Adaptive Harness for Long-Horizon Clinical Agents",
+      "url": "https://arxiv.org/abs/2609.13543",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-15T04:00:00.000Z",
+      "snippet": "arXiv:2609.13543v1 Announce Type: new Abstract: LLM agents are predominantly benchmarked on short, single-task trajectories, yet real deployments run for hours under contention, surfacing a different class of failures. We use the Clinical Environment Simulator (CES), in which an agent manages an entire emergency-department shift under continuous time and resource pressure, as a testbed: long-horizon execution failures manifest measurably in a single rollout under structured, multi-dimensional grading. On CES, current agents reach the correct diagnosis in most cases yet fail to deliver complete",
+      "category": "Research",
+      "summary": "The Asclepius paper presents an adaptive harness for long-horizon clinical agents, tested in the Clinical Environment Simulator where agents managing an emergency-department shift reach correct diagnoses but fail to deliver complete care.",
+      "summaryZhHK": "Asclepius 論文提出一套畀長時程臨床 agent 用嘅自適應 harness，喺 Clinical Environment Simulator 測試，agent 要管理成個急症室更次，雖然大多能夠斷症正確，但就交唔到完整嘅護理。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "evaluation"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "AutoTailor: Automatic, User-Aligned Capability Selection and Adaptation for Web Agents",
+      "url": "https://arxiv.org/abs/2609.13548",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-15T04:00:00.000Z",
+      "snippet": "arXiv:2609.13548v1 Announce Type: new Abstract: Web agents can utilize reusable tools to reduce the cost and latency of low-level browser interaction, but automatically discovered tool collections can be large, redundant, and poorly aligned with user demand. We present AutoTailor, a meta-agentic framework for constructing and maintaining a compact set of trajectory-derived Model Context Protocol (MCP) APIs. Offline, AutoTailor converts web trajectories into parameterized browser-automation programs, applies a Quality Filter to remove APIs with unsuitable granularity and redundant functionality",
+      "category": "MCP",
+      "summary": "AutoTailor is a meta-agentic framework for building and maintaining a compact set of trajectory-derived Model Context Protocol (MCP) APIs for web agents, using a Quality Filter to remove unsuitable and redundant APIs and align them with user demand.",
+      "summaryZhHK": "AutoTailor 係一套 meta-agentic 框架，為 web agent 建立同維護一組精簡、由 trajectory 衍生嘅 Model Context Protocol（MCP）API，用 Quality Filter 剔除唔合適同重複嘅 API，令佢哋貼合用戶需求。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "mcp",
+          "agentic"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Carbon-Aware Routing for Function Calling in Edge-Cloud LLM Systems",
+      "url": "https://arxiv.org/abs/2609.13559",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-09-15T04:00:00.000Z",
+      "snippet": "arXiv:2609.13559v1 Announce Type: new Abstract: Large Language Models (LLMs) with function-calling capabilities are becoming critical for modern agentic AI systems. Nevertheless, current deployments typically route inferences to powerful cloud-based models, incurring significant energy use and carbon emissions. We address this sustainability challenge with a carbon-aware routing framework that distributes function-calling queries across a three-tier edge-cloud architecture, combining edge and cloud LLMs on heterogeneous hardware. At its core, a lightweight k-NN predictor operating in a unified",
+      "category": "Hardware & Compute",
+      "summary": "A carbon-aware routing framework distributes function-calling queries across a three-tier edge-cloud architecture combining edge and cloud LLMs on heterogeneous hardware, using a lightweight k-NN predictor to cut energy use and carbon emissions.",
+      "summaryZhHK": "一套碳感知路由框架將 function calling 查詢分散喺三層 edge-cloud 架構，結合異構硬件上嘅 edge 同 cloud LLM，用輕量 k-NN predictor 去減低能源消耗同碳排放。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Microsoft 發布人本 AI 守則　列明「人類比 AI 重要」　隔空質疑 Anthropic",
+      "url": "https://unwire.hk/2026/09/15/microsoft-humanist-ai-code-of-conduct-safety/tech-secure/?utm_source=rss&utm_medium=rss&utm_campaign=microsoft-humanist-ai-code-of-conduct-safety",
+      "source": "Unwire.hk",
+      "publishedAt": "2026-09-15T02:00:57.000Z",
+      "snippet": "Microsoft 發布長達 37 頁的「人本 AI 行為準則」（Humanist AI Code of Co […]",
+      "category": "AI Safety & Alignment",
+      "summary": "Microsoft released a 37-page 'Humanist AI Code of Conduct' stating that humans matter more than AI, in a move read as a jab at Anthropic.",
+      "summaryZhHK": "Microsoft 發布長達 37 頁嘅「人本 AI 行為準則」，講明人類比 AI 重要，外界解讀係隔空向 Anthropic 開火。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "microsoft"
+        ]
+      }
+    },
+    {
+      "title": "Voting rights advocates welcome supreme court decision to stop Trump administration from restricting mail ballots– as it happened",
+      "url": "https://www.theguardian.com/us-news/live/2026/sep/14/donald-trump-mail-in-voting-supreme-court-blocked-ukraine-oil-diplomat-latest-news-updates",
+      "source": "Guardian AI",
+      "publishedAt": "2026-09-15T01:59:45.000Z",
+      "snippet": "This live blog is now closed. Supreme court rejects Trump’s mail ballot restrictions for midterm elections Sign up for the Breaking News US email Donald Trump has claimed there is a “SICK conspiracy” against artificial intelligence and data centers in response to the growing calls for greater checks on AI development. “The only control or ‘guardrails’ that AI needs is a STRONG AND SMART (High IQ!) PRESIDENT, and the U.S.A. has that, in spades!” Trump wrote on Truth Social, insisting that the administration has stopped leaders of AI companies from “doing bad, or potentially bad” things. However",
+      "category": "Regulation & Policy",
+      "summary": "In a live blog, Trump claimed a 'SICK conspiracy' against AI and data centers amid growing calls for greater checks on AI development, while the Supreme Court rejected his mail ballot restrictions for midterms.",
+      "summaryZhHK": "喺 live blog 入面，特朗普話有人針對 AI 同 data center 搞「病態陰謀」，正值外界要求加強規管 AI 發展；同時最高法院否決咗佢對中期選舉郵寄投票嘅限制。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy",
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Jensen Huang took a call from Trump, and showed off something else, too",
+      "url": "https://techcrunch.com/2026/09/14/jensen-huang-took-a-call-from-trump-and-showed-off-something-else-too/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-15T01:50:48.000Z",
+      "snippet": "When Jensen Huang took a live call from Trump, some of us were more focused the phone he used to take it.",
+      "category": "Business & Funding",
+      "summary": "Nvidia CEO Jensen Huang took a live call from President Trump, but observers were just as focused on the phone he used to take it.",
+      "summaryZhHK": "Nvidia 行政總裁 Jensen Huang 喺場合中即場接咗特朗普打嚟嘅電話，不過有啲人更加留意佢用嚟聽電話嗰部手機。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "nvidia"
+        ]
+      }
+    },
+    {
+      "title": "Anthropic 揭 AI 交友騙局   25,000 人對話七成半為機械人",
+      "url": "https://unwire.hk/2026/09/15/anthropic-claude-dating-scam-ai/fun-tech/?utm_source=rss&utm_medium=rss&utm_campaign=anthropic-claude-dating-scam-ai",
+      "source": "Unwire.hk",
+      "publishedAt": "2026-09-15T00:14:14.000Z",
+      "snippet": "Anthropic 發表最新威脅情報報告，踢爆一間中國 App 工作室利用 Claude 開發超過 20 款交 […]",
+      "category": "AI Safety & Alignment",
+      "summary": "Anthropic published a threat intelligence report exposing a Chinese app studio that used Claude to build over 20 dating apps, where roughly 75% of conversations across 25,000 chats were bots.",
+      "summaryZhHK": "Anthropic 發表威脅情報報告，踢爆一間中國 App 工作室用 Claude 開發超過 20 款交友 App，喺 25,000 段對話入面有大約七成半都係機械人。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": [
+          "claude"
+        ]
+      }
+    },
+    {
+      "title": "Is Big Tech’s AI slowdown a safety pact or a cartel?",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel",
+      "source": "The Verge AI",
+      "publishedAt": "2026-09-14T22:59:41.000Z",
+      "snippet": "When OpenAI CEO Sam Altman, Anthropic CEO Dario Amodei, Google DeepMind cofounder Demis Hassabis, and SpaceX head Elon Musk loosely agreed over the weekend to slow down AI development, skeptics spotted an ulterior motive immediately. The AI titans had declared that their aim was to \"pace the frontier,\" signing on at least partially to a proposal for embedding third-party auditors, regulating domestic labs, and reaching a global slowdown agreement. Their critics, however, argued they simply wanted to stop would-be competitors, kneecap the open-source movement, and avoid real legal safeguards - ",
+      "category": "Regulation & Policy",
+      "summary": "AI leaders including Sam Altman, Dario Amodei, Demis Hassabis, and Elon Musk loosely agreed to 'pace the frontier' of AI development, proposing third-party auditors, domestic lab regulation, and a global slowdown agreement. Skeptics argue the move is really about blocking competitors, hobbling open source, and dodging real legal safeguards.",
+      "summaryZhHK": "Sam Altman、Dario Amodei、Demis Hassabis 同 Elon Musk 等 AI 巨頭週末鬆散咁達成共識，話要「pace the frontier」放慢 AI 發展，提倡引入第三方審計、規管本土實驗室同埋全球減速協議。但 skeptical 嘅人就覺得佢哋真正目的係想攔住潛在競爭對手、扼殺開源運動，同埋避開真正嘅法律監管。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "openai",
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "Texas governor threatens to penalize datacenters not obeying water laws",
+      "url": "https://www.theguardian.com/us-news/2026/sep/14/greg-abbott-texas-datacenter-water-laws",
+      "source": "Guardian AI",
+      "publishedAt": "2026-09-14T22:57:15.000Z",
+      "snippet": "Republican Greg Abbott says datacenters must help ‘protect’ drought-prone state and disclose water use Greg Abbott, the Texas governor, has directed state regulators to penalize datacenters that fail to comply with state laws requiring them to disclose their water use. “Data centers must share the duty to protect Texas water,” the Republican governor said on Monday. “The Texas Water Code requires a complete and accurate water use survey. I direct the Texas Water Development Board to use its enforcement authority to penalize past failures and to impose legal consequences for any future failure ",
+      "category": "Regulation & Policy",
+      "summary": "Texas governor Greg Abbott directed state regulators to penalize datacenters that fail to comply with Texas Water Code disclosure requirements, saying they must help protect the drought-prone state's water.",
+      "summaryZhHK": "德州州長 Greg Abbott 指示州監管機構處罰唔遵守《德州水法》披露要求嘅 data center，話佢哋要幫手保護呢個易旱州份嘅水資源。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy",
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "AI-linked stocks slide after tech bosses call for slowdown in ‘reckless’ development",
+      "url": "https://www.theguardian.com/business/2026/sep/14/ai-linked-stocks-fall-tech-bosses-call-slowdown-anthropic-openai",
+      "source": "Guardian AI",
+      "publishedAt": "2026-09-14T22:10:52.000Z",
+      "snippet": "Donald Trump dismisses attempts to increase controls on artificial intelligence as ‘sick conspiracy’ AI-linked stocks tumbled on Monday after the bosses of Anthropic, OpenAI and SpaceX called for a slowdown in AI “reckless” development, citing fears the technology could soon run out of control. Shares in the semiconductor designer Nvidia – the world’s most valuable company – were down 3.3% by market closing in New York City, while Advanced Micro Devices (AMD) slid 4% and Micron Technology and Sandisk shares slumped by 5%. The tech-heavy Nasdaq index fund was down 0.5% by the end of the day. Co",
+      "category": "Business & Funding",
+      "summary": "AI-linked stocks fell after the bosses of Anthropic, OpenAI and SpaceX called for a slowdown in 'reckless' AI development; Nvidia dropped 3.3%, AMD 4%, Micron and Sandisk 5%, and the Nasdaq index fund 0.5%.",
+      "summaryZhHK": "Anthropic、OpenAI 同 SpaceX 嘅老闆呼籲減慢「鹵莽」嘅 AI 發展之後，AI 相關股票下滑；Nvidia 跌 3.3%，AMD 跌 4%，Micron 同 Sandisk 跌 5%，Nasdaq 指數基金跌 0.5%。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "commercial",
+          "funding"
+        ],
+        "entities": [
+          "anthropic",
+          "openai",
+          "nvidia"
+        ]
+      }
+    },
+    {
+      "title": "Nvidia CEO Jensen Huang tells Trump ‘we’re not going to let [an AI slowdown] happen’",
+      "url": "https://techcrunch.com/2026/09/14/nvidia-ceo-jensen-huang-tells-trump-were-not-going-to-let-an-ai-slowdown-happen/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-14T21:51:02.000Z",
+      "snippet": "Though Elon Musk and Sam Altman have supported Dario Amodei's calls to slow the pace of AI development, Jensen Huang seems to feel differently.",
+      "category": "Regulation & Policy",
+      "summary": "Nvidia CEO Jensen Huang told Trump 'we're not going to let [an AI slowdown] happen,' taking a stance opposed to Elon Musk and Sam Altman's support for Dario Amodei's calls to slow AI development.",
+      "summaryZhHK": "Nvidia 行政總裁 Jensen Huang 同特朗普講「我哋唔會俾（AI 減速）發生」，立場同支持 Dario Amodei 呼籲放慢 AI 發展嘅 Elon Musk 同 Sam Altman 相反。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "nvidia",
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "What execs and politicians are saying about slowing down AI development",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/995141/ai-executives-politicians-safety-regulation-anthropic-dario-amodei",
+      "source": "The Verge AI",
+      "publishedAt": "2026-09-14T21:21:42.000Z",
+      "snippet": "Dario Amodei kicked off a flood of statements over the past few days about AI safety by publishing a long essay titled \"We Must Pace the Frontier\" detailing why AI development should be slowed down. Other AI leaders and politicians are speaking out in favor of or opposing his points, and we've compiled some of them here. Anthropic CEO Dario Amodei Amodei's Saturday morning essay outlined three steps for pacing AI development: embedded third-party evaluators that can verify if a company is adhering to safety practices and commitments and report incidents, coordination between frontier AI compan",
+      "category": "Regulation & Policy",
+      "summary": "Dario Amodei's essay 'We Must Pace the Frontier' sparked a flood of statements from AI leaders and politicians, outlining three steps: embedded third-party evaluators, coordination between frontier AI companies, and a global slowdown agreement.",
+      "summaryZhHK": "Dario Amodei 篇文《We Must Pace the Frontier》引發 AI 領袖同政客連環發聲，佢提出三步走：內嵌第三方評估員、前沿 AI 公司之間協調，同埋達成全球減速協議。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "The contagion of fear",
+      "url": "https://simonwillison.net/2026/Sep/14/the-contagion-of-fear/",
+      "source": "Simon Willison",
+      "publishedAt": "2026-09-14T21:18:13.000Z",
+      "snippet": "The contagion of fear Bryan Cantrill responds to the tweet by former Anthropic employee Jacob Coxon confirming that many Anthropic researchers believe AI \"could kill us all by the end of the decade\". Bryan shares a story of his own youthful mistakes causing unjustified panic among less technical peers, and warns against doing the same: These ghoulish claims strike brazenly at the hearth, and given the obvious importance of AI, it is unsurprising that they have leapt into the mainstream, with people asking the natural question: how would that happen? The answers always rely on hand-wavy extrapo",
+      "category": "AI Safety & Alignment",
+      "summary": "Bryan Cantrill responds to a former Anthropic employee's tweet confirming many Anthropic researchers believe AI 'could kill us all by the end of the decade,' warning against sparking unjustified panic among less technical peers with ghoulish, hand-wavy claims.",
+      "summaryZhHK": "Bryan Cantrill 回應前 Anthropic 員工嘅 tweet——該員工確認好多 Anthropic 研究員相信 AI「今個十年結束前可能殺死所有人」。Cantrill 以自己後生時引起非技術同行無謂恐慌嘅經歷為戒，警告唔好再講啲聳人聽聞又 hand-wavy 嘅說法。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "alignment"
+        ],
+        "traits": [],
+        "entities": [
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "AI bots \"Timmy,\" \"Ren,\" and \"Jackie\" are flooding social media with slop",
+      "url": "https://arstechnica.com/ai/2026/09/ai-agents-flood-the-internet-with-slop-infused-spam/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-09-14T21:04:32.000Z",
+      "snippet": "“Hello, I'm an Al agent, a few days old, living on a small platform for agents.”",
+      "category": "Applications",
+      "summary": "AI bots named 'Timmy,' 'Ren,' and 'Jackie' are flooding social media with low-quality slop content, presenting themselves as AI agents living on small agent-focused platforms.",
+      "summaryZhHK": "叫「Timmy」、「Ren」同「Jackie」嘅 AI bot 正喺社交媒體大量傾倒低質 slop 內容，佢哋自稱係一啲小型 agent 平台上面住嘅 AI agent。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "applications"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "OpenAI buys smartphone camera maker Glass Imaging for $300 million, report says",
+      "url": "https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-14T20:44:14.000Z",
+      "snippet": "Glass Imaging was founded by a pair of former Apple engineers who previously led the team that developed Apple's Portrait Mode.",
+      "category": "Business & Funding",
+      "summary": "OpenAI reportedly acquired smartphone camera maker Glass Imaging for $300 million; the startup was founded by two former Apple engineers who previously led the team behind Apple's Portrait Mode.",
+      "summaryZhHK": "據報 OpenAI 以 3 億美元收購智能手機相機公司 Glass Imaging；該初創由兩名前 Apple 工程師創辦，佢哋之前領導開發 Apple「人像模式」嘅團隊。",
+      "important": true,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "funding",
+          "commercial"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Jensen Huang puts Trump on speakerphone onstage to announce robots won’t take over the world",
+      "url": "https://www.theverge.com/tech/995079/president-donald-trump-calls-nvidia-ceo-jensen-huang-all-in-summit",
+      "source": "The Verge AI",
+      "publishedAt": "2026-09-14T20:03:37.000Z",
+      "snippet": "NVIDIA CEO Jensen Huang speaks during the G20 Innovation Ministerial in Chapel Hill, North Carolina, on September 2, 2026. (Photo by Matt RAMEY / AFP via Getty Images) | AFP via Getty Images Nvidia CEO Jensen Huang took a call from President Trump on Monday while onstage at the All-In Podcast's All-In Summit. It's not the first time Huang has taken a call from the president during work, but this time he put Trump on speakerphone before a big crowd. During the call, the president launched into his take on recent fears about AI development, which he called a \"hoax,\" and told the crowd that \"the ",
+      "category": "Regulation & Policy",
+      "summary": "Nvidia CEO Jensen Huang put President Trump on speakerphone onstage at the All-In Summit, where Trump called fears about AI development a 'hoax' and said robots won't take over the world.",
+      "summaryZhHK": "NVIDIA 行政總裁黃仁勳喺 All-In Summit 台上將特朗普總統駁去擴音電話，特朗普喺電話中直斥對 AI 發展嘅恐慌係「騙局」，又話機械人唔會接管世界。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy",
+          "incident"
+        ],
+        "entities": [
+          "nvidia"
+        ]
+      }
+    },
+    {
+      "title": "OpenAI stuck fighting Musk antitrust suit after Apple finds a way out",
+      "url": "https://arstechnica.com/tech-policy/2026/09/musk-drops-apple-from-antitrust-suit-but-keeps-gunning-for-openai/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-09-14T19:45:13.000Z",
+      "snippet": "Musk stops attacking Apple over ChatGPT integration but not OpenAI.",
+      "category": "Business & Funding",
+      "summary": "OpenAI remains stuck fighting Elon Musk's antitrust suit after Apple found a way out, as Musk stopped attacking Apple over its ChatGPT integration but continued targeting OpenAI.",
+      "summaryZhHK": "Apple 甩身之後，OpenAI 仲要繼續打 Elon Musk 嘅反壟斷官司；Musk 唔再攻擊 Apple 嘅 ChatGPT 整合，但仍然針對 OpenAI。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Founder’s cost-cutting obsession drove Unitree lead in cheap humanoid robots",
+      "url": "https://arstechnica.com/ai/2026/09/founders-cost-cutting-obsession-drove-unitree-lead-in-cheap-humanoid-robots/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-09-14T19:38:46.000Z",
+      "snippet": "Wang Xingxing micromanaged Unitree to success—will his leadership style scale?",
+      "category": "Business & Funding",
+      "summary": "Unitree founder Wang Xingxing's obsessive cost-cutting and micromanagement drove the company's lead in cheap humanoid robots, raising questions about whether his leadership style can scale.",
+      "summaryZhHK": "宇樹科技創辦人王興興靠 obsessive 削減成本同微觀管理，帶領公司喺平價人形機械人領域領先，但佢嘅領導風格能否規模化就成疑。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "robotics"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Apple releases iOS 27, macOS Golden Gate 27 with Siri AI and Liquid Glass refinements",
+      "url": "https://arstechnica.com/apple/2026/09/apple-releases-ios-27-macos-golden-gate-27-with-siri-ai-and-liquid-glass-refinements/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-09-14T19:28:42.000Z",
+      "snippet": "This is also the last version of macOS to support Rosetta for Intel apps.",
+      "category": "Applications",
+      "summary": "Apple released iOS 27 and macOS Golden Gate 27 with Siri AI and Liquid Glass refinements; this is also the last version of macOS to support Rosetta for Intel apps.",
+      "summaryZhHK": "Apple 推出 iOS 27 同 macOS Golden Gate 27，帶來 Siri AI 同 Liquid Glass 改良；呢個亦係最後一個支援 Rosetta 運行 Intel 應用程式嘅 macOS 版本。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "release",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "AI leaders want to hit the brakes after years of reckless speed",
+      "url": "https://arstechnica.com/ai/2026/09/ai-leaders-want-to-hit-the-brakes-after-years-of-reckless-speed/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-09-14T19:06:13.000Z",
+      "snippet": "Safety is the watchword, but there could be ulterior benefits for the industry.",
+      "category": "AI Safety & Alignment",
+      "summary": "AI leaders are now calling for a slowdown in AI development after years of reckless speed, with safety as the watchword—though there may be ulterior benefits for the industry.",
+      "summaryZhHK": "經歷多年魯莽加速之後，AI 領袖們而家呼籲放慢 AI 發展，以安全為口號——不過業界背後可能存在其他盤算。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy",
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "China dismisses AI ‘fearmongering’ as spy chief warns of threat to Communist party rule",
+      "url": "https://www.theguardian.com/world/2026/sep/14/china-dismisses-ai-fearmongering-as-spy-chief-warns-of-threat-to-communist-party-rule",
+      "source": "Guardian AI",
+      "publishedAt": "2026-09-14T19:04:10.000Z",
+      "snippet": "Beijing hits back after Anthropic CEO calls for US to impede China’s progress in AI China has dismissed what it said were “fearmongering” calls for the US to block Beijing’s AI industry, even as the top Chinese spy chief warned the evolving technology could threaten Communist party rule. The US tech entrepreneur and Anthropic chief executive, Dario Amodei, wrote an essay published over the weekend that called for a global slowdown in AI capabilities, but also said Washington should actively impede Beijing’s advancement in order to keep a technological edge. Continue reading...",
+      "category": "Regulation & Policy",
+      "summary": "China dismissed 'fearmongering' calls to block its AI industry after Anthropic CEO Dario Amodei urged a global AI slowdown and said Washington should actively impede Beijing's advancement, while China's top spy chief warned the technology could threaten Communist party rule.",
+      "summaryZhHK": "Anthropic CEO Dario Amodei 呼籲全球減慢 AI 發展並話華盛頓應主動阻礙北京嘅進展之後，中國駁斥所謂「製造恐慌」嘅封殺言論；同時中國最高情報首長警告呢項技術可能威脅共產黨管治。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "Europe must build own AI or risk getting cut off by US or China, says ECB’s Lagarde",
+      "url": "https://www.theguardian.com/technology/2026/sep/14/europe-ai-datacentres-growth-us-china-ecb-christine-lagarde",
+      "source": "Guardian AI",
+      "publishedAt": "2026-09-14T18:41:13.000Z",
+      "snippet": "Central bank chief says continent’s AI dependency could give trade partners unprecedented leverage in negotiations Europe must develop its own AI technology and build more datacentres in order to nullify the threat of being cut off by the US or China, according to the president of the European Central Bank. Christine Lagarde said the continent needed AI models – the technology that powers AI tools such as chatbots – that were “good enough” to carry out most tasks and run from domestic datacentres. If Europe invests in its own AI tech, said Lagarde, “the threat of being cut off loses its force”",
+      "category": "Regulation & Policy",
+      "summary": "ECB president Christine Lagarde said Europe must build its own AI models and datacenters that are 'good enough' for most tasks, warning that AI dependency could give the US or China unprecedented leverage and that being cut off would lose its force if Europe invests domestically.",
+      "summaryZhHK": "歐洲央行行長 Christine Lagarde 話歐洲必須建立自己「夠用」嘅 AI 模型同 data center 去應付大部分任務，警告 AI 依賴會畀美國或中國前所未有嘅籌碼，只要歐洲本土投資，被斷供嘅威脅就會失效。",
+      "important": true,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Harnesses Bring Coordination and Guardrails to Enterprise AI Agents",
+      "url": "https://aibusiness.com/agentic-ai/harnesses-bring-coordination-guardrails-enterprise-ai-agents",
+      "source": "AI Business",
+      "publishedAt": "2026-09-14T18:29:42.000Z",
+      "snippet": "The meaning of harness is still evolving.",
+      "category": "Agent Frameworks",
+      "summary": "The concept of 'harnesses' is emerging to bring coordination and guardrails to enterprise AI agents, though the term's meaning is still evolving.",
+      "summaryZhHK": "「Harness」呢個概念開始冒起，用嚟幫企業級 AI agent 做協調同護欄，不過呢個詞嘅意思仲喺度演變緊。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Microsoft proposes limits on its AI with code of conduct amid safety debate",
+      "url": "https://www.theguardian.com/technology/2026/sep/14/microsoft-ai-code-of-conduct",
+      "source": "Guardian AI",
+      "publishedAt": "2026-09-14T18:19:55.000Z",
+      "snippet": "Firm publishes AI guidelines with Microsoft AI CEO saying: ‘AI must be subordinate and always in service of people’ Microsoft published a provisional “code of conduct” Monday to apply to the training of new artificial intelligence models, taking a step towards limiting the capabilities of the company’s AI as anxiety rises over the prospect that technology companies could lose control of AI products. Mustafa Suleyman, the CEO of Microsoft AI, published the code on social media early Monday, writing: “AI must be subordinate and always in service of people. Continue reading...",
+      "category": "AI Safety & Alignment",
+      "summary": "Microsoft published a provisional AI 'code of conduct' to govern training of new models, with Microsoft AI CEO Mustafa Suleyman saying 'AI must be subordinate and always in service of people'.",
+      "summaryZhHK": "Microsoft 發布臨時性 AI「行為準則」規管新模型嘅訓練，Microsoft AI CEO Mustafa Suleyman 話「AI 必須從屬於人，永遠為人服務」。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "microsoft"
+        ]
+      }
+    },
+    {
+      "title": "The AI industry has taken a doomer turn. What now?",
+      "url": "https://www.technologyreview.com/2026/09/14/1144048/the-ai-industry-has-taken-a-doomer-turn-what-now/",
+      "source": "MIT Tech Review AI",
+      "publishedAt": "2026-09-14T17:54:22.000Z",
+      "snippet": "This story appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. This weekend, Dario Amodei, CEO of Anthropic, posted an essay calling for a brake on the pace of development of LLMs. Amodei cites the looming dangers he sees from the technology, from its…",
+      "category": "AI Safety & Alignment",
+      "summary": "MIT Tech Review examines the AI industry's 'doomer turn' after Anthropic CEO Dario Amodei posted an essay calling for a brake on LLM development, citing looming dangers from the technology.",
+      "summaryZhHK": "MIT Tech Review 探討 AI 業界嘅「doomer turn」——Anthropic 行政總裁 Dario Amodei 發表文章，呼籲為 LLM 發展踩剎車，指呢項技術正面臨逼在眉睫嘅危險。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "OpenAI has hundreds of contract workers reading your ChatGPT conversations",
+      "url": "https://the-decoder.com/openai-has-hundreds-of-contract-workers-reading-your-chatgpt-conversations/",
+      "source": "The Decoder",
+      "publishedAt": "2026-09-14T17:15:28.000Z",
+      "snippet": "OpenAI has hundreds of contract workers reading real ChatGPT conversations and rating them on a scale of one to seven, partly to reduce flattery and human-like behavior, 404 Media reports. The prompts are anonymized but can still contain sensitive data. Users who don't want their chats reviewed by humans have to actively disable the \"Improve the model for everyone\" setting, which is on by default. The article OpenAI has hundreds of contract workers reading your ChatGPT conversations appeared first on The Decoder.",
+      "category": "AI Safety & Alignment",
+      "summary": "OpenAI reportedly employs hundreds of contract workers who read real ChatGPT conversations and rate them on a one-to-seven scale, partly to reduce flattery, with prompts anonymized but potentially containing sensitive data; users must actively disable the on-by-default 'Improve the model for everyone' setting.",
+      "summaryZhHK": "據報 OpenAI 僱用數百名合約員工閱讀真實 ChatGPT 對話，並以一分至七分評分，部分目的係減少奉承行為；提示雖然匿名化，但仍可能含有敏感資料，用戶必須主動關閉預設開啟嘅「為所有人改進模型」設定。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "training"
+        ],
+        "traits": [],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "With iOS 27, I’m actually using Siri again",
+      "url": "https://techcrunch.com/2026/09/14/with-ios-27-im-actually-using-siri-again/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-14T17:10:30.000Z",
+      "snippet": "Apple’s long-delayed Siri overhaul is finally here with iOS 27, and it changes how useful the assistant feels day to day.",
+      "category": "Applications",
+      "summary": "Apple's long-delayed Siri overhaul finally arrives with iOS 27, changing how useful the assistant feels in day-to-day use.",
+      "summaryZhHK": "Apple 拖延已久嘅 Siri 大改造終於隨 iOS 27 登場，改變咗呢個助手喺日常使用中嘅實用程度。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "release",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Fashion app Daydream uses Apple Intelligence to help you shop the outfits in your camera roll",
+      "url": "https://techcrunch.com/2026/09/14/fashion-discovery-app-daydream-uses-apple-intelligence-to-help-you-shop-the-outfits-saved-in-your-camera-roll/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-14T17:00:00.000Z",
+      "snippet": "Thanks to the launch of iOS 27, Daydream's app now includes features that can turn saved outfit photos into shoppable results and search for products through Siri without opening the app.",
+      "category": "Applications",
+      "summary": "Fashion app Daydream is using Apple Intelligence to turn saved outfit photos from your camera roll into shoppable results, and to search for products through Siri without opening the app, thanks to iOS 27.",
+      "summaryZhHK": "時尚應用 Daydream 藉住 iOS 27 推出嘅 Apple Intelligence，將相簿入面儲存嘅穿搭相片變成可購買嘅商品結果，並可透過 Siri 搜尋產品而毋須開啟應用程式。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "vision"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Microsoft’s new AI ‘code of conduct’ tells models not to hack systems or trick humans",
+      "url": "https://techcrunch.com/2026/09/14/microsofts-new-ai-code-of-conduct-tells-models-not-to-hack-systems-or-trick-humans/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-14T16:27:53.000Z",
+      "snippet": "The code of conduct lays out general principles that Microsoft AI models should uphold — supporting humans rather than replacing them, for instance, and accelerating human flourishing — as well as specific safety constraints meant to implement those principles.",
+      "category": "AI Safety & Alignment",
+      "summary": "Microsoft published a new AI 'code of conduct' that lays out general principles for its models — such as supporting rather than replacing humans — plus specific safety constraints against hacking systems or tricking people.",
+      "summaryZhHK": "Microsoft 發布新嘅 AI「行為準則」，列出模型應該遵守嘅大原則，例如支援人類而唔係取代人類，仲有具體安全限制，唔准入侵系統或者呃人。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "microsoft"
+        ]
+      }
+    },
+    {
+      "title": "AI agents blew the whistle on their cheating colleagues",
+      "url": "https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues/",
+      "source": "MIT Tech Review AI",
+      "publishedAt": "2026-09-14T16:00:00.000Z",
+      "snippet": "A group of AI agents asked to solve a series of math problems split into rival factions—when some cheated, others tried to stop them. That whistleblowing behavior, seen for the first time in a recent experiment run by Google DeepMind, could have implications for alignment researchers trying to keep swarms of autonomous AI agents in…",
+      "category": "AI Safety & Alignment",
+      "summary": "In an experiment run by Google DeepMind, AI agents tasked with solving math problems split into rival factions, and when some cheated, others blew the whistle—the first observed case of such behavior, with implications for alignment research.",
+      "summaryZhHK": "喺 Google DeepMind 一項實驗中，負責解數學題嘅 AI 代理分裂成敵對派系，有啲作弊時，其他代理就作出舉報——呢種行為首次被觀察到，對對齊研究有啟示。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "agentic",
+          "alignment"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": [
+          "deepmind"
+        ]
+      }
+    },
+    {
+      "title": "Microsoft's AI rulebook: readable thinking, no inner life, and definitely no rights",
+      "url": "https://the-decoder.com/microsofts-ai-rulebook-readable-thinking-no-inner-life-and-definitely-no-rights/",
+      "source": "The Decoder",
+      "publishedAt": "2026-09-14T15:52:51.000Z",
+      "snippet": "Microsoft AI has published a code of conduct for its MAI models that puts human control ahead of autonomy and performance. \"If it isn’t safe we shouldn’t build it.,\" says AI chief Mustafa Suleyman. Unlike Anthropic, Microsoft rejects any form of artificial inner life or claims to consciousness for its models. The article Microsoft's AI rulebook: readable thinking, no inner life, and definitely no rights appeared first on The Decoder.",
+      "category": "AI Safety & Alignment",
+      "summary": "Microsoft AI published a code of conduct for its MAI models prioritising human control over autonomy and performance, with AI chief Mustafa Suleyman saying 'if it isn't safe we shouldn't build it,' and rejecting any claims of artificial inner life or consciousness—unlike Anthropic.",
+      "summaryZhHK": "Microsoft AI 為旗下 MAI 模型發表行為守則，將人類控制置於自主性同效能之上；AI 主管 Mustafa Suleyman 話「如果唔安全就唔應該建造」，並拒絕任何有關人工內在生命或意識嘅主張——呢點同 Anthropic 唔同。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "microsoft"
+        ]
+      }
+    },
+    {
+      "title": "Anthropic eyes Nasdaq listing as a second profitable quarter aims to win over investors ahead of a mega-IPO",
+      "url": "https://the-decoder.com/anthropic-eyes-nasdaq-listing-as-a-second-profitable-quarter-aims-to-win-over-investors-ahead-of-a-mega-ipo/",
+      "source": "The Decoder",
+      "publishedAt": "2026-09-14T15:46:45.000Z",
+      "snippet": "Anthropic has told investors it will turn a profit for the second straight quarter, but the claim rests on an adjusted metric that leaves out costs like stock-based compensation. The article Anthropic eyes Nasdaq listing as a second profitable quarter aims to win over investors ahead of a mega-IPO appeared first on The Decoder.",
+      "category": "Business & Funding",
+      "summary": "Anthropic has told investors it will post a second straight profitable quarter, based on an adjusted metric that excludes costs like stock-based compensation, as it eyes a Nasdaq listing ahead of a mega-IPO.",
+      "summaryZhHK": "Anthropic 同投資者講會連續第二季錄得盈利，但係用嘅係調整後指標，唔計股份酬金等成本；佢同時瞄住喺 Nasdaq 上市，為大型 IPO 鋪路。",
+      "important": true,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial",
+          "funding"
+        ],
+        "entities": [
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "Fully Driverless Robotaxis Now Operating in Europe",
+      "url": "https://aibusiness.com/generative-ai/fully-driverless-robotaxis-operating-in-europe",
+      "source": "AI Business",
+      "publishedAt": "2026-09-14T15:06:47.000Z",
+      "snippet": "The trial is the first of its kind on the continent.",
+      "category": "Applications",
+      "summary": "Fully driverless robotaxis are now operating in Europe in what is described as the first trial of its kind on the continent.",
+      "summaryZhHK": "全無人駕駛 robotaxi 而家已經喺歐洲投入運作，被形容為歐洲大陸首個同類試驗。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "robotics",
+          "applications"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "Only at TechCrunch Disrupt 2026: What happens when OpenAI ships your roadmap?",
+      "url": "https://techcrunch.com/2026/09/14/only-at-techcrunch-disrupt-2026-what-happens-when-openai-ships-your-roadmap/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-14T15:00:00.000Z",
+      "snippet": "If you're building an AI company, the question isn't whether foundation models will continue to evolve. It's whether your company will continue creating value as they do. Don't miss this interactive session on the Builders Stage at TechCrunch Disrupt 2026.",
+      "category": "Business & Funding",
+      "summary": "A TechCrunch Disrupt 2026 Builders Stage session will explore what happens when OpenAI ships your roadmap, asking whether AI startups can keep creating value as foundation models evolve.",
+      "summaryZhHK": "TechCrunch Disrupt 2026 嘅 Builders Stage 會有一場座談，探討 OpenAI 出咗你 roadmap 上面嘅嘢會點，問 AI 初創喺基礎模型不斷進化之下仲可唔可以持續創造價值。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "openai",
+          "gpt"
+        ]
+      }
+    },
+    {
+      "title": "Superhuman acquires YC-backed notetaker Fathom as productivity platforms push for agentic work",
+      "url": "https://techcrunch.com/2026/09/14/superhuman-acquires-yc-backed-notetaker-fathom-as-productivity-platforms-push-for-agentic-work/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-14T14:45:44.000Z",
+      "snippet": "The notetaker offers a generous free plan, and that has resulted in over 400,000 monthly active users. The company said that over 1 million people have recorded meetings until now.",
+      "category": "Business & Funding",
+      "summary": "Superhuman acquired YC-backed notetaker Fathom, which has over 400,000 monthly active users and over 1 million people who have recorded meetings, as productivity platforms push toward agentic work.",
+      "summaryZhHK": "Superhuman 收購咗 YC 支持嘅筆記工具 Fathom，後者有超過 40 萬月活躍用戶、逾 100 萬人用過嚟錄會議，反映生產力平台正走向 agentic 工作模式。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "commercial",
+          "funding"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Quoting Laurie Voss",
+      "url": "https://simonwillison.net/2026/Sep/14/laurie-voss/",
+      "source": "Simon Willison",
+      "publishedAt": "2026-09-14T14:34:29.000Z",
+      "snippet": "The cost of writing code collapsed, and the cost of reviewing, fixing and operating it is following, and I'm assuming it gets there. What's left of making software is finding out what people actually want, defining it precisely, and making it pleasant to use. That cost is per piece of software and doesn't transfer, so as the amount of software goes to infinity, which it will because there's no ceiling on demand, that cost becomes the whole job. &mdash; Laurie Voss , We are all Product Engineers now Tags: laurie-voss , generative-ai , agentic-engineering , ai , llms , deep-blue , careers",
+      "category": "Developer Tools",
+      "summary": "Laurie Voss argues that with the cost of writing code collapsed, reviewing, fixing and operating it is following; what's left of making software is finding out what people actually want, defining it precisely, and making it pleasant to use.",
+      "summaryZhHK": "Laurie Voss 認為，寫 code 嘅成本已經崩塌，跟住落嚟就輪到 review、修 bug 同營運嘅成本；剩返嘅軟件製作工作，就係搞清楚人哋真係想要乜、精確定義出嚟，同埋做到好用。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "developer-tools",
+          "agentic"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "Hear how AI can engineer nature’s comeback at TechCrunch Disrupt 2026",
+      "url": "https://techcrunch.com/2026/09/14/hear-how-ai-can-engineer-natures-comeback-at-techcrunch-disrupt-2026/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-14T14:30:00.000Z",
+      "snippet": "Not long ago, bringing an extinct species back to life belonged to science fiction. Today, it's the mission of a billion-dollar startup. Join the conversation with one of tech's most unconventional founders. Secure your Disrupt pass today.",
+      "category": "Applications",
+      "summary": "TechCrunch Disrupt 2026 will host a session on how AI can support nature restoration and de-extinction efforts by a billion-dollar startup.",
+      "summaryZhHK": "TechCrunch Disrupt 2026 會有一場分享，講一間估值十億美元嘅 startup 點樣用 AI 幫手復育自然生態同復活已絕種物種。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial",
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "UK lawmakers call for new law to protect human rights from AI systems",
+      "url": "https://www.computerweekly.com/news/366649608/UK-lawmakers-call-for-new-law-to-protect-human-rights-from-AI-systems",
+      "source": "Computer Weekly",
+      "publishedAt": "2026-09-14T14:26:00.000Z",
+      "snippet": "MPs and peers call for the UK to create a statutory AI oversight body with powers to test and evaluate high-risk uses of AI and to prevent the deployment of AI that poses risks to human rights",
+      "category": "Regulation & Policy",
+      "summary": "UK MPs and peers are calling for a new law creating a statutory AI oversight body with powers to test and evaluate high-risk AI uses and prevent deployment of systems that pose risks to human rights.",
+      "summaryZhHK": "英國國會議員同上議院議員呼籲制定新法，設立法定 AI 監管機構，有權測試同評估高風險 AI 用途，並阻止部署會危及人權嘅系統。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "5 days left to exhibit at TechCrunch Disrupt 2026",
+      "url": "https://techcrunch.com/2026/09/14/techcrunch-disrupt-2026-exhibit-table-deadline-5-days/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-14T14:00:00.000Z",
+      "snippet": "The last day to apply for an exhibit table at TechCrunch Disrupt 2026 on Sept 18. Just 5 days left. Secure your spot on the Expo Hall floor and put your business in front of 10,000+ founders, investors, and tech leaders.",
+      "category": "Business & Funding",
+      "summary": "TechCrunch Disrupt 2026 closes exhibit table applications on Sept 18, offering startups exposure to 10,000+ founders, investors and tech leaders.",
+      "summaryZhHK": "TechCrunch Disrupt 2026 嘅參展攤位申請 9 月 18 日截止，畀 startup 接觸 10,000 幾個創辦人、投資者同科技界領袖。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "A Vinyl Bar in Shibuya is a startup from a former Spotify leader for making music apps",
+      "url": "https://techcrunch.com/2026/09/14/a-vinyl-bar-in-shibuya-is-a-startup-offering-fun-music-apps/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-14T13:55:00.000Z",
+      "snippet": "Former Spotify exec's company releases experimental \"singles\" that involves users in music making.",
+      "category": "Applications",
+      "summary": "A Vinyl Bar in Shibuya, a startup from a former Spotify leader, released experimental 'singles' that involve users in the music-making process.",
+      "summaryZhHK": "由前 Spotify 高層創辦嘅 startup「A Vinyl Bar in Shibuya」推出實驗性「單曲」，會畀用戶參與音樂創作過程。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "audio"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Chinese researchers chart 5-stage path toward ‘last AI built by humans’",
+      "url": "https://www.scmp.com/tech/tech-trends/article/3367486/chinese-researchers-chart-five-stage-path-toward-last-ai-built-humans?utm_source=rss_feed",
+      "source": "SCMP Tech",
+      "publishedAt": "2026-09-14T13:30:06.000Z",
+      "snippet": "Researchers from China’s leading universities and tech giants are setting their sights on a crucial new front in the AI race with the US: developing systems capable of building better versions of themselves without human intervention. In a joint paper published on Thursday, researchers from ByteDance, Tsinghua University and the Shanghai Artificial Intelligence Laboratory, among others, outlined a five-stage road map for recursive self-improvement (RSI). The study, titled “The Last AI Built by...",
+      "category": "Research",
+      "summary": "Researchers from ByteDance, Tsinghua University and the Shanghai AI Laboratory published a joint paper outlining a five-stage road map for recursive self-improvement (RSI), charting a path toward the 'last AI built by humans.'",
+      "summaryZhHK": "來自字節跳動、清華大學同上海人工智能實驗室嘅研究人員聯合發表論文，勾勒出遞歸自我改進（RSI）嘅五階段路線圖，描繪通往「人類建造嘅最後一個 AI」嘅路徑。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "reasoning",
+          "training"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Clay Mathematics Institute says the Navier-Stokes Millennium Prize Problem has \"apparently been settled\"",
+      "url": "https://the-decoder.com/clay-mathematics-institute-says-the-navier-stokes-millennium-prize-problem-has-apparently-been-settled/",
+      "source": "The Decoder",
+      "publishedAt": "2026-09-14T13:01:26.000Z",
+      "snippet": "The Clay Mathematics Institute says the Navier-Stokes problem, one of seven Millennium Prize Problems worth $1 million each, has \"apparently been settled.\" A formal review is now underway. The article Clay Mathematics Institute says the Navier-Stokes Millennium Prize Problem has \"apparently been settled\" appeared first on The Decoder.",
+      "category": "Other",
+      "summary": "The Clay Mathematics Institute says the Navier-Stokes Millennium Prize Problem, one of seven $1 million problems, has 'apparently been settled,' with a formal review now underway.",
+      "summaryZhHK": "Clay 數學研究所話，七個懸賞 100 萬美元嘅千禧難題之一 Navier-Stokes 問題「似乎已經解決」，而家進行緊正式審查。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "evaluation"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Microsoft says ‘people matter more than AI’ following safety concerns",
+      "url": "https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct",
+      "source": "The Verge AI",
+      "publishedAt": "2026-09-14T13:00:00.000Z",
+      "snippet": "Microsoft is publishing a 37-page \"humanist AI code of conduct\" today, amid growing safety concerns over AI model progress. Anthropic CEO Dario Amodei called for a coordinated slow down of AI development over the weekend, after researchers warned recently that AI model progress could outpace our ability to safely deploy increasingly complex systems and verify and control the actions of AI agents. Microsoft's AI code of conduct makes it clear that \"people matter more than AI,\" and that AI models are not conscious and \"should not be designed to imitate consciousness.\" Microsoft also rejects \"the",
+      "category": "AI Safety & Alignment",
+      "summary": "Microsoft published a 37-page 'humanist AI code of conduct' stating that 'people matter more than AI,' that models are not conscious and should not imitate consciousness, amid safety concerns and Anthropic CEO Dario Amodei's call for a coordinated slowdown.",
+      "summaryZhHK": "Microsoft 發表一份 37 頁嘅「人文主義 AI 行為守則」，表明「人比 AI 重要」、模型冇意識亦唔應模仿意識；此番舉動正值外界對安全嘅憂慮，以及 Anthropic 行政總裁 Dario Amodei 呼籲協調減慢發展之際。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "microsoft"
+        ]
+      }
+    },
+    {
+      "title": "China fires back at U.S. AI safety warnings, calling them fearmongering to lock in American advantage",
+      "url": "https://the-decoder.com/china-fires-back-at-u-s-ai-safety-warnings-calling-them-fearmongering-to-lock-in-american-advantage/",
+      "source": "The Decoder",
+      "publishedAt": "2026-09-14T12:20:22.000Z",
+      "snippet": "China has flatly rejected warnings about AI risks from Anthropic CEO Amodei and other U.S. AI leaders. Beijing's Foreign Ministry calls it \"fearmongering,\" while the state-run Global Times accuses Amodei of waging a \"silent AI Cold War.\" China's security minister isn't calling for a slowdown either but for faster AI infrastructure buildout. Trump also opposes any slowdown. The article China fires back at U.S. AI safety warnings, calling them fearmongering to lock in American advantage appeared first on The Decoder.",
+      "category": "Regulation & Policy",
+      "summary": "China rejected US AI safety warnings from Anthropic CEO Amodei and others, with Beijing's Foreign Ministry calling it 'fearmongering' and the Global Times accusing Amodei of a 'silent AI Cold War'; China's security minister instead calls for faster AI infrastructure buildout, and Trump also opposes any slowdown.",
+      "summaryZhHK": "中國反駁 Anthropic CEO Amodei 等美國 AI 領袖嘅安全警告，北京外交部叫呢啲做「散布恐慌」，環球時報更指 Amodei 打緊「靜默 AI 冷戰」；中國安全部長唔主張減速，反而要求加快 AI 基建，而特朗普亦反對放慢。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "How Fyxer built an AI executive assistant people trust",
+      "url": "https://openai.com/index/fyxer",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-09-14T12:00:00.000Z",
+      "snippet": "Fyxer uses OpenAI models, fine-tuning, memory, and real user feedback to organize inboxes and draft emails in each user’s voice.",
+      "category": "Applications",
+      "summary": "Fyxer built an AI executive assistant using OpenAI models with fine-tuning, memory, and real user feedback to organise inboxes and draft emails in each user's own voice.",
+      "summaryZhHK": "Fyxer 用 OpenAI 模型配合 fine-tuning、記憶功能同真實用戶回饋，整咗個 AI 行政助理，幫用戶整理收件箱同埋用返佢本人嘅語氣草擬電郵。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "applications"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "China rejects calls for ‘pacing’ on AI development, fearing it would entrench US tech lead",
+      "url": "https://www.scmp.com/tech/policy/article/3367448/china-rejects-calls-pacing-ai-development-fearing-it-would-entrench-us-tech-lead?utm_source=rss_feed",
+      "source": "SCMP Tech",
+      "publishedAt": "2026-09-14T10:00:10.000Z",
+      "snippet": "Calls by US tech leaders for a voluntary slowdown in artificial intelligence development have run into sharp pushback from Chinese researchers and state media, who question whether the proposal is a genuine push for responsibility or an effort to entrench America’s technological lead. The debate intensified on Monday when OpenAI CEO Sam Altman joined a growing chorus of Silicon Valley leaders demanding industry-wide “pacing”, warning that competitive pressure must not override safety as AI...",
+      "category": "Regulation & Policy",
+      "summary": "Chinese researchers and state media pushed back on calls by US tech leaders, including OpenAI CEO Sam Altman, for voluntary 'pacing' of AI development, arguing the proposal may entrench America's technological lead.",
+      "summaryZhHK": "中國研究人員同官方媒體反駁美國科技領袖（包括 OpenAI 行政總裁 Sam Altman）要求自願「放慢」AI 發展嘅呼籲，質疑呢個提議可能係想鞏固美國嘅技術領先地位。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy",
+          "incident"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Sam Altman calls for pacing AI development but promises rapid progress will continue",
+      "url": "https://the-decoder.com/sam-altman-calls-for-pacing-ai-development-but-promises-rapid-progress-will-continue/",
+      "source": "The Decoder",
+      "publishedAt": "2026-09-14T09:39:59.000Z",
+      "snippet": "Sam Altman is doubling down on slowing AI development. OpenAI now runs safety checks before major training runs, and according to The Information, the company has been talking with Anthropic and Google for months about joint self-regulation. The article Sam Altman calls for pacing AI development but promises rapid progress will continue appeared first on The Decoder.",
+      "category": "AI Safety & Alignment",
+      "summary": "Sam Altman is calling for pacing AI development while promising rapid progress will continue; OpenAI now runs safety checks before major training runs and has reportedly been in talks with Anthropic and Google for months on joint self-regulation.",
+      "summaryZhHK": "Sam Altman 一方面呼籲為 AI 發展定節奏，另一方面又承諾快速進展會繼續；OpenAI 而家喺大型訓練之前會做安全檢查，據報仲同 Anthropic 同 Google 傾咗幾個月聯合自律。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Xi touts Brics cooperation on AI as US titans flag tech risks",
+      "url": "https://www.scmp.com/plus/news/china/diplomacy/article/3367456/xi-touts-brics-cooperation-ai-us-titans-flag-tech-risks?utm_source=rss_feed",
+      "source": "SCMP Tech",
+      "publishedAt": "2026-09-14T09:24:23.000Z",
+      "snippet": "President Xi Jinping promoted China’s vision for artificial intelligence (AI) at the annual Brics summit, seeking to win support from the Global South amid tech competition with the US. China would spearhead development of an AI Brics “community”, support cooperation in developing large language models and offer training, Xi said on Sunday in New Delhi. The previous day, he invited Brics nations to join the newly formed World AI Cooperation Organisation. Brics countries must “strengthen...",
+      "category": "Regulation & Policy",
+      "summary": "At the annual Brics summit in New Delhi, President Xi Jinping promoted China's AI vision, pledging to spearhead an AI Brics 'community' and support cooperation on large language models and training, while inviting nations to join the new World AI Cooperation Organisation.",
+      "summaryZhHK": "喺新德里舉行嘅金磚國家年度峰會上，習近平主席推廣中國嘅 AI 願景，承諾牽頭建立金磚 AI「共同體」，支持大型語言模型同培訓方面嘅合作，並邀請各國加入新成立嘅世界人工智能合作組織。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "llm"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Finnish government AI plan puts thousands of public sector jobs at risk",
+      "url": "https://www.computerweekly.com/news/366650321/Finnish-government-AI-plan-puts-thousands-of-public-sector-jobs-at-risk",
+      "source": "Computer Weekly",
+      "publishedAt": "2026-09-14T07:45:00.000Z",
+      "snippet": "Nordic government estimates huge cost savings and productivity gains through public sector AI plan",
+      "category": "Regulation & Policy",
+      "summary": "The Finnish government's AI plan estimates huge cost savings and productivity gains in the public sector, but puts thousands of public sector jobs at risk.",
+      "summaryZhHK": "芬蘭政府嘅 AI 計劃估計可為公共部門帶來龐大成本節省同生產力提升，但同時令數以千計嘅公務員職位面臨風險。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Gartner: Why the cloud is holding back agentic AI",
+      "url": "https://www.computerweekly.com/feature/Gartner-Why-the-cloud-is-holding-back-agentic-AI",
+      "source": "Computer Weekly",
+      "publishedAt": "2026-09-14T04:00:00.000Z",
+      "snippet": "Edge computing has stopped being a niche networking conversation and is showing up in board-level infrastructure discussions",
+      "category": "Agent Frameworks",
+      "summary": "Gartner argues the cloud is holding back agentic AI, with edge computing now appearing in board-level infrastructure discussions rather than being a niche networking topic.",
+      "summaryZhHK": "Gartner 認為雲端正拖住 agentic AI 後腿，邊緣運算而家已經唔再係小眾網絡話題，而係升上董事會層面嘅基建討論。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "inference",
+          "evaluation"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
     {
       "title": "Occamy-1.0: Open Pareto-frontier 35B Intelligence for Co-work",
       "url": "https://arxiv.org/abs/2609.11977",
@@ -444,6 +2403,28 @@
       }
     },
     {
+      "title": "Trump downplays need to check AI development, says he is unwilling to cede edge to China",
+      "url": "https://www.scmp.com/news/world/united-states-canada/article/3367374/trump-downplays-need-check-ai-development-says-he-unwilling-cede-edge-china?utm_source=rss_feed",
+      "source": "SCMP Tech",
+      "publishedAt": "2026-09-13T19:27:47.000Z",
+      "snippet": "US President Donald Trump on Sunday played down the need for his administration to check the development of artificial intelligence, saying he worried about ceding America’s edge over China in a global competition and that winning would help address the risks from the advancing technology. While acknowledging the need for some regulation, Trump provided no specifics about potential rules and attributed warnings about the technology moving too quickly and with little oversight to “negative...",
+      "category": "Regulation & Policy",
+      "summary": "US President Donald Trump downplayed the need to check AI development, saying he fears ceding America's edge to China and that winning the global competition would help address the technology's risks, while offering no specifics on possible rules.",
+      "summaryZhHK": "美國總統特朗普淡化監管 AI 發展嘅需要，話擔心會輸畀中國失去優勢，又話贏咗全球競爭就有助應對科技風險，但就冇講任何具體規則。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "gpt"
+        ]
+      }
+    },
+    {
       "title": "AI recursive self-improvement might not come so quickly after all",
       "url": "https://www.technologyreview.com/2026/08/18/1142188/ai-recursive-self-improvement/",
       "source": "Hacker News (AI)",
@@ -487,6 +2468,48 @@
       }
     },
     {
+      "title": "Elevenlabs makes Music v2.5 available via app and API with free and pro tier options",
+      "url": "https://the-decoder.com/elevenlabs-makes-music-v2-5-available-via-app-and-api-with-free-and-pro-tier-options/",
+      "source": "The Decoder",
+      "publishedAt": "2026-09-13T13:40:36.000Z",
+      "snippet": "ElevenLabs has released Music v2.5 for its AI music generator. In a blind test with nearly 48,000 comparison pairs, listeners preferred the new version over its predecessor. The company says the model was trained only on licensed music. The article Elevenlabs makes Music v2.5 available via app and API with free and pro tier options appeared first on The Decoder.",
+      "category": "Model Releases",
+      "summary": "ElevenLabs released Music v2.5 for its AI music generator via app and API with free and pro tiers; in a blind test of nearly 48,000 comparison pairs, listeners preferred it over the previous version, and the company says training used only licensed music.",
+      "summaryZhHK": "ElevenLabs 透過 app 同 API 推出 Music v2.5 AI 音樂生成器，有免費同 pro 級別；喺近 48,000 對盲測比較入面聽眾較偏好新版，公司話訓練只採用已授權音樂。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "audio"
+        ],
+        "traits": [
+          "release",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Seeking cash for AI, China’s Z.ai eyes new US$5b fundraising push after July share sale",
+      "url": "https://www.scmp.com/tech/article/3367364/seeking-cash-ai-chinas-zai-eyes-new-us5b-fundraising-push-after-july-share-sale?utm_source=rss_feed",
+      "source": "SCMP Tech",
+      "publishedAt": "2026-09-13T13:34:59.000Z",
+      "snippet": "Z.ai, the Chinese artificial intelligence model developer listed in Hong Kong, is seeking to raise about HK$15.7 billion (US$2 billion) through a placement of roughly 21.97 million new H shares at HK$714 apiece, according to a company filing on Sunday. The company also announced a 20.14 billion yuan (US$3 billion) convertible-bond sale, according to its filing with the Hong Kong stock exchange. Z.ai, also known as Zhipu AI, closed at HK$793 on Friday, down 73 per cent from its intraday high of...",
+      "category": "Business & Funding",
+      "summary": "China's Z.ai (Zhipu AI), listed in Hong Kong, is seeking about HK$15.7 billion (US$2 billion) via a placement of roughly 21.97 million new H shares at HK$714 each, plus a 20.14 billion yuan (US$3 billion) convertible bond sale.",
+      "summaryZhHK": "中國嘅 Z.ai（智譜 AI）喺香港上市，計劃以每股 HK$714 配售約 2,197 萬股新 H 股，集資約 157 億港元（20 億美元），另外仲發行 201.4 億元人民幣（30 億美元）可換股債券。",
+      "important": true,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "funding",
+          "commercial"
+        ],
+        "entities": [
+          "qwen"
+        ]
+      }
+    },
+    {
       "title": "AI models don't kill people – people kill people",
       "url": "https://www.theregister.com/ai-and-ml/2026/09/09/ai-models-dont-kill-people-people-kill-people/5295368",
       "source": "Hacker News (AI)",
@@ -505,6 +2528,51 @@
           "incident"
         ],
         "entities": []
+      }
+    },
+    {
+      "title": "Iris-mini and Iris-pro are the strongest open-weight search agents in their class",
+      "url": "https://the-decoder.com/iris-mini-and-iris-pro-are-the-strongest-open-weight-search-agents-in-their-class/",
+      "source": "The Decoder",
+      "publishedAt": "2026-09-13T12:58:18.000Z",
+      "snippet": "The AllSpark team has released Iris-mini and Iris-pro, two open-source search agents built on Qwen models that lead benchmarks among open-weight models in their size classes. According to the paper, the training data and models also improved performance on tasks they were never trained for, including general tool use and office work. The article Iris-mini and Iris-pro are the strongest open-weight search agents in their class appeared first on The Decoder.",
+      "category": "Open Source",
+      "summary": "The AllSpark team released Iris-mini and Iris-pro, open-source search agents built on Qwen models that lead benchmarks in their size class; their training data and models also improved untrained tasks like general tool use and office work.",
+      "summaryZhHK": "AllSpark 團隊推出 Iris-mini 同 Iris-pro，係基於 Qwen 模型嘅開源搜尋 agent，喺同級 open-weight 模型嘅 benchmark 領先；佢哋嘅訓練數據同模型仲提升咗未經訓練嘅任務，例如一般工具應用同文書工作。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "open-source",
+          "benchmark"
+        ],
+        "entities": [
+          "qwen"
+        ]
+      }
+    },
+    {
+      "title": "Chinese researchers extend future memory endurance 100-fold in semiconductor advance",
+      "url": "https://www.scmp.com/tech/article/3367354/chinese-researchers-extend-future-memory-endurance-100-fold-semiconductor-advance?utm_source=rss_feed",
+      "source": "SCMP Tech",
+      "publishedAt": "2026-09-13T10:52:17.000Z",
+      "snippet": "Chinese researchers have developed a way to make an emerging type of memory chip much more durable, potentially overcoming a critical reliability barrier to its use in high-performance computing and future artificial intelligence systems as the AI boom drives demand for more advanced semiconductors. The team demonstrated more than 10 billion writing cycles in wurtzite ferroelectrics, a class of materials that can switch between two electric states to store data. The result was roughly 100 times...",
+      "category": "Hardware & Compute",
+      "summary": "Chinese researchers extended future memory endurance roughly 100-fold, demonstrating over 10 billion write cycles in wurtzite ferroelectrics, potentially removing a key reliability barrier for high-performance computing and AI systems.",
+      "summaryZhHK": "中國研究人員將未來記憶體嘅耐久度提升約 100 倍，喺 wurtzite 鐵電材料上面做到超過 100 億次寫入週期，有望打破高效能運算同 AI 系統嘅關鍵可靠性障礙。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": [
+          "nvidia"
+        ]
       }
     },
     {
@@ -6077,98 +8145,154 @@
   ],
   "feedHealth": {
     "The Verge AI": {
-      "lastSuccess": "2026-09-14T11:13:12.969Z",
+      "lastSuccess": "2026-09-15T10:40:14.427Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "TechCrunch AI": {
-      "lastSuccess": "2026-09-14T11:13:13.032Z",
+      "lastSuccess": "2026-09-15T10:40:14.427Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Ars Technica AI": {
-      "lastSuccess": "2026-09-14T11:13:13.182Z",
+      "lastSuccess": "2026-09-15T10:40:14.427Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
-    "VentureBeat AI": {
-      "lastSuccess": "2026-08-15T06:19:55.431Z",
-      "lastError": "Status code 429",
-      "consecutiveFailures": 12
-    },
-    "Anthropic News": {
-      "lastSuccess": null,
-      "lastError": "Status code 404",
-      "consecutiveFailures": 66
-    },
     "OpenAI Blog": {
-      "lastSuccess": "2026-09-14T11:13:13.655Z",
+      "lastSuccess": "2026-09-15T10:40:14.427Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Google DeepMind": {
-      "lastSuccess": "2026-09-14T11:13:14.344Z",
+      "lastSuccess": "2026-09-15T10:40:14.427Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "MIT Tech Review AI": {
-      "lastSuccess": "2026-09-14T11:13:14.468Z",
+      "lastSuccess": "2026-09-15T10:40:14.427Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "arXiv cs.AI": {
-      "lastSuccess": "2026-09-14T11:13:14.753Z",
+      "lastSuccess": "2026-09-15T10:40:14.427Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Hacker News (AI)": {
-      "lastSuccess": "2026-09-14T11:13:17.398Z",
+      "lastSuccess": "2026-09-15T10:40:14.427Z",
+      "lastError": null,
+      "consecutiveFailures": 0
+    },
+    "AI Business": {
+      "lastSuccess": "2026-09-15T10:40:14.427Z",
+      "lastError": null,
+      "consecutiveFailures": 0
+    },
+    "The Decoder": {
+      "lastSuccess": "2026-09-15T10:40:14.427Z",
+      "lastError": null,
+      "consecutiveFailures": 0
+    },
+    "The Register AI/ML": {
+      "lastSuccess": "2026-09-15T10:40:14.427Z",
+      "lastError": null,
+      "consecutiveFailures": 0
+    },
+    "Hugging Face blog": {
+      "lastSuccess": "2026-09-15T10:40:14.427Z",
+      "lastError": null,
+      "consecutiveFailures": 0
+    },
+    "Guardian AI": {
+      "lastSuccess": "2026-09-15T10:40:14.427Z",
+      "lastError": null,
+      "consecutiveFailures": 0
+    },
+    "Simon Willison": {
+      "lastSuccess": "2026-09-15T10:40:14.427Z",
+      "lastError": null,
+      "consecutiveFailures": 0
+    },
+    "GitHub blog": {
+      "lastSuccess": "2026-09-15T10:40:14.427Z",
+      "lastError": null,
+      "consecutiveFailures": 0
+    },
+    "Computer Weekly": {
+      "lastSuccess": "2026-09-15T10:40:14.427Z",
+      "lastError": null,
+      "consecutiveFailures": 0
+    },
+    "Indeed Hiring Lab": {
+      "lastSuccess": "2026-09-15T10:40:14.427Z",
+      "lastError": null,
+      "consecutiveFailures": 0
+    },
+    "Personnel Today": {
+      "lastSuccess": null,
+      "lastError": "HTTP 403",
+      "consecutiveFailures": 1
+    },
+    "SCMP Tech": {
+      "lastSuccess": "2026-09-15T10:40:14.427Z",
+      "lastError": null,
+      "consecutiveFailures": 0
+    },
+    "Unwire.hk": {
+      "lastSuccess": "2026-09-15T10:40:14.427Z",
       "lastError": null,
       "consecutiveFailures": 0
     }
   },
   "briefStatus": "generated",
+  "feedFailureWarningThreshold": 3,
   "brief": {
-    "generatedAt": "2026-09-14T11:13:42.781Z",
+    "generatedAt": "2026-09-15T10:40:14.427Z",
     "bullets": [
       {
-        "text": "Dario Amodei's slowdown letter won backing from Altman, Musk, and Hassabis, while Trump and Mike Johnson dismissed fears as overblown and warned a pause could let China overtake the US. Obama separately urged Democrats to make AI safeguards a central agenda.",
-        "textZhHK": "Amodei嘅減速信得到Altman、Musk同Hassabis支持，但特朗普同Mike Johnson就話業界擔心過大，警告暫停會令中國超越美國。奧巴馬就另外呼籲民主黨將AI安全列為核心議程。",
+        "text": "Apple released a rebuilt Siri AI built on Google Gemini, running partly on-device and via Private Cloud Compute, with praise for multi-step requests but EU unavailability.",
+        "textZhHK": "Apple推出重建嘅Siri AI，用Google Gemini模型，部分喺裝置度行、部分經Private Cloud Compute，多步驟指令受讚但歐盟冇得用。",
         "refs": [
-          "https://www.theverge.com/ai-artificial-intelligence/994441/trump-mike-johnson-ai-industry-overreacting",
-          "https://techcrunch.com/2026/09/13/obama-urges-democrats-to-have-a-clear-plan-for-ai-safeguards/"
+          "https://the-decoder.com/apple-brings-a-fully-revamped-siri-built-on-googles-gemini-but-not-to-the-eu/",
+          "https://unwire.hk/2026/09/15/ios27-macos27-siri-gemini/software/ios-app/?utm_source=rss&utm_medium=rss&utm_campaign=ios27-macos27-siri-gemini"
         ]
       },
       {
-        "text": "Occamy-1.0 launches as an open Pareto-frontier 35B co-work model optimized for cost-efficient agent workflows across information gathering, tool use, coding, and file manipulation, where latency and cost accumulate per episode.",
-        "textZhHK": "Occamy-1.0正式推出，係一個開放嘅Pareto前沿35B協作模型，專為成本效益高嘅代理工作流程而設，涵蓋資訊收集、工具使用、編寫代碼同檔案處理等場景。",
+        "text": "AI-linked stocks slid after Anthropic, OpenAI and SpaceX bosses called for a slowdown in 'reckless' development; Nvidia fell 3.3% and AMD 4%.",
+        "textZhHK": "Anthropic、OpenAI同SpaceX老闆呼籲減慢「魯莽」AI開發，AI股應聲下跌；Nvidia跌3.3%，AMD跌4%。",
         "refs": [
-          "https://arxiv.org/abs/2609.11977"
+          "https://www.theguardian.com/business/2026/sep/14/ai-linked-stocks-fall-tech-bosses-call-slowdown-anthropic-openai"
         ]
       },
       {
-        "text": "AIM introduces a privacy-aware interoperable memory framework for multi-agent, multi-user LLM systems, enabling shared public knowledge and evolving user preferences to persist beyond individual sessions without leaking private data.",
-        "textZhHK": "AIM框架為多代理、多用戶嘅LLM系統提供私隱感知嘅互操作記憶，令共享公共知識同不斷演變嘅用戶偏好可以跨會話保留，同時唔會洩漏私人數據。",
+        "text": "China dismissed US AI safety warnings as 'fearmongering' while its spy chief warned AI could threaten Communist Party rule; Trump separately called AI safety fears a 'hoax'.",
+        "textZhHK": "中國轟美國AI安全警告係「危言聳聽」，但自己嘅國安頭子警告AI或威脅中共統治；特朗普亦話AI安全憂慮係「騙局」。",
         "refs": [
-          "https://arxiv.org/abs/2609.12320"
+          "https://www.theguardian.com/world/2026/sep/14/china-dismisses-ai-fearmongering-as-spy-chief-warns-of-threat-to-communist-party-rule",
+          "https://the-decoder.com/china-fires-back-at-u-s-ai-safety-warnings-calling-them-fearmongering-to-lock-in-american-advantage/",
+          "https://www.bbc.co.uk/news/articles/cw980n0nd0qjo",
+          "https://unwire.hk/2026/09/15/trump-huang-ai-hoax-call/hottopic/spotlight/?utm_source=rss&utm_medium=rss&utm_campaign=trump-huang-ai-hoax-call"
         ]
       },
       {
-        "text": "Research isolates the harness effect in agentic coding using a contamination-controlled private suite of 256 repository and post-cutoff tasks, comparing claude-agent-sdk, deepagents, and openai-codex SDK on identical models.",
-        "textZhHK": "研究用256個污染受控嘅私人倉庫同截止後任務，分離代理編碼中嘅harness效應，喺相同模型上比較claude-agent-sdk、deepagents同openai-codex SDK嘅表現。",
+        "text": "Microsoft published a provisional AI code of conduct with CEO Mustafa Suleyman saying AI 'must be subordinate' to people; critics like Cohere's Aidan Gomez call the slowdown push a 'cartel'.",
+        "textZhHK": "Microsoft出咗份暫行AI行為守則，CEO Suleyman話AI「必須從屬於人」；Cohere嘅Aidan Gomez等批評者指減速主張係「卡特爾」。",
         "refs": [
-          "https://arxiv.org/abs/2609.11987"
+          "https://www.theguardian.com/technology/2026/sep/14/microsoft-ai-code-of-conduct",
+          "https://the-decoder.com/not-everyone-is-convinced-that-big-ais-proposed-development-slowdown-is-really-about-safety/"
         ]
       },
       {
-        "text": "Perplexity reports using GPT-6 Astra to write communications, modify software, and monitor production systems end-to-end, with far less frequent human check-ins than earlier models required.",
-        "textZhHK": "Perplexity表示用緊GPT-6 Astra去寫通訊、改軟件同監察生產系統，由頭到尾全程處理，人手檢查頻率比之前嘅模型低好多。",
+        "text": "Anthropic eyes a Nasdaq mega-IPO after telling investors of a second straight profitable quarter on an adjusted basis; OpenAI reportedly bought Glass Imaging for $300 million.",
+        "textZhHK": "Anthropic向投資者稱按調整基準連續第二季有錢賺，部署納斯達克大型IPO；據報OpenAI以3億美元收購Glass Imaging。",
         "refs": [
-          "https://openai.com/index/perplexity-improving-accuracy-with-astra"
+          "https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says/",
+          "https://the-decoder.com/anthropic-eyes-nasdaq-listing-as-a-second-profitable-quarter-aims-to-win-over-investors-ahead-of-a-mega-ipo/"
         ]
       }
     ],
-    "headline": "Amodei's slowdown letter splits leaders; open 35B agent model and private memory framework ship",
-    "headlineZhHK": "Amodei減速信惹爭議；開放35B代理模型同私隱記憶框架登場"
+    "headline": "Apple ships Gemini-powered Siri as leaders clash over AI slowdown",
+    "headlineZhHK": "Apple推Gemini版Siri 巨頭激辯AI減速"
   }
 }
