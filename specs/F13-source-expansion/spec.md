@@ -1,7 +1,7 @@
 # SPEC: Source expansion — broader, deduplicated feed coverage
 
 **ID:** F13-source-expansion
-**Status:** Build — implementation published 2026-09-14; hosted build/test and site checks recorded; normal paid ingest verification remains
+**Status:** Done — implementation, hosted build/test, normal ingest, deployment and Telegram delivery verified 2026-09-16
 **Owner:** Marco
 
 ## Approval record — 2026-09-11
@@ -32,8 +32,9 @@ Marco also asked for one endpoint change attempt for `Hacker News (AI)`, with
 acceptance of the existing endpoint if the attempt failed. The replacement
 `https://hnrss.org/newest?q=AI+OR+LLM+OR+MCP` returned HTTP 200 and valid XML on
 three consecutive read-only probes on 2026-09-14, so `feeds.json` now uses it in
-place of the `&points=50` URL. This is endpoint evidence only; hosted Actions
-reachability still requires publication and a normal workflow run.
+place of the `&points=50` URL. The later hosted run still received HTTP 429 from
+that endpoint; the failure is visible in deployed feed health and is accepted as
+an external limitation for this release.
 
 ## Publication record — 2026-09-14
 
@@ -43,8 +44,26 @@ The public site and `news.json` each returned HTTP 200; the payload contained
 291 articles, a generated brief, and a Hacker News feed-health record.
 
 The normal `Daily Ingest & Deploy` workflow was not dispatched in this step
-because it can incur DeepSeek usage and send the personal Telegram brief. A
-hosted paid-ingest result is therefore still unverified.
+because it can incur DeepSeek usage and send the personal Telegram brief. That
+separate verification was authorized and completed on 2026-09-16; see the
+hosted-ingest record below.
+
+## Hosted ingest verification — 2026-09-16
+
+Marco authorized a normal manual dispatch with paid ingestion enabled. GitHub
+Actions run [Daily Ingest & Deploy #131](https://github.com/marco144803025/AI-News-Reader/actions/runs/35141543267)
+completed successfully in 1m 9s from `main` commit `589aeef`. Every job step
+passed, including tests, ingestion, the generated-data commit, build, GitHub
+Pages deployment and personal Telegram delivery. The ingest commit was
+`9501a264` (`chore: daily news refresh`).
+
+The deployed `news.json` returned HTTP 200 and contained 496 articles with
+`generatedAt: 2026-09-16T19:36:34.916Z` and `briefStatus: "generated"`. All 20
+configured feeds produced an explicit health record: 18 had zero consecutive
+failures; Hacker News (AI) had two consecutive HTTP 429 failures and Personnel
+Today had three consecutive HTTP 403 failures. These are disclosed degraded
+sources, not silent fallbacks. F13 is therefore complete; the next feature in
+the approved sequence is F15.
 
 ## Scope change — per-run ceiling doubled, 2026-09-11
 

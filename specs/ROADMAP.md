@@ -19,21 +19,20 @@ parallelized. Existing F10–F12 and F16 workstream exceptions remain recorded b
 | F10 | [DeepSeek API migration](./F10-deepseek-migration/)               | Done        | Backend    |
 | F11 | [Personal Telegram morning brief](./F11-telegram-brief/)         | Done        | Delivery   |
 | F12 | [English / HK Traditional Chinese summaries](./F12-bilingual-summaries/) | Done  | Content |
-| F13 | [Source expansion & dedupe](./F13-source-expansion/)             | Build       | Backend    |
+| F13 | [Source expansion & dedupe](./F13-source-expansion/)             | Done        | Backend    |
 | F14 | [Licensing, attribution & excerpt hygiene](./F14-licensing-and-attribution/) | Spec | Portfolio |
 | F15 | [Daily brief category balance](./F15-brief-balance/)             | Spec        | Content    |
 | F16 | [Cinematic standard edition](./F16-cinematic-standard/)          | Done        | UX         |
 
 ## F13 implemented — 2026-09-11
 
-**Gate 2 approved and F13 is built.** Marco approved with "ok now that you
+**Gate 2 approved and F13 is complete.** Marco approved with "ok now that you
 created the plan, proceed and implement it", after raising the per-run ceiling to
 100. Implementation was delegated as planned — feed collection, pure selection
 and UI in disjoint file sets, with `general-purpose` sub-agents substituting for
-Luna and Sol (substitution recorded in the plan). F13 moves to **Build**: the code
-is complete and verified offline. The 2026-09-14 publication build/test runs
-and public-site checks passed; F13 stays Build until a normal paid hosted ingest
-is separately authorized and verified.
+Luna and Sol (substitution recorded in the plan). F13's code was verified offline,
+published on 2026-09-14, and completed with a separately authorized normal hosted
+ingest on 2026-09-16.
 
 **Verified:** 246 tests pass (130 before F13), `tsc -b` clean, both
 `VITE_ENABLE_EXTRA` builds pass with Extra off in the final state, whitespace
@@ -55,8 +54,9 @@ Jaccard threshold. The replacement Hacker News URL
 `https://hnrss.org/newest?q=AI+OR+LLM+OR+MCP` returned HTTP 200 and valid XML on
 three consecutive read-only probes, so it replaced the prior `&points=50` URL.
 Hosted Actions build/test reachability was verified after publication. The
-normal paid ingest workflow has not been dispatched, so no live paid ingest or
-Telegram delivery is claimed for this release.
+normal paid ingest workflow was then dispatched and completed successfully as
+run #131; its deployed payload disclosed Hacker News HTTP 429 and Personnel
+Today HTTP 403 as visible source-health failures. F13 is Done, with F15 next.
 
 ## Latest work — 2026-09-11, later session
 
@@ -172,11 +172,10 @@ recommendations.
 
 | Priority | Work | Concrete next action / completion condition |
 | --- | --- | --- |
-| 1 | Finish F13 hosted ingest verification | Publication, build/test and site checks are complete; authorize and run the normal hosted ingest if paid DeepSeek/Telegram side effects are wanted, then record the result and mark F13 Done. |
-| 2 | F15 brief balance | Agree source/category balancing, the cap and single-category fallback; approve spec and plan. Verify research-flooded, balanced and single-category days without changing citation/bilingual/delivery contracts. |
-| 3 | F14 attribution and excerpt hygiene | Decide data terms, takedown contact and colophon detail; approve spec and revised draft plan. Implement the colophon and a `dist/news.json`-only snippet strip while retaining stored snippets. Resolve before any commercialization work. |
-| 4 | F6 remaining Extra checks | In an Extra-enabled build, complete Lighthouse comparison, reduced-motion and blocked-font checks; keep the production flag off unless a separate change is requested. |
-| 5 | F5 email subscriptions | First resolve the conflict with the static/no-database constitution and choose a delivery/storage approach; then draft a spec. No implementation exists. |
+| 1 | F15 brief balance | Agree source/category balancing, the cap and single-category fallback; approve spec and plan. Verify research-flooded, balanced and single-category days without changing citation/bilingual/delivery contracts. |
+| 2 | F14 attribution and excerpt hygiene | Decide data terms, takedown contact and colophon detail; approve spec and revised draft plan. Implement the colophon and a `dist/news.json`-only snippet strip while retaining stored snippets. Resolve before any commercialization work. |
+| 3 | F6 remaining Extra checks | In an Extra-enabled build, complete Lighthouse comparison, reduced-motion and blocked-font checks; keep the production flag off unless a separate change is requested. |
+| 4 | F5 email subscriptions | First resolve the conflict with the static/no-database constitution and choose a delivery/storage approach; then draft a spec. No implementation exists. |
 
 F13 and F15 are complementary and now explicitly sequenced after F16. F14 moves
 earlier only if Marco changes priorities, for example when commercialization

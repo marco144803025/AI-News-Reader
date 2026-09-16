@@ -4,9 +4,10 @@
 on 2026-09-11 and explicitly requested delegation. He raised the per-run ceiling
 from 50 to 100 on the same day; that scope change is recorded in the spec.
 
-**Status:** Build — implementation and publication are complete through the
-hosted build/test checks recorded in §18. The normal paid ingest verification
-remains separately gated because it can invoke DeepSeek and Telegram delivery.
+**Status:** Done — implementation, publication, normal hosted ingest and
+Telegram delivery are verified in §§18–19. Hacker News (AI) remains visibly
+degraded at the upstream endpoint (HTTP 429), which is accepted for this
+release.
 
 Sections 0–14 are the plan as approved. They are kept as written so a later
 reader can see what was agreed before the code existed; §15 records where the
@@ -704,8 +705,8 @@ sub-agent's claim of success is **not** evidence (AGENTS.md).
 - [x] Sol/high reviews the combined diff and evidence; main resolves findings and
   re-runs only the affected checks. Five defects and three test gaps found and
   fixed; see §16. Suite 234 -> 245 passing.
-- [ ] Record readiness. **Done stays pending publication and hosted verification**,
-  which is a separate authorization.
+- [x] Record readiness. Publication and the separately authorized normal hosted
+  ingest are recorded in §§18–19; F13 is ready and complete.
 
 ---
 
@@ -1022,3 +1023,22 @@ The deployed site was checked read-only at
 because it can spend on DeepSeek and may send the personal Telegram brief; the
 hosted feed-collection and delivery path therefore remain unclaimed by this
 evidence.
+
+## 19. Hosted ingest verification — 2026-09-16
+
+Marco authorized the normal paid workflow dispatch with the retry-only option
+disabled. [Daily Ingest & Deploy #131](https://github.com/marco144803025/AI-News-Reader/actions/runs/35141543267)
+ran from `main` commit `589aeef9` and completed successfully from 19:36:11Z to
+19:37:24Z. The single `ingest-and-deploy` job passed every step: checkout,
+Node setup, dependency installation, the 246-test suite, Telegram
+configuration check, ingest, generated-data commit, build, Pages deployment and
+Telegram delivery. The workflow created commit `9501a264` (`chore: daily news
+refresh`).
+
+The deployed payload returned HTTP 200 with 496 articles,
+`generatedAt: 2026-09-16T19:36:34.916Z`, and `briefStatus: "generated"`. Its
+20-feed health record had 18 feeds with zero consecutive failures. The two
+visible failures were Hacker News (AI), two consecutive HTTP 429s, and
+Personnel Today, three consecutive HTTP 403s. The changed HN endpoint was
+therefore tested in the real hosted path and then accepted as externally rate
+limited; no silent fallback or second endpoint change was introduced.
