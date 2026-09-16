@@ -1,7 +1,7 @@
 # SPEC: Daily brief category balance
 
 **ID:** F15-brief-balance
-**Status:** Plan — Gate 1 approved 2026-09-16; implementation not authorized
+**Status:** Build — implementation and local verification complete; hosted paid ingest remains separately authorized
 **Owner:** Marco
 
 ## 1. Problem statement
@@ -195,5 +195,25 @@ persisted `Brief` shape. No hosted paid run is implied by this spec approval.
    `news.json` field or UI surface.
 
 Gate 1 approval — 2026-09-16: Marco replied “approve”, accepting all three
-recommendations above. This advances F15 to the Plan phase; it does not
-authorize production code or a hosted paid ingest.
+recommendations above. Gate 2 was approved on 2026-09-17 when Marco replied
+“proceed” to the implementation plan. Production implementation is now
+authorized; a hosted paid ingest still requires separate authorization.
+
+## Implementation record — 2026-09-17
+
+The balanced selector and ingest diagnostics were implemented in
+`ingest/lib.ts` and `ingest/ingest.ts`. Unit and pipeline coverage was added in
+`ingest/__tests__/brief.test.ts` and `ingest/__tests__/pipeline.test.ts`.
+The persisted `Brief`, `NewsData`, bilingual and Telegram contracts were not
+changed.
+
+Verification completed locally: `npx tsc -b` exited 0; the full suite passed
+253 tests with 0 failures; `npm run build` completed successfully with Vite;
+and `git diff --check` reported no whitespace errors. The first plain `npm test`
+attempt exposed the known Windows Node/tsx `uv_os_get_passwd returned ENOMEM`
+host issue before tests started; the suite was then rerun successfully with a
+temporary external `os.userInfo()` shim, which was removed afterward.
+
+F15 remains Build pending one separately authorized normal hosted ingest. That
+run must verify the `Brief input:` log, deployment and unchanged persisted brief
+shape before the feature can move to Done.

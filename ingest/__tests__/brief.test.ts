@@ -4,6 +4,7 @@ import {
   BRIEF_INPUT_CAP,
   buildBriefPrompt,
   carryForwardBrief,
+  formatBriefInputStats,
   parseBriefResponse,
   selectBriefInput,
 } from "../lib.ts";
@@ -13,15 +14,17 @@ function makeArticle(
   url: string,
   publishedAt: string,
   important = false,
-  title = `Title ${url}`
+  title = `Title ${url}`,
+  category = "Research",
+  source = "src"
 ): Article {
   return {
     title,
     url,
-    source: "src",
+    source,
     publishedAt,
     snippet: "",
-    category: "Research",
+    category,
     summary: `Summary of ${url}`,
     important,
   };
@@ -36,7 +39,7 @@ describe("selectBriefInput", () => {
     const c = makeArticle("c", "2026-07-02T10:00:00Z", true);
     const d = makeArticle("d", "2026-07-02T11:00:00Z");
     assert.deepEqual(
-      selectBriefInput([a, b, c, d], NOW).map((x) => x.url),
+      selectBriefInput([a, b, c, d], NOW).articles.map((x) => x.url),
       ["c", "b", "d", "a"]
     );
   });
@@ -46,9 +49,9 @@ describe("selectBriefInput", () => {
       makeArticle(`u${i}`, `2026-07-02T00:${String(i).padStart(2, "0")}:00Z`, i >= 58)
     );
     const selected = selectBriefInput(many, NOW);
-    assert.equal(selected.length, BRIEF_INPUT_CAP);
-    assert.equal(selected[0].important, true);
-    assert.equal(selected[1].important, true);
+    assert.equal(selected.articles.length, BRIEF_INPUT_CAP);
+    assert.equal(selected.articles[0].important, true);
+    assert.equal(selected.articles[1].important, true);
   });
 
   it("takes the last 24h of the archive, not just this run's arrivals", () => {
@@ -56,11 +59,100 @@ describe("selectBriefInput", () => {
     const edge = makeArticle("edge", "2026-07-01T11:59:00Z");
     const inside = makeArticle("new", "2026-07-02T09:00:00Z");
     assert.deepEqual(
-      selectBriefInput([yesterday, edge, inside], NOW).map((x) => x.url),
+      selectBriefInput([yesterday, edge, inside], NOW).articles.map((x) => x.url),
       ["new"]
     );
     // Unparseable dates are dropped rather than silently treated as recent.
-    assert.deepEqual(selectBriefInput([makeArticle("bad", "not-a-date")], NOW), []);
+    assert.deepEqual(selectBriefInput([makeArticle("bad", "not-a-date")], NOW).articles, []);
+  });
+
+  it("caps a dominant category and source while scanning for alternatives", () => {
+    const candidates = [
+      ...Array.from({ length: 6 }, (_, i) => makeArticle(`arxiv-${i}`, `2026-07-02T11:${String(59 - i).padStart(2, "0")}:00Z`, false, `Research arxiv ${i}`, "Research", "arXiv cs.AI")),
+      ...Array.from({ length: 2 }, (_, i) => makeArticle(`open-research-${i}`, `2026-07-02T11:${String(53 - i).padStart(2, "0")}:00Z`, false, `Research open ${i}`, "Research", "OpenAI Blog")),
+      ...Array.from({ length: 3 }, (_, i) => makeArticle(`applications-${i}`, `2026-07-02T11:${String(51 - i).padStart(2, "0")}:00Z`, false, `Applications ${i}`, "Applications", "OpenAI Blog")),
+      ...Array.from({ length: 2 }, (_, i) => makeArticle(`mcp-${i}`, `2026-07-02T11:${String(48 - i).padStart(2, "0")}:00Z`, false, `MCP ${i}`, "MCP", "Simon Willison")),
+      ...Array.from({ length: 5 }, (_, i) => makeArticle(`policy-${i}`, `2026-07-02T11:${String(46 - i).padStart(2, "0")}:00Z`, false, `Policy ${i}`, "Regulation & Policy", "Computer Weekly")),
+    ];
+    const selection = selectBriefInput(candidates, NOW);
+
+    assert.equal(selection.stats.candidateCount, 18);
+    assert.equal(selection.stats.categoryCounts.Research, 8);
+    assert.equal(selection.stats.sourceCounts["arXiv cs.AI"], 6);
+    assert.equal(selection.stats.fallbacks.length, 0);
+    assert.equal(selection.articles.length, 18);
+    assert.deepEqual(selection.articles.slice(0, 8).map((article) => article.category), [
+      ...Array(8).fill("Research"),
+    ]);
+  });
+
+  it("relaxes only the unavailable category quota", () => {
+    const candidates = Array.from({ length: 50 }, (_, i) =>
+      makeArticle(`one-category-${i}`, `2026-07-02T${String(11 - Math.floor(i / 5)).padStart(2, "0")}:${String(59 - i % 5).padStart(2, "0")}:00Z`, false, `One category ${i}`, "Research", `source-${i % 5}`)
+    );
+    const selection = selectBriefInput(candidates, NOW);
+
+    assert.deepEqual(selection.stats.fallbacks, ["single-category"]);
+    assert.equal(selection.articles.length, 50);
+    assert.equal(Math.max(...Object.values(selection.stats.sourceCounts)), 10);
+  });
+
+  it("relaxes only the unavailable source quota", () => {
+    const candidates = Array.from({ length: 50 }, (_, i) =>
+      makeArticle(`one-source-${i}`, `2026-07-02T${String(11 - Math.floor(i / 5)).padStart(2, "0")}:${String(59 - i % 5).padStart(2, "0")}:00Z`, false, `Category ${i}`, `Category ${i % 5}`, "one-source")
+    );
+    const selection = selectBriefInput(candidates, NOW);
+
+    assert.deepEqual(selection.stats.fallbacks, ["single-source"]);
+    assert.equal(selection.articles.length, 50);
+    assert.equal(Math.max(...Object.values(selection.stats.categoryCounts)), 10);
+  });
+
+  it("relaxes the minimum number of quotas needed to keep three inputs", () => {
+    const candidates = [
+      makeArticle("minimum-a", "2026-07-02T11:00:00Z", false, "A", "A", "X"),
+      makeArticle("minimum-b", "2026-07-02T10:00:00Z", false, "B", "B", "Y"),
+      makeArticle("minimum-c", "2026-07-02T09:00:00Z", false, "A again", "A", "X"),
+    ];
+    const selection = selectBriefInput(candidates, NOW);
+
+    assert.deepEqual(selection.stats.fallbacks, ["minimum-input"]);
+    assert.equal(selection.articles.length, 3);
+    assert.deepEqual(selection.articles.map((article) => article.url), [
+      "minimum-a",
+      "minimum-b",
+      "minimum-c",
+    ]);
+  });
+
+  it("accounts for blank labels without mutating articles", () => {
+    const malformed = makeArticle("blank-label", "2026-07-02T11:00:00Z");
+    malformed.category = "";
+    malformed.source = "";
+    const selection = selectBriefInput([
+      malformed,
+      makeArticle("known-a", "2026-07-02T10:00:00Z", false, "Known A", "Applications", "known"),
+      makeArticle("known-b", "2026-07-02T09:00:00Z", false, "Known B", "MCP", "known"),
+    ], NOW);
+
+    assert.equal(selection.stats.categoryCounts.Unknown, 1);
+    assert.equal(selection.stats.sourceCounts.Unknown, 1);
+    assert.equal(malformed.category, "");
+    assert.equal(malformed.source, "");
+    assert.match(formatBriefInputStats(selection.stats), /categories Applications=1, MCP=1, Unknown=1/);
+  });
+
+  it("is deterministic for the same archive and timestamp", () => {
+    const candidates = [
+      makeArticle("det-a", "2026-07-02T11:00:00Z", true, "A", "Research", "source-a"),
+      makeArticle("det-b", "2026-07-02T10:00:00Z", false, "B", "Applications", "source-b"),
+      makeArticle("det-c", "2026-07-02T09:00:00Z", false, "C", "MCP", "source-c"),
+    ];
+
+    assert.deepEqual(
+      selectBriefInput(candidates, NOW),
+      selectBriefInput(candidates, NOW)
+    );
   });
 });
 

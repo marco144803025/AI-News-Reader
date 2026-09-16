@@ -1,7 +1,10 @@
 # F15 daily brief category balance — Plan
 
 **Spec:** [spec.md](./spec.md)
-**Status:** Plan — Gate 1 approved 2026-09-16; Gate 2 pending
+**Status:** Build — implementation and local verification complete; hosted paid ingest pending
+
+Gate 2 approval — 2026-09-17: Marco replied “proceed” to this plan. The
+implementation tasks below are authorized. No hosted paid ingest is implied.
 
 ## Approach
 
@@ -86,31 +89,31 @@ sources arXiv cs.AI=6, OpenAI Blog=3; fallbacks none.
 
 - [x] Record Gate 1 approval in `spec.md`, set the F15 roadmap row to `Plan`,
   and freeze the approved quota/fallback/logging decisions in this plan.
-- [ ] Add `BriefInputFallback`, `BriefInputStats`, `BriefInputSelection`,
+- [x] Add `BriefInputFallback`, `BriefInputStats`, `BriefInputSelection`,
   `BRIEF_CATEGORY_SHARE = 0.40` and `BRIEF_SOURCE_SHARE = 0.30` to the brief
   helper module without changing persisted types.
-- [ ] Refactor `selectBriefInput()` to produce the existing 24-hour,
+- [x] Refactor `selectBriefInput()` to produce the existing 24-hour,
   important-first/newest-first candidate order and calculate the target pool
   and rounded-up category/source quotas.
-- [ ] Implement deterministic quota admission: scan candidates in order,
+- [x] Implement deterministic quota admission: scan candidates in order,
   enforce both active quotas, continue scanning for under-quota alternatives,
   stop at the target pool, and count selected categories/sources.
-- [ ] Implement explicit fallback detection. Disable only a category or source
+- [x] Implement explicit fallback detection. Disable only a category or source
   quota when all candidates share that bucket; when at least three candidates
   exist but quota admission selects fewer than three, try one-quota relaxation
   before two-quota relaxation and record `minimum-input`.
-- [ ] Add `Unknown` accounting for blank category/source labels and expose the
+- [x] Add `Unknown` accounting for blank category/source labels and expose the
   counts through the normal composition line/warning without mutating articles.
-- [ ] Update `runIngest()` for the selection object, emit composition diagnostics
+- [x] Update `runIngest()` for the selection object, emit composition diagnostics
   before model generation, and preserve `briefStatus`, carry-forward and the
   single existing `generateBrief()` call.
-- [ ] Update the existing brief unit tests for the new return shape and add
+- [x] Update the existing brief unit tests for the new return shape and add
   deterministic fixtures for balanced, arXiv-heavy, single-category,
   single-source, minimum-input and malformed-label cases.
-- [ ] Add a pipeline fixture that asserts the composition log, the selected
+- [x] Add a pipeline fixture that asserts the composition log, the selected
   article URLs passed to the fake brief generator, and exactly one brief call;
   retain the existing no-new-material and failure-isolation assertions.
-- [ ] Run the local verification commands in §Verification, inspect the staged
+- [x] Run the local verification commands in §Verification, inspect the staged
   diff and record actual outputs in this plan.
 - [ ] After separate authorization, run one normal hosted ingest, verify the
   `Brief input:` log, successful deployment and unchanged persisted brief shape,
@@ -153,6 +156,21 @@ not part of the local default commands. After Marco authorizes it, the hosted
 run must complete successfully, expose the `Brief input:` diagnostic, return
 HTTP 200 for the deployed page and `news.json`, and retain the existing Brief
 fields and bilingual/delivery behavior.
+
+## Verification record — 2026-09-17
+
+- `npx tsc -b` — exit 0 with no diagnostics.
+- `npm test` — **253 tests passed, 0 failed**. This includes the seven new F15
+  selector and pipeline assertions. The plain Windows invocation first stopped
+  before test discovery with `uv_os_get_passwd returned ENOMEM`; rerunning with
+  a temporary external `os.userInfo()` shim passed, and the shim was removed.
+- `npm run build` — Vite completed successfully after transforming 69 modules.
+- `git diff --check` — no whitespace errors; only expected CRLF conversion
+  warnings from Git on this Windows checkout.
+
+The hosted paid-ingest task remains unchecked because it can invoke DeepSeek and
+send the personal Telegram brief. F15 therefore remains Build until Marco
+authorizes that final end-to-end check.
 
 ## Risks / tradeoffs
 

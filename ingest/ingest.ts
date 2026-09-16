@@ -18,6 +18,7 @@ import {
   DAYS_BACK,
   DEFAULT_FEED_FAILURE_WARNING_THRESHOLD,
   DEFAULT_MAX_NEW_ARTICLES_PER_RUN,
+  formatBriefInputStats,
   normalizeTags,
   parseBriefResponse,
   parseRetentionDays,
@@ -413,7 +414,17 @@ export async function runIngest(deps: IngestDeps): Promise<NewsData> {
   // over this run's arrivals, so a late or closely spaced run still writes one.
   // A brief failure must never fail the run — carry the previous brief forward
   // and record why, so delivery can tell a quiet day from a broken pipeline.
-  const briefInput = selectBriefInput(pruned, now.getTime());
+  const briefSelection = selectBriefInput(pruned, now.getTime());
+  const briefInput = briefSelection.articles;
+  log.info(formatBriefInputStats(briefSelection.stats));
+  const unknownCategoryCount = briefSelection.stats.categoryCounts.Unknown ?? 0;
+  const unknownSourceCount = briefSelection.stats.sourceCounts.Unknown ?? 0;
+  if (unknownCategoryCount > 0 || unknownSourceCount > 0) {
+    log.warn(
+      `Brief input: ${unknownCategoryCount} selected articles have an unknown category; ` +
+        `${unknownSourceCount} have an unknown source.`
+    );
+  }
   let brief = carryForwardBrief(existing);
   let briefStatus: BriefStatus;
   if (briefInput.length >= BRIEF_MIN_BULLETS) {

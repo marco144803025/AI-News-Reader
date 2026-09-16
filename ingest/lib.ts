@@ -280,6 +280,8 @@ export function computeGeneratedAt(
 // Daily brief (F8)
 
 export const BRIEF_INPUT_CAP = 50;
+export const BRIEF_CATEGORY_SHARE = 0.4;
+export const BRIEF_SOURCE_SHARE = 0.3;
 export const BRIEF_MIN_BULLETS = 3;
 export const BRIEF_MAX_BULLETS = 5;
 // Matches the classification budget. Every bullet now carries English and zh-HK
@@ -287,6 +289,119 @@ export const BRIEF_MAX_BULLETS = 5;
 // turns one long brief into a whole missed delivery.
 export const BRIEF_MAX_TOKENS = 8192;
 export const BRIEF_WINDOW_MS = 24 * 60 * 60 * 1000;
+
+export type BriefInputFallback =
+  | "single-category"
+  | "single-source"
+  | "minimum-input";
+
+export type BriefInputStats = {
+  candidateCount: number;
+  selectedCount: number;
+  inputCap: number;
+  categoryCounts: Record<string, number>;
+  sourceCounts: Record<string, number>;
+  fallbacks: BriefInputFallback[];
+};
+
+export type BriefInputSelection = {
+  articles: Article[];
+  stats: BriefInputStats;
+};
+
+const UNKNOWN_BRIEF_INPUT_LABEL = "Unknown";
+
+function briefInputBucket(value: string | null | undefined): string {
+  return value?.trim() || UNKNOWN_BRIEF_INPUT_LABEL;
+}
+
+function countBriefInputBuckets(
+  articles: Article[],
+  field: "category" | "source"
+): Record<string, number> {
+  const counts: Record<string, number> = {};
+  for (const article of articles) {
+    const bucket = briefInputBucket(article[field]);
+    counts[bucket] = (counts[bucket] ?? 0) + 1;
+  }
+  return counts;
+}
+
+function briefInputQuota(targetPool: number, share: number): number {
+  return Math.max(1, Math.ceil(targetPool * share));
+}
+
+function selectWithBriefInputQuotas(
+  candidates: Article[],
+  targetPool: number,
+  categoryQuota: number | undefined,
+  sourceQuota: number | undefined
+): Article[] {
+  const selected: Article[] = [];
+  const categoryCounts = new Map<string, number>();
+  const sourceCounts = new Map<string, number>();
+
+  for (const article of candidates) {
+    if (selected.length >= targetPool) break;
+
+    const category = briefInputBucket(article.category);
+    const source = briefInputBucket(article.source);
+    if (categoryQuota !== undefined && (categoryCounts.get(category) ?? 0) >= categoryQuota) {
+      continue;
+    }
+    if (sourceQuota !== undefined && (sourceCounts.get(source) ?? 0) >= sourceQuota) {
+      continue;
+    }
+
+    selected.push(article);
+    categoryCounts.set(category, (categoryCounts.get(category) ?? 0) + 1);
+    sourceCounts.set(source, (sourceCounts.get(source) ?? 0) + 1);
+  }
+
+  return selected;
+}
+
+function selectMinimumBriefInput(
+  candidates: Article[],
+  targetPool: number,
+  categoryQuota: number | undefined,
+  sourceQuota: number | undefined
+): Article[] | undefined {
+  const attempts: Article[][] = [];
+
+  if (categoryQuota !== undefined) {
+    attempts.push(selectWithBriefInputQuotas(candidates, targetPool, undefined, sourceQuota));
+  }
+  if (sourceQuota !== undefined) {
+    attempts.push(selectWithBriefInputQuotas(candidates, targetPool, categoryQuota, undefined));
+  }
+
+  const oneQuotaAttempt = attempts.find((attempt) => attempt.length >= BRIEF_MIN_BULLETS);
+  if (oneQuotaAttempt) return oneQuotaAttempt;
+
+  if (categoryQuota !== undefined || sourceQuota !== undefined) {
+    const bothRelaxed = selectWithBriefInputQuotas(candidates, targetPool, undefined, undefined);
+    if (bothRelaxed.length >= BRIEF_MIN_BULLETS) {
+      return bothRelaxed;
+    }
+  }
+
+  return undefined;
+}
+
+function formatBriefInputCounts(counts: Record<string, number>): string {
+  const entries = Object.entries(counts).sort(([left], [right]) => left.localeCompare(right));
+  return entries.length > 0
+    ? entries.map(([name, count]) => `${name}=${count}`).join(", ")
+    : "none";
+}
+
+export function formatBriefInputStats(stats: BriefInputStats): string {
+  const fallbacks = stats.fallbacks.length > 0 ? stats.fallbacks.join(", ") : "none";
+  return `Brief input: ${stats.candidateCount} candidates -> ${stats.selectedCount} selected; ` +
+    `categories ${formatBriefInputCounts(stats.categoryCounts)}; ` +
+    `sources ${formatBriefInputCounts(stats.sourceCounts)}; fallbacks ${fallbacks}.`;
+}
 
 // Important articles first (they must be visible to the model even on huge
 // runs), then everything else newest-first, capped so the prompt stays small.
@@ -296,7 +411,7 @@ export const BRIEF_WINDOW_MS = 24 * 60 * 60 * 1000;
 export function selectBriefInput(
   articles: Article[],
   now: number = Date.now()
-): Article[] {
+): BriefInputSelection {
   const cutoff = now - BRIEF_WINDOW_MS;
   const recent = articles.filter((a) => {
     const published = Date.parse(a.publishedAt);
@@ -306,7 +421,40 @@ export function selectBriefInput(
     b.publishedAt.localeCompare(a.publishedAt);
   const important = recent.filter((a) => a.important).sort(byRecency);
   const rest = recent.filter((a) => !a.important).sort(byRecency);
-  return [...important, ...rest].slice(0, BRIEF_INPUT_CAP);
+  const candidates = [...important, ...rest];
+  const targetPool = Math.min(candidates.length, BRIEF_INPUT_CAP);
+  const categoryLabels = new Set(candidates.map((article) => briefInputBucket(article.category)));
+  const sourceLabels = new Set(candidates.map((article) => briefInputBucket(article.source)));
+  const categoryQuota = categoryLabels.size <= 1
+    ? undefined
+    : briefInputQuota(targetPool, BRIEF_CATEGORY_SHARE);
+  const sourceQuota = sourceLabels.size <= 1
+    ? undefined
+    : briefInputQuota(targetPool, BRIEF_SOURCE_SHARE);
+  const fallbacks: BriefInputFallback[] = [];
+  if (categoryQuota === undefined && candidates.length > 0) fallbacks.push("single-category");
+  if (sourceQuota === undefined && candidates.length > 0) fallbacks.push("single-source");
+
+  let selected = selectWithBriefInputQuotas(candidates, targetPool, categoryQuota, sourceQuota);
+  if (targetPool >= BRIEF_MIN_BULLETS && selected.length < BRIEF_MIN_BULLETS) {
+    const minimum = selectMinimumBriefInput(candidates, targetPool, categoryQuota, sourceQuota);
+    if (minimum) {
+      selected = minimum;
+      fallbacks.push("minimum-input");
+    }
+  }
+
+  return {
+    articles: selected,
+    stats: {
+      candidateCount: candidates.length,
+      selectedCount: selected.length,
+      inputCap: BRIEF_INPUT_CAP,
+      categoryCounts: countBriefInputBuckets(selected, "category"),
+      sourceCounts: countBriefInputBuckets(selected, "source"),
+      fallbacks,
+    },
+  };
 }
 
 export function buildBriefPrompt(articles: Article[]): {

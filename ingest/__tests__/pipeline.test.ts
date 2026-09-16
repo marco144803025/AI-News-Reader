@@ -344,6 +344,46 @@ test("P-7b a quiet day carries the previous brief forward", async () => {
   assert.equal(out.generatedAt, existing.generatedAt, "a run with no new material keeps its timestamp");
 });
 
+test("F15 logs balanced brief composition and makes one synthesis call", async () => {
+  const feeds = makeFeeds(2);
+  const candidates = makeCandidates(feeds, 4);
+  const briefInputs: Article[][] = [];
+  const { deps, logs } = harness({ feeds, candidates });
+
+  deps.classify = async (batch) => batch.map((article) => ({
+    category: article.url.endsWith("a0") || article.url.endsWith("a1") || article.url.endsWith("a2")
+      ? "Research"
+      : article.url.endsWith("a3")
+        ? "Applications"
+        : "MCP",
+    summary: `Summary of ${article.title}.`,
+    summaryZhHK: `${article.title} 嘅摘要。`,
+    important: false,
+    tags: { topics: ["llm"], traits: ["release"], entities: ["openai"] },
+  }));
+  deps.generateBrief = async (input) => {
+    briefInputs.push(input);
+    return briefFor(input);
+  };
+
+  const out = await runIngest(deps);
+
+  const compositionIndex = logs.findIndex((line) => line.startsWith("Brief input:"));
+  const generationIndex = logs.findIndex((line) => line.startsWith("Generating daily brief"));
+  assert.notEqual(compositionIndex, -1, "brief composition must be logged");
+  assert.ok(compositionIndex < generationIndex, "composition must be logged before generation");
+  assert.match(logs[compositionIndex], /candidates -> \d+ selected/);
+  assert.match(logs[compositionIndex], /categories .*Research=/);
+  assert.match(logs[compositionIndex], /sources .*Source/);
+  assert.equal(briefInputs.length, 1, "balancing must not add a model call");
+  assert.ok(briefInputs[0].length >= 3, "the model receives a valid minimum input");
+  assert.ok(
+    briefInputs[0].every((selected) => out.articles.some((article) => article.url === selected.url)),
+    "the model receives articles from the output archive"
+  );
+  assert.equal(out.briefStatus, "generated");
+});
+
 // ---------------------------------------------------------------------------
 // Integration-review follow-ups. The reviewer showed that P-6's attribution
 // assertion was vacuous: its fixture titles each carry a unique numeric token,
