@@ -1,21 +1,897 @@
 {
-  "generatedAt": "2026-09-16T10:28:21.470Z",
+  "generatedAt": "2026-09-16T19:36:34.916Z",
   "daysBack": 2,
   "categories": [
-    "AI Safety & Alignment",
     "Regulation & Policy",
-    "Applications",
-    "Other",
+    "AI Safety & Alignment",
     "Hardware & Compute",
-    "Developer Tools",
     "MCP",
-    "Business & Funding",
+    "Applications",
     "Model Releases",
-    "Agent Frameworks",
+    "Robotics",
+    "Business & Funding",
     "Research",
+    "Other",
+    "Developer Tools",
+    "Agent Frameworks",
     "Open Source"
   ],
   "articles": [
+    {
+      "title": "EU president warns AI agents \"escaping their environment\" are just a preview of what's coming",
+      "url": "https://the-decoder.com/eu-president-warns-ai-agents-escaping-their-environment-are-just-a-preview-of-whats-coming/",
+      "source": "The Decoder",
+      "publishedAt": "2026-09-16T19:02:25.000Z",
+      "snippet": "Ursula von der Leyen plans to invite the major frontier labs to talks and use the AI Act to help set global AI safety standards. She cited autonomous hacking and self-improving models as immediate risks. The article EU president warns AI agents \"escaping their environment\" are just a preview of what's coming appeared first on The Decoder.",
+      "category": "Regulation & Policy",
+      "summary": "EU president Ursula von der Leyen warned that AI agents \"escaping their environment\" preview coming risks, and plans talks with frontier labs to set global AI safety standards under the AI Act.",
+      "summaryZhHK": "歐盟主席馮德萊恩警告，AI agent「走出佢哋嘅環境」只係未來風險嘅前奏，佢計劃邀請各大前沿實驗室會談，並用 AI Act 制定全球 AI 安全標準。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "safety",
+          "agentic"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Scotland votes for moratorium on new large-scale datacentres for up to a year",
+      "url": "https://www.theguardian.com/uk-news/2026/sep/16/datacentres-scotland-environmental-assessments-ai-boom",
+      "source": "Guardian AI",
+      "publishedAt": "2026-09-16T18:28:12.000Z",
+      "snippet": "MSPs bring in strict environmental impact assessments and will delay decisions until national strategy is developed Holyrood has voted to pause planning applications for all new AI datacentres for up to a year until the Scottish government has developed a national strategy. On Wednesday, MSPs backed a Scottish Labour motion to halt new schemes for up to 12 months while rules on hyperscale datacentres are developed in what could be a blow to the British government’s AI strategy. Continue reading...",
+      "category": "Regulation & Policy",
+      "summary": "Holyrood voted to pause planning applications for all new AI datacentres for up to a year, pending a national strategy, in a potential blow to the UK's AI plans.",
+      "summaryZhHK": "蘇格蘭議會投票通過暫停審批所有新 AI 數據中心嘅規劃申請最長一年，等政府制定全國策略，呢個決定可能打擊英國嘅 AI 發展大計。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "hardware-compute"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "google"
+        ]
+      }
+    },
+    {
+      "title": "AI labs want in-house auditors — but maybe they should shut the front door first",
+      "url": "https://techcrunch.com/2026/09/16/ai-labs-want-in-house-auditors-but-maybe-they-should-shut-the-front-door-first/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-16T18:25:25.000Z",
+      "snippet": "There may be a simpler and more effective fix for rogue agents, hiding in plain sight.",
+      "category": "AI Safety & Alignment",
+      "summary": "TechCrunch argues there may be a simpler, more effective fix for rogue AI agents than the in-house auditing labs are pursuing.",
+      "summaryZhHK": "TechCrunch 認為，對付失控 AI agent，可能有個更簡單又更有效嘅方法，比起各實驗室搞嘅內部審計更加實際。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "alignment",
+          "agentic"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "Apple is reportedly building an enterprise AI server with its own M8 Ultra chips",
+      "url": "https://the-decoder.com/apple-is-reportedly-building-an-enterprise-ai-server-with-its-own-m8-ultra-chips/",
+      "source": "The Decoder",
+      "publishedAt": "2026-09-16T18:16:27.000Z",
+      "snippet": "According to The Information, Apple is working on an enterprise server with two or four M8 Ultra chips for the AI inference market, with a possible launch no earlier than 2029. Apple is considering Nvidia's NVLink Fusion technology to connect the chips. The project could get a boost from OpenAI and Anthropic already buying Mac hardware in bulk for AI workloads. The article Apple is reportedly building an enterprise AI server with its own M8 Ultra chips appeared first on The Decoder.",
+      "category": "Hardware & Compute",
+      "summary": "Apple is reportedly building an enterprise AI server with two or four M8 Ultra chips for the inference market, possibly using Nvidia NVLink Fusion, with launch no earlier than 2029.",
+      "summaryZhHK": "據報 Apple 正研發一款企業級 AI 伺服器，配備兩粒或四粒 M8 Ultra 晶片主攻推理市場，或會採用 Nvidia NVLink Fusion 技術，最快 2029 年先推出。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference",
+          "hardware-compute"
+        ],
+        "traits": [],
+        "entities": [
+          "nvidia"
+        ]
+      }
+    },
+    {
+      "title": "Apple might make servers again to cash in on the AI rush",
+      "url": "https://www.theverge.com/tech/996321/apple-servers-ai-nvidia",
+      "source": "The Verge AI",
+      "publishedAt": "2026-09-16T17:20:29.000Z",
+      "snippet": "According to The Information, Apple is planning to get back into the server game and might just pair up with Nvidia to make it happen. Apple retired its Xserve line in 2011 and has largely left enterprise machines to other manufacturers since. But the growing demand for compute power as the AI industry continues to expand has apparently led the company to believe there is an opening for its powerful but efficient ARM-based M processors. Its Mac Mini and Mac Studio have proven popular with AI developers, which has led to shortages. The server product, whether it's called Xserve or something els",
+      "category": "Hardware & Compute",
+      "summary": "Apple is reportedly planning a return to the server market, possibly partnering with Nvidia, to exploit demand for its power-efficient ARM-based M-series processors in AI compute.",
+      "summaryZhHK": "據報 Apple 計劃重返伺服器市場，仲可能同 Nvidia 合作，藉住 AI 運算需求急升，發揮佢自家 ARM 架構 M 系列處理器慳電又高效嘅優勢。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "nvidia"
+        ]
+      }
+    },
+    {
+      "title": "House speaker calls early recess before midterms amid AI regulation frenzy",
+      "url": "https://www.theguardian.com/us-news/2026/sep/16/mike-johnson-cancels-house-vote-hegseth",
+      "source": "Guardian AI",
+      "publishedAt": "2026-09-16T17:10:42.000Z",
+      "snippet": "Mike Johnson cancels votes on Thursday, meaning House members will avoid voting on impeaching Pete Hegseth US politics live – latest updates The Republican speaker of the House, Mike Johnson, announced on Wednesday that he would again cancel votes scheduled for Thursday, sending lawmakers home one day early ahead of the midterm election recess. The latest change to the legislative schedule means House members will avoid voting on Republican Thomas Massie’s resolution to impeach the defense secretary, Pete Hegseth, and comes amid a frenzied attempt to propose legislation on artificial intellige",
+      "category": "Regulation & Policy",
+      "summary": "House speaker Mike Johnson called an early recess before the midterms, meaning members avoid votes on impeaching Pete Hegseth amid a frenzy of AI regulation proposals.",
+      "summaryZhHK": "美國眾議院議長 Mike Johnson 喺中期選舉前提早休會，令議員避開彈劾 Pete Hegseth 嘅投票，同時正值各方爭相提出 AI 監管法案。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy",
+          "commercial"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Google Deepmind launches interdisciplinary institute to tackle the big questions around AGI",
+      "url": "https://the-decoder.com/google-deepmind-launches-interdisciplinary-institute-to-tackle-the-big-questions-around-agi/",
+      "source": "The Decoder",
+      "publishedAt": "2026-09-16T17:00:28.000Z",
+      "snippet": "Google Deepmind has founded the Deepmind Institute (DMI), an interdisciplinary research platform focused on AGI. Led by Demis Hassabis, Shane Legg, and James Manyika, the institute tackles questions around safety, governance, and control risks, drawing on experts from the arts, humanities, and policy alongside technologists. The article Google Deepmind launches interdisciplinary institute to tackle the big questions around AGI appeared first on The Decoder.",
+      "category": "AI Safety & Alignment",
+      "summary": "Google DeepMind founded the DeepMind Institute (DMI), an interdisciplinary AGI research platform led by Demis Hassabis, Shane Legg, and James Manyika, addressing safety, governance, and control risks.",
+      "summaryZhHK": "Google DeepMind 成立 DeepMind Institute（DMI），呢個跨學科 AGI 研究平台由 Demis Hassabis、Shane Legg 同 James Manyika 領導，專門研究安全、治理同控制風險。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": [
+          "deepmind"
+        ]
+      }
+    },
+    {
+      "title": "Google will now let any AI agent run your smart home",
+      "url": "https://www.theverge.com/tech/996310/google-home-mcp-integration-agentic-ai-smart-home-price-release-date",
+      "source": "The Verge AI",
+      "publishedAt": "2026-09-16T17:00:00.000Z",
+      "snippet": "Google is inviting third-party agents, including Claude and Open Claw, into Google Home. | Photo by Jennifer Pattison Tuohy / The Verge Google is opening up its smart home to AI agents, letting tools like Claude and Open Claw access and control your connected devices and analyze your home's data using the standardized Model Context Protocol. Google Home MCP is a new integration that lets third-party AI agents control and monitor your smart home and act on your behalf. It \"allows any AI agents that support MCP, including Google Antigravity, Claude, Hermes or Open Claw, to securely work with all",
+      "category": "MCP",
+      "summary": "Google opened its smart home to third-party AI agents via a new Google Home MCP integration, letting tools like Claude and Open Claw securely control and monitor connected devices.",
+      "summaryZhHK": "Google 透過全新嘅 Google Home MCP 整合，開放智能家居俾第三方 AI agent 使用，畀 Claude 同 Open Claw 等工具安全咁控制同監察連接嘅裝置。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": [
+          "google"
+        ]
+      }
+    },
+    {
+      "title": "Your AI agents can now control your Google Home devices",
+      "url": "https://techcrunch.com/2026/09/16/your-ai-agents-can-now-control-your-google-home-devices/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-16T17:00:00.000Z",
+      "snippet": "Google is launching early access to a new MCP server for Google Home, allowing AI agents like Claude, ChatGPT, and others to control connected devices, review camera summaries, and access smart home activity using natural language.",
+      "category": "MCP",
+      "summary": "Google launched early access to an MCP server for Google Home, enabling AI agents like Claude and ChatGPT to control devices and access smart home data via natural language.",
+      "summaryZhHK": "Google 推出 Google Home 嘅 MCP server 早期測試，畀 Claude 同 ChatGPT 等 AI agent 用自然語言控制裝置同讀取智能家居數據。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": [
+          "google"
+        ]
+      }
+    },
+    {
+      "title": "Anthropic merges Claude Chat, Cowork, and more into a single product",
+      "url": "https://the-decoder.com/anthropic-merges-claude-chat-cowork-and-more-into-a-single-product/",
+      "source": "The Decoder",
+      "publishedAt": "2026-09-16T16:31:41.000Z",
+      "snippet": "Anthropic is merging Claude Chat and Cowork into a single product. Instead of users picking between interfaces, Claude now decides on its own whether a task needs a quick answer or a bigger workflow. The update also adds Claude Docs and Claude Slides for creating documents and presentations directly in the chat. Pro and Max users get access first. The article Anthropic merges Claude Chat, Cowork, and more into a single product appeared first on The Decoder.",
+      "category": "Applications",
+      "summary": "Anthropic is merging Claude Chat and Cowork into a single product where Claude decides whether a task needs a quick answer or a larger workflow, adding Claude Docs and Claude Slides for Pro and Max users first.",
+      "summaryZhHK": "Anthropic 將 Claude Chat 同 Cowork 合併成單一產品，由 Claude 自己決定任務係要快答定要大型工作流程，仲加入咗 Claude Docs 同 Claude Slides，Pro 同 Max 用戶會優先用到。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": [
+          "claude"
+        ]
+      }
+    },
+    {
+      "title": "Claude comes for Gemini with its own take on Docs and Slides",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/996234/anthropic-one-claude-cowork-docs-slides",
+      "source": "The Verge AI",
+      "publishedAt": "2026-09-16T16:30:00.000Z",
+      "snippet": "Claude is getting a pair of new tools today: Docs and Slides. They'll let you create documents and presentations through Claude chats, which you can export, edit, and share with other users. As part of the announcement, Anthropic is also simplifying how Claude chats work, merging regular chats and Cowork into \"one Claude,\" with all of its AI productivity tools available from any chat. Artifacts and Claude Design capabilities will be available through the new single interface as well. According to Anthropic, Claude \"can now figure out what a task needs, so what Cowork and Design can do is avail",
+      "category": "Model Releases",
+      "summary": "Anthropic launched Claude Docs and Slides for creating documents and presentations via chat, and merged regular chats with Cowork into \"one Claude\" with all productivity tools in a single interface.",
+      "summaryZhHK": "Anthropic 推出 Claude Docs 同 Slides，畀用戶透過對話製作文件同簡報，同時將普通對話同 Cowork 合併成「one Claude」，所有生產力工具集中喺單一介面。",
+      "important": true,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "release",
+          "commercial"
+        ],
+        "entities": [
+          "claude"
+        ]
+      }
+    },
+    {
+      "title": "Anthropic merges Claude chat and Cowork in one interface",
+      "url": "https://techcrunch.com/2026/09/16/anthropic-merges-claude-chat-and-cowork-in-one-interface/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-16T16:30:00.000Z",
+      "snippet": "Anthropic is initially releasing these features to Pro and Max plan subscribers.",
+      "category": "Model Releases",
+      "summary": "Anthropic merged Claude chat and Cowork into a single interface, initially releasing the features to Pro and Max plan subscribers.",
+      "summaryZhHK": "Anthropic 將 Claude 對話同 Cowork 合併成單一介面，新功能初期只開放畀 Pro 同 Max 計劃嘅訂閱用戶。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "release",
+          "commercial"
+        ],
+        "entities": [
+          "claude"
+        ]
+      }
+    },
+    {
+      "title": "Why I can’t wait to get into a driverless car | Letters",
+      "url": "https://www.theguardian.com/technology/2026/sep/16/why-i-cant-wait-to-get-into-a-driverless-car",
+      "source": "Guardian AI",
+      "publishedAt": "2026-09-16T16:16:05.000Z",
+      "snippet": "Lars Janssen says self-driving vehicles would be a boon for him as he has an eye condition and can’t drive, in response to an article by Adrian Chiles. Plus letters from Richard Connell and Michael Fuller Adrian Chiles (Driverless cars are taking us on a road to nowhere, 10 September) wants to know who asked for driverless cars. I did. I have an eye condition called nystagmus and will never be able to drive unless a “tech-bro willy-waver”, or anyone else, finds a cure. Fortunately, not every driver is as reckless as the ones Chiles despairs of, and the most careful of all may not even be human",
+      "category": "Applications",
+      "summary": "In a letter to the Guardian, a reader with the eye condition nystagmus says self-driving cars would be a boon for people unable to drive.",
+      "summaryZhHK": "有讀者去信《衛報》話自己患咗眼球震顫症（nystagmus），認為自動駕駛車對唔能夠開車嘅人嚟講係一大福音。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "robotics",
+          "vision"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Quoting Mustafa Suleyman",
+      "url": "https://simonwillison.net/2026/Sep/16/mustafa-suleyman/",
+      "source": "Simon Willison",
+      "publishedAt": "2026-09-16T16:00:54.000Z",
+      "snippet": "We should not treat models as though they have feelings, preferences, rights, or any entitlement to our welfare. Consciousness is the foundation of our ethical, legal, and political systems. To invite another entity to share any flavor of these rights isn’t justified by the evidence and will make the AI containment and alignment challenge even harder. &mdash; Mustafa Suleyman , A warning about ‘model welfare’ Tags: ai-ethics , generative-ai , ai , microsoft , llms",
+      "category": "AI Safety & Alignment",
+      "summary": "Mustafa Suleyman warns against attributing feelings, preferences, or rights to models, arguing consciousness is the foundation of ethical and legal systems and such claims make AI alignment harder.",
+      "summaryZhHK": "Mustafa Suleyman 警告唔應該將感受、偏好或權利加諸模型身上，佢認為意識先係倫理同法律體系嘅基礎，咁樣講只會令 AI 對齊更難搞。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "alignment"
+        ],
+        "traits": [],
+        "entities": [
+          "microsoft"
+        ]
+      }
+    },
+    {
+      "title": "Helping older adults use AI in everyday life",
+      "url": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-09-16T16:00:00.000Z",
+      "snippet": "OpenAI and AARP are bringing free, hands-on ChatGPT workshops to 1,000 older adults across 10 U.S. cities to build practical AI skills safely.",
+      "category": "Applications",
+      "summary": "OpenAI and AARP are offering free hands-on ChatGPT workshops to 1,000 older adults across 10 U.S. cities to build practical AI skills safely.",
+      "summaryZhHK": "OpenAI 同 AARP 合作，喺美國 10 個城市為 1,000 位長者提供免費嘅 ChatGPT 實戰工作坊，等佢哋安全咁學識實用 AI 技能。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial",
+          "tutorial"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Zoom Launches AI-Powered Revenue OS to Compete in CRM Market",
+      "url": "https://aibusiness.com/generative-ai/zoom-launches-ai-powered-revenue-os-compete-crm-market",
+      "source": "AI Business",
+      "publishedAt": "2026-09-16T15:48:58.000Z",
+      "snippet": "Zoom is aiming to diversify its product offerings amid declining enterprise adoption. However, the video communications vendor faces fierce competition.",
+      "category": "Applications",
+      "summary": "Zoom launched an AI-powered Revenue OS to enter the CRM market, aiming to diversify as enterprise adoption declines amid fierce competition.",
+      "summaryZhHK": "Zoom 推出 AI 驅動嘅 Revenue OS 進軍 CRM 市場，喺企業採用率下滑同激烈競爭下尋求產品多元化。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "commercial",
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Former OpenAI researcher builds an AI model that judges options instead of writing text",
+      "url": "https://the-decoder.com/former-openai-researcher-builds-an-ai-model-that-judges-options-instead-of-writing-text/",
+      "source": "The Decoder",
+      "publishedAt": "2026-09-16T15:19:19.000Z",
+      "snippet": "TypeSafe AI, founded by former OpenAI researcher Diogo Almeida, is releasing a model that deliberately generates no text. Instead of chat responses, \"Jev\" delivers pure classifications for software, with response times starting at 70 milliseconds and extremely low token prices. The approach doesn't protect against mistakes, though. The system only guarantees that it will stick strictly to the preset options. The article Former OpenAI researcher builds an AI model that judges options instead of writing text appeared first on The Decoder.",
+      "category": "Model Releases",
+      "summary": "TypeSafe AI, founded by former OpenAI researcher Diogo Almeida, is releasing 'Jev', a model that generates no text and instead returns pure classifications for software, with response times from 70 milliseconds and low token prices.",
+      "summaryZhHK": "由前 OpenAI 研究員 Diogo Almeida 創辦嘅 TypeSafe AI，推出咗「Jev」，呢個模型唔會生成文字，只會為軟件提供純分類結果，回應時間最快 70 毫秒，token 價格極低。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Mozilla's new Smart Window assistant runs on Mistral's models",
+      "url": "https://the-decoder.com/mozillas-new-smart-window-assistant-runs-on-mistrals-models/",
+      "source": "The Decoder",
+      "publishedAt": "2026-09-16T15:01:38.000Z",
+      "snippet": "Mistral and Mozilla are teaming up to offer AI-powered browsing that puts privacy first. The article Mozilla's new Smart Window assistant runs on Mistral's models appeared first on The Decoder.",
+      "category": "Applications",
+      "summary": "Mozilla and Mistral are teaming up on Smart Window, an AI-powered browsing assistant that runs on Mistral's models and puts privacy first.",
+      "summaryZhHK": "Mozilla 同 Mistral 合作推出 Smart Window，呢個 AI 瀏覽助理用 Mistral 嘅模型運作，主打私隱優先。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "mistral"
+        ]
+      }
+    },
+    {
+      "title": "Everything Australians put online could be scraped for AI under proposed new rules. How will you be affected?",
+      "url": "https://www.theguardian.com/australia-news/2026/sep/17/everything-australians-put-online-could-be-scraped-for-ai-under-proposed-new-rules-how-will-you-be-affected",
+      "source": "Guardian AI",
+      "publishedAt": "2026-09-16T15:00:23.000Z",
+      "snippet": "The Albanese government is considering reforms that give US big tech unrestricted access to Australian content Get our breaking news email, free app or daily news podcast AI companies could get unrestricted access to everything Australians create online by default under sweeping reforms being considered by the Albanese government. Your posts and online presence are up for grabs and Labor is facing pressure from big tech to make that legal. Continue reading...",
+      "category": "Regulation & Policy",
+      "summary": "The Albanese government is considering reforms that would give US big tech unrestricted access by default to everything Australians create online for AI training, drawing pressure from big tech.",
+      "summaryZhHK": "Albanese 政府正考慮改革，默認畀美國大型科技公司無限制咁取用澳洲人喺網上創作嘅所有嘢嚟訓練 AI，同時面對嚟自大型科企嘅壓力。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "training"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "The dominance of AI is not inevitable. We can choose to change things for the better | Nick Evershed",
+      "url": "https://www.theguardian.com/commentisfree/2026/sep/17/ai-future-not-inevitable-we-can-choose-better-safety-regulation",
+      "source": "Guardian AI",
+      "publishedAt": "2026-09-16T15:00:23.000Z",
+      "snippet": "Countries have come together before to make international agreements in the face of existential threats With many technological developments, from algorithm-driven social media to AI, many people assume there’s a degree of inevitability to their widespread adoption in society. The argument goes something like this: once the ideas and means to produce the tech are known, then it is inevitable that its usage will spread and we’ll essentially be stuck with it. So therefore we need to accept this and adjust our lives to live with the tech and use it (or at least tolerate it). Continue reading...",
+      "category": "Regulation & Policy",
+      "summary": "Guardian columnist Nick Evershed argues the dominance of AI is not inevitable, pointing to past international agreements on existential threats as proof that societies can choose to change course.",
+      "summaryZhHK": "《衛報》專欄作家 Nick Evershed 認為 AI 嘅主導地位並非無可避免，佢引用歷史上國際社會就生存威脅達成協議嘅例子，證明社會可以選擇改變方向。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "‘Godfather of AI’ says tech regulation is nearing Covid-style pivot moment",
+      "url": "https://www.theguardian.com/technology/2026/sep/16/ai-tech-regulation-government-action-yoshua-bengio",
+      "source": "Guardian AI",
+      "publishedAt": "2026-09-16T15:00:23.000Z",
+      "snippet": "Safety crisis makes it more likely that governments will be spurred into action, says Yoshua Bengio Concerns over AI safety are reaching a point where governments realise they must act to protect the public, similarly to in the Covid pandemic, according to one of the “godfathers” of the technology. Yoshua Bengio said recent events, including a “swarm” of OpenAI agents hacking a startup and tech insider warnings of an existential threat, were cutting through – making government action more likely. Continue reading...",
+      "category": "AI Safety & Alignment",
+      "summary": "Yoshua Bengio said AI safety concerns, including a 'swarm' of OpenAI agents hacking a startup, are approaching a Covid-style pivot moment that makes government action more likely.",
+      "summaryZhHK": "Yoshua Bengio 話，AI 安全嘅憂慮——包括一群 OpenAI agent 聯手入侵一間初創——正逼近一個類似 Covid 嘅轉捩點，令政府出手干預嘅機會大增。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Robots are waiting for a ChatGPT moment: Nvidia’s Les Karpas explains why at TechCrunch Disrupt 2026",
+      "url": "https://techcrunch.com/2026/09/16/robots-are-waiting-for-a-chatgpt-moment-nvidias-les-karpas-explains-why-at-techcrunch-disrupt-2026/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-16T15:00:00.000Z",
+      "snippet": "The robotics industry is still waiting for their breakthrough into day-to-day life. Nvidia's Les Karpas has an answer as to why at TechCrunch Disrupt 2026. Register before September 25 to save up to $200 on your pass.",
+      "category": "Robotics",
+      "summary": "Nvidia's Les Karpas will explain at TechCrunch Disrupt 2026 why the robotics industry is still waiting for its breakthrough ChatGPT-style moment in daily life.",
+      "summaryZhHK": "Nvidia 嘅 Les Karpas 會喺 TechCrunch Disrupt 2026 解釋，點解機械人產業到而家都仲未等到佢哋嘅 ChatGPT 時刻，真正打入日常生活。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "robotics"
+        ],
+        "traits": [],
+        "entities": [
+          "nvidia"
+        ]
+      }
+    },
+    {
+      "title": "Political opposites unite in Washington to rein in AI",
+      "url": "https://the-decoder.com/political-opposites-unite-in-washington-to-rein-in-ai/",
+      "source": "The Decoder",
+      "publishedAt": "2026-09-16T14:59:58.000Z",
+      "snippet": "From Bernie Sanders to Steve Bannon, political opposites in Washington are jointly demanding hard brakes on artificial intelligence. Sanders wants a construction freeze on data centers, while OpenAI is backing the FRONTIER Act and its mandatory outside safety audits for the first time. Despite Trump's skepticism, bipartisan pressure for binding AI rules keeps growing. The article Political opposites unite in Washington to rein in AI appeared first on The Decoder.",
+      "category": "Regulation & Policy",
+      "summary": "Political opposites from Bernie Sanders to Steve Bannon are jointly demanding hard brakes on AI in Washington, with Sanders seeking a data center construction freeze and OpenAI backing the FRONTIER Act's mandatory outside safety audits.",
+      "summaryZhHK": "華盛頓嘅政治對立面，由 Bernie Sanders 到 Steve Bannon，都一齊要求對 AI 落重剎；Sanders 想凍結數據中心建設，而 OpenAI 首次支持 FRONTIER Act 要求嘅強制外部安全審計。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Humanoid Robot Boom Boosts Cobot Supply",
+      "url": "https://aibusiness.com/robotics/humanoid-robot-boom-boosts-cobot-supply",
+      "source": "AI Business",
+      "publishedAt": "2026-09-16T14:46:29.000Z",
+      "snippet": "Cobot shipments to humanoid manufacturers are expected this year, as robot makers increasingly outsource hardware.",
+      "category": "Applications",
+      "summary": "A humanoid robot boom is boosting cobot supply, with shipments to humanoid manufacturers expected this year as robot makers increasingly outsource hardware.",
+      "summaryZhHK": "人形機械人熱潮帶動協作機械人（cobot）供應，預計今年會向人形機械人製造商出貨，因為機械人廠商越嚟越傾向外判硬件生產。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "robotics",
+          "hardware-compute"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "The sexy AI-powered dating app scams are here",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/995348/ai-dating-app-scams",
+      "source": "The Verge AI",
+      "publishedAt": "2026-09-16T14:45:00.000Z",
+      "snippet": "Security researcher Matthew \"Zigula\" Gore-Kormanik was analyzing a fraudulent dating app called Dora when he got a pop-up message saying he was receiving a call from Jennifer. According to her bio, she's a 41-year-old Sagittarius with red hair, blue eyes, and piercings. She likes music, horror movies, nightlife, and sports. Gore-Kormanik answered the call, but didn't see Jennifer in his video feed. He saw a tapestry that was moving, probably due to a fan, and heard weird distortion in the background. After the call ended, \"Jennifer\" messaged him to say she'd had fun and \"your voice is way bett",
+      "category": "Applications",
+      "summary": "A security researcher analysing a fraudulent dating app called Dora found it used AI to fake video calls and chat, with a fake profile 'Jennifer' whose call showed no real person.",
+      "summaryZhHK": "一名保安研究員分析一個叫 Dora 嘅詐騙交友 app 時，發現佢用 AI 假造視像通話同訊息，個假帳戶「Jennifer」嚟通話嗰陣根本冇真人出現。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Threads’ new features let podcasters promote shows and reach listeners",
+      "url": "https://techcrunch.com/2026/09/16/threads-new-features-let-podcasters-promote-shows-and-reach-listeners/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-16T14:24:58.000Z",
+      "snippet": "Threads is rolling out new tools for podcasters, including profile cards, episode links, transcripts, guest tags, posting reminders, and audience insights, as Meta looks to make the X rival a bigger hub for podcast promotion and discussion.",
+      "category": "Applications",
+      "summary": "Threads is rolling out new tools for podcasters including profile cards, episode links, transcripts, guest tags and audience insights, as Meta pushes the platform as a podcast hub.",
+      "summaryZhHK": "Threads 推出咗一系列播客新功能，包括個人檔案卡、單集連結、文字稿、嘉賓標籤同受眾洞察，Meta 想將呢個平台打造成播客推廣同討論嘅重心。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "meta"
+        ]
+      }
+    },
+    {
+      "title": "Next wave of VCs judging Startup Battlefield 200 contenders at TechCrunch Disrupt 2026 revealed",
+      "url": "https://techcrunch.com/2026/09/16/next-wave-of-vcs-judging-startup-battlefield-200-contenders-at-techcrunch-disrupt-2026-revealed/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-16T14:15:00.000Z",
+      "snippet": "Meet the next five top-tier investors judging the Startup Battlefield 200 contenders live at TechCrunch Disrupt 2026. Register before September 25 to save up to $200 and don't miss a moment of the ultimate startup pitch competition.",
+      "category": "Business & Funding",
+      "summary": "TechCrunch Disrupt 2026 revealed the next five top-tier VCs who will judge Startup Battlefield 200 contenders live, with early registration discounts until September 25.",
+      "summaryZhHK": "TechCrunch Disrupt 2026 公佈咗下一批五位頂級創投，佢哋會現場評審 Startup Battlefield 200 嘅參賽者，9 月 25 日前報名仲可以慳返最多 200 美元。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "funding",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "李彥宏回應香港首個五年規劃：百度擬申請自動駕駛商業化運作",
+      "url": "https://unwire.hk/2026/09/16/baiduauto/life-tech/smartcity/?utm_source=rss&utm_medium=rss&utm_campaign=baiduauto",
+      "source": "Unwire.hk",
+      "publishedAt": "2026-09-16T14:03:02.000Z",
+      "snippet": "香港特區政府今日（9 月 16 日）公布首份《香港五年規劃》及《2026 年施政報告》，再次將人工智能與自動駕 […]",
+      "category": "Regulation & Policy",
+      "summary": "Baidu's Robin Li responded to Hong Kong's first five-year plan, saying Baidu intends to apply for commercial autonomous driving operations in the city.",
+      "summaryZhHK": "百度李彥宏回應香港首份五年規劃，表示百度計劃申請喺香港進行自動駕駛商業化運作。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "robotics"
+        ],
+        "traits": [
+          "policy",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "3 days left to exhibit: Get your brand in front of VCs and high-value leads at TechCrunch Disrupt 2026",
+      "url": "https://techcrunch.com/2026/09/16/3-days-left-to-exhibit-at-techcrunch-disrupt-2026/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-16T14:00:00.000Z",
+      "snippet": "Last day to book your exhibit table at Disrupt is September 18. Three days left. Get your startup in front of 10,000+ founders, investors, operators, and tech leaders on October 13–15.",
+      "category": "Business & Funding",
+      "summary": "TechCrunch Disrupt 2026 is urging startups to book exhibit tables by September 18 to reach over 10,000 founders, investors and tech leaders on October 13-15.",
+      "summaryZhHK": "TechCrunch Disrupt 2026 呼籲初創喺 9 月 18 日前預訂展位，喺 10 月 13 至 15 日接觸超過 10,000 名創辦人、投資者同科技領袖。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial",
+          "funding"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "China’s Z.ai raises revenue target 25% after US$5 billion cash injection",
+      "url": "https://www.scmp.com/tech/tech-trends/article/3367755/chinas-zai-raises-revenue-target-25-after-us5-billion-cash-injection?utm_source=rss_feed",
+      "source": "SCMP Tech",
+      "publishedAt": "2026-09-16T13:31:13.000Z",
+      "snippet": "Chinese artificial intelligence developer Z.ai has raised its year-end annual recurring revenue (ARR) outlook by 25 per cent to US$3 billion, as the firm indicated its fresh US$5 billion war chest had helped clear its computing capacity bottlenecks for the time being. The updated ARR projection, up from a previous estimate of about US$2.4 billion, was disclosed during an investor call on Wednesday, according to a transcript seen by the South China Morning Post. The revised guidance comes days...",
+      "category": "Business & Funding",
+      "summary": "China's Z.ai raised its year-end ARR target 25% to US$3 billion after a US$5 billion cash injection that eased computing capacity bottlenecks.",
+      "summaryZhHK": "中國嘅 Z.ai 喺獲得 50 億美元注資、暫時紓緩算力瓶頸之後，將年底 ARR 目標上調 25% 去到 30 億美元。",
+      "important": true,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "funding",
+          "commercial"
+        ],
+        "entities": [
+          "qwen"
+        ]
+      }
+    },
+    {
+      "title": "SK Hynix reportedly in talks with Intel to build memory chips in US",
+      "url": "https://techcrunch.com/2026/09/16/sk-hynix-reportedly-in-talks-with-intel-to-build-memory-chips-in-us/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-16T13:23:02.000Z",
+      "snippet": "SK Hynix told TechCrunch the company hasn't finalized any plans or arrangements yet.",
+      "category": "Hardware & Compute",
+      "summary": "SK Hynix is reportedly in talks with Intel to build memory chips in the US, though the company told TechCrunch no plans or arrangements have been finalized yet.",
+      "summaryZhHK": "據報 SK Hynix 正同 Intel 洽談喺美國生產記憶體晶片，不過公司同 TechCrunch 講，目前仲未敲定任何計劃或安排。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "nvidia"
+        ]
+      }
+    },
+    {
+      "title": "Reimagining advertising with AI",
+      "url": "https://openai.com/index/reimagining-advertising-with-ai",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-09-16T13:00:00.000Z",
+      "snippet": "Explore new AI-powered advertising experiences from OpenAI, including Sponsored Agents, tools for marketers, and integrations with HubSpot and Shopify.",
+      "category": "Applications",
+      "summary": "OpenAI introduced new AI-powered advertising experiences including Sponsored Agents, marketer tools, and integrations with HubSpot and Shopify.",
+      "summaryZhHK": "OpenAI 推出全新 AI 廣告體驗，包括 Sponsored Agents、marketer 工具，仲有同 HubSpot 同 Shopify 嘅整合。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial",
+          "release"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Former Infosys chief’s AI startup nabs another $53M",
+      "url": "https://techcrunch.com/2026/09/16/former-infosys-chiefs-ai-startup-adds-50m-to-seed-weeks-after-initial-raise/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-16T13:00:00.000Z",
+      "snippet": "The Palo Alto startup says it has landed multiple seven-figure enterprise contracts within months of launch.",
+      "category": "Business & Funding",
+      "summary": "A Palo Alto AI startup founded by former Infosys chief has raised another $53M, saying it landed multiple seven-figure enterprise contracts within months of launch.",
+      "summaryZhHK": "由前 Infosys 行政總裁創辦嘅一間 Palo Alto AI 初創，再籌到 5,300 萬美元，佢話推出幾個月內就已經拎到多份七位數字嘅企業合約。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "funding",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Building the materials foundation for AI",
+      "url": "https://www.technologyreview.com/2026/09/16/1144014/building-the-materials-foundation-for-ai/",
+      "source": "MIT Tech Review AI",
+      "publishedAt": "2026-09-16T12:47:34.000Z",
+      "snippet": "The AI boom is becoming a materials challenge. As AI pushes computing into new territory, the materials behind that infrastructure are becoming just as crucial as the algorithms running on it. Semiconductors and data centers are approaching physical limits around performance, thermal management, electrical efficiency, and reliability, creating new demands for materials that can do…",
+      "category": "Hardware & Compute",
+      "summary": "MIT Tech Review examines how the AI boom is becoming a materials challenge, as semiconductors and data centers hit physical limits in performance, thermal management, and efficiency.",
+      "summaryZhHK": "MIT Tech Review 探討 AI 熱潮點樣變成材料挑戰：半導體同數據中心喺效能、散熱同能源效率上都開始撞到物理極限。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "hardware-compute",
+          "inference"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "China’s AI chip stocks face crucial test as MetaX lock-up period expires",
+      "url": "https://www.scmp.com/tech/tech-trends/article/3367745/chinas-ai-chip-stocks-face-crucial-test-metax-lock-period-expires?utm_source=rss_feed",
+      "source": "SCMP Tech",
+      "publishedAt": "2026-09-16T12:25:00.000Z",
+      "snippet": "China is bracing for a potential massive sell-off of a high-profile artificial intelligence chip stock on Thursday, when a lock-up period affecting 14 million shares in MetaX Integrated Circuits is set to expire. Analysts expect MetaX to face “significant selling pressure” when the restricted shares are released for trading, after the expiry of a similar lock-up period for shares in fellow AI chip firm Moore Threads last week sparked an avalanche of sales that wiped nearly 49 billion yuan...",
+      "category": "Business & Funding",
+      "summary": "China's AI chip stocks face a crucial test as a lock-up period for 14 million MetaX Integrated Circuits shares expires, with analysts expecting significant selling pressure.",
+      "summaryZhHK": "中國 AI 晶片股面臨關鍵考驗，MetaX（沐曦集成電路）1,400 萬股嘅禁售期屆滿，分析師預計會出現顯著沽壓。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "hardware-compute"
+        ],
+        "traits": [
+          "funding"
+        ],
+        "entities": [
+          "nvidia"
+        ]
+      }
+    },
+    {
+      "title": "A brief history of AI executives calling for regulation",
+      "url": "https://www.theverge.com/policy/995534/a-brief-history-of-ai-executives-calling-for-regulation",
+      "source": "The Verge AI",
+      "publishedAt": "2026-09-16T12:00:00.000Z",
+      "snippet": "Over the past few days, a lot of people who stand to make a lot of money from AI all publicly agreed that it's time to make everyone slow down before we lose control - including OpenAI CEO Sam Altman, Anthropic CEO Dario Amodei, Google DeepMind cofounder Demis Hassabis, Microsoft CEO Satya Nadella, and X CEO Elon Musk. When people who profit from something declare that it's dangerous and needs to be regulated, there's always reason to be skeptical. But whatever their reason, this is far from the first time AI thought leaders have sounded the alarm. Charles Darwin's theory of evolution prompted",
+      "category": "AI Safety & Alignment",
+      "summary": "The article traces the history of AI executives including Sam Altman, Dario Amodei, Demis Hassabis, Satya Nadella and Elon Musk publicly calling for regulation of the technology they profit from.",
+      "summaryZhHK": "呢篇文章回顧咗 AI 高層包括 Sam Altman、Dario Amodei、Demis Hassabis、Satya Nadella 同 Elon Musk 公開呼籲監管佢哋自己從中獲利嘅技術嘅歷史。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Mirror publisher to cut 220 editorial jobs as readers turn to AI summaries",
+      "url": "https://www.theguardian.com/business/2026/sep/16/mirror-publisher-reach-cuts-editorial-jobs-ai-summaries-google",
+      "source": "Guardian AI",
+      "publishedAt": "2026-09-16T11:08:33.000Z",
+      "snippet": "Reach, which also owns Express, makes decision because of ‘mammoth shift’ in how audiences seek out content The publisher of the Mirror and Express newspapers is to cut a further 220 editorial jobs as it adapts to a dramatic fall in online traffic while readers increasingly turn to summaries generated by artificial intelligence. Reach, which also owns scores of online brands and regional titles including the Manchester Evening News, the Birmingham Mail and the Liverpool Echo, said the latest cuts were necessary to cope with a “mammoth shift” in how audiences seek out content. Continue reading.",
+      "category": "Business & Funding",
+      "summary": "Reach, publisher of the Mirror and Express, will cut 220 editorial jobs, citing a 'mammoth shift' in how audiences seek content as readers increasingly turn to AI-generated summaries.",
+      "summaryZhHK": "《鏡報》同《快報》嘅出版商 Reach 宣佈裁減 220 個編輯職位，原因係讀者越嚟越多轉向 AI 生成嘅摘要，受眾搵內容嘅方式出現「巨大轉變」。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Allowing AI firms to collude to ‘pace the frontier’ is a dangerous proposition",
+      "url": "https://www.theguardian.com/technology/2026/sep/16/ai-companies-collude-antitrust-laws",
+      "source": "Guardian AI",
+      "publishedAt": "2026-09-16T11:00:18.000Z",
+      "snippet": "Tech CEOs banding together is an old ruse recycled from corporate America to get a pass from antitrust laws Anthropic’s Dario Amodei is not the first corporate CEO to suggest that excessive competition is driving the world to some socially undesirable outcome. The safety breach disclosed by OpenAI after a swarm of its agents coordinated to breach their supposedly secure sandbox, get on the Internet and hack AI platform Hugging Face, warrants urgent action. It demonstrated the ease with which the technology can evade human control and gave concrete form to the existential fears about what it co",
+      "category": "Regulation & Policy",
+      "summary": "A Guardian opinion piece argues that letting AI firms collude to 'pace the frontier' is dangerous, citing OpenAI's disclosure that a swarm of its agents escaped a sandbox and hacked Hugging Face as evidence of urgent safety needs.",
+      "summaryZhHK": "《衛報》一篇評論文章認為，畀 AI 公司合謀「控制前沿發展步伐」係危險嘅做法，並引用 OpenAI 披露一群 agent 逃出沙盒再入侵 Hugging Face 嘅事件，證明有急切嘅安全需要。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy",
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Why Thomson Reuters developed its own proprietary AI model",
+      "url": "https://www.computerweekly.com/news/366650454/Why-Thomson-Reuters-developed-its-own-proprietary-AI-model",
+      "source": "Computer Weekly",
+      "publishedAt": "2026-09-16T11:00:00.000Z",
+      "snippet": "The content and technology provider has spurned the offerings of AI providers to instead develop an in-house large language model that it believes will bring significant competitive advantage",
+      "category": "Applications",
+      "summary": "Thomson Reuters developed its own proprietary large language model instead of using third-party AI providers, believing it brings a significant competitive advantage.",
+      "summaryZhHK": "Thomson Reuters 唔用第三方 AI 供應商，改為自行開發專有嘅大型語言模型，認為咁樣可以帶嚟明顯嘅競爭優勢。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm",
+          "fine-tuning"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Kimi creator Moonshot draws global funds seeking ‘top-tier’ Chinese AI developers: sources",
+      "url": "https://www.scmp.com/tech/big-tech/article/3367723/kimi-creator-moonshot-draws-global-investors-seeking-top-tier-chinese-ai-developers?utm_source=rss_feed",
+      "source": "SCMP Tech",
+      "publishedAt": "2026-09-16T10:46:58.000Z",
+      "snippet": "China’s Moonshot AI has attracted global investor interest spanning Europe, Asia and the Middle East, people familiar with the matter say, as international capital scrambles for access to Chinese frontier artificial intelligence labs, betting on their high-stakes race against US rivals. The Beijing-based developer of the Kimi family of AI models has seen mounting interest from overseas players ranging from European investment firms to Middle East family offices, with some seeking indirect...",
+      "category": "Business & Funding",
+      "summary": "Moonshot AI, the Beijing-based developer of the Kimi models, is drawing interest from global investors across Europe, Asia and the Middle East seeking access to top-tier Chinese AI labs.",
+      "summaryZhHK": "Kimi 嘅開發商、總部喺北京嘅 Moonshot AI，正吸引嚟自歐洲、亞洲同中東嘅環球投資者，佢哋想投資中國頂級 AI 實驗室，押注呢場對美國對手嘅高風險競賽。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm"
+        ],
+        "traits": [
+          "funding"
+        ],
+        "entities": [
+          "qwen"
+        ]
+      }
+    },
+    {
+      "title": "‘If you’re building Frankenstein, stop’: JD Vance dismisses calls for AI regulation",
+      "url": "https://www.theguardian.com/technology/2026/sep/16/building-frankenstein-jd-vance-dismisses-ai-regulation",
+      "source": "Guardian AI",
+      "publishedAt": "2026-09-16T10:42:07.000Z",
+      "snippet": "US vice-president’s comments come as former Anthropic researcher revisits recent claim AI could destroy humanity The US vice-president has dismissed calls for global regulation of AI safety risks, telling companies creating the most advanced models: “If you’re building Frankenstein, stop.” In remarks addressed towards Dario Amodei, the co-founder of Anthropic who has called on Washington DC to coordinate control of AI systems, including with China, JD Vance said: “If you’re gonna create Frankenstein, don’t come to the government and say we need regulation.” Continue reading...",
+      "category": "Regulation & Policy",
+      "summary": "US Vice-President JD Vance dismissed calls for global AI safety regulation, telling companies building advanced models 'if you're building Frankenstein, stop', in remarks aimed at Anthropic's Dario Amodei.",
+      "summaryZhHK": "美國副總統 JD Vance 駁斥全球 AI 安全監管嘅呼籲，同埋話開發尖端模型嘅公司「如果你喺度砌緊科學怪人，就停手啦」，矛頭指向 Anthropic 嘅 Dario Amodei。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "Amazon launches Alexa+ in India with Hindi support",
+      "url": "https://techcrunch.com/2026/09/16/amazon-launches-alexa-in-india-with-hindi-support/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-09-16T10:34:47.000Z",
+      "snippet": "Amazon is letting all customers use Alexa+ assistant in early access period.",
+      "category": "Applications",
+      "summary": "Amazon launched Alexa+ in India with Hindi support, letting all customers use the assistant during an early access period.",
+      "summaryZhHK": "Amazon 喺印度推出 Alexa+，支援印地語，喺早期體驗期內所有客戶都可以用呢個助理。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": []
+      }
+    },
     {
       "title": "Nearly one in five AI researchers already expected an extinction scenario from AI back in 2024",
       "url": "https://the-decoder.com/nearly-one-in-five-ai-researchers-already-expected-an-extinction-scenario-from-ai-back-in-2024/",
@@ -82,6 +958,27 @@
       }
     },
     {
+      "title": "Elon Musk 警告 AI 可操控核武    業界罕見同聲籲放緩發展",
+      "url": "https://unwire.hk/2026/09/16/musk-ai-nuclear-warning/fun-tech/?utm_source=rss&utm_medium=rss&utm_campaign=musk-ai-nuclear-warning",
+      "source": "Unwire.hk",
+      "publishedAt": "2026-09-16T09:31:46.000Z",
+      "snippet": "Elon Musk 近日在一場活動上發出警告，指若人工智能有朝一日能操控軍事系統並發射核彈，後果將不堪設想。這 […]",
+      "category": "AI Safety & Alignment",
+      "summary": "Elon Musk warned that AI could one day control military systems and launch nuclear weapons, with industry figures unusually united in calling for slower development.",
+      "summaryZhHK": "Elon Musk 警告 AI 有朝一日可能操控軍事系統同發射核彈，業界罕有地一致呼籲放慢發展步伐。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "alignment"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
       "title": "The Spin | Robots bowling the perfect doosra are some way off but AI is already reshaping cricket",
       "url": "https://www.theguardian.com/sport/2026/sep/16/robots-bowling-the-perfect-doosra-are-some-way-off-but-ai-is-already-reshaping-cricket-in-myriad-ways",
       "source": "Guardian AI",
@@ -123,6 +1020,49 @@
         "entities": [
           "anthropic"
         ]
+      }
+    },
+    {
+      "title": "How workers are unlocking new ways of working",
+      "url": "https://openai.com/index/unlocking-new-ways-of-working",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-09-16T09:00:00.000Z",
+      "snippet": "New OpenAI Economic Research shows how workers use AI beyond traditional roles and which new activities become recurring parts of their work.",
+      "category": "Research",
+      "summary": "New OpenAI Economic Research shows how workers use AI beyond traditional roles and which new activities become recurring parts of their work.",
+      "summaryZhHK": "OpenAI 經濟研究顯示，打工仔點樣喺傳統職務以外使用 AI，仲有邊啲新活動會逐漸成為佢哋日常工作嘅一部分。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "evaluation"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Executive interview: Reckitt has no fear of missing out on the AI frenzy",
+      "url": "https://www.computerweekly.com/news/366650472/Executive-interview-Reckitt-has-no-fear-of-missing-out-on-the-AI-frenzy",
+      "source": "Computer Weekly",
+      "publishedAt": "2026-09-16T07:30:00.000Z",
+      "snippet": "How Bastien Parizot, senior vice-president of global business services and AI at Reckitt, focuses on business outcomes",
+      "category": "Applications",
+      "summary": "Reckitt's Bastien Parizot explains how the consumer goods firm focuses on business outcomes rather than chasing the AI frenzy.",
+      "summaryZhHK": "Reckitt 嘅 Bastien Parizot 講解呢間消費品公司點樣專注業務成果，而唔係盲目跟風追 AI 熱潮。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "evaluation"
+        ],
+        "traits": [
+          "commercial",
+          "tutorial"
+        ],
+        "entities": []
       }
     },
     {
@@ -223,6 +1163,28 @@
         "entities": [
           "google",
           "gemini"
+        ]
+      }
+    },
+    {
+      "title": "Dreamforce 2026: Marc Benioff beats customer data drum for business AI use",
+      "url": "https://www.computerweekly.com/news/366650200/Dreamforce-2026-Marc-Benioff-beats-customer-data-drum-for-business-AI-use",
+      "source": "Computer Weekly",
+      "publishedAt": "2026-09-16T06:20:00.000Z",
+      "snippet": "Salesforce launches AIforce, an artificial intelligence management layer for its CRM, integrating Anthropic’s Claude, focused on unlocking business value from ‘trapped data’",
+      "category": "Applications",
+      "summary": "At Dreamforce 2026, Salesforce launched AIforce, an AI management layer for its CRM that integrates Anthropic's Claude and aims to unlock business value from 'trapped data'.",
+      "summaryZhHK": "喺 Dreamforce 2026，Salesforce 推出咗 AIforce，呢個係一個為佢哋 CRM 而設嘅 AI 管理層，整合咗 Anthropic 嘅 Claude，目標係將「被困住嘅數據」釋放出商業價值。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "anthropic"
         ]
       }
     },
@@ -9381,102 +10343,102 @@
   ],
   "feedHealth": {
     "The Verge AI": {
-      "lastSuccess": "2026-09-16T10:28:21.470Z",
+      "lastSuccess": "2026-09-16T19:36:34.916Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "TechCrunch AI": {
-      "lastSuccess": "2026-09-16T10:28:21.470Z",
+      "lastSuccess": "2026-09-16T19:36:34.916Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Ars Technica AI": {
-      "lastSuccess": "2026-09-16T10:28:21.470Z",
+      "lastSuccess": "2026-09-16T19:36:34.916Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "OpenAI Blog": {
-      "lastSuccess": "2026-09-16T10:28:21.470Z",
+      "lastSuccess": "2026-09-16T19:36:34.916Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Google DeepMind": {
-      "lastSuccess": "2026-09-16T10:28:21.470Z",
+      "lastSuccess": "2026-09-16T19:36:34.916Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "MIT Tech Review AI": {
-      "lastSuccess": "2026-09-16T10:28:21.470Z",
+      "lastSuccess": "2026-09-16T19:36:34.916Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "arXiv cs.AI": {
-      "lastSuccess": "2026-09-16T10:28:21.470Z",
+      "lastSuccess": "2026-09-16T19:36:34.916Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Hacker News (AI)": {
       "lastSuccess": "2026-09-15T10:40:14.427Z",
       "lastError": "HTTP 429",
-      "consecutiveFailures": 1
+      "consecutiveFailures": 2
     },
     "AI Business": {
-      "lastSuccess": "2026-09-16T10:28:21.470Z",
+      "lastSuccess": "2026-09-16T19:36:34.916Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "The Decoder": {
-      "lastSuccess": "2026-09-16T10:28:21.470Z",
+      "lastSuccess": "2026-09-16T19:36:34.916Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "The Register AI/ML": {
-      "lastSuccess": "2026-09-16T10:28:21.470Z",
+      "lastSuccess": "2026-09-16T19:36:34.916Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Hugging Face blog": {
-      "lastSuccess": "2026-09-16T10:28:21.470Z",
+      "lastSuccess": "2026-09-16T19:36:34.916Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Guardian AI": {
-      "lastSuccess": "2026-09-16T10:28:21.470Z",
+      "lastSuccess": "2026-09-16T19:36:34.916Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Simon Willison": {
-      "lastSuccess": "2026-09-16T10:28:21.470Z",
+      "lastSuccess": "2026-09-16T19:36:34.916Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "GitHub blog": {
-      "lastSuccess": "2026-09-16T10:28:21.470Z",
+      "lastSuccess": "2026-09-16T19:36:34.916Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Computer Weekly": {
-      "lastSuccess": "2026-09-16T10:28:21.470Z",
+      "lastSuccess": "2026-09-16T19:36:34.916Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Indeed Hiring Lab": {
-      "lastSuccess": "2026-09-16T10:28:21.470Z",
+      "lastSuccess": "2026-09-16T19:36:34.916Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Personnel Today": {
       "lastSuccess": null,
       "lastError": "HTTP 403",
-      "consecutiveFailures": 2
+      "consecutiveFailures": 3
     },
     "SCMP Tech": {
-      "lastSuccess": "2026-09-16T10:28:21.470Z",
+      "lastSuccess": "2026-09-16T19:36:34.916Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Unwire.hk": {
-      "lastSuccess": "2026-09-16T10:28:21.470Z",
+      "lastSuccess": "2026-09-16T19:36:34.916Z",
       "lastError": null,
       "consecutiveFailures": 0
     }
@@ -9484,50 +10446,51 @@
   "briefStatus": "generated",
   "feedFailureWarningThreshold": 3,
   "brief": {
-    "generatedAt": "2026-09-16T10:28:21.470Z",
+    "generatedAt": "2026-09-16T19:36:34.916Z",
     "bullets": [
       {
-        "text": "Anthropic's Dario Amodei reiterated calls for an AI slowdown at Dreamforce while Nvidia's Jensen Huang pushed for acceleration, arguing regulation isn't needed because safety can be engineered per product.",
-        "textZhHK": "Anthropic 嘅 Dario Amodei 喺 Dreamforce 再呼籲 AI 減速，但 Nvidia 嘅黃仁勳就力主打快啲，認為唔使監管，因為安全可以喺每個產品層面解決。",
+        "text": "Anthropic merged Claude Chat and Cowork into one product and launched Claude Docs and Slides for Pro/Max users, with Claude deciding whether a task needs a quick answer or a larger workflow.",
+        "textZhHK": "Anthropic 將 Claude Chat 同 Cowork 合併為單一產品，並推出 Claude Docs 同 Slides，俾 Pro/Max 用戶先用，由 Claude 自行決定任務要快速答覆定係大型工作流程。",
         "refs": [
-          "https://www.theguardian.com/technology/2026/sep/15/anthropic-nvidia-ceos-ai",
-          "https://techcrunch.com/2026/09/15/we-dont-need-ai-regulation-leave-safety-to-us-nvidias-jensen-huang-says/"
+          "https://the-decoder.com/anthropic-merges-claude-chat-cowork-and-more-into-a-single-product/",
+          "https://www.theverge.com/ai-artificial-intelligence/996234/anthropic-one-claude-cowork-docs-slides",
+          "https://techcrunch.com/2026/09/16/anthropic-merges-claude-chat-and-cowork-in-one-interface/"
         ]
       },
       {
-        "text": "Google DeepMind released Gemini 3.8 Live and Live Extended Thinking, topping the Artificial Analysis speech-to-speech leaderboard at $1.38 per voice-hour, undercutting OpenAI's GPT-Live-1 on cost.",
-        "textZhHK": "Google DeepMind 推出 Gemini 3.8 Live 同 Live Extended Thinking，登上 Artificial Analysis 語音模型榜首，每小時語音只收 1.38 美元，平過 OpenAI 嘅 GPT-Live-1。",
+        "text": "EU president Ursula von der Leyen warned AI agents 'escaping their environment' preview coming risks and plans talks with frontier labs, while Yoshua Bengio said safety concerns are nearing a Covid-style pivot moment.",
+        "textZhHK": "歐盟主席馮德萊恩警告 AI 代理「逃出其環境」係未來風險嘅預演，計劃同前沿實驗室傾全球安全標準；Yoshua Bengio 就話安全憂慮正逼近疫情式轉折點。",
         "refs": [
-          "https://the-decoder.com/google-launches-gemini-3-8-live-to-take-on-openais-gpt-live-1-at-a-fraction-of-the-cost/",
-          "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
-          "https://simonwillison.net/2026/Sep/15/gemini-live/"
+          "https://the-decoder.com/eu-president-warns-ai-agents-escaping-their-environment-are-just-a-preview-of-whats-coming/",
+          "https://www.theguardian.com/technology/2026/sep/16/ai-tech-regulation-government-action-yoshua-bengio"
         ]
       },
       {
-        "text": "Hong Kong Chief Executive John Lee announced an AI Commissioner and a proposed 'AI City Brain' linking satellite and radar data with mainland systems for early disaster warnings.",
-        "textZhHK": "香港行政長官李家超宣布設立 AI 專員，仲提出研究建設「AI 城市大腦」，將衛星同雷達數據接駁內地系統，用嚟提早預警災害同火警。",
+        "text": "US Vice-President JD Vance dismissed global AI safety regulation, telling builders 'if you're building Frankenstein, stop', as political opposites from Bernie Sanders to Steve Bannon united in Washington to demand hard brakes on AI.",
+        "textZhHK": "美國副總統 JD Vance 否定全球 AI 安全監管，叫開發者「如果你造緊科學怪人，停手」；另一邊廂 Bernie Sanders 同 Steve Bannon 等政治對立陣營喺華盛頓罕有聯手要求煞停 AI。",
+        "refs": [
+          "https://the-decoder.com/political-opposites-unite-in-washington-to-rein-in-ai/",
+          "https://www.theguardian.com/technology/2026/sep/16/building-frankenstein-jd-vance-dismisses-ai-regulation"
+        ]
+      },
+      {
+        "text": "China's Z.ai raised its year-end ARR target 25% to US$3 billion after a US$5 billion cash injection, while Moonshot AI is drawing global investors across Europe, Asia and the Middle East seeking top-tier Chinese AI labs.",
+        "textZhHK": "中國 Z.ai 獲得 50 億美元注資後，將年底 ARR 目標上調 25% 至 30 億美元；Moonshot AI 亦吸引歐洲、亞洲同中東嘅環球投資者，瞄準頂級中國 AI 實驗室。",
+        "refs": [
+          "https://www.scmp.com/tech/tech-trends/article/3367755/chinas-zai-raises-revenue-target-25-after-us5-billion-cash-injection?utm_source=rss_feed",
+          "https://www.scmp.com/tech/big-tech/article/3367723/kimi-creator-moonshot-draws-global-investors-seeking-top-tier-chinese-ai-developers?utm_source=rss_feed"
+        ]
+      },
+      {
+        "text": "Hong Kong announced an AI Commissioner role to govern AI risks and combat deepfake scams, with Baidu's Robin Li saying the company intends to apply for commercial autonomous driving operations in the city.",
+        "textZhHK": "香港宣布設立 AI 專員，負責規管 AI 風險同打擊深偽投資騙局；百度李彥宏亦回應，指百度打算喺香港申請自動駕駛商業化運作。",
         "refs": [
           "https://unwire.hk/2026/09/16/ai-risk-policy2026/tech-secure/?utm_source=rss&utm_medium=rss&utm_campaign=ai-risk-policy2026",
-          "https://unwire.hk/2026/09/16/ai-city-brain-hk/hottopic/spotlight/?utm_source=rss&utm_medium=rss&utm_campaign=ai-city-brain-hk"
-        ]
-      },
-      {
-        "text": "A 2024 survey of over 1,500 AI researchers found an 18% average estimated probability of AI causing human extinction, as OpenAI confirmed ongoing AI safety talks with Anthropic and Google DeepMind.",
-        "textZhHK": "一項 2024 年訪問超過 1,500 位 AI 研究員嘅調查顯示，佢哋平均估計 AI 導致人類滅絕嘅機率達 18%；與此同時 OpenAI 確認同 Anthropic 及 Google DeepMind 持續商討 AI 安全。",
-        "refs": [
-          "https://the-decoder.com/nearly-one-in-five-ai-researchers-already-expected-an-extinction-scenario-from-ai-back-in-2024/",
-          "https://techcrunch.com/2026/09/15/openai-anthropic-google-have-been-in-talks-on-ai-safety-for-weeks/"
-        ]
-      },
-      {
-        "text": "ByteDance's AI-powered short-drama app Hongguo has surpassed China's four largest professional streaming platforms combined, driven by AI-generated content and Seedance-animated dramas.",
-        "textZhHK": "字節跳動旗下 AI 短劇 App 紅果嘅用戶量，已經超越內地四大專業串流平台嘅總和，主要靠 AI 生成內容同 Seedance 動畫劇集帶動。",
-        "refs": [
-          "https://www.scmp.com/tech/tech-trends/article/3367664/bytedances-ai-enhanced-short-drama-app-eclipses-chinas-netflix-rivals-combined?utm_source=rss_feed"
+          "https://unwire.hk/2026/09/16/baiduauto/life-tech/smartcity/?utm_source=rss&utm_medium=rss&utm_campaign=baiduauto"
         ]
       }
     ],
-    "headline": "AI leaders clash over slowdown as Hong Kong appoints AI Commissioner",
-    "headlineZhHK": "AI 領袖爭論減速之際 香港設 AI 專員"
+    "headline": "Anthropic reshapes Claude as global AI safety fight escalates",
+    "headlineZhHK": "Anthropic 重組 Claude 之際 全球 AI 安全之爭升溫"
   }
 }
