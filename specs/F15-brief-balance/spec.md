@@ -1,5 +1,9 @@
 # SPEC: Daily brief category balance
 
+**ID:** F15-brief-balance
+**Status:** Plan — Gate 1 approved 2026-09-16; implementation not authorized
+**Owner:** Marco
+
 ## 1. Problem statement
 
 The daily brief input is currently ordered by importance and recency only, so a
@@ -182,9 +186,14 @@ persisted `Brief` shape. No hosted paid run is implied by this spec approval.
 
 ## 8. Open questions
 
-1. Approve the recommended quota defaults: category 40% and source 30% of the
-   target pool, rounded up with a minimum of one.
-2. Approve the fallback rule that relaxes only an unavailable quota, and relaxes
-   the minimum number of quotas needed to preserve three inputs when possible.
-3. Approve composition statistics as ingest logs only, with no new `news.json`
-   field or UI surface.
+1. [x] Approve the recommended quota defaults: category 40% and source 30% of
+   the target pool, rounded up with a minimum of one.
+2. [x] Approve the fallback rule that relaxes only an unavailable quota, and
+   relaxes the minimum number of quotas needed to preserve three inputs when
+   possible.
+3. [x] Approve composition statistics as ingest logs only, with no new
+   `news.json` field or UI surface.
+
+Gate 1 approval — 2026-09-16: Marco replied “approve”, accepting all three
+recommendations above. This advances F15 to the Plan phase; it does not
+authorize production code or a hosted paid ingest.

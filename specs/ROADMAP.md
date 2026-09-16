@@ -21,7 +21,7 @@ parallelized. Existing F10–F12 and F16 workstream exceptions remain recorded b
 | F12 | [English / HK Traditional Chinese summaries](./F12-bilingual-summaries/) | Done  | Content |
 | F13 | [Source expansion & dedupe](./F13-source-expansion/)             | Done        | Backend    |
 | F14 | [Licensing, attribution & excerpt hygiene](./F14-licensing-and-attribution/) | Spec | Portfolio |
-| F15 | [Daily brief category balance](./F15-brief-balance/)             | Spec        | Content    |
+| F15 | [Daily brief category balance](./F15-brief-balance/)             | Plan        | Content    |
 | F16 | [Cinematic standard edition](./F16-cinematic-standard/)          | Done        | UX         |
 
 ## F13 implemented — 2026-09-11
@@ -165,14 +165,14 @@ F13 Appendix C. No AI calls, ingestion, backfill, Telegram send or deployment ra
 
 Marco requested “help me do F16, F13 and F15 in order” on 2026-09-09. The active
 sequence is therefore **F16 → F13 → F15**, ahead of the older F6/F5 queue. This
-authorizes the workstream order; F13 and F15 still need their specific spec and
-plan approvals. F16 closed on 2026-09-11, so F13 is now the active item. The
-checkout reconciliation this once required is complete. The remaining rows are
+authorizes the workstream order. F16 and F13 are complete, F15's spec was
+approved on 2026-09-16, and F15 is now the active Plan-phase item. The checkout
+reconciliation this once required is complete. The remaining rows are
 recommendations.
 
 | Priority | Work | Concrete next action / completion condition |
 | --- | --- | --- |
-| 1 | F15 brief balance | Agree source/category balancing, the cap and single-category fallback; approve spec and plan. Verify research-flooded, balanced and single-category days without changing citation/bilingual/delivery contracts. |
+| 1 | F15 brief balance | Approve the implementation plan, then implement and verify source/category balancing, the cap and single-category fallback without changing citation/bilingual/delivery contracts. |
 | 2 | F14 attribution and excerpt hygiene | Decide data terms, takedown contact and colophon detail; approve spec and revised draft plan. Implement the colophon and a `dist/news.json`-only snippet strip while retaining stored snippets. Resolve before any commercialization work. |
 | 3 | F6 remaining Extra checks | In an Extra-enabled build, complete Lighthouse comparison, reduced-motion and blocked-font checks; keep the production flag off unless a separate change is requested. |
 | 4 | F5 email subscriptions | First resolve the conflict with the static/no-database constitution and choose a delivery/storage approach; then draft a spec. No implementation exists. |
@@ -346,7 +346,7 @@ term at all — it sorts NOTABLE-first then by recency and slices at 50, which a
 ingest cost, not brief composition. Cap any one source's or category's share of
 the brief input, keep the `Brief` shape untouched so F11 and F12 keep working,
 and log the input composition. Complementary to F13, which restores the news
-sources that would otherwise dilute the skew; Gate 1 pending.
+sources that would otherwise dilute the skew; Gate 1 approved and Plan pending.
 
 **F16: Cinematic standard edition.** Marco approved the dark editorial Daily
 Brief prototype and requested full adoption on 2026-09-08: a content-led cover,
