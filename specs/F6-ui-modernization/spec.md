@@ -1,7 +1,7 @@
 # UI Redesign — "Stop the Presses" (A/B Feature Flag)
 
 **ID:** F6-ui-modernization
-**Status:** Build — locally verified 2026-09-21; landmark fix awaits publication
+**Status:** Done — published and verified 2026-09-21
 **Owner:** Marco
 
 **F16 integration, 2026-09-08:** The approved cinematic standard edition
@@ -139,7 +139,7 @@ mockup). Remaining items resolved with defaults — override at Gate 2.
 
 ## Completion record — 2026-09-21
 
-F6 is locally verified; the landmark fix still needs publication. Extra now has
+F6 is published and verified. Extra now has
 a semantic `<main>` landmark, fixing the only
 failed Lighthouse accessibility audit. Lighthouse 13.5.0 scored Extra 100,
 matching the current F16 standard baseline of 100 (the `ClassicApp` entry point,
@@ -149,3 +149,10 @@ with the fallback stacks. The full 253-test suite, TypeScript check, default
 build, and Extra-enabled build passed locally. Detailed command evidence is in
 the plan. The review retained this scoped semantic fix and corrected premature
 Done/publication claims. Extra remains default-off.
+
+Publication approved by Marco with “approved”, then “continue”, on 2026-09-21.
+Reviewed commit `58370b4` was published via merge `7de0ed7`, preserving the
+scheduled news and Telegram-state updates. Hosted Test, Build & Deploy and Pages
+deployment succeeded. Live page and `news.json` returned HTTP 200; the browser
+loaded 741 articles in the standard edition even with `?theme=extra`. No paid
+ingest, Telegram send or Extra enablement was triggered. Run links are in the plan.

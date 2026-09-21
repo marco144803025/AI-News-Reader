@@ -1,7 +1,7 @@
 # UI Redesign — "Stop the Presses" — Plan
 
 **Spec:** ./spec.md
-**Status:** Build — locally verified 2026-09-21; landmark fix awaits publication
+**Status:** Done — published and verified 2026-09-21
 
 ## Approach
 
@@ -118,7 +118,7 @@ run scored 100, matching Classic's 100.
 - [x] Compare the classic and extra layouts with a Lighthouse accessibility audit (AC10).
 - [x] Emulate `prefers-reduced-motion` and verify transitions become instant (AC8).
 - [x] Block `public/fonts/` and verify the fallback layout remains intact (AC6).
-- [ ] Publish the landmark fix and verify the hosted build/deployment before Done.
+- [x] Publish the landmark fix and verify the hosted build/deployment before Done.
 
 Maps to acceptance criteria in `spec.md`:
 
@@ -161,9 +161,26 @@ Maps to acceptance criteria in `spec.md`:
 - Review reran the offline suite outside the sandbox: 253 passed, 0 failed,
   without a shim. The sandbox attempt stopped before discovery with the known
   Windows `uv_os_get_passwd` error. Final follow-up test totals are in F15's plan.
-- Publication remains outstanding; do not mark F6 Done until the semantic fix
-  is published and hosted build verification succeeds. No production flag change
-  or paid ingest is included in this closeout.
+- Publication was outstanding at the local-review checkpoint; the hosted record
+  below closes that final task. No production flag change or paid ingest is included.
+
+### Publication record — 2026-09-21
+
+- Marco approved publication and then requested continuation. Clean local
+  `58370b4` was merged with scheduled remote updates (news and delivery state only)
+  and pushed normally as `7de0ed7fbb99e75a96490098e665bf1a242420fe`.
+- [Hosted Test](https://github.com/marco144803025/AI-News-Reader/actions/runs/35578769177)
+  completed successfully for that exact source commit.
+- [Build & Deploy](https://github.com/marco144803025/AI-News-Reader/actions/runs/35578769156)
+  completed successfully, followed by successful
+  [Pages deployment](https://github.com/marco144803025/AI-News-Reader/actions/runs/35578802779).
+- Public page and `news.json` returned HTTP 200; payload contained 741 articles
+  and `briefStatus: "generated"`. Served entry asset was `index-CWAkhQFw.js`.
+- Browser smoke check loaded the existing Chinese standard interface, brief,
+  article list and pagination using `?theme=extra`, confirming Extra remains off.
+  This hosted check verifies the default-off release, not a hosted Extra audit;
+  Extra-specific accessibility and fallback verification is the local record above.
+- No manual ingest, paid model request, backfill, Telegram send or feed change.
 
 ## Risks / tradeoffs
 

@@ -11,7 +11,7 @@ parallelized. Existing F10–F12 and F16 workstream exceptions remain recorded b
 | F2c | [Dark mode / Reader UI redesign](./F2c-dark-mode/)               | Done        | UX         |
 | F2d | [Category taxonomy expansion](./F2d-category-taxonomy/)          | Done        | UX         |
 | F4  | [Search & tag filtering](./F4-search-and-tags/)                  | Done        | UX         |
-| F6  | [UI redesign — Stop the Presses (A/B flag)](./F6-ui-modernization/) | Build    | UX         |
+| F6  | [UI redesign — Stop the Presses (A/B flag)](./F6-ui-modernization/) | Done     | UX         |
 | F5  | Email subscriptions per tag (not yet specced)                   | Not started | UX         |
 | F7  | [Portfolio presentation & shareability](./F7-portfolio-presentation/) | Done   | Portfolio  |
 | F8  | [AI Daily Brief](./F8-daily-brief/)                              | Done        | Content    |
@@ -165,19 +165,21 @@ F13 Appendix C. No AI calls, ingestion, backfill, Telegram send or deployment ra
 
 Marco's earlier F16 → F13 → F15 sequence is complete. His latest request is to
 finish F6 and F15 first, followed on 2026-09-21 by review/fix/continuation of Luna's
-work. F15's scheduled hosted evidence is now verified. F6 is locally verified,
-but its semantic landmark fix remains unpublished. Later rows are recommendations,
-not approved implementation work.
+work. F15's scheduled hosted evidence is verified, and F6's landmark fix is now
+published with hosted tests/build/Pages verification. Both are Done. Later rows
+are recommendations, not approved implementation work.
 
 | Priority | Work | Concrete next action / completion condition |
 | --- | --- | --- |
-| 1 | F6 publication | Publish the verified landmark fix and review follow-up, check hosted build/deployment, then mark F6 Done. Keep Extra default-off. |
-| 2 | F14 attribution and excerpt hygiene | Decide data terms, takedown contact and colophon detail; approve spec and revised draft plan. Implement the colophon and a `dist/news.json`-only snippet strip while retaining stored snippets. Resolve before any commercialization work. |
-| 3 | F5 email subscriptions | First resolve the conflict with the static/no-database constitution and choose a delivery/storage approach; then draft a spec. No implementation exists. |
+| 1 | F14 attribution and excerpt hygiene | Decide data terms, takedown contact and colophon detail; approve spec and revised draft plan. Implement the colophon and a `dist/news.json`-only snippet strip while retaining stored snippets. Resolve before any commercialization work. |
+| 2 | F5 email subscriptions | First resolve the conflict with the static/no-database constitution and choose a delivery/storage approach; then draft a spec. No implementation exists. |
 
 ## F6/F15 review closeout — 2026-09-21
 
-F6 is locally verified, not yet published. Extra's landmark correction brought
+F6 is Done, published via `7de0ed7` after Marco's approval. Hosted Test,
+Build & Deploy and Pages deployment all succeeded; live page/data returned 200
+and the browser confirmed standard-edition rendering with `?theme=extra`.
+Extra's landmark correction brought
 the recorded Lighthouse accessibility score from 98 to 100, matching the current
 F16 standard. Reduced-motion and a repeated desktop/phone blocked-font visual
 check are recorded with their exact evidence limits in F6's plan. The only
@@ -281,7 +283,7 @@ rubber stamps for NOTABLE, a ransom-word highlight in the lead headline.
 Ranked front page (bulletin / lead clipping / clippings list) replaces the
 uniform card grid; wrapping tape nav replaces the overflow tab rail. Implemented
 in `f276298` after approval on 2026-07-02; local checks closed on 2026-09-21,
-with the final landmark fix awaiting publication.
+and the final landmark fix published and hosted-verified via `7de0ed7`.
 F16 now supplies the standard edition and gates Extra behind the default-off
 `VITE_ENABLE_EXTRA` build flag. `?theme=extra` and saved preferences only select
 Extra when that build flag is enabled.
