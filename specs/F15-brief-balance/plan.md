@@ -1,7 +1,7 @@
 # F15 daily brief category balance — Plan
 
 **Spec:** [spec.md](./spec.md)
-**Status:** Build — implementation and local verification complete; hosted paid ingest pending
+**Status:** Done — published implementation and scheduled hosted verification complete
 
 Gate 2 approval — 2026-09-17: Marco replied “proceed” to this plan. The
 implementation tasks below are authorized. No hosted paid ingest is implied.
@@ -81,8 +81,8 @@ stable output. Blank labels use the accounting key `Unknown` without mutating
 the source article. The formatter emits one line in this form:
 
 ```text
-Brief input: 18 candidates -> 12 selected; categories Research=8, MCP=2;
-sources arXiv cs.AI=6, OpenAI Blog=3; fallbacks none.
+Brief input: 18 candidates -> 12 selected; categories Applications=2, MCP=2, Research=8;
+sources OpenAI Blog=3, The Verge AI=3, arXiv cs.AI=6; fallbacks none.
 ```
 
 ## Tasks
@@ -115,7 +115,7 @@ sources arXiv cs.AI=6, OpenAI Blog=3; fallbacks none.
   retain the existing no-new-material and failure-isolation assertions.
 - [x] Run the local verification commands in §Verification, inspect the staged
   diff and record actual outputs in this plan.
-- [ ] After separate authorization, run one normal hosted ingest, verify the
+- [x] Use the owner-selected scheduled hosted ingest, verify the
   `Brief input:` log, successful deployment and unchanged persisted brief shape,
   then record the hosted evidence and move F15 to `Done`.
 
@@ -168,9 +168,54 @@ fields and bilingual/delivery behavior.
 - `git diff --check` — no whitespace errors; only expected CRLF conversion
   warnings from Git on this Windows checkout.
 
-The hosted paid-ingest task remains unchecked because it can invoke DeepSeek and
-send the personal Telegram brief. F15 therefore remains Build until Marco
-authorizes that final end-to-end check.
+At this checkpoint the hosted task remained unchecked. Marco subsequently chose
+to leave verification to automatic ingestion; the scheduled evidence below
+supersedes that pending status. No additional paid run was dispatched.
+
+## Scheduled hosted evidence — 2026-09-20
+
+- Scheduled `Daily Ingest & Deploy` run **#135** (`35504591394`) ran against
+  commit `5616b0a20b524e89de41e85a08c0be5ec008a930` and completed successfully.
+- The hosted job's ingest, build, Pages deployment and Telegram-send steps all
+  reported success.
+- The deployed page and `news.json` returned HTTP 200. The live payload had
+  `briefStatus: "generated"`, retained the existing `brief` keys
+  (`bullets`, `generatedAt`, `headline`, `headlineZhHK`), and retained bullet
+  keys (`refs`, `text`, `textZhHK`).
+- On 2026-09-21 the existing signed-in browser exposed the job logs. The earlier
+  unauthenticated API/page failure did not establish an administrator-only
+  requirement. The exact line in step 7 was:
+
+```text
+Brief input: 32 candidates -> 32 selected; categories AI Safety & Alignment=7, Applications=4, Business & Funding=3, Developer Tools=1, Model Releases=1, Other=3, Regulation & Policy=8, Research=4, Robotics=1; sources Guardian AI=8, TechCrunch AI=7, The Decoder=9, The Verge AI=4, Unwire.hk=4; fallbacks none.
+```
+
+- Category quota was 13 and source quota 10; observed maxima were 8 and 9.
+  The following lines confirmed generation from 32 inputs and `brief ok (5 bullets).`
+  Step 11 confirmed `Telegram: sent`, not merely a successful skipped step.
+- Evidence: [job log](https://github.com/marco144803025/AI-News-Reader/actions/runs/35504591394/job/106062146236).
+  Personnel Today 403 and Hacker News 429 were visible feed failures (18/20
+  feeds succeeded), not F15 failures; no feed configuration was changed.
+
+## Review follow-up — 2026-09-21
+
+Marco requested review, fixes and continuation of Luna's F6/F15 work. A Sol
+`high` review found no selector/integration defect, but the dominant-category
+fixture did not exceed either quota and the pipeline assertion did not specify
+exact input. The follow-up strengthens those existing approved test tasks;
+it does not change the published quota policy or add a model call.
+
+- Strengthened selector fixture: 20 candidates, exactly 16 selected; Research=8,
+  arXiv=6, skipped dominant inputs excluded, later alternatives included by URL.
+- Strengthened pipeline fixture: exactly five expected URLs reach the sole
+  synthesis call from eight candidates; exact composition line is asserted.
+- Main-agent final `npm test`: 253 tests, 57 suites, 253 pass, 0 fail, 0 skipped.
+  Executed outside the Windows sandbox without a shim after its userInfo error.
+- Both flag builds passed (`npm run build`, including `tsc -b`); final build
+  used `VITE_ENABLE_EXTRA=false`. One intermediate default build overlapped the
+  reviewer's temporary quota mutation and reported TS18048; after restoring
+  `ingest/lib.ts` unchanged, the default build passed. No production selector
+  change or temporary mutation remains.
 
 ## Risks / tradeoffs
 

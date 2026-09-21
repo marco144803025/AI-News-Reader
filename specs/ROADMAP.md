@@ -21,7 +21,7 @@ parallelized. Existing F10–F12 and F16 workstream exceptions remain recorded b
 | F12 | [English / HK Traditional Chinese summaries](./F12-bilingual-summaries/) | Done  | Content |
 | F13 | [Source expansion & dedupe](./F13-source-expansion/)             | Done        | Backend    |
 | F14 | [Licensing, attribution & excerpt hygiene](./F14-licensing-and-attribution/) | Spec | Portfolio |
-| F15 | [Daily brief category balance](./F15-brief-balance/)             | Build       | Content    |
+| F15 | [Daily brief category balance](./F15-brief-balance/)             | Done        | Content    |
 | F16 | [Cinematic standard edition](./F16-cinematic-standard/)          | Done        | UX         |
 
 ## F13 implemented — 2026-09-11
@@ -163,19 +163,35 @@ F13 Appendix C. No AI calls, ingestion, backfill, Telegram send or deployment ra
 
 ## Recommended next work
 
-Marco requested “help me do F16, F13 and F15 in order” on 2026-09-09. The active
-sequence is therefore **F16 → F13 → F15**, ahead of the older F6/F5 queue. This
-authorizes the workstream order. F16 and F13 are complete, F15's spec and plan
-were approved on 2026-09-17, and F15 is now the active Build-phase item. The checkout
-reconciliation this once required is complete. The remaining rows are
-recommendations.
+Marco's earlier F16 → F13 → F15 sequence is complete. His latest request is to
+finish F6 and F15 first, followed on 2026-09-21 by review/fix/continuation of Luna's
+work. F15's scheduled hosted evidence is now verified. F6 is locally verified,
+but its semantic landmark fix remains unpublished. Later rows are recommendations,
+not approved implementation work.
 
 | Priority | Work | Concrete next action / completion condition |
 | --- | --- | --- |
-| 1 | F15 brief balance | Complete the separately authorized hosted verification, then mark F15 Done if the `Brief input:` log, deployment and unchanged brief contract all pass. |
+| 1 | F6 publication | Publish the verified landmark fix and review follow-up, check hosted build/deployment, then mark F6 Done. Keep Extra default-off. |
 | 2 | F14 attribution and excerpt hygiene | Decide data terms, takedown contact and colophon detail; approve spec and revised draft plan. Implement the colophon and a `dist/news.json`-only snippet strip while retaining stored snippets. Resolve before any commercialization work. |
-| 3 | F6 remaining Extra checks | In an Extra-enabled build, complete Lighthouse comparison, reduced-motion and blocked-font checks; keep the production flag off unless a separate change is requested. |
-| 4 | F5 email subscriptions | First resolve the conflict with the static/no-database constitution and choose a delivery/storage approach; then draft a spec. No implementation exists. |
+| 3 | F5 email subscriptions | First resolve the conflict with the static/no-database constitution and choose a delivery/storage approach; then draft a spec. No implementation exists. |
+
+## F6/F15 review closeout — 2026-09-21
+
+F6 is locally verified, not yet published. Extra's landmark correction brought
+the recorded Lighthouse accessibility score from 98 to 100, matching the current
+F16 standard. Reduced-motion and a repeated desktop/phone blocked-font visual
+check are recorded with their exact evidence limits in F6's plan. The only
+production-code change is a semantic `<main>` in `ExtraApp.tsx`; Extra remains off.
+
+F15 is Done: scheduled run #135 against published `5616b0a` logged 32 candidates
+and 32 selected across nine categories/five sources, with no fallback, generated
+five bullets, deployed successfully and logged `Telegram: sent`. Existing Brief
+fields are intact. The signed-in browser resolved the earlier unauthenticated
+log-access issue; no manual paid ingest was dispatched. Review found a weak quota
+fixture, now strengthened with exact selector and model-input assertions.
+See F15's plan for final offline results. The scheduled run also exposed Personnel
+Today HTTP 403 and Hacker News HTTP 429; these remain visible feed-health issues,
+not silent success claims or reasons to alter feeds during this scoped review.
 
 F13 and F15 are complementary and now explicitly sequenced after F16. F14 moves
 earlier only if Marco changes priorities, for example when commercialization
@@ -264,7 +280,8 @@ display type, offset-print panels, tilted tape-strip nav and clipping rows,
 rubber stamps for NOTABLE, a ransom-word highlight in the lead headline.
 Ranked front page (bulletin / lead clipping / clippings list) replaces the
 uniform card grid; wrapping tape nav replaces the overflow tab rail. Implemented
-in `f276298` after approval on 2026-07-02; three verification checks remain open.
+in `f276298` after approval on 2026-07-02; local checks closed on 2026-09-21,
+with the final landmark fix awaiting publication.
 F16 now supplies the standard edition and gates Extra behind the default-off
 `VITE_ENABLE_EXTRA` build flag. `?theme=extra` and saved preferences only select
 Extra when that build flag is enabled.
@@ -292,7 +309,7 @@ F16 subsequently refreshed the screenshot, presentation and stale provider copy.
 DeepSeek (F10), using the last 24 hours of the archive after the 2026-09-08
 reliability fix. F12 adds bilingual output; F16 adds optional bilingual headlines
 and the cinematic cover. Brief freshness/status and Telegram safeguards remain
-in place. Source/category balancing is pending F15.
+in place. Source/category balancing is delivered by F15.
 
 **F9: Trends & pipeline transparency.** Client-side trends over the existing
 30-day archive: rising/falling tags (7d vs prior 7d), volume-per-day chart,
@@ -340,14 +357,14 @@ points to F16's standard footer and requires an Extra-enabled verification build
 **F15: Daily brief category balance.** Some days the brief reads as an academic
 digest. Measured over the 30-day archive, the skew tracks arXiv bursts exactly:
 2026-09-07 was 83% arXiv (Research 13 of 18 articles), 2026-08-15 was 100%, and
-every non-arXiv day is balanced. `selectBriefInput` has no source or category
-term at all — it sorts NOTABLE-first then by recency and slices at 50, which a
+every non-arXiv day is balanced. The pre-F15 `selectBriefInput` had no source or category
+term — it sorted NOTABLE-first then by recency and sliced at 50, which a
 15-paper arXiv batch trivially dominates. The existing `ARXIV_CAP = 15` bounds
 ingest cost, not brief composition. Cap any one source's or category's share of
 the brief input, keep the `Brief` shape untouched so F11 and F12 keep working,
 and log the input composition. Complementary to F13, which restores the news
-sources that would otherwise dilute the skew; Gate 1 and Gate 2 approved and
-Build in progress.
+sources that would otherwise dilute the skew. Gate 1 and Gate 2 were approved;
+implementation is published and scheduled hosted verification is complete.
 
 **F16: Cinematic standard edition.** Marco approved the dark editorial Daily
 Brief prototype and requested full adoption on 2026-09-08: a content-led cover,

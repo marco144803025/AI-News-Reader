@@ -1,7 +1,7 @@
 # UI Redesign — "Stop the Presses" — Plan
 
 **Spec:** ./spec.md
-**Status:** Build
+**Status:** Build — locally verified 2026-09-21; landmark fix awaits publication
 
 ## Approach
 
@@ -75,6 +75,8 @@ the lead headline with ≥ 5 letters; ties broken by earliest position.
 - [x] `ExtraFilterBar` — reuses `lib/filter.ts` + URL state.
 - [x] `BulletinPanel` (renders iff `data.brief` — F8 slot) + `PressFooter`.
 - [x] Accessibility pass: focus-visible states, aria labels, AA-driven token split (see deviations).
+- [x] Add a semantic `<main>` landmark around the Extra content after Lighthouse
+  identified `landmark-one-main` as the only accessibility failure.
 - [x] Update `.interface-design/system.md`; ROADMAP updated.
 
 ### Deviations from the original plan (recorded during Build)
@@ -107,13 +109,16 @@ done in the dev preview (flag/toggle/persistence, ranked hierarchy on real
 data, 375px wrap measured `scrollWidth === clientWidth` with all 13 chips,
 hover inversion, Primer-hex grep = 0 matches, Anton computed as the rendered
 font, built CSS carries the `/AI-News-Reader/` base on font URLs).
-**Still pending manual runs:** Lighthouse accessibility baseline comparison
-(AC10) and `prefers-reduced-motion` emulation (AC8 — the CSS guard is in
-place); font-blocked fallback rendering (AC6) not yet exercised.
+**Completed verification 2026-09-21:** Lighthouse accessibility comparison,
+`prefers-reduced-motion` emulation, and font-blocked fallback rendering all
+passed after the Extra lineage gained a semantic `<main>` landmark. The first
+Extra Lighthouse run scored 98 and failed only `landmark-one-main`; the fixed
+run scored 100, matching Classic's 100.
 
-- [ ] Compare the classic and extra layouts with a Lighthouse accessibility audit (AC10).
-- [ ] Emulate `prefers-reduced-motion` and verify transitions become instant (AC8).
-- [ ] Block `public/fonts/` and verify the fallback layout remains intact (AC6).
+- [x] Compare the classic and extra layouts with a Lighthouse accessibility audit (AC10).
+- [x] Emulate `prefers-reduced-motion` and verify transitions become instant (AC8).
+- [x] Block `public/fonts/` and verify the fallback layout remains intact (AC6).
+- [ ] Publish the landmark fix and verify the hosted build/deployment before Done.
 
 Maps to acceptance criteria in `spec.md`:
 
@@ -127,6 +132,38 @@ Maps to acceptance criteria in `spec.md`:
 - AC8 (reduced motion): emulate `prefers-reduced-motion` in preview → transitions become instant.
 - AC10 (Lighthouse): run accessibility audit on classic (baseline) then extra — extra ≥ baseline.
 - `npm test` and `npm run build` green; classic lineage pixel-identical spot-check (before/after screenshots of the extraction commit).
+
+### Completion record — 2026-09-21
+
+- `npx tsc -b` — exit 0 with no diagnostics.
+- `npm test` — 253 tests passed, 0 failed, using the temporary documented
+  Windows `os.userInfo()` shim; the shim was removed afterward.
+- `npm run build` — default build passed; `VITE_ENABLE_EXTRA=true npm run
+  build` passed as well.
+- Lighthouse 13.5.0 accessibility — Classic 100, Extra 100 after adding the
+  `<main>` landmark to `src/components/extra/ExtraApp.tsx`.
+- Reduced-motion emulation — `matchMedia('(prefers-reduced-motion: reduce)')`
+  was true and the Extra edition toggle transition computed to `0s`.
+- Initial font-blocked check: four used faces entered `error`; two unused faces
+  remained unloaded. Width measurements alone were not a full visual check.
+- Review repeated the font failure with a temporary local Vite middleware that
+  returned HTTP 404 for `/fonts/` requests, without editing production assets.
+  Server logs confirmed Anton 400, Archivo 400/500 and JetBrains Mono 400 were
+  blocked. Desktop (1280px) and phone (375px) screenshots showed intact masthead,
+  wrapped navigation, readable bulletin and lead. At 375px, document scrollWidth
+  and clientWidth were both 360px (15px vertical scrollbar), with one main landmark.
+  The temporary server/script was removed after checking; viewport was reset.
+- Lighthouse comparison uses the current F16 standard via `ClassicApp`, not
+  retired F2c. The earlier CLI produced scores despite a Windows cleanup EPERM;
+  its JSON reports were not retained. Reduced-motion evidence is the measured
+  edition-toggle `0s` plus the existing descendant-wide CSS guard, not an audit
+  of every interaction.
+- Review reran the offline suite outside the sandbox: 253 passed, 0 failed,
+  without a shim. The sandbox attempt stopped before discovery with the known
+  Windows `uv_os_get_passwd` error. Final follow-up test totals are in F15's plan.
+- Publication remains outstanding; do not mark F6 Done until the semantic fix
+  is published and hosted build verification succeeds. No production flag change
+  or paid ingest is included in this closeout.
 
 ## Risks / tradeoffs
 

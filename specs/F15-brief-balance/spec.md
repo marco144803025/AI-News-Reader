@@ -1,7 +1,7 @@
 # SPEC: Daily brief category balance
 
 **ID:** F15-brief-balance
-**Status:** Build — implementation and local verification complete; hosted paid ingest remains separately authorized
+**Status:** Done — published implementation and scheduled hosted verification complete
 **Owner:** Marco
 
 ## 1. Problem statement
@@ -214,6 +214,22 @@ attempt exposed the known Windows Node/tsx `uv_os_get_passwd returned ENOMEM`
 host issue before tests started; the suite was then rerun successfully with a
 temporary external `os.userInfo()` shim, which was removed afterward.
 
-F15 remains Build pending one separately authorized normal hosted ingest. That
-run must verify the `Brief input:` log, deployment and unchanged persisted brief
-shape before the feature can move to Done.
+At this checkpoint F15 remained Build pending hosted verification. Marco later
+chose automatic ingestion instead of an additional manual paid dispatch; the
+scheduled evidence below closes that requirement.
+
+## Scheduled hosted evidence — 2026-09-20
+
+The scheduled `Daily Ingest & Deploy` run #135 completed successfully against
+the published F15 commit. Its ingest, build, deployment and Telegram-send steps
+reported success; the deployed page and `news.json` returned HTTP 200, with
+`briefStatus: "generated"` and the existing `Brief` keys intact.
+
+Review on 2026-09-21 recovered the exact composition line through the existing
+signed-in browser: 32 candidates, 32 selected, nine categories, five sources,
+and no fallbacks. Category/source maxima were 8/9, below quotas 13/10. Generation
+produced five bullets and the delivery log said `Telegram: sent`. Full evidence
+and the run link are in the plan. The prior administrator-only access claim was
+incorrect; the earlier attempt was unauthenticated. F15 is Done without another
+manual paid ingest. Marco's review/fix request also authorizes strengthening the
+quota and exact model-input regression fixtures within the approved test scope.

@@ -372,15 +372,19 @@ test("F15 logs balanced brief composition and makes one synthesis call", async (
   const generationIndex = logs.findIndex((line) => line.startsWith("Generating daily brief"));
   assert.notEqual(compositionIndex, -1, "brief composition must be logged");
   assert.ok(compositionIndex < generationIndex, "composition must be logged before generation");
-  assert.match(logs[compositionIndex], /candidates -> \d+ selected/);
-  assert.match(logs[compositionIndex], /categories .*Research=/);
-  assert.match(logs[compositionIndex], /sources .*Source/);
-  assert.equal(briefInputs.length, 1, "balancing must not add a model call");
-  assert.ok(briefInputs[0].length >= 3, "the model receives a valid minimum input");
-  assert.ok(
-    briefInputs[0].every((selected) => out.articles.some((article) => article.url === selected.url)),
-    "the model receives articles from the output archive"
+  assert.equal(
+    logs[compositionIndex],
+    "Brief input: 8 candidates -> 5 selected; categories Applications=1, Research=4; " +
+      "sources Source 0=3, Source 1=2; fallbacks none."
   );
+  assert.equal(briefInputs.length, 1, "balancing must not add a model call");
+  assert.deepEqual(briefInputs[0].map((article) => article.url), [
+    "https://example.com/s0/a0",
+    "https://example.com/s0/a1",
+    "https://example.com/s0/a2",
+    "https://example.com/s1/a0",
+    "https://example.com/s1/a3",
+  ]);
   assert.equal(out.briefStatus, "generated");
 });
 

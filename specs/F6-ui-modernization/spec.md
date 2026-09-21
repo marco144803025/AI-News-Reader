@@ -1,15 +1,15 @@
 # UI Redesign — "Stop the Presses" (A/B Feature Flag)
 
 **ID:** F6-ui-modernization
-**Status:** Build (spec approved 2026-07-02)
+**Status:** Build — locally verified 2026-09-21; landmark fix awaits publication
 **Owner:** Marco
 
 **F16 integration, 2026-09-08:** The approved cinematic standard edition
 supersedes the original classic rollback presentation. Extra is retained
 behind `VITE_ENABLE_EXTRA`, disabled by default, including for saved preferences
 and `?theme=extra`. When enabled, the existing edition toggle remains available.
-See [F16](../F16-cinematic-standard/spec.md). This does not mark F6's outstanding
-Lighthouse comparison or other historical verification complete.
+See [F16](../F16-cinematic-standard/spec.md). F6's remaining verification is
+recorded as complete below.
 
 ## Intent
 
@@ -136,3 +136,16 @@ mockup). Remaining items resolved with defaults — override at Gate 2.
       one constants module so a plain-label variant stays a one-file change.
 - [x] Webfonts — **self-hosted** woff2 (latin subsets) in `public/fonts/`
       with OFL license files; no third-party font requests.
+
+## Completion record — 2026-09-21
+
+F6 is locally verified; the landmark fix still needs publication. Extra now has
+a semantic `<main>` landmark, fixing the only
+failed Lighthouse accessibility audit. Lighthouse 13.5.0 scored Extra 100,
+matching the current F16 standard baseline of 100 (the `ClassicApp` entry point,
+not the retired F2c design). Reduced-motion emulation set the edition-toggle transition
+to zero duration, and blocking the Extra font requests left the layout intact
+with the fallback stacks. The full 253-test suite, TypeScript check, default
+build, and Extra-enabled build passed locally. Detailed command evidence is in
+the plan. The review retained this scoped semantic fix and corrected premature
+Done/publication claims. Extra remains default-off.

@@ -68,21 +68,36 @@ describe("selectBriefInput", () => {
 
   it("caps a dominant category and source while scanning for alternatives", () => {
     const candidates = [
-      ...Array.from({ length: 6 }, (_, i) => makeArticle(`arxiv-${i}`, `2026-07-02T11:${String(59 - i).padStart(2, "0")}:00Z`, false, `Research arxiv ${i}`, "Research", "arXiv cs.AI")),
-      ...Array.from({ length: 2 }, (_, i) => makeArticle(`open-research-${i}`, `2026-07-02T11:${String(53 - i).padStart(2, "0")}:00Z`, false, `Research open ${i}`, "Research", "OpenAI Blog")),
-      ...Array.from({ length: 3 }, (_, i) => makeArticle(`applications-${i}`, `2026-07-02T11:${String(51 - i).padStart(2, "0")}:00Z`, false, `Applications ${i}`, "Applications", "OpenAI Blog")),
-      ...Array.from({ length: 2 }, (_, i) => makeArticle(`mcp-${i}`, `2026-07-02T11:${String(48 - i).padStart(2, "0")}:00Z`, false, `MCP ${i}`, "MCP", "Simon Willison")),
-      ...Array.from({ length: 5 }, (_, i) => makeArticle(`policy-${i}`, `2026-07-02T11:${String(46 - i).padStart(2, "0")}:00Z`, false, `Policy ${i}`, "Regulation & Policy", "Computer Weekly")),
+      ...Array.from({ length: 10 }, (_, i) => makeArticle(`arxiv-${i}`, `2026-07-02T11:${String(59 - i).padStart(2, "0")}:00Z`, false, `Research arxiv ${i}`, "Research", "arXiv cs.AI")),
+      ...Array.from({ length: 2 }, (_, i) => makeArticle(`open-research-${i}`, `2026-07-02T11:${String(49 - i).padStart(2, "0")}:00Z`, false, `Research open ${i}`, "Research", "OpenAI Blog")),
+      ...Array.from({ length: 3 }, (_, i) => makeArticle(`applications-${i}`, `2026-07-02T11:${String(47 - i).padStart(2, "0")}:00Z`, false, `Applications ${i}`, "Applications", "OpenAI Blog")),
+      ...Array.from({ length: 2 }, (_, i) => makeArticle(`mcp-${i}`, `2026-07-02T11:${String(44 - i).padStart(2, "0")}:00Z`, false, `MCP ${i}`, "MCP", "Simon Willison")),
+      ...Array.from({ length: 3 }, (_, i) => makeArticle(`policy-${i}`, `2026-07-02T11:${String(42 - i).padStart(2, "0")}:00Z`, false, `Policy ${i}`, "Regulation & Policy", "Computer Weekly")),
     ];
     const selection = selectBriefInput(candidates, NOW);
 
-    assert.equal(selection.stats.candidateCount, 18);
+    assert.equal(selection.stats.candidateCount, 20);
+    assert.equal(selection.stats.selectedCount, 16);
     assert.equal(selection.stats.categoryCounts.Research, 8);
     assert.equal(selection.stats.sourceCounts["arXiv cs.AI"], 6);
     assert.equal(selection.stats.fallbacks.length, 0);
-    assert.equal(selection.articles.length, 18);
-    assert.deepEqual(selection.articles.slice(0, 8).map((article) => article.category), [
-      ...Array(8).fill("Research"),
+    assert.deepEqual(selection.articles.map((article) => article.url), [
+      "arxiv-0",
+      "arxiv-1",
+      "arxiv-2",
+      "arxiv-3",
+      "arxiv-4",
+      "arxiv-5",
+      "open-research-0",
+      "open-research-1",
+      "applications-0",
+      "applications-1",
+      "applications-2",
+      "mcp-0",
+      "mcp-1",
+      "policy-0",
+      "policy-1",
+      "policy-2",
     ]);
   });
 

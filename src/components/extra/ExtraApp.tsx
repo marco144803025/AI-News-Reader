@@ -94,90 +94,92 @@ export default function ExtraApp({
           state={filterState}
           onChange={setFilterState}
         />
-        {isTrends ? (
-          <PressTrends
-            data={data}
-            now={now}
-            onOpenTopic={(tag) =>
-              setFilterState({
-                query: "",
-                category: "All",
-                topics: [tag],
-                traits: [],
-                entities: [],
-              })
-            }
-            onOpenEntity={(tag) =>
-              setFilterState({
-                query: "",
-                category: "All",
-                topics: [],
-                traits: [],
-                entities: [tag],
-              })
-            }
-          />
-        ) : (
-          <>
-        <ExtraFilterBar
-          scopedArticles={categoryScoped}
-          state={filterState}
-          onChange={setFilterState}
-        />
-
-        {brief && page === 0 && <BulletinPanel brief={brief} />}
-
-        {filtered.length === 0 ? (
-          <div className="mt-10 flex flex-col items-start gap-4">
-            <span className="font-poster text-xl tracking-[0.1em] text-ink-dim">
-              {LABELS.nothing}
-            </span>
-            {hasActiveFilters(filterState) && (
-              <TapeChip
-                tilt={-1}
-                onClick={() =>
-                  setFilterState({ ...EMPTY_FILTER, category: filterState.category })
-                }
-              >
-                {LABELS.clearFilters}
-              </TapeChip>
-            )}
-          </div>
-        ) : (
-          <>
-            {lead && page === 0 && <LeadClipping article={lead} now={now} />}
-            {pageItems.length > 0 && (
-              <ClippingsList
-                articles={pageItems}
-                totalCount={rest.length}
-                now={now}
+        <main>
+          {isTrends ? (
+            <PressTrends
+              data={data}
+              now={now}
+              onOpenTopic={(tag) =>
+                setFilterState({
+                  query: "",
+                  category: "All",
+                  topics: [tag],
+                  traits: [],
+                  entities: [],
+                })
+              }
+              onOpenEntity={(tag) =>
+                setFilterState({
+                  query: "",
+                  category: "All",
+                  topics: [],
+                  traits: [],
+                  entities: [tag],
+                })
+              }
+            />
+          ) : (
+            <>
+              <ExtraFilterBar
+                scopedArticles={categoryScoped}
+                state={filterState}
+                onChange={setFilterState}
               />
-            )}
-            {totalPages > 1 && (
-              <div className="mt-6 flex items-center justify-center gap-5">
-                {page > 0 ? (
-                  <TapeChip tilt={-1} onClick={() => setPage((p) => Math.max(0, p - 1))}>
-                    {LABELS.prev}
-                  </TapeChip>
-                ) : (
-                  <span className="w-16" aria-hidden="true" />
-                )}
-                <span className="font-wire text-[11px] tabular-nums text-ink-dim">
-                  {LABELS.pageOf(page + 1, totalPages)}
-                </span>
-                {page < totalPages - 1 ? (
-                  <TapeChip tilt={1} onClick={() => setPage((p) => p + 1)}>
-                    {LABELS.next}
-                  </TapeChip>
-                ) : (
-                  <span className="w-16" aria-hidden="true" />
-                )}
-              </div>
-            )}
-          </>
-        )}
-          </>
-        )}
+
+              {brief && page === 0 && <BulletinPanel brief={brief} />}
+
+              {filtered.length === 0 ? (
+                <div className="mt-10 flex flex-col items-start gap-4">
+                  <span className="font-poster text-xl tracking-[0.1em] text-ink-dim">
+                    {LABELS.nothing}
+                  </span>
+                  {hasActiveFilters(filterState) && (
+                    <TapeChip
+                      tilt={-1}
+                      onClick={() =>
+                        setFilterState({ ...EMPTY_FILTER, category: filterState.category })
+                      }
+                    >
+                      {LABELS.clearFilters}
+                    </TapeChip>
+                  )}
+                </div>
+              ) : (
+                <>
+                  {lead && page === 0 && <LeadClipping article={lead} now={now} />}
+                  {pageItems.length > 0 && (
+                    <ClippingsList
+                      articles={pageItems}
+                      totalCount={rest.length}
+                      now={now}
+                    />
+                  )}
+                  {totalPages > 1 && (
+                    <div className="mt-6 flex items-center justify-center gap-5">
+                      {page > 0 ? (
+                        <TapeChip tilt={-1} onClick={() => setPage((p) => Math.max(0, p - 1))}>
+                          {LABELS.prev}
+                        </TapeChip>
+                      ) : (
+                        <span className="w-16" aria-hidden="true" />
+                      )}
+                      <span className="font-wire text-[11px] tabular-nums text-ink-dim">
+                        {LABELS.pageOf(page + 1, totalPages)}
+                      </span>
+                      {page < totalPages - 1 ? (
+                        <TapeChip tilt={1} onClick={() => setPage((p) => p + 1)}>
+                          {LABELS.next}
+                        </TapeChip>
+                      ) : (
+                        <span className="w-16" aria-hidden="true" />
+                      )}
+                    </div>
+                  )}
+                </>
+              )}
+            </>
+          )}
+        </main>
 
         <PressFooter
           data={data}
