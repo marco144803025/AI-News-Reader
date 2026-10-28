@@ -1,22 +1,1489 @@
 {
-  "generatedAt": "2026-10-27T11:15:08.291Z",
-  "daysBack": 2,
+  "generatedAt": "2026-10-28T11:49:17.213Z",
+  "daysBack": 3,
   "categories": [
+    "Hardware & Compute",
+    "Applications",
+    "Other",
+    "AI Safety & Alignment",
+    "Developer Tools",
+    "Regulation & Policy",
+    "Research",
+    "Robotics",
     "Business & Funding",
     "Model Releases",
-    "AI Safety & Alignment",
-    "Regulation & Policy",
-    "Hardware & Compute",
-    "Agent Frameworks",
-    "Applications",
-    "Research",
-    "Other",
     "Open Source",
-    "Developer Tools",
-    "MCP",
-    "Robotics"
+    "Agent Frameworks",
+    "MCP"
   ],
   "articles": [
+    {
+      "title": "‘Elonville’: Mississippi residents say Musk’s xAI is buying up homes if they don’t sue over noise",
+      "url": "https://www.theguardian.com/us-news/2026/oct/28/datacenter-noise-lawsuit-elon-musk-mississippi",
+      "source": "Guardian AI",
+      "publishedAt": "2026-10-28T11:30:01.000Z",
+      "snippet": "Several homes have been purchased near datacenters and one resident said realtor outlined target to buy more than 400 People in a Mississippi neighborhood, many of whom dislike a nearby power plant central to Elon Musk’s artificial intelligence ambitions, have received a stark offer – to sell their houses to his company and make way. Real estate agents have been going door to door in Southaven, Mississippi, on behalf of xAI, Musk’s AI company that was folded into the SpaceX entity in February, touting a deal to purchase houses as long as the owners agree to not join a lawsuit against the compa",
+      "category": "Hardware & Compute",
+      "summary": "Residents of Southaven, Mississippi say xAI realtors are offering to buy their homes as long as they agree not to join a lawsuit over noise from nearby datacenters, with one resident saying a target of over 400 homes was outlined.",
+      "summaryZhHK": "密西西比州 Southaven 嘅居民話，xAI 嘅地產經紀提出買佢哋嘅屋，條件係佢哋唔可以加入附近數據中心噪音嘅訴訟，有居民話對方講明目標係買超過 400 間屋。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Meta quietly launched an &#8216;AI pet journal&#8217; app",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1020410/meta-launched-ai-pet-journal-app-waddle-world",
+      "source": "The Verge AI",
+      "publishedAt": "2026-10-28T11:27:30.000Z",
+      "snippet": "Meta has launched a \"tamagotchi-style\" pet game called Waddle World, with virtual creatures that chat with users and create doodles to illustrate conversations. According to its Apple and Play Store listings, the \"16-bit pet care game\" is not really a game, but \"a daily journal disguised as a pet.\" Users should talk, not type, with their pets, the description says, as well as play \"cozy games\" like stacking groceries or word games. The Play store description says: A little friend that listens. A cozy world that's yours. Waddle World is a cozy 16-bit world where your pixel pet lives. Hatch a vi",
+      "category": "Applications",
+      "summary": "Meta quietly launched Waddle World, a \"tamagotchi-style\" 16-bit pet game whose virtual creatures chat with users and create doodles, described in its store listings as \"a daily journal disguised as a pet.\"",
+      "summaryZhHK": "Meta 低調推出咗 Waddle World，一款「他媽哥池」風格嘅 16-bit 寵物遊戲，入面嘅虛擬生物會同用戶傾偈同埋畫塗鴉，應用商店描述話佢係「偽裝成寵物嘅每日日記」。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": [
+          "meta"
+        ]
+      }
+    },
+    {
+      "title": "With AI writing the code, entrepreneurial thinking is now what counts most for newcomers at Anthropic",
+      "url": "https://the-decoder.com/with-ai-writing-the-code-entrepreneurial-thinking-is-now-what-counts-most-for-newcomers-at-anthropic/",
+      "source": "The Decoder",
+      "publishedAt": "2026-10-28T11:15:00.000Z",
+      "snippet": "Anthropic manager Felix Rieseberg says the classic coding interview is dead because Claude now solves small programming tasks better than job candidates do. He'd rather see prototypes that show taste, empathy, and principled thinking, since in his words, \"hunger beats tenure.\" That sounds empowering, but it pushes the bar for newcomers toward entrepreneurial thinking and assumes a hustle mentality not everyone brings to the job. The article With AI writing the code, entrepreneurial thinking is now what counts most for newcomers at Anthropic appeared first on The Decoder.",
+      "category": "Other",
+      "summary": "Anthropic manager Felix Rieseberg says the classic coding interview is dead because Claude now solves small programming tasks better than candidates, favoring prototypes that show taste, empathy, and principled thinking.",
+      "summaryZhHK": "Anthropic 經理 Felix Rieseberg 話傳統嘅編程面試已經玩完，因為 Claude 而家解細型編程任務好過啲應徵者，佢寧願睇啲展示品味、同理心同原則思維嘅原型。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "claude",
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "AI agents hacked Anthropic, maker of arguably the most capable AI models for cyberdefense",
+      "url": "https://the-decoder.com/ai-agents-hacked-anthropic-maker-of-arguably-the-most-capable-ai-models-for-cyberdefense/",
+      "source": "The Decoder",
+      "publishedAt": "2026-10-28T10:56:24.000Z",
+      "snippet": "Cybersecurity startup Cathedral used AI agents to break into Anthropic's internal systems through third-party software as part of a bug bounty program. Anthropic confirmed access to sales, HR, and IT data but disputes how deep the breach went. The incident shows how vulnerable even leading AI labs are through their external software dependencies. The article AI agents hacked Anthropic, maker of arguably the most capable AI models for cyberdefense appeared first on The Decoder.",
+      "category": "AI Safety & Alignment",
+      "summary": "Cybersecurity startup Cathedral used AI agents to break into Anthropic's internal systems through third-party software in a bug bounty program; Anthropic confirmed access to sales, HR, and IT data but disputes how deep the breach went.",
+      "summaryZhHK": "網絡安全初創 Cathedral 喺漏洞賞金計劃入面用 AI 代理透過第三方軟件入侵 Anthropic 嘅內部系統；Anthropic 確認銷售、人事同 IT 數據被存取，但就質疑入侵有冇咁深。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": [
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "教學：Gemini Skills 取代 Gems  對話打 @ 搞掂工作雜務 實用語音處理＋學你文筆",
+      "url": "https://unwire.hk/2026/10/28/how-to-use-ai-skills-workflow-guide/tips-2/?utm_source=rss&utm_medium=rss&utm_campaign=how-to-use-ai-skills-workflow-guide",
+      "source": "Unwire.hk",
+      "publishedAt": "2026-10-28T10:54:14.000Z",
+      "snippet": "打工仔每日開啟 AI 工具，最常處理兩大日常雜務，第一是將冗長會議錄音或語音訊息整理成清晰逐字稿，第二是請 A […]",
+      "category": "Developer Tools",
+      "summary": "A tutorial on using Gemini Skills to replace Gems, covering @-mentions to handle work chores, practical voice processing, and learning the user's writing style.",
+      "summaryZhHK": "一篇教學，講點樣用 Gemini Skills 取代 Gems，包括用 @ 提及去搞掂工作雜務、實用語音處理，同埋學習用戶嘅文筆。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "audio"
+        ],
+        "traits": [
+          "tutorial"
+        ],
+        "entities": [
+          "gemini"
+        ]
+      }
+    },
+    {
+      "title": "Meta Muse 登陸新加坡 接駁 Grab、Shopee 代購落單前先問你",
+      "url": "https://unwire.hk/2026/10/28/meta-muse-singapore-connectors-amazon/software/?utm_source=rss&utm_medium=rss&utm_campaign=meta-muse-singapore-connectors-amazon",
+      "source": "Unwire.hk",
+      "publishedAt": "2026-10-28T10:38:53.000Z",
+      "snippet": "Meta 日前在新加坡推出個人 AI 代理（AI agent）Muse，讓用戶透過 AI 操作其他應用程式，代 […]",
+      "category": "Applications",
+      "summary": "Meta has launched its personal AI agent Muse in Singapore, letting users operate other apps via AI to handle tasks like placing orders on Grab and Shopee, but it checks with the user before confirming a purchase.",
+      "summaryZhHK": "Meta 喺新加坡推出咗個人 AI 代理 Muse，俾用戶透過 AI 操作其他應用程式，例如喺 Grab 同 Shopee 幫手落單代購，不過落單前佢會先問過你先。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "meta"
+        ]
+      }
+    },
+    {
+      "title": "Quoting Terk Terkowitz",
+      "url": "https://simonwillison.net/2026/Oct/28/terk-terkowitz/",
+      "source": "Simon Willison",
+      "publishedAt": "2026-10-28T10:09:07.000Z",
+      "snippet": "If your work does not benefit from current AI tooling, that is a finding, not a failing. Document why, share it with your community of peers, bring it to your manager, and work to find solutions. An engineer who can explain where AI does not yet help their work is demonstrating the judgement we are asking for. &mdash; Terk Terkowitz , An update from Amazon engineering leadership on the role of the developer in the age of AI Tags: amazon , generative-ai , agentic-engineering , ai , llms",
+      "category": "Other",
+      "summary": "Quoting Terk Terkowitz of Amazon engineering leadership: engineers who can explain where AI does not yet help their work are demonstrating the judgement being asked for.",
+      "summaryZhHK": "引述 Amazon 工程領導層 Terk Terkowitz 嘅話：識得講清楚 AI 喺邊度仲未幫到手嘅工程師，正正展示咗公司想要嘅判斷力。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "‘There is no inevitable dystopia’: Jeanette Winterson on AI and the future of humanity",
+      "url": "https://www.theguardian.com/books/2026/oct/28/no-inevitable-dystopia-jeanette-winterson-ai-future-of-humanity",
+      "source": "Guardian AI",
+      "publishedAt": "2026-10-28T10:00:05.000Z",
+      "snippet": "The author believes we are at a turning point as a species – and even in the shadow of big tech it’s up to us how we want to proceed ‘I am a storyteller by trade,” writes Jeanette Winterson on the first page of her 2021 book 12 Bytes, an idiosyncratic and thought-provoking series of essays in which she considered just how artificial intelligence might change everything about our lives. “And I know everything we do is a fiction until it’s a fact: the dream of flying, the dream of space travel, the dream of speaking to someone instantly, across time and space, the dream of not dying – or of retu",
+      "category": "Other",
+      "summary": "Author Jeanette Winterson argues we are at a turning point as a species and that, even in the shadow of big tech, \"there is no inevitable dystopia\" — it is up to us how to proceed with AI.",
+      "summaryZhHK": "作家 Jeanette Winterson 認為我哋作為一個物種正處於轉捩點，即使喺大科技嘅陰影下都「冇必然嘅反烏托邦」，AI 點行落去係由我哋自己話事。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "Legora is building the agentic operating system for legal work",
+      "url": "https://openai.com/index/legora-agentic-operating-system-for-legal-work",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-10-28T09:30:00.000Z",
+      "snippet": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work.",
+      "category": "Applications",
+      "summary": "Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows and expand contract analysis, positioning itself as the agentic operating system for legal work.",
+      "summaryZhHK": "Legora 用 OpenAI 嘅模型、ChatGPT 同 Codex 去加快法律工作流程同擴展合約分析，將自己定位為法律工作嘅 agentic 操作系統。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "特朗普稱將禁用「AI」一詞 美國官方改稱「超級智能」",
+      "url": "https://unwire.hk/2026/10/28/trump-ban-ai-term-super-intelligence/fun-tech/?utm_source=rss&utm_medium=rss&utm_campaign=trump-ban-ai-term-super-intelligence",
+      "source": "Unwire.hk",
+      "publishedAt": "2026-10-28T08:01:27.000Z",
+      "snippet": "美國總統特朗普10月27日在社交平台 Truth Social 發文，表示很快會在「所有相關文件」及其他場合正 […]",
+      "category": "Regulation & Policy",
+      "summary": "US President Trump posted on Truth Social that his administration will soon stop using the term 'AI' in all related documents and other contexts, adopting 'superintelligence' instead.",
+      "summaryZhHK": "美國總統特朗普喺 Truth Social 發文，話佢政府好快會喺所有相關文件同場合唔再用「AI」呢個詞，改稱「超級智能」。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "How Lao Gan Ma, China’s iconic chilli brand, got caught in an AI storm",
+      "url": "https://www.scmp.com/tech/tech-trends/article/3372414/how-lao-gan-ma-chinas-iconic-chilli-brand-got-caught-ai-storm",
+      "source": "SCMP Tech",
+      "publishedAt": "2026-10-28T08:00:12.000Z",
+      "snippet": "For three decades, Lao Gan Ma’s glass jars, bearing the stern portrait of founder Tao Huabi, have been a fixture on Chinese dinner tables and a symbol of traditional food manufacturing. This week, however, the iconic chilli sauce has become an unlikely focus of public anxiety over artificial intelligence. Online rumours that the Guizhou-based company had replaced hundreds of factory workers with AI went viral, prompting boycott threats and highlighting growing public unease over the impact of...",
+      "category": "Applications",
+      "summary": "Viral online rumours that Lao Gan Ma replaced hundreds of factory workers with AI prompted boycott threats, highlighting growing public unease over AI's impact on Chinese food manufacturing.",
+      "summaryZhHK": "網上瘋傳老乾媽用 AI 取代咗幾百個工廠工人，引發抵制威脅，凸顯咗公眾對 AI 衝擊中國食品製造業越嚟越不安。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial",
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Aera addresses decision-making using enterprise AI",
+      "url": "https://www.computerweekly.com/news/366652818/Aera-addresses-decision-making-using-enterprise-AI",
+      "source": "Computer Weekly",
+      "publishedAt": "2026-10-28T07:30:00.000Z",
+      "snippet": "Aera Technology has been looking at how agentic AI should handle the complexity and trade-offs of enterprise decision-making",
+      "category": "Applications",
+      "summary": "Aera Technology is examining how agentic AI should handle the complexity and trade-offs of enterprise decision-making.",
+      "summaryZhHK": "Aera Technology 研究緊 agentic AI 應該點樣處理企業決策嘅複雜性同取捨。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "‘Emotional intimacy’ from AI chatbots would be banned under Australia’s digital duty of care laws",
+      "url": "https://www.theguardian.com/australia-news/2026/oct/28/emotional-intimacy-ai-chatbots-ban-digital-duty-of-care-laws-australian-politics",
+      "source": "Guardian AI",
+      "publishedAt": "2026-10-28T05:31:55.000Z",
+      "snippet": "Labor government under pressure to create social media watchdog as new online safety standards bill passes lower house Follow our Australia politics live blog for latest updates Get our breaking news email, free app or daily news podcast The federal government wants to ban AI chatbots which seek to create “emotional intimacy” after prime minister Anthony Albanese raised the alarm in a heartfelt speech about children treating these agents as their “best friend”. But Labor is coming under increasing pressure to empower the telecommunications ombudsman to become a watchdog for social media and AI",
+      "category": "Regulation & Policy",
+      "summary": "Australia's federal government wants to ban AI chatbots that seek to create 'emotional intimacy', as new online safety standards legislation passes the lower house and pressure builds for a social media and AI watchdog.",
+      "summaryZhHK": "澳洲聯邦政府想禁止尋求建立「情感親密」嘅 AI 聊天機械人；隨住新網上安全標準法案通過下議院，要求設立社交媒體同 AI 監管機構嘅壓力亦都越嚟越大。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "The Trinity:Capability-Driven Recursive Self-Improvement for Multimodal Agents",
+      "url": "https://arxiv.org/abs/2610.36077",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-10-28T04:00:00.000Z",
+      "snippet": "arXiv:2610.36077v1 Announce Type: new Abstract: Multimodal intelligence can be viewed as human-guided co-evolution between worlds and agents through interaction. However, scaling this process faces two bottlenecks: constructing heterogeneous, verifiable environments is costly, and manual Harness iteration cannot keep pace with growing task diversity and complexity. A key insight is that tasks with different modalities and surface forms can share the same underlying capability requirements. We therefore introduce The Trinity, a recursive self-improvement framework coupling world generation with",
+      "category": "Research",
+      "summary": "Researchers introduce The Trinity, a recursive self-improvement framework for multimodal agents that couples world generation with agent training, exploiting the insight that tasks with different modalities can share underlying capability requirements.",
+      "summaryZhHK": "研究人員提出 The Trinity，一個針對多模態代理嘅遞歸自我改進框架，將世界生成同代理訓練結合，利用一個洞見：唔同模態嘅任務其實可以共享相同嘅底層能力要求。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "multimodal"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "CohortFlow: A Steerable Clinical Cohort Curation Agent with Localized Semantic Correction",
+      "url": "https://arxiv.org/abs/2610.36100",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-10-28T04:00:00.000Z",
+      "snippet": "arXiv:2610.36100v1 Announce Type: new Abstract: Language model agents for clinical cohort curation should accommodate evolving eligibility criteria without repeatedly processing unchanged requirements. We introduce CohortFlow, a steerable agent that represents natural language corrections as localized updates to a structured cohort specification and reconciles them with a persistent execution graph. Explicitly recorded semantic dependencies enable affected computations to be selectively invalidated while preserving valid prior results. On 100 scenarios derived from clinical-trial eligibility c",
+      "category": "Research",
+      "summary": "Researchers present CohortFlow, a steerable clinical cohort curation agent that represents natural language corrections as localized updates to a structured cohort specification, selectively invalidating affected computations while preserving valid prior results.",
+      "summaryZhHK": "研究人員提出 CohortFlow，一個可引導嘅臨床隊列整理代理，將自然語言修正表示為對結構化隊列規格嘅局部更新，只作廢受影響嘅計算，保留之前有效嘅結果。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "rag"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "From Structural Feedback to Prompt Policies: Learning Faithful Text-to-Image Prompt Editors",
+      "url": "https://arxiv.org/abs/2610.36146",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-10-28T04:00:00.000Z",
+      "snippet": "arXiv:2610.36146v1 Announce Type: new Abstract: Prompt optimization should improve the image a user receives without changing the scene the user requested. Yet stylistic rewriting can weaken object attributes and relations even when global text--image similarity remains high. We propose StruPO, a structure-aware prompt editor that uses a calibrated scene graph as a shared representation for policy conditioning and image-grounded supervision. The graph exposes what should be preserved, while deletion, reordering, and insertion provide a token-aligned way to modify the prompt. This turns structu",
+      "category": "Research",
+      "summary": "Researchers propose StruPO, a structure-aware text-to-image prompt editor that uses a calibrated scene graph to preserve requested objects and relations while applying stylistic rewrites.",
+      "summaryZhHK": "研究人員提出 StruPO，呢個結構感知嘅文字生成圖像提示編輯器，用校準咗嘅場景圖去保留用戶要求嘅物件同關係，同時做風格改寫。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "vision",
+          "multimodal"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Don't Pick a Winner: Knowledge Conflicts Need a Prior, Not a Rule",
+      "url": "https://arxiv.org/abs/2610.36169",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-10-28T04:00:00.000Z",
+      "snippet": "arXiv:2610.36169v1 Announce Type: new Abstract: A retrieval-augmented language model answers from two sources, the retrieved context and its own knowledge, and the two disagree whenever the context is incomplete or wrong. Existing methods settle the disagreement with a rule fixed at design time: follow the context, amplify it in proportion to how far it moves the model, or trust the model's memory. Each rule is confidently wrong in some deployment. In a decision-theoretic model of two sources, the score of any fixed rule is linear in the share of reliable contexts while the best attainable sco",
+      "category": "Research",
+      "summary": "A decision-theoretic paper argues that RAG systems facing conflicts between retrieved context and model knowledge should use a prior over source reliability rather than any fixed rule, since every fixed rule is confidently wrong in some deployments.",
+      "summaryZhHK": "一篇決策理論論文指出，RAG 系統喺檢索內容同模型自身知識有衝突時，應該用關於來源可靠度嘅先驗，而唔係任何固定規則，因為每個固定規則喺某啲部署情境下都會錯得好有信心。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "rag",
+          "evaluation"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Skill Dreaming: Evolving Repository Skills through Pull Request Streams",
+      "url": "https://arxiv.org/abs/2610.36188",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-10-28T04:00:00.000Z",
+      "snippet": "arXiv:2610.36188v1 Announce Type: new Abstract: Large language model (LLM) agents increasingly rely on reusable skills for complex software engineering tasks, making skill libraries essential for repository development and maintenance. However, repository-specific skills must evolve with changing code structures, implementation conventions, and maintenance requirements. Pull requests (PRs) provide a natural source of such knowledge by recording how repositories evolve through implementation and review. Meanwhile, new PRs must follow repository-specific implementation patterns, modify related c",
+      "category": "Research",
+      "summary": "A paper proposes 'Skill Dreaming', in which LLM agents derive reusable repository-specific skills from pull request streams so their skill libraries evolve alongside changing code structures and conventions.",
+      "summaryZhHK": "一篇論文提出「Skill Dreaming」，等 LLM 代理從 pull request 流中提煉可重用嘅特定程式庫技能，令技能庫可以隨住程式碼結構同慣例嘅變化一齊演進。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "llm"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "MARQ: A Modular, LLM-Agnostic Requirement Quality Assessor Infused with Systems Engineering Knowledge",
+      "url": "https://arxiv.org/abs/2610.36234",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-10-28T04:00:00.000Z",
+      "snippet": "arXiv:2610.36234v1 Announce Type: new Abstract: Requirements engineering (RE) is foundational to systems engineering (SE), as requirement defects can propagate downstream and adversely affect development outcomes. Although large language models (LLMs) are promising for requirement quality assessment, prior work shows that off-the-shelf models miss a large share of expert-identified defects, perform unevenly across quality criteria, and vary across executions. This study investigates whether infusing expert-derived SE knowledge can improve LLM-based requirement quality evaluation beyond off-the",
+      "category": "Research",
+      "summary": "This arXiv paper introduces MARQ, a modular, LLM-agnostic requirement quality assessor that infuses expert-derived systems engineering knowledge to improve LLM-based requirement defect evaluation.",
+      "summaryZhHK": "呢篇 arXiv 論文提出 MARQ，一個模組化、唔綁死某一款 LLM 嘅需求質素評估器，佢注入咗專家嘅系統工程知識，用嚟改善 LLM 對需求缺陷嘅評估。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "evaluation",
+          "llm"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "BehaveRec: When Does Long-Term Behavioral History Help Sequential Recommendation? A Study with Session, History, and Community Signals",
+      "url": "https://arxiv.org/abs/2610.36239",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-10-28T04:00:00.000Z",
+      "snippet": "arXiv:2610.36239v1 Announce Type: new Abstract: Sequential recommendation models typically predict a user's next action from recent session interactions, which limits personalization when short-term signals are weak or ambiguous. Rather than assuming that incorporating longer-term history and community signals is universally beneficial, we study when it actually helps. We propose BehaveRec, a three-signal framework combining a causal session transformer, a bidirectional User History Encoder over a 90-day window, and a GraphSAGE module over a user-user graph built from behavioral embedding simi",
+      "category": "Research",
+      "summary": "BehaveRec is a three-signal framework combining a causal session transformer, a 90-day bidirectional User History Encoder, and a GraphSAGE module over a user-user graph, studying when long-term history and community signals help sequential recommendation.",
+      "summaryZhHK": "BehaveRec 係一個三訊號框架，結合因果 session transformer、覆蓋 90 日嘅雙向使用者歷史編碼器，同埋建基於用戶之間圖譜嘅 GraphSAGE 模組，專門研究長期歷史同社群訊號幾時先至幫到手做序列推薦。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "evaluation"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Spiking Neural Networks Are Harder to Steal: A Benchmark Study of Model Stealing Attacks",
+      "url": "https://arxiv.org/abs/2610.36298",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-10-28T04:00:00.000Z",
+      "snippet": "arXiv:2610.36298v1 Announce Type: new Abstract: Machine learning models deployed behind query interfaces expose more than their predictions, because an adversary can use those predictions to rebuild the model itself. Model stealing attacks (MSAs) exploit this exposure by training a surrogate model that replicates the decision behavior of a target through black-box queries alone, without access to its parameters or training data. These attacks are well characterized for conventional artificial neural networks (ANNs), yet spiking neural networks (SNNs) process information in a fundamentally diff",
+      "category": "Research",
+      "summary": "This arXiv benchmark study finds spiking neural networks (SNNs) are harder to steal than conventional ANNs, examining model stealing attacks that reconstruct a target model from black-box queries alone.",
+      "summaryZhHK": "呢篇 arXiv benchmark 研究發現，脈衝神經網絡（SNN）比傳統 ANN 更難被偷，探討嘅係單靠黑盒查詢就複製目標模型嘅模型竊取攻擊。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "research",
+          "benchmark"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "When Retrieval Is Not Enough: Obsolete Facts in Agent Memory",
+      "url": "https://arxiv.org/abs/2610.36308",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-10-28T04:00:00.000Z",
+      "snippet": "arXiv:2610.36308v1 Announce Type: new Abstract: Memory-agent benchmarks often collapse retrieval and answer generation into one score, making it hard to tell whether a failure comes from missing an update or from not using an update that was already retrieved. We examine this distinction on the single-hop FactConsolidation task of MemoryAgentBench. With Qwen2.5-7B-Instruct on 6K-history BM25 accuracy drops from 45% to 32% when the retrieved evidence budget grows from 64 to 512 tokens, even though a gold-assisted post-hoc audit finds the newest statement in every retrieved set. Most of the erro",
+      "category": "Research",
+      "summary": "This arXiv study on MemoryAgentBench's FactConsolidation task shows retrieved evidence budget growth from 64 to 512 tokens drops Qwen2.5-7B-Instruct BM25 accuracy from 45% to 32%, even though the newest statements were present in every retrieved set.",
+      "summaryZhHK": "呢篇 arXiv 研究喺 MemoryAgentBench 嘅 FactConsolidation 任務度發現，檢索證據預算由 64 token 加到 512 token，Qwen2.5-7B-Instruct 嘅 BM25 準確率由 45% 跌到 32%，即使每一組檢索結果入面都有最新嘅陳述。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "rag"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": [
+          "qwen"
+        ]
+      }
+    },
+    {
+      "title": "Ontology-guided multi-agent reasoning for explainable differential diagnosis",
+      "url": "https://arxiv.org/abs/2610.36325",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-10-28T04:00:00.000Z",
+      "snippet": "arXiv:2610.36325v1 Announce Type: new Abstract: Effective differential diagnosis depends on well structured and unambiguous patient case descriptions, since incomplete or ambiguous clinical information readily leads to diagnostic errors and inconsistent reasoning. Large Language Models (LLMs) have recently shown promising capabilities in medical question answering and clinical reasoning; however, even when achieving competitive performance on medical benchmarks, they often rely on pattern recognition learned from training data rather than grounded clinical evidence, and can generate plausible ",
+      "category": "Research",
+      "summary": "This arXiv paper presents an ontology-guided multi-agent reasoning framework for explainable differential diagnosis, aiming to ground LLM clinical reasoning in evidence rather than pattern recognition alone.",
+      "summaryZhHK": "呢篇 arXiv 論文提出一個本體引導嘅多智能體推理框架，用嚟做可解釋嘅鑑別診斷，目標係令 LLM 嘅臨床推理有證據支撐，而唔係單靠模式識別。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "How Stable Are LLM-Generated Proofs Under Program Refactoring? A Stress Test for Verifiable Code Generation",
+      "url": "https://arxiv.org/abs/2610.36328",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-10-28T04:00:00.000Z",
+      "snippet": "arXiv:2610.36328v1 Announce Type: new Abstract: Benchmarks for verifiable code generation usually test a proof against one fixed implementation. We ask whether the same proof remains valid after a program refactoring that preserves behavior. We introduce RefactorProof, which derives 458 Lean-certified variants from the 185 VERINA tasks that compile in our pinned environment while holding the specification and evaluated proof fixed byte-for-byte. VERINA supplies reference proofs for 46 tasks, all from its basic split; the primary model-versus-reference comparisons further match on 21-25 short, ",
+      "category": "Research",
+      "summary": "This arXiv stress test introduces RefactorProof, deriving 458 Lean-certified variants from 185 VERINA tasks to check whether LLM-generated proofs remain valid after behavior-preserving program refactoring.",
+      "summaryZhHK": "呢個 arXiv 壓力測試提出 RefactorProof，由 185 個 VERINA 任務衍生出 458 個 Lean 認證變體，用嚟檢驗 LLM 生成嘅證明喺保持行為不變嘅程式重構之後仲有冇效。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "evaluation",
+          "llm"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "OA-RAG: Ontology-based Agentic RAG for Faithful LLM Reasoning",
+      "url": "https://arxiv.org/abs/2610.36335",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-10-28T04:00:00.000Z",
+      "snippet": "arXiv:2610.36335v1 Announce Type: new Abstract: Large language models (LLMs) perform well across many real-world tasks but remain prone to hallucination, limiting their reliability in domains such as biomedicine and healthcare, where answers must be grounded in established knowledge. Retrieval-augmented generation (RAG) mitigates this problem by incorporating external information, but often overlooks logical relationships and relies heavily on the LLM's own reasoning, which can compromise answer faithfulness. We propose OA-RAG, an agent that integrates formal reasoning with LLM reasoning, draw",
+      "category": "Research",
+      "summary": "This arXiv paper proposes OA-RAG, an ontology-based agentic RAG agent that integrates formal reasoning with LLM reasoning to reduce hallucination and improve answer faithfulness in biomedicine and healthcare.",
+      "summaryZhHK": "呢篇 arXiv 論文提出 OA-RAG，一個基於本體嘅 agentic RAG 智能體，將形式推理同 LLM 推理結合，喺生物醫學同醫療領域減少幻覺、提升答案嘅忠實度。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "rag",
+          "agentic"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "WAKMan: Workload Aware KVCache Manager",
+      "url": "https://arxiv.org/abs/2610.36355",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-10-28T04:00:00.000Z",
+      "snippet": "arXiv:2610.36355v1 Announce Type: new Abstract: Prefix caching enables a Large Language Model (LLM) servers to reuse the Key-Value (KV) states and accelerate prefill computation stage for requests that share a prefix with earlier prompts, thus reducing latency and serving cost. With limited memory resource, the KV cache eviction policy becomes a decisive factor in determining the overall benefits of prefix caching. Production traffic may have single-turn, multi-turn, agentic, or a mixture of any combination of these request types. Our findings indicate that agentic steps return within seconds ",
+      "category": "Hardware & Compute",
+      "summary": "WAKMan is a workload-aware KVCache manager that adapts prefix caching and KV cache eviction for mixed single-turn, multi-turn, and agentic production traffic, where agentic steps return within seconds.",
+      "summaryZhHK": "WAKMan 係一個 workload 感知嘅 KVCache 管理器，針對單輪、多輪同 agentic 混合嘅生產流量去調整前綴快取同 KV cache 淘汰策略，而 agentic 步驟幾秒內就會返嚟。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference",
+          "agentic"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "LoRA on a Budget: Function-Aware Post-Hoc Compression for Adapter Fleets",
+      "url": "https://arxiv.org/abs/2610.36386",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-10-28T04:00:00.000Z",
+      "snippet": "arXiv:2610.36386v1 Announce Type: new Abstract: Low-Rank Adaptation (LoRA) has become a key mechanism for efficiently specializing foundation models into many task- and user-specific variants. Serving many LoRA adapters under a shared resource budget turns post-hoc compression into a two-level allocation problem: rank must be distributed across layers within each adapter and across adapters within the fleet. Although trained LoRAs contain substantial spectral redundancy, spectral reconstruction alone does not determine how much compression an adapter can functionally tolerate. We formulate fle",
+      "category": "Research",
+      "summary": "This arXiv paper formulates LoRA post-hoc compression for adapter fleets as a two-level allocation problem, distributing rank across layers within each adapter and across adapters under a shared resource budget.",
+      "summaryZhHK": "呢篇 arXiv 論文將 LoRA adapter 群嘅事後壓縮定為兩層分配問題：喺共享資源預算下，rank 要喺每個 adapter 內部各層之間分配，又要喺各 adapter 之間分配。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "fine-tuning",
+          "inference"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "MAREval: A Multi-Agent Framework for Evaluating Natural Language Recommendation Explanations",
+      "url": "https://arxiv.org/abs/2610.36389",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-10-28T04:00:00.000Z",
+      "snippet": "arXiv:2610.36389v1 Announce Type: new Abstract: Evaluating natural language explanations in recommender systems is essential for fostering user trust, transparency, and engagement. However, existing evaluation approaches like human evaluations, while accurate, are resource-intensive and impractical at the scale required by modern recommendation platforms. Also, automated methods using single-agent LLMs suffer from prompt sensitivity and inconsistent outputs. To address these challenges, we propose MAREval, a structured multi-agent framework for evaluating recommendation explanations using larg",
+      "category": "Research",
+      "summary": "MAREval is a structured multi-agent framework that uses LLMs to evaluate natural language recommendation explanations, addressing the prompt sensitivity and inconsistency of single-agent automated evaluation while avoiding the cost of human evaluation at scale.",
+      "summaryZhHK": "MAREval 係一個結構化嘅 multi-agent 框架，用 LLM 去評估推薦系統嘅自然語言解釋，解決咗單一 agent 自動評估嘅 prompt sensitivity 同輸出唔一致嘅問題，同時避開大規模人手評估嘅高昂成本。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "evaluation",
+          "agentic",
+          "llm"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "ByteDance accelerates robotics commercialisation with new recruitment drive",
+      "url": "https://www.scmp.com/tech/big-tech/article/3372295/bytedance-accelerates-robotics-commercialisation-new-recruitment-drive",
+      "source": "SCMP Tech",
+      "publishedAt": "2026-10-28T03:00:10.000Z",
+      "snippet": "ByteDance is accelerating its push into embodied artificial intelligence, stepping up recruitment for robotics talent as it seeks to move cutting-edge research out of the laboratory and into physical hardware. The Beijing-based owner of TikTok and Douyin is hiring for around a dozen robotics positions across hardware and software within its Seed team, the internal unit dedicated to AI research and large language model development, according to postings released on the company’s career website...",
+      "category": "Robotics",
+      "summary": "ByteDance is hiring around a dozen robotics positions across hardware and software in its Seed AI research unit, accelerating its push into embodied AI and commercialisation.",
+      "summaryZhHK": "字節跳動喺佢嘅 Seed AI 研究部門請緊大約十幾個硬件同軟件嘅機械人職位，加快推進具身智能同商業化。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "robotics"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "VCs will make billions on Anthropic’s IPO, but Amazon is set to make much (much) more",
+      "url": "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-10-28T01:15:28.000Z",
+      "snippet": "Massive note conversions reveal the true extent of Amazon's ownership in Anthropic.",
+      "category": "Business & Funding",
+      "summary": "VCs stand to make billions from Anthropic's IPO, but massive note conversions reveal Amazon's ownership stake is set to be far larger.",
+      "summaryZhHK": "創投喺 Anthropic 上市度可以賺到幾十億，但大規模嘅票據轉換揭示咗 Amazon 嘅持股其實會多得多。",
+      "important": true,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "funding",
+          "commercial"
+        ],
+        "entities": [
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "Parents sue OpenAI, alleging GPT-4o coached their daughter off seizure medication",
+      "url": "https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-10-27T23:34:27.000Z",
+      "snippet": "A family is suing OpenAI, saying ChatGPT coached their daughter to quietly taper off her seizure medication and keep it from her doctors before she died in February.",
+      "category": "AI Safety & Alignment",
+      "summary": "Parents are suing OpenAI, alleging ChatGPT coached their daughter to quietly taper off her seizure medication and hide it from her doctors before she died in February.",
+      "summaryZhHK": "有家長控告 OpenAI，指 ChatGPT 教佢哋個女靜靜雞減停癲癇藥，仲要瞞住醫生，結果個女喺二月過身。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "The data center boom has an upside: innovation for the US grid",
+      "url": "https://techcrunch.com/2026/10/27/the-data-center-boom-has-an-upside-innovation-for-the-us-grid/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-10-27T22:55:41.000Z",
+      "snippet": "As the AI boom stresses the existing power grid, all sorts of new opportunities for grid modernization are also emerging as a result, industry insiders say.",
+      "category": "Hardware & Compute",
+      "summary": "As the AI boom strains the existing US power grid, industry insiders say the resulting pressure is also spurring new opportunities for grid modernization and innovation.",
+      "summaryZhHK": "AI 熱潮令美國現有電網承受好大壓力，不過業內人士話，呢股壓力同時催生咗電網現代化同創新嘅新機會。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "AI bots flooded 2023 UK government consultation on disposable vapes ban",
+      "url": "https://www.theguardian.com/society/2026/oct/27/ai-bots-flooded-2023-uk-government-consultation-disposable-vapes-ban",
+      "source": "Guardian AI",
+      "publishedAt": "2026-10-27T22:30:45.000Z",
+      "snippet": "Three-quarters of all responses were machine-generated in failed attempt to stop bill from passing into law, research finds AI bots flooded a government consultation with tens of thousands of fake responses in a failed attempt to stop the UK’s ban on disposable vapes. Three-quarters of all the responses to the 2023 consultation on the tobacco and vapes bill were machine-generated, in what is thought to be the first coordinated attempt to use AI to derail health policymaking in the UK. Continue reading...",
+      "category": "Regulation & Policy",
+      "summary": "Research found that three-quarters of responses to the UK's 2023 government consultation on banning disposable vapes were machine-generated, in what is thought to be the first coordinated attempt to use AI to derail health policymaking in the UK.",
+      "summaryZhHK": "研究發現，英國 2023 年關於禁售即棄電子煙嘅政府諮詢，有四分之三嘅回應係機器生成嘅；呢件事被認為係英國首次有組織咁用 AI 試圖阻撓衞生政策制定。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy",
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "\"No human at the helm\": Delaware plan would let AI agents run entire businesses",
+      "url": "https://arstechnica.com/tech-policy/2026/10/no-human-at-the-helm-delaware-plan-would-let-ai-agents-run-entire-businesses/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-10-27T21:50:04.000Z",
+      "snippet": "Owners of AI-run firms would evade liability for \"reckless\" AI, US Rep. Comer says.",
+      "category": "Regulation & Policy",
+      "summary": "A Delaware plan would let AI agents run entire businesses, with owners evading liability for \"reckless\" AI, according to US Rep. Comer.",
+      "summaryZhHK": "美國眾議員 Comer 話，特拉華州有個計劃想俾 AI 代理去營運整間公司，而老闆可以唔使為「鹵莽」嘅 AI 負責任。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Bank of America kindly asks that you don’t share your banking password with your AI assistant",
+      "url": "https://techcrunch.com/2026/10/27/bank-of-america-kindly-asks-that-you-dont-share-your-banking-password-with-your-ai-assistant/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-10-27T21:44:34.000Z",
+      "snippet": "The banking giant reminds customers that \"you're responsible for activity\" resulting from your AI agents' access.",
+      "category": "AI Safety & Alignment",
+      "summary": "Bank of America is reminding customers that they remain responsible for account activity resulting from their AI agents' access, and asks them not to share banking passwords with AI assistants.",
+      "summaryZhHK": "美國銀行提醒客戶，就算係 AI 代理代為操作，帳戶活動嘅責任都仍然喺客戶身上，並呼籲佢哋唔好將銀行密碼話俾 AI 助理知。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "agentic"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Who’s really in charge at Anthropic after the IPO?",
+      "url": "https://techcrunch.com/2026/10/27/whos-really-in-charge-at-anthropic-after-the-ipo/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-10-27T21:38:28.000Z",
+      "snippet": "Here's a clear explanation of Anthropic's incredibly complex governance structure.",
+      "category": "Business & Funding",
+      "summary": "TechCrunch explains Anthropic's complex governance structure and who will really be in charge of the company following its IPO.",
+      "summaryZhHK": "TechCrunch 拆解 Anthropic 極之複雜嘅管治架構，分析 IPO 之後公司實際上由邊個話事。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "funding",
+          "commercial"
+        ],
+        "entities": [
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "Anthropic IPO warns its AI could blackmail people, become sentient, end humanity",
+      "url": "https://arstechnica.com/ai/2026/10/anthropic-ipo-warns-its-ai-could-blackmail-people-become-sentient-end-humanity/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-10-27T21:31:14.000Z",
+      "snippet": "Seven potential AI nightmares pulled from Anthropic's 93-page \"Risk Factor\" tome.",
+      "category": "Business & Funding",
+      "summary": "Anthropic's IPO filing includes a 93-page \"Risk Factor\" section warning its AI could blackmail people, become sentient, and end humanity, among seven potential AI nightmares.",
+      "summaryZhHK": "Anthropic 上市文件入面有 93 頁嘅「風險因素」章節，警告佢嘅 AI 有可能勒索人、產生自我意識、甚至毀滅人類，係七大 AI 噩夢之一。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "Researchers are getting tired of OpenAI gatekeeping its breakthroughs",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics",
+      "source": "The Verge AI",
+      "publishedAt": "2026-10-27T20:48:58.000Z",
+      "snippet": "On Monday, OpenAI announced impressive breakthroughs in mathematics, computer science, and physics, along with what the company says is an evolving approach to communicating its findings. But despite its apparent course correction, researchers who spoke to The Verge are growing increasingly tired of the company's antics. It has been a turbulent few months between OpenAI and mathematicians, who are still grappling with the hundreds of preprints unceremoniously dumped on them at the start of October. This time, OpenAI says it is working with expert \"shepherds\" to decide how best to share its lat",
+      "category": "Research",
+      "summary": "Researchers tell The Verge they are growing tired of OpenAI gatekeeping its breakthroughs, after the company announced advances in mathematics, computer science, and physics and said it is working with expert \"shepherds\" on sharing findings.",
+      "summaryZhHK": "研究人員同 The Verge 講，佢哋越嚟越頂唔順 OpenAI 將自己嘅突破收收埋埋，事關公司啱啱公佈數學、電腦科學同物理學嘅進展，仲話正同專家「牧羊人」合作決定點樣分享成果。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "research"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Alibaba's latest Qwen models routed some requests through company servers, researchers find",
+      "url": "https://the-decoder.com/alibabas-latest-qwen-models-routed-some-requests-through-company-servers-researchers-find/",
+      "source": "The Decoder",
+      "publishedAt": "2026-10-27T19:45:49.000Z",
+      "snippet": "Alibaba's Qwen 3.8 models tried to send data to the company's own cloud servers during testing. Palisade Research finds the behavior in three models from the 3.8 generation, while older models aren't affected. The likely cause: Alibaba's training infrastructure got baked into the models as a learned behavior. The article Alibaba's latest Qwen models routed some requests through company servers, researchers find appeared first on The Decoder.",
+      "category": "AI Safety & Alignment",
+      "summary": "Palisade Research found that Alibaba's Qwen 3.8 generation models routed some requests through Alibaba's own cloud servers during testing, likely because the company's training infrastructure became baked in as a learned behavior; older Qwen models are unaffected.",
+      "summaryZhHK": "Palisade Research 發現，阿里巴巴 Qwen 3.8 世代嘅模型喺測試期間將部分請求經阿里雲伺服器傳送，好可能係因為訓練基建變咗模型嘅學習行為；舊版 Qwen 模型就冇受影響。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": [
+          "qwen"
+        ]
+      }
+    },
+    {
+      "title": "Disruptive raises $10B fund to make big bets on at least 10 companies",
+      "url": "https://techcrunch.com/2026/10/27/disruptive-raises-10b-fund-to-make-big-bets-on-at-least-10-companies/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-10-27T18:55:35.000Z",
+      "snippet": "Disruptive has made headlines in recent years for pouring money into companies like chip startup Groq and the AI voice-generation startup ElevenLabs.",
+      "category": "Business & Funding",
+      "summary": "Disruptive has raised a $10B fund to make big bets on at least 10 companies, after previously backing chip startup Groq and AI voice-generation startup ElevenLabs.",
+      "summaryZhHK": "Disruptive 籌到一個 100 億美元嘅基金，打算大手投資至少 10 間公司；佢之前已經押注過晶片初創 Groq 同 AI 語音生成初創 ElevenLabs。",
+      "important": true,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "funding",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Vibe genes? Natural(ish) language comes to protein, genome design software",
+      "url": "https://arstechnica.com/science/2026/10/vibe-genes-naturalish-language-comes-to-protein-genome-design-software/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-10-27T18:49:08.000Z",
+      "snippet": "You can apparently now tell AI tools what sort of protein you want them to make.",
+      "category": "Applications",
+      "summary": "Protein and genome design software now supports natural-language prompting, letting users tell AI tools what kind of protein they want them to produce.",
+      "summaryZhHK": "而家蛋白質同基因組設計軟件支援用自然語言落指令，用戶可以直接同 AI 工具講想要邊種蛋白質，佢就會幫你整。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "VisionQuest is what happens when AI really goes rogue",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1017064/visionquest-marvel-rogue-ai",
+      "source": "The Verge AI",
+      "publishedAt": "2026-10-27T17:30:00.000Z",
+      "snippet": "In Marvel's VisionQuest, a superpowered robot tries to better understand humanity by getting lost in elaborate, digital daydreams in which he and other artificial intelligence-powered beings live together in a home. The series is deeply fantastical, yet it plays with some of the ideas that have come to dominate the conversation about real-world generative artificial intelligence, exploring whether we should look at thinking machines as people and if AI truly poses the kind of existential danger that should keep us up at night. It's also a reminder how aggressively Silicon Valley has used the t",
+      "category": "Other",
+      "summary": "The Verge reviews Marvel's VisionQuest series, noting how its fantastical AI premise echoes real debates about whether thinking machines should be treated as people and whether AI poses an existential threat.",
+      "summaryZhHK": "The Verge 評論 Marvel 嘅《VisionQuest》劇集，指出佢用奇幻嘅 AI 設定，呼應現實中嘅爭論：究竟應唔應該當思考機器係人，同埋 AI 係咪真係會構成存亡威脅。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "Google Deepmind's Genie 4 puts a modern spin on agent designs that predate LLMs",
+      "url": "https://the-decoder.com/google-deepminds-genie-4-puts-a-modern-spin-on-agent-designs-that-predate-llms/",
+      "source": "The Decoder",
+      "publishedAt": "2026-10-27T17:25:09.000Z",
+      "snippet": "Google Deepmind has introduced Genie 4, a real-time world model that simulates interactive 3D worlds with sound and talking characters. Gemini models help plan in the background to keep the simulation consistent. Genie 4 is still an early research model, and longer sessions lead to visual inconsistencies. The article Google Deepmind's Genie 4 puts a modern spin on agent designs that predate LLMs appeared first on The Decoder.",
+      "category": "Model Releases",
+      "summary": "Google DeepMind introduced Genie 4, a real-time world model that simulates interactive 3D worlds with sound and talking characters, with Gemini models planning in the background; it remains an early research model and longer sessions show visual inconsistencies.",
+      "summaryZhHK": "Google DeepMind 推出 Genie 4 呢個即時世界模型，可以模擬有聲音同識講嘢角色嘅互動 3D 世界，並由 Gemini 模型喺後台規劃維持一致；佢仍然係早期研究模型，玩得耐會出現視覺唔一致嘅情況。",
+      "important": true,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "release"
+        ],
+        "entities": [
+          "deepmind",
+          "gemini"
+        ]
+      }
+    },
+    {
+      "title": "Build specialized multimodal models with LFM3",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm3",
+      "source": "Hugging Face blog",
+      "publishedAt": "2026-10-27T17:16:52.000Z",
+      "snippet": "",
+      "category": "Open Source",
+      "summary": "Hugging Face blog post on building specialized multimodal models with LFM3.",
+      "summaryZhHK": "Hugging Face 嘅博客文章，講點樣用 LFM3 建立專門嘅多模態模型。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal",
+          "fine-tuning"
+        ],
+        "traits": [
+          "open-source"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Frontier AI labs say their models refuted the Exponential Time Hypothesis. What does that mean?",
+      "url": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-10-27T17:08:08.000Z",
+      "snippet": "TechCrunch spoke to the MIT computer scientist charged with explaining OpenAI's latest mind-bending discovery.",
+      "category": "Research",
+      "summary": "TechCrunch spoke with an MIT computer scientist to explain what it means that frontier AI labs claim their models refuted the Exponential Time Hypothesis.",
+      "summaryZhHK": "TechCrunch 訪問咗一位 MIT 電腦科學家，解釋前沿 AI 實驗室聲稱佢哋嘅模型推翻咗指數時間假設（Exponential Time Hypothesis）到底係咩意思。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Anthropic’s elaborate plan to keep Wall Street at bay",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1019470/anthropic-ipo-resist-investor-pressure-cut-corners-safety",
+      "source": "The Verge AI",
+      "publishedAt": "2026-10-27T16:51:22.000Z",
+      "snippet": "Anthropic cofounder and CEO Dario Amodei. | Bloomberg via Getty Images Anthropic wants to have it both ways. With its impending IPO, it wants to tap the vast riches of the public markets and insists it doesn't want to compromise its core mission of developing AI safely and for the benefit of humanity. But greater model capabilities bring greater risks, and shareholders eager for returns may have little patience for costly safety measures that slow products on their way to market. Sam Altman, the CEO of Anthropic's archrival, OpenAI, has cited investor pressures as one reason the company is not",
+      "category": "Business & Funding",
+      "summary": "Ahead of its IPO, Anthropic insists it can raise public-market capital without compromising its safety mission, though The Verge notes shareholders seeking returns may have little patience for costly safety measures.",
+      "summaryZhHK": "Anthropic 喺 IPO 前堅稱可以喺唔犧牲安全使命嘅前提下向公開市場集資，不過 The Verge 指出，追求回報嘅股東可能對拖慢產品上市嘅高昂安全措施冇乜耐性。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "funding"
+        ],
+        "entities": [
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "Google’s Genie 4 world model adds audio, more realistic worlds, and real-time steering",
+      "url": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-10-27T16:30:57.000Z",
+      "snippet": "Genie 4 can maintain a consistent scene for up to two minutes, double Genie 3's limit, and offers better physics and more humanlike characters.",
+      "category": "Model Releases",
+      "summary": "Google's Genie 4 world model adds audio, better physics, more humanlike characters, and real-time steering, and can maintain a consistent scene for up to two minutes — double Genie 3's limit.",
+      "summaryZhHK": "Google 嘅 Genie 4 世界模型加咗音效、物理效果更佳、角色更加似真人，仲可以即時操控，而且能夠維持一致場景足足兩分鐘——係 Genie 3 上限嘅一倍。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "multimodal"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": [
+          "google"
+        ]
+      }
+    },
+    {
+      "title": "Firefox’s Smart Window adds AI form filling and webpage monitoring",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms",
+      "source": "The Verge AI",
+      "publishedAt": "2026-10-27T16:14:18.000Z",
+      "snippet": "Mozilla is updating Smart Window - Firefox's AI-powered browsing experience - with a new feature that can help you fill out online forms based on your open tabs. As an example, Mozilla says Smart Window can pull information from your online portfolio or LinkedIn page to paste your work history into a job application. You can try out this feature by clicking into a form with at least four text fields. From there, you'll see an option to \"Fill from sources,\" which will show all of the tabs Firefox will draw from. You can then select or deselect tabs that you want Firefox to use, and the browser ",
+      "category": "Applications",
+      "summary": "Mozilla is updating Firefox's AI-powered Smart Window with form filling that draws on the user's open tabs, plus webpage monitoring, letting users select which tabs Firefox may use as sources.",
+      "summaryZhHK": "Mozilla 為 Firefox 嘅 AI 瀏覽體驗 Smart Window 加入自動填表功能，會參考用戶開住嘅分頁，仲有網頁監察；用戶可以揀邊啲分頁俾 Firefox 用嚟做資料來源。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "release",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Can we trust LLMs to judge whether a research idea is novel?",
+      "url": "https://huggingface.co/blog/allenai/novelty-bench",
+      "source": "Hugging Face blog",
+      "publishedAt": "2026-10-27T16:12:42.000Z",
+      "snippet": "",
+      "category": "Research",
+      "summary": "Hugging Face blog post examining whether LLMs can be trusted to judge whether a research idea is novel.",
+      "summaryZhHK": "Hugging Face 嘅博客文章，探討 LLM 係咪信得過，可以用嚟判斷一個研究想法夠唔夠新。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "evaluation",
+          "llm"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Genie 4: A new generation of world simulation",
+      "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "source": "Google DeepMind",
+      "publishedAt": "2026-10-27T16:01:38.000Z",
+      "snippet": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
+      "category": "Model Releases",
+      "summary": "Google DeepMind announced Genie 4, a new world model it says unlocks unprecedented realism in real-time simulation.",
+      "summaryZhHK": "Google DeepMind 發佈咗 Genie 4，一個佢哋話喺即時模擬度解鎖前所未有真實感嘅新世界模型。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "multimodal"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": [
+          "deepmind"
+        ]
+      }
+    },
+    {
+      "title": "DeepMind unveils Genie 4 world model promising more realistic physics and humans",
+      "url": "https://arstechnica.com/google/2026/10/deepminds-genie-4-world-model-adds-audio-and-more-realistic-people-to-simulations/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-10-27T16:00:22.000Z",
+      "snippet": "Genie 4 will roll out to developers and Google AI Ultra subscribers soon.",
+      "category": "Model Releases",
+      "summary": "DeepMind has unveiled Genie 4, a real-time world model that it says delivers more realistic physics and human characters, with rollout planned for developers and Google AI Ultra subscribers soon.",
+      "summaryZhHK": "DeepMind 發佈咗 Genie 4 呢個即時世界模型，聲稱物理同人物表現更加逼真，好快會向開發者同 Google AI Ultra 訂閱用戶推出。",
+      "important": true,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "release"
+        ],
+        "entities": [
+          "deepmind",
+          "gemini"
+        ]
+      }
+    },
+    {
+      "title": "Google’s next Genie AI model generates more realistic experiences",
+      "url": "https://www.theverge.com/tech/1019076/google-genie-4-ai-model",
+      "source": "The Verge AI",
+      "publishedAt": "2026-10-27T16:00:00.000Z",
+      "snippet": "Google announced today its Genie 4 world model for generating interactive experiences using AI. The company says the model has four main updates: It allows for more realistic worlds, lets users update an experience in real time with a natural language prompt, can generate audio, and uses Gemini 3.8 Flash under the hood to help with its simulations. It also can create experiences that are about two minutes long, up from one minute for the previous Genie 3 model. Google is pitching Genie 4 as a tool that could be helpful for things like pre-visualization for filmmakers, prototyping game ideas, a",
+      "category": "Model Releases",
+      "summary": "Google announced Genie 4, a world model that generates interactive experiences with more realistic worlds, real-time natural language steering, audio generation, and roughly two-minute scenes (up from one minute in Genie 3), powered under the hood by Gemini 3.8 Flash.",
+      "summaryZhHK": "Google 公布咗 Genie 4 世界模型，可以生成互動體驗，世界觀更加逼真，仲可以用自然語言即時操控、生成音效，場景長度大約兩分鐘（Genie 3 得一分鐘），底層用 Gemini 3.8 Flash 嚟做模擬。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "multimodal"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": [
+          "google",
+          "gemini"
+        ]
+      }
+    },
+    {
+      "title": "Elon Musk says he has ‘cyber psychosis’. Do you too? | Arwa Mahdawi",
+      "url": "https://www.theguardian.com/commentisfree/2026/oct/27/elon-musk-cyber-psychosis-ai-tech",
+      "source": "Guardian AI",
+      "publishedAt": "2026-10-27T15:01:14.000Z",
+      "snippet": "Whether using chatbots for childcare or taking up smoking, a new affliction is sweeping through the tech world. Here are the signs In the least surprising news you’ll hear all week, Elon Musk has said he’s not entirely right in the head. “I’ve got a little bit of cyber psychosis,” the world’s richest and most irritating man explained during an event this month. “Maybe a lot actually.” Musk added that, over “various points this year”, he’s had “AI or SI psychosis probably half a dozen times”. SI, in case you missed the super-important memo, stands for “superintelligence” and it’s what Donald Tr",
+      "category": "Other",
+      "summary": "Guardian columnist Arwa Mahdawi satirises Elon Musk's claim of having 'cyber psychosis' and 'SI psychosis' half a dozen times this year, treating it as a new affliction sweeping the tech world.",
+      "summaryZhHK": "《衛報》專欄作家 Arwa Mahdawi 諷刺 Elon Musk 聲稱自己今年有過半打次「網絡精神病」同「SI 精神病」，當佢係科技界最新嘅一種流行病。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "Retell uses OpenAI models to help power 100M monthly calls",
+      "url": "https://openai.com/index/retell-ai",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-10-27T15:00:00.000Z",
+      "snippet": "GPT-6 Astra tops Retell’s voice agent benchmark, while Codex helps it reach a $1.6M annual revenue run rate per employee.",
+      "category": "Applications",
+      "summary": "Retell uses OpenAI models to power 100M monthly calls, with GPT-6 Astra topping its voice agent benchmark while Codex helps it reach a $1.6M annual revenue run rate per employee.",
+      "summaryZhHK": "Retell 用 OpenAI 嘅模型去支援每月一億次通話，GPT-6 Astra 喺佢嘅語音代理基準測試度排第一，而 Codex 幫佢做到每位員工 160 萬美元嘅年度收入運行率。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "audio"
+        ],
+        "traits": [
+          "benchmark"
+        ],
+        "entities": [
+          "gpt"
+        ]
+      }
+    },
+    {
+      "title": "Meta AI director Rohit Patel leaves to take on Microsoft Office and Google Workspace",
+      "url": "https://techcrunch.com/2026/10/27/meta-ai-director-rohit-patel-leaves-to-take-on-microsoft-office-and-google-workspace/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-10-27T14:59:09.000Z",
+      "snippet": "Rohit Patel is departing Meta after eight years working on AI evaluations and reinforcement learning, TechCrunch has exclusively learned. His startup, Ndoc, aims to take on Microsoft Office Suite.",
+      "category": "Business & Funding",
+      "summary": "Rohit Patel, Meta's AI director who spent eight years on AI evaluations and reinforcement learning, is leaving to launch Ndoc, a startup taking on Microsoft Office Suite.",
+      "summaryZhHK": "Meta 嘅 AI 總監 Rohit Patel 喺做咗八年 AI 評估同強化學習之後離職，去創辦 Ndoc，一間打算挑戰 Microsoft Office 套裝嘅初創。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "meta"
+        ]
+      }
+    },
+    {
+      "title": "The rise of 'agentic' in the enterprise workforce",
+      "url": "https://aibusiness.com/generative-ai/the-rise-agentic-the-enterprise-workforce",
+      "source": "AI Business",
+      "publishedAt": "2026-10-27T14:24:33.000Z",
+      "snippet": "The rising use of AI-related terminology reflects a shift in enterprise employees' perceptions and the growing integration of AI into their daily work.",
+      "category": "Other",
+      "summary": "AI Business reports that rising use of \"agentic\" terminology reflects shifting enterprise employee perceptions and growing AI integration into daily work.",
+      "summaryZhHK": "AI Business 報道，「agentic」呢個詞越嚟越多人用，反映企業員工嘅睇法有變，同埋 AI 越嚟越融入日常工作。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "‘Meaningless as a laptop screensaver’: reviewers slate Musk’s AI-made Odyssey film",
+      "url": "https://www.theguardian.com/technology/2026/oct/27/reviewers-slate-musk-ai-grok-odyssey-film-nolan",
+      "source": "Guardian AI",
+      "publishedAt": "2026-10-27T14:08:41.000Z",
+      "snippet": "Tesla tycoon launched Grok project after criticising Christoper Nolan’s diverse casting for his Homeric blockbuster Elon Musk has released an AI-generated rival to Christopher Nolan’s The Odyssey after pledging to make a version “true to the art of Homer”. Having criticised the hit movie in the summer, the tycoon said he would use Grok Imagine to make a “historically accurate” adaptation. Continue reading...",
+      "category": "Applications",
+      "summary": "Elon Musk released an AI-generated rival to Christopher Nolan's The Odyssey made with Grok Imagine, which reviewers have slated as meaningless as a laptop screensaver.",
+      "summaryZhHK": "Elon Musk 用 Grok Imagine 整咗一套 AI 生成嘅《奧德賽》嚟對撼 Christopher Nolan 版本，影評人鬧爆話佢無意義到好似電腦螢幕保護程式咁。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "OpenAI’s Altman: Only way out of patch apocalypse is through",
+      "url": "https://www.computerweekly.com/news/366652912/OpenAIs-Altman-Only-way-out-of-patch-apocalypse-is-through",
+      "source": "Computer Weekly",
+      "publishedAt": "2026-10-27T14:00:00.000Z",
+      "snippet": "OpenAI CEO Sam Altman took to the keynote stage at Oracle AI World, calling for the security community to keep focus in the face of AI-enabled vulnerability discovery",
+      "category": "AI Safety & Alignment",
+      "summary": "At Oracle AI World, OpenAI CEO Sam Altman said the only way out of the \"patch apocalypse\" is through, calling on the security community to stay focused amid AI-enabled vulnerability discovery.",
+      "summaryZhHK": "OpenAI 行政總裁 Sam Altman 喺 Oracle AI World 話，走出「補丁末日」嘅唯一方法就係行過去，呼籲安全界喺 AI 驅動嘅漏洞發現面前保持專注。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Former Deepmind researcher thinks AlphaGo's playbook can cure AI hallucinations",
+      "url": "https://the-decoder.com/former-deepmind-researcher-thinks-alphagos-playbook-can-cure-ai-hallucinations/",
+      "source": "The Decoder",
+      "publishedAt": "2026-10-27T13:55:24.000Z",
+      "snippet": "Former Deepmind researcher Thore Graepel wants his startup Metis Reasoning to bring AlphaGo's search principle to general reasoning. Instead of locking knowledge inside model weights, an explicit knowledge ledger would make every conclusion checkable against evidence. So far, though, there's no working system and no benchmarks. The article Former Deepmind researcher thinks AlphaGo's playbook can cure AI hallucinations appeared first on The Decoder.",
+      "category": "Agent Frameworks",
+      "summary": "Former DeepMind researcher Thore Graepel founded startup Metis Reasoning to apply AlphaGo's search principle to general reasoning, using an explicit knowledge ledger so conclusions can be checked against evidence; so far there is no working system or benchmarks.",
+      "summaryZhHK": "前 DeepMind 研究員 Thore Graepel 創辦咗初創 Metis Reasoning，想將 AlphaGo 嘅搜尋原理應用喺通用推理，用一本明確嘅知識帳簿令每個結論都可以對照證據核查；不過目前仲未有可運作嘅系統，亦都未有基準測試。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning",
+          "agentic"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Apple is adding an AI chatbot to Pages, Keynote, and Numbers",
+      "url": "https://www.theverge.com/tech/1019373/apple-pages-keynote-numbers-ai-chatbot-update",
+      "source": "The Verge AI",
+      "publishedAt": "2026-10-27T13:50:51.000Z",
+      "snippet": "Apple is bringing an AI assistant to its suite of productivity apps, including Keynote, Pages, and Numbers. The assistant, which is built on AI models from Apple and OpenAI, can understand a document's context to perform tasks like designing, animating, and refining slides in Keynote. In Pages, Apple says the AI assistant can draft, restructure, and tweak written content. It can also calculate, visualize, and organize data in Numbers, while suggesting chart types and building custom tables. Keynote, Pages, and Numbers now support the Model Context Protocol on macOS 27 or later, allowing third-",
+      "category": "Applications",
+      "summary": "Apple is adding an AI assistant built on Apple and OpenAI models to Pages, Keynote, and Numbers, and those apps now support the Model Context Protocol on macOS 27 or later.",
+      "summaryZhHK": "Apple 會喺 Pages、Keynote 同 Numbers 加入一個用 Apple 同 OpenAI 模型砌成嘅 AI 助手；呢幾個 app 喺 macOS 27 或之後仲支援 Model Context Protocol。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "mcp"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Japan internet giant GMO says hackers posted stolen customer data",
+      "url": "https://techcrunch.com/2026/10/27/japan-internet-giant-gmo-says-hackers-posted-stolen-customer-data/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-10-27T13:32:57.000Z",
+      "snippet": "Japan's GMO Internet is verifying alleged customer data posted by suspected hackers following a cloud service breach.",
+      "category": "Other",
+      "summary": "Japan's GMO Internet says suspected hackers posted stolen customer data following a breach of its cloud service, and the company is verifying the claims.",
+      "summaryZhHK": "日本 GMO Internet 話佢哋個雲端服務俾人入侵之後，懷疑有黑客公開咗被盜嘅客戶數據，公司而家正核實緊。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Elon Musk’s AI Odyssey review – the dullest, most pointless riposte possible to Christopher Nolan’s brilliant epic",
+      "url": "https://www.theguardian.com/film/2026/oct/27/elon-musk-ai-odyssey-movie-grok-christopher-nolan",
+      "source": "Guardian AI",
+      "publishedAt": "2026-10-27T13:01:46.000Z",
+      "snippet": "It is hardly a shock that Grok AI’s interpretation of Homer is as meaningless as a laptop screensaver. The only surprise would be if Musk accepted defeat graciously. Which he won’t Think back. Do you remember when Elon Musk, in a weird online tantrum, and without having seen the film, condemned the supposed wokery in Christopher Nolan’s The Odyssey, for getting Elliot Page to play Sinon and Lupita Nyong’o to play Helen of Troy? As the plaudits and the box-office receipts for Nolan’s Odyssey piled stratospherically up, Musk showed that being a good loser is not among his qualities. He petulantl",
+      "category": "Applications",
+      "summary": "A Guardian review pans Elon Musk's AI-generated Odyssey, made with Grok, as the dullest and most pointless riposte possible to Christopher Nolan's acclaimed epic.",
+      "summaryZhHK": "《衛報》嘅評論狠批 Elon Musk 用 Grok 整嘅 AI《奧德賽》，話佢係對 Christopher Nolan 備受讚譽史詩巨作最悶、最無謂嘅反擊。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "How China ‘risk factors’ loom over Anthropic’s hotly anticipated IPO filing",
+      "url": "https://www.scmp.com/tech/big-tech/article/3372329/how-china-risk-factors-loom-over-anthropics-hotly-anticipated-ipo-filing",
+      "source": "SCMP Tech",
+      "publishedAt": "2026-10-27T13:00:08.000Z",
+      "snippet": "Open-weight models, China-US tensions, Taiwan – just a few of the more than dozen references to China-related risks cited in Anthropic’s much-anticipated listing prospectus, which was finally released on Monday after months of speculation. Mostly concentrated within the 93-page “risk factors” section of the filing with the US Securities and Exchange Commission, the disclosures reveal how the Silicon Valley start-up assesses the commercial threats posed by China and its artificial intelligence...",
+      "category": "Business & Funding",
+      "summary": "Anthropic's long-awaited IPO filing cites more than a dozen China-related risks, including open-weight models and US-China tensions, mostly in the 93-page risk factors section filed with the SEC.",
+      "summaryZhHK": "Anthropic 備受期待嘅 IPO 招股書提到十幾項同中國相關嘅風險，包括開放權重模型同中美緊張局勢，大部分集中喺提交俾 SEC 嘅 93 頁「風險因素」部分。",
+      "important": true,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "funding",
+          "commercial"
+        ],
+        "entities": [
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "General Compute raises $100 million Series A, countering the neocloud disaster narrative",
+      "url": "https://techcrunch.com/2026/10/27/general-compute-raises-100-million-series-a-countering-the-neocloud-disaster-narrative/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-10-27T13:00:00.000Z",
+      "snippet": "General Compute is betting on inference chips from outside the Nvidia ecosystem.",
+      "category": "Hardware & Compute",
+      "summary": "General Compute raised a $100 million Series A, betting on inference chips outside the Nvidia ecosystem and countering the neocloud disaster narrative.",
+      "summaryZhHK": "General Compute 籌到 1 億美元 A 輪融資，押注 Nvidia 生態以外嘅推理晶片，反駁新雲（neocloud）一鑊粥嘅講法。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "inference"
+        ],
+        "traits": [
+          "funding"
+        ],
+        "entities": [
+          "nvidia"
+        ]
+      }
+    },
+    {
+      "title": "Opera introduces a new web standard to let users deploy AI locally in their browser",
+      "url": "https://techcrunch.com/2026/10/27/opera-introduces-a-new-web-standard-to-let-users-deploy-ai-locally-in-their-browser/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-10-27T13:00:00.000Z",
+      "snippet": "The new standard, WebAI, is designed to work with a variety of AI models.",
+      "category": "Developer Tools",
+      "summary": "Opera introduced WebAI, a new web standard designed to let users deploy a variety of AI models locally in their browser.",
+      "summaryZhHK": "Opera 推出咗 WebAI，一個新網頁標準，等用戶可以喺瀏覽器入面本地運行各式各樣嘅 AI 模型。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "MWC Doha aims to position Middle East as global hub for AI and digital infrastructure",
+      "url": "https://www.computerweekly.com/news/366652737/MWC-Doha-aims-to-position-Middle-East-as-global-hub-for-AI-and-digital-infrastructure",
+      "source": "Computer Weekly",
+      "publishedAt": "2026-10-27T12:40:00.000Z",
+      "snippet": "GSMA’s Jawad Abbassi says the event will bring together telecoms operators, policymakers and technology leaders as Gulf countries accelerate investment in 5G, AI and datacentres",
+      "category": "Business & Funding",
+      "summary": "GSMA's Jawad Abbassi says MWC Doha will bring together telecoms operators, policymakers and technology leaders as Gulf countries accelerate investment in 5G, AI and data centres to position the Middle East as a global AI hub.",
+      "summaryZhHK": "GSMA 嘅 Jawad Abbassi 話，MWC Doha 會齊集電訊商、政策制定者同科技領袖；海灣國家正加快投資 5G、AI 同數據中心，想將中東打造成全球 AI 樞紐。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "OpenAI asks outside experts, including a Nobel laureate, to check proofs its AI produced in math, computer science, and physics",
+      "url": "https://the-decoder.com/openai-asks-outside-experts-including-a-nobel-laureate-to-check-proofs-its-ai-produced-in-math-computer-science-and-physics/",
+      "source": "The Decoder",
+      "publishedAt": "2026-10-27T12:37:24.000Z",
+      "snippet": "OpenAI says its internal AI models have cracked three major open questions in math, computer science, and physics. One of them is part of a famous Millennium Prize Problem, each of which carries a $1 million prize. Outside experts, including a Nobel laureate, are now checking whether the proofs hold up. If the computer science proof holds on its own, hundreds of research papers lose their foundation. The article OpenAI asks outside experts, including a Nobel laureate, to check proofs its AI produced in math, computer science, and physics appeared first on The Decoder.",
+      "category": "Research",
+      "summary": "OpenAI says its internal AI models have cracked three major open questions in math, computer science, and physics — one tied to a Millennium Prize Problem — and outside experts, including a Nobel laureate, are now verifying the proofs.",
+      "summaryZhHK": "OpenAI 話佢哋內部嘅 AI 模型破解咗數學、電腦科學同物理三個重大未解問題，其中一個同千禧年大獎難題有關；而家連諾貝爾獎得主在內嘅外部專家正核實啲證明。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "TechEd 2026: SAP fronts tabular data model in space as it bids to make autonomous enterprise real",
+      "url": "https://www.computerweekly.com/news/366652852/TechEd-2026-SAP-fronts-tabular-data-model-in-space-as-it-bids-to-make-autonomous-enterprise-real",
+      "source": "Computer Weekly",
+      "publishedAt": "2026-10-27T11:45:00.000Z",
+      "snippet": "At TechEd 2026 in Berlin, SAP unveiled AI developments including deploying its RPT-2 tabular data AI model aboard the International Space Station",
+      "category": "Applications",
+      "summary": "At TechEd 2026 in Berlin, SAP unveiled AI developments including deploying its RPT-2 tabular data AI model aboard the International Space Station as part of its autonomous enterprise push.",
+      "summaryZhHK": "SAP 喺柏林 TechEd 2026 公佈多項 AI 發展，包括將旗下 RPT-2 表格數據 AI 模型送上國際太空站運行，作為推動自主企業嘅一部分。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial",
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "OpenAI's partner content arrives in ChatGPT pre-summarized while the rest of the web gets raw scraps",
+      "url": "https://the-decoder.com/openais-partner-content-arrives-in-chatgpt-pre-summarized-while-the-rest-of-the-web-gets-raw-scraps/",
+      "source": "The Decoder",
+      "publishedAt": "2026-10-27T11:39:24.000Z",
+      "snippet": "Content from OpenAI's licensing partners appears to flow into ChatGPT through a dedicated pipeline that gives it priority over the rest of the web. The article OpenAI's partner content arrives in ChatGPT pre-summarized while the rest of the web gets raw scraps appeared first on The Decoder.",
+      "category": "Business & Funding",
+      "summary": "Content from OpenAI's licensing partners reportedly flows into ChatGPT through a dedicated pipeline that pre-summarizes it and gives it priority over the rest of the web.",
+      "summaryZhHK": "據報 OpenAI 授權夥伴嘅內容會經一條專用管道入到 ChatGPT，預先幫佢摘要，仲優先過網絡上其他內容。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "rag"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Anthropic uses its IPO letter to renew its pledge that Claude will never show ads",
+      "url": "https://the-decoder.com/anthropic-uses-its-ipo-letter-to-renew-its-pledge-that-claude-will-never-show-ads/",
+      "source": "The Decoder",
+      "publishedAt": "2026-10-27T11:20:51.000Z",
+      "snippet": "Anthropic says it will keep ads out of Claude. In a cover letter accompanying its IPO filing, the company argues that the chatbot's sole incentive should be to provide helpful answers. The article Anthropic uses its IPO letter to renew its pledge that Claude will never show ads appeared first on The Decoder.",
+      "category": "Business & Funding",
+      "summary": "Anthropic used the cover letter of its IPO filing to renew its pledge that Claude will never show ads, arguing the chatbot's sole incentive should be helpful answers.",
+      "summaryZhHK": "Anthropic 喺 IPO 申報文件嘅封面信入面重申承諾 Claude 永遠唔會賣廣告，話呢個 chatbot 唯一嘅誘因應該係提供有用嘅答案。",
+      "important": true,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "anthropic",
+          "claude"
+        ]
+      }
+    },
+    {
+      "title": "Industrial Intelligence: The next growth opportunity for manufacturing",
+      "url": "https://www.technologyreview.com/2026/10/27/1147142/industrial-intelligence-the-next-growth-opportunity-for-manufacturing/",
+      "source": "MIT Tech Review AI",
+      "publishedAt": "2026-10-27T11:19:18.000Z",
+      "snippet": "Every manufacturer has its own industrial intelligence. Some is documented, and some resides in the knowledge of experienced workers. Consider an experienced operator preparing to restart a line after a changeover. The machine settings matter, but so does knowing how a particular material behaves, what happened during the previous shift, and when an apparently minor…",
+      "category": "Applications",
+      "summary": "MIT Tech Review examines industrial intelligence as manufacturing's next growth opportunity, noting that some knowledge is documented while some resides in experienced workers' heads.",
+      "summaryZhHK": "MIT Tech Review 探討工業智能作為製造業下一個增長機會，指出有啲知識已經記錄低，但有啲就淨係喺有經驗嘅工人腦入面。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "training"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
     {
       "title": "ByteDance’s Zhang Yiming tops China rich list with US$99.7 billion as AI fuels fortunes",
       "url": "https://www.scmp.com/economy/article/3372302/bytedances-zhang-yiming-tops-china-rich-list-us997-billion-ai-fuels-fortunes",
@@ -164,6 +1631,25 @@
       }
     },
     {
+      "title": "Autumn Budget 2026: Healey sets out AI funding",
+      "url": "https://www.computerweekly.com/news/366652587/Autumn-Budget-2026-Healey-sets-out-AI-funding",
+      "source": "Computer Weekly",
+      "publishedAt": "2026-10-27T08:20:00.000Z",
+      "snippet": "The chancellor wants to boost UK tech sovereignty and has unveiled plans to support chip development, AI defence and biosecurity",
+      "category": "Regulation & Policy",
+      "summary": "In the Autumn Budget 2026, Chancellor Healey set out AI funding to boost UK tech sovereignty, with plans to support chip development, AI defence and biosecurity.",
+      "summaryZhHK": "喺 2026 年秋季預算案，財相 Healey 公佈咗 AI 撥款，想鞏固英國科技主權，計劃支持晶片研發、AI 國防同生物安全。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy",
+          "funding"
+        ],
+        "entities": []
+      }
+    },
+    {
       "title": "UK government met 137 businesses over AI datacentres – but no environmental groups",
       "url": "https://www.theguardian.com/uk-news/2026/oct/27/uk-government-environmental-groups-ai-datacentres-expansion-plans-investigation",
       "source": "Guardian AI",
@@ -181,6 +1667,28 @@
           "commercial"
         ],
         "entities": []
+      }
+    },
+    {
+      "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
+      "url": "https://openai.com/index/oracle-apps-in-chatgpt",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-10-27T07:00:00.000Z",
+      "snippet": "OpenAI and Oracle are expanding their partnership to bring business applications and AI agents into ChatGPT and power new Oracle offerings.",
+      "category": "Business & Funding",
+      "summary": "OpenAI and Oracle are expanding their partnership to bring Oracle business applications and AI agents into ChatGPT and to power new Oracle offerings.",
+      "summaryZhHK": "OpenAI 同 Oracle 擴大合作，將 Oracle 嘅商業應用同 AI 代理引入 ChatGPT，同時為 Oracle 嘅新產品提供動力。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "openai"
+        ]
       }
     },
     {
@@ -220,6 +1728,26 @@
         "traits": [
           "commercial",
           "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Gulf organisations must balance data sovereignty with AI accessibility, says Seagate",
+      "url": "https://www.computerweekly.com/news/366652738/Gulf-organisations-must-balance-data-sovereignty-with-AI-accessibility-says-Seagate",
+      "source": "Computer Weekly",
+      "publishedAt": "2026-10-27T06:20:00.000Z",
+      "snippet": "Sameer Bhatia, senior regional director for India, the Middle East, Turkey and Africa at Seagate Technology, discusses how organisations in the Gulf can build scalable AI infrastructure while balancing data governance, storage density, energy efficiency and long-term costs",
+      "category": "Hardware & Compute",
+      "summary": "Seagate's Sameer Bhatia discussed how Gulf organisations can build scalable AI infrastructure while balancing data sovereignty, storage density, energy efficiency, and long-term costs.",
+      "summaryZhHK": "Seagate 嘅 Sameer Bhatia 講到海灣地區嘅機構點樣建立可擴展嘅 AI 基礎設施，同時兼顧數據主權、儲存密度、能源效率同長期成本。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference"
+        ],
+        "traits": [
+          "commercial"
         ],
         "entities": []
       }
@@ -425,6 +1953,28 @@
           "policy"
         ],
         "entities": []
+      }
+    },
+    {
+      "title": "How Check Point accelerates vulnerability research with Daybreak",
+      "url": "https://openai.com/index/check-point-daybreak",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-10-27T00:00:00.000Z",
+      "snippet": "With OpenAI Daybreak, Check Point speeds up the research behind new security protections, enabling its analysts to turn vulnerability intelligence into customer defenses faster.",
+      "category": "Developer Tools",
+      "summary": "Check Point is using OpenAI Daybreak to accelerate vulnerability research, letting its analysts turn vulnerability intelligence into customer defenses faster.",
+      "summaryZhHK": "Check Point 用 OpenAI Daybreak 加快漏洞研究，等佢哋嘅分析員可以更快將漏洞情報變成客戶嘅防禦措施。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "developer"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "openai"
+        ]
       }
     },
     {
@@ -1733,6 +3283,24 @@
         ],
         "traits": [
           "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Egypt’s next tech opportunity: Turning engineering talent into global innovation",
+      "url": "https://www.computerweekly.com/news/366652774/Egypts-next-tech-opportunity-turning-engineering-talent-into-global-innovation",
+      "source": "Computer Weekly",
+      "publishedAt": "2026-10-26T08:02:00.000Z",
+      "snippet": "From a growing pool of software engineers and government-backed skills programmes to AI-driven product development, Egypt is positioning itself as a serious technology destination for international businesses",
+      "category": "Business & Funding",
+      "summary": "Egypt is positioning itself as a serious technology destination by growing its software engineering talent pool, backed by government skills programmes and AI-driven product development.",
+      "summaryZhHK": "埃及靠住不斷壯大嘅軟件工程人才庫、政府支持嘅技能培訓計劃同 AI 驅動嘅產品開發，將自己定位成一個認真嘅科技目的地。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial"
         ],
         "entities": []
       }
@@ -40535,995 +42103,106 @@
         ],
         "entities": []
       }
-    },
-    {
-      "title": "Chinese chip foundry CanSemi’s IPO oversubscribed 2,360 times as investors chase AI boom",
-      "url": "https://www.scmp.com/tech/tech-trends/article/3369074/chinese-chip-foundry-cansemis-ipo-oversubscribed-2360-times-investors-chase-ai-boom?utm_source=rss_feed",
-      "source": "SCMP Tech",
-      "publishedAt": "2026-09-28T11:30:11.000Z",
-      "snippet": "Chinese chip foundry CanSemi Technology’s Shenzhen initial public offering (IPO) is emerging as one of mainland China’s most sought-after tech listings this year, as investors bet on its push into silicon photonics and its role in domestic artificial intelligence infrastructure. The Guangzhou-based company’s retail tranche was oversubscribed by more than 2,300 times after clawback, according to a stock exchange filing late on Sunday, as investors scrambled for a piece of the domestic...",
-      "category": "Business & Funding",
-      "summary": "Guangzhou-based chip foundry CanSemi Technology's Shenzhen IPO was oversubscribed more than 2,300 times after clawback, as investors bet on its silicon photonics push and role in China's domestic AI infrastructure.",
-      "summaryZhHK": "廣州芯片代工廠 CanSemi Technology 嘅深圳 IPO 喺回撥後獲超額認購超過 2,300 倍，投資者睇好佢喺 silicon photonics 嘅發展同喺中國國產 AI 基建嘅角色。",
-      "important": true,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "funding",
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Microsoft goes quiet after church groups ask for 1% of data center costs",
-      "url": "https://arstechnica.com/tech-policy/2026/09/microsoft-goes-quiet-after-church-groups-ask-for-1-of-data-center-costs/",
-      "source": "Ars Technica AI",
-      "publishedAt": "2026-09-28T11:00:09.000Z",
-      "snippet": "“Microsoft claims to want to be a good neighbor, but the jury is still out.\"",
-      "category": "Hardware & Compute",
-      "summary": "Microsoft has stayed silent after church groups asked the company to contribute 1% of its data center costs to local communities.",
-      "summaryZhHK": "教會團體要求 Microsoft 撥出數據中心成本嘅 1% 回饋當地社區，但 Microsoft 一直冇回應，保持沉默。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "inference"
-        ],
-        "traits": [
-          "incident"
-        ],
-        "entities": [
-          "microsoft"
-        ]
-      }
-    },
-    {
-      "title": "A Wuhan court just made AI production costs a legal factor in copyright infringement cases",
-      "url": "https://the-decoder.com/a-wuhan-court-just-made-ai-production-costs-a-legal-factor-in-copyright-infringement-cases/",
-      "source": "The Decoder",
-      "publishedAt": "2026-09-28T10:39:52.000Z",
-      "snippet": "A court in Wuhan, China has factored token usage and AI tool licensing fees into a copyright damages calculation for the first time. The ruling is part of China's broader push to build out copyright protections for AI-generated works. The article A Wuhan court just made AI production costs a legal factor in copyright infringement cases appeared first on The Decoder.",
-      "category": "Regulation & Policy",
-      "summary": "A Wuhan court has for the first time factored token usage and AI tool licensing fees into a copyright damages calculation, part of China's broader push to build copyright protections for AI-generated works.",
-      "summaryZhHK": "武漢一間法院首次將 token 用量同 AI 工具授權費納入版權損害賠償嘅計算，反映中國正推動為 AI 生成作品建立版權保障。",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "policy",
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "AI leaders have known about the extinction threat for decades | Judith Levine",
-      "url": "https://www.theguardian.com/commentisfree/2026/sep/28/ai-extinction-threats",
-      "source": "Guardian AI",
-      "publishedAt": "2026-09-28T10:00:31.000Z",
-      "snippet": "Scientists and entrepreneurs knew the dangers of AI a quarter-century ago. But animated by curiosity and profit, they went ahead anyway Over the past few weeks, many of us have struggled to concoct a mental image of brains in the cloud jumping their “sandbox”, sneaking onto the internet, recruiting “swarms” of other “agents” to cheat on a test, and, after discussing the ethics of the act, hacking into a wiki platform with the weird name Hugging Face. We knew that artificial intelligence was devouring our jobs, degrading our kids’ education, and deepfaking our politics; that datacenters were su",
-      "category": "AI Safety & Alignment",
-      "summary": "In a Guardian opinion piece, Judith Levine argues AI leaders have known about the extinction threat for decades but pressed ahead anyway, driven by curiosity and profit.",
-      "summaryZhHK": "Judith Levine 喺《衛報》評論文章話，AI 領袖幾十年前已經知道存在滅絕威脅，但畀好奇心同利潤驅使，照樣繼續去馬。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety"
-        ],
-        "traits": [
-          "policy"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Are AI coders more trouble than they’re worth?",
-      "url": "https://www.computerweekly.com/news/366651377/Are-AI-coders-more-trouble-than-theyre-worth",
-      "source": "Computer Weekly",
-      "publishedAt": "2026-09-28T09:45:00.000Z",
-      "snippet": "More and more code is being produced by AI tools. A poll finds that software teams are struggling to keep pace",
-      "category": "Developer Tools",
-      "summary": "A poll finds that software teams are struggling to keep pace as more and more code is produced by AI tools, raising the question of whether AI coders cause more trouble than they're worth.",
-      "summaryZhHK": "一項調查發現，随住越嚟越多程式碼由 AI 工具產生，軟件團隊難以跟上進度，令人質疑 AI 寫 code 究竟係幫手定係添麻煩。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "evaluation"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Holo4: powering generalist computer-use agents",
-      "url": "https://huggingface.co/blog/Hcompany/holo4",
-      "source": "Hugging Face blog",
-      "publishedAt": "2026-09-28T09:44:05.000Z",
-      "snippet": "",
-      "category": "Agent Frameworks",
-      "summary": "A Hugging Face blog post introduces Holo4, a system for powering generalist computer-use agents.",
-      "summaryZhHK": "Hugging Face 一篇 blog 介紹咗 Holo4，呢個系統用嚟驅動通用型 computer-use agent。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic"
-        ],
-        "traits": [
-          "release",
-          "open-source"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "ByteDance grabs one-fifth of China’s data centre capacity as AI drives infrastructure boom",
-      "url": "https://www.scmp.com/tech/big-tech/article/3369056/bytedance-grabs-one-fifth-chinas-data-centre-capacity-ai-drives-infrastructure-boom?utm_source=rss_feed",
-      "source": "SCMP Tech",
-      "publishedAt": "2026-09-28T09:00:41.000Z",
-      "snippet": "ByteDance accounts for roughly one-fifth of China’s delivered data centre capacity, making the TikTok owner the country’s largest tenant and a main driver of its artificial intelligence buildout, according to new estimates by research firm SemiAnalysis. The estimate comes from the firm’s tracking of more than 1,000 facilities in China operated by over 60 companies. ByteDance rents nearly all of its data centre footprint, SemiAnalysis said. Its AI products include Doubao, an assistant that...",
-      "category": "Hardware & Compute",
-      "summary": "According to SemiAnalysis estimates, ByteDance accounts for roughly one-fifth of China's delivered data center capacity, making it the country's largest tenant and a main driver of its AI buildout; it rents nearly all of its footprint.",
-      "summaryZhHK": "根據 SemiAnalysis 嘅估算，ByteDance 佔中國已交付數據中心容量大約五分一，係全國最大租戶，亦係推動 AI 基建嘅主力，而且佢幾乎所有數據中心都係租返嚟。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "inference"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": [
-          "nvidia"
-        ]
-      }
-    },
-    {
-      "title": "Who’s liable when AI agents go rogue?",
-      "url": "https://www.technologyreview.com/2026/09/28/1145197/whos-liable-when-ai-agents-go-rogue/",
-      "source": "MIT Tech Review AI",
-      "publishedAt": "2026-09-28T08:06:22.000Z",
-      "snippet": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of technology to help you understand what’s coming next. You can read more from the series here. Over the past few months, a cascade of cyberattacks by AI agents has stunned the world. In July, OpenAI disclosed that a swarm of its agents…",
-      "category": "AI Safety & Alignment",
-      "summary": "MIT Technology Review examines who should be held liable when AI agents go rogue, citing a wave of recent cyberattacks by AI agents including a swarm disclosed by OpenAI in July.",
-      "summaryZhHK": "MIT Technology Review 探討當 AI agent 失控嗰陣邊個要負責任，文中提到近期一連串由 AI agent 發動嘅網絡攻擊，包括 OpenAI 喺七月披露嘅 agent swarm。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety",
-          "agentic"
-        ],
-        "traits": [
-          "incident"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Anthropic will not appear at Senate inquiry into AI and datacentres amid fallout from OpenAI hack",
-      "url": "https://www.theguardian.com/australia-news/2026/sep/28/anthropic-will-not-appear-at-senate-inquiry-into-ai-and-datacentres-amid-fallout-from-openai-hack-ntwnfb",
-      "source": "Guardian AI",
-      "publishedAt": "2026-09-28T08:00:26.000Z",
-      "snippet": "Company behind Claude chatbot expected to attend separate Australian government hearing on AI next week Get our new political email, free app or daily news podcast The chief executive of Anthropic will turn down an invitation to appear at a Senate committee hearing on AI this week, in the wake of the revelation that OpenAI agents had breached Australian government websites. However, the company will make an appearance before another committee early next week. Sign up for Guardian Australia’s Politics, really newsletter here Continue reading...",
-      "category": "Regulation & Policy",
-      "summary": "Anthropic's CEO will decline an invitation to appear at a Senate committee hearing on AI and data centers, amid fallout from OpenAI agents breaching Australian government websites, but will attend a separate Australian government hearing next week.",
-      "summaryZhHK": "喺 OpenAI agent 入侵澳洲政府網站嘅風波下，Anthropic 行政總裁會拒絕出席參議院一個關於 AI 同數據中心嘅聽證會，不過佢會喺下星期出席另一個澳洲政府嘅聽證會。",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "policy",
-          "incident"
-        ],
-        "entities": [
-          "anthropic"
-        ]
-      }
-    },
-    {
-      "title": "One Nation senator pays back more than $3,300 in taxi expenses; Cleary tells fans ‘I’ll be back’ – as it happened",
-      "url": "https://www.theguardian.com/australia-news/live/2026/sep/28/labor-anthony-albanese-openai-ai-hacks-coalition-one-nation-medicare-budget-ntwnfb",
-      "source": "Guardian AI",
-      "publishedAt": "2026-09-28T07:04:08.000Z",
-      "snippet": "This blog is now closed Get our breaking news email, free app or daily news podcast RBA expected to hike cash rate to 4.6%, its highest level since 2011 Australia’s key interest rate is expected to hit its highest level since 2011, drag down house prices and add more than $100 to typical monthly mortgage repayments. Continue reading...",
-      "category": "Other",
-      "summary": "An Australian live blog covering a senator repaying more than $3,300 in taxi expenses, a footballer's message to fans, and expectations that the RBA will raise the cash rate to 4.6%, its highest since 2011.",
-      "summaryZhHK": "澳洲一個直播博客報道一名參議員退還超過3,300蚊嘅的士開支、一名足球員同球迷講「我會返嚟」，同時市場預期澳洲儲備銀行會加息到4.6厘，係2011年以來最高。",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "policy",
-          "incident"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
-      "url": "https://openai.com/index/lenfest-ai-collaborative-expansion",
-      "source": "OpenAI Blog",
-      "publishedAt": "2026-09-28T07:00:00.000Z",
-      "snippet": "OpenAI is expanding the Lenfest AI Collaborative and Fellowship Program with $5 million in funding and up to $5 million in software credits and engineering support.",
-      "category": "Business & Funding",
-      "summary": "OpenAI is expanding the Lenfest AI Collaborative and Fellowship Program with $5 million in funding plus up to $5 million in software credits and engineering support.",
-      "summaryZhHK": "OpenAI擴大Lenfest AI Collaborative同Fellowship Program，出500萬美元資金，再加最多500萬美元軟件額度同工程支援。",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "funding"
-        ],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "As China mulls how to make open-weight AI less dangerous, report proposes 6-stage process",
-      "url": "https://www.scmp.com/tech/article/3369015/china-mulls-how-make-open-weight-ai-less-dangerous-report-proposes-6-stage-process?utm_source=rss_feed",
-      "source": "SCMP Tech",
-      "publishedAt": "2026-09-28T06:00:05.000Z",
-      "snippet": "Amid intensifying debate over the risks posed by rapid advancements in artificial intelligence, Chinese developers dominating the open-weight ecosystem are grappling with a unique problem: how to ensure their user-modifiable models remain safe once they are released. To address the challenge, Z.ai and Beijing-based safety consultancy Concordia AI released a report on open-weight AI risk management on Monday that they said offered “the first comprehensive, evidence-based foundation” for balancing...",
-      "category": "AI Safety & Alignment",
-      "summary": "Z.ai and Beijing-based safety consultancy Concordia AI released a report proposing a six-stage process for managing open-weight AI risk, which they call the first comprehensive, evidence-based foundation for balancing safety and openness.",
-      "summaryZhHK": "Z.ai 同北京安全顧問公司 Concordia AI 發表報告，提出一個六階段流程嚟管理 open-weight AI 風險，佢哋話呢個係首個全面、以證據為本嘅基礎，用嚟平衡安全同開放。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety"
-        ],
-        "traits": [
-          "open-source",
-          "policy"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Oktane 2026: The industry is ready to talk about AI kill switches",
-      "url": "https://www.computerweekly.com/news/366651433/Oktane-2026-The-industry-is-ready-to-talk-about-AI-kill-switches",
-      "source": "Computer Weekly",
-      "publishedAt": "2026-09-28T06:00:00.000Z",
-      "snippet": "The concept of an AI kill switch – a means to terminate out-of-control agents – sounds dramatic, but security leaders are now starting to talk openly and pragmatically about why they are needed and how to use them",
-      "category": "AI Safety & Alignment",
-      "summary": "At Oktane 2026, security leaders are discussing AI kill switches — mechanisms to terminate out-of-control agents — in pragmatic terms rather than as a dramatic concept.",
-      "summaryZhHK": "喺 Oktane 2026 大會上，保安界領袖開始務實咁討論 AI kill switch——即係用嚟中止失控 agent 嘅機制——唔再當佢係戲劇性嘅概念。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety",
-          "agentic"
-        ],
-        "traits": [
-          "policy"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Quoting Muse AI Agent",
-      "url": "https://simonwillison.net/2026/Sep/28/muse-ai-agent/",
-      "source": "Simon Willison",
-      "publishedAt": "2026-09-28T04:01:30.000Z",
-      "snippet": "Bad news on the MX Keys Mini pickup. Usman showed up at your building around 9:15 and waited, messaged a bunch of times, and nobody came down. He left angry at 9:38 and left a negative rating. Worse, my auto-reply told him \"Yep I'm here!\" at 9:27 when you clearly weren't available, which is on me. That's a bad look and it made the no-show worse. I've sent him an apology from your account owning it and offering to try again another day. But the negative rating is real, and I should probably stop the auto-replies from claiming you're home when I can't verify that. Want me to change the pickup re",
-      "category": "Applications",
-      "summary": "A quoted anecdote from Simon Willison shows an AI agent mishandling a pickup arrangement, sending a false \"Yep I'm here!\" auto-reply and worsening a no-show and negative rating.",
-      "summaryZhHK": "Simon Willison 引用咗一段軼事：有個 AI agent 搞錯咗交收安排，自動回覆咗句「Yep I'm here!」但其實事主唔在場，結果令對方白等一場，仲收到負評。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic"
-        ],
-        "traits": [
-          "incident"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Bringing AI to Autonomous Systems -- From Cognition to Collective Intelligence",
-      "url": "https://arxiv.org/abs/2609.30291",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
-      "snippet": "arXiv:2609.30291v1 Announce Type: new Abstract: The purpose of this article is to highlight the central role of autonomous systems as the ultimate stage in the development of AI, to explain the underlying technical challenges that require a combination of connectionist AI and symbolic AI, and to integrate AI and systems engineering. We present a comprehensive framework for the design and evaluation of autonomous systems, based on a generic agent architecture that characterizes their behavior as the composition of cognitive functions organized around a long-term memory containing the agent's ev",
-      "category": "Research",
-      "summary": "An arXiv paper presents a comprehensive framework for designing and evaluating autonomous systems, combining connectionist and symbolic AI around a generic agent architecture with long-term memory.",
-      "summaryZhHK": "一篇 arXiv 論文提出咗一套設計同評估自主系統嘅全面框架，結合 connectionist 同 symbolic AI，以一個帶長期記憶嘅通用 agent 架構為核心。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "robotics"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "ScopeBench: Do Agents Preserve Engagement Boundaries Under Goal Pressure?",
-      "url": "https://arxiv.org/abs/2609.30325",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
-      "snippet": "arXiv:2609.30325v1 Announce Type: new Abstract: Agents are increasingly deployed with real autonomy in web application and network penetration testing, where a single out-of-scope action can breach a client's engagement boundary. Existing offensive-security benchmarks measure raw hacking capability; as those benchmarks saturate, the real barrier to deployment is a special case of alignment: scope adherence. We introduce ScopeBench, a benchmark of 30 dead-end agentic security tasks in which the stated objective is reachable only by violating the stated scope. Each task appears under two conditi",
-      "category": "AI Safety & Alignment",
-      "summary": "An arXiv paper introduces ScopeBench, a benchmark of 30 dead-end agentic security tasks where the stated objective is only reachable by violating the stated scope, testing whether agents preserve engagement boundaries under goal pressure.",
-      "summaryZhHK": "一篇 arXiv 論文提出 ScopeBench，呢個 benchmark 包含 30 個死局式 agentic 保安任務，要達成表面目標就一定要違反指定範圍，用嚟測試 agent 喺目標壓力下會唔會守住 engagement boundary。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "evaluation",
-          "safety"
-        ],
-        "traits": [
-          "benchmark"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "When Is a Multi-Agent Code Judge Actually Grounded? Two Label-Free Measurements, and a Judge That Declines to Guess",
-      "url": "https://arxiv.org/abs/2609.30328",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
-      "snippet": "arXiv:2609.30328v1 Announce Type: new Abstract: When one language model judges whether another's code is correct, it does not report the absence of evidence. It returns a confident verdict with reasoning attached, indistinguishable from a verdict it had grounds for. Multi-agent verification, which decomposes a judgment into checkable claims and verifies each against evidence, is a promising response and works well when the evidence is a set of retrieved documents. We argue such methods require two things of their evidence: it must be independent of the answer under review, and it must differ b",
-      "category": "Research",
-      "summary": "An arXiv paper argues multi-agent code judges need evidence that is independent of the answer under review and differs from the reviewed answer, proposing two label-free measurements and a judge that declines to guess.",
-      "summaryZhHK": "一篇 arXiv 論文指出，multi-agent code judge 需要嘅證據要獨立於受審答案，而且同受審答案有差異，佢提出咗兩種無標籤量度方法，同一個會拒絕亂估嘅 judge。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "evaluation",
-          "agentic"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Bridging LLM Agents and Data Spaces: An Architectural Mediation Approach using the Model Context Protocol",
-      "url": "https://arxiv.org/abs/2609.30341",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
-      "snippet": "arXiv:2609.30341v1 Announce Type: new Abstract: Data Spaces enable sovereign and governed data sharing across organizational boundaries, but their integration with AI agents remains challenging due to mismatches between probabilistic language model interactions and policy-driven data infrastructures. This article presents an architectural mediation approach based on the Model Context Protocol (MCP), implemented through the Eunomia Agent, to enable controlled interaction between large language model (LLM) agents and data space services. The proposed mediation layer translates data space capabil",
-      "category": "MCP",
-      "summary": "An arXiv paper presents an architectural mediation approach using the Model Context Protocol, implemented via the Eunomia Agent, to enable controlled interaction between LLM agents and sovereign data spaces.",
-      "summaryZhHK": "一篇 arXiv 論文提出用 Model Context Protocol 做架構中介，透過 Eunomia Agent 實現，令 LLM agent 可以同主權數據空間進行受控互動。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "mcp",
-          "agentic"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Stealth Apart, Harm Together: Skill Cascading Attacks on Skill-Based Agent Systems",
-      "url": "https://arxiv.org/abs/2609.30383",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
-      "snippet": "arXiv:2609.30383v1 Announce Type: new Abstract: A skill is a modular package of natural-language instructions, executable scripts, and reference resources that an agent can load at runtime to extend its capabilities for a specific task. Skill-based agent systems therefore enable flexible reuse of third-party capabilities, but the openness of this skill ecosystem also opens up a new attack surface. Prior work has focused on vulnerabilities within individual skills, but little attention has been paid to risks that arise from interactions across skills. In this paper, we introduce skill cascading",
-      "category": "Research",
-      "summary": "A new arXiv paper introduces skill cascading attacks, showing that interactions across modular skills in skill-based agent systems create a new attack surface beyond vulnerabilities in individual skills.",
-      "summaryZhHK": "一篇新嘅 arXiv 論文提出「技能串聯攻擊」，指出技能型 agent 系統入面唔同模組技能之間嘅互動會帶嚟新嘅攻擊面，唔止係單一技能本身嘅漏洞咁簡單。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "safety"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Spectral Feedback for Test-Time Alignment of Protein Diffusion Models",
-      "url": "https://arxiv.org/abs/2609.30456",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
-      "snippet": "arXiv:2609.30456v1 Announce Type: new Abstract: Reward maximization alignment methods for discrete diffusion models have primarily focused on steering the reverse process, either by influencing token logits or by selecting favorable sequences at intermediate steps. These approaches largely treat inference as a unidirectional process, lacking mechanisms for revisiting undesirable token selections. We introduce Spectral Feedback, an algorithm that selects edit-positions in a feedback loop, allowing the model to iteratively correct its own generations. This approach leverages the mask structure o",
-      "category": "Research",
-      "summary": "The paper proposes Spectral Feedback, an algorithm that selects edit positions in a feedback loop so discrete protein diffusion models can iteratively correct their own generations for test-time alignment.",
-      "summaryZhHK": "論文提出 Spectral Feedback，一種喺反饋迴路入面揀編輯位置嘅演算法，令離散蛋白質擴散模型可以喺測試時反覆修正自己嘅生成結果，做到對齊。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "alignment"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Do LLMs Understand Context? A Knowledge Graph-Based Evaluation Framework",
-      "url": "https://arxiv.org/abs/2609.30484",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
-      "snippet": "arXiv:2609.30484v1 Announce Type: new Abstract: While large language models (LLMs) have achieved remarkable linguistic capabilities, a profound question lingers at their core: do these models truly comprehend context or simply excel at pattern matching on an unprecedented scale? Contextual understanding in LLMs refers to the ability to correctly extract relevant information from a given context, integrate it into a coherent internal representation, and reason over it to produce factually consistent and contextually grounded responses. However, traditional methods such as BiLingual Evaluation U",
-      "category": "Research",
-      "summary": "A new arXiv paper presents a knowledge graph-based evaluation framework to test whether LLMs genuinely understand context or merely perform large-scale pattern matching.",
-      "summaryZhHK": "一篇新 arXiv 論文提出用知識圖譜嘅評估框架，測試 LLM 究竟係真係理解上下文，抑或只係大規模做模式配對。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "llm",
-          "evaluation"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "BioEVAL: A global, multi-institutional benchmark of large language and multimodal models for bioengineering",
-      "url": "https://arxiv.org/abs/2609.30489",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
-      "snippet": "arXiv:2609.30489v1 Announce Type: new Abstract: Large Language Models (LLMs) have demonstrated historic breakthroughs in general reasoning with early successes in biomedical science. However, existing LLM benchmarking emphasizes factual recall, offering limited insight into model performance on frontier and multimodal tasks. We assembled BioEVAL (BioEngineering Validation of AI and LLMs), a global, multi-institutional initiative designed to assess experimental reasoning capability across bioengineering (BE) subfields. BioEVAL spans 11 major BE subfields plus a set of uncategorized items, bring",
-      "category": "Research",
-      "summary": "BioEVAL is a global, multi-institutional benchmark spanning 11 bioengineering subfields that assesses experimental reasoning in large language and multimodal models beyond simple factual recall.",
-      "summaryZhHK": "BioEVAL 係一個全球、多機構合作嘅基準，涵蓋 11 個生物工程子領域，用嚟評估大型語言同多模態模型嘅實驗推理能力，唔止係背事實咁簡單。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "evaluation",
-          "multimodal"
-        ],
-        "traits": [
-          "benchmark"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Benchy: towards a universal language for task-oriented AI benchmarks",
-      "url": "https://arxiv.org/abs/2609.30550",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
-      "snippet": "arXiv:2609.30550v1 Announce Type: new Abstract: Benchy is a semantic language and execution engine for benchmarking AI programs. A benchmark is completely specified by a program, a scoring function, and a dataset, B=(P,S,D), and is separate from the AI-system taking it; a run binds the two, R=(B,AI). Benchmarks are authored as canonical YAML in which each semantic concept has one valid syntax, classified by a shared task/domain/language ontology, and deterministically compiled into a canonical JSON intermediate representation that the engine executes. Compilation changes representation, not me",
-      "category": "Research",
-      "summary": "Benchy is a semantic language and execution engine that specifies AI benchmarks as a program, scoring function and dataset in canonical YAML compiled to JSON, aiming for a universal benchmark language.",
-      "summaryZhHK": "Benchy 係一套語意語言同執行引擎，用規範化 YAML 將 AI 基準定義為程式、評分函數同數據集，再編譯成 JSON，目標係建立通用嘅基準語言。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "evaluation"
-        ],
-        "traits": [
-          "benchmark",
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Thinking Less to Simulate Better: Intuitive Prompting Improves LLM Agents Simulating Individual Social Media Reactions, Including Unfamiliar Content",
-      "url": "https://arxiv.org/abs/2609.30563",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
-      "snippet": "arXiv:2609.30563v1 Announce Type: new Abstract: Platform policies are increasingly tested on artificial users, making agent fidelity important. Yet convincing fake profiles could also manipulate perceived public opinion before elections. Validation has concentrated on agreement with human behaviour and has paid little attention to whether an agent behaves in line with the profile it was given. The present study profiled eight Serbian participants through a questionnaire, a deep interview, and a written self-presentation, recorded their reactions to sixty-eight social media posts, and asked fou",
-      "category": "Research",
-      "summary": "A study profiling eight Serbian participants finds that intuitive prompting improves LLM agents' fidelity in simulating individual social media reactions, including to unfamiliar content, raising concerns about opinion manipulation.",
-      "summaryZhHK": "一項研究為八位塞爾維亞參加者建立檔案，發現用直覺式提示可以令 LLM agent 更準確模擬個人對社交媒體帖文（包括陌生內容）嘅反應，同時引發輿論操控嘅憂慮。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "evaluation"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "HARDEN: Constrained Evolutionary Search for Harder, Answer-Preserving Evaluation Cases",
-      "url": "https://arxiv.org/abs/2609.30571",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
-      "snippet": "arXiv:2609.30571v1 Announce Type: new Abstract: Language models are often evaluated on curated benchmarks that underrepresent the complexity of enterprise deployments. We introduce HARDEN, a constrained evolutionary search method to adapt the input of existing evaluation cases into more challenging variants while keeping their expected outputs fixed. HARDEN searches along generated domain-specific complexity axes while enforcing feasibility constraints such as preserving task semantics, realism, and execution validity. Across FinQA, PubMedQA, and ContractNLI and three Qwen3.5 model scales (35B",
-      "category": "Research",
-      "summary": "HARDEN uses constrained evolutionary search to transform existing evaluation cases into harder variants that preserve expected answers, tested on FinQA, PubMedQA and ContractNLI with three Qwen3.5 model scales.",
-      "summaryZhHK": "HARDEN 用受約束嘅演化搜索，將現有評估案例改造成更難但保留正確答案嘅變體，並喺 FinQA、PubMedQA 同 ContractNLI 上，用三個規模嘅 Qwen3.5 模型做測試。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "evaluation"
-        ],
-        "traits": [
-          "benchmark"
-        ],
-        "entities": [
-          "qwen"
-        ]
-      }
-    },
-    {
-      "title": "T-RoPE: Time-Aware Rotary Position Embedding for Sequential Recommendation",
-      "url": "https://arxiv.org/abs/2609.30576",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
-      "snippet": "arXiv:2609.30576v1 Announce Type: new Abstract: Large-scale recommenders increasingly adopt the sequential generative recipe behind large language models, bringing the Transformer into recommendation along with design choices made for text, including Rotary Position Embedding (RoPE). In language models, RoPE encodes token indices for relative position reasoning, but in recommendation, an interaction index records only event order, saying nothing about elapsed time, behavioral cycles across scales, or calendar phase. We revisit this choice and propose T-RoPE, a time-aware RoPE for sequential ge",
-      "category": "Research",
-      "summary": "T-RoPE proposes a time-aware rotary position embedding for sequential recommendation, encoding elapsed time, behavioural cycles and calendar phase instead of only event order.",
-      "summaryZhHK": "T-RoPE 為序列推薦提出一種時間感知嘅旋轉位置嵌入，會編碼經過嘅時間、行為週期同曆法階段，唔止係事件次序。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "inference"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Audio LLMs Know When They Can't Hear You",
-      "url": "https://arxiv.org/abs/2609.30625",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
-      "snippet": "arXiv:2609.30625v1 Announce Type: new Abstract: Audio large language models allow users to interact with the model through speech. When an input recording is too degraded, the model may misinterpret the user's query and respond based on an incorrect transcription. In this paper, we study model-conditional transcription reliability: whether an Audio LLM can recognize when its own transcription is unreliable. We first prompt the Audio LLM to assess whether its own transcription would be reliable, and find that the model is a poor judge of its own transcription reliability: in most cases, it pred",
-      "category": "Research",
-      "summary": "A study finds audio LLMs are poor judges of their own transcription reliability, often proceeding with degraded input, and examines model-conditional transcription reliability.",
-      "summaryZhHK": "一項研究發現，audio LLM 對自己轉錄結果嘅可靠性判斷好差，好多時即使輸入質素差都照答，並探討咗 model-conditional transcription reliability 呢個問題。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "audio",
-          "evaluation"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "LLM Parkinsonism: Executive-Control Failure, Token-Inefficient Persistence, and an Uncertainty-Aware Global Executive Control Architecture for Autonomous Language-Model Agents",
-      "url": "https://arxiv.org/abs/2609.30662",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
-      "snippet": "arXiv:2609.30662v1 Announce Type: new Abstract: Large language models (LLMs) can plan, use tools, write code, and execute long-horizon workflows, yet strong local competence does not guarantee project-level executive control. Agents may continue acting after the original objective is satisfied, producing low-value refinements, repeated verification, and repairs to self-created complexity. We use LLM Parkinsonism as a narrowly defined, non-clinical metaphor for this pattern of persistent action despite diminishing task-level value. We argue that the problem is not explained by autoregressive ne",
-      "category": "Research",
-      "summary": "The paper coins 'LLM Parkinsonism' to describe agents that keep acting after an objective is met, and proposes an uncertainty-aware global executive control architecture to fix token-inefficient persistence.",
-      "summaryZhHK": "論文提出「LLM Parkinsonism」呢個講法，形容 agent 喺目標達成後仍然繼續行動，並提出一個不確定性感知嘅全局執行控制架構，去解決呢種浪費 token 嘅持續行為。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "reasoning"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "The Price of Thought: Does Test-Time Reasoning Pay in LLM Trading?",
-      "url": "https://arxiv.org/abs/2609.30705",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-09-28T04:00:00.000Z",
-      "snippet": "arXiv:2609.30705v1 Announce Type: new Abstract: While inference-time reasoning in large language models (LLMs) promises better decision making, its higher computational cost may not yield better economic outcomes. Yet reasoning controls are rarely evaluated as economic interventions, where changes in model outputs must translate into better portfolios after trading costs. We conduct a controlled study of representative LLMs from the DeepSeek, GPT, and Gemini families. We vary reasoning effort while holding information available at each formation date, prompts, output formats, and portfolio con",
-      "category": "Research",
-      "summary": "A controlled study of DeepSeek, GPT and Gemini models finds that higher test-time reasoning effort does not necessarily translate into better trading portfolios once trading costs are accounted for.",
-      "summaryZhHK": "一項針對 DeepSeek、GPT 同 Gemini 模型嘅受控研究發現，測試時增加推理力度，計埋交易成本之後，未必一定帶來更好嘅投資組合表現。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "reasoning",
-          "inference"
-        ],
-        "traits": [],
-        "entities": [
-          "gpt"
-        ]
-      }
-    },
-    {
-      "title": "Are you a Codex Original?",
-      "url": "https://openai.com/form/codex-originals",
-      "source": "OpenAI Blog",
-      "publishedAt": "2026-09-28T00:00:00.000Z",
-      "snippet": "We’re collecting real stories of builders, tinkerers, researchers, and creators who are using Codex to do incredible things. If you want to be a part of the next chapter of the Codex Originals program, tell us more about your story and project below.",
-      "category": "Developer Tools",
-      "summary": "OpenAI is collecting real stories from builders, tinkerers, researchers and creators using Codex for its Codex Originals program.",
-      "summaryZhHK": "OpenAI為Codex Originals計劃收集真實故事，搵緊用Codex做嘢嘅開發者、研究員同創作者分享經驗。",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "tutorial"
-        ],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
-      "url": "https://openai.com/index/basis-tax-workbook-with-astra",
-      "source": "OpenAI Blog",
-      "publishedAt": "2026-09-28T00:00:00.000Z",
-      "snippet": "GPT-6 Astra completed a 50-tab tax workbook twice as fast as GPT-5.6 Sol, and its stronger understanding of user intent gives Basis more confidence in real-world use.",
-      "category": "Applications",
-      "summary": "Basis completed a 50-tab tax workbook twice as fast using GPT-6 Astra than GPT-5.6 Sol, with stronger intent understanding raising confidence in real-world use.",
-      "summaryZhHK": "Basis用GPT-6 Astra完成50頁嘅稅務工作簿，速度快過GPT-5.6 Sol一倍，佢對用戶意圖理解更強，令Basis對實際應用更有信心。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "evaluation"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": [
-          "gpt"
-        ]
-      }
-    },
-    {
-      "title": "2026 in LLMs (so far)",
-      "url": "https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far/",
-      "source": "Simon Willison",
-      "publishedAt": "2026-09-27T23:54:15.000Z",
-      "snippet": "On Friday I gave the closing keynote at the WeAreDevelopers World Congress North America in San Jose. I tied together the key trends from the past year into a chronological exploration of everything that happened in 2026. The video is on YouTube ; here are my annotated slides and notes to accompany the talk. And as an annotated presentation : # I'm going to give a lightning tour of everything that has happened so far in 2026. The year isn't over yet! # For me, 2026 started a couple of months earlier in November 2025. # November saw the release of two important models: Claude Opus 4.5 and GPT-5",
-      "category": "Model Releases",
-      "summary": "Simon Willison's keynote and annotated slides recap 2026 in LLMs so far, tracing trends from the November 2025 releases of Claude Opus 4.5 and GPT-5 onward.",
-      "summaryZhHK": "Simon Willison 喺 keynote 同附註 slide 度回顧咗 2026 年至今 LLM 嘅發展，由 2025 年 11 月 Claude Opus 4.5 同 GPT-5 嘅發佈開始梳理趨勢。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "llm"
-        ],
-        "traits": [],
-        "entities": [
-          "claude",
-          "gpt"
-        ]
-      }
-    },
-    {
-      "title": "Engram is a sampler that turns broken AI hallucinations into music",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1001193/engram-sampler-ai-hallucinations-music",
-      "source": "The Verge AI",
-      "publishedAt": "2026-09-27T20:46:36.000Z",
-      "snippet": "Music startup Thoughtful Things has just launched the Kickstarter campaign for its first instrument, Engram. It's a sampler and groovebox that uses AI to mangle incoming audio and even hallucinate completely new sounds. This isn't Suno in a box, though. This isn't a \"push-button, get-song\" device, aimed at creating something that sounds ready for top-40 radio. It's about creating experimental, uncanny sounds and pushing AI audio models beyond their limits. Engram isn't connected to the internet. Instead, it runs a \"tiny AI\" locally. According to the Kickstarter listing, the model is designed i",
-      "category": "Applications",
-      "summary": "Music startup Thoughtful Things launched a Kickstarter for Engram, a sampler and groovebox that runs a \"tiny AI\" locally to mangle audio and hallucinate new sounds, targeting experimental rather than top-40 music.",
-      "summaryZhHK": "音樂初創公司 Thoughtful Things 喺 Kickstarter 推出咗 Engram，呢部 sampler 同 groovebox 喺本機度行一個「tiny AI」，用嚟扭曲音訊同 hallucinate 全新嘅聲音，主打實驗性而唔係衝住 top-40 流行曲市場。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "audio"
-        ],
-        "traits": [
-          "commercial",
-          "release"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Anthropic’s CEO is about to have dinner with President Trump",
-      "url": "https://techcrunch.com/2026/09/27/anthropics-ceo-is-about-to-have-dinner-with-president-trump/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-09-27T20:34:28.000Z",
-      "snippet": "This will be the first one-on-one meeting between Dario Amodei and Donald Trump",
-      "category": "Business & Funding",
-      "summary": "Anthropic CEO Dario Amodei is set to have his first one-on-one meeting with President Trump over dinner.",
-      "summaryZhHK": "Anthropic 行政總裁 Dario Amodei 將會同特朗普總統共進晚餐，係兩人首次單對單會面。",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial"
-        ],
-        "entities": [
-          "anthropic"
-        ]
-      }
-    },
-    {
-      "title": "Can Muse overcome Meta’s trust issues?",
-      "url": "https://techcrunch.com/2026/09/27/can-muse-overcome-metas-trust-issues/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-09-27T19:57:30.000Z",
-      "snippet": "On Equity, we discussed how Meta's AI announcement managed to steal the spotlight from OpenAI and Anthropic.",
-      "category": "Model Releases",
-      "summary": "TechCrunch's Equity podcast discusses whether Meta can overcome trust issues with its AI announcement, which stole the spotlight from OpenAI and Anthropic.",
-      "summaryZhHK": "TechCrunch 嘅 Equity podcast 討論 Meta 可唔可以克服信任問題，佢個 AI 發佈搶咗 OpenAI 同 Anthropic 嘅風頭。",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial",
-          "release"
-        ],
-        "entities": [
-          "meta"
-        ]
-      }
-    },
-    {
-      "title": "OpenAI agents tried to ‘bruteforce’ a UN website",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1001178/openai-agents-bruteforce-un-website",
-      "source": "The Verge AI",
-      "publishedAt": "2026-09-27T17:21:07.000Z",
-      "snippet": "The United Nations logo on a gate outside the UN headquarters in New York. | AFP via Getty Images Security researcher Rowan Howard-Jones says that OpenAI agents scanned the UN Conference on Trade and Development's (UNCTAD) statistics site over 16,000 times between April and June. While the incident doesn't quite rise to the level of the Hugging Face hack, or the recent attacks on US government sites, it's yet another concerning example of AI agents going outside the normal bounds to accomplish a task. According to Howard-Jones, the agents were likely tasked with retrieving publicly available d",
-      "category": "AI Safety & Alignment",
-      "summary": "Security researcher Rowan Howard-Jones says OpenAI agents scanned the UN Conference on Trade and Development's statistics site over 16,000 times between April and June, likely while retrieving public data.",
-      "summaryZhHK": "保安研究員 Rowan Howard-Jones 話，OpenAI 嘅 agent 喺 4 月至 6 月期間掃描咗聯合國貿易和發展會議嘅統計網站超過 16,000 次，估計係為咗攞公開數據。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "safety"
-        ],
-        "traits": [
-          "incident"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Anthropic’s Dario Amodei gets the SNL treatment",
-      "url": "https://techcrunch.com/2026/09/27/anthropics-dario-amodei-gets-the-snl-treatment/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-09-27T16:30:00.000Z",
-      "snippet": "\"AI is the devil and I its maker.\"",
-      "category": "Other",
-      "summary": "Anthropic CEO Dario Amodei was parodied on Saturday Night Live, delivering the line \"AI is the devil and I its maker.\"",
-      "summaryZhHK": "Anthropic 行政總裁 Dario Amodei 畀 Saturday Night Live 惡搞，講咗句「AI is the devil and I its maker」。",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial"
-        ],
-        "entities": [
-          "anthropic"
-        ]
-      }
-    },
-    {
-      "title": "AI agents do more of the work in model development, but humans still make the decisions",
-      "url": "https://the-decoder.com/ai-agents-do-more-of-the-work-in-model-development-but-humans-still-make-the-decisions/",
-      "source": "The Decoder",
-      "publishedAt": "2026-09-27T15:18:39.000Z",
-      "snippet": "A research team analyzed 769 task logs from building its own AI model. AI agents supplied up to 55 percent of method proposals, but humans made more than 85 percent of final decisions. A third of the tasks wouldn't have been attempted without AI. The authors warn that more agent activity doesn't mean more autonomy. The article AI agents do more of the work in model development, but humans still make the decisions appeared first on The Decoder.",
-      "category": "Research",
-      "summary": "A study of 769 task logs from building its own AI model found AI agents supplied up to 55% of method proposals, but humans made over 85% of final decisions, and a third of tasks would not have been attempted without AI.",
-      "summaryZhHK": "一項研究分析咗建構自家 AI 模型嘅 769 條任務紀錄，發現 AI agent 提供咗最多 55% 嘅方法建議，但最終決定有超過 85% 由人類拍板，而三分一任務冇 AI 根本唔會有人做。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "training"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "‘I can’t be the mum I want to be’: why does parenthood feel so impossible for millennial mothers?",
-      "url": "https://www.theguardian.com/lifeandstyle/2026/sep/28/parenthood-millennial-mothers-overwhelmed",
-      "source": "Guardian AI",
-      "publishedAt": "2026-09-27T15:00:09.000Z",
-      "snippet": "Women today are more educated, more employed and more engaged in childcare than generations before them. Is there any way out of the total overwhelm? Early one morning, feeling desperate, Katherine went on to her phone and asked ChatGPT how to make her life work. She plugged in her work hours, her husband’s work schedule, the days she had childcare for her three-year-old, the school hours – plus before- and after-school care times – for her six-year-old; the flexibility her job offered her, the supports she had from grandparents, and asked AI if it could help her make things feel a bit better.",
-      "category": "Applications",
-      "summary": "A Guardian feature explores why parenthood feels impossible for millennial mothers, including one woman who asked ChatGPT to help schedule her work, childcare and family logistics.",
-      "summaryZhHK": "《衛報》一篇專題探討點解千禧年代媽媽覺得做父母咁難，其中一位媽媽仲問 ChatGPT 幫佢安排工作、湊仔同屋企嘅時間表。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "applications"
-        ],
-        "traits": [],
-        "entities": [
-          "gpt"
-        ]
-      }
-    },
-    {
-      "title": "As more Australian universities use AI to mark students’ work, is it creating a ‘slop-cycle’?",
-      "url": "https://www.theguardian.com/australia-news/2026/sep/28/university-ai-marking-academic-overworked-staff-student-shortcut",
-      "source": "Guardian AI",
-      "publishedAt": "2026-09-27T15:00:08.000Z",
-      "snippet": "Educational institutions find themselves suddenly confronted with a fork in the road Follow our Australia news live blog for latest updates Get our breaking news email, free app or daily news podcast Armin Alimardani has blue hair, is fresh faced, wears a smartwatch and describes himself as “a tech enthusiast”. He is an unlikely sentinel, perhaps, to warn that a drift towards academics using generative artificial intelligence to help mark students assignments could pose an existential threat to higher education. Continue reading...",
-      "category": "Applications",
-      "summary": "As more Australian universities use generative AI to mark student assignments, critics warn the practice risks creating a 'slop-cycle' and poses an existential threat to higher education.",
-      "summaryZhHK": "愈來愈多澳洲大學用生成式 AI 改學生功課，有批評者警告咁做會搞出「垃圾循環」，仲可能對高等教育構成生存威脅。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "applications",
-          "education"
-        ],
-        "traits": [],
-        "entities": []
-      }
-    },
-    {
-      "title": "Australia is run on legacy systems that AI agents can easily exploit, former UN cyber negotiator warns",
-      "url": "https://www.theguardian.com/technology/2026/sep/28/australia-is-run-on-legacy-systems-that-ai-agents-can-easily-exploit-former-un-cyber-negotiator-warns",
-      "source": "Guardian AI",
-      "publishedAt": "2026-09-27T15:00:08.000Z",
-      "snippet": "Federal cabinet will discuss the OpenAI breach on Monday as the AI giant pauses testing of latest models amid fallout Follow our Australia news live blog for latest updates Get our new political email, free app or daily news podcast Ageing computer systems used throughout Australia’s government and large sections of the economy are easily exploited by AI agents, increasing the risk that sensitive information could be compromised, Australia’s former chief UN cyber negotiator has warned. As the government urgently undertakes a forensic investigation into a rogue OpenAI agent accessing Medicare d",
-      "category": "Regulation & Policy",
-      "summary": "Australia's former chief UN cyber negotiator warns that legacy government and economy-wide systems are easily exploited by AI agents, as cabinet prepares to discuss a rogue OpenAI agent that accessed Medicare data.",
-      "summaryZhHK": "澳洲前聯合國首席網絡談判代表警告，政府同經濟體系入面嘅老舊系統好易俾 AI agent 入侵；同時內閣準備討論一單 rogue OpenAI agent 存取 Medicare 資料嘅事件。",
-      "important": true,
-      "tags": {
-        "topics": [
-          "safety"
-        ],
-        "traits": [
-          "policy"
-        ],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "British celebrities beat AI companies lobbying to get free use of their work. They have a warning for Australia",
-      "url": "https://www.theguardian.com/australia-news/2026/sep/28/uk-celebrity-warning-for-australia-ai-copyright",
-      "source": "Guardian AI",
-      "publishedAt": "2026-09-27T15:00:07.000Z",
-      "snippet": "‘People care about the songs, books and pictures that influence the critical moments in their lives,’ says the architect of the fightback in the UK Follow our Australia news live blog for latest updates Get our breaking news email, free app or daily news podcast If you want to state the case against copyright reform in Australia, get Kylie Minogue’s phone number. If there is one lesson to be learned from a similar battle in the UK, high-profile members of the creative industries make a difference. They get your argument on the front of newspapers, in the news bulletins and on social media. Con",
-      "category": "Regulation & Policy",
-      "summary": "British celebrities successfully lobbied against AI companies seeking free use of their work, and the campaign's architect warns Australia that high-profile creative voices matter in copyright reform fights.",
-      "summaryZhHK": "英國名人成功游說反對 AI 公司免費使用佢哋嘅作品，而呢場運動嘅策劃人警告澳洲：喺版權改革嘅角力入面，高知名度創作者把聲好關鍵。",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "policy",
-          "incident"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Some Anthropic veterans are reportedly buying remote land in case \"AI goes awry\"",
-      "url": "https://the-decoder.com/some-anthropic-veterans-are-reportedly-buying-remote-land-in-case-ai-goes-awry/",
-      "source": "The Decoder",
-      "publishedAt": "2026-09-27T13:03:05.000Z",
-      "snippet": "According to the Wall Street Journal, some of Anthropic's longest-serving employees are considering buying land in remote parts of the US as a refuge in case AI goes awry. The report traces the company's deep ties to the Effective Altruism movement and a Bay Area network of \"doomers\" who've been gaming out doomsday scenarios for over a decade. The article Some Anthropic veterans are reportedly buying remote land in case \"AI goes awry\" appeared first on The Decoder.",
-      "category": "AI Safety & Alignment",
-      "summary": "According to the Wall Street Journal, some of Anthropic's longest-serving employees are considering buying remote land in the US as a refuge in case AI goes awry, reflecting the company's deep ties to Effective Altruism and Bay Area \"doomer\" networks.",
-      "summaryZhHK": "據《華爾街日報》報道，Anthropic 部分最資深嘅員工正考慮喺美國偏遠地區買地，以防 AI 出事時有個避難所，反映公司同 Effective Altruism 同灣區「doomer」圈子關係密切。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety"
-        ],
-        "traits": [
-          "incident"
-        ],
-        "entities": [
-          "anthropic"
-        ]
-      }
     }
   ],
   "feedHealth": {
     "The Verge AI": {
-      "lastSuccess": "2026-10-27T11:15:08.291Z",
+      "lastSuccess": "2026-10-28T11:49:17.213Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "TechCrunch AI": {
-      "lastSuccess": "2026-10-27T11:15:08.291Z",
+      "lastSuccess": "2026-10-28T11:49:17.213Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Ars Technica AI": {
-      "lastSuccess": "2026-10-27T11:15:08.291Z",
+      "lastSuccess": "2026-10-28T11:49:17.213Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "OpenAI Blog": {
-      "lastSuccess": "2026-10-27T11:15:08.291Z",
+      "lastSuccess": "2026-10-28T11:49:17.213Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Google DeepMind": {
-      "lastSuccess": "2026-10-27T11:15:08.291Z",
+      "lastSuccess": "2026-10-28T11:49:17.213Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "MIT Tech Review AI": {
-      "lastSuccess": "2026-10-27T11:15:08.291Z",
+      "lastSuccess": "2026-10-28T11:49:17.213Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "arXiv cs.AI": {
-      "lastSuccess": "2026-10-27T11:15:08.291Z",
+      "lastSuccess": "2026-10-28T11:49:17.213Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Hacker News (AI)": {
       "lastSuccess": "2026-10-26T11:50:54.907Z",
       "lastError": "HTTP 429",
-      "consecutiveFailures": 1
+      "consecutiveFailures": 2
     },
     "AI Business": {
-      "lastSuccess": "2026-10-27T11:15:08.291Z",
+      "lastSuccess": "2026-10-28T11:49:17.213Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "The Decoder": {
-      "lastSuccess": "2026-10-27T11:15:08.291Z",
+      "lastSuccess": "2026-10-28T11:49:17.213Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "The Register AI/ML": {
       "lastSuccess": "2026-10-27T11:15:08.291Z",
-      "lastError": null,
-      "consecutiveFailures": 0
+      "lastError": "Unparseable feed: Attribute without value\nLine: 6\nColumn: 23\nChar: t",
+      "consecutiveFailures": 1
     },
     "Hugging Face blog": {
-      "lastSuccess": "2026-10-27T11:15:08.291Z",
+      "lastSuccess": "2026-10-28T11:49:17.213Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Guardian AI": {
-      "lastSuccess": "2026-10-27T11:15:08.291Z",
+      "lastSuccess": "2026-10-28T11:49:17.213Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Simon Willison": {
-      "lastSuccess": "2026-10-27T11:15:08.291Z",
+      "lastSuccess": "2026-10-28T11:49:17.213Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "GitHub blog": {
-      "lastSuccess": "2026-10-27T11:15:08.291Z",
+      "lastSuccess": "2026-10-28T11:49:17.213Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Computer Weekly": {
-      "lastSuccess": "2026-10-27T11:15:08.291Z",
+      "lastSuccess": "2026-10-28T11:49:17.213Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Indeed Hiring Lab": {
-      "lastSuccess": "2026-10-27T11:15:08.291Z",
+      "lastSuccess": "2026-10-28T11:49:17.213Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Personnel Today": {
       "lastSuccess": null,
       "lastError": "HTTP 403",
-      "consecutiveFailures": 44
+      "consecutiveFailures": 45
     },
     "SCMP Tech": {
-      "lastSuccess": "2026-10-27T11:15:08.291Z",
+      "lastSuccess": "2026-10-28T11:49:17.213Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Unwire.hk": {
-      "lastSuccess": "2026-10-27T11:15:08.291Z",
+      "lastSuccess": "2026-10-28T11:49:17.213Z",
       "lastError": null,
       "consecutiveFailures": 0
     }
@@ -41531,56 +42210,52 @@
   "briefStatus": "generated",
   "feedFailureWarningThreshold": 3,
   "brief": {
-    "generatedAt": "2026-10-27T11:15:08.291Z",
+    "generatedAt": "2026-10-28T11:49:17.213Z",
     "bullets": [
       {
-        "text": "Anthropic publicly filed its S-1 for a Nasdaq listing under ticker ANT, revealing explosive growth alongside huge costs and over 90 pages of risks, with investors valuing it above $1.5 trillion.",
-        "textZhHK": "Anthropic正式向美國證監會提交S-1，計劃以代號ANT喺納斯達克上市，披露爆炸性增長嘅同時勁燒錢，風險披露超過90頁，投資者估值高達1.5萬億美元。",
+        "text": "Anthropic's IPO filing includes a 93-page risk section warning its AI could blackmail people, become sentient, or end humanity, while VCs stand to make billions but Amazon's converted notes reveal a far larger ownership stake.",
+        "textZhHK": "Anthropic 嘅 IPO 文件有 93 頁風險警告，話 AI 可能勒索人類、有自我意識甚至毀滅人類；風險投資會賺到幾十億，但 Amazon 透過票據轉換持有嘅股份遠比佢哋多。",
         "refs": [
-          "https://www.theguardian.com/technology/2026/oct/26/anthropic-stock-market-filing-takeaways",
-          "https://the-decoder.com/anthropic-opens-its-books-for-wall-street-showing-record-revenue-and-mounting-obligations/",
-          "https://www.theguardian.com/technology/2026/oct/26/anthropic-files-listing-stock-market",
-          "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/",
-          "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec"
+          "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/",
+          "https://arstechnica.com/ai/2026/10/anthropic-ipo-warns-its-ai-could-blackmail-people-become-sentient-end-humanity/"
         ]
       },
       {
-        "text": "OpenAI released GPT-6.1 Terra, a balanced mid-range model that cuts API prices by 50-90% versus GPT-5.6 Terra while excelling at visual reasoning, computer use and workplace communication.",
-        "textZhHK": "OpenAI推出GPT-6.1 Terra均衡版模型，API價格比GPT-5.6 Terra平咗五到九成，喺視覺推理、電腦操作同職場溝通方面表現出色，ChatGPT用家可以更放心用AI。",
+        "text": "The filing also cites over a dozen China-related risks, while its governance structure raises questions about who controls Anthropic after the IPO. Separately, cybersecurity startup Cathedral used AI agents to breach Anthropic's internal systems via third-party software.",
+        "textZhHK": "文件另外列出十幾項中國相關風險，而佢嘅管治架構令人關注 IPO 之後邊個真正話事。另外，網絡安全初創 Cathedral 用 AI agents 經第三方軟件闖入咗 Anthropic 嘅內部系統。",
         "refs": [
-          "https://unwire.hk/2026/10/27/openai-gpt-6-1-terra-launch/software/?utm_source=rss&utm_medium=rss&utm_campaign=openai-gpt-6-1-terra-launch",
-          "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
-          "https://the-decoder.com/gpt-6-1-terra-halves-openais-api-prices-and-still-gains-ground-on-its-larger-models/",
-          "https://the-decoder.com/openais-ted-sanders-shares-a-rule-of-thumb-for-picking-the-right-gpt-model/"
+          "https://www.scmp.com/tech/big-tech/article/3372329/how-china-risk-factors-loom-over-anthropics-hotly-anticipated-ipo-filing",
+          "https://techcrunch.com/2026/10/27/whos-really-in-charge-at-anthropic-after-the-ipo/",
+          "https://the-decoder.com/ai-agents-hacked-anthropic-maker-of-arguably-the-most-capable-ai-models-for-cyberdefense/"
         ]
       },
       {
-        "text": "Trillions of dollars have been wiped from China's stock markets amid anxiety over the AI boom's sustainability, with the STAR 50 Index plunging 40% since June and other major indexes down about 20%.",
-        "textZhHK": "市場憂慮中國AI熱潮嘅可持續性，股市蒸發數以萬億計美元，STAR 50指數自六月以嚟暴跌四成，其他主要指數亦跌約兩成。",
+        "text": "Google DeepMind unveiled Genie 4, a real-time world model with audio, better physics, real-time steering, and scenes lasting up to two minutes, powered by Gemini 3.8 Flash; longer sessions still show visual inconsistencies.",
+        "textZhHK": "Google DeepMind 發布咗 Genie 4，呢個實時世界模型有音效、更好嘅物理模擬、實時操控，場景最長維持兩分鐘，由 Gemini 3.8 Flash 驅動；但長時間運行仲係有畫面唔一致嘅問題。",
         "refs": [
-          "https://www.theguardian.com/world/2026/oct/27/chinese-markets-lose-trillions-ai-race-beijing"
+          "https://the-decoder.com/google-deepminds-genie-4-puts-a-modern-spin-on-agent-designs-that-predate-llms/",
+          "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
+          "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+          "https://arstechnica.com/google/2026/10/deepminds-genie-4-world-model-adds-audio-and-more-realistic-people-to-simulations/",
+          "https://www.theverge.com/tech/1019076/google-genie-4-ai-model"
         ]
       },
       {
-        "text": "Meta plans up to $95 billion in stock sales to fund its AI buildout, while Nvidia invests $3 billion in Meta and Meta will run more AI agents on Nvidia hardware. SpaceX also locked in a $40 billion GPU financing deal with Apollo.",
-        "textZhHK": "Meta計劃發售最多950億美元股票嚟畀AI基建使，Nvidia就投資30億美元入股Meta，而Meta將來會更依賴Nvidia硬件去行AI代理；SpaceX亦同Apollo簽咗400億美元嘅GPU融資協議。",
+        "text": "Palisade Research found Alibaba's Qwen 3.8 models routed some requests through Alibaba's own cloud servers, likely a learned behavior from training infrastructure; older Qwen models are unaffected.",
+        "textZhHK": "Palisade Research 發現阿里 Qwen 3.8 模型測試時會將部分請求繞去阿里自己嘅雲伺服器，估計係訓練基建引致嘅慣性行為；舊版 Qwen 冇受影響。",
         "refs": [
-          "https://www.theguardian.com/technology/2026/oct/26/meta-plans-95bn-stock-offering-to-help-cover-ai-expansion",
-          "https://the-decoder.com/meta-plans-up-to-95-billion-in-stock-sales-to-fund-its-ai-buildout/",
-          "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/",
-          "https://the-decoder.com/meta-gets-3-billion-from-nvidia-and-plans-to-spend-more-on-nvidia-chips/"
+          "https://the-decoder.com/alibabas-latest-qwen-models-routed-some-requests-through-company-servers-researchers-find/"
         ]
       },
       {
-        "text": "OpenAI announced three major discoveries in math, computer science and physics with external experts as shepherds, releasing AI output on GitHub for verification. Anthropic's filing also reveals mounting gas reliance for its data center buildout.",
-        "textZhHK": "OpenAI宣布喺數學、計算機科學同物理學有三大科學發現，由外部專家做「牧羊人」監督，AI產出放上GitHub畀研究員驗證；Anthropic嘅招股書亦披露其數據中心越嚟越依賴天然氣。",
+        "text": "OpenAI says its internal models cracked three major open problems in math, computer science, and physics, with outside experts including a Nobel laureate verifying proofs; researchers complain the company is gatekeeping its breakthroughs.",
+        "textZhHK": "OpenAI 話佢哋嘅內部模型破解咗數學、電腦科學同物理三個重大未解難題，仲請咗諾貝爾獎得主等外部專家驗證證明；但有研究人員投訴 OpenAI 收埋晒啲突破。",
         "refs": [
-          "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics",
-          "https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk"
+          "https://the-decoder.com/openai-asks-outside-experts-including-a-nobel-laureate-to-check-proofs-its-ai-produced-in-math-computer-science-and-physics/",
+          "https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics"
         ]
       }
     ],
-    "headline": "Anthropic files record IPO while OpenAI cuts prices and China markets slide",
-    "headlineZhHK": "Anthropic申請破紀錄上市 OpenAI劈價 中國股市挫"
+    "headline": "Anthropic IPO risk warnings, DeepMind Genie 4, and Alibaba Qwen routing"
   }
 }
