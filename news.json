@@ -1,22 +1,453 @@
 {
-  "generatedAt": "2026-11-14T12:41:52.915Z",
-  "daysBack": 2,
+  "generatedAt": "2026-11-15T13:08:50.633Z",
+  "daysBack": 3,
   "categories": [
-    "Applications",
-    "Research",
-    "Other",
-    "Open Source",
-    "Hardware & Compute",
     "Business & Funding",
-    "Developer Tools",
+    "Hardware & Compute",
+    "Research",
+    "Open Source",
+    "Applications",
     "AI Safety & Alignment",
-    "Regulation & Policy",
-    "MCP",
-    "Agent Frameworks",
     "Model Releases",
+    "Developer Tools",
+    "Regulation & Policy",
+    "Agent Frameworks",
+    "Other",
+    "MCP",
     "Robotics"
   ],
   "articles": [
+    {
+      "title": "An overview of Jensen Huang’s messy days",
+      "url": "https://www.theverge.com/column/1033943/jensen-huang-nvidia-china-spying-scandal-resignation",
+      "source": "The Verge AI",
+      "publishedAt": "2026-11-15T13:00:00.000Z",
+      "snippet": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on Jensen Huang's resignation and the fallout from Nvidia's leadership crisis, follow Terrence O'Brien. The Stepback arrives in our subscribers' inboxes on Sunday at 8AM ET. Opt in for The Stepback here. How it started On October 29th, The New York Times reported that Nvidia co-founder and showman CEO Jensen Huang appeared to be the target of a Chinese spy plot. Any major tech CEO potentially being compromised by the Chinese government is concerning - especially Jensen Huang. \"If you could",
+      "category": "Business & Funding",
+      "summary": "A newsletter recap covers the fallout from Nvidia CEO Jensen Huang's resignation and the leadership crisis at the chipmaker after reports he was the target of a Chinese spy plot.",
+      "summaryZhHK": "一份電子報回顧咗 Nvidia CEO 黃仁勳辭職之後嘅餘波，同埋呢間晶片公司嘅領導危機，事緣有報道指佢成為中國間諜陰謀嘅目標。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "incident"
+        ],
+        "entities": [
+          "nvidia"
+        ]
+      }
+    },
+    {
+      "title": "Firm linked to Jensen Huang's ex-lover reportedly brokered nearly $12 billion in Nvidia chip orders for China",
+      "url": "https://the-decoder.com/firm-linked-to-jensen-huangs-ex-lover-reportedly-brokered-nearly-12-billion-in-nvidia-chip-orders-for-china/",
+      "source": "The Decoder",
+      "publishedAt": "2026-11-15T11:35:12.000Z",
+      "snippet": "Megaspeed, the firm owned by ousted Nvidia CEO Jensen Huang's former lover Alice Huang, arranged nearly $12 billion in Nvidia chip orders for Chinese companies between 2024 and 2025, according to the WSJ. Short seller Culper Research estimates Nvidia's actual China revenue share exceeds 20 percent, far above the officially reported 7 percent. The article Firm linked to Jensen Huang's ex-lover reportedly brokered nearly $12 billion in Nvidia chip orders for China appeared first on The Decoder.",
+      "category": "Hardware & Compute",
+      "summary": "Megaspeed, owned by ousted Nvidia CEO Jensen Huang's former partner Alice Huang, reportedly brokered nearly $12 billion in Nvidia chip orders for Chinese firms in 2024-2025, while short seller Culper Research estimates Nvidia's real China revenue share exceeds 20 percent versus the official 7 percent.",
+      "summaryZhHK": "被撤職嘅 Nvidia CEO 黃仁勳前伴侶 Alice Huang 旗下嘅 Megaspeed，據報喺 2024 至 2025 年間為中國企業促成咗近 120 億美元嘅 Nvidia 晶片訂單；而沽空機構 Culper Research 估計 Nvidia 實際中國收入佔比超過 20%，遠高過官方公布嘅 7%。",
+      "important": true,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "incident",
+          "commercial"
+        ],
+        "entities": [
+          "nvidia"
+        ]
+      }
+    },
+    {
+      "title": "Australia's central bank finds AI hitting young workers first, especially in software and customer service",
+      "url": "https://the-decoder.com/australias-central-bank-finds-ai-hitting-young-workers-first-especially-in-software-and-customer-service/",
+      "source": "The Decoder",
+      "publishedAt": "2026-11-15T10:45:58.000Z",
+      "snippet": "Australia's central bank sees early signs that AI is hitting young entry-level workers in highly exposed jobs like software development and customer service. Since ChatGPT launched, job postings and employment among 15- to 24-year-olds in those fields have dropped more sharply than among older workers. Author Mike Major cautions against jumping to conclusions, however, noting that business cycle shifts and remote work trends could also explain the numbers. The article Australia's central bank finds AI hitting young workers first, especially in software and customer service appeared first on Th",
+      "category": "Research",
+      "summary": "Australia's central bank finds early signs that AI is hitting young entry-level workers in highly exposed fields like software development and customer service, with job postings and employment for 15- to 24-year-olds dropping more sharply since ChatGPT launched, though the author cautions other factors may explain it.",
+      "summaryZhHK": "澳洲央行發現有初步跡象顯示 AI 最先衝擊軟件開發同客戶服務等高暴露行業嘅年輕初級打工仔，自 ChatGPT 推出以嚟，15 至 24 歲嘅職位招聘同就業跌幅比年長工人更急，不過作者提醒可能仲有其它因素解釋。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "evaluation"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Meituan releases a 1.6-trillion-parameter agent model that never touched an Nvidia GPU",
+      "url": "https://the-decoder.com/meituan-releases-a-1-6-trillion-parameter-agent-model-that-never-touched-an-nvidia-gpu/",
+      "source": "The Decoder",
+      "publishedAt": "2026-11-15T10:06:06.000Z",
+      "snippet": "Meituan has released the weights for LongCat-2.5, a 1.6-trillion-parameter model built for AI agents and trained entirely on Chinese hardware. On Terminal Bench, it scores 88.4 points, landing just behind Claude Opus 5. The sample deployment runs on 194 Huawei Ascend chips, and Meituan makes no mention of Nvidia GPUs. The article Meituan releases a 1.6-trillion-parameter agent model that never touched an Nvidia GPU appeared first on The Decoder.",
+      "category": "Open Source",
+      "summary": "Meituan released weights for LongCat-2.5, a 1.6-trillion-parameter agent model trained entirely on Chinese hardware, scoring 88.4 on Terminal Bench to land just behind Claude Opus 5, with sample deployment running on 194 Huawei Ascend chips and no mention of Nvidia GPUs.",
+      "summaryZhHK": "美團釋出 LongCat-2.5 嘅權重，呢個 1.6 萬億參數嘅 agent 模型完全喺中國硬件上訓練，Terminal Bench 得 88.4 分，僅次於 Claude Opus 5；示例部署用 194 塊華為昇騰晶片，完全冇提 Nvidia GPU。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "open-source",
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "160 questions, only one wrong: top scorer in South Korea tax exam admits AI cheating",
+      "url": "https://www.theguardian.com/technology/2026/nov/15/ai-cheating-south-korea-college-entrance-exam",
+      "source": "Guardian AI",
+      "publishedAt": "2026-11-15T08:56:11.000Z",
+      "snippet": "Fears for national college entrance exam next week as test taker admits sending photos of questions to AI tool The marks attained by the top scorer ⁠on South Korea’s national exam for aspiring tax accountants this year seemed too good to be true. On Sunday, sceptics were ⁠proven right when he ⁠confessed to ​using generative AI to cheat. The scandal has followed months of speculation after he scored near-perfect marks on hundreds of questions over two exams ⁠taken in April and July. It has also raised the stakes for organisers of South Korea’s annual college entrance exam this Thursday. Continu",
+      "category": "Applications",
+      "summary": "The top scorer on South Korea's national tax accountant exam confessed to using generative AI to cheat, after scoring near-perfect marks on hundreds of questions, raising fears ahead of next week's college entrance exam.",
+      "summaryZhHK": "南韓全國稅務師考試嘅最高分考生承認用生成式 AI 出貓，佢之前喺幾百條題目度考到近乎滿分，令外界更加擔心下星期舉行嘅大學入學試。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "evaluation"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "中國首部全 AI 電影票房失利　千萬元製作上映 3 星期僅收 180 萬元",
+      "url": "https://unwire.hk/2026/11/15/sanxingdui-ai-film-box-office-flop/movie-2/?utm_source=rss&utm_medium=rss&utm_campaign=sanxingdui-ai-film-box-office-flop",
+      "source": "Unwire.hk",
+      "publishedAt": "2026-11-15T06:26:50.000Z",
+      "snippet": "中國首部獲公映許可的全流程 AI 生成院線長片《三星堆：未來往事》，10 月 23 日上映後票房失利。據電影票 […]",
+      "category": "Applications",
+      "summary": "China's first fully AI-generated theatrical feature film to receive a public screening permit, Sanxingdui: Future Past, underperformed at the box office after its October 23 release, according to box office data.",
+      "summaryZhHK": "中國首部獲公映許可嘅全流程 AI 生成院線長片《三星堆：未來往事》，喺 10 月 23 日上映後票房失利，據電影票房數據顯示表現麻麻。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "‘Jensen Huang lost his mind’: how AI’s smartest man fell for the world’s oldest trick",
+      "url": "https://www.theguardian.com/technology/2026/nov/14/jensen-huang-affair-nvidia-nightmare",
+      "source": "Guardian AI",
+      "publishedAt": "2026-11-15T06:00:06.000Z",
+      "snippet": "Jensen Huang’s affair with a suspected spy is Silicon Valley’s worst nightmare come true The resignation this week of Nvidia’s founder and CEO Jensen Huang is one of the most astonishing corporate scandals in memory, featuring allegations of international espionage and extramarital affairs involving one of the world’s most powerful men. As investigations mount into what went wrong at the $4tn chip company, the saga may also become a milestone in the decades-long history of spies infiltrating the US tech industry. Huang admitted to being unfaithful to his wife of 41 years in a letter to employe",
+      "category": "Business & Funding",
+      "summary": "Nvidia founder and CEO Jensen Huang resigned amid allegations of international espionage and extramarital affairs, a scandal described as a milestone in the history of spies infiltrating the US tech industry.",
+      "summaryZhHK": "Nvidia 創辦人兼 CEO 黃仁勳喺國際間諜同婚外情指控下辭職，呢單醜聞被形容為美國科技業被間諜滲透幾十年歷史入面嘅一個里程碑。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "incident"
+        ],
+        "entities": [
+          "nvidia"
+        ]
+      }
+    },
+    {
+      "title": "No actors, no crew, no ticket sales: ‘So obviously AI’ film flops at China’s box office",
+      "url": "https://www.scmp.com/economy/china-economy/article/3374358/no-actors-no-crew-no-ticket-sales-so-obviously-ai-film-flops-chinas-box-office",
+      "source": "SCMP Tech",
+      "publishedAt": "2026-11-15T05:00:06.000Z",
+      "snippet": "China has ushered artificial intelligence into its cinemas, but the country’s first fully AI-generated feature film has flopped at the box office. Made with no human actors or camera crew, Sanxingdui: Future Past brought in just around 1.8 million yuan (US$270,000) after three weeks in theatres, according to Chinese box office data tracker Beacon Pro. The figure was well below the film’s reported budget of tens of millions of yuan. The 100-minute sci-fi film is set in a world decades in the...",
+      "category": "Applications",
+      "summary": "China's first fully AI-generated feature film, Sanxingdui: Future Past, flopped at the box office, earning about 1.8 million yuan (US$270,000) over three weeks against a reported budget in the tens of millions of yuan.",
+      "summaryZhHK": "中國首部全 AI 生成嘅院線長片《三星堆：未來往事》票房仆直，三星期只收約 180 萬元人民幣（27 萬美元），而據報製作費高達幾千萬元人民幣。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "multimodal"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Can Chinese AI companies curb cyber risks from open-weight models without losing their edge?",
+      "url": "https://www.scmp.com/tech/tech-trends/article/3374332/can-chinese-ai-companies-curb-cyber-risks-open-weight-models-without-losing-their-edge",
+      "source": "SCMP Tech",
+      "publishedAt": "2026-11-15T02:00:09.000Z",
+      "snippet": "China’s leading artificial intelligence model companies are beginning to curb the cybersecurity capabilities of their most advanced open-weight models, following a string of high-profile AI hacking incidents involving both US and Chinese companies. Earlier this month, Chinese technology giant Tencent Holdings said it had stripped its latest Hy4 model of its cyber-hacking capabilities while retaining its cyber defence capabilities, following a similar move by Moonshot AI with its Kimi K3.1 Pro...",
+      "category": "AI Safety & Alignment",
+      "summary": "Leading Chinese AI companies including Tencent and Moonshot AI are stripping cyber-hacking capabilities from their most advanced open-weight models, following high-profile AI hacking incidents, while reportedly retaining cyber defence capabilities.",
+      "summaryZhHK": "包括騰訊同月之暗面在內嘅中國頂尖 AI 公司，喺連串備受關注嘅 AI 黑客事件之後，開始削走旗下最先進開放權重模型嘅網絡攻擊能力，據報同時保留網絡防禦能力。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "open-source"
+        ],
+        "entities": [
+          "qwen"
+        ]
+      }
+    },
+    {
+      "title": "OpenAI 解散機械人團隊 GPT-6 Astra 模擬成功率 74.8% 勝專用模型 51%",
+      "url": "https://unwire.hk/2026/11/15/openai-robotics-astra/life-tech/robotics/?utm_source=rss&utm_medium=rss&utm_campaign=openai-robotics-astra",
+      "source": "Unwire.hk",
+      "publishedAt": "2026-11-15T02:00:00.000Z",
+      "snippet": "OpenAI 解散獨立機械人團隊，研究人員併入通用模型研究及應用部門，改押 GPT-6 Astra 等通用模型 […]",
+      "category": "Model Releases",
+      "summary": "OpenAI disbanded its standalone robotics team, folding researchers into general model research and applications, betting instead on general models like GPT-6 Astra, which reportedly hits 74.8% simulation success versus 51% for specialized models.",
+      "summaryZhHK": "OpenAI 解散咗獨立機械人團隊，將研究人員併入通用模型研究及應用部門，改為押注 GPT-6 Astra 等通用模型；據報佢模擬成功率達 74.8%，勝過專用模型嘅 51%。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "robotics"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Where was Nvidia’s security team?",
+      "url": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-11-15T00:08:07.000Z",
+      "snippet": "Nvidia’s security chief quietly left in August, and now that CEO Jensen Huang has stepped down over his relationships, including one with an executive at a company suspected of funneling chips to China, a former intelligence officer says it’s the kind of leak that runs everyday conversations, which most corporate security teams are poorly equipped to catch.",
+      "category": "Business & Funding",
+      "summary": "Nvidia's security chief quietly left in August, and a former intelligence officer says corporate security teams are poorly equipped to catch leaks like the one tied to CEO Jensen Huang's relationships and suspected chip smuggling to China.",
+      "summaryZhHK": "Nvidia 嘅保安主管喺八月靜靜雞離職，有前情報官員話企業保安團隊根本冇乜能力捉到好似 CEO 黃仁勳呢單咁嘅洩密事件——涉及佢嘅感情關係同埋懷疑走私晶片去中國。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "incident"
+        ],
+        "entities": [
+          "nvidia"
+        ]
+      }
+    },
+    {
+      "title": "datasette-llm 0.1a11",
+      "url": "https://simonwillison.net/2026/Nov/14/datasette-llm/",
+      "source": "Simon Willison",
+      "publishedAt": "2026-11-14T23:59:28.000Z",
+      "snippet": "Release: datasette-llm 0.1a11 datasette-llm is the intermediate plugin for Datasette that supports configuring LLMs for use with other Datasette plugins. This release adds support for OpenAI-compatible endpoints, so you can configure Datasette to use an LLM hosted anywhere that talks the OpenAI pseudo-standard web protocol. This means that if you're running local models with LM Studio or Ollama or llama.cpp (which just hit v1.0.0 ) you can run Datasette via uvx like this: wget https://datasette.io/content.db uvx --with datasette-agent datasette \\ --root --secret 1 \\ -s plugins.datasette-llm.de",
+      "category": "Developer Tools",
+      "summary": "Datasette-llm 0.1a11 adds support for OpenAI-compatible endpoints, letting Datasette plugins use LLMs hosted anywhere that speaks the OpenAI pseudo-standard protocol, including local models via LM Studio, Ollama or llama.cpp.",
+      "summaryZhHK": "Datasette-llm 0.1a11 加入咗支援 OpenAI 兼容端點，令 Datasette 插件可以用到任何行得通 OpenAI 偽標準協議嘅 LLM，包括經 LM Studio、Ollama 或 llama.cpp 行嘅本地模型。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "llm"
+        ],
+        "traits": [
+          "open-source",
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang",
+      "url": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-11-14T21:41:22.000Z",
+      "snippet": "The petition had attracted more than 115,000 signatures as of Saturday afternoon.",
+      "category": "Business & Funding",
+      "summary": "Elon Musk and other tech executives signed a petition calling on Nvidia to reinstate Jensen Huang, gathering more than 115,000 signatures as of Saturday afternoon.",
+      "summaryZhHK": "Elon Musk 同其他科技高層簽咗份請願書，要求 Nvidia 恢復黃仁勳嘅職位，截至星期六下午已經收集到超過 115,000 個簽名。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "incident"
+        ],
+        "entities": [
+          "nvidia"
+        ]
+      }
+    },
+    {
+      "title": "Anthropic CEO Amodei admits \"there's a huge uncertainty in what's going to happen next year\" days before a record IPO",
+      "url": "https://the-decoder.com/anthropic-ceo-amodei-admits-theres-a-huge-uncertainty-in-whats-going-to-happen-next-year-days-before-a-record-ipo/",
+      "source": "The Decoder",
+      "publishedAt": "2026-11-14T19:05:17.000Z",
+      "snippet": "Days before what could be the largest IPO in history, Anthropic CEO Dario Amodei called buying compute 'the deepest business dilemma' his company faces. Anthropic's commitments now total nearly $901 billion, and it's still far from clear whether future revenue will justify those costs. The planned IPO is largely meant to serve as a financial buffer against that uncertainty. The article Anthropic CEO Amodei admits \"there's a huge uncertainty in what's going to happen next year\" days before a record IPO appeared first on The Decoder.",
+      "category": "Business & Funding",
+      "summary": "Days before what could be the largest IPO in history, Anthropic CEO Dario Amodei called buying compute 'the deepest business dilemma' his company faces, with commitments totalling nearly $901 billion and future revenue still uncertain.",
+      "summaryZhHK": "喺可能係史上最大型 IPO 嘅幾日前，Anthropic CEO Dario Amodei 話買算力係佢公司面對「最深層嘅商業兩難」，承擔總額接近 9,010 億美元，而未來收入仲係好唔確定。",
+      "important": true,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "funding",
+          "commercial"
+        ],
+        "entities": [
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "Art ‘must not be sacrificed on the altar of corporate profit’, Liberal senator says as AI policy debate rages",
+      "url": "https://www.theguardian.com/australia-news/2026/nov/15/art-over-profit-ai-policy-debate-andrew-mclachlan",
+      "source": "Guardian AI",
+      "publishedAt": "2026-11-14T19:00:52.000Z",
+      "snippet": "Andrew McLachlan says he chooses ‘real forests over virtual ones’ as he urges Labor government to consider AI’s impact on artists and environment Get our daily political email, free app or daily news podcast The outspoken Liberal senator Andrew McLachlan has raised the alarm about the approach of his party and the Labor government to AI, saying artists’ copyright must not be “sacrificed” for investment and building new datacentres must not be prioritised above environmental concerns. As Labor considers copyright changes in an AI policy suite including datacentres, online safety, energy resourc",
+      "category": "Regulation & Policy",
+      "summary": "Liberal senator Andrew McLachlan warns that artists' copyright must not be 'sacrificed' for AI investment and that building new datacentres must not be prioritised over environmental concerns, as Australia's Labor government considers copyright changes in a broader AI policy suite.",
+      "summaryZhHK": "自由黨參議員 Andrew McLachlan 警告，唔可以為咗 AI 投資而「犧牲」藝術家嘅版權，亦唔可以將興建新數據中心置於環境關注之上；與此同時澳洲工黨政府正喺一整套 AI 政策入面考慮修改版權法。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
+      "url": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-11-14T17:30:00.000Z",
+      "snippet": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
+      "category": "Applications",
+      "summary": "A running list catalogues AI projects and startups that shut down or missed expectations, from Apple's repeatedly delayed Siri AI to OpenAI's messy 'super app' launch.",
+      "summaryZhHK": "一份持續更新嘅名單記錄咗執笠或者未達預期嘅 AI 項目同初創，由 Apple 一拖再拖嘅 Siri AI 到 OpenAI 推出得亂七八糟嘅「超級應用」都有。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Gemini 4 Carbon takes the MathArena crown but costs 15 times more than GPT-6.1 Sol",
+      "url": "https://the-decoder.com/gemini-4-carbon-takes-the-matharena-crown-but-costs-15-times-more-than-gpt-6-1-sol/",
+      "source": "The Decoder",
+      "publishedAt": "2026-11-14T16:48:01.000Z",
+      "snippet": "For the first time in a while, no OpenAI model leads the MathArena AI math benchmark. Google's Gemini 4 Carbon and Anthropic's Fable 5.2 have knocked GPT-6.1 Sol from the top, though both cost significantly more. Gemini ignored the time limit in testing and almost never gave up on a task. The article Gemini 4 Carbon takes the MathArena crown but costs 15 times more than GPT-6.1 Sol appeared first on The Decoder.",
+      "category": "Model Releases",
+      "summary": "Google's Gemini 4 Carbon and Anthropic's Fable 5.2 knocked GPT-6.1 Sol from the top of the MathArena math benchmark, though Gemini costs 15 times more than GPT-6.1 Sol and ignored the time limit, almost never giving up on a task.",
+      "summaryZhHK": "Google 嘅 Gemini 4 Carbon 同 Anthropic 嘅 Fable 5.2 踢走咗 GPT-6.1 Sol，登上 MathArena 數學基準榜首；不過 Gemini 嘅成本係 GPT-6.1 Sol 嘅 15 倍，而且佢無視時間限制，幾乎從來唔會放棄任務。",
+      "important": true,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "benchmark"
+        ],
+        "entities": [
+          "gemini",
+          "gpt"
+        ]
+      }
+    },
+    {
+      "title": "Anthropic says outdated prompting habits are slowing down Claude Opus 5.5",
+      "url": "https://the-decoder.com/anthropic-says-outdated-prompting-habits-are-slowing-down-claude-opus-5-5/",
+      "source": "The Decoder",
+      "publishedAt": "2026-11-14T16:42:56.000Z",
+      "snippet": "Anthropic has made Claude Opus 5.5 the default model on all paid plans and published a guide that does away with old prompting habits. The main takeaway is to drop \"think hard\" and start at Medium effort. The article Anthropic says outdated prompting habits are slowing down Claude Opus 5.5 appeared first on The Decoder.",
+      "category": "Developer Tools",
+      "summary": "Anthropic made Claude Opus 5.5 the default model on all paid plans and published a guide urging users to drop old prompting habits like 'think hard' and instead start at Medium effort.",
+      "summaryZhHK": "Anthropic 將 Claude Opus 5.5 設為所有付費計劃嘅預設模型，仲出咗份指南叫用戶唔好再用「think hard」呢啲舊提示習慣，改為由 Medium 力度開始。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "release",
+          "tutorial"
+        ],
+        "entities": [
+          "claude"
+        ]
+      }
+    },
+    {
+      "title": "Asian governments react to Nvidia CEO Jensen Huang’s exit",
+      "url": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/",
+      "source": "TechCrunch AI",
+      "publishedAt": "2026-11-14T16:34:15.000Z",
+      "snippet": "Some governments moved to confirm chip supply commitments, while others are monitoring the impact on local projects or addressing ongoing investigations.",
+      "category": "Regulation & Policy",
+      "summary": "Asian governments reacted to Nvidia CEO Jensen Huang's exit, with some confirming chip supply commitments while others monitor impacts on local projects or ongoing investigations.",
+      "summaryZhHK": "亞洲多個政府對 Nvidia CEO 黃仁勳離職作出回應，有啲確認晶片供應承諾，有啲就密切留意對當地項目或者進行中調查嘅影響。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "nvidia"
+        ]
+      }
+    },
+    {
+      "title": "The OpenAI board member who fired Sam Altman says we still can&#8217;t trust AI CEOs",
+      "url": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
+      "source": "The Verge AI",
+      "publishedAt": "2026-11-14T15:00:00.000Z",
+      "snippet": "Today, I’m talking with Helen Toner, the executive director of the Center for Security and Emerging Technology at Georgetown University. This episode is part two of our series on AI in real life. Helen is a well-known figure in the AI safety and policy community, though she is perhaps best known for having served on the board of OpenAI, when she was one of four board members who voted to fire Sam Altman. That incident, now sometimes referred to as “the blip,” ended with Sam coming back as CEO, Helen resigning, and a new board of directors. OpenAI has since restructured entirely. But it’s worth",
+      "category": "AI Safety & Alignment",
+      "summary": "Helen Toner, the OpenAI board member who voted to fire Sam Altman and now leads Georgetown's CSET, discusses why the public still can't trust AI CEOs in an interview.",
+      "summaryZhHK": "Helen Toner 係 OpenAI 董事會成員，當年投票炒咗 Sam Altman，依家做喬治城大學 CSET 總監；佢喺訪問度講點解公眾仍然信唔過 AI 公司嘅 CEO。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "字節跳動傳數周內推出 AI Agent　希望挑戰 Meta Muse 但追上頂級模型仍然需時",
+      "url": "https://unwire.hk/2026/11/14/bytedance-muse-like-ai-agent-zhang-yiming/ai/?utm_source=rss&utm_medium=rss&utm_campaign=bytedance-muse-like-ai-agent-zhang-yiming",
+      "source": "Unwire.hk",
+      "publishedAt": "2026-11-14T14:00:52.000Z",
+      "snippet": "TikTok 母公司字節跳動據報正準備推出一款類似 Meta Muse 的 AI Agent，最快在未來數星期公布。彭博社於 2026 年 11 月 11 日引述知情人士報道，聯合創辦人張一鳴最近向公司 AI 團隊介紹新產品及研究方向，並認為字節跳動要在頂尖 AI 模型能力上追上領先對手，至少要到 2029 或 2030 年。",
+      "category": "Agent Frameworks",
+      "summary": "ByteDance is reportedly preparing to launch an AI Agent similar to Meta Muse within weeks, with co-founder Zhang Yiming telling its AI team the company needs until at least 2029 or 2030 to catch up on top-tier model capabilities.",
+      "summaryZhHK": "據報字節跳動正準備喺幾星期內推出一款類似 Meta Muse 嘅 AI Agent，聯合創辦人張一鳴向公司 AI 團隊表示，字節要喺頂級模型能力上追到領先對手，至少要到 2029 或 2030 年。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": []
+      }
+    },
     {
       "title": "AI 購物搜尋推薦假網店　研究發現有問題網站比例近一成",
       "url": "https://unwire.hk/2026/11/14/ai-shopping-fake-websites-podqi-study/tech-secure/?utm_source=rss&utm_medium=rss&utm_campaign=ai-shopping-fake-websites-podqi-study",
@@ -35,6 +466,26 @@
         "traits": [],
         "entities": [
           "gemini"
+        ]
+      }
+    },
+    {
+      "title": "Jensen Huang and the decline of the visionary showman founder CEO",
+      "url": "https://www.theverge.com/tech/1033781/nvidia-jensen-huang-last-visionary-showman-founder-ceo",
+      "source": "The Verge AI",
+      "publishedAt": "2026-11-14T12:00:00.000Z",
+      "snippet": "Nvidia CEO Jensen Huang at CES 2025 in Las Vegas, Nevada, on January 6, 2025. | Photo by Artur Widak/NurPhoto via Getty Images On January 6th, 2025, Nvidia CEO Jensen Huang got his rockstar moment at last. He strode triumphantly onstage, hand raised in the air, to the claps and cheers of a 14,000-person arena absolutely packed with influencers and fans, their faces awash in blue glow, as he made his entrance in a black leather jacket that shimmered in the stadium's lights. Few are cheering for Jensen Huang now. He has left Nvidia after seemingly enabling two chip smuggling scandals and alleged",
+      "category": "Business & Funding",
+      "summary": "A profile examines how Jensen Huang went from a rockstar-like CES 2025 reception to leaving Nvidia amid chip smuggling scandals, reflecting the decline of the visionary showman founder CEO.",
+      "summaryZhHK": "一篇專題回顧黃仁勳點樣由 CES 2025 好似搖滾巨星咁嘅待遇，到因為晶片走私醜聞而離開 Nvidia，反映有遠見嘅表演型創辦人 CEO 時代嘅沒落。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "incident"
+        ],
+        "entities": [
+          "nvidia"
         ]
       }
     },
@@ -39225,1562 +39676,106 @@
           "anthropic"
         ]
       }
-    },
-    {
-      "title": "Replit’s CEO says the future of work is the ‘self-driving company’",
-      "url": "https://techcrunch.com/2026/10/16/replits-ceo-says-the-future-of-work-is-the-self-driving-company/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-10-16T12:55:09.000Z",
-      "snippet": "Replit CEO Amjad Masad envisions a future of “self-driving companies,” where AI agents handle day-to-day tasks and people focus on higher-level decisions.",
-      "category": "Agent Frameworks",
-      "summary": "Replit CEO Amjad Masad envisions a future of 'self-driving companies' where AI agents handle day-to-day tasks while people focus on higher-level decisions.",
-      "summaryZhHK": "Replit 行政總裁 Amjad Masad 構想未來會出現「自動駕駛公司」，由 AI agent 處理日常事務，人類就專注喺更高層次嘅決策。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "ASML eyes hybrid bonding, report finds, as Chinese firms adopt chip packaging technique",
-      "url": "https://www.scmp.com/tech/tech-trends/article/3371181/asml-eyes-hybrid-bonding-report-finds-chinese-firms-adopt-chip-packaging-technique?utm_source=rss_feed",
-      "source": "SCMP Tech",
-      "publishedAt": "2026-10-16T12:30:12.000Z",
-      "snippet": "Dutch semiconductor equipment giant ASML is expanding into next-generation hybrid bonding, a technique that creates dense electrical connections by directly joining chips or silicon wafers, according to a new report. Major Chinese companies are also adopting the technology to improve chip performance. ASML submitted 27 patent families related to hybrid bonding tools between December 2022 and November 2024, according to a report published by semiconductor and AI supply chain research firm...",
-      "category": "Hardware & Compute",
-      "summary": "Dutch semiconductor equipment giant ASML is expanding into next-generation hybrid bonding technology, filing 27 patent families related to hybrid bonding tools between December 2022 and November 2024, while major Chinese companies also adopt the technique to improve chip performance.",
-      "summaryZhHK": "荷蘭半導體設備巨頭 ASML 正擴展到下一代混合鍵合技術，喺 2022 年 12 月至 2024 年 11 月期間提交咗 27 個同混合鍵合工具相關嘅專利家族，而中國大型企業亦都採用呢項技術去提升晶片效能。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "inference",
-          "hardware"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": [
-          "nvidia"
-        ]
-      }
-    },
-    {
-      "title": "Apple 與 Meta 合作優化 8,160 億參數 AI 本地模型「Muse Spark Open」    在 Mac 電腦上剪片,寫 App",
-      "url": "https://unwire.hk/2026/10/16/apple-meta-muse-spark-open-mac-studio/ai/?utm_source=rss&utm_medium=rss&utm_campaign=apple-meta-muse-spark-open-mac-studio",
-      "source": "Unwire.hk",
-      "publishedAt": "2026-10-16T11:53:27.000Z",
-      "snippet": "Meta 於 10 月 15 日開放 Muse Spark Open 模型，並與 Apple 合作，讓開發者透 […]",
-      "category": "Model Releases",
-      "summary": "Meta released its 816-billion-parameter Muse Spark Open model on October 15 and partnered with Apple to let developers run local AI on Mac computers for tasks like video editing and app building.",
-      "summaryZhHK": "Meta 喺 10 月 15 日開放咗 8,160 億參數嘅 Muse Spark Open 模型，並同 Apple 合作，畀開發者喺 Mac 電腦上面本地運行 AI，做剪片同寫 App 等工作。",
-      "important": true,
-      "tags": {
-        "topics": [
-          "llm"
-        ],
-        "traits": [
-          "release",
-          "open-source"
-        ],
-        "entities": [
-          "meta"
-        ]
-      }
-    },
-    {
-      "title": "外媒指人氣 AI 玩具現漏洞 對話記錄傳至中國伺服器 家人私隱錄音相片疑曝光",
-      "url": "https://unwire.hk/2026/10/16/eiliko-robot-toy-data-leak/tech-secure/?utm_source=rss&utm_medium=rss&utm_campaign=eiliko-robot-toy-data-leak",
-      "source": "Unwire.hk",
-      "publishedAt": "2026-10-16T10:32:40.000Z",
-      "snippet": "一款外形可愛的 AI 陪伴機械人玩具，被發現會把用戶對話傳送到中國伺服器。一名研究人員只需數分鐘，便取得測試者 […]",
-      "category": "AI Safety & Alignment",
-      "summary": "A researcher found that a popular AI companion robot toy sent user conversations to Chinese servers, and within minutes obtained testers' private family audio recordings and photos.",
-      "summaryZhHK": "有研究人員發現一款人氣 AI 陪伴機械人玩具會將用戶對話傳送到中國伺服器，佢幾分鐘內就攞到測試者嘅家人私隱錄音同相片。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety",
-          "robotics"
-        ],
-        "traits": [
-          "incident"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "FPT and its ilk offer an alternative to Indian offshorers",
-      "url": "https://www.computerweekly.com/feature/FPT-and-its-ilk-offer-an-alternative-to-Indian-offshorers",
-      "source": "Computer Weekly",
-      "publishedAt": "2026-10-16T09:39:00.000Z",
-      "snippet": "The Vietnamese company symbolises a changing of the IT services guard, spurred on by AI and other emerging tech trends",
-      "category": "Business & Funding",
-      "summary": "Vietnam's FPT is emerging as an alternative to Indian IT outsourcers, a shift driven by AI and other emerging tech trends.",
-      "summaryZhHK": "越南嘅 FPT 冒起緊，成為印度 IT 外判商以外嘅選擇，呢個轉變係由 AI 同其他新興科技趨勢帶動。",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "China’s AI boom, self-sufficiency push fuel earnings surge for local chip firms",
-      "url": "https://www.scmp.com/tech/tech-trends/article/3371159/chinas-ai-boom-self-sufficiency-push-fuel-earnings-surge-local-chip-firms?utm_source=rss_feed",
-      "source": "SCMP Tech",
-      "publishedAt": "2026-10-16T09:30:09.000Z",
-      "snippet": "Chinese chip and tech firms have flagged as much as six-fold growth in unaudited third-quarter profits, as huge demand for home-grown processors and artificial intelligence infrastructure filters through links in the supply chain amid the country’s push for self-reliance. Shanghai-listed Yuanjie Semiconductor Technology expected its quarterly net profit to land between 403 million yuan and 453 million yuan, up 579 per cent to 660 per cent from a year earlier. The maker of laser chips for optical...",
-      "category": "Hardware & Compute",
-      "summary": "Chinese chip and tech firms flagged up to six-fold growth in unaudited third-quarter profits as demand for home-grown processors and AI infrastructure surges amid China's self-reliance push. Yuanjie Semiconductor Technology expects net profit of 403-453 million yuan, up 579-660% year on year.",
-      "summaryZhHK": "中國芯片同科技公司公布未經審核嘅第三季利潤最多升六倍，全靠國產處理器同 AI 基建需求爆升，配合中國自主自強嘅國策。上海上市嘅源杰半導體科技預計季度純利介乎 4.03 億至 4.53 億元人民幣，按年升 579% 至 660%。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "inference"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": [
-          "nvidia"
-        ]
-      }
-    },
-    {
-      "title": "AI threatens democracy. But we are not powerless: here’s how to fight back | Carine Fouteau",
-      "url": "https://www.theguardian.com/commentisfree/2026/oct/16/ai-existential-threat-real-journalism-democracy-resistance",
-      "source": "Guardian AI",
-      "publishedAt": "2026-10-16T07:49:45.000Z",
-      "snippet": "Tech platforms pillage public-interest journalism for profit. But we have leverage as they sow the seeds of their own downfall Carine Fouteau is president and publishing director of the French investigative news outlet Mediapart Big tech companies pose an immeasurable threat: socially, politically, militarily and ecologically. They are also causing a profound crisis of information. The tools they design now serve as weapons of mass destruction against democracy. There is so much at stake that an urgent and broad mobilisation is required. From the harvesting of personal data and the weaponisati",
-      "category": "Regulation & Policy",
-      "summary": "Mediapart's Carine Fouteau argues big tech platforms pillage public-interest journalism for profit, pose a threat to democracy, and are sowing the seeds of their own downfall, calling for urgent broad mobilisation.",
-      "summaryZhHK": "Mediapart 嘅 Carine Fouteau 認為，大型科技平台為咗賺錢掠奪公共利益新聞，對民主構成威脅，但同時亦種下自己衰敗嘅禍根，呼籲要即刻大規模動員反抗。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety"
-        ],
-        "traits": [
-          "policy"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Who is Nathan Chen, the Chinese teen AI prodigy being courted by Silicon Valley?",
-      "url": "https://www.scmp.com/tech/tech-trends/article/3371117/who-nathan-chen-chinese-teen-ai-prodigy-being-courted-silicon-valley?utm_source=rss_feed",
-      "source": "SCMP Tech",
-      "publishedAt": "2026-10-16T06:30:13.000Z",
-      "snippet": "A 17-year-old artificial intelligence researcher formerly with Moonshot AI has announced his departure for the United States, sparking intense speculation about his next move amid heated competition for elite talent between Silicon Valley and China’s tech hubs. Nathan Chen Guangyu wrote on social media on Thursday that he had left the Beijing-based start-up after less than a year, describing his time there as “the best [year] of my life so far”. The announcement caught many industry observers by...",
-      "category": "Business & Funding",
-      "summary": "Nathan Chen Guangyu, a 17-year-old AI researcher formerly with Beijing-based Moonshot AI, announced his departure for the US after less than a year, sparking speculation amid intense Silicon Valley-China talent competition.",
-      "summaryZhHK": "17 歲 AI 研究者陳光宇（Nathan Chen）之前喺北京嘅 Moonshot AI 做嘢，不足一年就宣布離職去美國，喺矽谷同中國爭奪頂尖人才嘅激烈競爭下引起唔少揣測。",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "International finance body espouses ‘sound practices’ for AI adoption",
-      "url": "https://www.computerweekly.com/news/366652453/International-finance-body-espouses-sound-practices-for-AI-adoption",
-      "source": "Computer Weekly",
-      "publishedAt": "2026-10-16T05:54:00.000Z",
-      "snippet": "The Financial Stability Board has published 12 practices for financial services organisations to follow when implementing AI",
-      "category": "Regulation & Policy",
-      "summary": "The Financial Stability Board has published 12 \"sound practices\" for financial services organisations to follow when implementing AI.",
-      "summaryZhHK": "金融穩定委員會（FSB）發布咗 12 項「穩健做法」，畀金融服務機構喺落實 AI 嗰陣跟住做。",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "policy",
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Hong Kong vies for role in robotics boom with launch of embodied AI hub",
-      "url": "https://www.scmp.com/tech/tech-trends/article/3371095/hong-kong-vies-role-robotics-boom-launch-embodied-ai-hub?utm_source=rss_feed",
-      "source": "SCMP Tech",
-      "publishedAt": "2026-10-16T04:00:39.000Z",
-      "snippet": "The Hong Kong Productivity Council (HKPC) opened the city’s first experimental hub for embodied artificial intelligence on Thursday with the participation of seven mainland and Hong Kong companies, including industry leaders Unitree Robotics and Galbot, as the city looks to carve out a role in the global robotics boom. Located at the HKPC Building in Kowloon Tong, the Embodied AI International Applications Hub, housed under the HKPC’s industrial AI and robotics centre, features simulated...",
-      "category": "Hardware & Compute",
-      "summary": "The Hong Kong Productivity Council opened the city's first Embodied AI International Applications Hub in Kowloon Tong, with seven mainland and Hong Kong firms including Unitree Robotics and Galbot taking part.",
-      "summaryZhHK": "香港生產力促進局喺九龍塘開設全港首個「具身智能國際應用中心」，有包括宇樹科技同銀河通用在內嘅七間內地同香港企業參與。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "robotics"
-        ],
-        "traits": [
-          "policy",
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "The World Won't Wait: Evaluating and Teaching Agents Under a Live Clock",
-      "url": "https://arxiv.org/abs/2610.20665",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-10-16T04:00:00.000Z",
-      "snippet": "arXiv:2610.20665v1 Announce Type: new Abstract: Large language model (LLM) agents can solve complex interactive tasks, yet reasoning and tool calls take time. In continuously changing environments, an otherwise correct action may arrive too late. We introduce RealtimeBench, with 180 tasks across six game types, to evaluate agents while games continue running during inference. Paired evaluations show that GPT-6.1-sol outperforms the faster Jev when games are paused, but falls behind when they keep running. We propose Two-Timescale Offline Recursive Self-Improvement (TORSI): a slow teacher studi",
-      "category": "Research",
-      "summary": "The paper introduces RealtimeBench, 180 tasks across six game types that evaluate LLM agents while games keep running during inference, showing GPT-6.1-sol beats faster Jev when paused but falls behind when live. It proposes Two-Timescale Offline Recursive Self-Improvement (TORSI).",
-      "summaryZhHK": "篇論文提出 RealtimeBench，喺六款遊戲、180 個任務入面，趁推理期間遊戲繼續運行嗰陣去評估 LLM agent，結果顯示 GPT-6.1-sol 喺暫停時贏過更快嘅 Jev，但一 live 就落後。佢仲提出咗 Two-Timescale Offline Recursive Self-Improvement（TORSI）。",
-      "important": true,
-      "tags": {
-        "topics": [
-          "evaluation",
-          "agentic"
-        ],
-        "traits": [
-          "research",
-          "benchmark"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Evaluating Model Capabilities After Benchmark Saturation",
-      "url": "https://arxiv.org/abs/2610.20667",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-10-16T04:00:00.000Z",
-      "snippet": "arXiv:2610.20667v1 Announce Type: new Abstract: Rapid advances in AI capabilities are causing benchmarks to saturate. Once several models approach perfect scores, a benchmark loses its power to differentiate between them, and with it its utility for informing AI safety cases and frontier policies. Yet benchmark items produce far more information than the scores we typically extract from them: a full transcript of how each model solved the task. We investigate whether these transcripts can be used to assess model capabilities even after benchmark scores have saturated. We simulate saturation re",
-      "category": "Research",
-      "summary": "The paper investigates whether full solution transcripts can assess model capabilities after benchmark scores saturate, simulating saturation to show transcripts contain far more information than the scores typically extracted.",
-      "summaryZhHK": "篇論文研究喺 benchmark 分數飽和之後，係咪仲可以用完整解題逐字稿去評估模型能力，透過模擬飽和情況，顯示逐字稿所含嘅資訊遠比平常抽出嚟嘅分數多。",
-      "important": true,
-      "tags": {
-        "topics": [
-          "evaluation"
-        ],
-        "traits": [
-          "benchmark",
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Value-Informed Schedule Trimming for Accelerated Sequential Monte Carlo Guidance in Discrete Diffusion",
-      "url": "https://arxiv.org/abs/2610.20669",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-10-16T04:00:00.000Z",
-      "snippet": "arXiv:2610.20669v1 Announce Type: new Abstract: Reward-guided discrete diffusion enables test-time alignment with downstream objectives, but applying Sequential Monte Carlo (SMC) guidance at every denoising step is computationally expensive. Active guidance steps require additional reward evaluations and, for gradient-based proposals, value-gradient computations. Sparse guidance reduces this cost by guiding only a subset of timesteps, but commonly used schedules are fixed heuristics whose effectiveness can vary substantially across tasks. We propose VISTA, a training-free method that automatic",
-      "category": "Research",
-      "summary": "VISTA is a training-free method that automatically schedules sparse Sequential Monte Carlo guidance steps in reward-guided discrete diffusion, cutting the cost of test-time alignment.",
-      "summaryZhHK": "VISTA係一種免訓練方法，喺reward-guided離散擴散模型中自動編排稀疏嘅Sequential Monte Carlo引導步驟，減低test-time alignment嘅運算成本。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "inference",
-          "alignment"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "AlphaDiana: A Measurement System for Agents in Verifiable Reasoning Tasks",
-      "url": "https://arxiv.org/abs/2610.20675",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-10-16T04:00:00.000Z",
-      "snippet": "arXiv:2610.20675v1 Announce Type: new Abstract: Agents pair reasoning models with harnesses that organize model calls, execute tools, load skill instructions, and retain history in memory. Understanding agent performance requires linking execution conditions to outcomes, behavior, and resource use. We introduce AlphaDiana, a measurement system with modular interfaces for datasets, agents, environments, and scorers. It preserves harness-native control loops while controlling file reuse and memory retention separately. AlphaDiana supports macro analyses of complete agents and micro interventions",
-      "category": "Agent Frameworks",
-      "summary": "AlphaDiana is a measurement system with modular interfaces for datasets, agents, environments, and scorers that links agent execution conditions to outcomes, behavior, and resource use.",
-      "summaryZhHK": "AlphaDiana係一套量度系統，為數據集、agent、環境同評分器提供模組化介面，將agent嘅執行條件同結果、行為同資源使用連繫起嚟。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "evaluation"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Counterfactual Neighborhood Risk Fields: Evidence-Grounded Selective Safety for Vision-Language Models",
-      "url": "https://arxiv.org/abs/2610.20679",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-10-16T04:00:00.000Z",
-      "snippet": "arXiv:2610.20679v1 Announce Type: new Abstract: Representation-based safety defenses for vision-language models (VLMs) often learn to separate harmful from benign inputs, but separation alone does not establish what a risk score means or when it should be trusted. We introduce Counterfactual Neighborhood Risk Fields (CNRF), an evidence-grounded framework for selective VLM safety. CNRF constructs context-matched benign-harmful counterfactual pairs, uses their representation differences as capability-related risk directions, and estimates neighborhood support separately from risk. This separatio",
-      "category": "AI Safety & Alignment",
-      "summary": "Counterfactual Neighborhood Risk Fields (CNRF) is an evidence-grounded framework for selective VLM safety that builds context-matched benign-harmful counterfactual pairs and estimates risk direction separately from neighborhood support.",
-      "summaryZhHK": "Counterfactual Neighborhood Risk Fields（CNRF）係一套有證據支撐嘅選擇性VLM安全框架，透過建立情境配對嘅良性—有害反事實對，將風險方向同鄰域支持度分開估算。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety",
-          "vision"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "IneqAgent: Agentic Inequality Proving in Lean with Symbolic Computation",
-      "url": "https://arxiv.org/abs/2610.20681",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-10-16T04:00:00.000Z",
-      "snippet": "arXiv:2610.20681v1 Announce Type: new Abstract: Formal inequality proving requires mathematical reasoning and exact computation, often connected through intermediate lemmas and goal reformulations. We introduce IneqAgent, an agentic framework combining LLM reasoning with symbolic computation for inequality proving in Lean4. Lemma-level Monte Carlo Tree Search coordinates lemma construction, goal reformulation, and symbolic backend selection. Complementary sum-of-squares, Bernstein, and successive difference-substitution backends produce exact certificates for local Lean proof generation. The a",
-      "category": "Agent Frameworks",
-      "summary": "IneqAgent combines LLM reasoning with symbolic computation for inequality proving in Lean4, using lemma-level Monte Carlo Tree Search to coordinate lemma construction, goal reformulation, and backend selection.",
-      "summaryZhHK": "IneqAgent結合LLM推理同符號運算，喺Lean4入面做不等式證明，用lemma層級嘅Monte Carlo Tree Search去協調lemma建構、目標改寫同後端選擇。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "reasoning"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "L2G-SR: Learning to Guide LLM-based Symbolic Regression",
-      "url": "https://arxiv.org/abs/2610.20685",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-10-16T04:00:00.000Z",
-      "snippet": "arXiv:2610.20685v1 Announce Type: new Abstract: Symbolic regression searches for an equation that explains observed data. Numerical error is commonly used to guide the search, but it alone can favor an accurate surrogate over a candidate with the right structure. We propose L2G-SR, a framework for LLM-based symbolic regression that guides search with a learned structural verifier. We construct structural supervision signal using tree edit distance (TED), accounting for commutative operators and alternative expression forms. A verifier first aligns numerical observations with the formulas, then",
-      "category": "Research",
-      "summary": "Researchers propose L2G-SR, an LLM-based symbolic regression framework that guides search with a learned structural verifier using tree edit distance (TED) to account for commutative operators and alternative expression forms.",
-      "summaryZhHK": "研究人員提出L2G-SR，一個基於LLM嘅符號回歸框架，用學到嘅結構驗證器配合樹編輯距離（TED）引導搜尋，處理可交換運算子同其他表達形式。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "reasoning",
-          "evaluation"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "ARIA: Runtime Inspection and Amendment for Multi-Agent Systems",
-      "url": "https://arxiv.org/abs/2610.20780",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-10-16T04:00:00.000Z",
-      "snippet": "arXiv:2610.20780v1 Announce Type: new Abstract: In LLM-based multi-agent systems (MAS), a local mistake can propagate as other agents build on it, turning a correctable error into a failed task. Diagnosing completed runs or repeatedly re-executing them to search for corrections does not provide a learned policy for intervening while execution is still in progress. We present Agent Runtime Inspection and Amendment (ARIA), a framework for learning when and how to repair ongoing multi-agent executions. Our key intuition is to turn execution-verified repairs into reusable supervision, moving repai",
-      "category": "Agent Frameworks",
-      "summary": "Researchers present ARIA, a framework that learns when and how to repair ongoing LLM-based multi-agent executions by turning execution-verified repairs into reusable supervision.",
-      "summaryZhHK": "研究人員提出ARIA框架，透過將執行驗證過嘅修復轉化為可重用監督信號，學識幾時同點樣修復進行中嘅LLM多代理執行。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "llm"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "EvolvingBrain: An Adaptive Skill System for Multi-modal Agents Self-Evolution in Open Worlds",
-      "url": "https://arxiv.org/abs/2610.20786",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-10-16T04:00:00.000Z",
-      "snippet": "arXiv:2610.20786v1 Announce Type: new Abstract: Multi-modal agents have made significant progress in interacting with open worlds. However, their ability to self-evolve remains limited. Supervised fine-tuning enables imitation but not active experience organization, while outcome-based reinforcement learning promotes exploration yet underuses intermediate trajectory information. Therefore, we propose EvolvingBrain, which uses an adaptive skill system as the brain for agent self-evolution, consisting of two following components. Stratified Skill Self-Evolution: extracts Procedural Patterns and ",
-      "category": "Agent Frameworks",
-      "summary": "Researchers propose EvolvingBrain, an adaptive skill system for multi-modal agents to self-evolve in open worlds, using stratified skill self-evolution to extract procedural patterns.",
-      "summaryZhHK": "研究人員提出EvolvingBrain，一個畀多模態代理喺開放世界自我演化嘅自適應技能系統，用分層技能自演化嚟抽取程序性模式。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "multimodal"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "When Reasoning Traces Conflict with Evidence: How Answer Configuration Shapes Evidence Following",
-      "url": "https://arxiv.org/abs/2610.20805",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-10-16T04:00:00.000Z",
-      "snippet": "arXiv:2610.20805v1 Announce Type: new Abstract: A reasoning trace retained at answer time plays two roles: it can raise accuracy, and it can compete with the current evidence when the two disagree. We disentangle these roles by crossing verified evidence versions with the traces generated from each and answering from the same traces and evidence under two configurations: continuation of the model's own thinking and a separate answer call. Across three model families (gpt-oss, Gemma4, Qwen3) on HotpotQA and MuSiQue, the separate call raises evidence-following over continuation by 29.9 to 60.6 p",
-      "category": "Research",
-      "summary": "A study finds that using a separate answer call instead of continuing the model's own reasoning trace raises evidence-following by 29.9% to 60.6% across gpt-oss, Gemma4 and Qwen3 on HotpotQA and MuSiQue.",
-      "summaryZhHK": "研究發現，喺gpt-oss、Gemma4同Qwen3上面對HotpotQA同MuSiQue，用獨立嘅回答呼叫而唔係延續模型自己嘅推理軌跡，可以將跟隨證據嘅比率提升29.9%至60.6%。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "reasoning",
-          "evaluation"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "A Self-Improving Agent that Grows its Own DSL: Oracle-Free Operator Induction for Exact Question Answering",
-      "url": "https://arxiv.org/abs/2610.20809",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-10-16T04:00:00.000Z",
-      "snippet": "arXiv:2610.20809v1 Announce Type: new Abstract: A self-improving agent has to decide which new skills to keep, and in practice it keeps whatever earns a high reward, convinces a judge model, or compresses its library, even when the skill is wrong. That is fine until the answers have to be exactly right: over a table of transactions, a total is either right or wrong. We ask a harder question: can an agent grow what it can compute with no reward, no judge, and no answer key, and still be exactly right? A single frozen model runs two nested loops over a small, exact domain-specific language (DSL)",
-      "category": "Research",
-      "summary": "Researchers present a self-improving agent that grows its own domain-specific language via oracle-free operator induction, achieving exact question answering without reward, judge model or answer key.",
-      "summaryZhHK": "研究人員提出一個自我改進代理，透過無標準答案嘅運算子歸納自行擴展領域特定語言（DSL），喺冇獎勵、冇評判模型、冇答案下做到精確問答。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "reasoning"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Temporal Specification Guidance for Text-to-Video Generation",
-      "url": "https://arxiv.org/abs/2610.20822",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-10-16T04:00:00.000Z",
-      "snippet": "arXiv:2610.20822v1 Announce Type: new Abstract: Text-to-video models often generate the visual concepts requested in natural language prompts but fail to satisfy their intended ordering, timing, and persistence requirements. We propose representing these requirements as specifications in a formal Temporal Logic, and introduce Temporal Specification Guidance (TSG), a training-free inference-time framework that turns temporal specifications into executable objectives for guiding video generation during sampling. TSG scores traces of visual concept evidence using differentiable quantitative seman",
-      "category": "Research",
-      "summary": "Researchers introduce Temporal Specification Guidance (TSG), a training-free inference-time framework that turns formal Temporal Logic specifications into executable objectives to guide text-to-video generation during sampling.",
-      "summaryZhHK": "研究人員提出Temporal Specification Guidance（TSG），一個免訓練嘅推理期框架，將形式化時序邏輯規格轉為可執行目標，喺取樣時引導文字生成影片。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "vision",
-          "multimodal"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Confidence-Calibrated Inference Expansion for Evaluator-Guided Test-Time Reasoning",
-      "url": "https://arxiv.org/abs/2610.20836",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-10-16T04:00:00.000Z",
-      "snippet": "arXiv:2610.20836v1 Announce Type: new Abstract: Evaluator-guided reasoning presents a local control problem at every step: trust the current answer, return a fallback, or spend more inference. We formulate this choice as a compute-aware three-action controller, scoring terminal actions by predicted answer success and expansion by a rollout-based continuation-success surrogate, with compute cost priced explicitly. A local action-gap analysis characterizes when score errors can change a decision, while an expected regret bound accounts for errors along the realized expansion path. Guided by this",
-      "category": "Research",
-      "summary": "A paper formulates evaluator-guided reasoning as a compute-aware three-action controller, using predicted answer success and rollout-based continuation surrogates with explicit compute cost pricing.",
-      "summaryZhHK": "一篇論文將評審引導推理表述為一個考慮運算成本嘅三動作控制器，用預測答案成功率同基於rollout嘅延續成功率替代指標，並明確計算運算成本。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "inference",
-          "reasoning"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Evolving Together, Failing Apart: The Skill-Policy Co-evolution Trap in Self-Improving Agents",
-      "url": "https://arxiv.org/abs/2610.20845",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-10-16T04:00:00.000Z",
-      "snippet": "arXiv:2610.20845v1 Announce Type: new Abstract: Skill-policy co-evolution, in which an agent's policy model and its skill bank improve each other during training, is a promising paradigm for self-improving agents. Current evaluations score the co-evolved policy on the final bank it trained with (the delivered bank). After deployment, however, skills may be rewritten, added or removed more frequently than the policy model is retrained, leaving the policy to operate on a drifted skill bank that neither the training objective nor existing evaluation protocols address. In this paper, we first esta",
-      "category": "Research",
-      "summary": "A study identifies a 'skill-policy co-evolution trap' in self-improving agents, where policies trained on a delivered skill bank degrade when deployed with a drifted bank that existing evaluation protocols do not address.",
-      "summaryZhHK": "研究發現自我改進代理存在「技能—策略共同演化陷阱」：喺交付技能庫上訓練嘅策略，部署時面對漂移咗嘅技能庫就會表現下降，而現有評估方法未有處理呢個問題。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic",
-          "evaluation"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Anticipatory Commonsense with Moving Objects: An ASP-Based Framework for Predictive Reasoning with Interacting Trajectories",
-      "url": "https://arxiv.org/abs/2610.20867",
-      "source": "arXiv cs.AI",
-      "publishedAt": "2026-10-16T04:00:00.000Z",
-      "snippet": "arXiv:2610.20867v1 Announce Type: new Abstract: We present a general declarative framework for anticipatory reasoning about interactive motion in complex dynamic environments. Our focus is on (explainable) anticipatory space-time mental model formation at a semantic level to heuristically guide low-level motion computation. Our method is hybrid, modular and elaboration tolerant integrating: 1) An ASP model characterising the dynamics of interactive motion trajectories; 2) Semantically-guided prediction for deriving `branching trajectory futures'; and 3) An energy-based {optimisation} model to ",
-      "category": "Research",
-      "summary": "Researchers present an ASP-based declarative framework for anticipatory commonsense reasoning about interactive motion, combining an ASP dynamics model, semantically-guided trajectory prediction and energy-based optimisation.",
-      "summaryZhHK": "研究人員提出一個基於ASP嘅宣告式框架，用嚟做互動運動嘅預期常識推理，結合ASP動力學模型、語義引導軌跡預測同基於能量嘅優化。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "reasoning",
-          "robotics"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "London AI concentration could stunt UK growth",
-      "url": "https://www.computerweekly.com/news/366652235/London-AI-concentration-could-stunt-UK-growth",
-      "source": "Computer Weekly",
-      "publishedAt": "2026-10-16T03:00:00.000Z",
-      "snippet": "Demand for artificial intelligence is surging across the UK, but talent is concentrated in the capital",
-      "category": "Business & Funding",
-      "summary": "Demand for AI is surging across the UK, but talent is concentrated in London, a concentration that could stunt broader UK growth.",
-      "summaryZhHK": "英國各地對 AI 嘅需求急升，但人才就集中晒喺倫敦，呢種集中情況可能拖累成個英國嘅增長。",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial",
-          "policy"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Grok AI 代網購被 Amazon 擋 馬斯克笑言要「做個對手」出來",
-      "url": "https://unwire.hk/2026/10/16/elon-musk-grok-bot-amazon-blocked-competitor/shop_guide/?utm_source=rss&utm_medium=rss&utm_campaign=elon-musk-grok-bot-amazon-blocked-competitor",
-      "source": "Unwire.hk",
-      "publishedAt": "2026-10-16T02:00:19.000Z",
-      "snippet": "xAI（SpaceXSI）推出的 AI 代理 Grok Bot 可代用戶上網購物，但有 X 用戶日前反映，Bo […]",
-      "category": "Applications",
-      "summary": "xAI's Grok Bot AI agent, which shops online on users' behalf, was reportedly blocked by Amazon, prompting Musk to joke about building a competitor.",
-      "summaryZhHK": "xAI 出嘅 Grok Bot AI agent 可以代用戶上網購物，但有 X 用戶話畀 Amazon 擋咗，搞到馬斯克笑言要整個對手出嚟。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
-      "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
-      "source": "Hugging Face blog",
-      "publishedAt": "2026-10-16T01:44:47.000Z",
-      "snippet": "",
-      "category": "Open Source",
-      "summary": "A Hugging Face blog post on scaling Indic pretraining with 2.8 trillion tokens, paired with an open data generation pipeline.",
-      "summaryZhHK": "Hugging Face 一篇網誌講點樣用 2.8 兆 tokens 去 scale 印度語系（Indic）預訓練，仲配埋一套開放嘅數據生成流程。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "training"
-        ],
-        "traits": [
-          "open-source"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "AI agents on Tencent Cloud try to break into Alibaba’s Amap: researchers",
-      "url": "https://www.scmp.com/tech/tech-trends/article/3371007/ai-agents-tencent-cloud-try-break-alibabas-amap-researchers?utm_source=rss_feed",
-      "source": "SCMP Tech",
-      "publishedAt": "2026-10-16T01:00:06.000Z",
-      "snippet": "A fleet of artificial intelligence agents operating on a Tencent Holdings cloud platform made thousands of attempts to circumvent security protections on Alibaba Group Holding’s mapping service, according to findings by third-party researchers. It is one of the first reported “rogue” AI events involving Chinese companies, following a string of recent high-profile incidents in the US, including from OpenAI and Anthropic, highlighting the risks of increasingly autonomous AI systems. Agents running...",
-      "category": "AI Safety & Alignment",
-      "summary": "Third-party researchers found AI agents on a Tencent Cloud platform made thousands of attempts to circumvent security protections on Alibaba's Amap mapping service, one of the first reported rogue AI incidents involving Chinese companies.",
-      "summaryZhHK": "第三方研究人員發現，Tencent Cloud平台上嘅AI agent曾數千次嘗試繞過Alibaba旗下高德地圖嘅安全防護，係首批涉及中國企業嘅「失控」AI事件之一。",
-      "important": true,
-      "tags": {
-        "topics": [
-          "agentic",
-          "safety"
-        ],
-        "traits": [
-          "incident"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Meta releases Muse Spark Open, a new ‘open-weight’ AI model",
-      "url": "https://www.theguardian.com/technology/2026/oct/16/meta-releases-muse-spark-open-a-new-open-weight-ai-model",
-      "source": "Guardian AI",
-      "publishedAt": "2026-10-16T00:34:28.000Z",
-      "snippet": "Meta says Muse excels at ‘multi-step reasoning’ and ‘complex software engineering’ as it races to catch up to Chinese rivals Meta on Thursday launched a new open-weight AI model which it claims rivals, and in some cases outperforms, similar products from leading Chinese developers. Muse Spark Open “is the most capable US open-weight model to date,” Meta’s chief of AI Alexandr Wang wrote on X. Continue reading...",
-      "category": "Model Releases",
-      "summary": "Meta released Muse Spark Open, an open-weight model it says excels at multi-step reasoning and complex software engineering, with AI chief Alexandr Wang calling it \"the most capable US open-weight model to date.\"",
-      "summaryZhHK": "Meta 推出開放權重模型 Muse Spark Open，話佢喺多步推理同複雜軟件工程方面好叻，AI 主管 Alexandr Wang 仲話佢係「迄今為止最強嘅美國開放權重模型」。",
-      "important": true,
-      "tags": {
-        "topics": [
-          "reasoning"
-        ],
-        "traits": [
-          "open-source",
-          "release"
-        ],
-        "entities": [
-          "meta"
-        ]
-      }
-    },
-    {
-      "title": "Welcome Beam: a 501B open model you can own, customize, and scale",
-      "url": "https://huggingface.co/blog/reflection-beam",
-      "source": "Hugging Face blog",
-      "publishedAt": "2026-10-16T00:00:00.000Z",
-      "snippet": "",
-      "category": "Open Source",
-      "summary": "Hugging Face announced Beam, a 501B-parameter open model that users can own, customize, and scale.",
-      "summaryZhHK": "Hugging Face 公布咗 Beam，一個 501B 參數嘅開放模型，用家可以自己擁有、自訂同擴展。",
-      "important": true,
-      "tags": {
-        "topics": [
-          "llm"
-        ],
-        "traits": [
-          "open-source",
-          "release"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Benefit Street Partners answers questions faster with Codex",
-      "url": "https://openai.com/index/benefit-street-partners",
-      "source": "OpenAI Blog",
-      "publishedAt": "2026-10-16T00:00:00.000Z",
-      "snippet": "Anant Kumar builds tools to compare loan valuations and analyze credit agreements, using Codex for code review and faster follow-ups.",
-      "category": "Applications",
-      "summary": "Anant Kumar at Benefit Street Partners uses OpenAI Codex for code review and faster follow-ups on tools that compare loan valuations and analyze credit agreements.",
-      "summaryZhHK": "Benefit Street Partners 嘅 Anant Kumar 用 OpenAI Codex 做 code review 同加快跟進，用嚟整比較貸款估值同分析信貸協議嘅工具。",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial"
-        ],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
-      "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
-      "source": "OpenAI Blog",
-      "publishedAt": "2026-10-16T00:00:00.000Z",
-      "snippet": "Two engineers shipped Stack Overflow for Agents in a few weeks with Codex, and its ChatGPT plugin helped drive up to 10× growth in agent creation.",
-      "category": "Agent Frameworks",
-      "summary": "Two engineers shipped Stack Overflow for Agents in a few weeks using Codex, and its ChatGPT plugin tripled signups and drove up to 10x growth in agent creation.",
-      "summaryZhHK": "兩個工程師用 Codex 喺幾星期內整好 Stack Overflow for Agents，佢個 ChatGPT plugin 令註冊人數多咗三倍，agent 建立量仲升到成 10 倍。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "When it came to Cal AI’s viral success, a small army of influencers paid off",
-      "url": "https://techcrunch.com/2026/10/15/when-it-came-to-cal-ais-viral-success-a-small-army-of-influencers-paid-off/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-10-15T23:44:56.000Z",
-      "snippet": "The company generated over $30 million in revenue in two years and was acquired by MyFitnessPal for an undisclosed amount of money in March.",
-      "category": "Business & Funding",
-      "summary": "Cal AI generated over $30 million in revenue in two years, largely thanks to a small army of influencers, and was acquired by MyFitnessPal in March for an undisclosed amount.",
-      "summaryZhHK": "Cal AI 靠住一班為數唔少嘅網紅帶動，兩年內做到超過 3,000 萬美元收入，今年 3 月畀 MyFitnessPal 收購，作價未有披露。",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial",
-          "funding"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Hong Kong investors most eager in Asia to beat markets – but temper return hopes: report",
-      "url": "https://www.scmp.com/business/markets/article/3371039/hong-kong-investors-most-eager-asia-beat-markets-temper-return-hopes-report?utm_source=rss_feed",
-      "source": "SCMP Tech",
-      "publishedAt": "2026-10-15T23:00:13.000Z",
-      "snippet": "Hong Kong investors are Asia’s most ambitious stock pickers, but they have much more subdued return expectations than regional peers swept up in enthusiasm over artificial intelligence, according to a survey by a global asset management firm. Some 95 per cent of Hong Kong respondents said they wanted to outperform the market, the highest proportion in Asia, where the average stood at 85 per cent, according to a survey conducted in August by Natixis Investment Managers. Hong Kong investors...",
-      "category": "Business & Funding",
-      "summary": "A Natixis Investment Managers survey found 95 percent of Hong Kong investors want to beat the market, the highest in Asia, yet their return expectations are more subdued than regional peers riding AI enthusiasm.",
-      "summaryZhHK": "Natixis Investment Managers嘅調查發現，95%香港投資者想跑贏大市，比例係亞洲最高，但佢哋嘅回報期望反而比受AI熱潮帶動嘅區內同儕保守。",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "funding",
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "ChatGPT can peek at your Chrome tabs now",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs",
-      "source": "The Verge AI",
-      "publishedAt": "2026-10-15T22:43:23.000Z",
-      "snippet": "OpenAI's ChatGPT Atlas browser is gone, but now ChatGPT's Google Chrome extension is getting some upgrades that allow it to use the browser tabs you already have open. With the extension installed, OpenAI says ChatGPT can now view your browser tabs when you tag Chrome in ChatGPT's web or desktop app, posting a demo video showing someone asking ChatGPT to compare the three tabs they have open with sofas they're considering. A few big upgrades for Chrome users today! We're bringing the power of computer use to anyone who uses Chrome. First up: ChatGPT can now use your tabs in Chrome to make answ",
-      "category": "Applications",
-      "summary": "OpenAI has upgraded ChatGPT's Google Chrome extension so it can read and use your already-open browser tabs when you tag Chrome in the ChatGPT web or desktop app. A demo video shows a user asking ChatGPT to compare three open tabs of sofas they were considering.",
-      "summaryZhHK": "OpenAI 升級咗 ChatGPT 嘅 Google Chrome 擴充功能，而家只要你喺 ChatGPT 網頁版或者桌面 app 入面 tag 一 tag Chrome，佢就可以睇到你已經開咗嘅瀏覽器分頁並且攞嚟用。示範片段見到有用戶叫 ChatGPT 幫佢比較三個開住嘅梳化分頁。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic"
-        ],
-        "traits": [
-          "release"
-        ],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "Sega pulls Total War: Shogun 2 remaster from sale following disastrous launch",
-      "url": "https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled",
-      "source": "The Verge AI",
-      "publishedAt": "2026-10-15T22:35:55.000Z",
-      "snippet": "Sega is removing Total War: Shogun 2 - Complete Edition from storefronts following a disastrous launch where users complained about issues like bugs and upscaling that appears to have been done by AI. Complete Edition, a remaster of the 2011 strategy game, launched on Tuesday, and it bundled the main game and all of its DLC with promised upgrades including \"improved visuals,\" \"1440p and 4K UI scaling,\" and modernized controls. It has an \"Overwhelmingly Negative\" rating on Steam, where it has already been pulled, and posts on Reddit showcase artwork that users believe AI messed up. \"We're aware",
-      "category": "Applications",
-      "summary": "Sega is pulling Total War: Shogun 2 - Complete Edition from storefronts after a disastrous launch with bugs and AI-upscaling complaints. The remaster holds an \"Overwhelmingly Negative\" Steam rating and has already been removed there.",
-      "summaryZhHK": "Sega 喺 Total War: Shogun 2 - Complete Edition 災難級上市之後，將佢從各平台下架。玩家投訴有 bug，仲話畫質升頻疑似用 AI 搞出嚟。隻重製版喺 Steam 評分「壓倒性負評」，仲已經被抽起咗。",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "incident",
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "The tech backlash is now in theaters",
-      "url": "https://www.theverge.com/entertainment/1012438/hollywood-tech-backlash-you-can-see-everything-musk-the-social-reckoning-artificial",
-      "source": "The Verge AI",
-      "publishedAt": "2026-10-15T21:39:52.000Z",
-      "snippet": "Though movies about disruptive tech founders are nothing new, 2026 has been unusually stacked with features that take a much more critical look at how Silicon Valley is reshaping our reality. Aaron Sorkin's The Social Reckoning frames Mark Zuckerberg as a robotic villain whose ambitions are destabilizing society. Nathan Fielder and Lance Oppenheim's You Can See Everything paints a damning picture of Theranos founder Elizabeth Holmes as she prepares for her ongoing stint in prison. After years of being widely celebrated as a visionary, you can see how the larger narrative around Elon Musk has s",
-      "category": "Other",
-      "summary": "A wave of 2026 films takes a sharply critical look at Silicon Valley, portraying figures like Mark Zuckerberg as a destabilizing villain and revisiting Elizabeth Holmes and Elon Musk.",
-      "summaryZhHK": "2026年有一批電影對矽谷作出嚴厲批判，將Mark Zuckerberg塑造成危害社會穩定嘅反派，亦重新審視Elizabeth Holmes同Elon Musk。",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial",
-          "incident"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Trump posts AI-edited photo to brag about White House restoration work",
-      "url": "https://www.theverge.com/policy/1012445/donald-trump-ai-photo-white-house-rennovation-column",
-      "source": "The Verge AI",
-      "publishedAt": "2026-10-15T21:09:33.000Z",
-      "snippet": "President Donald Trump posted a series of photos on Truth Social showing off renovations to the White House - but one of them appears to be modified with AI. The picture, which compares an old White House column to a \"restored\" one, has several discrepancies and was flagged by Google's AI detector as \"made or edited with OpenAI.\" As pointed out by users on Reddit, the picture of the \"restored\" column has an uneven number of steps on both sides of the structure. The number of steps also doesn't match up with the ones in the \"before\" photo. Additionally, the before and after photos appear nearly",
-      "category": "Other",
-      "summary": "Trump posted an AI-edited photo on Truth Social comparing before-and-after White House column restoration, which Google's AI detector flagged as made or edited with OpenAI.",
-      "summaryZhHK": "特朗普喺Truth Social貼咗一張AI修改過嘅相，對比白宮柱修復前後，Google嘅AI偵測器標記佢係用OpenAI製作或編輯。",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "incident"
-        ],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint",
-      "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
-      "source": "Hugging Face blog",
-      "publishedAt": "2026-10-15T20:34:01.000Z",
-      "snippet": "",
-      "category": "Model Releases",
-      "summary": "Granite Switch 4.1 from Hugging Face delivers chat, decision-making and speech capabilities from a single endpoint.",
-      "summaryZhHK": "Hugging Face 嘅 Granite Switch 4.1 可以由單一 endpoint 提供對話、決策同語音功能。",
-      "important": true,
-      "tags": {
-        "topics": [
-          "audio"
-        ],
-        "traits": [
-          "release"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Meta launches an open-weight AI model that runs on Macs",
-      "url": "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-10-15T20:04:53.000Z",
-      "snippet": "Meta and Apple have teamed up for the launch of the social media giant's newest model, Muse Spark Open, which will run locally on Apple silicon.",
-      "category": "Open Source",
-      "summary": "Meta launched Muse Spark Open, an open-weight model built with Apple that runs locally on Apple silicon.",
-      "summaryZhHK": "Meta 推出 Muse Spark Open，呢個開放權重模型係同 Apple 一齊搞，可以喺 Apple 芯片上面本地運行。",
-      "important": true,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "open-source",
-          "release"
-        ],
-        "entities": [
-          "meta"
-        ]
-      }
-    },
-    {
-      "title": "Bluesky&#8217;s AI tool now lets you make games and apps to share on social",
-      "url": "https://www.theverge.com/tech/1012374/bluesky-ai-attie-small-social-games-apps",
-      "source": "The Verge AI",
-      "publishedAt": "2026-10-15T19:57:16.000Z",
-      "snippet": "Bluesky's Attie AI tool, which initially launched earlier this year as a way to use AI to build your own feeds, now lets you make \"small\" social apps like games, polls, and dashboards that you can then share with others as their own websites. In an interview at TechCrunch Disrupt, Bluesky CEO Toni Schneider said to think of Attie as \"social vibe coding or vibe coding for your community.\" You can make your own Attie app by typing in a prompt. A simple poll I made about Pokémon Red and Pokémon Blue took a few minutes to generate. If you want to check out something more full-featured, the Attie w",
-      "category": "Applications",
-      "summary": "Bluesky's Attie AI tool now lets users build small social apps like games, polls, and dashboards from a prompt and share them as websites, with CEO Toni Schneider calling it 'social vibe coding.'",
-      "summaryZhHK": "Bluesky嘅Attie AI工具而家可以畀用戶打個prompt就整啲小型社交app，例如遊戲、投票同dashboard，再以網站形式分享出去，行政總裁Toni Schneider叫呢樣做「social vibe coding」。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Amazon devices chief Panos Panay sees a future where AI devices replace the need to use apps",
-      "url": "https://techcrunch.com/2026/10/15/amazon-devices-chief-panos-panay-sees-a-future-where-ai-devices-replace-the-need-to-use-apps/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-10-15T19:55:25.000Z",
-      "snippet": "Speaking at TechCrunch Disrupt, Amazon devices chief Panos Panay described a future where ambient AI devices work in the background, anticipating users' needs instead of waiting for commands.",
-      "category": "Applications",
-      "summary": "At TechCrunch Disrupt, Amazon devices chief Panos Panay predicted a future where ambient AI devices anticipate users' needs in the background, replacing the need to open apps.",
-      "summaryZhHK": "喺TechCrunch Disrupt，Amazon裝置主管Panos Panay預言未來會有環境AI裝置喺背景預測用戶需要，唔使再開app。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Chirp Pong",
-      "url": "https://simonwillison.net/2026/Oct/15/chirp-pong/",
-      "source": "Simon Willison",
-      "publishedAt": "2026-10-15T19:47:52.000Z",
-      "snippet": "Tool: Chirp Pong Another game experiment - I wanted to see if it was feasible to have a two player game on two separate phones running in static HTML where the networking code uses chirps sent via the microphone. It seems to work! Build a two player competitive pong like game where two players use their phones close to each other and the game state is sent via audio noises which the web microphone API can interpret - but add graphical and gameplay twists to make it a lot more fun and intertwine than pong Claude Opus 5.5 Extra in Claude Code . Tags: game-design , ai , generative-ai , llms , cla",
-      "category": "Developer Tools",
-      "summary": "Simon Willison built Chirp Pong, a two-player pong-style game on two separate phones in static HTML where the networking runs over chirps sent via the microphone and interpreted by the web microphone API, built with Claude Opus 5.5 Extra in Claude Code.",
-      "summaryZhHK": "Simon Willison 整咗個 Chirp Pong，係一個喺兩部獨立手機上用靜態 HTML 跑嘅雙人 pong 類遊戲，網絡部分靠咪高峰發出嘅 chirp 聲傳送，再由 web microphone API 解讀，用 Claude Code 入面嘅 Claude Opus 5.5 Extra 寫成。",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial",
-          "tutorial"
-        ],
-        "entities": [
-          "claude",
-          "anthropic"
-        ]
-      }
-    },
-    {
-      "title": "The next developer interface is ambient intelligence",
-      "url": "https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence/",
-      "source": "GitHub blog",
-      "publishedAt": "2026-10-15T19:39:27.000Z",
-      "snippet": "AI, agents, voice, and physical controls are shifting software development from operating tools to expressing intent—and helping developers stay focused on building. The post The next developer interface is ambient intelligence appeared first on The GitHub Blog.",
-      "category": "Developer Tools",
-      "summary": "A GitHub blog post argues the next developer interface is ambient intelligence, as AI, agents, voice and physical controls shift software development from operating tools to expressing intent.",
-      "summaryZhHK": "GitHub 一篇網誌話下一個開發者介面會係 ambient intelligence，隨住 AI、agent、語音同實體控制出現，軟件開發由操作工具轉向表達意圖，令開發者更專注喺建造上面。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Anthropic is letting METR researchers look under the hood with employee-level access",
-      "url": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-10-15T19:14:26.000Z",
-      "snippet": "METR will publish its own assessments of Anthropic’s risks, incidents, and practices, and the frontier AI model maker has given up the right to block them.",
-      "category": "AI Safety & Alignment",
-      "summary": "Anthropic is giving METR researchers employee-level access to assess its risks, incidents, and practices, and has waived its right to block publication of their findings.",
-      "summaryZhHK": "Anthropic畀METR研究人員員工級別嘅存取權，去評估佢嘅風險、事故同做法，仲放棄咗阻止對方發表評估結果嘅權利。",
-      "important": true,
-      "tags": {
-        "topics": [
-          "safety",
-          "interpretability"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": [
-          "anthropic"
-        ]
-      }
-    },
-    {
-      "title": "Bringing GPT-Rosalind to academic research labs",
-      "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
-      "source": "OpenAI Blog",
-      "publishedAt": "2026-10-15T19:00:00.000Z",
-      "snippet": "Introducing the Rosalind Academic Plan, offering eligible academic labs sponsored access to GPT-Rosalind and tools to advance life sciences research.",
-      "category": "Applications",
-      "summary": "OpenAI launched the Rosalind Academic Plan, giving eligible academic labs sponsored access to GPT-Rosalind plus tools aimed at advancing life sciences research.",
-      "summaryZhHK": "OpenAI 推出 Rosalind Academic Plan，合資格嘅學術實驗室可以獲贊助使用 GPT-Rosalind，仲有埋推動生命科學研究嘅工具。",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "research",
-          "release"
-        ],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "Bluesky expands its AI-powered Attie app to let anyone build websites, games, and more",
-      "url": "https://techcrunch.com/2026/10/15/bluesky-expands-its-ai-powered-attie-app-to-let-anyone-build-websites-games-and-more/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-10-15T18:56:46.000Z",
-      "snippet": "Bluesky is bringing “social vibe coding” to its experimental Attie platform, allowing users to create interactive experiences like games, quizzes, and websites that can tap into the social network's audience.",
-      "category": "Applications",
-      "summary": "Bluesky expanded its experimental Attie platform so anyone can build interactive games, quizzes, and websites that tap into the social network's audience.",
-      "summaryZhHK": "Bluesky擴展實驗性嘅Attie平台，任何人都可以整互動遊戲、問答同網站，直接接觸社交網絡嘅用戶群。",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Muse Spark Open is Meta's answer to Qwen, GLM, and Kimi in the open-weight race",
-      "url": "https://the-decoder.com/muse-spark-open-is-metas-answer-to-qwen-glm-and-kimi-in-the-open-weight-race/",
-      "source": "The Decoder",
-      "publishedAt": "2026-10-15T18:34:32.000Z",
-      "snippet": "Meta's Muse Spark Open is a new open-weight model with 816 billion parameters that processes text, images, video, and audio with up to one million tokens of context. It performs roughly on par with the most capable open-weight Chinese AI models on benchmarks and is optimized to run locally on Apple's M5 Ultra. The article Muse Spark Open is Meta's answer to Qwen, GLM, and Kimi in the open-weight race appeared first on The Decoder.",
-      "category": "Open Source",
-      "summary": "Meta's Muse Spark Open is an 816-billion-parameter open-weight model handling text, images, video and audio with up to one million tokens of context, roughly matching top Chinese open-weight models on benchmarks and optimised to run locally on Apple's M5 Ultra.",
-      "summaryZhHK": "Meta 嘅 Muse Spark Open 係一個 816 億參數嘅開放權重模型，可以處理文字、圖片、影片同音頻，上下文最多一百萬 tokens，benchmark 上同最勁嘅中國開放權重模型差唔多，仲特別優化到可以喺 Apple M5 Ultra 上面本地運行。",
-      "important": true,
-      "tags": {
-        "topics": [
-          "multimodal"
-        ],
-        "traits": [
-          "open-source",
-          "release"
-        ],
-        "entities": [
-          "meta",
-          "llama"
-        ]
-      }
-    },
-    {
-      "title": "Meta and Apple team up to make Muse AI models run better on Macs",
-      "url": "https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx",
-      "source": "The Verge AI",
-      "publishedAt": "2026-10-15T18:15:36.000Z",
-      "snippet": "The new Muse Spark Open AI model can work on M5 Ultra Mac Studios. | Photo: Amelia Holowaty Krales / The Verge Meta announced the Muse Spark Open AI model today, claiming that it's the \"most capable US open-weight model to date.\" But the company also says that it's the \"the first model in its class\" that can \"run on your desktop using two Apple M5 Ultra Mac Studios with the latest MLX framework.\" Meta and Apple, typically rivals, worked together on the launch and are publicly supporting each other. \"Muse Spark Open - weights releasing today - runs great on new Mac Studios thanks to work with @",
-      "category": "Model Releases",
-      "summary": "Meta announced the Muse Spark Open model, calling it the most capable US open-weight model to date and the first in its class to run on two Apple M5 Ultra Mac Studios with the MLX framework, a collaboration with rival Apple.",
-      "summaryZhHK": "Meta發佈Muse Spark Open模型，聲稱係至今最強嘅美國開放權重模型，亦係同類中首個可以喺兩部Apple M5 Ultra Mac Studio上用MLX框架運行，今次仲同對手Apple合作。",
-      "important": true,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "open-source",
-          "release"
-        ],
-        "entities": [
-          "meta"
-        ]
-      }
-    },
-    {
-      "title": "Last chance to save up to $200 on your TechCrunch Founder Summit pass: Early booking ends October 16",
-      "url": "https://techcrunch.com/2026/10/15/last-chance-to-save-up-to-200-on-techcrunch-founder-summit-early-booking-ends-oct-16/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-10-15T18:00:00.000Z",
-      "snippet": "Savings of up to $200 end October 16 for TechCrunch Founder Summit. These savings for Founder and Investor Passes vanish after Friday. Join 1,000 founders and investors on November 4 at Boston’s SoWa Power Station. Bring your toughest questions and make the day count for your business.",
-      "category": "Business & Funding",
-      "summary": "TechCrunch Founder Summit early-bird savings of up to $200 for Founder and Investor Passes end October 16, ahead of the November 4 event in Boston.",
-      "summaryZhHK": "TechCrunch Founder Summit嘅早鳥優惠最高慳200美元，適用於Founder同Investor Pass，10月16日截止，活動11月4日喺波士頓舉行。",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Black Forest Labs' open-weights image model FLUX 3 Image Klein runs on consumer GPUs with just 8 GB of VRAM",
-      "url": "https://the-decoder.com/black-forest-labs-open-weights-image-model-flux-3-image-klein-runs-on-consumer-gpus-with-just-8-gb-of-vram/",
-      "source": "The Decoder",
-      "publishedAt": "2026-10-15T16:57:14.000Z",
-      "snippet": "Black Forest Labs has released FLUX 3 Image Klein, a 5.6-billion-parameter open-weights image model that supports native 4K generation, pixel-precise editing, and generation with up to ten reference images. With 38 percent fewer parameters than its predecessor, it still outperforms proprietary competitors in internal tests and runs on GPUs with just 8 GB of VRAM. The article Black Forest Labs' open-weights image model FLUX 3 Image Klein runs on consumer GPUs with just 8 GB of VRAM appeared first on The Decoder.",
-      "category": "Open Source",
-      "summary": "Black Forest Labs released FLUX 3 Image Klein, a 5.6-billion-parameter open-weights image model with native 4K generation, pixel-precise editing and up to ten reference images, running on GPUs with just 8 GB of VRAM despite 38 percent fewer parameters than its predecessor.",
-      "summaryZhHK": "Black Forest Labs 推出 FLUX 3 Image Klein，係一個 56 億參數嘅開放權重圖像模型，支援原生 4K 生成、逐像素精準編輯，同埋最多十張參考圖，雖然比上一代少 38% 參數，但喺得 8 GB VRAM 嘅 GPU 上面都行得。",
-      "important": true,
-      "tags": {
-        "topics": [
-          "vision"
-        ],
-        "traits": [
-          "open-source",
-          "release"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Tell us: have you used AI to help with online dating?",
-      "url": "https://www.theguardian.com/technology/2026/oct/15/using-ai-online-dating-tell-us",
-      "source": "Guardian AI",
-      "publishedAt": "2026-10-15T16:47:25.000Z",
-      "snippet": "From chat-up lines to social coaching, we’d like to hear from people who use AI to assist them navigating the online dating world We’d like to understand more about the different ways that people are using AI to assist with online dating. Perhaps you have used an AI assistant to help with chat-up lines? Or you may have turned to one for some social coaching? However you have used AI for online dating, we’d like to hear all about it. What worked and what didn’t? Continue reading...",
-      "category": "Applications",
-      "summary": "The Guardian is asking readers to share how they use AI for online dating, from chat-up lines to social coaching, and what worked or didn't.",
-      "summaryZhHK": "《衛報》呼籲讀者分享佢哋點樣用AI幫手玩網上約會，由度橋傾偈到社交指導，同埋邊啲方法得、邊啲唔得。",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Google wants Gemini 4 Argon to be the only AI model robots need",
-      "url": "https://the-decoder.com/google-wants-gemini-4-argon-to-be-the-only-ai-model-robots-need/",
-      "source": "The Decoder",
-      "publishedAt": "2026-10-15T16:35:47.000Z",
-      "snippet": "Google's Gemini 4 Argon controls robots, generates simulations from photos or sketches, and evaluates training videos. On Google's own ERQA benchmark, it scores 87 percent. But the published example prompts show that the demos still need a lot of human guidance. The article Google wants Gemini 4 Argon to be the only AI model robots need appeared first on The Decoder.",
-      "category": "Model Releases",
-      "summary": "Google's Gemini 4 Argon controls robots, generates simulations from photos or sketches, and evaluates training videos, scoring 87 percent on Google's ERQA benchmark though demos still need heavy human guidance.",
-      "summaryZhHK": "Google嘅Gemini 4 Argon可以操控機械人、由相或者草圖生成模擬場景，同埋評估訓練影片，喺Google自家ERQA benchmark拎到87分，但示範仍然要大量人手引導。",
-      "important": true,
-      "tags": {
-        "topics": [
-          "robotics",
-          "multimodal"
-        ],
-        "traits": [
-          "benchmark",
-          "release"
-        ],
-        "entities": [
-          "google",
-          "gemini"
-        ]
-      }
-    },
-    {
-      "title": "Friends don&#8217;t let friends feed their data to AI agents",
-      "url": "https://www.theverge.com/tech/1011938/muse-ai-data-friends-consent",
-      "source": "The Verge AI",
-      "publishedAt": "2026-10-15T16:21:45.000Z",
-      "snippet": "There's a growing trend in the consumer tech world: gadgets designed to spy on everything and everyone around you, regardless of whether or not anyone else actually consented to it. Now, with the advent of \"AI personal assistants\" like Meta's Muse, you're being cheerfully asked not just to give up your own data, but also the information of your friends, family, the person you went on a Hinge date with five years ago - and virtually anyone else you've ever come in contact with. Since Muse was released last month, the agent has already been downloaded millions of times and hit No. 1 on Apple's A",
-      "category": "AI Safety & Alignment",
-      "summary": "The Verge argues that consumer AI personal assistants like Meta's Muse push users to hand over not just their own data but also the personal information of friends, family and casual contacts, raising consent and privacy concerns.",
-      "summaryZhHK": "The Verge指出，好似Meta嘅Muse呢類消費級AI個人助理，會令用戶連自己嘅數據同朋友、家人、甚至普通相識嘅個人資料都交晒出去，引發同意同私隱嘅關注。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety",
-          "agentic"
-        ],
-        "traits": [],
-        "entities": [
-          "meta"
-        ]
-      }
-    },
-    {
-      "title": "Nvidia's Nemotron 3.5 Super VL is an open model built to run enterprise AI agents nonstop",
-      "url": "https://the-decoder.com/nvidias-nemotron-3-5-super-vl-is-an-open-model-built-to-run-enterprise-ai-agents-nonstop/",
-      "source": "The Decoder",
-      "publishedAt": "2026-10-15T16:09:44.000Z",
-      "snippet": "With Nemotron 3.5 Super VL, Nvidia is releasing an open multimodal model with 120 billion parameters for enterprise agents. Two compact Bolt models bring agents to local machines. Dozens of organizations are already fine-tuning Super VL, but getting the most out of it means buying Nvidia hardware. The article Nvidia's Nemotron 3.5 Super VL is an open model built to run enterprise AI agents nonstop appeared first on The Decoder.",
-      "category": "Model Releases",
-      "summary": "Nvidia released Nemotron 3.5 Super VL, a 120-billion-parameter open multimodal model for enterprise agents, plus two compact Bolt models for local machines, though peak performance requires Nvidia hardware.",
-      "summaryZhHK": "Nvidia推出Nemotron 3.5 Super VL，係一個1,200億參數嘅開放多模態模型，針對企業級agent，另外有兩個細型Bolt模型可以喺本機行，不過要發揮最佳效能就要買Nvidia硬件。",
-      "important": true,
-      "tags": {
-        "topics": [
-          "multimodal",
-          "agentic"
-        ],
-        "traits": [
-          "open-source",
-          "release"
-        ],
-        "entities": [
-          "nvidia"
-        ]
-      }
-    },
-    {
-      "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
-      "url": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
-      "source": "Google DeepMind",
-      "publishedAt": "2026-10-15T16:08:03.000Z",
-      "snippet": "Accelerating the search for novel antimicrobial peptides using Google Antigravity for Science.",
-      "category": "Research",
-      "summary": "Google DeepMind used its Google Antigravity for Science system to accelerate the search for novel antimicrobial peptides.",
-      "summaryZhHK": "Google DeepMind 用佢嘅 Google Antigravity for Science 系統，加快搜尋新型抗菌肽嘅研究。",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "research"
-        ],
-        "entities": [
-          "deepmind",
-          "google"
-        ]
-      }
-    },
-    {
-      "title": "Report: FTC probes Anthropic, OpenAI after Trump dismissed AI fears as “hoax”",
-      "url": "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/",
-      "source": "Ars Technica AI",
-      "publishedAt": "2026-10-15T15:43:24.000Z",
-      "snippet": "FTC may fine AI firms on par with companies that delay data breach reports.",
-      "category": "Regulation & Policy",
-      "summary": "The FTC is reportedly probing Anthropic and OpenAI, and may fine AI firms on a par with companies that delay data breach reports. The scrutiny follows Trump dismissing AI fears as a \"hoax.\"",
-      "summaryZhHK": "據報 FTC 正調查 Anthropic 同 OpenAI，仲可能對 AI 公司開罰款，力度同拖延通報資料外洩嘅公司睇齊。呢次審查係喺特朗普將 AI 恐慌講成「騙局」之後出現。",
-      "important": true,
-      "tags": {
-        "topics": [
-          "safety"
-        ],
-        "traits": [
-          "policy"
-        ],
-        "entities": [
-          "anthropic"
-        ]
-      }
-    },
-    {
-      "title": "Bank of America puts 4,000 people on fixing vulnerabilities uncovered by Anthropic's Mythos and other AI models",
-      "url": "https://the-decoder.com/bank-of-america-puts-4000-people-on-fixing-vulnerabilities-uncovered-by-anthropics-mythos-and-other-ai-models/",
-      "source": "The Decoder",
-      "publishedAt": "2026-10-15T15:27:25.000Z",
-      "snippet": "Bank of America has hired 1,000 outside contractors to fix software vulnerabilities uncovered by AI models like Anthropic's Mythos, CNBC reports. The article Bank of America puts 4,000 people on fixing vulnerabilities uncovered by Anthropic's Mythos and other AI models appeared first on The Decoder.",
-      "category": "Business & Funding",
-      "summary": "Bank of America has deployed 4,000 people, including 1,000 outside contractors, to fix software vulnerabilities uncovered by AI models such as Anthropic's Mythos, according to CNBC.",
-      "summaryZhHK": "據CNBC報道，Bank of America出動4,000人，包括1,000名外聘承辦商，去修補由Anthropic嘅Mythos等AI模型揭發嘅軟件漏洞。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": [
-          "anthropic"
-        ]
-      }
-    },
-    {
-      "title": "GPT-6-Astra solves 49 of 50 physics research problems at $2.40 apiece",
-      "url": "https://the-decoder.com/gpt-6-astra-solves-49-of-50-physics-research-problems-at-2-40-apiece/",
-      "source": "The Decoder",
-      "publishedAt": "2026-10-15T15:24:15.000Z",
-      "snippet": "On the TheoPhysEval benchmark, GPT-6-Astra solves 49 of 50 unpublished theoretical physics calculations as accurately as leading specialists. In some cases where the agent seemed to fail, the experts' own reference solutions turned out to contain errors. But the researchers say physics hasn't had a breakthrough like the ones in mathematics, because the agents lack \"taste.\" They still think autonomous, top-level AI research could arrive soon. They already see consequences for how young physicists are trained and for equal opportunity in the field. The article GPT-6-Astra solves 49 of 50 physics",
-      "category": "Research",
-      "summary": "On the TheoPhysEval benchmark, GPT-6-Astra solved 49 of 50 unpublished theoretical physics calculations at roughly $2.40 each, matching leading specialists, though researchers say agents still lack 'taste' and note consequences for physicist training and equal opportunity.",
-      "summaryZhHK": "喺TheoPhysEval benchmark度，GPT-6-Astra解咗50條未發表嘅理論物理計算中嘅49條，每條成本約2.40美元，準確度拍得住頂尖專家；不過研究人員話agent仲係缺乏「品味」，亦提到對物理學家培訓同機會平等嘅影響。",
-      "important": true,
-      "tags": {
-        "topics": [
-          "reasoning"
-        ],
-        "traits": [
-          "benchmark",
-          "research"
-        ],
-        "entities": [
-          "gpt"
-        ]
-      }
-    },
-    {
-      "title": "Singer or clanker? YouTube Music will tell you with new gen AI labeling.",
-      "url": "https://arstechnica.com/ai/2026/10/youtube-music-begins-labeling-ai-songs/",
-      "source": "Ars Technica AI",
-      "publishedAt": "2026-10-15T15:12:58.000Z",
-      "snippet": "The AI music labels are rolling out now in YouTube Music and will come to YouTube soon.",
-      "category": "Applications",
-      "summary": "YouTube Music is rolling out new generative AI labels to tell listeners whether a track is a singer or a \"clanker,\" with the labels coming to YouTube soon.",
-      "summaryZhHK": "YouTube Music 開始推出生成式 AI 標籤，話畀聽眾知首歌係真人唱定係「clanker」，之後亦會推埋去 YouTube。",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "policy",
-          "release"
-        ],
-        "entities": [
-          "google"
-        ]
-      }
-    },
-    {
-      "title": "AI agents are coming to Rivian’s cars",
-      "url": "https://techcrunch.com/2026/10/15/ai-agents-are-coming-to-rivians-cars/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-10-15T15:02:36.000Z",
-      "snippet": "We'll likely learn more about how this will work at the company's upcoming \"AI & Autonomy Day\" event in December.",
-      "category": "Applications",
-      "summary": "Rivian is bringing AI agents to its vehicles, with more details expected at the company's 'AI & Autonomy Day' event in December.",
-      "summaryZhHK": "Rivian會將AI代理引入佢嘅汽車，預計喺12月嘅「AI & Autonomy Day」活動會有更多詳情公布。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "How Windows is being optimized for Nvidia’s RTX Spark laptops",
-      "url": "https://www.theverge.com/tech/1011996/microsoft-windows-rtx-spark-platform-changes-notepad",
-      "source": "The Verge AI",
-      "publishedAt": "2026-10-15T14:30:00.000Z",
-      "snippet": "Microsoft and Nvidia held a launch party for the first wave of RTX Spark laptops last week in San Francisco, where a new wave of AI PCs took center stage amid a packed crowd and a lively hands-on area. A day after the media event, I was invited to a quieter Nvidia event to hear a lot more about the new RTX Spark computing platform. While Nvidia's new laptops might look like regular Windows machines, the chips inside are Arm-based, instead of the traditional x64 architecture used by AMD and Intel. Combined with a powerful GPU, RTX Spark is designed for the future of AI, and it means a lot of wo",
-      "category": "Hardware & Compute",
-      "summary": "Microsoft and Nvidia showcased the first wave of RTX Spark AI laptops in San Francisco, which use Arm-based chips instead of x64 and pair with a powerful GPU for AI workloads.",
-      "summaryZhHK": "微軟同Nvidia喺三藩市展示首批RTX Spark AI手提電腦，採用Arm架構晶片而非x64，並配搭強勁GPU應付AI工作負載。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "hardware"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": [
-          "nvidia"
-        ]
-      }
-    },
-    {
-      "title": "Google’s Universal Cart shopping tool launches in the US",
-      "url": "https://techcrunch.com/2026/10/15/googles-universal-cart-shopping-tool-launches-in-the-us/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-10-15T14:29:33.000Z",
-      "snippet": "The new shopping tool is available in the U.S. across Google Search and the Gemini app.",
-      "category": "Applications",
-      "summary": "Google's Universal Cart shopping tool is now available in the US across Google Search and the Gemini app.",
-      "summaryZhHK": "Google嘅Universal Cart購物工具而家喺美國推出，喺Google Search同Gemini應用程式都可以用到。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "application"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": [
-          "google"
-        ]
-      }
-    },
-    {
-      "title": "Nobody is safe from celebrity AI deepfakes",
-      "url": "https://www.theverge.com/report/1011927/instagram-celebrity-ai-slop-likeness-taylor-swift-mia-goth",
-      "source": "The Verge AI",
-      "publishedAt": "2026-10-15T14:03:42.000Z",
-      "snippet": "In hindsight, the post on Instagram should have raised more red flags. The image purported to show actress Mia Goth, just days after filing for divorce from actor and filmmaker Shia LaBeouf, posing in a T-shirt with a pointed message: MY EX IS MY BIGGEST FAN. To really drive home the point, the song \"Single Ladies (Put a Ring on It)\" by Beyoncé was added to the post. It would have been out of character for the star of Pearl, who doesn't have much of a social media presence, if any. But the Instagram account that posted it, @miagoth_, had more than a million followers and was marked with a blue",
-      "category": "AI Safety & Alignment",
-      "summary": "The Verge reports on celebrity AI deepfakes, citing an Instagram account with over a million followers that posted fabricated images of actress Mia Goth, highlighting how easily stars can be impersonated.",
-      "summaryZhHK": "The Verge報道名人AI deepfake問題，提到一個有過百萬追隨者嘅Instagram帳號發布女星Mia Goth嘅偽造圖片，凸顯名人好容易被冒認。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety",
-          "multimodal"
-        ],
-        "traits": [
-          "incident"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "TechCrunch Disrupt 2026: Last day",
-      "url": "https://techcrunch.com/2026/10/15/techcrunch-disrupt-2026-last-day/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-10-15T14:00:00.000Z",
-      "snippet": "Last day to be part of TechCrunch Disrupt 2026. Join 10,000+ tech leaders for a day of connections and insights. Save 75% on your pass now.",
-      "category": "Other",
-      "summary": "TechCrunch Disrupt 2026 is in its final day of ticket sales, offering 75% off passes for the event expected to draw 10,000+ tech leaders.",
-      "summaryZhHK": "TechCrunch Disrupt 2026今日係售票最後一日，通行證有75折優惠，預計活動會吸引過萬名科技界領袖參與。",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Benn Jordan on Flock, privacy, and the new surveillance backlash",
-      "url": "https://www.theverge.com/podcast/1011170/benn-jordan-flock-cameras-alpr-ai-surveillance-privacy",
-      "source": "The Verge AI",
-      "publishedAt": "2026-10-15T14:00:00.000Z",
-      "snippet": "Today, I’m talking with Benn Jordan, musician, YouTuber, researcher, and investigative journalist. You might know Benn from those first two titles — he’s got a prolific discography of experimental music dating back decades. But in the last couple of years, he’s become a high-profile face in the creator and media spaces for his work investigating Flock Safety, the maker of automatic license plate readers and the software that powers them. Benn recently testified in front of Congress, at a hearing the Senate Judiciary Committee’s Subcommittee on Crime and Counterterrorism held, dedicated to Floc",
-      "category": "Regulation & Policy",
-      "summary": "Musician and investigator Benn Jordan discusses Flock Safety, license plate reader surveillance and the growing privacy backlash, after testifying before a Senate Judiciary subcommittee hearing.",
-      "summaryZhHK": "音樂人兼調查記者Benn Jordan討論Flock Safety、車牌識別監控同日益升溫嘅私隱反彈，佢早前喺參議院司法委員會小組聽證會作證。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "safety"
-        ],
-        "traits": [
-          "policy"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Anthropic tells investors quarterly revenue up nearly 50% to $16.8bn ahead of IPO",
-      "url": "https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/",
-      "source": "Simon Willison",
-      "publishedAt": "2026-10-15T13:04:03.000Z",
-      "snippet": "Anthropic tells investors quarterly revenue up nearly 50% to $16.8bn ahead of IPO The phrase \"told investors\" appears four times in this FT article, which reports on Anthropic's day of hosting investors on Wednesday. Lots of details in here from \" people with knowledge of the matter \". Key things I learned from the article: Q1 revenue (Jan/Feb/Mar) was \"about $4.8bn\" Q2 (Apr/May/Jun) was $11.5bn Q3 (Jul/Aug/Sep) was $16.8bn In Q3: $1.70 in revenue for every $1 spent on \"computing power\" Adjusted operating margins (excluding stock-based compensation) were 11% This point about distillation is wo",
-      "category": "Business & Funding",
-      "summary": "Anthropic told investors quarterly revenue rose nearly 50% to $16.8bn ahead of its IPO, with Q1 at about $4.8bn and Q2 at $11.5bn; Q3 saw $1.70 revenue per $1 of computing spend and 11% adjusted operating margins excluding stock-based compensation.",
-      "summaryZhHK": "Anthropic 喺 IPO 前夕同投資者講，季度收入升近 50% 去到 168 億美元，Q1 約 48 億、Q2 去到 115 億；Q3 每花 1 蚊算力就有 1.70 蚊收入，撇除股份薪酬嘅調整後營運利潤率有 11%。",
-      "important": true,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "funding",
-          "commercial"
-        ],
-        "entities": [
-          "anthropic"
-        ]
-      }
-    },
-    {
-      "title": "Teaching students to think and learn through questions",
-      "url": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
-      "source": "OpenAI Blog",
-      "publishedAt": "2026-10-15T13:00:00.000Z",
-      "snippet": "Celebrate Teachers’ Day with AI for Educators in Brazilian Portuguese and see how Study Mode can help teachers support active, step-by-step learning.",
-      "category": "Applications",
-      "summary": "OpenAI marked Teachers' Day with AI for Educators in Brazilian Portuguese and highlighted how Study Mode helps teachers support active, step-by-step learning through questions.",
-      "summaryZhHK": "OpenAI 趁教師節推出巴西葡萄牙語版嘅 AI for Educators，仲介紹 Study Mode 點樣幫老師透過提問去支持主動、逐步嘅學習。",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "release"
-        ],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "DeepSeek offers user refunds after suffering another major outage",
-      "url": "https://www.scmp.com/tech/big-tech/article/3371047/deepseek-offers-user-refunds-after-suffering-another-major-outage?utm_source=rss_feed",
-      "source": "SCMP Tech",
-      "publishedAt": "2026-10-15T12:55:26.000Z",
-      "snippet": "Chinese artificial intelligence firm DeepSeek apologised and promised compensation to users after its services suffered a nearly five-hour outage on Thursday. DeepSeek will issue users a full refund for any consumption between October 8 and October 14 in the form of credits, according to a notice posted on the Hangzhou-based start-up’s application programming interface (API) platform. DeepSeek’s namesake chatbot and API services for its V4 Pro and V4.1 Flash models went offline on Thursday...",
-      "category": "Applications",
-      "summary": "Chinese AI firm DeepSeek apologised and promised full credit refunds for user consumption between October 8 and 14 after a nearly five-hour outage took down its chatbot and API services for the V4 Pro and V4.1 Flash models.",
-      "summaryZhHK": "中國AI公司DeepSeek就服務中斷近五個鐘道歉，並承諾以積分形式全額退款畀用戶喺10月8日至14日期間嘅消費，今次事故令佢嘅聊天機械人同V4 Pro、V4.1 Flash模型嘅API服務一度停擺。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "llm"
-        ],
-        "traits": [
-          "release",
-          "incident"
-        ],
-        "entities": []
-      }
     }
   ],
   "feedHealth": {
     "The Verge AI": {
-      "lastSuccess": "2026-11-14T12:41:52.915Z",
+      "lastSuccess": "2026-11-15T13:08:50.633Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "TechCrunch AI": {
-      "lastSuccess": "2026-11-14T12:41:52.915Z",
+      "lastSuccess": "2026-11-15T13:08:50.633Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Ars Technica AI": {
-      "lastSuccess": "2026-11-14T12:41:52.915Z",
+      "lastSuccess": "2026-11-15T13:08:50.633Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "OpenAI Blog": {
-      "lastSuccess": "2026-11-14T12:41:52.915Z",
+      "lastSuccess": "2026-11-15T13:08:50.633Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Google DeepMind": {
-      "lastSuccess": "2026-11-14T12:41:52.915Z",
+      "lastSuccess": "2026-11-15T13:08:50.633Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "MIT Tech Review AI": {
-      "lastSuccess": "2026-11-14T12:41:52.915Z",
+      "lastSuccess": "2026-11-15T13:08:50.633Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "arXiv cs.AI": {
-      "lastSuccess": "2026-11-14T12:41:52.915Z",
+      "lastSuccess": "2026-11-15T13:08:50.633Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Hacker News (AI)": {
       "lastSuccess": "2026-11-13T13:37:34.570Z",
       "lastError": "HTTP 429",
-      "consecutiveFailures": 1
+      "consecutiveFailures": 2
     },
     "AI Business": {
-      "lastSuccess": "2026-11-14T12:41:52.915Z",
+      "lastSuccess": "2026-11-15T13:08:50.633Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "The Decoder": {
-      "lastSuccess": "2026-11-14T12:41:52.915Z",
+      "lastSuccess": "2026-11-15T13:08:50.633Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "The Register AI/ML": {
-      "lastSuccess": "2026-11-14T12:41:52.915Z",
+      "lastSuccess": "2026-11-15T13:08:50.633Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Hugging Face blog": {
-      "lastSuccess": "2026-11-14T12:41:52.915Z",
+      "lastSuccess": "2026-11-15T13:08:50.633Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Guardian AI": {
-      "lastSuccess": "2026-11-14T12:41:52.915Z",
+      "lastSuccess": "2026-11-15T13:08:50.633Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Simon Willison": {
-      "lastSuccess": "2026-11-14T12:41:52.915Z",
+      "lastSuccess": "2026-11-15T13:08:50.633Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "GitHub blog": {
-      "lastSuccess": "2026-11-14T12:41:52.915Z",
+      "lastSuccess": "2026-11-15T13:08:50.633Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Computer Weekly": {
-      "lastSuccess": "2026-11-14T12:41:52.915Z",
+      "lastSuccess": "2026-11-15T13:08:50.633Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Indeed Hiring Lab": {
-      "lastSuccess": "2026-11-14T12:41:52.915Z",
+      "lastSuccess": "2026-11-15T13:08:50.633Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Personnel Today": {
       "lastSuccess": null,
       "lastError": "HTTP 403",
-      "consecutiveFailures": 62
+      "consecutiveFailures": 63
     },
     "SCMP Tech": {
-      "lastSuccess": "2026-11-14T12:41:52.915Z",
+      "lastSuccess": "2026-11-15T13:08:50.633Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Unwire.hk": {
-      "lastSuccess": "2026-11-14T12:41:52.915Z",
+      "lastSuccess": "2026-11-15T13:08:50.633Z",
       "lastError": null,
       "consecutiveFailures": 0
     }
@@ -40788,54 +39783,53 @@
   "briefStatus": "generated",
   "feedFailureWarningThreshold": 3,
   "brief": {
-    "generatedAt": "2026-11-14T12:41:52.915Z",
+    "generatedAt": "2026-11-15T13:08:50.633Z",
     "bullets": [
       {
-        "text": "Anthropic's $1.4 trillion IPO is six times oversubscribed, on track to be the largest ever, while banks bar mainland China and Hong Kong investors over ITAR export controls.",
-        "textZhHK": "Anthropic 以 1.4 兆美元估值招股，超額認購六倍，有望成為史上最大 IPO；銀行以 ITAR 出口管制為由，拒絕中港機構投資者認購。",
+        "text": "Nvidia CEO Jensen Huang quit amid espionage and affair allegations, with a Chinese firm tied to his ex-lover reportedly brokering $12B in China chip orders; Asian governments are reviewing chip commitments, and a petition led by Elon Musk urges reinstatement.",
+        "textZhHK": "Nvidia 行政總裁黃仁勳因間諜同婚外情指控辭職，同佢前女友有關嘅中國公司被指促成120億美元晶片訂單；亞洲政府開始審視晶片承諾，馬斯克帶頭聯署要求佢回巢。",
         "refs": [
-          "https://unwire.hk/2026/11/14/anthropic-ipo-hong-kong-china-investors/ai/?utm_source=rss&utm_medium=rss&utm_campaign=anthropic-ipo-hong-kong-china-investors",
-          "https://the-decoder.com/anthropics-ipo-is-six-times-oversubscribed-and-on-track-to-become-the-largest-public-offering-in-history/",
-          "https://the-decoder.com/banks-bar-chinese-and-hong-kong-investors-from-anthropic-ipo-over-us-export-controls/"
+          "https://the-decoder.com/firm-linked-to-jensen-huangs-ex-lover-reportedly-brokered-nearly-12-billion-in-nvidia-chip-orders-for-china/",
+          "https://www.theverge.com/column/1033943/jensen-huang-nvidia-china-spying-scandal-resignation",
+          "https://www.theguardian.com/technology/2026/nov/14/jensen-huang-affair-nvidia-nightmare",
+          "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/",
+          "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/"
         ]
       },
       {
-        "text": "VCs and founders expect smaller checks and lower valuations after Jensen Huang's departure, which reportedly stems from risky business practices including a planned $250 billion OpenAI deal.",
-        "textZhHK": "黃仁勳離職後，風投同創辦人都預期 AI 初創融資額同估值會縮水；據報佢離職同高風險商業操作有關，包括一項 2500 億美元嘅 OpenAI 交易。",
+        "text": "Meituan released LongCat-2.5, a 1.6-trillion-parameter agent model trained entirely on Chinese hardware without Nvidia GPUs, scoring 88.4 on Terminal Bench on a 194-chip Huawei Ascend deployment.",
+        "textZhHK": "美團發布LongCat-2.5，一個1.6萬億參數嘅Agent模型，完全用國產晶片訓練無掂過Nvidia GPU，喺194粒華為昇騰晶片上跑出Terminal Bench 88.4分。",
         "refs": [
-          "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
-          "https://the-decoder.com/jensen-huangs-ouster-likely-traces-back-to-nvidias-risky-business-practices-more-than-his-personal-life/",
-          "https://www.theverge.com/podcast/1032866/jensen-huang-nvidia-china-trump-vergecast"
+          "https://the-decoder.com/meituan-releases-a-1-6-trillion-parameter-agent-model-that-never-touched-an-nvidia-gpu/"
         ]
       },
       {
-        "text": "Former OpenAI researcher Will DePue says chip signatures in published model weights show DeepSeek, Moonshot, MiniMax and Ant Group used banned Nvidia Blackwell GPUs, with five training runs costing over $500 million.",
-        "textZhHK": "前 OpenAI 研究員 Will DePue 指，從已公開模型權重讀到晶片簽名，證實 DeepSeek、Moonshot、MiniMax 同螞蟻集團用到被禁嘅 Nvidia Blackwell GPU，其中五次訓練成本超過 5 億美元。",
+        "text": "Anthropic's Dario Amodei called compute purchases 'the deepest business dilemma' days before a potential record IPO, with commitments near $901B, while the company made Claude Opus 5.5 default and urged users to drop old prompting habits.",
+        "textZhHK": "Anthropic 行政總裁Amodei喺可能破紀錄IPO前幾日話買算力係「最深嘅商業兩難」，承諾金額接近9,010億美元；同時公司將Claude Opus 5.5設為默認模型，叫用戶戒走舊有提示習慣。",
         "refs": [
-          "https://the-decoder.com/former-openai-researcher-says-he-found-nvidia-blackwell-fingerprints-hidden-inside-six-chinese-ai-models/",
-          "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/"
+          "https://the-decoder.com/anthropic-ceo-amodei-admits-theres-a-huge-uncertainty-in-whats-going-to-happen-next-year-days-before-a-record-ipo/",
+          "https://the-decoder.com/anthropic-says-outdated-prompting-habits-are-slowing-down-claude-opus-5-5/"
         ]
       },
       {
-        "text": "OpenAI rolls out ChatGPT Wallet to US Pro subscribers, letting Dots agents make purchases with biometric approval, while Anthropic's Claude for Manufacturing plugs into Autodesk Fusion, NetSuite and Infor for industrial workflows.",
-        "textZhHK": "OpenAI 向美國 Pro 用戶推出 ChatGPT Wallet，Dots 代理可以經生物認證幫你買嘢；Anthropic 嘅 Claude for Manufacturing 就接入 Autodesk Fusion、NetSuite 同 Infor，處理工業流程。",
+        "text": "Google's Gemini 4 Carbon and Anthropic's Fable 5.2 dethroned GPT-6.1 Sol on the MathArena benchmark, but Gemini costs 15 times more and ignores time limits, while OpenAI folded its robotics team into general model research as GPT-6 Astra hits 74.8% simulation success.",
+        "textZhHK": "Google嘅Gemini 4 Carbon同Anthropic嘅Fable 5.2喺MathArena榜上踢走GPT-6.1 Sol，但Gemini貴15倍兼狂超時；OpenAI解散機械人團隊併入通用模型研究，GPT-6 Astra模擬成功率達74.8%。",
         "refs": [
-          "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
-          "https://the-decoder.com/openai-rebuilt-ai-shopping-from-scratch-with-chatgpt-wallet/",
-          "https://the-decoder.com/anthropics-claude-for-manufacturing-plugs-ai-directly-into-factory-software-to-automate-industrial-workflows/",
-          "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
-          "https://openai.com/index/introducing-chatgpt-wallet"
+          "https://unwire.hk/2026/11/15/openai-robotics-astra/life-tech/robotics/?utm_source=rss&utm_medium=rss&utm_campaign=openai-robotics-astra",
+          "https://the-decoder.com/gemini-4-carbon-takes-the-matharena-crown-but-costs-15-times-more-than-gpt-6-1-sol/"
         ]
       },
       {
-        "text": "A Podqi study found about 9% of AI shopping search responses from ChatGPT, Gemini and Perplexity mentioned fake shops or dead domains, raising consumer risk concerns.",
-        "textZhHK": "Podqi 研究發現，ChatGPT、Gemini 同 Perplexity 嘅購物搜尋回覆入面，約 9% 提到有問題嘅假網店或已失效域名，惹嚟消費者風險關注。",
+        "text": "China's first fully AI-generated theatrical film, Sanxingdui: Future Past, flopped with just 1.8M yuan against a tens-of-millions budget, and South Korea's top tax-exam scorer admitted using generative AI to cheat, ahead of next week's college entrance exam.",
+        "textZhHK": "中國首部全AI電影《三星堆：未來啟示錄》票房仆直，3星期僅收180萬人民幣，製作成本過千萬；南韓稅務試狀元承認用生成式AI作弊，令人擔心下星期嘅大學入學試。",
         "refs": [
-          "https://unwire.hk/2026/11/14/ai-shopping-fake-websites-podqi-study/tech-secure/?utm_source=rss&utm_medium=rss&utm_campaign=ai-shopping-fake-websites-podqi-study"
+          "https://www.theguardian.com/technology/2026/nov/15/ai-cheating-south-korea-college-entrance-exam",
+          "https://unwire.hk/2026/11/15/sanxingdui-ai-film-box-office-flop/movie-2/?utm_source=rss&utm_medium=rss&utm_campaign=sanxingdui-ai-film-box-office-flop",
+          "https://www.scmp.com/economy/china-economy/article/3374358/no-actors-no-crew-no-ticket-sales-so-obviously-ai-film-flops-chinas-box-office"
         ]
       }
     ],
-    "headline": "Anthropic IPO nears record; Nvidia turmoil reshapes AI funding",
-    "headlineZhHK": "Anthropic 上市破紀錄在即；Nvidia 震盪重塑 AI 融資格局"
+    "headline": "Nvidia in crisis as Meituan's China-trained 1.6T model lands",
+    "headlineZhHK": "Nvidia 爆危機 美團國產晶片模型殺到"
   }
 }
