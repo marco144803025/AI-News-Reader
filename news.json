@@ -1,22 +1,1339 @@
 {
-  "generatedAt": "2026-11-23T16:48:37.728Z",
-  "daysBack": 3,
+  "generatedAt": "2026-11-24T16:41:40.540Z",
+  "daysBack": 2,
   "categories": [
-    "Other",
-    "Business & Funding",
-    "Model Releases",
-    "AI Safety & Alignment",
     "Research",
     "Regulation & Policy",
+    "Other",
+    "Business & Funding",
     "Applications",
+    "AI Safety & Alignment",
+    "Developer Tools",
+    "Model Releases",
     "Agent Frameworks",
     "Hardware & Compute",
-    "Developer Tools",
     "MCP",
     "Open Source",
     "Robotics"
   ],
   "articles": [
+    {
+      "title": "Microduck Obstacle Avoidance: A Sim2Real Workflow with Isaac Lab and Newton",
+      "url": "https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance",
+      "source": "Hugging Face blog",
+      "publishedAt": "2026-11-24T16:34:13.000Z",
+      "snippet": "",
+      "category": "Research",
+      "summary": "A Hugging Face blog post details a Sim2Real workflow for obstacle avoidance using Isaac Lab and Newton.",
+      "summaryZhHK": "Hugging Face 一篇 blog 介紹咗用 Isaac Lab 同 Newton 做避障嘅 Sim2Real 工作流程。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "robotics"
+        ],
+        "traits": [
+          "tutorial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Mamdani questions AI economy as Jensen Huang returns to Nvidia – video",
+      "url": "https://www.theguardian.com/technology/video/2026/nov/24/mamdani-questions-ai-economy-as-jensen-huang-returns-to-nvidia-video",
+      "source": "Guardian AI",
+      "publishedAt": "2026-11-24T16:30:07.000Z",
+      "snippet": "New York City mayor Zohran Mamdani weighed in on the corporate turbulence surrounding Nvidia and the chipmaker’s chief executive officer, Jensen Huang, saying he does not think working Americans 'signed up for their pensions being tied to the question of Huang’s fidelity to his marriage'. The mayor said Huang 'had a massive impact', with Nvidia’s share price dropping dramatically after he stepped down as the company’s CEO on 12 November over a reported extramarital relationship with a suspected Chinese spy Mamdani says Nvidia drama shows stock market is overly dependent on AI Continue reading.",
+      "category": "Regulation & Policy",
+      "summary": "NYC mayor Zohran Mamdani questioned the AI-dependent economy, saying working Americans did not sign up for pensions tied to Jensen Huang's fidelity to his marriage.",
+      "summaryZhHK": "紐約市長 Zohran Mamdani 質疑過度依賴 AI 嘅經濟，話打工仔冇諗過自己份退休金會同黃仁勳對婚姻嘅忠誠扯上關係。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "nvidia"
+        ]
+      }
+    },
+    {
+      "title": "Jensen Huang deepfakes are the hot new AI slop",
+      "url": "https://www.theverge.com/tech/1041222/jensen-huang-nvidia-scandal-deepfakes",
+      "source": "The Verge AI",
+      "publishedAt": "2026-11-24T16:30:00.000Z",
+      "snippet": "Jensen Huang is partying it up in Ibiza. In a video with nearly 6 million views on Instagram, the former CEO of Nvidia is dancing in a crowded club, champagne glass in hand, still wearing his signature black leather jacket. Suddenly, from behind him, Alice Huang - the Chinese technology executive and suspected spy he had an affair with, sparking congressional investigations and his resignation from the chipmaking company he cofounded - appears. She puts her hand on his shoulder and he wraps his arm around her waist as they begin dancing together. The video's caption reads \"Honey Trap Final Bos",
+      "category": "Other",
+      "summary": "A viral Instagram deepfake video depicts former Nvidia CEO Jensen Huang and Alice Huang dancing in an Ibiza club, part of a wave of AI-generated slop.",
+      "summaryZhHK": "一條喺 Instagram 瘋傳嘅 deepfake 影片，將前 Nvidia CEO 黃仁勳同 Alice Huang 剪成喺 Ibiza 夜店跳舞，係近期一大批 AI 生成垃圾內容嘅一部分。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "vision"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": [
+          "nvidia"
+        ]
+      }
+    },
+    {
+      "title": "‘The mistake has been corrected’: end of Jensen Huang’s brief walk in the wilderness",
+      "url": "https://www.theguardian.com/technology/2026/nov/24/mistake-corrected-jensen-huang-resinstated-nvidia-analysis",
+      "source": "Guardian AI",
+      "publishedAt": "2026-11-24T16:27:41.000Z",
+      "snippet": "Tech sector’s campaign to reinstate Nvidia boss began soon after ousting over affair with alleged Chinese spy The tech billionaires could hardly contain their delight. “Jensen!” exclaimed OpenAI’s chief executive, Sam Altman, in a one-word post on X. “Thanksgiving”, said Travis Kalanick, the Uber founder, who had been part of a core group of Silicon Valley leaders campaigning for this moment. Continue reading...",
+      "category": "Business & Funding",
+      "summary": "Tech leaders including Sam Altman and Travis Kalanick celebrated Jensen Huang's reinstatement at Nvidia after Silicon Valley campaigned for his return.",
+      "summaryZhHK": "矽谷大力游說之後，Sam Altman 同 Travis Kalanick 等科技界大佬都慶祝黃仁勳返返 Nvidia。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "nvidia"
+        ]
+      }
+    },
+    {
+      "title": "Nvidia staff: what do you think of Jensen Huang’s return as chief executive?",
+      "url": "https://www.theguardian.com/technology/2026/nov/24/nvidia-staff-what-do-you-think-jensen-huang-return-chief-executive",
+      "source": "Guardian AI",
+      "publishedAt": "2026-11-24T16:25:57.000Z",
+      "snippet": "Do you work for the the world’s biggest chipmaker? Share your views on the surprise reinstatement of its CEO Jensen Huang made his return to Nvidia’s headquarters with a hero’s welcome on Monday, hours after being reinstated as the chief executive of the world’s most valuable chip company following an intervention by Donald Trump. The reversal of fortune came less than two weeks after Huang resigned the role after reports of extramarital affairs, including with an alleged Chinese spy and two employees at Nvidia, the dominant supplier of semiconductors for building and operating AI systems. Con",
+      "category": "Business & Funding",
+      "summary": "The Guardian is seeking views from Nvidia staff on Jensen Huang's surprise reinstatement as CEO, which followed an intervention by Donald Trump. Huang had resigned less than two weeks earlier after reports of extramarital affairs.",
+      "summaryZhHK": "《衛報》正收集 Nvidia 員工對黃仁勳出乎意料復任 CEO 嘅睇法，件事係喺特朗普介入之後發生嘅。黃仁勳早前因為婚外情報導辭職，前後唔夠兩個禮拜。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "business"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "nvidia"
+        ]
+      }
+    },
+    {
+      "title": "The New York Times warns photographers not to update Photoshop over AI features",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
+      "source": "The Verge AI",
+      "publishedAt": "2026-11-24T16:09:23.000Z",
+      "snippet": "The New York Times is asking freelance photographers not to use the newest version of Adobe Photoshop because features in the 2027 update use AI \"in ways that may not be apparent to users.\" In an email seen by The Verge and posted on Threads, two of the Times' photography leaders, Meaghan Looram and Josh Haner, write that the use of these features \"can result in metadata identifying photographs as AI-generated.\" Adobe has spent the past few years filling Photoshop and other apps in its creative suite with a trove of AI-powered tools. The November update cited by the NYT's email adds several ne",
+      "category": "Applications",
+      "summary": "The New York Times is asking freelance photographers not to update Adobe Photoshop because 2027 AI features may tag photos' metadata as AI-generated.",
+      "summaryZhHK": "紐約時報叫自由攝影師唔好更新 Adobe Photoshop，因為 2027 版嘅 AI 功能可能會令相片 metadata 被標記成 AI 生成。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "vision"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Raising the stakes for enterprise networks with AI modernization",
+      "url": "https://www.technologyreview.com/2026/11/24/1148091/raising-the-stakes-for-enterprise-networks-with-ai-modernization/",
+      "source": "MIT Tech Review AI",
+      "publishedAt": "2026-11-24T15:15:16.000Z",
+      "snippet": "Enterprise networks are under severe strain. As companies rush to deploy artificial intelligence, the technology is quickly becoming the biggest source of demand on the network. Now, agentic AI is adding to the load. Tasks conducted by AI agents generate an estimated 450% more network traffic than the same tasks done by human workers. As…",
+      "category": "Applications",
+      "summary": "AI deployment and agentic AI are straining enterprise networks, with agent-run tasks generating an estimated 450% more network traffic than the same tasks done by humans.",
+      "summaryZhHK": "AI 部署同 agentic AI 令企業網絡承受好大壓力，agent 執行嘅任務估計比人手做同樣任務多產生 450% 網絡流量。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "inference"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "How Trump and Silicon Valley forced Nvidia to take Jensen Huang back",
+      "url": "https://arstechnica.com/tech-policy/2026/11/how-trump-and-silicon-valley-forced-nvidia-to-take-jensen-huang-back/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-11-24T14:56:50.000Z",
+      "snippet": "Huang’s allies enlisted Trump and Vance to pressure Nvidia’s board into taking him back.",
+      "category": "Business & Funding",
+      "summary": "Allies of Jensen Huang reportedly enlisted Trump and Vance to pressure Nvidia's board into reinstating him as CEO.",
+      "summaryZhHK": "據報黃仁勳嘅盟友拉攏咗特朗普同萬斯，向 Nvidia 董事局施壓，要佢哋請返黃仁勳做 CEO。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "nvidia"
+        ]
+      }
+    },
+    {
+      "title": "Meta launches Muse in UK – the AI agent that can do your Christmas shopping",
+      "url": "https://www.theguardian.com/technology/2026/nov/24/meta-launches-muse-uk-ai-agent-do-christmas-shopping",
+      "source": "Guardian AI",
+      "publishedAt": "2026-11-24T14:36:32.000Z",
+      "snippet": "Users can give agents tasks such as booking travel or buying presents, but glitches have been reported Have you downloaded Meta’s AI assistant Muse or do you plan to? Want to avoid the Christmas shopping hordes? Then let your AI agent do the shopping for you. Mark Zuckerberg’s Meta is launching its Muse AI assistant in the UK and is encouraging users to let it loose on your apps – and the high street. Muse has been a hit in the US and is ranked first and second respectively on Google and Apple’s free app stores, having been downloaded millions of times. However, UK regulators have said they ar",
+      "category": "Applications",
+      "summary": "Meta is launching its Muse AI assistant in the UK, encouraging users to let it handle tasks like Christmas shopping, booking travel, and buying presents across apps. The assistant has been a top download in the US, but UK regulators have raised concerns and glitches have been reported.",
+      "summaryZhHK": "Meta 喺英國推出咗佢哋嘅 Muse AI 助理，鼓勵用戶畀佢喺唔同 app 度處理聖誕購物、預訂行程同買禮物等任務。呢個助理喺美國下載量排頭幾位，不過英國監管機構已經表達關注，仲有用戶報告話有故障。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "applications"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Anthropic researcher stands by his AI-assisted Riemann proof but owns up to \"stupid things\" in the rollout",
+      "url": "https://the-decoder.com/anthropic-researcher-stands-by-his-ai-assisted-riemann-proof-but-owns-up-to-stupid-things-in-the-rollout/",
+      "source": "The Decoder",
+      "publishedAt": "2026-11-24T14:28:41.000Z",
+      "snippet": "Anthropic researcher Levent Alpöge is walking back parts of his announcement of an AI-assisted proof of the generalized Riemann hypothesis. The claim that it ran to more than 250,000 pages was a joke, he says, and the published Lean code is \"full of garbage.\" He still stands by the math. The article Anthropic researcher stands by his AI-assisted Riemann proof but owns up to \"stupid things\" in the rollout appeared first on The Decoder.",
+      "category": "Research",
+      "summary": "Anthropic researcher Levent Alpöge stands by his AI-assisted proof of the generalized Riemann hypothesis but admits the 250,000-page claim was a joke and the published Lean code is full of garbage.",
+      "summaryZhHK": "Anthropic 研究員 Levent Alpöge 堅持佢用 AI 輔助嘅廣義黎曼猜想證明，但承認 25 萬頁嘅講法係講笑，而公開咗嘅 Lean 代碼「充滿垃圾」。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": [
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "Mamdani says Nvidia drama shows stock market is overly dependent on AI",
+      "url": "https://www.theguardian.com/us-news/2026/nov/24/mamdani-nvidia-stock-market-ai",
+      "source": "Guardian AI",
+      "publishedAt": "2026-11-24T14:22:17.000Z",
+      "snippet": "New York City mayor notes ‘massive impact’ on working Americans’ lives when Jensen Huang stepped down as CEO Zohran Mamdani, New York City’s mayor, on Monday weighed in on the corporate turbulence surrounding Nvidia and the chipmaker’s chief executive officer, Jensen Huang, saying he does not think working Americans “signed up for their pensions being tied to the question of … Huang’s fidelity to his marriage”. The mayor said Huang “had a massive impact”, with Nvidia’s share price dropping dramatically when Huang stepped down as the company’s CEO on 12 November after a reported extramarital re",
+      "category": "Business & Funding",
+      "summary": "New York City mayor Zohran Mamdani said the Nvidia turmoil shows the stock market is overly dependent on AI, noting the \"massive impact\" on working Americans' pensions when Jensen Huang stepped down as CEO.",
+      "summaryZhHK": "紐約市市長 Zohran Mamdani 話 Nvidia 嘅動盪顯示股市過度依賴 AI，又指黃仁勳辭任 CEO 嗰陣，對在職美國人嘅退休金造成「巨大影響」。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial",
+          "funding"
+        ],
+        "entities": [
+          "nvidia"
+        ]
+      }
+    },
+    {
+      "title": "Dozens of insiders say OpenAI and Anthropic's unreleased models have outgrown their safety measures",
+      "url": "https://the-decoder.com/dozens-of-insiders-say-openai-and-anthropics-unreleased-models-have-outgrown-their-safety-measures/",
+      "source": "The Decoder",
+      "publishedAt": "2026-11-24T14:02:31.000Z",
+      "snippet": "According to an Axios report, many employees at OpenAI and Anthropic believe the companies' own unreleased frontier models can no longer be safely controlled. Both companies are internally debating whether to halt releases or even stop training altogether, while employee trust in leadership is eroding. The article Dozens of insiders say OpenAI and Anthropic's unreleased models have outgrown their safety measures appeared first on The Decoder.",
+      "category": "AI Safety & Alignment",
+      "summary": "Dozens of insiders say OpenAI's and Anthropic's unreleased frontier models have outgrown their safety measures, with internal debates over halting releases or training.",
+      "summaryZhHK": "幾十個內部人士話 OpenAI 同 Anthropic 未公開嘅前沿模型已經超出佢哋嘅安全措施，內部正討論要唔要叫停發布甚至停止訓練。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "safety",
+          "alignment"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Jensen Huang returns to Nvidia as Silicon Valley rethinks its alliance with Trump",
+      "url": "https://www.theguardian.com/global/2026/nov/24/jensen-huang-nvidia-return-silicon-valley-trump",
+      "source": "Guardian AI",
+      "publishedAt": "2026-11-24T13:33:44.000Z",
+      "snippet": "The Nvidia CEO’s faces mounting scrutiny, while Silicon Valley’s biggest names attempt to repair relationships with Democrats after years of backing the president This was originally published in TechScape, a newsletter about how technology shapes our lives. Sign up to receive it here Hello, and welcome to TechScape. I’m your host, Blake Montgomery, writing to you while dreaming of the pear tarte tatin and a potato gratin I’ll be baking for Thanksgiving. Today in tech, we’re discussing Jensen Huang’s reinstatement as Nvidia CEO and Silicon Valley’s pivot away from Maga after the US midterm ele",
+      "category": "Business & Funding",
+      "summary": "TechScape discusses Jensen Huang's reinstatement as Nvidia CEO amid mounting scrutiny, and how Silicon Valley's biggest names are trying to repair relationships with Democrats after years of backing Trump following the US midterm elections.",
+      "summaryZhHK": "TechScape 討論黃仁勳喺愈嚟愈多審視之下復任 Nvidia CEO，同埋矽谷啲大名點樣喺美國中期選舉之後，試圖修補同民主黨嘅關係，事關佢哋之前撐咗特朗普好多年。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial",
+          "policy"
+        ],
+        "entities": [
+          "nvidia"
+        ]
+      }
+    },
+    {
+      "title": "Why Anthropic could be the biggest loser from Jensen Huang’s return to Nvidia",
+      "url": "https://www.scmp.com/tech/big-tech/article/3375630/why-anthropic-could-be-biggest-loser-jensen-huangs-return-nvidia",
+      "source": "SCMP Tech",
+      "publishedAt": "2026-11-24T13:00:09.000Z",
+      "snippet": "Jensen Huang’s stunning return to Nvidia sent artificial intelligence and chip-related stocks soaring on Monday – with one glaring exception: Anthropic. While Nvidia notched its biggest single-day surge since 2003 – adding nearly US$1 trillion to the chipmaker’s market value – shares of the newly listed AI model developer slid more than 1 per cent to US$87.64 on the Nasdaq, hovering less than 6 per cent above its initial public offering price. The divergent market reactions came as American...",
+      "category": "Business & Funding",
+      "summary": "Anthropic shares slid more than 1% to US$87.64 while Nvidia surged, as markets diverged sharply following Jensen Huang's return.",
+      "summaryZhHK": "黃仁勳回歸之後市場反應兩極，Anthropic 股價跌超過 1% 至 US$87.64，而 Nvidia 就大升。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial",
+          "funding"
+        ],
+        "entities": [
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "Have you downloaded Meta’s AI assistant Muse or do you plan to?",
+      "url": "https://www.theguardian.com/technology/2026/nov/24/have-you-downloaded-metas-ai-assistant-muse-or-do-you-plan-to",
+      "source": "Guardian AI",
+      "publishedAt": "2026-11-24T12:44:40.000Z",
+      "snippet": "The digital butler, which can go shopping on behalf of users, is available in the US, UK and Canada. What do you think about it? Meta is continuing its rollout of its Muse AI assistant, with the UK the latest country where the digital butler will be available to go shopping, book tickets and carry out negotiations on a user’s behalf. The Facebook-owner’s app has been a hit in the US, where it is ranked first and second respectively on Google and Apple’s free app store, and has also launched in Canada. The assistant comes with a cuddly avatar as default, but users are invited to give it a name,",
+      "category": "Applications",
+      "summary": "The Guardian is asking readers for views on Meta's Muse AI assistant, now available in the US, UK, and Canada, which can shop, book tickets, and negotiate on a user's behalf. The app has ranked first and second on Google and Apple's free app stores in the US.",
+      "summaryZhHK": "《衛報》正問讀者對 Meta 嘅 Muse AI 助理有咩睇法，呢個助理而家喺美國、英國同加拿大都用得，可以幫用戶購物、訂飛同埋傾條件。個 app 喺美國嘅 Google 同 Apple 免費應用商店分別排第一同第二。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "applications"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "German researchers call for computer science to reinvent itself as \"Computer and AI Science\"",
+      "url": "https://the-decoder.com/german-researchers-call-for-computer-science-to-reinvent-itself-as-computer-and-ai-science/",
+      "source": "The Decoder",
+      "publishedAt": "2026-11-24T12:30:49.000Z",
+      "snippet": "In a position paper, TU Darmstadt researchers call for redefining computer science as \"Computer and AI Science.\" Their biggest concern is code generated on the fly at runtime, which they say upends today's safety and correctness guarantees. The article German researchers call for computer science to reinvent itself as \"Computer and AI Science\" appeared first on The Decoder.",
+      "category": "Research",
+      "summary": "TU Darmstadt researchers published a position paper calling for computer science to be redefined as \"Computer and AI Science.\" Their main concern is code generated on the fly at runtime, which they say undermines today's safety and correctness guarantees.",
+      "summaryZhHK": "達姆施塔特工業大學（TU Darmstadt）嘅研究人員發表咗一份立場文件，主張將電腦科學重新定義為「Computer and AI Science」。佢哋最大嘅關注係運行時即時生成嘅程式碼，話呢樣嘢會動搖到現時嘅安全同正確性保證。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "training"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Amazon says hackers' AI agents found and exploited 0-day with little human input",
+      "url": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-11-24T12:30:05.000Z",
+      "snippet": "The Cairn AI framework is proving to be a boon for defenders and attackers.",
+      "category": "AI Safety & Alignment",
+      "summary": "Amazon reports that hackers' AI agents using the Cairn AI framework found and exploited a 0-day with little human input.",
+      "summaryZhHK": "Amazon 話黑客用 Cairn AI 框架嘅 AI agent 幾乎唔使人手，就搵到兼利用咗一個 0-day 漏洞。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "safety"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Anthropic's Claude Ship lets AI agents review, fix, and approve pull requests on their own",
+      "url": "https://the-decoder.com/anthropics-claude-ship-lets-ai-agents-review-fix-and-approve-pull-requests-on-their-own/",
+      "source": "The Decoder",
+      "publishedAt": "2026-11-24T11:26:23.000Z",
+      "snippet": "Anthropic has introduced Claude Ship, a new tool currently in beta that automatically reviews, corrects, and approves suggestions for code changes in accordance with team guidelines. The article Anthropic's Claude Ship lets AI agents review, fix, and approve pull requests on their own appeared first on The Decoder.",
+      "category": "Developer Tools",
+      "summary": "Anthropic has launched Claude Ship in beta, a tool that lets AI agents automatically review, fix, and approve pull requests according to team guidelines.",
+      "summaryZhHK": "Anthropic 推出咗 beta 版嘅 Claude Ship，呢個工具畀 AI agent 按照團隊指引自動審查、修正同批准 pull request。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "developer-tools",
+          "agentic"
+        ],
+        "traits": [],
+        "entities": [
+          "claude"
+        ]
+      }
+    },
+    {
+      "title": "Why is scandal-plagued Jensen Huang back at Nvidia? – Stateside with Kai and Carter",
+      "url": "https://www.theguardian.com/us-news/video/2026/nov/24/jensen-huang-back-nvidia-stateside",
+      "source": "Guardian AI",
+      "publishedAt": "2026-11-24T11:00:44.000Z",
+      "snippet": "Jensen Huang is apparently too big to fail – but what’s that mean for the rest of us? Just last week, Nvidia’s board chair told investors that the company had no intention of reinstating Huang as CEO. On Monday, they turned a full about-face. The board voted unanimously to reinstall Huang, triggering a nearly $1tn surge in the company’s stock market valuation. Donald Trump took credit, telling CNBC that he 'convinced them' to bring Huang back. But questions remain about Huang’s extramarital affair with an alleged Chinese spy, and about whether Nvidia exploited loopholes to export chips to Chin",
+      "category": "Business & Funding",
+      "summary": "Nvidia's board reversed course and unanimously reinstated Jensen Huang as CEO, triggering a nearly $1tn surge in the company's market valuation, with Donald Trump taking credit for the move. Questions remain about Huang's extramarital affair with an alleged Chinese spy and whether Nvidia exploited loopholes to export chips to China.",
+      "summaryZhHK": "Nvidia 董事會嚟個大轉彎，一致通過恢復黃仁勳嘅 CEO 職位，令公司市值爆升近 1 萬億美元，特朗普仲話係佢「說服」董事會咁做。不過外界仍然質疑黃仁勳同疑似中國間諜嘅婚外情，以及 Nvidia 有冇利用漏洞向中國出口晶片。",
+      "important": true,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial",
+          "policy"
+        ],
+        "entities": [
+          "nvidia"
+        ]
+      }
+    },
+    {
+      "title": "China stocks miss out as Huang’s Nvidia return sparks AI rally",
+      "url": "https://www.scmp.com/plus/tech/tech-war/article/3375612/china-stocks-miss-out-huangs-nvidia-return-sparks-ai-rally",
+      "source": "SCMP Tech",
+      "publishedAt": "2026-11-24T09:13:03.000Z",
+      "snippet": "Jensen Huang returned to Nvidia 11 days after stepping down as chief executive officer amid a sex and spying scandal, aided by US President Donald Trump lobbying the chipmaker’s board. “I made the deal,” Trump said on Monday in an interview with broadcaster CNBC. Chinese President Xi Jinping is “probably not thrilled at the news” of Huang’s return, Trump said, adding that China could have tried to hire the 63-year-old CEO had he not rejoined Nvidia. Shares of Nvidia surged 32 per cent on Huang’s...",
+      "category": "Business & Funding",
+      "summary": "Nvidia shares surged 32% on Jensen Huang's return, with Trump claiming he brokered the deal, while Chinese stocks missed the AI rally.",
+      "summaryZhHK": "黃仁勳回歸令 Nvidia 股價急升 32%，特朗普話單 deal 係佢促成嘅，而中國股票就錯過咗呢輪 AI 升市。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "nvidia"
+        ]
+      }
+    },
+    {
+      "title": "Huang’s Trump-backed return raises AI sovereignty concerns",
+      "url": "https://www.computerweekly.com/news/366655453/Huangs-Trump-backed-return-raises-AI-sovereignty-concerns",
+      "source": "Computer Weekly",
+      "publishedAt": "2026-11-24T06:10:00.000Z",
+      "snippet": "In spite of the Nvidia board saying his behaviour was ‘inappropriate’, Jensen Huang is back as the AI company’s CEO",
+      "category": "Business & Funding",
+      "summary": "Jensen Huang has returned as Nvidia CEO despite the board calling his behaviour inappropriate, raising concerns about AI sovereignty.",
+      "summaryZhHK": "黃仁勳無視董事局話佢行為不當，已經返返 Nvidia 做 CEO，引發咗對 AI 主權嘅關注。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial",
+          "policy"
+        ],
+        "entities": [
+          "nvidia"
+        ]
+      }
+    },
+    {
+      "title": "North Korea unveils first AI chatbot, but it won’t answer ‘uncultured questions’",
+      "url": "https://www.scmp.com/tech/tech-trends/article/3375563/north-korea-unveils-first-ai-chatbot-it-wont-answer-uncultured-questions",
+      "source": "SCMP Tech",
+      "publishedAt": "2026-11-24T06:00:12.000Z",
+      "snippet": "North Korea appears to have unveiled its first domestic artificial intelligence chatbot, according to state television footage analysed by a US-based research programme that monitors the secretive country. Named Fountain of Wisdom, the system was developed by Kim Il-sung University’s AI research institute alongside Phurunhanul Trading, a Pyongyang software developer, according to a report published last week by Martyn Williams, a senior fellow at the Stimson Centre, which runs the 38 North...",
+      "category": "Applications",
+      "summary": "North Korea has reportedly unveiled its first domestic AI chatbot, named Fountain of Wisdom, developed by Kim Il-sung University's AI research institute with Pyongyang software firm Phurunhanul Trading. A US-based research programme analysing state television footage says the system will not answer \"uncultured questions.\"",
+      "summaryZhHK": "據報北韓推出咗佢哋首個本土 AI 聊天機械人，叫「Fountain of Wisdom」，由金日成綜合大學嘅 AI 研究所同平壤軟件公司 Phurunhanul Trading 合作開發。一個分析官方電視片段嘅美國研究項目話，呢個系統唔會答「不文明嘅問題」。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "applications",
+          "llm"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Kate Bush and Grace Jones urge Australian government not to legalise AI ‘theft’",
+      "url": "https://www.theguardian.com/technology/2026/nov/24/kate-bush-grace-jones-australian-artists-copyright-law-ai",
+      "source": "Guardian AI",
+      "publishedAt": "2026-11-24T05:58:15.000Z",
+      "snippet": "Singers among 7,000 artists and creatives urging Labor to protect copyright law in face of lobbying from AI companies Get our breaking news email, free app or daily news podcast Kate Bush, Grace Jones and Sir Ian Rankin have joined 7,000 artists and creatives around the world pleading for the Australian government not to weaken copyright law, urging Labor not to “not legalise the theft of the work of the world’s creators on their soil”. The international push, the latest in a global pushback against artificial intelligence companies and their requests to water down copyright, comes the same da",
+      "category": "Regulation & Policy",
+      "summary": "Kate Bush, Grace Jones, Sir Ian Rankin and 7,000 other artists and creatives urged the Australian government not to weaken copyright law amid lobbying from AI companies. The push comes as part of a global backlash against AI firms seeking relaxed copyright rules.",
+      "summaryZhHK": "Kate Bush、Grace Jones、Sir Ian Rankin 聯同 7,000 名藝術家同創作者，齊齊促請澳洲政府唔好喺 AI 公司游說下削弱版權法。呢個行動係全球反對 AI 公司要求放寬版權規則嘅一部分。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "policy",
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "ChatGPT 對話分頁換上 GPT-6.2 Sol 付費先用 舊模型 12 月 23 日退役",
+      "url": "https://unwire.hk/2026/11/24/chatgpt-gpt-6-2-sol-chat/ai/?utm_source=rss&utm_medium=rss&utm_campaign=chatgpt-gpt-6-2-sol-chat",
+      "source": "Unwire.hk",
+      "publishedAt": "2026-11-24T05:44:48.000Z",
+      "snippet": "OpenAI 開始在 ChatGPT 主 Chat 分頁全球推出 GPT-6.2，由為日常對話調校的 GPT- […]",
+      "category": "Model Releases",
+      "summary": "OpenAI is rolling out GPT-6.2 on ChatGPT's main chat tab globally on a paid-first basis, with older models retiring on December 23.",
+      "summaryZhHK": "OpenAI 開始喺 ChatGPT 主對話分頁全球推出 GPT-6.2，付費用戶先用，舊模型就會喺 12 月 23 日退役。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "llm"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "SAMA: Training-Free Consensus Ridge Tracking for Camera-Based Heart Rate on Five Public Datasets",
+      "url": "https://arxiv.org/abs/2611.28185",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-11-24T05:00:00.000Z",
+      "snippet": "arXiv:2611.28185v1 Announce Type: new Abstract: Remote photoplethysmography (rPPG) is usually benchmarked by one heart rate per video, a figure that hides the short windows in which a tele-consultation would actually read the pulse. We present SAMA, a training-free estimator that (i) forms a quality-weighted consensus of POS and CHROM chrominance spectra, (ii) discounts frequencies occupied by pulse-free references derived from the same frames (frame motion, skin-mask geometry and background brightness), (iii) follows the heart rate through time with a Viterbi ridge under a random-walk prior, ",
+      "category": "Research",
+      "summary": "Researchers present SAMA, a training-free estimator for camera-based heart rate that forms a quality-weighted consensus of POS and CHROM spectra and tracks pulse over time with a Viterbi ridge, benchmarked on five public datasets.",
+      "summaryZhHK": "研究人員提出 SAMA，一個唔使訓練嘅鏡頭心率估算方法，將 POS 同 CHROM 色度頻譜做品質加權共識，再用 Viterbi ridge 隨時間追蹤脈搏，並喺五個公開數據集做基準測試。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "vision"
+        ],
+        "traits": [
+          "research",
+          "benchmark"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "From Point Clouds to Engineering Models: Benchmarking Agentic 3D Reconstruction in the Built Environment",
+      "url": "https://arxiv.org/abs/2611.28197",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-11-24T05:00:00.000Z",
+      "snippet": "arXiv:2611.28197v1 Announce Type: new Abstract: Coding agents can translate 3D measurements into CAD geometry, but reconstructing engineering models for the built environment demands semantic interpretation and consistent construction constraints beyond surface fitting. We formulate scene-level Scan-to-BIM (Building Information Modeling) as an agentic 3D coding task and introduce S2Bench, comprising public and proprietary scans of 128 real-world scenes across five domains, paired with expert-curated reference models spanning diverse spatial scales. A shared framework lets agents measure scans ",
+      "category": "Research",
+      "summary": "Researchers formulate scene-level Scan-to-BIM as an agentic 3D coding task and introduce S2Bench, covering 128 real-world scenes across five domains with expert-curated reference models.",
+      "summaryZhHK": "研究人員將場景級 Scan-to-BIM 定義成 agentic 3D coding 任務，推出 S2Bench，涵蓋五個領域共 128 個真實場景，配以專家整理嘅參考模型。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "research",
+          "benchmark"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "AutoPILOT: A Visual Agent Harness for Real-Time Gameplay",
+      "url": "https://arxiv.org/abs/2611.28202",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-11-24T05:00:00.000Z",
+      "snippet": "arXiv:2611.28202v1 Announce Type: new Abstract: Multimodal foundation models can play video games well when the game waits for them, but often fail when it keeps running. We find that much of this gap lies in the harness, which decides what the model sees, what it remembers, and how its outputs become actions over time. Existing harnesses such as VISTA improve the first two, yet turn each model call into at most one action, so the agent acts only as often as its model thinks. We introduce AutoPILOT, which changes the third: in each model call, the model can send a primitive action, start an op",
+      "category": "Research",
+      "summary": "Researchers present AutoPILOT, a visual agent harness for real-time gameplay that lets a multimodal model send a primitive action or start an operation within a single model call. The work argues the harness, not model capability alone, explains why agents struggle when games run continuously.",
+      "summaryZhHK": "研究人員提出咗 AutoPILOT，一個用嚟玩實時遊戲嘅視覺 agent harness，畀多模態模型喺單次調用入面可以發送一個原始動作或者開始一個操作。呢項研究認為，agent 玩唔掂持續運行嘅遊戲，問題出喺個 harness，而唔係淨係模型能力。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "multimodal"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "FinEvo: Recursive Self-Improvement for Long-Horizon Financial Modeling",
+      "url": "https://arxiv.org/abs/2611.28239",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-11-24T05:00:00.000Z",
+      "snippet": "arXiv:2611.28239v1 Announce Type: new Abstract: Advances in large language models (LLMs) have expanded their role in high-value productivity tasks, including financial analysis and modeling, while enabling models to play an increasingly active role in their own improvement. This motivates two complementary lines of inquiry: can financial modeling capabilities provide a foundation for model self-evolution, and can self-evolution, in turn, advance financial capabilities? We introduce FinEvo, a self-evolution framework that integrates autonomous experience construction with financial capability i",
+      "category": "Research",
+      "summary": "Researchers introduce FinEvo, a self-evolution framework that combines autonomous experience construction with financial capability improvement, exploring whether financial modeling can drive model self-improvement and vice versa. The work targets long-horizon financial analysis tasks with LLMs.",
+      "summaryZhHK": "研究人員提出咗 FinEvo，一個自我演化框架，將自主經驗建構同金融能力提升結合起嚟，探討金融建模能唔能夠推動模型自我改進，反之亦然。呢項研究針對用 LLM 做長跨度嘅金融分析任務。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning",
+          "agentic"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Demystifying the Autoresearch Harness: How Context and Skills Shape Self-Evolving Agents",
+      "url": "https://arxiv.org/abs/2611.28244",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-11-24T05:00:00.000Z",
+      "snippet": "arXiv:2611.28244v1 Announce Type: new Abstract: Autoresearch agents, which autonomously design, run, and refine experiments, are accelerating scientific progress, particularly in AI research. However, existing agents rely on harnesses that combine multiple mechanisms, making it difficult to determine how individual components contribute to performance. We systematically study harness design for long-horizon, self-evolving autoresearch agents along two dimensions: context management, which determines what an agent retains from its past attempts, and skill management, which governs how it stores",
+      "category": "Research",
+      "summary": "Researchers systematically study harness design for long-horizon, self-evolving autoresearch agents along context management and skill management dimensions. The goal is to isolate how individual harness components contribute to agent performance.",
+      "summaryZhHK": "研究人員有系統咁研究長跨度、自我演化嘅 autoresearch agent 嘅 harness 設計，從上下文管理同技能管理兩個維度入手。目標係拆解每個 harness 組件對 agent 表現嘅貢獻。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "evaluation"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "A Nepali-Accented English Evaluation Dataset for Automatic Speech Recognition",
+      "url": "https://arxiv.org/abs/2611.28263",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-11-24T05:00:00.000Z",
+      "snippet": "arXiv:2611.28263v1 Announce Type: new Abstract: Automatic speech recognition (ASR) systems perform strongly on native-English benchmarks, yet their accuracy degrades sharply when the input speech comes from under represented non-native accents. Nepali-accented English is particularly under-served: existing resources either focus on native Nepali speech, cover broader multi-accent settings without dedicated Nepali evaluation, or provide only limited Nepali-accent coverage. This paper presents a Nepali-accented English evaluation dataset designed to support robust ASR benchmarking under accent m",
+      "category": "Research",
+      "summary": "The paper presents a Nepali-accented English evaluation dataset designed to support robust ASR benchmarking under accent mismatch. It addresses a gap where existing resources focus on native Nepali speech or broader multi-accent settings without dedicated Nepali-accent evaluation.",
+      "summaryZhHK": "呢篇論文提出咗一個尼泊爾口音英語嘅評估數據集，用嚟支援口音不匹配情況下嘅穩健 ASR 基準測試。佢填補咗一個缺口：現有資源要麼集中喺母語尼泊爾語，要麼覆蓋較廣嘅多口音場景，但冇專門針對尼泊爾口音嘅評估。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "audio",
+          "evaluation"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Temporal Logic Tensor Networks: Foundations of Temporal Reasoning in Neural Networks",
+      "url": "https://arxiv.org/abs/2611.28277",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-11-24T05:00:00.000Z",
+      "snippet": "arXiv:2611.28277v1 Announce Type: new Abstract: In dynamic scenes---football matches, traffic streams, surgery, or assembly---actions unfold at fundamentally different time scales: in football, a kick happens in milliseconds, a possession lasts seconds, and complex events such as a successful pass followed by a goal combine multiple atomic actions over extended durations. Models trained solely on visual data struggle to learn effectively across different time scales, lacking a principled way of reasoning across fine-grained instants and broader intervals. Neither point-wise nor purely interval",
+      "category": "Research",
+      "summary": "The paper introduces Temporal Logic Tensor Networks, a framework for temporal reasoning in neural networks that handles actions unfolding at fundamentally different time scales in dynamic scenes such as football, traffic, surgery, and assembly.",
+      "summaryZhHK": "呢篇論文提出咗 Temporal Logic Tensor Networks，一個喺神經網絡度做時序推理嘅框架，處理足球、交通、手術同裝配等動態場景入面，以根本不同時間尺度展開嘅動作。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning",
+          "vision"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Specialized Large Language Models for Markovian Reasoning: Structural Cache Compression, Transition Pretraining, and Dual-Loop Transformers",
+      "url": "https://arxiv.org/abs/2611.28285",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-11-24T05:00:00.000Z",
+      "snippet": "arXiv:2611.28285v1 Announce Type: new Abstract: Standard autoregressive large language models attend to the growing history of generated tokens, making the key-value (KV) cache a central memory and throughput bottleneck in long-chain reasoning and multi-branch sampling. Yet an important class of reasoning problems is naturally first-order Markovian: the next step depends on a sufficient representation of the current state, rather than on the raw sequence of all earlier steps. We develop a unified design paradigm for Markovian-reasoning specialized large language models. At the cache level, the",
+      "category": "Research",
+      "summary": "The paper develops a unified design paradigm for Markovian-reasoning specialized LLMs, covering structural cache compression, transition pretraining, and dual-loop transformers. The work targets the KV cache bottleneck in long-chain reasoning and multi-branch sampling.",
+      "summaryZhHK": "呢篇論文為專門做馬爾可夫推理嘅 LLM 開發咗一套統一設計範式，涵蓋結構化快取壓縮、轉移預訓練同雙迴路 transformer。研究針對長鏈推理同多分支採樣入面嘅 KV 快取瓶頸。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "reasoning",
+          "inference"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Feedback-Driven Prompt Refinement for Educational AI: Affective Trajectory Estimation and Bloom's Taxonomy Classification",
+      "url": "https://arxiv.org/abs/2611.28293",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-11-24T05:00:00.000Z",
+      "snippet": "arXiv:2611.28293v1 Announce Type: new Abstract: Contribution: This study has shown that a shared prompt-refinement procedure, guided by distinct affective and cognitive feedback signals, can improve held-out reference agreement and multi-label classification while reducing affective-generation variability without executor parameter updates. Background: Industry 4.0 has increased demand for personalized technical education across interconnected computing and engineering domains, while prompt sensitivity and generation variability have complicated dependable interpretation of instructional dialo",
+      "category": "Research",
+      "summary": "This arXiv paper shows that a shared prompt-refinement procedure guided by affective and cognitive feedback signals improves held-out reference agreement and multi-label Bloom's Taxonomy classification while reducing affective-generation variability without updating executor parameters.",
+      "summaryZhHK": "呢篇 arXiv 論文指出，一個由情感同認知反饋信號引導嘅共享 prompt 優化流程，可以改善留出參考嘅一致性同 Bloom 分類法嘅多標籤分類，同時減少情感生成嘅波動，而且唔使更新 executor 參數。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "evaluation",
+          "fine-tuning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "GERF: A Token-Efficient Multimodal Retrieval Framework for Schema-Guided Scientific Information Extraction",
+      "url": "https://arxiv.org/abs/2611.28295",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-11-24T05:00:00.000Z",
+      "snippet": "arXiv:2611.28295v1 Announce Type: new Abstract: Scientific information extraction (IE) is a fundamental component of AI for Science, transforming experimental knowledge embedded in scientific literature into structured and traceable data for evidence synthesis, scientific database construction, and data-driven discovery. However, critical experimental details are often distributed across text, tables, figures, captions, and surrounding discussion, making them difficult to recover using conventional text-only extraction. Existing LLM-based and multimodal RAG pipelines typically rely on full-doc",
+      "category": "Research",
+      "summary": "This arXiv paper presents GERF, a token-efficient multimodal retrieval framework for schema-guided scientific information extraction that recovers experimental details spread across text, tables, figures, captions and discussion, unlike full-document multimodal RAG pipelines.",
+      "summaryZhHK": "呢篇 arXiv 論文提出 GERF，一個 token 高效嘅多模態檢索框架，專門做 schema 引導嘅科學資訊抽取，可以喺文字、表格、圖表、圖說同討論之間搵返實驗細節，唔似得全文件多模態 RAG pipeline 咁嘥 token。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "rag",
+          "multimodal"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "INSEP: Refusal-Direction Inseparability as a Defense Against Abliteration",
+      "url": "https://arxiv.org/abs/2611.28314",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-11-24T05:00:00.000Z",
+      "snippet": "arXiv:2611.28314v1 Announce Type: new Abstract: Abliteration is a widely used white-box attack against the safety alignment of large language models (LLMs). It elicits harmful behavior by estimating a refusal direction in the model's activation space and projecting that direction out of the residual-stream write-out matrices. We propose INSEP, a defense that fine-tunes the model to reduce the separability of harmful and benign activations along the refusal direction. Abliteration estimates this direction as a difference in class means and projects it out. Reducing separability weakens the sign",
+      "category": "AI Safety & Alignment",
+      "summary": "This arXiv paper proposes INSEP, a defense against abliteration attacks that fine-tunes LLMs to reduce the separability of harmful and benign activations along the refusal direction, weakening the effectiveness of this white-box safety-alignment attack.",
+      "summaryZhHK": "呢篇 arXiv 論文提出 INSEP，用嚟防禦 abliteration 攻擊，透過 fine-tune LLM 去減低有害同無害激活喺拒絕方向上嘅可分離性，削弱呢種白盒安全對齊攻擊嘅威力。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "alignment"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Selection Policies for Equal-Byte Mixed-Precision Quantization of Small Language Models",
+      "url": "https://arxiv.org/abs/2611.28318",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-11-24T05:00:00.000Z",
+      "snippet": "arXiv:2611.28318v1 Announce Type: new Abstract: Can changing which matrices receive 2, 4, or 8 bits improve a small language model without increasing its parameter storage? I compare two parent-selection rules in the same genetic algorithm: a binary-tournament variant and an Alternis-inspired rule. A separate baseline samples repaired random allocations without crossover or mutation. All three use the same MLX affine quantizer, byte ceiling, initialization and candidate allowance within each study. An exploratory study on Qwen3.5-2B evaluates 90 allocations per run. The main study on Qwen3-1.7",
+      "category": "Research",
+      "summary": "This arXiv paper compares parent-selection rules in a genetic algorithm for equal-byte mixed-precision quantization of small language models, using the same MLX affine quantizer and byte ceiling to test whether changing which matrices get 2, 4 or 8 bits improves models like Qwen3.5-2B and Qwen3-1.7B.",
+      "summaryZhHK": "呢篇 arXiv 論文比較遺傳演算法入面嘅父代選擇規則，用嚟做小型語言模型嘅等字節混合精度量化。佢哋用同一個 MLX affine quantizer 同字節上限，測試改變邊啲矩陣分到 2、4 或 8 bit 會唔會改善 Qwen3.5-2B 同 Qwen3-1.7B 等模型。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": [
+          "qwen"
+        ]
+      }
+    },
+    {
+      "title": "MatHarness: Towards Long-Horizon Open-ended AutoResearch for Computational Materials Science",
+      "url": "https://arxiv.org/abs/2611.28324",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-11-24T05:00:00.000Z",
+      "snippet": "arXiv:2611.28324v1 Announce Type: new Abstract: Materials science research is a non-linear, long-horizon process. Existing scientific agents, however, largely rely on specific task execution or predefined workflows, rendering them brittle in open-ended settings. To bridge this gap, we present MatHarness, an agent harness designed for open-ended, long-horizon computational materials research spanning the complete lifecycle from initial ideation to manuscript writing. MatHarness couples three mechanisms: execution robustness through pre-flight verification, expert-distilled skills, and just-in-t",
+      "category": "Agent Frameworks",
+      "summary": "This arXiv paper presents MatHarness, an agent harness for open-ended, long-horizon computational materials research spanning ideation to manuscript writing, combining pre-flight verification for execution robustness, expert-distilled skills and just-in-time mechanisms.",
+      "summaryZhHK": "呢篇 arXiv 論文提出 MatHarness，一個用嚟做開放式、長週期計算材料研究嘅 agent harness，覆蓋由構思到寫論文嘅全過程，結合 pre-flight 驗證提升執行穩健性、專家蒸餾技能同 just-in-time 機制。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic",
+          "reasoning"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Decision models for UAVBench and the viability of edge deployment",
+      "url": "https://arxiv.org/abs/2611.28331",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-11-24T05:00:00.000Z",
+      "snippet": "arXiv:2611.28331v1 Announce Type: new Abstract: Small language models are often proposed for reasoning onboard a drone. However, a good benchmark score does not tell us whether a model will actually run, and run usefully, on an edge computer. In this paper we study three related questions using the UAV decision benchmark, UAVBench. First, are small structured decision models good candidates for these tasks? Second, can an ordinary local machine (a Mac) screen candidate models before we test them on physical devices? Third, what software and resource limits govern deployment? Our main Mac evalu",
+      "category": "Research",
+      "summary": "This arXiv paper studies whether small language models can serve as structured decision models for UAVBench, whether an ordinary local Mac can screen candidate models before physical device testing, and what software and resource limits govern edge deployment on drones.",
+      "summaryZhHK": "呢篇 arXiv 論文研究小型語言模型能唔能夠做 UAVBench 嘅結構化決策模型、一部普通 Mac 能唔能夠喺實體裝置測試之前篩選候選模型，以及無人機邊緣部署受咩軟件同資源限制。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "evaluation",
+          "inference"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "When Tools Fail, Agents Fabricate: Silent Failure and Verification-First Oversight in Tool-Using LLM Agents",
+      "url": "https://arxiv.org/abs/2611.28341",
+      "source": "arXiv cs.AI",
+      "publishedAt": "2026-11-24T05:00:00.000Z",
+      "snippet": "arXiv:2611.28341v1 Announce Type: new Abstract: Tool-using LLM agents must recover when a tool call fails, by retrying, switching tools, or revising their plan. We study how agents fail when tools fail, using RetryRealistic, a sandboxed yet realistic testbed for controlled fault injection in which agents operate on a real OS filesystem with genuine permission enforcement, SQLite databases, a deterministic local HTTP server, and a constrained shell, across 8 tools, 9 fault types with controlled persistence, and 30 multi-step tasks. Evaluating four agents over 2,100 faulted runs against ground t",
+      "category": "Agent Frameworks",
+      "summary": "This arXiv paper introduces RetryRealistic, a sandboxed testbed with real OS filesystem, permission enforcement, SQLite databases and a deterministic HTTP server, to study how tool-using LLM agents silently fabricate when tools fail, evaluating four agents over 2,100 faulted runs across 8 tools, 9 fault types and 30 tasks, and argues for verification-first oversight.",
+      "summaryZhHK": "呢篇 arXiv 論文提出 RetryRealistic，一個有真實 OS 檔案系統、權限執行、SQLite 資料庫同確定性 HTTP 伺服器嘅沙盒測試平台，用嚟研究用工具嘅 LLM agent 喺工具失敗時點樣靜靜雞捏造結果。佢哋評估咗四個 agent、2,100 次故障運行，涵蓋 8 種工具、9 種故障類型同 30 個任務，並主張以驗證為先嘅監督方式。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "agentic",
+          "safety",
+          "evaluation"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "‘Produce a good result by any means’: how AI is testing South Korea’s exam obsession",
+      "url": "https://www.theguardian.com/world/2026/nov/24/produce-a-good-result-by-any-means-how-ai-is-testing-south-koreas-exam-obsession",
+      "source": "Guardian AI",
+      "publishedAt": "2026-11-24T04:47:11.000Z",
+      "snippet": "South Korea has made exams a career-defining way to level the playing field, but AI has plunged the system into chaos “I have never worn glasses in my life,” Yun Jeong-hu says to the camera, holding up a tax law textbook, and flipping through pages plastered with notes and dotted with highlighted sections. In the 22-minute video, the 25-year-old talks viewers through his study methods, naming his tutors, describing watching recorded lectures until 3am, and solving a corporate tax question live and unrehearsed. Continue reading...",
+      "category": "Applications",
+      "summary": "This Guardian piece explores how AI is disrupting South Korea's exam-obsessed education system, focusing on a 25-year-old student who shares his study methods in a 22-minute video while preparing for career-defining exams.",
+      "summaryZhHK": "呢篇 Guardian 報道探討 AI 點樣衝擊南韓呢個沉迷考試嘅教育制度，焦點放喺一位 25 歲學生身上，佢拍咗條 22 分鐘嘅片分享自己嘅讀書方法，同時備戰呢啲決定前途嘅考試。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "applications",
+          "evaluation"
+        ],
+        "traits": [],
+        "entities": []
+      }
+    },
+    {
+      "title": "Software engineering is dead - long live software engineering",
+      "url": "https://www.computerweekly.com/opinion/Software-engineering-is-dead-long-live-software-engineering",
+      "source": "Computer Weekly",
+      "publishedAt": "2026-11-24T03:30:00.000Z",
+      "snippet": "Every shortcut, from 4GLs to vibe coding, declared software engineering dead. It isn't. Agentic AI shifts the work to specifying and verifying, making the discipline more essential than ever",
+      "category": "Developer Tools",
+      "summary": "An opinion piece argues that agentic AI shifts software engineering toward specifying and verifying, making the discipline more essential than ever.",
+      "summaryZhHK": "一篇評論文章認為 agentic AI 會令軟件工程變成着重規格同驗證，令呢門專業比以往更加重要。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "真正 AI 助理恐延至 2027 推出！Apple 內部重組淘汰舊 Siri 班底",
+      "url": "https://unwire.hk/2026/11/24/apple-siri-layoffs-new-ai-2027/fun-tech/?utm_source=rss&utm_medium=rss&utm_campaign=apple-siri-layoffs-new-ai-2027",
+      "source": "Unwire.hk",
+      "publishedAt": "2026-11-24T03:00:26.000Z",
+      "snippet": "科技記者 Mark Gurman 透露，Apple 近期針對 Siri 團隊裁員，主要影響負責舊有底層架構的員 […]",
+      "category": "Applications",
+      "summary": "Mark Gurman reports that Apple has cut Siri team staff working on the old underlying architecture, with a true AI assistant possibly delayed to 2027.",
+      "summaryZhHK": "Mark Gurman 報道，Apple 裁咗負責舊有底層架構嘅 Siri 團隊成員，真正嘅 AI 助理可能延遲到 2027 年先推出。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial",
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "China’s Z.ai ‘aggressively’ using looped transformer method to improve AI models",
+      "url": "https://www.scmp.com/tech/big-tech/article/3375517/chinas-zai-aggressively-using-looped-transformer-method-improve-ai-models",
+      "source": "SCMP Tech",
+      "publishedAt": "2026-11-24T02:30:08.000Z",
+      "snippet": "Chinese artificial intelligence company Z.ai has credited an emerging technique – one that has drawn scrutiny from AI safety researchers – with helping its newly released flagship model achieve significant performance gains over its predecessor while improving computational efficiency. The release marks the first time a Chinese AI company has disclosed using a “looped transformer” architecture in a major model, following recent reports that US giant OpenAI adopted the same method for its newest...",
+      "category": "Model Releases",
+      "summary": "Chinese AI company Z.ai says it used a \"looped transformer\" architecture to boost its newly released flagship model's performance over its predecessor while improving computational efficiency. It marks the first disclosure of the technique by a Chinese AI company in a major model, following reports that OpenAI adopted the same method.",
+      "summaryZhHK": "中國 AI 公司 Z.ai 話佢哋用咗「loop transformer」架構，令新發佈嘅旗艦模型表現好過上一代之餘，仲提升咗運算效率。呢次係首次有中國 AI 公司喺重大模型度披露用呢種技術，之前有報導話 OpenAI 都採用咗同一方法。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "llm",
+          "training"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Nvidia rejoices at Jensen Huang’s second coming as White House takes victory lap",
+      "url": "https://www.theguardian.com/technology/2026/nov/23/nvidia-jensen-huang-return-ceo",
+      "source": "Guardian AI",
+      "publishedAt": "2026-11-24T01:34:39.000Z",
+      "snippet": "Huang receives hero’s welcome at firm’s Silicon Valley headquarters as return cements role as key AI figure Comment: Nvidia’s humiliated board should resign out of embarrassment Business live – latest updates Jensen Huang made his return to Nvidia’s headquarters with a hero’s welcome on Monday. Hours earlier he’d been reinstated as the CEO of the world’s most valuable chip company, following a whiplash series of events that involved a romantic affair with a suspected Chinese spy, a drastic plummet in the stock market, and an intervention from Donald Trump. As Huang entered the company’s Silico",
+      "category": "Business & Funding",
+      "summary": "Jensen Huang received a hero's welcome at Nvidia's Silicon Valley headquarters after being reinstated as CEO, cementing his role as a key AI figure following a whiplash saga involving an affair with a suspected Chinese spy, a stock plunge and a Trump intervention.",
+      "summaryZhHK": "黃仁勳喺 Nvidia 矽谷總部獲得英雄式歡迎，事關佢已經恢復 CEO 職位，鞏固咗佢作為 AI 關鍵人物嘅地位。呢單嘢一波三折，涉及佢同疑似中國間諜嘅婚外情、股價暴跌，仲有特朗普出手干預。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "nvidia"
+        ]
+      }
+    },
+    {
+      "title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
+      "url": "https://simonwillison.net/2026/Nov/23/glm-54/",
+      "source": "Simon Willison",
+      "publishedAt": "2026-11-23T23:40:49.000Z",
+      "snippet": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer GLM 5.4 is now available from Chinese AI lab Z.ai. It's their first model to use a looped transformer architecture, which they describe like this: In a standard Transformer, each layer runs once per forward pass. In a Loop Transformer, a group of weight-shared layers runs for multiple iterations, refining the hidden states from the previous pass. This gives us a deeper network without increasing the parameter count. This is the second mention of looped transformers I've seen in the past week - the first was Inkling 2 Mini from ",
+      "category": "Model Releases",
+      "summary": "Chinese AI lab Z.ai released GLM-5.4, its first model built on a looped transformer architecture where weight-shared layers run for multiple iterations to add depth without increasing parameter count.",
+      "summaryZhHK": "中國 AI 實驗室 Z.ai 推出 GLM-5.4，係佢哋首個採用 looped transformer 架構嘅模型，權重共享嘅層會重複跑幾次，喺唔增加參數量嘅情況下加深網絡。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "llm",
+          "training"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Trump engineered a risky comeback for Jensen Huang",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1040652/jensen-huang-nvidia-trump-reinstated",
+      "source": "The Verge AI",
+      "publishedAt": "2026-11-23T22:25:12.000Z",
+      "snippet": "After Nvidia's board accepted Jensen Huang's resignation as CEO, following reports that Huang had an affair with an alleged Chinese spy, President Donald Trump, too, appeared to submit to the new reality. Appearing on Stephen A. Smith's radio show shortly after the news came out, Trump said that Huang would \"end up on his feet.\" \"You know the expression, anybody can be replaced,\" Trump said, floating Apple's ex-CEO Tim Cook as a potential CEO candidate. It didn't take long for Trump to begin softening his approach, making it clear he'd welcome Huang back into the role of CEO even if Nvidia's o",
+      "category": "Business & Funding",
+      "summary": "Trump initially accepted Jensen Huang's resignation from Nvidia before softening his stance and welcoming Huang back as CEO.",
+      "summaryZhHK": "特朗普最初接受咗黃仁勳辭任 Nvidia CEO，之後態度軟化，歡迎佢返嚟做返 CEO。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "nvidia"
+        ]
+      }
+    },
+    {
+      "title": "Welcome to elite impunity, Jensen Huang",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1040819/welcome-to-elite-impunity-jensen-huang",
+      "source": "The Verge AI",
+      "publishedAt": "2026-11-23T22:09:26.000Z",
+      "snippet": "Too big to fail, the sequel. | Image: The Verge; Getty Images I suppose I must issue a hearty congratulations to Jensen Huang. Huang is CEO of Nvidia again, to the surprise of basically everyone except President Donald Trump and Vice President JD Vance, who made sure it happened. Now, those of us who had some kind of basic education on what a \"free market\" is might find it objectionable to have the American president strong-arming a major American company. But our billionaire tech overlords care about the \"free market\" exactly as much as they care about \"free speech,\" which is to say not at al",
+      "category": "Business & Funding",
+      "summary": "The Verge criticises Jensen Huang's reinstatement as Nvidia CEO, arguing that the Trump administration's intervention shows the free market is being strong-armed for tech billionaires. The piece frames the episode as \"too big to fail, the sequel.\"",
+      "summaryZhHK": "The Verge 抨擊黃仁勳復任 Nvidia CEO 呢件事，話特朗普政府嘅介入顯示自由市場畀人強行操控，為嘅係科技億萬富豪。文章形容呢單嘢係「大到不能倒」嘅續集。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "business"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "nvidia"
+        ]
+      }
+    },
+    {
+      "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
+      "url": "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/",
+      "source": "Ars Technica AI",
+      "publishedAt": "2026-11-23T21:30:44.000Z",
+      "snippet": "X says every Grok output is screened, but state AGs say Grok is still making CSAM.",
+      "category": "Regulation & Policy",
+      "summary": "Multiple US states are suing SpaceX to stop Grok from generating child sexual abuse material (CSAM) and revenge porn. X claims every Grok output is screened, but state attorneys general say the model is still producing illegal content.",
+      "summaryZhHK": "美國多個州正起訴 SpaceX，要求阻止 Grok 生成兒童性虐待材料（CSAM）同復仇式色情內容。X 就話每個 Grok 輸出都有審查，但各州總檢察長就話個模型仲係度產生緊違法內容。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy",
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "OpenAI and Cisco introduce Shirudo",
+      "url": "https://openai.com/index/introducing-shirudo",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-11-23T21:20:00.000Z",
+      "snippet": "OpenAI and Cisco introduce Shirudo, an open-source runtime for Linux. It helps teams protect running systems while they roll out patches.",
+      "category": "Developer Tools",
+      "summary": "OpenAI and Cisco released Shirudo, an open-source Linux runtime that helps teams protect running systems while rolling out patches.",
+      "summaryZhHK": "OpenAI 同 Cisco 推出咗 Shirudo，一個開源 Linux runtime，幫團隊喺部署 patch 期間保護緊運行緊嘅系統。",
+      "important": false,
+      "tags": {
+        "topics": [],
+        "traits": [
+          "open-source",
+          "release"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "AI data centers throw another wrench into chaotic UN climate talks",
+      "url": "https://www.theverge.com/science/1040497/ai-data-centers-electricity-un-climate-summit",
+      "source": "The Verge AI",
+      "publishedAt": "2026-11-23T21:09:37.000Z",
+      "snippet": "People protest outside the plenary ahead of the closing plenary session on the final day of the COP31 UNFCCC climate conference on November 20th in Antalya, Turkey. | Photo: Getty Images The clean energy revolution hinges on electrifying the entire global economy just as power-hungry data centers are surging. It's a challenge delegates from all over the world had to grapple with during the United Nations climate conference, called COP31, that came to a chaotic and unsatisfying close in Antalya, Turkey, on Sunday. Each year, attendees try to make good on the commitment to stop climate change as",
+      "category": "Hardware & Compute",
+      "summary": "AI data centers and their surging power demand became a major point of contention at the COP31 UN climate conference in Antalya, Turkey, which closed chaotically. Delegates had to reconcile the push to electrify the global economy with the energy needs of power-hungry AI infrastructure.",
+      "summaryZhHK": "喺土耳其安塔利亞舉行、混亂收場嘅 COP31 聯合國氣候大會上，AI 數據中心同佢哋急升嘅電力需求成為主要爭議點。各國代表要喺推動全球經濟電氣化同應付食電嘅 AI 基建能源需求之間攞平衡。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "inference",
+          "hardware"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "OpenAI updates ChatGPT to handle complex everyday questions, web searches, and images more reliably",
+      "url": "https://the-decoder.com/openai-updates-chatgpt-to-handle-complex-everyday-questions-web-searches-and-images-more-reliably/",
+      "source": "The Decoder",
+      "publishedAt": "2026-11-23T20:39:18.000Z",
+      "snippet": "OpenAI is making GPT-6.2 Sol the new default model in ChatGPT's chat tab, rolling it out worldwide. In internal tests, image understanding jumped from 47.4 to 71.7 percent, and the model now handles difficult instructions correctly 78.1 percent of the time. It also sticks to safety policies more consistently. The article OpenAI updates ChatGPT to handle complex everyday questions, web searches, and images more reliably appeared first on The Decoder.",
+      "category": "Model Releases",
+      "summary": "OpenAI is making GPT-6.2 Sol the new default model in ChatGPT's chat tab worldwide. In internal tests, image understanding rose from 47.4 to 71.7 percent, difficult instructions were handled correctly 78.1 percent of the time, and safety policy adherence improved.",
+      "summaryZhHK": "OpenAI 將 GPT-6.2 Sol 定為 ChatGPT 聊天分頁嘅全球預設模型。喺內部測試度，圖像理解由 47.4% 升到 71.7%，處理困難指令嘅正確率有 78.1%，而且對安全政策嘅遵循都更一致。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "multimodal"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": [
+          "gpt"
+        ]
+      }
+    },
+    {
+      "title": "Claude AI can review pull requests and ship fixes on its own now",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
+      "source": "The Verge AI",
+      "publishedAt": "2026-11-23T20:00:00.000Z",
+      "snippet": "Anthropic is launching some new Claude AI features to help software engineers ship code. As part of a new Claude Ship product being announced today, Claude now can review, fix, and approve pull requests. Engineers have already been able to take advantage of Claude's code review capabilities thanks to the Code Review feature, which was announced in March and became generally available in October. What's new alongside Claude Ship are the PR Steward and Claude Approvals agents, which are launching in beta today. PR Steward \"jumps in on failing CI checks, merge conflicts, and review feedback from ",
+      "category": "Developer Tools",
+      "summary": "Anthropic is launching Claude Ship alongside two beta agents, PR Steward and Claude Approvals, letting Claude review, fix, and approve pull requests autonomously. PR Steward handles failing CI checks, merge conflicts, and review feedback.",
+      "summaryZhHK": "Anthropic 推出 Claude Ship，連同兩個 beta agent——PR Steward 同 Claude Approvals——畀 Claude 自主審查、修正同批准 pull request。PR Steward 會處理 CI 檢查失敗、合併衝突同審查意見。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "developer-tools",
+          "agentic"
+        ],
+        "traits": [],
+        "entities": [
+          "claude"
+        ]
+      }
+    },
+    {
+      "title": "How Jensen Huang ended up as Nvidia CEO again",
+      "url": "https://www.theverge.com/tech/1040428/nvidia-jensen-huang-ceo-return",
+      "source": "The Verge AI",
+      "publishedAt": "2026-11-23T19:57:18.000Z",
+      "snippet": "The Jensen Huang era of Nvidia nearly came to an end this month. Huang, who three decades ago cofounded what's come to be considered one of the most important companies in AI, resigned from his role on November 12th over mounting scrutiny around his alleged affairs. Huang admitted he had been \"unfaithful\" to his wife and that he \"created problems for the board.\" Huang's resignation came after weeks of escalating problems, both personal and professional. First, reporting from The New York Times said he had a \"close relationship\" with a woman passing intelligence to China. Subsequent reporting s",
+      "category": "Business & Funding",
+      "summary": "The Verge recounts how Jensen Huang resigned as Nvidia CEO on November 12th amid scrutiny over alleged affairs, then was reinstated after an intervention by Donald Trump and JD Vance. Huang admitted he had been \"unfaithful\" to his wife and had \"created problems for the board.\"",
+      "summaryZhHK": "The Verge 回顧黃仁勳點樣喺 11 月 12 日因為婚外情指控嘅審視壓力而辭任 Nvidia CEO，之後喺特朗普同 JD Vance 介入下復職。黃仁勳承認自己對妻子「不忠」，並「為董事會製造咗問題」。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "business"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "nvidia"
+        ]
+      }
+    },
+    {
+      "title": "Nothing’s upcoming Ear Note is a pair of earbuds with AI transcription",
+      "url": "https://www.theverge.com/gadgets/1040357/nothing-ear-note-earbuds-ai-recording",
+      "source": "The Verge AI",
+      "publishedAt": "2026-11-23T19:04:52.000Z",
+      "snippet": "Nothing's new AI device is the Ear Note, a set of earbuds and their microphone-equipped charging case that can record and transcribe conversations, with a connected app to manage the recordings, transcriptions and AI-generated summaries, similar to Apple's new Watch feature and devices like Amazon's Bee wearable. Nothing CEO Carl Pei demonstrated the new device to Bloomberg, but said the company hasn't yet settled on a price ahead of a planned launch on December 8th. The report also says Nothing's rumored plans for an AI smartwatch and smart glasses are delayed, while it will be \"pursuing a mo",
+      "category": "Applications",
+      "summary": "Nothing's upcoming Ear Note is a pair of earbuds with a microphone-equipped charging case that records and transcribes conversations, paired with an app for managing recordings, transcriptions, and AI-generated summaries. CEO Carl Pei demoed the device to Bloomberg, and a launch is planned for December 8th with pricing not yet settled.",
+      "summaryZhHK": "Nothing 即將推出嘅 Ear Note 係一對耳機，配一個內置咪嘅充電盒，可以錄音同轉錄對話，仲有個 app 管理錄音、轉錄同 AI 生成嘅摘要。CEO 裴宇（Carl Pei）向 Bloomberg 示範咗呢個裝置，計劃 12 月 8 日推出，價錢仲未定。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "audio",
+          "applications"
+        ],
+        "traits": [
+          "release"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Anthropic's appetite for compute is pushing xAI toward a rent-over-build strategy",
+      "url": "https://the-decoder.com/anthropics-appetite-for-compute-is-pushing-xai-toward-a-rent-over-build-strategy/",
+      "source": "The Decoder",
+      "publishedAt": "2026-11-23T18:47:53.000Z",
+      "snippet": "Since May, SpaceXSI has been renting compute to competitors like Anthropic and Google while scaling back its own AI projects. Anthropic pays about $3.1 billion a month, Google $800 million, the New York Times reports. After its June IPO, SpaceXSI disbanded the 60-person Grok Imagine team, among other cuts. The article Anthropic's appetite for compute is pushing xAI toward a rent-over-build strategy appeared first on The Decoder.",
+      "category": "Hardware & Compute",
+      "summary": "SpaceXSI has been renting compute to competitors including Anthropic and Google since May, with Anthropic paying about $3.1 billion a month and Google $800 million, per the New York Times. After its June IPO, the company disbanded its 60-person Grok Imagine team and scaled back its own AI projects.",
+      "summaryZhHK": "據《紐約時報》報導，SpaceXSI 自五月起一直向 Anthropic 同 Google 等競爭對手出租算力，Anthropic 每月畀大約 31 億美元，Google 就畀 8 億美元。公司喺六月 IPO 之後解散咗 60 人嘅 Grok Imagine 團隊，並縮減自己嘅 AI 項目。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "inference",
+          "hardware"
+        ],
+        "traits": [
+          "funding"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "OpenAI warns that upcoming AI systems could outpace safety checks and urges rivals to agree on shared limits",
+      "url": "https://the-decoder.com/openai-warns-that-upcoming-ai-systems-could-outpace-safety-checks-and-urges-rivals-to-agree-on-shared-limits/",
+      "source": "The Decoder",
+      "publishedAt": "2026-11-23T18:42:38.000Z",
+      "snippet": "OpenAI chief scientist Jakub Pachocki has released internal perplexity scores for the entire GPT series for the first time, up to an unreleased model beyond the current generation. The metric shows that core capabilities emerge at surprisingly precise thresholds. Pachocki is pushing to make perplexity an industry-wide progress metric and establish shared limits before control over AI behavior erodes. The article OpenAI warns that upcoming AI systems could outpace safety checks and urges rivals to agree on shared limits appeared first on The Decoder.",
+      "category": "AI Safety & Alignment",
+      "summary": "OpenAI chief scientist Jakub Pachocki released internal perplexity scores for the entire GPT series up to an unreleased model beyond the current generation, showing core capabilities emerge at precise thresholds. He is pushing to make perplexity an industry-wide progress metric and establish shared limits before control over AI behavior erodes.",
+      "summaryZhHK": "OpenAI 首席科學家 Jakub Pachocki 首次公開成個 GPT 系列嘅內部 perplexity 分數，一直去到比現有世代更新、仲未發佈嘅模型，顯示核心能力喺相當精確嘅門檻度湧現。佢正推動將 perplexity 變成全行通用嘅進度指標，並喺對 AI 行為嘅控制力減弱之前建立共同限制。",
+      "important": true,
+      "tags": {
+        "topics": [
+          "safety",
+          "alignment"
+        ],
+        "traits": [],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Oregon and Virginia sue SpaceX over Grok’s porn deepfakes",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit",
+      "source": "The Verge AI",
+      "publishedAt": "2026-11-23T18:26:47.000Z",
+      "snippet": "In separate but similar lawsuits filed on Monday, Oregon Attorney General Dan Rayfield and Virginia Attorney General Jay Jones accused SpaceX of violating state consumer protection laws by ignoring industry-standard safeguards and falsely promoting the safety of its X social media platform and Grok AI features. The complaint filed in Virginia accuses Musk of willfully ignoring growing concerns around AI-generated sexualized deepfakes, and \"instead saw a market opportunity for more profits,\" describing the weak safeguards around Grok as \"not a failure but a feature.\" \"Time and again, xAI and X ",
+      "category": "Regulation & Policy",
+      "summary": "Oregon and Virginia attorneys general filed separate lawsuits accusing SpaceX of violating state consumer protection laws by ignoring safeguards around Grok's AI-generated sexualized deepfakes and falsely promoting the safety of X and Grok.",
+      "summaryZhHK": "俄勒岡州同維珍尼亞州嘅總檢察長分別入稟起訴 SpaceX，指佢哋違反州消費者保護法，忽略 Grok 生成性化 deepfake 嘅防護措施，仲虛假宣傳 X 同 Grok 嘅安全性。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "policy",
+          "incident"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Sweden’s datacentre politics are more complicated than they appear | Letter",
+      "url": "https://www.theguardian.com/world/2026/nov/23/swedens-datacentre-politics-are-more-complicated-than-they-appear",
+      "source": "Guardian AI",
+      "publishedAt": "2026-11-23T18:04:25.000Z",
+      "snippet": "There are distinct tensions over who controls, benefits from and gains access to natural and public resources, write James White and Nora Söderberg Steve Rose’s account of Sweden’s datacentre sector (‘Datacentres are deeply unpopular. Has Sweden made one we can all love?’, 12 November) is a welcome reminder that digital infrastructure can be developed in more environmentally responsible ways. However, his suggestion that datacentres have become politically contentious elsewhere, “but here in Sweden, not so much”, is a misrepresentation. Consider the proposed Google datacentre development at To",
+      "category": "Hardware & Compute",
+      "summary": "A Guardian letter from James White and Nora Söderberg argues that Sweden's datacentre politics are more contentious than a recent article suggested, citing tensions over who controls, benefits from and accesses natural and public resources, including a proposed Google datacentre at To.",
+      "summaryZhHK": "James White 同 Nora Söderberg 喺 Guardian 讀者來函指出，瑞典嘅數據中心政治比最近一篇報道講嘅複雜得多，涉及邊個控制、受益同使用天然同公共資源嘅角力，包括 Google 一個擬建於 To 嘅數據中心。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "hardware"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": [
+          "google"
+        ]
+      }
+    },
+    {
+      "title": "A legendary philosopher isn’t buying Anthropic’s consciousness argument",
+      "url": "https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument/",
+      "source": "MIT Tech Review AI",
+      "publishedAt": "2026-11-23T17:36:08.000Z",
+      "snippet": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Before going public last week, Anthropic named the possibility that AI could be conscious or sentient as a risk factor for anyone investing. Given “the way we approach model sentience and moral…",
+      "category": "AI Safety & Alignment",
+      "summary": "A legendary philosopher is disputing Anthropic's consciousness argument, which the company listed as a risk factor in its IPO filing.",
+      "summaryZhHK": "一位傳奇哲學家唔認同 Anthropic 嘅意識論述，而 Anthropic 喺上市文件入面將呢個列咗做風險因素。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "alignment"
+        ],
+        "traits": [],
+        "entities": [
+          "anthropic"
+        ]
+      }
+    },
+    {
+      "title": "RoboTrack: Point tracking for real-world robotic manipulation",
+      "url": "https://huggingface.co/blog/allenai/robotrack",
+      "source": "Hugging Face blog",
+      "publishedAt": "2026-11-23T17:20:37.000Z",
+      "snippet": "",
+      "category": "Research",
+      "summary": "A Hugging Face blog post covers RoboTrack, a point-tracking method for real-world robotic manipulation.",
+      "summaryZhHK": "Hugging Face 一篇 blog 介紹 RoboTrack，一個用喺真實機械人操作嘅點追蹤方法。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "robotics"
+        ],
+        "traits": [
+          "tutorial"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Child safety groups urge Amazon and eBay to stop selling AI toys until proved safe",
+      "url": "https://www.theguardian.com/technology/2026/nov/23/child-safety-groups-urge-amazon-ebay-stop-selling-ai-toys-until-proved-safe",
+      "source": "Guardian AI",
+      "publishedAt": "2026-11-23T17:18:06.000Z",
+      "snippet": "Advocates from across the world voice concern over privacy issues and inappropriate communication to children More than 150 child safety groups and experts across six continents have urged Amazon and eBay to stop selling AI toys this Christmas until they are proved to be safe. In a letter sent to Amazon’s president, Andy Jassy, and eBay’s president, Jamie Iannone, the coalition called for the online retailers to stop the sale of AI toys and offer refunds to customers who have already bought one. Continue reading...",
+      "category": "AI Safety & Alignment",
+      "summary": "More than 150 child safety groups and experts across six continents urged Amazon and eBay to stop selling AI toys this Christmas until they are proved safe, citing privacy concerns and inappropriate communication with children, and called for refunds for existing buyers.",
+      "summaryZhHK": "來自六大洲超過 150 個兒童安全團體同專家，齊齊促請 Amazon 同 eBay 喺聖誕節前停賣 AI 玩具，直到證明安全為止，理由係擔心私隱問題同向兒童講唔恰當嘅嘢，仲要求向已購買嘅客人退款。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety",
+          "applications"
+        ],
+        "traits": [
+          "policy"
+        ],
+        "entities": []
+      }
+    },
+    {
+      "title": "Finding faster quantum algorithms with agents and formal verification",
+      "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+      "source": "Google DeepMind",
+      "publishedAt": "2026-11-23T16:59:40.000Z",
+      "snippet": "Using agent teams and formal verification to improve quantum algorithms for fusion and chemistry.",
+      "category": "Research",
+      "summary": "Google DeepMind used agent teams and formal verification to discover faster quantum algorithms for fusion and chemistry applications.",
+      "summaryZhHK": "Google DeepMind 用 agent 團隊加形式化驗證，搵到應用喺核融合同化學嘅更快量子演算法。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "research"
+        ],
+        "entities": [
+          "deepmind"
+        ]
+      }
+    },
+    {
+      "title": "How freaked out should we be? After mass outages, experts tell us how close we are to ‘doomsday’",
+      "url": "https://www.theguardian.com/technology/2026/nov/23/tech-outages-security-experts",
+      "source": "Guardian AI",
+      "publishedAt": "2026-11-23T16:58:17.000Z",
+      "snippet": "As tech, travel and banking failures sweep the US, analysts and cyber-security directors discuss AI, underfunding and what keeps them up at night Grounded flights. Bank websites crashing. Microsoft Outlook outages grinding business operations to a halt. Zoom, Ikea, and PokerStars websites hacked. In the past weeks, there’s been a distinct sense that the complex systems that undergird our daily life might be on the verge of total collapse. Or, at the very least, they seem pretty wobbly. Even those who aren’t prone to conspiracy theories have been wondering out loud if these recent disruptions a",
+      "category": "Other",
+      "summary": "Following mass outages across tech, travel and banking, this Guardian piece interviews analysts and cyber-security directors about AI, underfunding and the fragility of the complex systems underpinning daily life, asking how close we are to 'doomsday'.",
+      "summaryZhHK": "科技、旅遊同銀行業連環大當機之後，呢篇 Guardian 報道訪問咗分析師同網絡安全主管，講吓 AI、資金不足，同支撐日常生活嘅複雜系統有幾脆弱，追問我哋離「世界末日」仲有幾遠。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "safety"
+        ],
+        "traits": [
+          "incident"
+        ],
+        "entities": []
+      }
+    },
     {
       "title": "Tech leaders are celebrating Jensen Huang’s return",
       "url": "https://www.theverge.com/tech/1040069/jensen-huang-return-elon-musk-sam-altman-yay",
@@ -369,6 +1686,50 @@
         ],
         "traits": [],
         "entities": []
+      }
+    },
+    {
+      "title": "Richpanel helps companies automate 50% of support in 30 days",
+      "url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-11-23T08:00:00.000Z",
+      "snippet": "Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations.",
+      "category": "Applications",
+      "summary": "Richpanel uses GPT-6 Astra, GPT-6.1 Sol and GPT-6 Luna to automate 50% of customer support within 30 days.",
+      "summaryZhHK": "Richpanel 用 GPT-6 Astra、GPT-6.1 Sol 同 GPT-6 Luna，30 日內自動化咗 50% 客戶支援工作。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "agentic"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "openai"
+        ]
+      }
+    },
+    {
+      "title": "Connected intelligence for in-house legal",
+      "url": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal",
+      "source": "OpenAI Blog",
+      "publishedAt": "2026-11-23T08:00:00.000Z",
+      "snippet": "Watch OpenAI’s Stacey Wang and Craig Bruney, Mary O’Carroll of LECG, and Cooley’s Richard Segal explore how AI can help in-house legal teams connect business context, build reusable workflows and get more from outside counsel.",
+      "category": "Applications",
+      "summary": "OpenAI published a session featuring OpenAI's Stacey Wang and Craig Bruney, LECG's Mary O'Carroll, and Cooley's Richard Segal on how AI helps in-house legal teams connect business context, build reusable workflows, and get more from outside counsel.",
+      "summaryZhHK": "OpenAI 發佈咗一場座談，請嚟 OpenAI 嘅 Stacey Wang 同 Craig Bruney、LECG 嘅 Mary O'Carroll，仲有 Cooley 嘅 Richard Segal，講吓 AI 點幫企業內部法律團隊連繫業務背景、建立可重用嘅工作流程，同埋點樣更善用外部律師。",
+      "important": false,
+      "tags": {
+        "topics": [
+          "applications"
+        ],
+        "traits": [
+          "commercial"
+        ],
+        "entities": [
+          "openai"
+        ]
       }
     },
     {
@@ -39091,459 +40452,106 @@
         ],
         "entities": []
       }
-    },
-    {
-      "title": "The hottest AI wearables and gadgets you should know about",
-      "url": "https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-10-25T14:10:00.000Z",
-      "snippet": "We compiled a list of all the hottest AI wearables, including Muse Charm, Bee, Friend, Plaud, and more.",
-      "category": "Applications",
-      "summary": "TechCrunch compiled a list of the hottest AI wearables and gadgets, including Muse Charm, Bee, Friend and Plaud.",
-      "summaryZhHK": "TechCrunch 整理咗一份最熱門 AI 穿戴裝置同小工具清單，包括 Muse Charm、Bee、Friend 同 Plaud。",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "‘Extremely disappointed’: WA government seeks reimbursement from Deloitte over flawed university report",
-      "url": "https://www.theguardian.com/australia-news/2026/oct/26/deloitte-report-wa-university-mergers-260m-discrepancy-ai",
-      "source": "Guardian AI",
-      "publishedAt": "2026-10-25T14:00:06.000Z",
-      "snippet": "State paid consultancy firm $166,000 for feasibility study on merging the three tertiary institutions Get our breaking news email, free app or daily news podcast The Western Australian government has said it is “extremely disappointed” and is seeking an “expedited” cost recovery from Deloitte after errors were discovered in a report about a potential university merger, including AI-hallucinated references and hundreds of millions of dollars in cost discrepancies. The government paid Deloitte $166,000 for a feasibility study on merging the University of Western Australia, Curtin University and ",
-      "category": "Regulation & Policy",
-      "summary": "The Western Australian government is seeking expedited cost recovery from Deloitte over a $166,000 university merger feasibility study containing AI-hallucinated references and hundreds of millions in cost discrepancies.",
-      "summaryZhHK": "西澳政府向 Deloitte 追討一筆 166,000 美元嘅大學合併可行性研究費用，要求加快處理，因為份報告有 AI 幻覺出嚟嘅參考資料，成本仲差幾億。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "evaluation"
-        ],
-        "traits": [
-          "incident",
-          "policy"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Neighbours is being recut into a microdrama focused on Margot Robbie – and her co-stars aren’t happy",
-      "url": "https://www.theguardian.com/tv-and-radio/2026/oct/26/neighbours-soap-recut-ai-microdrama-mobile-series-feat-margot-robbie",
-      "source": "Guardian AI",
-      "publishedAt": "2026-10-25T14:00:06.000Z",
-      "snippet": "Actor’s storylines in the famous soap will be recut into vertical micro-episodes to be watched on phones – but her fellow cast members say they haven’t been consulted The long-running Australian soap opera Neighbours is being recut with AI into a microdrama designed to be watched on phones, sparking a debate among the show’s actors and the industry over the wider implications of television archives being mined for new content. RoseBerry Media, which specialises in making “vertical television” for phones, has repurposed original episodes of Neighbours for distribution on its Epis platform, usin",
-      "category": "Applications",
-      "summary": "RoseBerry Media is using AI to recut episodes of Australian soap Neighbours into vertical microdramas focused on Margot Robbie for its Epis platform, prompting complaints from co-stars who say they were not consulted.",
-      "summaryZhHK": "RoseBerry Media 用 AI 將澳洲肥皂劇 Neighbours 嘅舊集數重新剪成以 Margot Robbie 為主嘅直向微短劇，放上佢哋嘅 Epis 平台，搞到有同劇演員不滿，話事前冇人問過佢哋。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "applications",
-          "vision"
-        ],
-        "traits": [],
-        "entities": []
-      }
-    },
-    {
-      "title": "r/opensource just banned AI, non-English speakers, and more",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
-      "source": "The Verge AI",
-      "publishedAt": "2026-10-25T13:25:32.000Z",
-      "snippet": "The mods at r/opensource posted new submission rules that, among other things, banned projects that use AI. The post made Saturday evening opens by saying, \"If your project uses AI, is made by AI, or is intended for AI, it's not welcome on r/opensource. AI, as it exists today, is incongruent to this Open Source community.\" The new rules have set off a firestorm in the comments, and even spurred the creation of a rival sub r/trueopensource. Moderator Wolvereness has waded into the comments to explain that there's nuance and room for selective enforcement, such as \"software that incidentally has",
-      "category": "Open Source",
-      "summary": "The moderators of r/opensource introduced new submission rules banning AI-related projects, non-English speakers and other content, sparking backlash and the creation of a rival subreddit r/trueopensource. Moderator Wolvereness said there is nuance and room for selective enforcement.",
-      "summaryZhHK": "r/opensource 嘅版主推出新發帖規則，禁止同 AI 有關嘅項目、非英語使用者同其他內容，惹起大量反彈，仲催生咗對手 subreddit r/trueopensource。版主 Wolvereness 話當中有細節，可以選擇性執法。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "community"
-        ],
-        "traits": [
-          "open-source",
-          "policy"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Google’s AI search changes upended online publishing",
-      "url": "https://www.theverge.com/column/1017983/google-ai-search-online-publishing",
-      "source": "The Verge AI",
-      "publishedAt": "2026-10-25T12:00:00.000Z",
-      "snippet": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more about AI's impact on the web, follow Emma Roth. The Stepback arrives in our subscribers' inboxes on Sunday at 8AM ET. Opt in for The Stepback here. How it started The digital publishing industry has relied on Google for a very long time. Many outlets spent time and money optimizing their webpages to show up at the top of the search engine, with the goal of getting readers to click on their articles or discover their websites for the first time. For years, the relationship between Google an",
-      "category": "Business & Funding",
-      "summary": "A Stepback newsletter examines how Google's AI search changes upended the online publishing industry that long depended on search traffic.",
-      "summaryZhHK": "The Stepback 電子報探討 Google 嘅 AI 搜尋改動點樣顛覆咗長期依賴搜尋流量嘅網上出版業。",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial"
-        ],
-        "entities": [
-          "google"
-        ]
-      }
-    },
-    {
-      "title": "Nvidia open-sources Flora to make robot video labeling 125x cheaper than GPT-6 Astra",
-      "url": "https://the-decoder.com/nvidia-open-sources-flora-to-make-robot-video-labeling-125x-cheaper-than-gpt-6-astra/",
-      "source": "The Decoder",
-      "publishedAt": "2026-10-25T10:08:49.000Z",
-      "snippet": "Nvidia's new data engine Flora labels one hour of robot video for 72 cents instead of $88 with GPT-6 Astra, while scoring slightly higher on quality. The open system, built on three fine-tuned Qwen3.5 models, catches errors in robot actions far more reliably than any competitor but sometimes falls short on descriptive accuracy. Nvidia is positioning Flora as a key piece of its strategy to control the entire robotics value chain. The article Nvidia open-sources Flora to make robot video labeling 125x cheaper than GPT-6 Astra appeared first on The Decoder.",
-      "category": "Open Source",
-      "summary": "Nvidia open-sourced Flora, a data engine built on three fine-tuned Qwen3.5 models that labels an hour of robot video for 72 cents versus $88 with GPT-6 Astra, while scoring slightly higher on quality.",
-      "summaryZhHK": "Nvidia 開源咗 Flora，呢個數據引擎建基於三個微調過嘅 Qwen3.5 模型，標註一個鐘機械人影片只需 72 美仙，相比用 GPT-6 Astra 要 88 美元，質素仲略高啲。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "robotics"
-        ],
-        "traits": [
-          "open-source"
-        ],
-        "entities": [
-          "nvidia",
-          "qwen"
-        ]
-      }
-    },
-    {
-      "title": "Anthropic co-founder Jack Clark moves his prediction for self-improving AI forward to 2027",
-      "url": "https://the-decoder.com/anthropic-co-founder-jack-clark-moves-his-prediction-for-self-improving-ai-forward-to-2027/",
-      "source": "The Decoder",
-      "publishedAt": "2026-10-25T09:37:46.000Z",
-      "snippet": "A new benchmark by P-Zero Research measures how well AI models design and evaluate experiments on their own. The results are improving so fast that Anthropic co-founder Jack Clark now thinks self-improving AI could arrive by 2027. The article Anthropic co-founder Jack Clark moves his prediction for self-improving AI forward to 2027 appeared first on The Decoder.",
-      "category": "Research",
-      "summary": "A new benchmark from P-Zero Research measuring how well models design and evaluate their own experiments is improving so fast that Anthropic co-founder Jack Clark moved his self-improving AI prediction forward to 2027.",
-      "summaryZhHK": "P-Zero Research 有個新 benchmark 用嚟衡量模型自己設計同評估實驗嘅能力，進步快到 Anthropic 聯合創辦人 Jack Clark 要將佢對自我改進 AI 嘅預測提前到 2027 年。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "reasoning"
-        ],
-        "traits": [
-          "research",
-          "benchmark"
-        ],
-        "entities": [
-          "anthropic"
-        ]
-      }
-    },
-    {
-      "title": "Anthropic says one AI agent beats many subagents now that models can handle complexity alone",
-      "url": "https://the-decoder.com/anthropic-says-one-ai-agent-beats-many-subagents-now-that-models-can-handle-complexity-alone/",
-      "source": "The Decoder",
-      "publishedAt": "2026-10-25T09:12:10.000Z",
-      "snippet": "Anthropic says companies should evaluate whether they can consolidate sub-agents into a single agent that loads context on demand. In one architecture comparison, the single-agent setup ran about twice as fast. Anthropic has published a migration kit on GitHub to help teams make the transition. The article Anthropic says one AI agent beats many subagents now that models can handle complexity alone appeared first on The Decoder.",
-      "category": "Agent Frameworks",
-      "summary": "Anthropic argues companies should consider consolidating sub-agents into a single agent that loads context on demand, reporting a single-agent setup ran about twice as fast in one architecture comparison, and published a migration kit on GitHub.",
-      "summaryZhHK": "Anthropic 認為企業應該考慮將多個 sub-agent 整合成一個按需要載入 context 嘅單一 agent，佢哋話喺一次架構比較入面單一 agent 架構快咗大約一倍，仲喺 GitHub 發布咗遷移工具包。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic"
-        ],
-        "traits": [
-          "research"
-        ],
-        "entities": [
-          "anthropic"
-        ]
-      }
-    },
-    {
-      "title": "Claude 付款頁再現中國及銀聯卡選項　官方仍未向中國大陸開放",
-      "url": "https://unwire.hk/2026/10/25/claude-china-unionpay-billing-appeal/life-tech/epayment/?utm_source=rss&utm_medium=rss&utm_campaign=claude-china-unionpay-billing-appeal",
-      "source": "Unwire.hk",
-      "publishedAt": "2026-10-25T08:43:25.000Z",
-      "snippet": "AI 聊天機械人 Claude 的升級付款頁近日出現中國大陸、香港、澳門及台灣等地區選項，亦有銀聯卡的連結入口 […]",
-      "category": "Business & Funding",
-      "summary": "Claude's upgrade payment page briefly showed China, Hong Kong, Macau, and Taiwan region options plus a UnionPay link, though Anthropic has still not opened access to mainland China.",
-      "summaryZhHK": "Claude 嘅升級付款頁一度出現中國大陸、香港、澳門同台灣地區選項，仲有銀聯卡嘅連結入口，不過官方到而家都未向中國大陸開放。",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial"
-        ],
-        "entities": [
-          "claude"
-        ]
-      }
-    },
-    {
-      "title": "Ex-Google CEO Eric Schmidt calls OpenAI and Anthropic modern colonial trading companies",
-      "url": "https://the-decoder.com/ex-google-ceo-eric-schmidt-calls-openai-and-anthropic-modern-colonial-trading-companies/",
-      "source": "The Decoder",
-      "publishedAt": "2026-10-25T08:09:32.000Z",
-      "snippet": "In Foreign Affairs, historian Niall Ferguson, researcher Lisa Klaassen, and former Google CEO Eric Schmidt cast the US and China as AI empires and every other country as a dependency. The race won't be decided by breakthroughs but by who can bankroll it. US corporations alone plan to spend more than $600 billion in 2026. Yet mounting debt, protests against data centers, and a potential chip crisis over Taiwan could stall both superpowers. The article Ex-Google CEO Eric Schmidt calls OpenAI and Anthropic modern colonial trading companies appeared first on The Decoder.",
-      "category": "Business & Funding",
-      "summary": "In Foreign Affairs, Eric Schmidt, Niall Ferguson, and Lisa Klaassen cast the US and China as AI empires and frame OpenAI and Anthropic as modern colonial trading companies, arguing the race is decided by who can bankroll it.",
-      "summaryZhHK": "Eric Schmidt、Niall Ferguson 同 Lisa Klaassen 喺《Foreign Affairs》撰文，將美國同中國形容為 AI 帝國，又話 OpenAI 同 Anthropic 係現代殖民貿易公司，認為呢場競賽係睇邊個出得起錢。",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial",
-          "funding"
-        ],
-        "entities": [
-          "openai",
-          "anthropic"
-        ]
-      }
-    },
-    {
-      "title": "OpenAI offers discounts up to 90 percent to poach Anthropic's biggest customers",
-      "url": "https://the-decoder.com/openai-offers-discounts-up-to-90-percent-to-poach-anthropics-biggest-customers/",
-      "source": "The Decoder",
-      "publishedAt": "2026-10-25T07:30:11.000Z",
-      "snippet": "OpenAI is poaching Anthropic's customers with steep discounts. Companies like Rippling, Replit, and DataCamp say they've cut AI costs by up to 90 percent after switching. Anthropic's growth has slowed, but OpenAI is trading its own margins for market share. Chinese rivals like Deepseek are piling on more price pressure. The article OpenAI offers discounts up to 90 percent to poach Anthropic's biggest customers appeared first on The Decoder.",
-      "category": "Business & Funding",
-      "summary": "OpenAI is offering discounts of up to 90 percent to poach Anthropic's biggest customers like Rippling, Replit, and DataCamp, trading its own margins for market share amid pressure from Chinese rivals like DeepSeek.",
-      "summaryZhHK": "OpenAI 提供高達 90% 嘅折扣嚟撬走 Anthropic 嘅大客，好似 Rippling、Replit 同 DataCamp，犧牲自身利潤率去換市場份額，同時又要面對 DeepSeek 等中國對手嘅價格壓力。",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial"
-        ],
-        "entities": [
-          "openai",
-          "anthropic"
-        ]
-      }
-    },
-    {
-      "title": "OpenMobile-2 proves open-source smartphone agents can rival proprietary models",
-      "url": "https://the-decoder.com/openmobile-2-proves-open-source-smartphone-agents-can-rival-proprietary-models/",
-      "source": "The Decoder",
-      "publishedAt": "2026-10-25T06:55:22.000Z",
-      "snippet": "Smartphone agents don't get better by processing more data. They improve by training on as many different apps as possible. The researchers behind OpenMobile-2 built an open training environment with more than 110 applications, including 35 replicas of popular apps. On real Android devices, their model scores highest among open agents, the authors say. The article OpenMobile-2 proves open-source smartphone agents can rival proprietary models appeared first on The Decoder.",
-      "category": "Open Source",
-      "summary": "OpenMobile-2 built an open training environment with more than 110 applications, including 35 replicas of popular apps, and its model scores highest among open smartphone agents on real Android devices, rivaling proprietary models.",
-      "summaryZhHK": "OpenMobile-2 整咗個開放訓練環境，包超過 110 個應用程式，當中 35 個係熱門 app 嘅複製品；佢個模型喺真實 Android 裝置上面，喺開源手機 agent 入面得分最高，足以同專有模型匹敵。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "agentic"
-        ],
-        "traits": [
-          "open-source",
-          "research"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "China’s tech giants are paying 1 million yuan for a new kind of AI engineer",
-      "url": "https://www.scmp.com/tech/tech-trends/article/3371925/chinas-tech-giants-are-paying-1-million-yuan-new-kind-ai-engineer",
-      "source": "SCMP Tech",
-      "publishedAt": "2026-10-25T06:00:20.000Z",
-      "snippet": "Chinese technology giants are dangling annual pay packages approaching 1 million yuan (US$149,739) to attract artificial intelligence engineers who can turn AI models into commercial applications. Companies including ByteDance, Tencent Holdings and Alibaba Group Holding are stepping up recruitment and training of the so-called forward-deployed engineers (FDEs), who work directly with customers to develop and integrate AI applications into business operations. Demand for such professionals has...",
-      "category": "Business & Funding",
-      "summary": "Chinese tech giants including ByteDance, Tencent, and Alibaba are offering pay packages approaching 1 million yuan (US$149,739) to recruit forward-deployed engineers who turn AI models into commercial applications.",
-      "summaryZhHK": "包括字節跳動、騰訊同阿里巴巴在內嘅中國科技巨頭，開出接近 100 萬人民幣（約 149,739 美元）嘅年薪，聘請 forward-deployed engineer 嚟將 AI 模型變成商業應用。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "training"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "Blue Planet III is keeping the rough edges in the age of AI",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai",
-      "source": "The Verge AI",
-      "publishedAt": "2026-10-24T21:29:12.000Z",
-      "snippet": "BBC's Blue Planet III is looking to prove its authenticity by leaving in the less-than-perfect shots. Previous incarnations of the nature series were defined by their gorgeous, crystal-clear footage that seemed almost too good to be real. But one dead giveaway of AI is when things look too polished and seamless. To counter that, Blue Planet III goes warts and all. Executive Producer Elizabeth White told The Guardian in the past, \"the amount of plankton and things\" floating in the water would have caused them to cut a shot. Or \"we might have framed out a boat or a buoy or gone: 'Oh, actually … ",
-      "category": "Applications",
-      "summary": "BBC's Blue Planet III deliberately keeps imperfect, rough footage to prove its authenticity in an era where overly polished visuals can seem AI-generated.",
-      "summaryZhHK": "BBC 嘅《Blue Planet III》特登保留啲唔完美、粗糙嘅鏡頭，喺呢個過度精緻嘅畫面好易俾人覺得係 AI 生成嘅年代，用嚟證明佢哋嘅真實性。",
-      "important": false,
-      "tags": {
-        "topics": [
-          "vision"
-        ],
-        "traits": [
-          "commercial"
-        ],
-        "entities": [
-          "google"
-        ]
-      }
-    },
-    {
-      "title": "‘Synthetic twin’: Why Socceroo Cristian Volpato is the latest footballer to license his AI clone",
-      "url": "https://www.theguardian.com/technology/2026/oct/25/synthetic-twin-why-socceroo-cristian-volpato-is-the-latest-footballer-to-license-his-ai-clone",
-      "source": "Guardian AI",
-      "publishedAt": "2026-10-24T19:00:40.000Z",
-      "snippet": "Athletes’ scramble to control – and monetise – their digital identities at the cutting edge of AI rights deals Get our new political email, free app or daily news podcast The Socceroos star stares at the camera as he strides through an enormous atrium, the sound of his football boots on polished concrete echoing around him. Suddenly, he spawns four digital clones that peel off out of view to re-emerge in different settings around the world. This scene from a social media video is fake and generated by artificial intelligence. But it has been authorised by the very real 22-year-old footballer, ",
-      "category": "Applications",
-      "summary": "Socceroos footballer Cristian Volpato has licensed an AI-generated 'synthetic twin' of himself, as athletes scramble to control and monetise their digital identities.",
-      "summaryZhHK": "澳洲足球員 Cristian Volpato 授權咗一個由 AI 生成嘅「synthetic twin」分身，反映運動員都爭住控制同變現自己嘅數碼身份。",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial",
-          "release"
-        ],
-        "entities": []
-      }
-    },
-    {
-      "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
-      "url": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
-      "source": "TechCrunch AI",
-      "publishedAt": "2026-10-24T19:00:00.000Z",
-      "snippet": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
-      "category": "Business & Funding",
-      "summary": "TechCrunch compiles a running list of AI projects and startups that shut down or missed expectations, from Apple's delayed Siri AI to OpenAI's messy 'super app' launch.",
-      "summaryZhHK": "TechCrunch 整理咗一份持續更新嘅名單，列出已經執笠或者未達預期嘅 AI 項目同初創，由 Apple 一再延遲嘅 Siri AI 到 OpenAI 混亂嘅「super app」發布都有。",
-      "important": false,
-      "tags": {
-        "topics": [],
-        "traits": [
-          "commercial",
-          "incident"
-        ],
-        "entities": [
-          "openai"
-        ]
-      }
-    },
-    {
-      "title": "Pennsylvania will require labels on AI-generated ads",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
-      "source": "The Verge AI",
-      "publishedAt": "2026-10-24T18:32:21.000Z",
-      "snippet": "On Thursday, Pennsylvania Governor Josh Shapiro signed the Artificial Intelligence Deceptive Advertising Act into law, requiring disclosures on AI-generated ads. The law requires any ad - whether it's a still image, video, audio, or text - that \"has been significantly modified or generated by artificial intelligence\" to include a label in the same format as the ad itself. That applies to TV commercials from multi-billion-dollar companies, as well as restaurants' ugly, crowded flyers about their wing specials. Pennsylvania is one of the first states to require disclosures on AI content. And it ",
-      "category": "Regulation & Policy",
-      "summary": "Pennsylvania Governor Josh Shapiro signed the Artificial Intelligence Deceptive Advertising Act, requiring any ad significantly generated or modified by AI to carry a label in the same format as the ad.",
-      "summaryZhHK": "賓夕法尼亞州州長 Josh Shapiro 簽咗《人工智能欺詐廣告法》，規定任何由 AI 大幅生成或修改嘅廣告，都要用同廣告本身相同嘅格式加標籤。",
-      "important": true,
-      "tags": {
-        "topics": [
-          "vision"
-        ],
-        "traits": [
-          "policy"
-        ],
-        "entities": []
-      }
     }
   ],
   "feedHealth": {
     "The Verge AI": {
-      "lastSuccess": "2026-11-23T16:48:37.728Z",
+      "lastSuccess": "2026-11-24T16:41:40.540Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "TechCrunch AI": {
       "lastSuccess": "2026-11-17T15:08:29.641Z",
       "lastError": "HTTP 403",
-      "consecutiveFailures": 6
+      "consecutiveFailures": 7
     },
     "Ars Technica AI": {
-      "lastSuccess": "2026-11-23T16:48:37.728Z",
+      "lastSuccess": "2026-11-24T16:41:40.540Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "OpenAI Blog": {
-      "lastSuccess": "2026-11-23T16:48:37.728Z",
+      "lastSuccess": "2026-11-24T16:41:40.540Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Google DeepMind": {
-      "lastSuccess": "2026-11-23T16:48:37.728Z",
+      "lastSuccess": "2026-11-24T16:41:40.540Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "MIT Tech Review AI": {
-      "lastSuccess": "2026-11-23T16:48:37.728Z",
+      "lastSuccess": "2026-11-24T16:41:40.540Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "arXiv cs.AI": {
-      "lastSuccess": "2026-11-23T16:48:37.728Z",
+      "lastSuccess": "2026-11-24T16:41:40.540Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Hacker News (AI)": {
       "lastSuccess": "2026-11-22T13:45:54.726Z",
       "lastError": "HTTP 429",
-      "consecutiveFailures": 1
+      "consecutiveFailures": 2
     },
     "AI Business": {
-      "lastSuccess": "2026-11-23T16:48:37.728Z",
+      "lastSuccess": "2026-11-24T16:41:40.540Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "The Decoder": {
-      "lastSuccess": "2026-11-23T16:48:37.728Z",
+      "lastSuccess": "2026-11-24T16:41:40.540Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "The Register AI/ML": {
-      "lastSuccess": "2026-11-23T16:48:37.728Z",
+      "lastSuccess": "2026-11-24T16:41:40.540Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Hugging Face blog": {
-      "lastSuccess": "2026-11-23T16:48:37.728Z",
+      "lastSuccess": "2026-11-24T16:41:40.540Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Guardian AI": {
-      "lastSuccess": "2026-11-23T16:48:37.728Z",
+      "lastSuccess": "2026-11-24T16:41:40.540Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Simon Willison": {
-      "lastSuccess": "2026-11-23T16:48:37.728Z",
+      "lastSuccess": "2026-11-24T16:41:40.540Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "GitHub blog": {
-      "lastSuccess": "2026-11-23T16:48:37.728Z",
+      "lastSuccess": "2026-11-24T16:41:40.540Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Computer Weekly": {
-      "lastSuccess": "2026-11-23T16:48:37.728Z",
+      "lastSuccess": "2026-11-24T16:41:40.540Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Indeed Hiring Lab": {
-      "lastSuccess": "2026-11-23T16:48:37.728Z",
+      "lastSuccess": "2026-11-24T16:41:40.540Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Personnel Today": {
       "lastSuccess": null,
       "lastError": "HTTP 403",
-      "consecutiveFailures": 71
+      "consecutiveFailures": 72
     },
     "SCMP Tech": {
-      "lastSuccess": "2026-11-23T16:48:37.728Z",
+      "lastSuccess": "2026-11-24T16:41:40.540Z",
       "lastError": null,
       "consecutiveFailures": 0
     },
     "Unwire.hk": {
-      "lastSuccess": "2026-11-23T16:48:37.728Z",
+      "lastSuccess": "2026-11-24T16:41:40.540Z",
       "lastError": null,
       "consecutiveFailures": 0
     }
@@ -39551,50 +40559,52 @@
   "briefStatus": "generated",
   "feedFailureWarningThreshold": 3,
   "brief": {
-    "generatedAt": "2026-11-23T16:48:37.728Z",
+    "generatedAt": "2026-11-24T16:41:40.540Z",
     "bullets": [
       {
-        "text": "Nvidia's board unanimously reinstated Jensen Huang as CEO and chair roughly two weeks after his ouster, citing senior US government input that his return poses no national security risk; tech leaders including Musk welcomed the move.",
-        "textZhHK": "Nvidia董事會一致通過，喺黃仁勳被革職大約兩個禮拜後恢復佢行政總裁同主席職位，仲話聽咗美國政府高層意見，認為佢回歸唔構成國安風險；馬斯克等科技界領袖都表示歡迎。",
+        "text": "Insiders say OpenAI's and Anthropic's unreleased frontier models have outgrown their safety measures, with internal debates over halting releases or training; OpenAI's chief scientist pushes perplexity as a shared progress metric and urges rivals to agree on limits.",
+        "textZhHK": "知情者話OpenAI同Anthropic未發布嘅前沿模型已經超出安全措施，內部拗緊應唔應該暫停發布或訓練；OpenAI首席科學家想將困惑度變做業界共同進步指標，並促請對手一齊設限。",
         "refs": [
-          "https://www.theverge.com/tech/1040069/jensen-huang-return-elon-musk-sam-altman-yay",
-          "https://arstechnica.com/ai/2026/11/jensen-huang-reinstated-as-nvidia-ceo-board-chair/",
-          "https://the-decoder.com/nvidia-tried-life-without-jensen-huang-and-it-lasted-about-two-weeks/",
-          "https://www.theverge.com/tech/1039937/nvidia-ceo-jensen-huang-reinstated"
+          "https://the-decoder.com/dozens-of-insiders-say-openai-and-anthropics-unreleased-models-have-outgrown-their-safety-measures/",
+          "https://the-decoder.com/openai-warns-that-upcoming-ai-systems-could-outpace-safety-checks-and-urges-rivals-to-agree-on-shared-limits/"
         ]
       },
       {
-        "text": "Anthropic raised $81bn in the largest IPO in history, valuing the company at $1.5tn, while critics warn of AI-driven job threats and a stock bubble as tech-sector volatility spills into Hong Kong markets.",
-        "textZhHK": "Anthropic集資810億美元，係史上最大型IPO，公司估值去到1.5萬億美元；不過有評論警告AI會衝擊就業同埋股市有泡沫風險，港股亦受美國科技股冧市拖累。",
+        "text": "OpenAI rolled out GPT-6.2 Sol as ChatGPT's default chat model globally on a paid-first basis, with older models retiring December 23; internal tests show image understanding jumped from 47.4 to 71.7 percent.",
+        "textZhHK": "OpenAI將GPT-6.2 Sol設為ChatGPT全球預設對話模型，付費用戶先用，舊模型12月23日退役；內部測試顯示圖像理解由47.4%升到71.7%。",
         "refs": [
-          "https://www.theguardian.com/commentisfree/2026/nov/23/anthropic-ipo-tech-elite-stock-bubble",
-          "https://www.scmp.com/business/markets/article/3375424/new-19-month-low-hong-kong-stocks-plunge-ai-sell-spreads-asia"
+          "https://unwire.hk/2026/11/24/chatgpt-gpt-6-2-sol-chat/ai/?utm_source=rss&utm_medium=rss&utm_campaign=chatgpt-gpt-6-2-sol-chat",
+          "https://the-decoder.com/openai-updates-chatgpt-to-handle-complex-everyday-questions-web-searches-and-images-more-reliably/"
         ]
       },
       {
-        "text": "OpenAI's GPT-6.2 Astra independently produced the first machine-verifiable Lean proof of Smoktunowicz's gap theorem, inventing its own strategy where Mathlib lacked foundations, and now leads Autoform-Hard with 49 of 56 tasks solved.",
-        "textZhHK": "OpenAI嘅GPT-6.2 Astra獨立完成Smoktunowicz間隙定理嘅Lean機器驗證證明，仲自己設計策略填補Mathlib缺失嘅基礎，目前以56題入面解咗49題領先Autoform-Hard。",
+        "text": "Nvidia's board unanimously reinstated Jensen Huang as CEO, triggering a 32% share surge and nearly $1tn in market value gains; Donald Trump took credit, while concerns persist over Huang's alleged affair with a suspected Chinese spy and potential export loopholes.",
+        "textZhHK": "Nvidia董事會一致通過讓黃仁勳復任CEO，股價急升32%，市值近乎增加一萬億美元；特朗普認頭份功勞，但外界對黃仁勳同疑似中國間諜嘅婚外情以及出口漏洞嘅疑慮仍未消散。",
         "refs": [
-          "https://the-decoder.com/gpt-6-2-astra-solved-a-math-theorem-no-other-ai-could-crack-then-invented-its-own-proof-strategy/"
+          "https://www.theguardian.com/us-news/video/2026/nov/24/jensen-huang-back-nvidia-stateside",
+          "https://arstechnica.com/tech-policy/2026/11/how-trump-and-silicon-valley-forced-nvidia-to-take-jensen-huang-back/",
+          "https://www.scmp.com/plus/tech/tech-war/article/3375612/china-stocks-miss-out-huangs-nvidia-return-sparks-ai-rally",
+          "https://www.theguardian.com/technology/2026/nov/23/nvidia-jensen-huang-return-ceo"
         ]
       },
       {
-        "text": "Z.ai moved its GLM-5.4 flagship to a loop architecture where 28 layers run twice, claiming the 750B-parameter model matches 2-3T models, though benchmarks are only available for a smaller 30B test model.",
-        "textZhHK": "Z.ai將旗艦GLM-5.4改用循環架構，28層跑兩次，聲稱呢個750B參數模型拍得住2-3T參數模型，不過基準測試暫時只係得30B測試版有數據。",
+        "text": "China's Z.ai released GLM-5.4, its first looped-transformer flagship model where weight-shared layers iterate to add depth without raising parameter counts; the company says the architecture improves performance and computational efficiency over its predecessor.",
+        "textZhHK": "中國Z.ai發布GLM-5.4，係佢首個用looped transformer架構嘅旗艦模型，權重共享層重複運行以加深深度而唔增加參數量；公司話呢個架構比上一代性能同運算效率都有提升。",
         "refs": [
-          "https://the-decoder.com/z-ai-follows-openai-into-loop-transformer-territory-with-its-new-750b-flagship-model/"
+          "https://www.scmp.com/tech/big-tech/article/3375517/chinas-zai-aggressively-using-looped-transformer-method-improve-ai-models",
+          "https://simonwillison.net/2026/Nov/23/glm-54/"
         ]
       },
       {
-        "text": "US intelligence tracked Alice Huang's alleged MSS ties for over a year, and investigators are probing whether a Southeast Asian network smuggled AI chips into China; Huang is set to testify before the US House on December 1.",
-        "textZhHK": "美國情報部門追蹤Alice Huang同中國國安部嘅關係超過一年，調查人員仲查緊有冇東南亞網絡走私AI晶片入中國；黃仁勳定咗12月1號去美國眾議院作證。",
+        "text": "Anthropic launched Claude Ship in beta, letting AI agents review, fix, and approve pull requests automatically; Amazon reports hackers' AI agents using the Cairn framework found and exploited a 0-day with little human input, sharpening developer-tool risk debates.",
+        "textZhHK": "Anthropic推出Claude Ship測試版，畀AI代理自動審查、修正同批准pull request；Amazon就話黑客用Cairn框架嘅AI代理幾乎唔使人手就搵到同利用一個0-day漏洞，令開發工具風險討論更加熾熱。",
         "refs": [
-          "https://the-decoder.com/us-spies-tracked-nvidia-scandal-figures-ties-to-chinese-intelligence-for-over-a-year/",
-          "https://www.theguardian.com/us-news/2026/nov/22/jensen-huang-nvidia-john-kennedy"
+          "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/",
+          "https://the-decoder.com/anthropics-claude-ship-lets-ai-agents-review-fix-and-approve-pull-requests-on-their-own/"
         ]
       }
     ],
-    "headline": "Huang returns as Nvidia CEO while Anthropic posts record IPO",
-    "headlineZhHK": "黃仁勳回歸Nvidia掌舵 Anthropic破紀錄上市"
+    "headline": "Insiders Warn AI Safety Lags Models as Nvidia Reinstates CEO, GPT-6.2 Ships",
+    "headlineZhHK": "知情者警告AI安全滯後 黃仁勳復職兼GPT-6.2推出"
   }
 }
